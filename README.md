@@ -14,7 +14,7 @@
             - Downloads > CCSTUDIO > Download Option
                 - Windows single file (offline) installer for Code Composer Studio IDE (all features, devices)  — 1261516 K
         - 1.2. Install CCS
-            - Select Cononents: [✔] C2000™ real-time microcontroller
+            - Select Component: [✔] C2000™ real-time microcontroller
     2. **Open Resource Explorer**
         - CCS > View > Resource Explorer
     3. **Install C2000Ware_MotorControl_SDK** (5.04.00.00)
