@@ -10,9 +10,11 @@
     - **Motor:** [BA112PE60E](https://www.famotor.co.kr/shop/item.php?it_id=1731379678): 48V, 28pole, 16:1, Incremental Encoder(500)
 - SW
     1. **Install Code Composer Studio (IDE)**
-        - [CCSTUDIO](https://www.google.com/aclk?sa=L&ai=DChsSEwjLvuX3tbKRAxXZbA8CHbiYB7IYACICCAEQABoCdGI&ae=2&co=1&ase=2&gclid=Cj0KCQiArt_JBhCTARIsADQZaykamSY7W9hwekfWihyR_aKRiJbgdPFoliDW8EVLIi7wJOEvnzX-rFAaAnE3EALw_wcB&cid=CAASuwHkaMwHggYmCDcd0jU8WGJ4qDVYHtfL5JTGXK2zx55FGV20DkzUMYxWKniSA8umwJKeMntW9xQlZmLmYEE-YzDr1GI9FbiTP_hUYx6GosRiHJ8yXwPn9mn5Op1PL112WyT31KdP0QQJsFBcSAv9ca1v42tCTZJ4KJEX_QvhREuNcY3vnJz3hRgxcmPGDeCv0hodiDpcyuHkFk5QhL482Vbpw0TLtXK93dry_e5djPe95WIw0ruPfLZicJJG&cce=2&category=acrcp_v1_71&sig=AOD64_0K2bShgf8Yga8x_0VIvphuc8lTgQ&q&nis=4&adurl&ved=2ahUKEwjS4N_3tbKRAxXIk1YBHazcHQAQ0Qx6BAgPEAE)
-        - Downloads > CCSTUDIO > Download Option
-            - Windows single file (offline) installer for Code Composer Studio IDE (all features, devices)  — 1261516 K
+        - 1.1. Download [CCSTUDIO](https://www.google.com/aclk?sa=L&ai=DChsSEwjLvuX3tbKRAxXZbA8CHbiYB7IYACICCAEQABoCdGI&ae=2&co=1&ase=2&gclid=Cj0KCQiArt_JBhCTARIsADQZaykamSY7W9hwekfWihyR_aKRiJbgdPFoliDW8EVLIi7wJOEvnzX-rFAaAnE3EALw_wcB&cid=CAASuwHkaMwHggYmCDcd0jU8WGJ4qDVYHtfL5JTGXK2zx55FGV20DkzUMYxWKniSA8umwJKeMntW9xQlZmLmYEE-YzDr1GI9FbiTP_hUYx6GosRiHJ8yXwPn9mn5Op1PL112WyT31KdP0QQJsFBcSAv9ca1v42tCTZJ4KJEX_QvhREuNcY3vnJz3hRgxcmPGDeCv0hodiDpcyuHkFk5QhL482Vbpw0TLtXK93dry_e5djPe95WIw0ruPfLZicJJG&cce=2&category=acrcp_v1_71&sig=AOD64_0K2bShgf8Yga8x_0VIvphuc8lTgQ&q&nis=4&adurl&ved=2ahUKEwjS4N_3tbKRAxXIk1YBHazcHQAQ0Qx6BAgPEAE)
+            - Downloads > CCSTUDIO > Download Option
+                - Windows single file (offline) installer for Code Composer Studio IDE (all features, devices)  — 1261516 K
+        - 1.2. Install CCS
+            - Select Cononents: [✔] C2000™ real-time microcontroller
     2. **Open Resource Explorer**
         - CCS > View > Resource Explorer
     3. **Install C2000Ware_MotorControl_SDK** (5.04.00.00)
@@ -24,7 +26,7 @@
 ### 2. Setting
 - HW
     - **MCU Board DIP switch setting**<br>
-    PDF) [(spruj26a)User's Guide: Motor Control SDK Universal Project and Lab](https://www.ti.com/lit/ug/spruj26/spruj26.pdf)<br>
+    PDF) [(spruj26a) User's Guide: Motor Control SDK Universal Project and Lab](https://www.ti.com/lit/ug/spruj26/spruj26.pdf)<br>
     -> 28pg
     - **Connect FET Board**
         1. Cover 48V, AGND, VA, VB, VC pin with Electrical tape
@@ -90,5 +92,5 @@
 </details>
 
 #### Program Guide(참고)<br>
-PDF) [(tiduew0)Design Guide: TIDM-02007_Dual-Axis Motor Drive Using Fast Current Loop (FCL) and SFRA on a Single MCU Reference Design](https://www.ti.com/lit/pdf/tiduew0)
+PDF) [(tiduew0) Design Guide: TIDM-02007_Dual-Axis Motor Drive Using Fast Current Loop (FCL) and SFRA on a Single MCU Reference Design](https://www.ti.com/lit/pdf/tiduew0)
 
