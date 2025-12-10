@@ -16,7 +16,7 @@
     2. **Open Resource Explorer**
         - CCS > View > Resource Explorer
     3. **Install C2000Ware_MotorControl_SDK** (5.04.00.00)
-        - C2000™ real-time microcontrollers > Embedded Software > C2000Ware_MotorControl_SDK (5.04.00.00) > : > Download and Install
+        - C2000™ real-time microcontrollers > Embedded Software > C2000Ware_MotorControl_SDK (5.04.00.00) > ⋮ > Download and Install
     4. **Open CCS & Set Workspace Locate**
         - File > Open Folder(Ctrl+K, Ctrl+O)
         - open LAUNCHXL-F280025C\251210_LAUNCHXL-F280025C
