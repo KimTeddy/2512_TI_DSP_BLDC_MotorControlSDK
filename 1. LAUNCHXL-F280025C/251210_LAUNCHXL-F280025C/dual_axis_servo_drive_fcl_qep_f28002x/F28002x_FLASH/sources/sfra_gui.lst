@@ -1,11 +1,11 @@
-TMS320C2000 Assembler PC v22.6.2 Wed Dec 10 14:16:25 2025
+TMS320C2000 Assembler PC v22.6.2 Wed Dec 10 14:45:02 2025
 
 Copyright (c) 1996-2018 Texas Instruments Incorporated
 sfra_gui.asm                                                         PAGE    1
 
        1              ;***************************************************************
        2              ;* TMS320C2000 G3 C/C++ Codegen                               PC v22.6.2.LTS *
-       3              ;* Date/Time created: Wed Dec 10 14:16:25 2025                 *
+       3              ;* Date/Time created: Wed Dec 10 14:45:01 2025                 *
        4              ;***************************************************************
        5                      .compiler_opts --abi=eabi --diag_wrap=off --float_support=fpu32 --hll_source=on --idiv_support=idiv0 
        6                      .asg    XAR2, FP
@@ -14,7 +14,7 @@ sfra_gui.asm                                                         PAGE    1
        9                      .dwattr $C$DW$CU, DW_AT_name("../sources/sfra_gui.c")
       10                      .dwattr $C$DW$CU, DW_AT_producer("TI TMS320C2000 G3 C/C++ Codegen PC v22.6.2.LTS Copyright (c) 1996-2
       11                      .dwattr $C$DW$CU, DW_AT_TI_version(0x01)
-      12                      .dwattr $C$DW$CU, DW_AT_comp_dir("C:\Users\Teddy\Documents\GitHub\2512_LAUNCHXL-F280025C\251210_LAUNC
+      12                      .dwattr $C$DW$CU, DW_AT_comp_dir("C:\Users\Teddy\Documents\GitHub\2512_TI_DSP_BLDC_MotorControlSDK\1.
       13              
       14              $C$DW$1 .dwtag  DW_TAG_subprogram
       15                      .dwattr $C$DW$1, DW_AT_name("SFRA_F32_reset")
@@ -58,7 +58,7 @@ sfra_gui.asm                                                         PAGE    1
       53              
       54              $C$DW$10        .dwtag  DW_TAG_formal_parameter
       55                      .dwattr $C$DW$10, DW_AT_type(*$C$DW$T$20)
-TMS320C2000 Assembler PC v22.6.2 Wed Dec 10 14:16:25 2025
+TMS320C2000 Assembler PC v22.6.2 Wed Dec 10 14:45:02 2025
 
 Copyright (c) 1996-2018 Texas Instruments Incorporated
 sfra_gui.asm                                                         PAGE    2
@@ -118,7 +118,7 @@ sfra_gui.asm                                                         PAGE    2
      108              
      109              $C$DW$23        .dwtag  DW_TAG_formal_parameter
      110                      .dwattr $C$DW$23, DW_AT_type(*$C$DW$T$19)
-TMS320C2000 Assembler PC v22.6.2 Wed Dec 10 14:16:25 2025
+TMS320C2000 Assembler PC v22.6.2 Wed Dec 10 14:45:02 2025
 
 Copyright (c) 1996-2018 Texas Instruments Incorporated
 sfra_gui.asm                                                         PAGE    3
@@ -178,7 +178,7 @@ sfra_gui.asm                                                         PAGE    3
      163              $C$DW$37        .dwtag  DW_TAG_variable
      164                      .dwattr $C$DW$37, DW_AT_name("sfra1")
      165                      .dwattr $C$DW$37, DW_AT_linkage_name("sfra1")
-TMS320C2000 Assembler PC v22.6.2 Wed Dec 10 14:16:25 2025
+TMS320C2000 Assembler PC v22.6.2 Wed Dec 10 14:45:02 2025
 
 Copyright (c) 1996-2018 Texas Instruments Incorporated
 sfra_gui.asm                                                         PAGE    4
@@ -238,7 +238,7 @@ sfra_gui.asm                                                         PAGE    4
      218                      .dwattr $C$DW$41, DW_AT_decl_line(0x36)
      219                      .dwattr $C$DW$41, DW_AT_decl_column(0x0b)
      220              
-TMS320C2000 Assembler PC v22.6.2 Wed Dec 10 14:16:25 2025
+TMS320C2000 Assembler PC v22.6.2 Wed Dec 10 14:45:02 2025
 
 Copyright (c) 1996-2018 Texas Instruments Incorporated
 sfra_gui.asm                                                         PAGE    5
@@ -298,7 +298,7 @@ sfra_gui.asm                                                         PAGE    5
      273                      .dwattr $C$DW$45, DW_AT_TI_max_frame_size(-24)
      274                      .dwpsn  file "../sources/sfra_gui.c",line 71,column 1,is_stmt,address ||configureSFRA||,isa 0
      275              
-TMS320C2000 Assembler PC v22.6.2 Wed Dec 10 14:16:25 2025
+TMS320C2000 Assembler PC v22.6.2 Wed Dec 10 14:45:02 2025
 
 Copyright (c) 1996-2018 Texas Instruments Incorporated
 sfra_gui.asm                                                         PAGE    6
@@ -358,7 +358,7 @@ sfra_gui.asm                                                         PAGE    6
      326                      .dwpsn  file "../sources/sfra_gui.c",line 71,column 1,is_stmt,isa 0
      327 00000007 59A9          MOVZ      AR1,AL                ; [CPU_ALU] |71| 
      328 00000008 E6CF          MOV32     R4H,R0H               ; [CPU_FPU] |71| 
-TMS320C2000 Assembler PC v22.6.2 Wed Dec 10 14:16:25 2025
+TMS320C2000 Assembler PC v22.6.2 Wed Dec 10 14:45:02 2025
 
 Copyright (c) 1996-2018 Texas Instruments Incorporated
 sfra_gui.asm                                                         PAGE    7
@@ -418,7 +418,7 @@ sfra_gui.asm                                                         PAGE    7
      366 00000030 7640!         LCR       #||SFRA_F32_config||  ; [CPU_ALU] |80| 
          00000031 0000 
      367                      ; call occurs [#||SFRA_F32_config||] ; [] |80| 
-TMS320C2000 Assembler PC v22.6.2 Wed Dec 10 14:16:25 2025
+TMS320C2000 Assembler PC v22.6.2 Wed Dec 10 14:45:02 2025
 
 Copyright (c) 1996-2018 Texas Instruments Incorporated
 sfra_gui.asm                                                         PAGE    8
@@ -478,7 +478,7 @@ sfra_gui.asm                                                         PAGE    8
      405 00000057 A04E          MOVL      *-SP[14],XAR5         ; [CPU_ALU] |119| 
      406 00000058 D51C          MOVB      XAR5,#28              ; [CPU_ALU] |119| 
      407 00000059 794F          MOV       *-SP[15],AR1          ; [CPU_ALU] |119| 
-TMS320C2000 Assembler PC v22.6.2 Wed Dec 10 14:16:25 2025
+TMS320C2000 Assembler PC v22.6.2 Wed Dec 10 14:45:02 2025
 
 Copyright (c) 1996-2018 Texas Instruments Incorporated
 sfra_gui.asm                                                         PAGE    9
@@ -538,7 +538,7 @@ sfra_gui.asm                                                         PAGE    9
      458                      .dwattr $C$DW$57, DW_AT_type(*$C$DW$T$55)
      459                      .dwattr $C$DW$57, DW_AT_location[DW_OP_reg12]
      460              
-TMS320C2000 Assembler PC v22.6.2 Wed Dec 10 14:16:25 2025
+TMS320C2000 Assembler PC v22.6.2 Wed Dec 10 14:45:02 2025
 
 Copyright (c) 1996-2018 Texas Instruments Incorporated
 sfra_gui.asm                                                         PAGE   10
@@ -598,7 +598,7 @@ sfra_gui.asm                                                         PAGE   10
      508                      .dwattr $C$DW$60, DW_AT_TI_return
      509              
      510 00000016 0006          LRETR     ; [CPU_ALU] 
-TMS320C2000 Assembler PC v22.6.2 Wed Dec 10 14:16:25 2025
+TMS320C2000 Assembler PC v22.6.2 Wed Dec 10 14:45:02 2025
 
 Copyright (c) 1996-2018 Texas Instruments Incorporated
 sfra_gui.asm                                                         PAGE   11
@@ -658,7 +658,7 @@ sfra_gui.asm                                                         PAGE   11
      562 00000002 BE00          MOVB      XAR6,#0               ; [CPU_ALU] |366| 
      563 00000003 9000          ANDB      AL,#0                 ; [CPU_ALU] |366| 
      564 00000004 18A8          AND       AH,#32768             ; [CPU_ALU] |366| 
-TMS320C2000 Assembler PC v22.6.2 Wed Dec 10 14:16:25 2025
+TMS320C2000 Assembler PC v22.6.2 Wed Dec 10 14:45:02 2025
 
 Copyright (c) 1996-2018 Texas Instruments Incorporated
 sfra_gui.asm                                                         PAGE   12
@@ -718,7 +718,7 @@ sfra_gui.asm                                                         PAGE   12
      615              $C$DW$67        .dwtag  DW_TAG_variable
      616                      .dwattr $C$DW$67, DW_AT_name("d")
      617                      .dwattr $C$DW$67, DW_AT_type(*$C$DW$T$54)
-TMS320C2000 Assembler PC v22.6.2 Wed Dec 10 14:16:25 2025
+TMS320C2000 Assembler PC v22.6.2 Wed Dec 10 14:45:02 2025
 
 Copyright (c) 1996-2018 Texas Instruments Incorporated
 sfra_gui.asm                                                         PAGE   13
@@ -778,7 +778,7 @@ sfra_gui.asm                                                         PAGE   13
      665                      .dwattr $C$DW$70, DW_AT_name("__relaxed_sqrtf")
      666                      .dwattr $C$DW$70, DW_AT_low_pc(||__relaxed_sqrtf||)
      667                      .dwattr $C$DW$70, DW_AT_high_pc(0x00)
-TMS320C2000 Assembler PC v22.6.2 Wed Dec 10 14:16:25 2025
+TMS320C2000 Assembler PC v22.6.2 Wed Dec 10 14:45:02 2025
 
 Copyright (c) 1996-2018 Texas Instruments Incorporated
 sfra_gui.asm                                                         PAGE   14
@@ -838,7 +838,7 @@ sfra_gui.asm                                                         PAGE   14
      719 00000000               .sect   ".text:__relaxed_sinf"
      720                      .clink
      721                      .global ||__relaxed_sinf||
-TMS320C2000 Assembler PC v22.6.2 Wed Dec 10 14:16:25 2025
+TMS320C2000 Assembler PC v22.6.2 Wed Dec 10 14:45:02 2025
 
 Copyright (c) 1996-2018 Texas Instruments Incorporated
 sfra_gui.asm                                                         PAGE   15
@@ -898,7 +898,7 @@ sfra_gui.asm                                                         PAGE   15
      772                      ; return occurs ; [] 
      773                      .dwattr $C$DW$74, DW_AT_TI_end_file("C:/ti/ccs2031/ccs/tools/compiler/ti-cgt-c2000_22.6.2.LTS/include
      774                      .dwattr $C$DW$74, DW_AT_TI_end_line(0x10b)
-TMS320C2000 Assembler PC v22.6.2 Wed Dec 10 14:16:25 2025
+TMS320C2000 Assembler PC v22.6.2 Wed Dec 10 14:45:02 2025
 
 Copyright (c) 1996-2018 Texas Instruments Incorporated
 sfra_gui.asm                                                         PAGE   16
@@ -958,7 +958,7 @@ sfra_gui.asm                                                         PAGE   16
      827              ;* R1    assigned to y
      828              $C$DW$82        .dwtag  DW_TAG_variable
      829                      .dwattr $C$DW$82, DW_AT_name("y")
-TMS320C2000 Assembler PC v22.6.2 Wed Dec 10 14:16:25 2025
+TMS320C2000 Assembler PC v22.6.2 Wed Dec 10 14:45:02 2025
 
 Copyright (c) 1996-2018 Texas Instruments Incorporated
 sfra_gui.asm                                                         PAGE   17
@@ -1018,7 +1018,7 @@ sfra_gui.asm                                                         PAGE   17
      877 00000000               .sect   ".text:__relaxed_logf"
      878                      .clink
      879                      .global ||__relaxed_logf||
-TMS320C2000 Assembler PC v22.6.2 Wed Dec 10 14:16:25 2025
+TMS320C2000 Assembler PC v22.6.2 Wed Dec 10 14:45:02 2025
 
 Copyright (c) 1996-2018 Texas Instruments Incorporated
 sfra_gui.asm                                                         PAGE   18
@@ -1078,7 +1078,7 @@ sfra_gui.asm                                                         PAGE   18
      928              
      929 00000009 0006          LRETR     ; [CPU_ALU] 
      930                      ; return occurs ; [] 
-TMS320C2000 Assembler PC v22.6.2 Wed Dec 10 14:16:25 2025
+TMS320C2000 Assembler PC v22.6.2 Wed Dec 10 14:45:02 2025
 
 Copyright (c) 1996-2018 Texas Instruments Incorporated
 sfra_gui.asm                                                         PAGE   19
@@ -1138,7 +1138,7 @@ sfra_gui.asm                                                         PAGE   19
      982 00000003 7700          NOP       ; [CPU_ALU] 
      983              $C$DW$92        .dwtag  DW_TAG_TI_branch
      984                      .dwattr $C$DW$92, DW_AT_low_pc(0x00)
-TMS320C2000 Assembler PC v22.6.2 Wed Dec 10 14:16:25 2025
+TMS320C2000 Assembler PC v22.6.2 Wed Dec 10 14:45:02 2025
 
 Copyright (c) 1996-2018 Texas Instruments Incorporated
 sfra_gui.asm                                                         PAGE   20
@@ -1198,7 +1198,7 @@ sfra_gui.asm                                                         PAGE   20
     1037                      .dwattr $C$DW$96, DW_AT_type(*$C$DW$T$49)
     1038                      .dwattr $C$DW$96, DW_AT_location[DW_OP_regx 0x2b]
     1039              
-TMS320C2000 Assembler PC v22.6.2 Wed Dec 10 14:16:25 2025
+TMS320C2000 Assembler PC v22.6.2 Wed Dec 10 14:45:02 2025
 
 Copyright (c) 1996-2018 Texas Instruments Incorporated
 sfra_gui.asm                                                         PAGE   21
@@ -1258,7 +1258,7 @@ sfra_gui.asm                                                         PAGE   21
     1087                      .dwattr $C$DW$99, DW_AT_TI_max_frame_size(-2)
     1088                      .dwpsn  file "C:/ti/ccs2031/ccs/tools/compiler/ti-cgt-c2000_22.6.2.LTS/include/math.h",line 239,colum
     1089              
-TMS320C2000 Assembler PC v22.6.2 Wed Dec 10 14:16:25 2025
+TMS320C2000 Assembler PC v22.6.2 Wed Dec 10 14:45:02 2025
 
 Copyright (c) 1996-2018 Texas Instruments Incorporated
 sfra_gui.asm                                                         PAGE   22
@@ -1318,7 +1318,7 @@ sfra_gui.asm                                                         PAGE   22
     1141                      .dwattr $C$DW$104, DW_AT_high_pc(0x00)
     1142                      .dwattr $C$DW$104, DW_AT_linkage_name("__relaxed_fmaxf")
     1143                      .dwattr $C$DW$104, DW_AT_external
-TMS320C2000 Assembler PC v22.6.2 Wed Dec 10 14:16:25 2025
+TMS320C2000 Assembler PC v22.6.2 Wed Dec 10 14:45:02 2025
 
 Copyright (c) 1996-2018 Texas Instruments Incorporated
 sfra_gui.asm                                                         PAGE   23
@@ -1378,7 +1378,7 @@ sfra_gui.asm                                                         PAGE   23
     1195 00000000               .sect   ".text:__relaxed_expf"
     1196                      .clink
     1197                      .global ||__relaxed_expf||
-TMS320C2000 Assembler PC v22.6.2 Wed Dec 10 14:16:25 2025
+TMS320C2000 Assembler PC v22.6.2 Wed Dec 10 14:45:02 2025
 
 Copyright (c) 1996-2018 Texas Instruments Incorporated
 sfra_gui.asm                                                         PAGE   24
@@ -1438,7 +1438,7 @@ sfra_gui.asm                                                         PAGE   24
          00000002 FDC1 
     1250 00000003 E80D          MOVXI     R1H,#43537            ; [CPU_FPU] |298| 
          00000004 5089 
-TMS320C2000 Assembler PC v22.6.2 Wed Dec 10 14:16:25 2025
+TMS320C2000 Assembler PC v22.6.2 Wed Dec 10 14:45:02 2025
 
 Copyright (c) 1996-2018 Texas Instruments Incorporated
 sfra_gui.asm                                                         PAGE   25
@@ -1498,7 +1498,7 @@ sfra_gui.asm                                                         PAGE   25
     1299                      .dwattr $C$DW$115, DW_AT_name("x")
     1300                      .dwattr $C$DW$115, DW_AT_type(*$C$DW$T$16)
     1301                      .dwattr $C$DW$115, DW_AT_location[DW_OP_regx 0x2b]
-TMS320C2000 Assembler PC v22.6.2 Wed Dec 10 14:16:25 2025
+TMS320C2000 Assembler PC v22.6.2 Wed Dec 10 14:45:02 2025
 
 Copyright (c) 1996-2018 Texas Instruments Incorporated
 sfra_gui.asm                                                         PAGE   26
@@ -1558,7 +1558,7 @@ sfra_gui.asm                                                         PAGE   26
     1352                      .dwattr $C$DW$118, DW_AT_decl_line(0x112)
     1353                      .dwattr $C$DW$118, DW_AT_decl_column(0x10)
     1354                      .dwattr $C$DW$118, DW_AT_TI_max_frame_size(-2)
-TMS320C2000 Assembler PC v22.6.2 Wed Dec 10 14:16:25 2025
+TMS320C2000 Assembler PC v22.6.2 Wed Dec 10 14:45:02 2025
 
 Copyright (c) 1996-2018 Texas Instruments Incorporated
 sfra_gui.asm                                                         PAGE   27
@@ -1618,7 +1618,7 @@ sfra_gui.asm                                                         PAGE   27
     1402 00000014 0006          LRETR     ; [CPU_ALU] 
     1403                      ; return occurs ; [] 
     1404                      .dwattr $C$DW$118, DW_AT_TI_end_file("C:/ti/ccs2031/ccs/tools/compiler/ti-cgt-c2000_22.6.2.LTS/includ
-TMS320C2000 Assembler PC v22.6.2 Wed Dec 10 14:16:25 2025
+TMS320C2000 Assembler PC v22.6.2 Wed Dec 10 14:45:02 2025
 
 Copyright (c) 1996-2018 Texas Instruments Incorporated
 sfra_gui.asm                                                         PAGE   28
@@ -1678,7 +1678,7 @@ sfra_gui.asm                                                         PAGE   28
     1457                      .dwattr $C$DW$126, DW_AT_name("x")
     1458                      .dwattr $C$DW$126, DW_AT_type(*$C$DW$T$49)
     1459                      .dwattr $C$DW$126, DW_AT_location[DW_OP_regx 0x2f]
-TMS320C2000 Assembler PC v22.6.2 Wed Dec 10 14:16:25 2025
+TMS320C2000 Assembler PC v22.6.2 Wed Dec 10 14:45:02 2025
 
 Copyright (c) 1996-2018 Texas Instruments Incorporated
 sfra_gui.asm                                                         PAGE   29
@@ -1738,7 +1738,7 @@ sfra_gui.asm                                                         PAGE   29
     1508              $C$DW$129       .dwtag  DW_TAG_formal_parameter
     1509                      .dwattr $C$DW$129, DW_AT_name("e")
     1510                      .dwattr $C$DW$129, DW_AT_type(*$C$DW$T$55)
-TMS320C2000 Assembler PC v22.6.2 Wed Dec 10 14:16:25 2025
+TMS320C2000 Assembler PC v22.6.2 Wed Dec 10 14:45:02 2025
 
 Copyright (c) 1996-2018 Texas Instruments Incorporated
 sfra_gui.asm                                                         PAGE   30
@@ -1798,7 +1798,7 @@ sfra_gui.asm                                                         PAGE   30
     1559 00000015 5200          CMPB      AL,#0                 ; [CPU_ALU] |360| 
     1560 00000016 610E          B         ||$C$L3||,EQ          ; [CPU_ALU] |360| 
     1561                      ; branchcc occurs ; [] |360| 
-TMS320C2000 Assembler PC v22.6.2 Wed Dec 10 14:16:25 2025
+TMS320C2000 Assembler PC v22.6.2 Wed Dec 10 14:45:02 2025
 
 Copyright (c) 1996-2018 Texas Instruments Incorporated
 sfra_gui.asm                                                         PAGE   31
@@ -1858,7 +1858,7 @@ sfra_gui.asm                                                         PAGE   31
     1610              
     1611              ;***************************************************************
     1612              ;* FNAME: __isnormalf                   FR SIZE:   0           *
-TMS320C2000 Assembler PC v22.6.2 Wed Dec 10 14:16:25 2025
+TMS320C2000 Assembler PC v22.6.2 Wed Dec 10 14:45:02 2025
 
 Copyright (c) 1996-2018 Texas Instruments Incorporated
 sfra_gui.asm                                                         PAGE   32
@@ -1918,7 +1918,7 @@ sfra_gui.asm                                                         PAGE   32
     1660                      .clink
     1661                      .global ||__isnormal||
     1662              
-TMS320C2000 Assembler PC v22.6.2 Wed Dec 10 14:16:25 2025
+TMS320C2000 Assembler PC v22.6.2 Wed Dec 10 14:45:02 2025
 
 Copyright (c) 1996-2018 Texas Instruments Incorporated
 sfra_gui.asm                                                         PAGE   33
@@ -1978,7 +1978,7 @@ sfra_gui.asm                                                         PAGE   33
     1714 0000000a 565B          LSR64     ACC:P,T               ; [CPU_ALU] |352| 
     1715 0000000b 2B41          MOV       *-SP[1],#0            ; [CPU_FPU] |352| 
     1716 0000000c 9000          ANDB      AL,#0                 ; [CPU_ALU] |352| 
-TMS320C2000 Assembler PC v22.6.2 Wed Dec 10 14:16:25 2025
+TMS320C2000 Assembler PC v22.6.2 Wed Dec 10 14:45:02 2025
 
 Copyright (c) 1996-2018 Texas Instruments Incorporated
 sfra_gui.asm                                                         PAGE   34
@@ -2038,7 +2038,7 @@ sfra_gui.asm                                                         PAGE   34
     1762                      .dwattr $C$DW$142, DW_AT_low_pc(||__isnanl||)
     1763                      .dwattr $C$DW$142, DW_AT_high_pc(0x00)
     1764                      .dwattr $C$DW$142, DW_AT_linkage_name("__isnanl")
-TMS320C2000 Assembler PC v22.6.2 Wed Dec 10 14:16:25 2025
+TMS320C2000 Assembler PC v22.6.2 Wed Dec 10 14:45:02 2025
 
 Copyright (c) 1996-2018 Texas Instruments Incorporated
 sfra_gui.asm                                                         PAGE   35
@@ -2098,7 +2098,7 @@ sfra_gui.asm                                                         PAGE   35
     1814 0000000f 6013          B         ||$C$L6||,NEQ         ; [CPU_ALU] |348| 
     1815                      ; branchcc occurs ; [] |348| 
     1816 00000010 06A6          MOVL      ACC,XAR6              ; [CPU_ALU] |348| 
-TMS320C2000 Assembler PC v22.6.2 Wed Dec 10 14:16:25 2025
+TMS320C2000 Assembler PC v22.6.2 Wed Dec 10 14:45:02 2025
 
 Copyright (c) 1996-2018 Texas Instruments Incorporated
 sfra_gui.asm                                                         PAGE   36
@@ -2158,7 +2158,7 @@ sfra_gui.asm                                                         PAGE   36
     1864                      .dwattr $C$DW$147, DW_AT_decl_column(0x18)
     1865                      .dwattr $C$DW$147, DW_AT_TI_max_frame_size(-2)
     1866                      .dwpsn  file "C:/ti/ccs2031/ccs/tools/compiler/ti-cgt-c2000_22.6.2.LTS/include/_defs.h",line 345,colu
-TMS320C2000 Assembler PC v22.6.2 Wed Dec 10 14:16:25 2025
+TMS320C2000 Assembler PC v22.6.2 Wed Dec 10 14:45:02 2025
 
 Copyright (c) 1996-2018 Texas Instruments Incorporated
 sfra_gui.asm                                                         PAGE   37
@@ -2218,7 +2218,7 @@ sfra_gui.asm                                                         PAGE   37
     1915                      ; return occurs ; [] 
     1916                      .dwattr $C$DW$147, DW_AT_TI_end_file("C:/ti/ccs2031/ccs/tools/compiler/ti-cgt-c2000_22.6.2.LTS/includ
     1917                      .dwattr $C$DW$147, DW_AT_TI_end_line(0x15a)
-TMS320C2000 Assembler PC v22.6.2 Wed Dec 10 14:16:25 2025
+TMS320C2000 Assembler PC v22.6.2 Wed Dec 10 14:45:02 2025
 
 Copyright (c) 1996-2018 Texas Instruments Incorporated
 sfra_gui.asm                                                         PAGE   38
@@ -2278,7 +2278,7 @@ sfra_gui.asm                                                         PAGE   38
     1970 00000002 06D4          MOVL      ACC,*+XAR4[2]         ; [CPU_ALU] |342| 
     1971 00000003 28AC          MOV       T,#48                 ; [CPU_ALU] |342| 
          00000004 0030 
-TMS320C2000 Assembler PC v22.6.2 Wed Dec 10 14:16:25 2025
+TMS320C2000 Assembler PC v22.6.2 Wed Dec 10 14:45:02 2025
 
 Copyright (c) 1996-2018 Texas Instruments Incorporated
 sfra_gui.asm                                                         PAGE   39
@@ -2338,7 +2338,7 @@ sfra_gui.asm                                                         PAGE   39
     2017 00000000               .sect   ".text:__isinfl"
     2018                      .clink
     2019                      .global ||__isinfl||
-TMS320C2000 Assembler PC v22.6.2 Wed Dec 10 14:16:25 2025
+TMS320C2000 Assembler PC v22.6.2 Wed Dec 10 14:45:02 2025
 
 Copyright (c) 1996-2018 Texas Instruments Incorporated
 sfra_gui.asm                                                         PAGE   40
@@ -2398,7 +2398,7 @@ sfra_gui.asm                                                         PAGE   40
     2071 00000009 2BAA          MOV       PH,#0                 ; [CPU_ALU] |379| 
     2072 0000000a 18AB          AND       PL,#0x7ff0            ; [CPU_ALU] |379| 
          0000000b 7FF0 
-TMS320C2000 Assembler PC v22.6.2 Wed Dec 10 14:16:25 2025
+TMS320C2000 Assembler PC v22.6.2 Wed Dec 10 14:45:02 2025
 
 Copyright (c) 1996-2018 Texas Instruments Incorporated
 sfra_gui.asm                                                         PAGE   41
@@ -2458,7 +2458,7 @@ sfra_gui.asm                                                         PAGE   41
     2119                      .dwattr $C$DW$161, DW_AT_high_pc(0x00)
     2120                      .dwattr $C$DW$161, DW_AT_linkage_name("__isinff")
     2121                      .dwattr $C$DW$161, DW_AT_external
-TMS320C2000 Assembler PC v22.6.2 Wed Dec 10 14:16:25 2025
+TMS320C2000 Assembler PC v22.6.2 Wed Dec 10 14:45:02 2025
 
 Copyright (c) 1996-2018 Texas Instruments Incorporated
 sfra_gui.asm                                                         PAGE   42
@@ -2518,7 +2518,7 @@ sfra_gui.asm                                                         PAGE   42
     2170 0000000f 92A6          MOV       AL,AR6                ; [CPU_ALU] |375| 
     2171              $C$DW$164       .dwtag  DW_TAG_TI_branch
     2172                      .dwattr $C$DW$164, DW_AT_low_pc(0x00)
-TMS320C2000 Assembler PC v22.6.2 Wed Dec 10 14:16:25 2025
+TMS320C2000 Assembler PC v22.6.2 Wed Dec 10 14:45:02 2025
 
 Copyright (c) 1996-2018 Texas Instruments Incorporated
 sfra_gui.asm                                                         PAGE   43
@@ -2578,7 +2578,7 @@ sfra_gui.asm                                                         PAGE   43
     2225                      .dwcfi  cfa_offset, -2
     2226                      .dwcfi  save_reg_to_mem, 26, 0
     2227 00000000 FE04          ADDB      SP,#4                 ; [CPU_ARAU] 
-TMS320C2000 Assembler PC v22.6.2 Wed Dec 10 14:16:25 2025
+TMS320C2000 Assembler PC v22.6.2 Wed Dec 10 14:45:02 2025
 
 Copyright (c) 1996-2018 Texas Instruments Incorporated
 sfra_gui.asm                                                         PAGE   44
@@ -2638,7 +2638,7 @@ sfra_gui.asm                                                         PAGE   44
     2272                      .dwattr $C$DW$165, DW_AT_TI_end_file("C:/ti/ccs2031/ccs/tools/compiler/ti-cgt-c2000_22.6.2.LTS/includ
     2273                      .dwattr $C$DW$165, DW_AT_TI_end_line(0x179)
     2274                      .dwattr $C$DW$165, DW_AT_TI_end_column(0x4a)
-TMS320C2000 Assembler PC v22.6.2 Wed Dec 10 14:16:25 2025
+TMS320C2000 Assembler PC v22.6.2 Wed Dec 10 14:45:02 2025
 
 Copyright (c) 1996-2018 Texas Instruments Incorporated
 sfra_gui.asm                                                         PAGE   45
@@ -2698,7 +2698,7 @@ sfra_gui.asm                                                         PAGE   45
          00000006 7FF0 
     2326 00000007 80AB          MOVZ      AR7,PL                ; [CPU_ALU] |339| 
     2327 00000008 FF20          MOV       ACC,#32752            ; [CPU_ALU] |339| 
-TMS320C2000 Assembler PC v22.6.2 Wed Dec 10 14:16:25 2025
+TMS320C2000 Assembler PC v22.6.2 Wed Dec 10 14:45:02 2025
 
 Copyright (c) 1996-2018 Texas Instruments Incorporated
 sfra_gui.asm                                                         PAGE   46
@@ -2758,7 +2758,7 @@ sfra_gui.asm                                                         PAGE   46
     2378              ;* R0    assigned to f
     2379              $C$DW$176       .dwtag  DW_TAG_variable
     2380                      .dwattr $C$DW$176, DW_AT_name("f")
-TMS320C2000 Assembler PC v22.6.2 Wed Dec 10 14:16:25 2025
+TMS320C2000 Assembler PC v22.6.2 Wed Dec 10 14:45:02 2025
 
 Copyright (c) 1996-2018 Texas Instruments Incorporated
 sfra_gui.asm                                                         PAGE   47
@@ -2818,7 +2818,7 @@ sfra_gui.asm                                                         PAGE   47
     2429              
     2430              
     2431              ;***************************************************************
-TMS320C2000 Assembler PC v22.6.2 Wed Dec 10 14:16:25 2025
+TMS320C2000 Assembler PC v22.6.2 Wed Dec 10 14:45:02 2025
 
 Copyright (c) 1996-2018 Texas Instruments Incorporated
 sfra_gui.asm                                                         PAGE   48
@@ -2878,7 +2878,7 @@ sfra_gui.asm                                                         PAGE   48
     2480                      .dwattr $C$DW$182, DW_AT_high_pc(0x00)
     2481                      .dwattr $C$DW$182, DW_AT_linkage_name("__fpclassifyl")
     2482                      .dwattr $C$DW$182, DW_AT_external
-TMS320C2000 Assembler PC v22.6.2 Wed Dec 10 14:16:25 2025
+TMS320C2000 Assembler PC v22.6.2 Wed Dec 10 14:45:02 2025
 
 Copyright (c) 1996-2018 Texas Instruments Incorporated
 sfra_gui.asm                                                         PAGE   49
@@ -2938,7 +2938,7 @@ sfra_gui.asm                                                         PAGE   49
     2534 0000000b 565B          LSR64     ACC:P,T               ; [CPU_ALU] |436| 
     2535 0000000c 18AB          AND       PL,#0x7ff0            ; [CPU_ALU] |436| 
          0000000d 7FF0 
-TMS320C2000 Assembler PC v22.6.2 Wed Dec 10 14:16:25 2025
+TMS320C2000 Assembler PC v22.6.2 Wed Dec 10 14:45:02 2025
 
 Copyright (c) 1996-2018 Texas Instruments Incorporated
 sfra_gui.asm                                                         PAGE   50
@@ -2998,7 +2998,7 @@ sfra_gui.asm                                                         PAGE   50
          00000036 0000 
     2581              $C$DW$187       .dwtag  DW_TAG_TI_branch
     2582                      .dwattr $C$DW$187, DW_AT_low_pc(0x00)
-TMS320C2000 Assembler PC v22.6.2 Wed Dec 10 14:16:25 2025
+TMS320C2000 Assembler PC v22.6.2 Wed Dec 10 14:45:02 2025
 
 Copyright (c) 1996-2018 Texas Instruments Incorporated
 sfra_gui.asm                                                         PAGE   51
@@ -3058,7 +3058,7 @@ sfra_gui.asm                                                         PAGE   51
     2628                      .dwattr $C$DW$182, DW_AT_TI_end_file("C:/ti/ccs2031/ccs/tools/compiler/ti-cgt-c2000_22.6.2.LTS/includ
     2629                      .dwattr $C$DW$182, DW_AT_TI_end_line(0x1bd)
     2630                      .dwattr $C$DW$182, DW_AT_TI_end_column(0x01)
-TMS320C2000 Assembler PC v22.6.2 Wed Dec 10 14:16:25 2025
+TMS320C2000 Assembler PC v22.6.2 Wed Dec 10 14:45:02 2025
 
 Copyright (c) 1996-2018 Texas Instruments Incorporated
 sfra_gui.asm                                                         PAGE   52
@@ -3118,7 +3118,7 @@ sfra_gui.asm                                                         PAGE   52
     2681 00000004 88A9          MOVZ      AR6,AL                ; [CPU_ALU] |402| 
     2682 00000005 FF20          MOV       ACC,#32640            ; [CPU_ALU] |402| 
          00000006 7F80 
-TMS320C2000 Assembler PC v22.6.2 Wed Dec 10 14:16:25 2025
+TMS320C2000 Assembler PC v22.6.2 Wed Dec 10 14:45:02 2025
 
 Copyright (c) 1996-2018 Texas Instruments Incorporated
 sfra_gui.asm                                                         PAGE   53
@@ -3178,7 +3178,7 @@ sfra_gui.asm                                                         PAGE   53
     2733 0000001e 28A9          MOV       AL,#-2                ; [CPU_ALU] |402| 
          0000001f FFFE 
     2734              $C$DW$196       .dwtag  DW_TAG_TI_branch
-TMS320C2000 Assembler PC v22.6.2 Wed Dec 10 14:16:25 2025
+TMS320C2000 Assembler PC v22.6.2 Wed Dec 10 14:45:02 2025
 
 Copyright (c) 1996-2018 Texas Instruments Incorporated
 sfra_gui.asm                                                         PAGE   54
@@ -3238,7 +3238,7 @@ sfra_gui.asm                                                         PAGE   54
     2787              
     2788              ||__fpclassify||:
     2789              $C$DW$200       .dwtag  DW_TAG_variable
-TMS320C2000 Assembler PC v22.6.2 Wed Dec 10 14:16:25 2025
+TMS320C2000 Assembler PC v22.6.2 Wed Dec 10 14:45:02 2025
 
 Copyright (c) 1996-2018 Texas Instruments Incorporated
 sfra_gui.asm                                                         PAGE   55
@@ -3298,7 +3298,7 @@ sfra_gui.asm                                                         PAGE   55
     2836                      .dwattr $C$DW$202, DW_AT_TI_call
     2837              
     2838 00000020 7640!         LCR       #||__c28xabi_cmpull|| ; [CPU_ALU] |419| 
-TMS320C2000 Assembler PC v22.6.2 Wed Dec 10 14:16:25 2025
+TMS320C2000 Assembler PC v22.6.2 Wed Dec 10 14:45:02 2025
 
 Copyright (c) 1996-2018 Texas Instruments Incorporated
 sfra_gui.asm                                                         PAGE   56
@@ -3358,7 +3358,7 @@ sfra_gui.asm                                                         PAGE   56
          00000046 FFFF 
     2884 00000047 18AA          AND       PH,#65535             ; [CPU_ALU] |419| 
          00000048 FFFF 
-TMS320C2000 Assembler PC v22.6.2 Wed Dec 10 14:16:25 2025
+TMS320C2000 Assembler PC v22.6.2 Wed Dec 10 14:45:02 2025
 
 Copyright (c) 1996-2018 Texas Instruments Incorporated
 sfra_gui.asm                                                         PAGE   57
@@ -3418,7 +3418,7 @@ sfra_gui.asm                                                         PAGE   57
     2935                      .gmember  ".text:__fpclassifyl"
     2936                      .endgroup
     2937                      .group    "__isfinite", 1
-TMS320C2000 Assembler PC v22.6.2 Wed Dec 10 14:16:25 2025
+TMS320C2000 Assembler PC v22.6.2 Wed Dec 10 14:45:02 2025
 
 Copyright (c) 1996-2018 Texas Instruments Incorporated
 sfra_gui.asm                                                         PAGE   58
@@ -3478,7 +3478,7 @@ sfra_gui.asm                                                         PAGE   58
     2990                      .endgroup
     2991                      .group    "__relaxed_fmodf", 1
     2992                      .gmember  ".text:__relaxed_fmodf"
-TMS320C2000 Assembler PC v22.6.2 Wed Dec 10 14:16:25 2025
+TMS320C2000 Assembler PC v22.6.2 Wed Dec 10 14:45:02 2025
 
 Copyright (c) 1996-2018 Texas Instruments Incorporated
 sfra_gui.asm                                                         PAGE   59
@@ -3538,7 +3538,7 @@ sfra_gui.asm                                                         PAGE   59
     3045                      .dwendentry
     3046                      .dwendtag $C$DW$CU
     3047              
-TMS320C2000 Assembler PC v22.6.2 Wed Dec 10 14:16:25 2025
+TMS320C2000 Assembler PC v22.6.2 Wed Dec 10 14:45:02 2025
 
 Copyright (c) 1996-2018 Texas Instruments Incorporated
 sfra_gui.asm                                                         PAGE   60
@@ -3598,7 +3598,7 @@ sfra_gui.asm                                                         PAGE   60
     3100                      .dwattr $C$DW$210, DW_AT_decl_column(0x10)
     3101              
     3102              $C$DW$211       .dwtag  DW_TAG_member
-TMS320C2000 Assembler PC v22.6.2 Wed Dec 10 14:16:25 2025
+TMS320C2000 Assembler PC v22.6.2 Wed Dec 10 14:45:02 2025
 
 Copyright (c) 1996-2018 Texas Instruments Incorporated
 sfra_gui.asm                                                         PAGE   61
@@ -3658,7 +3658,7 @@ sfra_gui.asm                                                         PAGE   61
     3155              
     3156              $C$DW$217       .dwtag  DW_TAG_member
     3157                      .dwattr $C$DW$217, DW_AT_type(*$C$DW$T$22)
-TMS320C2000 Assembler PC v22.6.2 Wed Dec 10 14:16:25 2025
+TMS320C2000 Assembler PC v22.6.2 Wed Dec 10 14:45:02 2025
 
 Copyright (c) 1996-2018 Texas Instruments Incorporated
 sfra_gui.asm                                                         PAGE   62
@@ -3718,7 +3718,7 @@ sfra_gui.asm                                                         PAGE   62
     3210              $C$DW$223       .dwtag  DW_TAG_member
     3211                      .dwattr $C$DW$223, DW_AT_type(*$C$DW$T$22)
     3212                      .dwattr $C$DW$223, DW_AT_name("storeGH")
-TMS320C2000 Assembler PC v22.6.2 Wed Dec 10 14:16:25 2025
+TMS320C2000 Assembler PC v22.6.2 Wed Dec 10 14:45:02 2025
 
 Copyright (c) 1996-2018 Texas Instruments Incorporated
 sfra_gui.asm                                                         PAGE   63
@@ -3778,7 +3778,7 @@ sfra_gui.asm                                                         PAGE   63
     3265              
     3266              $C$DW$TU$2      .dwtag  DW_TAG_type_unit
     3267                      .dwmtype  $C$DW$T$2
-TMS320C2000 Assembler PC v22.6.2 Wed Dec 10 14:16:25 2025
+TMS320C2000 Assembler PC v22.6.2 Wed Dec 10 14:45:02 2025
 
 Copyright (c) 1996-2018 Texas Instruments Incorporated
 sfra_gui.asm                                                         PAGE   64
@@ -3838,7 +3838,7 @@ sfra_gui.asm                                                         PAGE   64
     3320              
     3321                      .dwendtag $C$DW$TU$8
     3322              
-TMS320C2000 Assembler PC v22.6.2 Wed Dec 10 14:16:25 2025
+TMS320C2000 Assembler PC v22.6.2 Wed Dec 10 14:45:02 2025
 
 Copyright (c) 1996-2018 Texas Instruments Incorporated
 sfra_gui.asm                                                         PAGE   65
@@ -3898,7 +3898,7 @@ sfra_gui.asm                                                         PAGE   65
     3375                      .dwendtag $C$DW$TU$11
     3376              
     3377              
-TMS320C2000 Assembler PC v22.6.2 Wed Dec 10 14:16:25 2025
+TMS320C2000 Assembler PC v22.6.2 Wed Dec 10 14:45:02 2025
 
 Copyright (c) 1996-2018 Texas Instruments Incorporated
 sfra_gui.asm                                                         PAGE   66
@@ -3958,7 +3958,7 @@ sfra_gui.asm                                                         PAGE   66
     3430                      .dwendtag $C$DW$TU$13
     3431              
     3432              
-TMS320C2000 Assembler PC v22.6.2 Wed Dec 10 14:16:25 2025
+TMS320C2000 Assembler PC v22.6.2 Wed Dec 10 14:45:02 2025
 
 Copyright (c) 1996-2018 Texas Instruments Incorporated
 sfra_gui.asm                                                         PAGE   67
@@ -4018,7 +4018,7 @@ sfra_gui.asm                                                         PAGE   67
     3485                      .dwendtag $C$DW$TU$15
     3486              
     3487              
-TMS320C2000 Assembler PC v22.6.2 Wed Dec 10 14:16:25 2025
+TMS320C2000 Assembler PC v22.6.2 Wed Dec 10 14:45:02 2025
 
 Copyright (c) 1996-2018 Texas Instruments Incorporated
 sfra_gui.asm                                                         PAGE   68
@@ -4078,7 +4078,7 @@ sfra_gui.asm                                                         PAGE   68
     3540              
     3541                      .dwendtag $C$DW$TU$51
     3542              
-TMS320C2000 Assembler PC v22.6.2 Wed Dec 10 14:16:25 2025
+TMS320C2000 Assembler PC v22.6.2 Wed Dec 10 14:45:02 2025
 
 Copyright (c) 1996-2018 Texas Instruments Incorporated
 sfra_gui.asm                                                         PAGE   69
@@ -4138,7 +4138,7 @@ sfra_gui.asm                                                         PAGE   69
     3595              $C$DW$TU$55     .dwtag  DW_TAG_type_unit
     3596                      .dwmtype  $C$DW$T$55
     3597              $C$DW$T$55      .dwtag  DW_TAG_pointer_type
-TMS320C2000 Assembler PC v22.6.2 Wed Dec 10 14:16:25 2025
+TMS320C2000 Assembler PC v22.6.2 Wed Dec 10 14:45:02 2025
 
 Copyright (c) 1996-2018 Texas Instruments Incorporated
 sfra_gui.asm                                                         PAGE   70

@@ -1,4 +1,4 @@
-TMS320C2000 Assembler PC v22.6.2 Wed Dec 10 14:16:26 2025
+TMS320C2000 Assembler PC v22.6.2 Wed Dec 10 14:45:02 2025
 
 Copyright (c) 1996-2018 Texas Instruments Incorporated
 C:/ti/C2000Ware_MotorControl_SDK_5_04_00_00/c2000ware/device_support/f28002x/common/source/f28002x_codestartbranch.asm PAGE    1
@@ -58,7 +58,7 @@ C:/ti/C2000Ware_MotorControl_SDK_5_04_00_00/c2000ware/device_support/f28002x/com
       53              ;// OWNER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, 
       54              ;// SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT 
       55              ;// LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE,
-TMS320C2000 Assembler PC v22.6.2 Wed Dec 10 14:16:26 2025
+TMS320C2000 Assembler PC v22.6.2 Wed Dec 10 14:45:02 2025
 
 Copyright (c) 1996-2018 Texas Instruments Incorporated
 C:/ti/C2000Ware_MotorControl_SDK_5_04_00_00/c2000ware/device_support/f28002x/common/source/f28002x_codestartbranch.asm PAGE    2
@@ -118,7 +118,7 @@ C:/ti/C2000Ware_MotorControl_SDK_5_04_00_00/c2000ware/device_support/f28002x/com
      105              
      106              ;end wd_disable
      107              
-TMS320C2000 Assembler PC v22.6.2 Wed Dec 10 14:16:26 2025
+TMS320C2000 Assembler PC v22.6.2 Wed Dec 10 14:45:02 2025
 
 Copyright (c) 1996-2018 Texas Instruments Incorporated
 C:/ti/C2000Ware_MotorControl_SDK_5_04_00_00/c2000ware/device_support/f28002x/common/source/f28002x_codestartbranch.asm PAGE    3
