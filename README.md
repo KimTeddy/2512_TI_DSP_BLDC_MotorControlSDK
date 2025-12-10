@@ -1,13 +1,13 @@
 # 2512_TI_DSP_BLDC_MotorControlSDK
 
-## LAUNCHXL-F280025C\251210_LAUNCHXL-F280025C
+## 1. LAUNCHXL-F280025C\251210_LAUNCHXL-F280025C
 ### 1. Prepare
 - HW
     - **MCU Board:** [LAUNCHXL-F280025C](https://www.ti.com/tool/ko-kr/LAUNCHXL-F280025C)
         - PDF) [pinout](https://www.ti.com/lit/pdf/SPRUIW5); [User’s Guide](https://www.ti.com/lit/pdf/SPRUIW8); [MCU Datasheet](https://www.ti.com/lit/pdf/SPRSP45)
     - **FET Board:** [BOOSTXL-3PHGANINV](https://www.ti.com/tool/BOOSTXL-3PHGANINV)
         - PDF) [Schematic](https://www.ti.com/lit/pdf/SLURAY0); [User’s Guide](https://www.ti.com/lit/pdf/SLUUBP1)
-    - **Motor:** [BA112PE60E](https://www.famotor.co.kr/shop/item.php?it_id=1731379678)
+    - **Motor:** [BA112PE60E](https://www.famotor.co.kr/shop/item.php?it_id=1731379678): 48V, 28pole, 16:1, Incremental Encoder(500)
 - SW
     1. **Install Code Composer Studio (IDE)**
         - [CCSTUDIO](https://www.google.com/aclk?sa=L&ai=DChsSEwjLvuX3tbKRAxXZbA8CHbiYB7IYACICCAEQABoCdGI&ae=2&co=1&ase=2&gclid=Cj0KCQiArt_JBhCTARIsADQZaykamSY7W9hwekfWihyR_aKRiJbgdPFoliDW8EVLIi7wJOEvnzX-rFAaAnE3EALw_wcB&cid=CAASuwHkaMwHggYmCDcd0jU8WGJ4qDVYHtfL5JTGXK2zx55FGV20DkzUMYxWKniSA8umwJKeMntW9xQlZmLmYEE-YzDr1GI9FbiTP_hUYx6GosRiHJ8yXwPn9mn5Op1PL112WyT31KdP0QQJsFBcSAv9ca1v42tCTZJ4KJEX_QvhREuNcY3vnJz3hRgxcmPGDeCv0hodiDpcyuHkFk5QhL482Vbpw0TLtXK93dry_e5djPe95WIw0ruPfLZicJJG&cce=2&category=acrcp_v1_71&sig=AOD64_0K2bShgf8Yga8x_0VIvphuc8lTgQ&q&nis=4&adurl&ved=2ahUKEwjS4N_3tbKRAxXIk1YBHazcHQAQ0Qx6BAgPEAE)
