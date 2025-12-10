@@ -1,0 +1,8 @@
+# This is an auto-generated file - do not add it to source-control
+
+CompileFlags:
+   CompilationDatabase: F28002x_FLASH/.clangd
+
+Diagnostics:
+   Suppress: '*'
+
