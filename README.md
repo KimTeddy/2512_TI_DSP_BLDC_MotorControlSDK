@@ -4,7 +4,7 @@
 ### 1. Prepare
 - HW
     - **MCU Board:** [LAUNCHXL-F280025C](https://www.ti.com/tool/ko-kr/LAUNCHXL-F280025C)
-        - PDF) [pinout](https://www.ti.com/lit/pdf/SPRUIW5); [User’s Guide](https://www.ti.com/lit/pdf/SPRUIW8); [MCU Datasheet](https://www.ti.com/lit/pdf/SPRSP45)
+        - PDF) [pinout](https://www.ti.com/lit/pdf/SPRUIW5); [User’s Guide](https://www.ti.com/lit/pdf/SPRUIW8); [Schematic](https://www.ti.com/lit/sprr425); [MCU Datasheet](https://www.ti.com/lit/pdf/SPRSP45)
     - **FET Board:** [BOOSTXL-3PHGANINV](https://www.ti.com/tool/BOOSTXL-3PHGANINV)
         - PDF) [Schematic](https://www.ti.com/lit/pdf/SLURAY0); [User’s Guide](https://www.ti.com/lit/pdf/SLUUBP1)
     - **Motor:** [BA112PE60E](https://www.famotor.co.kr/shop/item.php?it_id=1731379678): 48V, 28pole, 16:1, Incremental Encoder(500)
