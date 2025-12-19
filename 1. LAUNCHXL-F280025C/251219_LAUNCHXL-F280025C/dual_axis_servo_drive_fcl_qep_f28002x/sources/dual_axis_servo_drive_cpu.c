@@ -437,7 +437,7 @@ static inline void buildLevel3(MOTOR_Vars_t *pMotor)
     FCL_runComplexCtrlWrap(pMotor);
 #endif
 
-    //
+    // zero electrical angle로 정렬
     // Alignment Routine: this routine aligns the motor to zero electrical
     // angle and in case of QEP also finds the index location and initializes
     // the angle w.r.t. the index location
@@ -485,7 +485,7 @@ static inline void buildLevel3(MOTOR_Vars_t *pMotor)
         FCL_resetController(pMotor);
     }
 
-    fclRampControl(&pMotor->rc);
+    fclRampControl(&pMotor->rc);//ramp generator = 부드럽게 증감
 
     //
     // Connect inputs of the RAMP GEN module and call the ramp generator module
