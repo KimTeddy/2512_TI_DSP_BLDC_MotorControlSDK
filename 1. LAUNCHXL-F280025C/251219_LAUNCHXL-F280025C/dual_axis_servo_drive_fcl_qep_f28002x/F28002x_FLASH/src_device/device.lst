@@ -1,0 +1,1789 @@
+TMS320C2000 Assembler PC v22.6.2 Tue Dec 16 13:51:46 2025
+
+Copyright (c) 1996-2018 Texas Instruments Incorporated
+device.asm                                                           PAGE    1
+
+       1              ;***************************************************************
+       2              ;* TMS320C2000 G3 C/C++ Codegen                               PC v22.6.2.LTS *
+       3              ;* Date/Time created: Tue Dec 16 13:51:46 2025                 *
+       4              ;***************************************************************
+       5                      .compiler_opts --abi=eabi --diag_wrap=off --float_support=fpu32 --hll_source=on --idiv_support=idiv0 
+       6                      .asg    XAR2, FP
+       7              
+       8              $C$DW$CU        .dwtag  DW_TAG_compile_unit
+       9                      .dwattr $C$DW$CU, DW_AT_name("C:/ti/C2000Ware_MotorControl_SDK_5_04_00_00/c2000ware/device_support/f2
+      10                      .dwattr $C$DW$CU, DW_AT_producer("TI TMS320C2000 G3 C/C++ Codegen PC v22.6.2.LTS Copyright (c) 1996-2
+      11                      .dwattr $C$DW$CU, DW_AT_TI_version(0x01)
+      12                      .dwattr $C$DW$CU, DW_AT_comp_dir("C:\Users\Teddy\Documents\GitHub\2512_LAUNCHXL-F280025C\251210_LAUNC
+      13              
+      14              $C$DW$1 .dwtag  DW_TAG_subprogram
+      15                      .dwattr $C$DW$1, DW_AT_name("Flash_initModule")
+      16                      .dwattr $C$DW$1, DW_AT_linkage_name("Flash_initModule")
+      17                      .dwattr $C$DW$1, DW_AT_declaration
+      18                      .dwattr $C$DW$1, DW_AT_external
+      19                      .dwattr $C$DW$1, DW_AT_decl_file("C:/ti/C2000Ware_MotorControl_SDK_5_04_00_00/c2000ware/driverlib/f28
+      20                      .dwattr $C$DW$1, DW_AT_decl_line(0x642)
+      21                      .dwattr $C$DW$1, DW_AT_decl_column(0x01)
+      22              $C$DW$2 .dwtag  DW_TAG_formal_parameter
+      23                      .dwattr $C$DW$2, DW_AT_type(*$C$DW$T$36)
+      24              
+      25              $C$DW$3 .dwtag  DW_TAG_formal_parameter
+      26                      .dwattr $C$DW$3, DW_AT_type(*$C$DW$T$36)
+      27              
+      28              $C$DW$4 .dwtag  DW_TAG_formal_parameter
+      29                      .dwattr $C$DW$4, DW_AT_type(*$C$DW$T$39)
+      30              
+      31                      .dwendtag $C$DW$1
+      32              
+      33              $C$DW$5 .dwtag  DW_TAG_variable
+      34                      .dwattr $C$DW$5, DW_AT_name("RamfuncsLoadStart")
+      35                      .dwattr $C$DW$5, DW_AT_linkage_name("RamfuncsLoadStart")
+      36                      .dwattr $C$DW$5, DW_AT_type(*$C$DW$T$39)
+      37                      .dwattr $C$DW$5, DW_AT_declaration
+      38                      .dwattr $C$DW$5, DW_AT_external
+      39                      .dwattr $C$DW$5, DW_AT_decl_file("C:/ti/C2000Ware_MotorControl_SDK_5_04_00_00/c2000ware/device_suppor
+      40                      .dwattr $C$DW$5, DW_AT_decl_line(0x165)
+      41                      .dwattr $C$DW$5, DW_AT_decl_column(0x11)
+      42              
+      43              $C$DW$6 .dwtag  DW_TAG_variable
+      44                      .dwattr $C$DW$6, DW_AT_name("RamfuncsLoadSize")
+      45                      .dwattr $C$DW$6, DW_AT_linkage_name("RamfuncsLoadSize")
+      46                      .dwattr $C$DW$6, DW_AT_type(*$C$DW$T$39)
+      47                      .dwattr $C$DW$6, DW_AT_declaration
+      48                      .dwattr $C$DW$6, DW_AT_external
+      49                      .dwattr $C$DW$6, DW_AT_decl_file("C:/ti/C2000Ware_MotorControl_SDK_5_04_00_00/c2000ware/device_suppor
+      50                      .dwattr $C$DW$6, DW_AT_decl_line(0x167)
+      51                      .dwattr $C$DW$6, DW_AT_decl_column(0x11)
+      52              
+      53              $C$DW$7 .dwtag  DW_TAG_variable
+      54                      .dwattr $C$DW$7, DW_AT_name("RamfuncsRunStart")
+      55                      .dwattr $C$DW$7, DW_AT_linkage_name("RamfuncsRunStart")
+TMS320C2000 Assembler PC v22.6.2 Tue Dec 16 13:51:46 2025
+
+Copyright (c) 1996-2018 Texas Instruments Incorporated
+device.asm                                                           PAGE    2
+
+      56                      .dwattr $C$DW$7, DW_AT_type(*$C$DW$T$39)
+      57                      .dwattr $C$DW$7, DW_AT_declaration
+      58                      .dwattr $C$DW$7, DW_AT_external
+      59                      .dwattr $C$DW$7, DW_AT_decl_file("C:/ti/C2000Ware_MotorControl_SDK_5_04_00_00/c2000ware/device_suppor
+      60                      .dwattr $C$DW$7, DW_AT_decl_line(0x168)
+      61                      .dwattr $C$DW$7, DW_AT_decl_column(0x11)
+      62              
+      63              
+      64              $C$DW$8 .dwtag  DW_TAG_subprogram
+      65                      .dwattr $C$DW$8, DW_AT_name("SysCtl_setClock")
+      66                      .dwattr $C$DW$8, DW_AT_linkage_name("SysCtl_setClock")
+      67                      .dwattr $C$DW$8, DW_AT_type(*$C$DW$T$62)
+      68                      .dwattr $C$DW$8, DW_AT_declaration
+      69                      .dwattr $C$DW$8, DW_AT_external
+      70                      .dwattr $C$DW$8, DW_AT_decl_file("C:\ti\C2000Ware_MotorControl_SDK_5_04_00_00\c2000ware\driverlib\f28
+      71                      .dwattr $C$DW$8, DW_AT_decl_line(0xd1b)
+      72                      .dwattr $C$DW$8, DW_AT_decl_column(0x01)
+      73              $C$DW$9 .dwtag  DW_TAG_formal_parameter
+      74                      .dwattr $C$DW$9, DW_AT_type(*$C$DW$T$36)
+      75              
+      76                      .dwendtag $C$DW$8
+      77              
+      78              
+      79              $C$DW$10        .dwtag  DW_TAG_subprogram
+      80                      .dwattr $C$DW$10, DW_AT_name("DCC_verifyClockFrequency")
+      81                      .dwattr $C$DW$10, DW_AT_linkage_name("DCC_verifyClockFrequency")
+      82                      .dwattr $C$DW$10, DW_AT_type(*$C$DW$T$62)
+      83                      .dwattr $C$DW$10, DW_AT_declaration
+      84                      .dwattr $C$DW$10, DW_AT_external
+      85                      .dwattr $C$DW$10, DW_AT_decl_file("C:/ti/C2000Ware_MotorControl_SDK_5_04_00_00/c2000ware/driverlib/f2
+      86                      .dwattr $C$DW$10, DW_AT_decl_line(0x364)
+      87                      .dwattr $C$DW$10, DW_AT_decl_column(0x01)
+      88              $C$DW$11        .dwtag  DW_TAG_formal_parameter
+      89                      .dwattr $C$DW$11, DW_AT_type(*$C$DW$T$36)
+      90              
+      91              $C$DW$12        .dwtag  DW_TAG_formal_parameter
+      92                      .dwattr $C$DW$12, DW_AT_type(*$C$DW$T$24)
+      93              
+      94              $C$DW$13        .dwtag  DW_TAG_formal_parameter
+      95                      .dwattr $C$DW$13, DW_AT_type(*$C$DW$T$52)
+      96              
+      97              $C$DW$14        .dwtag  DW_TAG_formal_parameter
+      98                      .dwattr $C$DW$14, DW_AT_type(*$C$DW$T$26)
+      99              
+     100              $C$DW$15        .dwtag  DW_TAG_formal_parameter
+     101                      .dwattr $C$DW$15, DW_AT_type(*$C$DW$T$52)
+     102              
+     103              $C$DW$16        .dwtag  DW_TAG_formal_parameter
+     104                      .dwattr $C$DW$16, DW_AT_type(*$C$DW$T$52)
+     105              
+     106              $C$DW$17        .dwtag  DW_TAG_formal_parameter
+     107                      .dwattr $C$DW$17, DW_AT_type(*$C$DW$T$52)
+     108              
+     109              $C$DW$18        .dwtag  DW_TAG_formal_parameter
+     110                      .dwattr $C$DW$18, DW_AT_type(*$C$DW$T$52)
+TMS320C2000 Assembler PC v22.6.2 Tue Dec 16 13:51:46 2025
+
+Copyright (c) 1996-2018 Texas Instruments Incorporated
+device.asm                                                           PAGE    3
+
+     111              
+     112                      .dwendtag $C$DW$10
+     113              
+     114              
+     115              $C$DW$19        .dwtag  DW_TAG_subprogram
+     116                      .dwattr $C$DW$19, DW_AT_name("__eallow")
+     117                      .dwattr $C$DW$19, DW_AT_linkage_name("__eallow")
+     118                      .dwattr $C$DW$19, DW_AT_declaration
+     119                      .dwattr $C$DW$19, DW_AT_external
+     120                      .dwendtag $C$DW$19
+     121              
+     122              
+     123              $C$DW$20        .dwtag  DW_TAG_subprogram
+     124                      .dwattr $C$DW$20, DW_AT_name("__edis")
+     125                      .dwattr $C$DW$20, DW_AT_linkage_name("__edis")
+     126                      .dwattr $C$DW$20, DW_AT_declaration
+     127                      .dwattr $C$DW$20, DW_AT_external
+     128                      .dwendtag $C$DW$20
+     129              
+     130              ;       C:\ti\ccs2031\ccs\tools\compiler\ti-cgt-c2000_22.6.2.LTS\bin\opt2000.exe C:\\Users\\Teddy\\AppData\\L
+     131              ;       C:\ti\ccs2031\ccs\tools\compiler\ti-cgt-c2000_22.6.2.LTS\bin\acia2000.exe -@C:\\Users\\Teddy\\AppData
+     132 00000000               .sect   ".text:__error__"
+     133                      .clink
+     134                      .global ||__error__||
+     135              
+     136              $C$DW$21        .dwtag  DW_TAG_subprogram
+     137                      .dwattr $C$DW$21, DW_AT_name("__error__")
+     138                      .dwattr $C$DW$21, DW_AT_low_pc(||__error__||)
+     139                      .dwattr $C$DW$21, DW_AT_high_pc(0x00)
+     140                      .dwattr $C$DW$21, DW_AT_linkage_name("__error__")
+     141                      .dwattr $C$DW$21, DW_AT_external
+     142                      .dwattr $C$DW$21, DW_AT_decl_file("C:/ti/C2000Ware_MotorControl_SDK_5_04_00_00/c2000ware/device_suppo
+     143                      .dwattr $C$DW$21, DW_AT_decl_line(0x118)
+     144                      .dwattr $C$DW$21, DW_AT_decl_column(0x06)
+     145                      .dwattr $C$DW$21, DW_AT_TI_max_frame_size(-2)
+     146                      .dwpsn  file "C:/ti/C2000Ware_MotorControl_SDK_5_04_00_00/c2000ware/device_support/f28002x/common/sou
+     147              
+     148                      .dwfde $C$DW$CIE, ||__error__||
+     149              $C$DW$22        .dwtag  DW_TAG_formal_parameter
+     150                      .dwattr $C$DW$22, DW_AT_name("filename")
+     151                      .dwattr $C$DW$22, DW_AT_type(*$C$DW$T$45)
+     152                      .dwattr $C$DW$22, DW_AT_location[DW_OP_reg12]
+     153              
+     154              $C$DW$23        .dwtag  DW_TAG_formal_parameter
+     155                      .dwattr $C$DW$23, DW_AT_name("line")
+     156                      .dwattr $C$DW$23, DW_AT_type(*$C$DW$T$36)
+     157                      .dwattr $C$DW$23, DW_AT_location[DW_OP_reg0]
+     158              
+     159              
+     160              ;***************************************************************
+     161              ;* FNAME: __error__                     FR SIZE:   0           *
+     162              ;*                                                             *
+     163              ;* FUNCTION ENVIRONMENT                                        *
+     164              ;*                                                             *
+     165              ;* FUNCTION PROPERTIES                                         *
+TMS320C2000 Assembler PC v22.6.2 Tue Dec 16 13:51:46 2025
+
+Copyright (c) 1996-2018 Texas Instruments Incorporated
+device.asm                                                           PAGE    4
+
+     166              ;*                            0 Parameter,  0 Auto,  0 SOE     *
+     167              ;***************************************************************
+     168              
+     169 00000000       ||__error__||:
+     170                      .dwcfi  cfa_offset, -2
+     171                      .dwcfi  save_reg_to_mem, 26, 0
+     172 00000000 7625   ESTOP0
+     173 00000001 FF69          SPM       #0                    ; [CPU_ALU] 
+     174              $C$DW$24        .dwtag  DW_TAG_TI_branch
+     175                      .dwattr $C$DW$24, DW_AT_low_pc(0x00)
+     176                      .dwattr $C$DW$24, DW_AT_TI_return
+     177              
+     178 00000002 0006          LRETR     ; [CPU_ALU] 
+     179                      ; return occurs ; [] 
+     180                      .dwattr $C$DW$21, DW_AT_TI_end_file("C:/ti/C2000Ware_MotorControl_SDK_5_04_00_00/c2000ware/device_sup
+     181                      .dwattr $C$DW$21, DW_AT_TI_end_line(0x11f)
+     182                      .dwattr $C$DW$21, DW_AT_TI_end_column(0x01)
+     183                      .dwendentry
+     184                      .dwendtag $C$DW$21
+     185              
+     186 00000000               .sect   ".text:Device_verifyXTAL"
+     187                      .clink
+     188                      .global ||Device_verifyXTAL||
+     189              
+     190              $C$DW$25        .dwtag  DW_TAG_subprogram
+     191                      .dwattr $C$DW$25, DW_AT_name("Device_verifyXTAL")
+     192                      .dwattr $C$DW$25, DW_AT_low_pc(||Device_verifyXTAL||)
+     193                      .dwattr $C$DW$25, DW_AT_high_pc(0x00)
+     194                      .dwattr $C$DW$25, DW_AT_linkage_name("Device_verifyXTAL")
+     195                      .dwattr $C$DW$25, DW_AT_external
+     196                      .dwattr $C$DW$25, DW_AT_type(*$C$DW$T$62)
+     197                      .dwattr $C$DW$25, DW_AT_decl_file("C:/ti/C2000Ware_MotorControl_SDK_5_04_00_00/c2000ware/device_suppo
+     198                      .dwattr $C$DW$25, DW_AT_decl_line(0xe9)
+     199                      .dwattr $C$DW$25, DW_AT_decl_column(0x06)
+     200                      .dwattr $C$DW$25, DW_AT_TI_max_frame_size(-4)
+     201                      .dwpsn  file "C:/ti/C2000Ware_MotorControl_SDK_5_04_00_00/c2000ware/device_support/f28002x/common/sou
+     202              
+     203                      .dwfde $C$DW$CIE, ||Device_verifyXTAL||
+     204              $C$DW$26        .dwtag  DW_TAG_formal_parameter
+     205                      .dwattr $C$DW$26, DW_AT_name("freq")
+     206                      .dwattr $C$DW$26, DW_AT_type(*$C$DW$T$16)
+     207                      .dwattr $C$DW$26, DW_AT_location[DW_OP_regx 0x2b]
+     208              
+     209              
+     210              ;***************************************************************
+     211              ;* FNAME: Device_verifyXTAL             FR SIZE:   2           *
+     212              ;*                                                             *
+     213              ;* FUNCTION ENVIRONMENT                                        *
+     214              ;*                                                             *
+     215              ;* FUNCTION PROPERTIES                                         *
+     216              ;*                            2 Parameter,  0 Auto,  0 SOE     *
+     217              ;***************************************************************
+     218              
+     219              ||Device_verifyXTAL||:
+     220              ;* R1    assigned to freq
+TMS320C2000 Assembler PC v22.6.2 Tue Dec 16 13:51:46 2025
+
+Copyright (c) 1996-2018 Texas Instruments Incorporated
+device.asm                                                           PAGE    5
+
+     221              $C$DW$27        .dwtag  DW_TAG_variable
+     222                      .dwattr $C$DW$27, DW_AT_name("freq")
+     223                      .dwattr $C$DW$27, DW_AT_type(*$C$DW$T$61)
+     224                      .dwattr $C$DW$27, DW_AT_location[DW_OP_regx 0x2f]
+     225              
+     226                      .dwcfi  cfa_offset, -2
+     227                      .dwcfi  save_reg_to_mem, 26, 0
+     228 00000000 FE02          ADDB      SP,#2                 ; [CPU_ARAU] 
+     229                      .dwcfi  cfa_offset, -4
+     230 00000001 E6CF          MOV32     R1H,R0H               ; [CPU_FPU] |234| 
+         00000002 0001 
+     231                      .dwpsn  file "C:\ti\C2000Ware_MotorControl_SDK_5_04_00_00\c2000ware\driverlib\f28002x\driverlib\sysct
+     232 00000003 7622          EALLOW    ; [CPU_ALU] |1266| 
+     233                      .dwpsn  file "C:\ti\C2000Ware_MotorControl_SDK_5_04_00_00\c2000ware\driverlib\f28002x\driverlib\sysct
+     234 00000004 8F05          MOVL      XAR4,#381490          ; [CPU_ARAU] |1274| 
+         00000005 D232 
+     235 00000006 18C4          AND       *+XAR4[0],#0xfffe     ; [CPU_ALU] |1274| 
+         00000007 FFFE 
+     236 00000008 F627   RPT #39 || NOP
+         00000009 7700 
+     237                      .dwpsn  file "C:\ti\C2000Ware_MotorControl_SDK_5_04_00_00\c2000ware\driverlib\f28002x\driverlib\sysct
+     238 0000000a 761A          EDIS      ; [CPU_ALU] |1286| 
+     239                      .dwpsn  file "C:\ti\C2000Ware_MotorControl_SDK_5_04_00_00\c2000ware\driverlib\f28002x\driverlib\sysct
+     240 0000000b 8F45          MOVL      XAR5,#381488          ; [CPU_ARAU] |1229| 
+         0000000c D230 
+     241                      .dwpsn  file "C:\ti\C2000Ware_MotorControl_SDK_5_04_00_00\c2000ware\driverlib\f28002x\driverlib\sysct
+     242 0000000d 8F05          MOVL      XAR4,#381488          ; [CPU_ARAU] |1242| 
+         0000000e D230 
+     243 0000000f 06C4          MOVL      ACC,*+XAR4[0]         ; [CPU_ALU] |1242| 
+     244 00000010 5101          OR        AH,#1                 ; [CPU_ALU] |1242| 
+     245 00000011 1EC4          MOVL      *+XAR4[0],ACC         ; [CPU_ALU] |1242| 
+     246                      .dwpsn  file "C:\ti\C2000Ware_MotorControl_SDK_5_04_00_00\c2000ware\driverlib\f28002x\driverlib\sysct
+     247 00000012 CCC5          AND       AL,*+XAR5[0],#0x07ff  ; [CPU_ALU] |1229| 
+         00000013 07FF 
+     248 00000014 88A9          MOVZ      AR6,AL                ; [CPU_ALU] |1229| 
+     249 00000015 8F00          MOVL      XAR4,#2047            ; [CPU_ARAU] |1229| 
+         00000016 07FF 
+     250 00000017 A8A9          MOVL      ACC,XAR4              ; [CPU_ALU] |1229| 
+     251 00000018 0FA6          CMPL      ACC,XAR6              ; [CPU_ALU] |1229| 
+     252 00000019 6107          B         ||$C$L2||,EQ          ; [CPU_ALU] |1229| 
+     253                      ; branchcc occurs ; [] |1229| 
+     254 0000001a       ||$C$L1||:    
+     255 0000001a CCC5          AND       AL,*+XAR5[0],#0x07ff  ; [CPU_ALU] |1229| 
+         0000001b 07FF 
+     256 0000001c 88A9          MOVZ      AR6,AL                ; [CPU_ALU] |1229| 
+     257 0000001d A8A9          MOVL      ACC,XAR4              ; [CPU_ALU] |1229| 
+     258 0000001e 0FA6          CMPL      ACC,XAR6              ; [CPU_ALU] |1229| 
+     259 0000001f 60FB          B         ||$C$L1||,NEQ         ; [CPU_ALU] |1229| 
+     260                      ; branchcc occurs ; [] |1229| 
+     261 00000020       ||$C$L2||:    
+     262                      .dwpsn  file "C:\ti\C2000Ware_MotorControl_SDK_5_04_00_00\c2000ware\driverlib\f28002x\driverlib\sysct
+     263 00000020 7622          EALLOW    ; [CPU_ALU] |916| 
+     264                      .dwpsn  file "C:\ti\C2000Ware_MotorControl_SDK_5_04_00_00\c2000ware\driverlib\f28002x\driverlib\sysct
+     265 00000021 0201          MOVB      ACC,#1                ; [CPU_ALU] |921| 
+     266 00000022 8F05          MOVL      XAR4,#381772          ; [CPU_ARAU] |921| 
+TMS320C2000 Assembler PC v22.6.2 Tue Dec 16 13:51:46 2025
+
+Copyright (c) 1996-2018 Texas Instruments Incorporated
+device.asm                                                           PAGE    6
+
+         00000023 D34C 
+     267 00000024 98C4          OR        *+XAR4[0],AL          ; [CPU_ALU] |921| 
+     268 00000025 99CC          OR        *+XAR4[1],AH          ; [CPU_ALU] |921| 
+     269                      .dwpsn  file "C:\ti\C2000Ware_MotorControl_SDK_5_04_00_00\c2000ware\driverlib\f28002x\driverlib\sysct
+     270 00000026 761A          EDIS      ; [CPU_ALU] |922| 
+     271 00000027 F605   RPT #5 || NOP
+         00000028 7700 
+     272                      .dwpsn  file "C:/ti/C2000Ware_MotorControl_SDK_5_04_00_00/c2000ware/device_support/f28002x/common/sou
+     273 00000029 E802          MOVIZ     R0H,#16672            ; [CPU_FPU] |268| 
+         0000002a 0900 
+     274 0000002b 7685          MOVL      XAR6,#386816          ; [CPU_ARAU] |268| 
+         0000002c E700 
+     275 0000002d D500          MOVB      XAR5,#0               ; [CPU_ALU] |268| 
+     276 0000002e E801          MOVIZ     R2H,#16256            ; [CPU_FPU] |268| 
+         0000002f FC02 
+     277 00000030 E802          MOVIZ     R3H,#16672            ; [CPU_FPU] |268| 
+         00000031 0903 
+     278 00000032 FF69          SPM       #0                    ; [CPU_ALU] 
+     279 00000033 D403          MOVB      XAR4,#3               ; [CPU_ALU] |268| 
+     280 00000034 E203          MOV32     *-SP[2],R0H           ; [CPU_FPU] |268| 
+         00000035 0042 
+     281 00000036 06A6          MOVL      ACC,XAR6              ; [CPU_ALU] |268| 
+     282 00000037 E802          MOVIZ     R0H,#16672            ; [CPU_FPU] |268| 
+         00000038 0900 
+     283              $C$DW$28        .dwtag  DW_TAG_TI_branch
+     284                      .dwattr $C$DW$28, DW_AT_low_pc(0x00)
+     285                      .dwattr $C$DW$28, DW_AT_name("DCC_verifyClockFrequency")
+     286                      .dwattr $C$DW$28, DW_AT_TI_call
+     287              
+     288 00000039 7640!         LCR       #||DCC_verifyClockFrequency|| ; [CPU_ALU] |268| 
+         0000003a 0000 
+     289                      ; call occurs [#||DCC_verifyClockFrequency||] ; [] |268| 
+     290 0000003b FE82          SUBB      SP,#2                 ; [CPU_ARAU] 
+     291                      .dwcfi  cfa_offset, -2
+     292              $C$DW$29        .dwtag  DW_TAG_TI_branch
+     293                      .dwattr $C$DW$29, DW_AT_low_pc(0x00)
+     294                      .dwattr $C$DW$29, DW_AT_TI_return
+     295              
+     296 0000003c 0006          LRETR     ; [CPU_ALU] 
+     297                      ; return occurs ; [] 
+     298                      .dwattr $C$DW$25, DW_AT_TI_end_file("C:/ti/C2000Ware_MotorControl_SDK_5_04_00_00/c2000ware/device_sup
+     299                      .dwattr $C$DW$25, DW_AT_TI_end_line(0x111)
+     300                      .dwattr $C$DW$25, DW_AT_TI_end_column(0x01)
+     301                      .dwendentry
+     302                      .dwendtag $C$DW$25
+     303              
+     304 00000000               .sect   ".text:Device_initGPIO"
+     305                      .clink
+     306                      .global ||Device_initGPIO||
+     307              
+     308              $C$DW$30        .dwtag  DW_TAG_subprogram
+     309                      .dwattr $C$DW$30, DW_AT_name("Device_initGPIO")
+     310                      .dwattr $C$DW$30, DW_AT_low_pc(||Device_initGPIO||)
+     311                      .dwattr $C$DW$30, DW_AT_high_pc(0x00)
+     312                      .dwattr $C$DW$30, DW_AT_linkage_name("Device_initGPIO")
+TMS320C2000 Assembler PC v22.6.2 Tue Dec 16 13:51:46 2025
+
+Copyright (c) 1996-2018 Texas Instruments Incorporated
+device.asm                                                           PAGE    7
+
+     313                      .dwattr $C$DW$30, DW_AT_external
+     314                      .dwattr $C$DW$30, DW_AT_decl_file("C:/ti/C2000Ware_MotorControl_SDK_5_04_00_00/c2000ware/device_suppo
+     315                      .dwattr $C$DW$30, DW_AT_decl_line(0xd4)
+     316                      .dwattr $C$DW$30, DW_AT_decl_column(0x06)
+     317                      .dwattr $C$DW$30, DW_AT_TI_max_frame_size(-2)
+     318                      .dwpsn  file "C:/ti/C2000Ware_MotorControl_SDK_5_04_00_00/c2000ware/device_support/f28002x/common/sou
+     319              
+     320                      .dwfde $C$DW$CIE, ||Device_initGPIO||
+     321              
+     322              ;***************************************************************
+     323              ;* FNAME: Device_initGPIO               FR SIZE:   0           *
+     324              ;*                                                             *
+     325              ;* FUNCTION ENVIRONMENT                                        *
+     326              ;*                                                             *
+     327              ;* FUNCTION PROPERTIES                                         *
+     328              ;*                            0 Parameter,  0 Auto,  0 SOE     *
+     329              ;***************************************************************
+     330              
+     331 00000000       ||Device_initGPIO||:
+     332                      .dwcfi  cfa_offset, -2
+     333                      .dwcfi  save_reg_to_mem, 26, 0
+     334                      .dwpsn  file "C:/ti/C2000Ware_MotorControl_SDK_5_04_00_00/c2000ware/driverlib/f28002x/driverlib/gpio.
+     335 00000000 7622          EALLOW    ; [CPU_ALU] |784| 
+     336                      .dwpsn  file "C:/ti/C2000Ware_MotorControl_SDK_5_04_00_00/c2000ware/driverlib/f28002x/driverlib/gpio.
+     337 00000001 BFA9          MOV32     ACC,*(0:0x7c3c)       ; [CPU_FPU] |785| 
+         00000002 7C3C 
+     338 00000003 0200          MOVB      ACC,#0                ; [CPU_ALU] |785| 
+     339 00000004 BDA9          MOV32     *(0:0x7c3c),ACC       ; [CPU_FPU] |785| 
+         00000005 7C3C 
+     340 00000006 BFA6          MOV32     XAR6,*(0:0x7c7c)      ; [CPU_FPU] |785| 
+         00000007 7C7C 
+     341 00000008 BDA9          MOV32     *(0:0x7c7c),ACC       ; [CPU_FPU] |785| 
+         00000009 7C7C 
+     342 0000000a BFA6          MOV32     XAR6,*(0:0x7dfc)      ; [CPU_FPU] |785| 
+         0000000b 7DFC 
+     343 0000000c BDA9          MOV32     *(0:0x7dfc),ACC       ; [CPU_FPU] |785| 
+         0000000d 7DFC 
+     344                      .dwpsn  file "C:/ti/C2000Ware_MotorControl_SDK_5_04_00_00/c2000ware/driverlib/f28002x/driverlib/gpio.
+     345 0000000e 761A          EDIS      ; [CPU_ALU] |786| 
+     346              $C$DW$31        .dwtag  DW_TAG_TI_branch
+     347                      .dwattr $C$DW$31, DW_AT_low_pc(0x00)
+     348                      .dwattr $C$DW$31, DW_AT_TI_return
+     349              
+     350 0000000f 0006          LRETR     ; [CPU_ALU] 
+     351                      ; return occurs ; [] 
+     352                      .dwattr $C$DW$30, DW_AT_TI_end_file("C:/ti/C2000Ware_MotorControl_SDK_5_04_00_00/c2000ware/device_sup
+     353                      .dwattr $C$DW$30, DW_AT_TI_end_line(0xdc)
+     354                      .dwattr $C$DW$30, DW_AT_TI_end_column(0x01)
+     355                      .dwendentry
+     356                      .dwendtag $C$DW$30
+     357              
+     358 00000000               .sect   ".text:Device_enableAllPeripherals"
+     359                      .clink
+     360                      .global ||Device_enableAllPeripherals||
+     361              
+TMS320C2000 Assembler PC v22.6.2 Tue Dec 16 13:51:46 2025
+
+Copyright (c) 1996-2018 Texas Instruments Incorporated
+device.asm                                                           PAGE    8
+
+     362              $C$DW$32        .dwtag  DW_TAG_subprogram
+     363                      .dwattr $C$DW$32, DW_AT_name("Device_enableAllPeripherals")
+     364                      .dwattr $C$DW$32, DW_AT_low_pc(||Device_enableAllPeripherals||)
+     365                      .dwattr $C$DW$32, DW_AT_high_pc(0x00)
+     366                      .dwattr $C$DW$32, DW_AT_linkage_name("Device_enableAllPeripherals")
+     367                      .dwattr $C$DW$32, DW_AT_external
+     368                      .dwattr $C$DW$32, DW_AT_decl_file("C:/ti/C2000Ware_MotorControl_SDK_5_04_00_00/c2000ware/device_suppo
+     369                      .dwattr $C$DW$32, DW_AT_decl_line(0x92)
+     370                      .dwattr $C$DW$32, DW_AT_decl_column(0x06)
+     371                      .dwattr $C$DW$32, DW_AT_TI_max_frame_size(-2)
+     372                      .dwpsn  file "C:/ti/C2000Ware_MotorControl_SDK_5_04_00_00/c2000ware/device_support/f28002x/common/sou
+     373              
+     374                      .dwfde $C$DW$CIE, ||Device_enableAllPeripherals||
+     375              
+     376              ;***************************************************************
+     377              ;* FNAME: Device_enableAllPeripherals   FR SIZE:   0           *
+     378              ;*                                                             *
+     379              ;* FUNCTION ENVIRONMENT                                        *
+     380              ;*                                                             *
+     381              ;* FUNCTION PROPERTIES                                         *
+     382              ;*                            0 Parameter,  0 Auto,  0 SOE     *
+     383              ;***************************************************************
+     384              
+     385 00000000       ||Device_enableAllPeripherals||:
+     386                      .dwcfi  cfa_offset, -2
+     387                      .dwcfi  save_reg_to_mem, 26, 0
+     388                      .dwpsn  file "C:\ti\C2000Ware_MotorControl_SDK_5_04_00_00\c2000ware\driverlib\f28002x\driverlib\sysct
+     389 00000000 7622          EALLOW    ; [CPU_ALU] |916| 
+     390                      .dwpsn  file "C:\ti\C2000Ware_MotorControl_SDK_5_04_00_00\c2000ware\driverlib\f28002x\driverlib\sysct
+     391 00000001 0204          MOVB      ACC,#4                ; [CPU_ALU] |921| 
+     392 00000002 8F05          MOVL      XAR4,#381730          ; [CPU_ARAU] |921| 
+         00000003 D322 
+     393 00000004 98C4          OR        *+XAR4[0],AL          ; [CPU_ALU] |921| 
+     394 00000005 99CC          OR        *+XAR4[1],AH          ; [CPU_ALU] |921| 
+     395 00000006 0208          MOVB      ACC,#8                ; [CPU_ALU] |921| 
+     396 00000007 98C4          OR        *+XAR4[0],AL          ; [CPU_ALU] |921| 
+     397 00000008 99CC          OR        *+XAR4[1],AH          ; [CPU_ALU] |921| 
+     398 00000009 0210          MOVB      ACC,#16               ; [CPU_ALU] |921| 
+     399 0000000a 98C4          OR        *+XAR4[0],AL          ; [CPU_ALU] |921| 
+     400 0000000b 99CC          OR        *+XAR4[1],AH          ; [CPU_ALU] |921| 
+     401 0000000c 0220          MOVB      ACC,#32               ; [CPU_ALU] |921| 
+     402 0000000d 98C4          OR        *+XAR4[0],AL          ; [CPU_ALU] |921| 
+     403 0000000e 99CC          OR        *+XAR4[1],AH          ; [CPU_ALU] |921| 
+     404 0000000f 06C4          MOVL      ACC,*+XAR4[0]         ; [CPU_ALU] |921| 
+     405 00000010 1AA9          OR        AL,#8192              ; [CPU_ALU] |921| 
+         00000011 2000 
+     406 00000012 1EC4          MOVL      *+XAR4[0],ACC         ; [CPU_ALU] |921| 
+     407 00000013 06C4          MOVL      ACC,*+XAR4[0]         ; [CPU_ALU] |921| 
+     408 00000014 5101          OR        AH,#1                 ; [CPU_ALU] |921| 
+     409 00000015 1EC4          MOVL      *+XAR4[0],ACC         ; [CPU_ALU] |921| 
+     410 00000016 06C4          MOVL      ACC,*+XAR4[0]         ; [CPU_ALU] |921| 
+     411 00000017 5104          OR        AH,#4                 ; [CPU_ALU] |921| 
+     412 00000018 1EC4          MOVL      *+XAR4[0],ACC         ; [CPU_ALU] |921| 
+     413 00000019 06C4          MOVL      ACC,*+XAR4[0]         ; [CPU_ALU] |921| 
+     414 0000001a 1AA8          OR        AH,#256               ; [CPU_ALU] |921| 
+TMS320C2000 Assembler PC v22.6.2 Tue Dec 16 13:51:46 2025
+
+Copyright (c) 1996-2018 Texas Instruments Incorporated
+device.asm                                                           PAGE    9
+
+         0000001b 0100 
+     415 0000001c 1EC4          MOVL      *+XAR4[0],ACC         ; [CPU_ALU] |921| 
+     416 0000001d 0201          MOVB      ACC,#1                ; [CPU_ALU] |921| 
+     417 0000001e 8F05          MOVL      XAR4,#381734          ; [CPU_ARAU] |921| 
+         0000001f D326 
+     418 00000020 98C4          OR        *+XAR4[0],AL          ; [CPU_ALU] |921| 
+     419 00000021 99CC          OR        *+XAR4[1],AH          ; [CPU_ALU] |921| 
+     420 00000022 0202          MOVB      ACC,#2                ; [CPU_ALU] |921| 
+     421 00000023 98C4          OR        *+XAR4[0],AL          ; [CPU_ALU] |921| 
+     422 00000024 99CC          OR        *+XAR4[1],AH          ; [CPU_ALU] |921| 
+     423 00000025 0204          MOVB      ACC,#4                ; [CPU_ALU] |921| 
+     424 00000026 98C4          OR        *+XAR4[0],AL          ; [CPU_ALU] |921| 
+     425 00000027 99CC          OR        *+XAR4[1],AH          ; [CPU_ALU] |921| 
+     426 00000028 0208          MOVB      ACC,#8                ; [CPU_ALU] |921| 
+     427 00000029 98C4          OR        *+XAR4[0],AL          ; [CPU_ALU] |921| 
+     428 0000002a 99CC          OR        *+XAR4[1],AH          ; [CPU_ALU] |921| 
+     429 0000002b 0210          MOVB      ACC,#16               ; [CPU_ALU] |921| 
+     430 0000002c 98C4          OR        *+XAR4[0],AL          ; [CPU_ALU] |921| 
+     431 0000002d 99CC          OR        *+XAR4[1],AH          ; [CPU_ALU] |921| 
+     432 0000002e 0220          MOVB      ACC,#32               ; [CPU_ALU] |921| 
+     433 0000002f 98C4          OR        *+XAR4[0],AL          ; [CPU_ALU] |921| 
+     434 00000030 99CC          OR        *+XAR4[1],AH          ; [CPU_ALU] |921| 
+     435 00000031 0240          MOVB      ACC,#64               ; [CPU_ALU] |921| 
+     436 00000032 98C4          OR        *+XAR4[0],AL          ; [CPU_ALU] |921| 
+     437 00000033 99CC          OR        *+XAR4[1],AH          ; [CPU_ALU] |921| 
+     438 00000034 0201          MOVB      ACC,#1                ; [CPU_ALU] |921| 
+     439 00000035 8F05          MOVL      XAR4,#381736          ; [CPU_ARAU] |921| 
+         00000036 D328 
+     440 00000037 98C4          OR        *+XAR4[0],AL          ; [CPU_ALU] |921| 
+     441 00000038 99CC          OR        *+XAR4[1],AH          ; [CPU_ALU] |921| 
+     442 00000039 0202          MOVB      ACC,#2                ; [CPU_ALU] |921| 
+     443 0000003a 98C4          OR        *+XAR4[0],AL          ; [CPU_ALU] |921| 
+     444 0000003b 99CC          OR        *+XAR4[1],AH          ; [CPU_ALU] |921| 
+     445 0000003c 0204          MOVB      ACC,#4                ; [CPU_ALU] |921| 
+     446 0000003d 98C4          OR        *+XAR4[0],AL          ; [CPU_ALU] |921| 
+     447 0000003e 99CC          OR        *+XAR4[1],AH          ; [CPU_ALU] |921| 
+     448 0000003f 0201          MOVB      ACC,#1                ; [CPU_ALU] |921| 
+     449 00000040 8F05          MOVL      XAR4,#381738          ; [CPU_ARAU] |921| 
+         00000041 D32A 
+     450 00000042 98C4          OR        *+XAR4[0],AL          ; [CPU_ALU] |921| 
+     451 00000043 99CC          OR        *+XAR4[1],AH          ; [CPU_ALU] |921| 
+     452 00000044 0202          MOVB      ACC,#2                ; [CPU_ALU] |921| 
+     453 00000045 98C4          OR        *+XAR4[0],AL          ; [CPU_ALU] |921| 
+     454 00000046 99CC          OR        *+XAR4[1],AH          ; [CPU_ALU] |921| 
+     455 00000047 0201          MOVB      ACC,#1                ; [CPU_ALU] |921| 
+     456 00000048 8F05          MOVL      XAR4,#381744          ; [CPU_ARAU] |921| 
+         00000049 D330 
+     457 0000004a 98C4          OR        *+XAR4[0],AL          ; [CPU_ALU] |921| 
+     458 0000004b 99CC          OR        *+XAR4[1],AH          ; [CPU_ALU] |921| 
+     459 0000004c 8F05          MOVL      XAR4,#381746          ; [CPU_ARAU] |921| 
+         0000004d D332 
+     460 0000004e 98C4          OR        *+XAR4[0],AL          ; [CPU_ALU] |921| 
+     461 0000004f 99CC          OR        *+XAR4[1],AH          ; [CPU_ALU] |921| 
+     462 00000050 0202          MOVB      ACC,#2                ; [CPU_ALU] |921| 
+     463 00000051 98C4          OR        *+XAR4[0],AL          ; [CPU_ALU] |921| 
+TMS320C2000 Assembler PC v22.6.2 Tue Dec 16 13:51:46 2025
+
+Copyright (c) 1996-2018 Texas Instruments Incorporated
+device.asm                                                           PAGE   10
+
+     464 00000052 99CC          OR        *+XAR4[1],AH          ; [CPU_ALU] |921| 
+     465 00000053 0201          MOVB      ACC,#1                ; [CPU_ALU] |921| 
+     466 00000054 8F05          MOVL      XAR4,#381748          ; [CPU_ARAU] |921| 
+         00000055 D334 
+     467 00000056 98C4          OR        *+XAR4[0],AL          ; [CPU_ALU] |921| 
+     468 00000057 99CC          OR        *+XAR4[1],AH          ; [CPU_ALU] |921| 
+     469 00000058 0202          MOVB      ACC,#2                ; [CPU_ALU] |921| 
+     470 00000059 98C4          OR        *+XAR4[0],AL          ; [CPU_ALU] |921| 
+     471 0000005a 99CC          OR        *+XAR4[1],AH          ; [CPU_ALU] |921| 
+     472 0000005b 0201          MOVB      ACC,#1                ; [CPU_ALU] |921| 
+     473 0000005c 8F05          MOVL      XAR4,#381750          ; [CPU_ARAU] |921| 
+         0000005d D336 
+     474 0000005e 98C4          OR        *+XAR4[0],AL          ; [CPU_ALU] |921| 
+     475 0000005f 99CC          OR        *+XAR4[1],AH          ; [CPU_ALU] |921| 
+     476 00000060 8F05          MOVL      XAR4,#381756          ; [CPU_ARAU] |921| 
+         00000061 D33C 
+     477 00000062 98C4          OR        *+XAR4[0],AL          ; [CPU_ALU] |921| 
+     478 00000063 99CC          OR        *+XAR4[1],AH          ; [CPU_ALU] |921| 
+     479 00000064 0204          MOVB      ACC,#4                ; [CPU_ALU] |921| 
+     480 00000065 98C4          OR        *+XAR4[0],AL          ; [CPU_ALU] |921| 
+     481 00000066 99CC          OR        *+XAR4[1],AH          ; [CPU_ALU] |921| 
+     482 00000067 0201          MOVB      ACC,#1                ; [CPU_ALU] |921| 
+     483 00000068 8F05          MOVL      XAR4,#381758          ; [CPU_ARAU] |921| 
+         00000069 D33E 
+     484 0000006a 98C4          OR        *+XAR4[0],AL          ; [CPU_ALU] |921| 
+     485 0000006b 99CC          OR        *+XAR4[1],AH          ; [CPU_ALU] |921| 
+     486 0000006c 0202          MOVB      ACC,#2                ; [CPU_ALU] |921| 
+     487 0000006d 98C4          OR        *+XAR4[0],AL          ; [CPU_ALU] |921| 
+     488 0000006e 99CC          OR        *+XAR4[1],AH          ; [CPU_ALU] |921| 
+     489 0000006f 0204          MOVB      ACC,#4                ; [CPU_ALU] |921| 
+     490 00000070 98C4          OR        *+XAR4[0],AL          ; [CPU_ALU] |921| 
+     491 00000071 99CC          OR        *+XAR4[1],AH          ; [CPU_ALU] |921| 
+     492 00000072 0208          MOVB      ACC,#8                ; [CPU_ALU] |921| 
+     493 00000073 98C4          OR        *+XAR4[0],AL          ; [CPU_ALU] |921| 
+     494 00000074 99CC          OR        *+XAR4[1],AH          ; [CPU_ALU] |921| 
+     495 00000075 0201          MOVB      ACC,#1                ; [CPU_ALU] |921| 
+     496 00000076 8F05          MOVL      XAR4,#381766          ; [CPU_ARAU] |921| 
+         00000077 D346 
+     497 00000078 98C4          OR        *+XAR4[0],AL          ; [CPU_ALU] |921| 
+     498 00000079 99CC          OR        *+XAR4[1],AH          ; [CPU_ALU] |921| 
+     499 0000007a 0202          MOVB      ACC,#2                ; [CPU_ALU] |921| 
+     500 0000007b 98C4          OR        *+XAR4[0],AL          ; [CPU_ALU] |921| 
+     501 0000007c 99CC          OR        *+XAR4[1],AH          ; [CPU_ALU] |921| 
+     502 0000007d 0201          MOVB      ACC,#1                ; [CPU_ALU] |921| 
+     503 0000007e 8F05          MOVL      XAR4,#381768          ; [CPU_ARAU] |921| 
+         0000007f D348 
+     504 00000080 98C4          OR        *+XAR4[0],AL          ; [CPU_ALU] |921| 
+     505 00000081 99CC          OR        *+XAR4[1],AH          ; [CPU_ALU] |921| 
+     506 00000082 0202          MOVB      ACC,#2                ; [CPU_ALU] |921| 
+     507 00000083 98C4          OR        *+XAR4[0],AL          ; [CPU_ALU] |921| 
+     508 00000084 99CC          OR        *+XAR4[1],AH          ; [CPU_ALU] |921| 
+     509 00000085 0201          MOVB      ACC,#1                ; [CPU_ALU] |921| 
+     510 00000086 8F05          MOVL      XAR4,#381770          ; [CPU_ARAU] |921| 
+         00000087 D34A 
+     511 00000088 98C4          OR        *+XAR4[0],AL          ; [CPU_ALU] |921| 
+TMS320C2000 Assembler PC v22.6.2 Tue Dec 16 13:51:46 2025
+
+Copyright (c) 1996-2018 Texas Instruments Incorporated
+device.asm                                                           PAGE   11
+
+     512 00000089 99CC          OR        *+XAR4[1],AH          ; [CPU_ALU] |921| 
+     513 0000008a 8F05          MOVL      XAR4,#381772          ; [CPU_ARAU] |921| 
+         0000008b D34C 
+     514 0000008c 98C4          OR        *+XAR4[0],AL          ; [CPU_ALU] |921| 
+     515 0000008d 99CC          OR        *+XAR4[1],AH          ; [CPU_ALU] |921| 
+     516 0000008e 0202          MOVB      ACC,#2                ; [CPU_ALU] |921| 
+     517 0000008f 98C4          OR        *+XAR4[0],AL          ; [CPU_ALU] |921| 
+     518 00000090 99CC          OR        *+XAR4[1],AH          ; [CPU_ALU] |921| 
+     519 00000091 0201          MOVB      ACC,#1                ; [CPU_ALU] |921| 
+     520 00000092 8F05          MOVL      XAR4,#381764          ; [CPU_ARAU] |921| 
+         00000093 D344 
+     521 00000094 98C4          OR        *+XAR4[0],AL          ; [CPU_ALU] |921| 
+     522 00000095 99CC          OR        *+XAR4[1],AH          ; [CPU_ALU] |921| 
+     523 00000096 0202          MOVB      ACC,#2                ; [CPU_ALU] |921| 
+     524 00000097 98C4          OR        *+XAR4[0],AL          ; [CPU_ALU] |921| 
+     525 00000098 99CC          OR        *+XAR4[1],AH          ; [CPU_ALU] |921| 
+     526 00000099 0201          MOVB      ACC,#1                ; [CPU_ALU] |921| 
+     527 0000009a 8F05          MOVL      XAR4,#381780          ; [CPU_ARAU] |921| 
+         0000009b D354 
+     528 0000009c 98C4          OR        *+XAR4[0],AL          ; [CPU_ALU] |921| 
+     529 0000009d 99CC          OR        *+XAR4[1],AH          ; [CPU_ALU] |921| 
+     530                      .dwpsn  file "C:\ti\C2000Ware_MotorControl_SDK_5_04_00_00\c2000ware\driverlib\f28002x\driverlib\sysct
+     531 0000009e 761A          EDIS      ; [CPU_ALU] |922| 
+     532              $C$DW$33        .dwtag  DW_TAG_TI_branch
+     533                      .dwattr $C$DW$33, DW_AT_low_pc(0x00)
+     534                      .dwattr $C$DW$33, DW_AT_TI_return
+     535              
+     536 0000009f 0006          LRETR     ; [CPU_ALU] 
+     537                      ; return occurs ; [] 
+     538                      .dwattr $C$DW$32, DW_AT_TI_end_file("C:/ti/C2000Ware_MotorControl_SDK_5_04_00_00/c2000ware/device_sup
+     539                      .dwattr $C$DW$32, DW_AT_TI_end_line(0xcd)
+     540                      .dwattr $C$DW$32, DW_AT_TI_end_column(0x01)
+     541                      .dwendentry
+     542                      .dwendtag $C$DW$32
+     543              
+     544 00000000               .sect   ".text:Device_init"
+     545                      .clink
+     546                      .global ||Device_init||
+     547              
+     548              $C$DW$34        .dwtag  DW_TAG_subprogram
+     549                      .dwattr $C$DW$34, DW_AT_name("Device_init")
+     550                      .dwattr $C$DW$34, DW_AT_low_pc(||Device_init||)
+     551                      .dwattr $C$DW$34, DW_AT_high_pc(0x00)
+     552                      .dwattr $C$DW$34, DW_AT_linkage_name("Device_init")
+     553                      .dwattr $C$DW$34, DW_AT_external
+     554                      .dwattr $C$DW$34, DW_AT_decl_file("C:/ti/C2000Ware_MotorControl_SDK_5_04_00_00/c2000ware/device_suppo
+     555                      .dwattr $C$DW$34, DW_AT_decl_line(0x41)
+     556                      .dwattr $C$DW$34, DW_AT_decl_column(0x06)
+     557                      .dwattr $C$DW$34, DW_AT_TI_max_frame_size(-4)
+     558                      .dwpsn  file "C:/ti/C2000Ware_MotorControl_SDK_5_04_00_00/c2000ware/device_support/f28002x/common/sou
+     559              
+     560                      .dwfde $C$DW$CIE, ||Device_init||
+     561              
+     562              ;***************************************************************
+     563              ;* FNAME: Device_init                   FR SIZE:   2           *
+TMS320C2000 Assembler PC v22.6.2 Tue Dec 16 13:51:46 2025
+
+Copyright (c) 1996-2018 Texas Instruments Incorporated
+device.asm                                                           PAGE   12
+
+     564              ;*                                                             *
+     565              ;* FUNCTION ENVIRONMENT                                        *
+     566              ;*                                                             *
+     567              ;* FUNCTION PROPERTIES                                         *
+     568              ;*                            2 Parameter,  0 Auto,  0 SOE     *
+     569              ;***************************************************************
+     570              
+     571 00000000       ||Device_init||:
+     572                      .dwcfi  cfa_offset, -2
+     573                      .dwcfi  save_reg_to_mem, 26, 0
+     574 00000000 FE02          ADDB      SP,#2                 ; [CPU_ARAU] 
+     575                      .dwcfi  cfa_offset, -4
+     576                      .dwpsn  file "C:\ti\C2000Ware_MotorControl_SDK_5_04_00_00\c2000ware\driverlib\f28002x\driverlib\sysct
+     577 00000001 7622          EALLOW    ; [CPU_ALU] |1742| 
+     578                      .dwpsn  file "C:\ti\C2000Ware_MotorControl_SDK_5_04_00_00\c2000ware\driverlib\f28002x\driverlib\sysct
+     579 00000002 F5A9          MOV       AL,*(0:0x7029)        ; [CPU_ALU] |1747| 
+         00000003 7029 
+     580 00000004 5068          ORB       AL,#0x68              ; [CPU_ALU] |1747| 
+     581 00000005 F4A9          MOV       *(0:0x7029),AL        ; [CPU_ALU] |1747| 
+         00000006 7029 
+     582 00000007 F627   RPT #39 || NOP
+         00000008 7700 
+     583                      .dwpsn  file "C:\ti\C2000Ware_MotorControl_SDK_5_04_00_00\c2000ware\driverlib\f28002x\driverlib\sysct
+     584 00000009 761A          EDIS      ; [CPU_ALU] |1750| 
+     585                      .dwpsn  file "C:/ti/C2000Ware_MotorControl_SDK_5_04_00_00/c2000ware/device_support/f28002x/common/sou
+     586 0000000a 8F40!         MOVL      XAR5,#||RamfuncsLoadStart|| ; [CPU_ARAU] |84| 
+         0000000b 0000 
+     587 0000000c 28A8!         MOV       AH,#$HI16(||RamfuncsLoadSize||) + 0 ; [CPU_ALU] |84| 
+         0000000d 0000 
+     588 0000000e 8F00!         MOVL      XAR4,#||RamfuncsRunStart|| ; [CPU_ARAU] |84| 
+         0000000f 0000 
+     589 00000010 FF69          SPM       #0                    ; [CPU_ALU] 
+     590 00000011 28A9!         MOV       AL,#$LO16(||RamfuncsLoadSize||) + 0 ; [CPU_ALU] |84| 
+         00000012 0000 
+     591              $C$DW$35        .dwtag  DW_TAG_TI_branch
+     592                      .dwattr $C$DW$35, DW_AT_low_pc(0x00)
+     593                      .dwattr $C$DW$35, DW_AT_name("memcpy")
+     594                      .dwattr $C$DW$35, DW_AT_TI_call
+     595              
+     596 00000013 7640!         LCR       #||memcpy||           ; [CPU_ALU] |84| 
+         00000014 0000 
+     597                      ; call occurs [#||memcpy||] ; [] |84| 
+     598                      .dwpsn  file "C:/ti/C2000Ware_MotorControl_SDK_5_04_00_00/c2000ware/device_support/f28002x/common/sou
+     599 00000015 8F05          MOVL      XAR4,#391936          ; [CPU_ARAU] |90| 
+         00000016 FB00 
+     600 00000017 8F45          MOVL      XAR5,#391168          ; [CPU_ARAU] |90| 
+         00000018 F800 
+     601 00000019 A842          MOVL      *-SP[2],XAR4          ; [CPU_ALU] |90| 
+     602 0000001a A0A9          MOVL      ACC,XAR5              ; [CPU_ALU] |90| 
+     603 0000001b D404          MOVB      XAR4,#4               ; [CPU_ALU] |90| 
+     604              $C$DW$36        .dwtag  DW_TAG_TI_branch
+     605                      .dwattr $C$DW$36, DW_AT_low_pc(0x00)
+     606                      .dwattr $C$DW$36, DW_AT_name("Flash_initModule")
+     607                      .dwattr $C$DW$36, DW_AT_TI_call
+     608              
+TMS320C2000 Assembler PC v22.6.2 Tue Dec 16 13:51:46 2025
+
+Copyright (c) 1996-2018 Texas Instruments Incorporated
+device.asm                                                           PAGE   13
+
+     609 0000001c 7640!         LCR       #||Flash_initModule|| ; [CPU_ALU] |90| 
+         0000001d 0000 
+     610                      ; call occurs [#||Flash_initModule||] ; [] |90| 
+     611                      .dwpsn  file "C:/ti/C2000Ware_MotorControl_SDK_5_04_00_00/c2000ware/device_support/f28002x/common/sou
+     612 0000001e 28A9          MOV       AL,#286               ; [CPU_ALU] |96| 
+         0000001f 011E 
+     613 00000020 28A8          MOV       AH,#33029             ; [CPU_ALU] |96| 
+         00000021 8105 
+     614              $C$DW$37        .dwtag  DW_TAG_TI_branch
+     615                      .dwattr $C$DW$37, DW_AT_low_pc(0x00)
+     616                      .dwattr $C$DW$37, DW_AT_name("SysCtl_setClock")
+     617                      .dwattr $C$DW$37, DW_AT_TI_call
+     618              
+     619 00000022 7640!         LCR       #||SysCtl_setClock||  ; [CPU_ALU] |96| 
+         00000023 0000 
+     620                      ; call occurs [#||SysCtl_setClock||] ; [] |96| 
+     621                      .dwpsn  file "C:\ti\C2000Ware_MotorControl_SDK_5_04_00_00\c2000ware\driverlib\f28002x\driverlib\sysct
+     622 00000024 7622          EALLOW    ; [CPU_ALU] |1118| 
+     623                      .dwpsn  file "C:\ti\C2000Ware_MotorControl_SDK_5_04_00_00\c2000ware\driverlib\f28002x\driverlib\sysct
+     624 00000025 8F05          MOVL      XAR4,#381484          ; [CPU_ARAU] |1119| 
+         00000026 D22C 
+     625 00000027 06C4          MOVL      ACC,*+XAR4[0]         ; [CPU_ALU] |1119| 
+     626 00000028 18A9          AND       AL,#65528             ; [CPU_ALU] |1119| 
+         00000029 FFF8 
+     627 0000002a 5002          ORB       AL,#0x02              ; [CPU_ALU] |1119| 
+     628 0000002b 1EC4          MOVL      *+XAR4[0],ACC         ; [CPU_ALU] |1119| 
+     629                      .dwpsn  file "C:\ti\C2000Ware_MotorControl_SDK_5_04_00_00\c2000ware\driverlib\f28002x\driverlib\sysct
+     630 0000002c 761A          EDIS      ; [CPU_ALU] |1122| 
+     631                      .dwpsn  file "C:/ti/C2000Ware_MotorControl_SDK_5_04_00_00/c2000ware/device_support/f28002x/common/sou
+     632              $C$DW$38        .dwtag  DW_TAG_TI_branch
+     633                      .dwattr $C$DW$38, DW_AT_low_pc(0x00)
+     634                      .dwattr $C$DW$38, DW_AT_name("Device_enableAllPeripherals")
+     635                      .dwattr $C$DW$38, DW_AT_TI_call
+     636              
+     637 0000002d 7640!         LCR       #||Device_enableAllPeripherals|| ; [CPU_ALU] |128| 
+         0000002e 0000 
+     638                      ; call occurs [#||Device_enableAllPeripherals||] ; [] |128| 
+     639                      .dwpsn  file "C:/ti/C2000Ware_MotorControl_SDK_5_04_00_00/c2000ware/driverlib/f28002x/driverlib/asysc
+     640 0000002f 7622          EALLOW    ; [CPU_ALU] |667| 
+     641                      .dwpsn  file "C:/ti/C2000Ware_MotorControl_SDK_5_04_00_00/c2000ware/driverlib/f28002x/driverlib/asysc
+     642 00000030 8F05          MOVL      XAR4,#382862          ; [CPU_ARAU] |672| 
+         00000031 D78E 
+     643 00000032 1AC4          OR        *+XAR4[0],#0x0200     ; [CPU_ALU] |672| 
+         00000033 0200 
+     644                      .dwpsn  file "C:/ti/C2000Ware_MotorControl_SDK_5_04_00_00/c2000ware/driverlib/f28002x/driverlib/asysc
+     645 00000034 761A          EDIS      ; [CPU_ALU] |674| 
+     646 00000035 FE82          SUBB      SP,#2                 ; [CPU_ARAU] 
+     647                      .dwcfi  cfa_offset, -2
+     648              $C$DW$39        .dwtag  DW_TAG_TI_branch
+     649                      .dwattr $C$DW$39, DW_AT_low_pc(0x00)
+     650                      .dwattr $C$DW$39, DW_AT_TI_return
+     651              
+     652 00000036 0006          LRETR     ; [CPU_ALU] 
+     653                      ; return occurs ; [] 
+     654                      .dwattr $C$DW$34, DW_AT_TI_end_file("C:/ti/C2000Ware_MotorControl_SDK_5_04_00_00/c2000ware/device_sup
+TMS320C2000 Assembler PC v22.6.2 Tue Dec 16 13:51:46 2025
+
+Copyright (c) 1996-2018 Texas Instruments Incorporated
+device.asm                                                           PAGE   14
+
+     655                      .dwattr $C$DW$34, DW_AT_TI_end_line(0x88)
+     656                      .dwattr $C$DW$34, DW_AT_TI_end_column(0x01)
+     657                      .dwendentry
+     658                      .dwendtag $C$DW$34
+     659              
+     660              ;**************************************************************
+     661              ;* UNDEFINED EXTERNAL REFERENCES                              *
+     662              ;**************************************************************
+     663                      .global ||Flash_initModule||
+     664                      .global ||RamfuncsLoadStart||
+     665                      .global ||RamfuncsLoadSize||
+     666                      .global ||RamfuncsRunStart||
+     667                      .global ||SysCtl_setClock||
+     668                      .global ||DCC_verifyClockFrequency||
+     669                      .global ||memcpy||
+     670              
+     671              ;***************************************************************
+     672              ;* BUILD ATTRIBUTES                                            *
+     673              ;***************************************************************
+     674                      .battr "c28xabi", Tag_File, 1, Tag_float_args(1)
+     675                      .battr "c28xabi", Tag_File, 1, Tag_double_args(0)
+     676                      .dwattr $C$DW$CU, DW_AT_language(DW_LANG_C)
+     677              
+     678              ;***************************************************************
+     679              ;* DWARF CIE ENTRIES                                           *
+     680              ;***************************************************************
+     681              
+     682              $C$DW$CIE       .dwcie 26
+     683                      .dwcfi  cfa_register, 20
+     684                      .dwcfi  cfa_offset, 0
+     685                      .dwcfi  same_value, 28
+     686                      .dwcfi  same_value, 6
+     687                      .dwcfi  same_value, 7
+     688                      .dwcfi  same_value, 8
+     689                      .dwcfi  same_value, 9
+     690                      .dwcfi  same_value, 10
+     691                      .dwcfi  same_value, 11
+     692                      .dwcfi  same_value, 59
+     693                      .dwcfi  same_value, 63
+     694                      .dwcfi  same_value, 67
+     695                      .dwcfi  same_value, 71
+     696                      .dwendentry
+     697                      .dwendtag $C$DW$CU
+     698              
+     699              
+     700              ;***************************************************************
+     701              ;* TYPE INFORMATION                                            *
+     702              ;***************************************************************
+     703              
+     704              $C$DW$TU$19     .dwtag  DW_TAG_type_unit
+     705                      .dwmtype  $C$DW$T$19
+     706              
+     707              $C$DW$T$19      .dwtag  DW_TAG_enumeration_type
+     708                      .dwattr $C$DW$T$19, DW_AT_byte_size(0x01)
+     709              $C$DW$40        .dwtag  DW_TAG_enumerator
+TMS320C2000 Assembler PC v22.6.2 Tue Dec 16 13:51:46 2025
+
+Copyright (c) 1996-2018 Texas Instruments Incorporated
+device.asm                                                           PAGE   15
+
+     710                      .dwattr $C$DW$40, DW_AT_name("SYSCTL_PERIPH_CLK_DMA")
+     711                      .dwattr $C$DW$40, DW_AT_const_value(0x200)
+     712                      .dwattr $C$DW$40, DW_AT_decl_file("C:\ti\C2000Ware_MotorControl_SDK_5_04_00_00\c2000ware\driverlib\f2
+     713                      .dwattr $C$DW$40, DW_AT_decl_line(0x152)
+     714                      .dwattr $C$DW$40, DW_AT_decl_column(0x05)
+     715              
+     716              $C$DW$41        .dwtag  DW_TAG_enumerator
+     717                      .dwattr $C$DW$41, DW_AT_name("SYSCTL_PERIPH_CLK_TIMER0")
+     718                      .dwattr $C$DW$41, DW_AT_const_value(0x300)
+     719                      .dwattr $C$DW$41, DW_AT_decl_file("C:\ti\C2000Ware_MotorControl_SDK_5_04_00_00\c2000ware\driverlib\f2
+     720                      .dwattr $C$DW$41, DW_AT_decl_line(0x153)
+     721                      .dwattr $C$DW$41, DW_AT_decl_column(0x05)
+     722              
+     723              $C$DW$42        .dwtag  DW_TAG_enumerator
+     724                      .dwattr $C$DW$42, DW_AT_name("SYSCTL_PERIPH_CLK_TIMER1")
+     725                      .dwattr $C$DW$42, DW_AT_const_value(0x400)
+     726                      .dwattr $C$DW$42, DW_AT_decl_file("C:\ti\C2000Ware_MotorControl_SDK_5_04_00_00\c2000ware\driverlib\f2
+     727                      .dwattr $C$DW$42, DW_AT_decl_line(0x154)
+     728                      .dwattr $C$DW$42, DW_AT_decl_column(0x05)
+     729              
+     730              $C$DW$43        .dwtag  DW_TAG_enumerator
+     731                      .dwattr $C$DW$43, DW_AT_name("SYSCTL_PERIPH_CLK_TIMER2")
+     732                      .dwattr $C$DW$43, DW_AT_const_value(0x500)
+     733                      .dwattr $C$DW$43, DW_AT_decl_file("C:\ti\C2000Ware_MotorControl_SDK_5_04_00_00\c2000ware\driverlib\f2
+     734                      .dwattr $C$DW$43, DW_AT_decl_line(0x155)
+     735                      .dwattr $C$DW$43, DW_AT_decl_column(0x05)
+     736              
+     737              $C$DW$44        .dwtag  DW_TAG_enumerator
+     738                      .dwattr $C$DW$44, DW_AT_name("SYSCTL_PERIPH_CLK_CPUBGCRC")
+     739                      .dwattr $C$DW$44, DW_AT_const_value(0xd00)
+     740                      .dwattr $C$DW$44, DW_AT_decl_file("C:\ti\C2000Ware_MotorControl_SDK_5_04_00_00\c2000ware\driverlib\f2
+     741                      .dwattr $C$DW$44, DW_AT_decl_line(0x156)
+     742                      .dwattr $C$DW$44, DW_AT_decl_column(0x05)
+     743              
+     744              $C$DW$45        .dwtag  DW_TAG_enumerator
+     745                      .dwattr $C$DW$45, DW_AT_name("SYSCTL_PERIPH_CLK_HRCAL")
+     746                      .dwattr $C$DW$45, DW_AT_const_value(0x1000)
+     747                      .dwattr $C$DW$45, DW_AT_decl_file("C:\ti\C2000Ware_MotorControl_SDK_5_04_00_00\c2000ware\driverlib\f2
+     748                      .dwattr $C$DW$45, DW_AT_decl_line(0x157)
+     749                      .dwattr $C$DW$45, DW_AT_decl_column(0x05)
+     750              
+     751              $C$DW$46        .dwtag  DW_TAG_enumerator
+     752                      .dwattr $C$DW$46, DW_AT_name("SYSCTL_PERIPH_CLK_TBCLKSYNC")
+     753                      .dwattr $C$DW$46, DW_AT_const_value(0x1200)
+     754                      .dwattr $C$DW$46, DW_AT_decl_file("C:\ti\C2000Ware_MotorControl_SDK_5_04_00_00\c2000ware\driverlib\f2
+     755                      .dwattr $C$DW$46, DW_AT_decl_line(0x158)
+     756                      .dwattr $C$DW$46, DW_AT_decl_column(0x05)
+     757              
+     758              $C$DW$47        .dwtag  DW_TAG_enumerator
+     759                      .dwattr $C$DW$47, DW_AT_name("SYSCTL_PERIPH_CLK_ERAD")
+     760                      .dwattr $C$DW$47, DW_AT_const_value(0x1800)
+     761                      .dwattr $C$DW$47, DW_AT_decl_file("C:\ti\C2000Ware_MotorControl_SDK_5_04_00_00\c2000ware\driverlib\f2
+     762                      .dwattr $C$DW$47, DW_AT_decl_line(0x159)
+     763                      .dwattr $C$DW$47, DW_AT_decl_column(0x05)
+     764              
+TMS320C2000 Assembler PC v22.6.2 Tue Dec 16 13:51:46 2025
+
+Copyright (c) 1996-2018 Texas Instruments Incorporated
+device.asm                                                           PAGE   16
+
+     765              $C$DW$48        .dwtag  DW_TAG_enumerator
+     766                      .dwattr $C$DW$48, DW_AT_name("SYSCTL_PERIPH_CLK_EPWM1")
+     767                      .dwattr $C$DW$48, DW_AT_const_value(0x02)
+     768                      .dwattr $C$DW$48, DW_AT_decl_file("C:\ti\C2000Ware_MotorControl_SDK_5_04_00_00\c2000ware\driverlib\f2
+     769                      .dwattr $C$DW$48, DW_AT_decl_line(0x15a)
+     770                      .dwattr $C$DW$48, DW_AT_decl_column(0x05)
+     771              
+     772              $C$DW$49        .dwtag  DW_TAG_enumerator
+     773                      .dwattr $C$DW$49, DW_AT_name("SYSCTL_PERIPH_CLK_EPWM2")
+     774                      .dwattr $C$DW$49, DW_AT_const_value(0x102)
+     775                      .dwattr $C$DW$49, DW_AT_decl_file("C:\ti\C2000Ware_MotorControl_SDK_5_04_00_00\c2000ware\driverlib\f2
+     776                      .dwattr $C$DW$49, DW_AT_decl_line(0x15b)
+     777                      .dwattr $C$DW$49, DW_AT_decl_column(0x05)
+     778              
+     779              $C$DW$50        .dwtag  DW_TAG_enumerator
+     780                      .dwattr $C$DW$50, DW_AT_name("SYSCTL_PERIPH_CLK_EPWM3")
+     781                      .dwattr $C$DW$50, DW_AT_const_value(0x202)
+     782                      .dwattr $C$DW$50, DW_AT_decl_file("C:\ti\C2000Ware_MotorControl_SDK_5_04_00_00\c2000ware\driverlib\f2
+     783                      .dwattr $C$DW$50, DW_AT_decl_line(0x15c)
+     784                      .dwattr $C$DW$50, DW_AT_decl_column(0x05)
+     785              
+     786              $C$DW$51        .dwtag  DW_TAG_enumerator
+     787                      .dwattr $C$DW$51, DW_AT_name("SYSCTL_PERIPH_CLK_EPWM4")
+     788                      .dwattr $C$DW$51, DW_AT_const_value(0x302)
+     789                      .dwattr $C$DW$51, DW_AT_decl_file("C:\ti\C2000Ware_MotorControl_SDK_5_04_00_00\c2000ware\driverlib\f2
+     790                      .dwattr $C$DW$51, DW_AT_decl_line(0x15d)
+     791                      .dwattr $C$DW$51, DW_AT_decl_column(0x05)
+     792              
+     793              $C$DW$52        .dwtag  DW_TAG_enumerator
+     794                      .dwattr $C$DW$52, DW_AT_name("SYSCTL_PERIPH_CLK_EPWM5")
+     795                      .dwattr $C$DW$52, DW_AT_const_value(0x402)
+     796                      .dwattr $C$DW$52, DW_AT_decl_file("C:\ti\C2000Ware_MotorControl_SDK_5_04_00_00\c2000ware\driverlib\f2
+     797                      .dwattr $C$DW$52, DW_AT_decl_line(0x15e)
+     798                      .dwattr $C$DW$52, DW_AT_decl_column(0x05)
+     799              
+     800              $C$DW$53        .dwtag  DW_TAG_enumerator
+     801                      .dwattr $C$DW$53, DW_AT_name("SYSCTL_PERIPH_CLK_EPWM6")
+     802                      .dwattr $C$DW$53, DW_AT_const_value(0x502)
+     803                      .dwattr $C$DW$53, DW_AT_decl_file("C:\ti\C2000Ware_MotorControl_SDK_5_04_00_00\c2000ware\driverlib\f2
+     804                      .dwattr $C$DW$53, DW_AT_decl_line(0x15f)
+     805                      .dwattr $C$DW$53, DW_AT_decl_column(0x05)
+     806              
+     807              $C$DW$54        .dwtag  DW_TAG_enumerator
+     808                      .dwattr $C$DW$54, DW_AT_name("SYSCTL_PERIPH_CLK_EPWM7")
+     809                      .dwattr $C$DW$54, DW_AT_const_value(0x602)
+     810                      .dwattr $C$DW$54, DW_AT_decl_file("C:\ti\C2000Ware_MotorControl_SDK_5_04_00_00\c2000ware\driverlib\f2
+     811                      .dwattr $C$DW$54, DW_AT_decl_line(0x160)
+     812                      .dwattr $C$DW$54, DW_AT_decl_column(0x05)
+     813              
+     814              $C$DW$55        .dwtag  DW_TAG_enumerator
+     815                      .dwattr $C$DW$55, DW_AT_name("SYSCTL_PERIPH_CLK_ECAP1")
+     816                      .dwattr $C$DW$55, DW_AT_const_value(0x03)
+     817                      .dwattr $C$DW$55, DW_AT_decl_file("C:\ti\C2000Ware_MotorControl_SDK_5_04_00_00\c2000ware\driverlib\f2
+     818                      .dwattr $C$DW$55, DW_AT_decl_line(0x161)
+     819                      .dwattr $C$DW$55, DW_AT_decl_column(0x05)
+TMS320C2000 Assembler PC v22.6.2 Tue Dec 16 13:51:46 2025
+
+Copyright (c) 1996-2018 Texas Instruments Incorporated
+device.asm                                                           PAGE   17
+
+     820              
+     821              $C$DW$56        .dwtag  DW_TAG_enumerator
+     822                      .dwattr $C$DW$56, DW_AT_name("SYSCTL_PERIPH_CLK_ECAP2")
+     823                      .dwattr $C$DW$56, DW_AT_const_value(0x103)
+     824                      .dwattr $C$DW$56, DW_AT_decl_file("C:\ti\C2000Ware_MotorControl_SDK_5_04_00_00\c2000ware\driverlib\f2
+     825                      .dwattr $C$DW$56, DW_AT_decl_line(0x162)
+     826                      .dwattr $C$DW$56, DW_AT_decl_column(0x05)
+     827              
+     828              $C$DW$57        .dwtag  DW_TAG_enumerator
+     829                      .dwattr $C$DW$57, DW_AT_name("SYSCTL_PERIPH_CLK_ECAP3")
+     830                      .dwattr $C$DW$57, DW_AT_const_value(0x203)
+     831                      .dwattr $C$DW$57, DW_AT_decl_file("C:\ti\C2000Ware_MotorControl_SDK_5_04_00_00\c2000ware\driverlib\f2
+     832                      .dwattr $C$DW$57, DW_AT_decl_line(0x163)
+     833                      .dwattr $C$DW$57, DW_AT_decl_column(0x05)
+     834              
+     835              $C$DW$58        .dwtag  DW_TAG_enumerator
+     836                      .dwattr $C$DW$58, DW_AT_name("SYSCTL_PERIPH_CLK_EQEP1")
+     837                      .dwattr $C$DW$58, DW_AT_const_value(0x04)
+     838                      .dwattr $C$DW$58, DW_AT_decl_file("C:\ti\C2000Ware_MotorControl_SDK_5_04_00_00\c2000ware\driverlib\f2
+     839                      .dwattr $C$DW$58, DW_AT_decl_line(0x164)
+     840                      .dwattr $C$DW$58, DW_AT_decl_column(0x05)
+     841              
+     842              $C$DW$59        .dwtag  DW_TAG_enumerator
+     843                      .dwattr $C$DW$59, DW_AT_name("SYSCTL_PERIPH_CLK_EQEP2")
+     844                      .dwattr $C$DW$59, DW_AT_const_value(0x104)
+     845                      .dwattr $C$DW$59, DW_AT_decl_file("C:\ti\C2000Ware_MotorControl_SDK_5_04_00_00\c2000ware\driverlib\f2
+     846                      .dwattr $C$DW$59, DW_AT_decl_line(0x165)
+     847                      .dwattr $C$DW$59, DW_AT_decl_column(0x05)
+     848              
+     849              $C$DW$60        .dwtag  DW_TAG_enumerator
+     850                      .dwattr $C$DW$60, DW_AT_name("SYSCTL_PERIPH_CLK_SCIA")
+     851                      .dwattr $C$DW$60, DW_AT_const_value(0x07)
+     852                      .dwattr $C$DW$60, DW_AT_decl_file("C:\ti\C2000Ware_MotorControl_SDK_5_04_00_00\c2000ware\driverlib\f2
+     853                      .dwattr $C$DW$60, DW_AT_decl_line(0x166)
+     854                      .dwattr $C$DW$60, DW_AT_decl_column(0x05)
+     855              
+     856              $C$DW$61        .dwtag  DW_TAG_enumerator
+     857                      .dwattr $C$DW$61, DW_AT_name("SYSCTL_PERIPH_CLK_SPIA")
+     858                      .dwattr $C$DW$61, DW_AT_const_value(0x08)
+     859                      .dwattr $C$DW$61, DW_AT_decl_file("C:\ti\C2000Ware_MotorControl_SDK_5_04_00_00\c2000ware\driverlib\f2
+     860                      .dwattr $C$DW$61, DW_AT_decl_line(0x167)
+     861                      .dwattr $C$DW$61, DW_AT_decl_column(0x05)
+     862              
+     863              $C$DW$62        .dwtag  DW_TAG_enumerator
+     864                      .dwattr $C$DW$62, DW_AT_name("SYSCTL_PERIPH_CLK_SPIB")
+     865                      .dwattr $C$DW$62, DW_AT_const_value(0x108)
+     866                      .dwattr $C$DW$62, DW_AT_decl_file("C:\ti\C2000Ware_MotorControl_SDK_5_04_00_00\c2000ware\driverlib\f2
+     867                      .dwattr $C$DW$62, DW_AT_decl_line(0x168)
+     868                      .dwattr $C$DW$62, DW_AT_decl_column(0x05)
+     869              
+     870              $C$DW$63        .dwtag  DW_TAG_enumerator
+     871                      .dwattr $C$DW$63, DW_AT_name("SYSCTL_PERIPH_CLK_I2CA")
+     872                      .dwattr $C$DW$63, DW_AT_const_value(0x09)
+     873                      .dwattr $C$DW$63, DW_AT_decl_file("C:\ti\C2000Ware_MotorControl_SDK_5_04_00_00\c2000ware\driverlib\f2
+     874                      .dwattr $C$DW$63, DW_AT_decl_line(0x169)
+TMS320C2000 Assembler PC v22.6.2 Tue Dec 16 13:51:46 2025
+
+Copyright (c) 1996-2018 Texas Instruments Incorporated
+device.asm                                                           PAGE   18
+
+     875                      .dwattr $C$DW$63, DW_AT_decl_column(0x05)
+     876              
+     877              $C$DW$64        .dwtag  DW_TAG_enumerator
+     878                      .dwattr $C$DW$64, DW_AT_name("SYSCTL_PERIPH_CLK_I2CB")
+     879                      .dwattr $C$DW$64, DW_AT_const_value(0x109)
+     880                      .dwattr $C$DW$64, DW_AT_decl_file("C:\ti\C2000Ware_MotorControl_SDK_5_04_00_00\c2000ware\driverlib\f2
+     881                      .dwattr $C$DW$64, DW_AT_decl_line(0x16a)
+     882                      .dwattr $C$DW$64, DW_AT_decl_column(0x05)
+     883              
+     884              $C$DW$65        .dwtag  DW_TAG_enumerator
+     885                      .dwattr $C$DW$65, DW_AT_name("SYSCTL_PERIPH_CLK_CANA")
+     886                      .dwattr $C$DW$65, DW_AT_const_value(0x0a)
+     887                      .dwattr $C$DW$65, DW_AT_decl_file("C:\ti\C2000Ware_MotorControl_SDK_5_04_00_00\c2000ware\driverlib\f2
+     888                      .dwattr $C$DW$65, DW_AT_decl_line(0x16b)
+     889                      .dwattr $C$DW$65, DW_AT_decl_column(0x05)
+     890              
+     891              $C$DW$66        .dwtag  DW_TAG_enumerator
+     892                      .dwattr $C$DW$66, DW_AT_name("SYSCTL_PERIPH_CLK_ADCA")
+     893                      .dwattr $C$DW$66, DW_AT_const_value(0x0d)
+     894                      .dwattr $C$DW$66, DW_AT_decl_file("C:\ti\C2000Ware_MotorControl_SDK_5_04_00_00\c2000ware\driverlib\f2
+     895                      .dwattr $C$DW$66, DW_AT_decl_line(0x16c)
+     896                      .dwattr $C$DW$66, DW_AT_decl_column(0x05)
+     897              
+     898              $C$DW$67        .dwtag  DW_TAG_enumerator
+     899                      .dwattr $C$DW$67, DW_AT_name("SYSCTL_PERIPH_CLK_ADCC")
+     900                      .dwattr $C$DW$67, DW_AT_const_value(0x20d)
+     901                      .dwattr $C$DW$67, DW_AT_decl_file("C:\ti\C2000Ware_MotorControl_SDK_5_04_00_00\c2000ware\driverlib\f2
+     902                      .dwattr $C$DW$67, DW_AT_decl_line(0x16d)
+     903                      .dwattr $C$DW$67, DW_AT_decl_column(0x05)
+     904              
+     905              $C$DW$68        .dwtag  DW_TAG_enumerator
+     906                      .dwattr $C$DW$68, DW_AT_name("SYSCTL_PERIPH_CLK_CMPSS1")
+     907                      .dwattr $C$DW$68, DW_AT_const_value(0x0e)
+     908                      .dwattr $C$DW$68, DW_AT_decl_file("C:\ti\C2000Ware_MotorControl_SDK_5_04_00_00\c2000ware\driverlib\f2
+     909                      .dwattr $C$DW$68, DW_AT_decl_line(0x16e)
+     910                      .dwattr $C$DW$68, DW_AT_decl_column(0x05)
+     911              
+     912              $C$DW$69        .dwtag  DW_TAG_enumerator
+     913                      .dwattr $C$DW$69, DW_AT_name("SYSCTL_PERIPH_CLK_CMPSS2")
+     914                      .dwattr $C$DW$69, DW_AT_const_value(0x10e)
+     915                      .dwattr $C$DW$69, DW_AT_decl_file("C:\ti\C2000Ware_MotorControl_SDK_5_04_00_00\c2000ware\driverlib\f2
+     916                      .dwattr $C$DW$69, DW_AT_decl_line(0x16f)
+     917                      .dwattr $C$DW$69, DW_AT_decl_column(0x05)
+     918              
+     919              $C$DW$70        .dwtag  DW_TAG_enumerator
+     920                      .dwattr $C$DW$70, DW_AT_name("SYSCTL_PERIPH_CLK_CMPSS3")
+     921                      .dwattr $C$DW$70, DW_AT_const_value(0x20e)
+     922                      .dwattr $C$DW$70, DW_AT_decl_file("C:\ti\C2000Ware_MotorControl_SDK_5_04_00_00\c2000ware\driverlib\f2
+     923                      .dwattr $C$DW$70, DW_AT_decl_line(0x170)
+     924                      .dwattr $C$DW$70, DW_AT_decl_column(0x05)
+     925              
+     926              $C$DW$71        .dwtag  DW_TAG_enumerator
+     927                      .dwattr $C$DW$71, DW_AT_name("SYSCTL_PERIPH_CLK_CMPSS4")
+     928                      .dwattr $C$DW$71, DW_AT_const_value(0x30e)
+     929                      .dwattr $C$DW$71, DW_AT_decl_file("C:\ti\C2000Ware_MotorControl_SDK_5_04_00_00\c2000ware\driverlib\f2
+TMS320C2000 Assembler PC v22.6.2 Tue Dec 16 13:51:46 2025
+
+Copyright (c) 1996-2018 Texas Instruments Incorporated
+device.asm                                                           PAGE   19
+
+     930                      .dwattr $C$DW$71, DW_AT_decl_line(0x171)
+     931                      .dwattr $C$DW$71, DW_AT_decl_column(0x05)
+     932              
+     933              $C$DW$72        .dwtag  DW_TAG_enumerator
+     934                      .dwattr $C$DW$72, DW_AT_name("SYSCTL_PERIPH_CLK_CLB1")
+     935                      .dwattr $C$DW$72, DW_AT_const_value(0x11)
+     936                      .dwattr $C$DW$72, DW_AT_decl_file("C:\ti\C2000Ware_MotorControl_SDK_5_04_00_00\c2000ware\driverlib\f2
+     937                      .dwattr $C$DW$72, DW_AT_decl_line(0x172)
+     938                      .dwattr $C$DW$72, DW_AT_decl_column(0x05)
+     939              
+     940              $C$DW$73        .dwtag  DW_TAG_enumerator
+     941                      .dwattr $C$DW$73, DW_AT_name("SYSCTL_PERIPH_CLK_CLB2")
+     942                      .dwattr $C$DW$73, DW_AT_const_value(0x111)
+     943                      .dwattr $C$DW$73, DW_AT_decl_file("C:\ti\C2000Ware_MotorControl_SDK_5_04_00_00\c2000ware\driverlib\f2
+     944                      .dwattr $C$DW$73, DW_AT_decl_line(0x173)
+     945                      .dwattr $C$DW$73, DW_AT_decl_column(0x05)
+     946              
+     947              $C$DW$74        .dwtag  DW_TAG_enumerator
+     948                      .dwattr $C$DW$74, DW_AT_name("SYSCTL_PERIPH_CLK_FSITXA")
+     949                      .dwattr $C$DW$74, DW_AT_const_value(0x12)
+     950                      .dwattr $C$DW$74, DW_AT_decl_file("C:\ti\C2000Ware_MotorControl_SDK_5_04_00_00\c2000ware\driverlib\f2
+     951                      .dwattr $C$DW$74, DW_AT_decl_line(0x174)
+     952                      .dwattr $C$DW$74, DW_AT_decl_column(0x05)
+     953              
+     954              $C$DW$75        .dwtag  DW_TAG_enumerator
+     955                      .dwattr $C$DW$75, DW_AT_name("SYSCTL_PERIPH_CLK_FSIRXA")
+     956                      .dwattr $C$DW$75, DW_AT_const_value(0x112)
+     957                      .dwattr $C$DW$75, DW_AT_decl_file("C:\ti\C2000Ware_MotorControl_SDK_5_04_00_00\c2000ware\driverlib\f2
+     958                      .dwattr $C$DW$75, DW_AT_decl_line(0x175)
+     959                      .dwattr $C$DW$75, DW_AT_decl_column(0x05)
+     960              
+     961              $C$DW$76        .dwtag  DW_TAG_enumerator
+     962                      .dwattr $C$DW$76, DW_AT_name("SYSCTL_PERIPH_CLK_LINA")
+     963                      .dwattr $C$DW$76, DW_AT_const_value(0x13)
+     964                      .dwattr $C$DW$76, DW_AT_decl_file("C:\ti\C2000Ware_MotorControl_SDK_5_04_00_00\c2000ware\driverlib\f2
+     965                      .dwattr $C$DW$76, DW_AT_decl_line(0x176)
+     966                      .dwattr $C$DW$76, DW_AT_decl_column(0x05)
+     967              
+     968              $C$DW$77        .dwtag  DW_TAG_enumerator
+     969                      .dwattr $C$DW$77, DW_AT_name("SYSCTL_PERIPH_CLK_LINB")
+     970                      .dwattr $C$DW$77, DW_AT_const_value(0x113)
+     971                      .dwattr $C$DW$77, DW_AT_decl_file("C:\ti\C2000Ware_MotorControl_SDK_5_04_00_00\c2000ware\driverlib\f2
+     972                      .dwattr $C$DW$77, DW_AT_decl_line(0x177)
+     973                      .dwattr $C$DW$77, DW_AT_decl_column(0x05)
+     974              
+     975              $C$DW$78        .dwtag  DW_TAG_enumerator
+     976                      .dwattr $C$DW$78, DW_AT_name("SYSCTL_PERIPH_CLK_PMBUSA")
+     977                      .dwattr $C$DW$78, DW_AT_const_value(0x14)
+     978                      .dwattr $C$DW$78, DW_AT_decl_file("C:\ti\C2000Ware_MotorControl_SDK_5_04_00_00\c2000ware\driverlib\f2
+     979                      .dwattr $C$DW$78, DW_AT_decl_line(0x178)
+     980                      .dwattr $C$DW$78, DW_AT_decl_column(0x05)
+     981              
+     982              $C$DW$79        .dwtag  DW_TAG_enumerator
+     983                      .dwattr $C$DW$79, DW_AT_name("SYSCTL_PERIPH_CLK_DCC0")
+     984                      .dwattr $C$DW$79, DW_AT_const_value(0x15)
+TMS320C2000 Assembler PC v22.6.2 Tue Dec 16 13:51:46 2025
+
+Copyright (c) 1996-2018 Texas Instruments Incorporated
+device.asm                                                           PAGE   20
+
+     985                      .dwattr $C$DW$79, DW_AT_decl_file("C:\ti\C2000Ware_MotorControl_SDK_5_04_00_00\c2000ware\driverlib\f2
+     986                      .dwattr $C$DW$79, DW_AT_decl_line(0x179)
+     987                      .dwattr $C$DW$79, DW_AT_decl_column(0x05)
+     988              
+     989              $C$DW$80        .dwtag  DW_TAG_enumerator
+     990                      .dwattr $C$DW$80, DW_AT_name("SYSCTL_PERIPH_CLK_DCC1")
+     991                      .dwattr $C$DW$80, DW_AT_const_value(0x115)
+     992                      .dwattr $C$DW$80, DW_AT_decl_file("C:\ti\C2000Ware_MotorControl_SDK_5_04_00_00\c2000ware\driverlib\f2
+     993                      .dwattr $C$DW$80, DW_AT_decl_line(0x17a)
+     994                      .dwattr $C$DW$80, DW_AT_decl_column(0x05)
+     995              
+     996              $C$DW$81        .dwtag  DW_TAG_enumerator
+     997                      .dwattr $C$DW$81, DW_AT_name("SYSCTL_PERIPH_CLK_MPOST0")
+     998                      .dwattr $C$DW$81, DW_AT_const_value(0x16)
+     999                      .dwattr $C$DW$81, DW_AT_decl_file("C:\ti\C2000Ware_MotorControl_SDK_5_04_00_00\c2000ware\driverlib\f2
+    1000                      .dwattr $C$DW$81, DW_AT_decl_line(0x17b)
+    1001                      .dwattr $C$DW$81, DW_AT_decl_column(0x05)
+    1002              
+    1003              $C$DW$82        .dwtag  DW_TAG_enumerator
+    1004                      .dwattr $C$DW$82, DW_AT_name("SYSCTL_PERIPH_CLK_HICA")
+    1005                      .dwattr $C$DW$82, DW_AT_const_value(0x19)
+    1006                      .dwattr $C$DW$82, DW_AT_decl_file("C:\ti\C2000Ware_MotorControl_SDK_5_04_00_00\c2000ware\driverlib\f2
+    1007                      .dwattr $C$DW$82, DW_AT_decl_line(0x17c)
+    1008                      .dwattr $C$DW$82, DW_AT_decl_column(0x05)
+    1009              
+    1010                      .dwattr $C$DW$T$19, DW_AT_decl_file("C:\ti\C2000Ware_MotorControl_SDK_5_04_00_00\c2000ware\driverlib\
+    1011                      .dwattr $C$DW$T$19, DW_AT_decl_line(0x151)
+    1012                      .dwattr $C$DW$T$19, DW_AT_decl_column(0x01)
+    1013                      .dwendtag $C$DW$T$19
+    1014              
+    1015                      .dwendtag $C$DW$TU$19
+    1016              
+    1017              
+    1018              $C$DW$TU$20     .dwtag  DW_TAG_type_unit
+    1019                      .dwmtype  $C$DW$T$20
+    1020              $C$DW$T$20      .dwtag  DW_TAG_typedef
+    1021                      .dwattr $C$DW$T$20, DW_AT_name("SysCtl_PeripheralPCLOCKCR")
+    1022                      .dwattr $C$DW$T$20, DW_AT_type(*$C$DW$T$19)
+    1023                      .dwattr $C$DW$T$20, DW_AT_decl_file("C:\ti\C2000Ware_MotorControl_SDK_5_04_00_00\c2000ware\driverlib\
+    1024                      .dwattr $C$DW$T$20, DW_AT_decl_line(0x17d)
+    1025                      .dwattr $C$DW$T$20, DW_AT_decl_column(0x03)
+    1026              
+    1027                      .dwendtag $C$DW$TU$20
+    1028              
+    1029              
+    1030              $C$DW$TU$21     .dwtag  DW_TAG_type_unit
+    1031                      .dwmtype  $C$DW$T$21
+    1032              
+    1033              $C$DW$T$21      .dwtag  DW_TAG_enumeration_type
+    1034                      .dwattr $C$DW$T$21, DW_AT_byte_size(0x01)
+    1035              $C$DW$83        .dwtag  DW_TAG_enumerator
+    1036                      .dwattr $C$DW$83, DW_AT_name("SYSCTL_LSPCLK_PRESCALE_1")
+    1037                      .dwattr $C$DW$83, DW_AT_const_value(0x00)
+    1038                      .dwattr $C$DW$83, DW_AT_decl_file("C:\ti\C2000Ware_MotorControl_SDK_5_04_00_00\c2000ware\driverlib\f2
+    1039                      .dwattr $C$DW$83, DW_AT_decl_line(0x1ea)
+TMS320C2000 Assembler PC v22.6.2 Tue Dec 16 13:51:46 2025
+
+Copyright (c) 1996-2018 Texas Instruments Incorporated
+device.asm                                                           PAGE   21
+
+    1040                      .dwattr $C$DW$83, DW_AT_decl_column(0x05)
+    1041              
+    1042              $C$DW$84        .dwtag  DW_TAG_enumerator
+    1043                      .dwattr $C$DW$84, DW_AT_name("SYSCTL_LSPCLK_PRESCALE_2")
+    1044                      .dwattr $C$DW$84, DW_AT_const_value(0x01)
+    1045                      .dwattr $C$DW$84, DW_AT_decl_file("C:\ti\C2000Ware_MotorControl_SDK_5_04_00_00\c2000ware\driverlib\f2
+    1046                      .dwattr $C$DW$84, DW_AT_decl_line(0x1eb)
+    1047                      .dwattr $C$DW$84, DW_AT_decl_column(0x05)
+    1048              
+    1049              $C$DW$85        .dwtag  DW_TAG_enumerator
+    1050                      .dwattr $C$DW$85, DW_AT_name("SYSCTL_LSPCLK_PRESCALE_4")
+    1051                      .dwattr $C$DW$85, DW_AT_const_value(0x02)
+    1052                      .dwattr $C$DW$85, DW_AT_decl_file("C:\ti\C2000Ware_MotorControl_SDK_5_04_00_00\c2000ware\driverlib\f2
+    1053                      .dwattr $C$DW$85, DW_AT_decl_line(0x1ec)
+    1054                      .dwattr $C$DW$85, DW_AT_decl_column(0x05)
+    1055              
+    1056              $C$DW$86        .dwtag  DW_TAG_enumerator
+    1057                      .dwattr $C$DW$86, DW_AT_name("SYSCTL_LSPCLK_PRESCALE_6")
+    1058                      .dwattr $C$DW$86, DW_AT_const_value(0x03)
+    1059                      .dwattr $C$DW$86, DW_AT_decl_file("C:\ti\C2000Ware_MotorControl_SDK_5_04_00_00\c2000ware\driverlib\f2
+    1060                      .dwattr $C$DW$86, DW_AT_decl_line(0x1ed)
+    1061                      .dwattr $C$DW$86, DW_AT_decl_column(0x05)
+    1062              
+    1063              $C$DW$87        .dwtag  DW_TAG_enumerator
+    1064                      .dwattr $C$DW$87, DW_AT_name("SYSCTL_LSPCLK_PRESCALE_8")
+    1065                      .dwattr $C$DW$87, DW_AT_const_value(0x04)
+    1066                      .dwattr $C$DW$87, DW_AT_decl_file("C:\ti\C2000Ware_MotorControl_SDK_5_04_00_00\c2000ware\driverlib\f2
+    1067                      .dwattr $C$DW$87, DW_AT_decl_line(0x1ee)
+    1068                      .dwattr $C$DW$87, DW_AT_decl_column(0x05)
+    1069              
+    1070              $C$DW$88        .dwtag  DW_TAG_enumerator
+    1071                      .dwattr $C$DW$88, DW_AT_name("SYSCTL_LSPCLK_PRESCALE_10")
+    1072                      .dwattr $C$DW$88, DW_AT_const_value(0x05)
+    1073                      .dwattr $C$DW$88, DW_AT_decl_file("C:\ti\C2000Ware_MotorControl_SDK_5_04_00_00\c2000ware\driverlib\f2
+    1074                      .dwattr $C$DW$88, DW_AT_decl_line(0x1ef)
+    1075                      .dwattr $C$DW$88, DW_AT_decl_column(0x05)
+    1076              
+    1077              $C$DW$89        .dwtag  DW_TAG_enumerator
+    1078                      .dwattr $C$DW$89, DW_AT_name("SYSCTL_LSPCLK_PRESCALE_12")
+    1079                      .dwattr $C$DW$89, DW_AT_const_value(0x06)
+    1080                      .dwattr $C$DW$89, DW_AT_decl_file("C:\ti\C2000Ware_MotorControl_SDK_5_04_00_00\c2000ware\driverlib\f2
+    1081                      .dwattr $C$DW$89, DW_AT_decl_line(0x1f0)
+    1082                      .dwattr $C$DW$89, DW_AT_decl_column(0x05)
+    1083              
+    1084              $C$DW$90        .dwtag  DW_TAG_enumerator
+    1085                      .dwattr $C$DW$90, DW_AT_name("SYSCTL_LSPCLK_PRESCALE_14")
+    1086                      .dwattr $C$DW$90, DW_AT_const_value(0x07)
+    1087                      .dwattr $C$DW$90, DW_AT_decl_file("C:\ti\C2000Ware_MotorControl_SDK_5_04_00_00\c2000ware\driverlib\f2
+    1088                      .dwattr $C$DW$90, DW_AT_decl_line(0x1f1)
+    1089                      .dwattr $C$DW$90, DW_AT_decl_column(0x05)
+    1090              
+    1091                      .dwattr $C$DW$T$21, DW_AT_decl_file("C:\ti\C2000Ware_MotorControl_SDK_5_04_00_00\c2000ware\driverlib\
+    1092                      .dwattr $C$DW$T$21, DW_AT_decl_line(0x1e9)
+    1093                      .dwattr $C$DW$T$21, DW_AT_decl_column(0x01)
+    1094                      .dwendtag $C$DW$T$21
+TMS320C2000 Assembler PC v22.6.2 Tue Dec 16 13:51:46 2025
+
+Copyright (c) 1996-2018 Texas Instruments Incorporated
+device.asm                                                           PAGE   22
+
+    1095              
+    1096                      .dwendtag $C$DW$TU$21
+    1097              
+    1098              
+    1099              $C$DW$TU$22     .dwtag  DW_TAG_type_unit
+    1100                      .dwmtype  $C$DW$T$22
+    1101              $C$DW$T$22      .dwtag  DW_TAG_typedef
+    1102                      .dwattr $C$DW$T$22, DW_AT_name("SysCtl_LSPCLKPrescaler")
+    1103                      .dwattr $C$DW$T$22, DW_AT_type(*$C$DW$T$21)
+    1104                      .dwattr $C$DW$T$22, DW_AT_decl_file("C:\ti\C2000Ware_MotorControl_SDK_5_04_00_00\c2000ware\driverlib\
+    1105                      .dwattr $C$DW$T$22, DW_AT_decl_line(0x1f2)
+    1106                      .dwattr $C$DW$T$22, DW_AT_decl_column(0x03)
+    1107              
+    1108                      .dwendtag $C$DW$TU$22
+    1109              
+    1110              
+    1111              $C$DW$TU$23     .dwtag  DW_TAG_type_unit
+    1112                      .dwmtype  $C$DW$T$23
+    1113              
+    1114              $C$DW$T$23      .dwtag  DW_TAG_enumeration_type
+    1115                      .dwattr $C$DW$T$23, DW_AT_byte_size(0x01)
+    1116              $C$DW$91        .dwtag  DW_TAG_enumerator
+    1117                      .dwattr $C$DW$91, DW_AT_name("DCC_COUNT1SRC_PLL")
+    1118                      .dwattr $C$DW$91, DW_AT_const_value(0x00)
+    1119                      .dwattr $C$DW$91, DW_AT_decl_file("C:/ti/C2000Ware_MotorControl_SDK_5_04_00_00/c2000ware/driverlib/f2
+    1120                      .dwattr $C$DW$91, DW_AT_decl_line(0x88)
+    1121                      .dwattr $C$DW$91, DW_AT_decl_column(0x05)
+    1122              
+    1123              $C$DW$92        .dwtag  DW_TAG_enumerator
+    1124                      .dwattr $C$DW$92, DW_AT_name("DCC_COUNT1SRC_INTOSC1")
+    1125                      .dwattr $C$DW$92, DW_AT_const_value(0x02)
+    1126                      .dwattr $C$DW$92, DW_AT_decl_file("C:/ti/C2000Ware_MotorControl_SDK_5_04_00_00/c2000ware/driverlib/f2
+    1127                      .dwattr $C$DW$92, DW_AT_decl_line(0x89)
+    1128                      .dwattr $C$DW$92, DW_AT_decl_column(0x05)
+    1129              
+    1130              $C$DW$93        .dwtag  DW_TAG_enumerator
+    1131                      .dwattr $C$DW$93, DW_AT_name("DCC_COUNT1SRC_INTOSC2")
+    1132                      .dwattr $C$DW$93, DW_AT_const_value(0x03)
+    1133                      .dwattr $C$DW$93, DW_AT_decl_file("C:/ti/C2000Ware_MotorControl_SDK_5_04_00_00/c2000ware/driverlib/f2
+    1134                      .dwattr $C$DW$93, DW_AT_decl_line(0x8a)
+    1135                      .dwattr $C$DW$93, DW_AT_decl_column(0x05)
+    1136              
+    1137              $C$DW$94        .dwtag  DW_TAG_enumerator
+    1138                      .dwattr $C$DW$94, DW_AT_name("DCC_COUNT1SRC_SYSCLK")
+    1139                      .dwattr $C$DW$94, DW_AT_const_value(0x06)
+    1140                      .dwattr $C$DW$94, DW_AT_decl_file("C:/ti/C2000Ware_MotorControl_SDK_5_04_00_00/c2000ware/driverlib/f2
+    1141                      .dwattr $C$DW$94, DW_AT_decl_line(0x8b)
+    1142                      .dwattr $C$DW$94, DW_AT_decl_column(0x05)
+    1143              
+    1144              $C$DW$95        .dwtag  DW_TAG_enumerator
+    1145                      .dwattr $C$DW$95, DW_AT_name("DCC_COUNT1SRC_AUXCLKIN")
+    1146                      .dwattr $C$DW$95, DW_AT_const_value(0x0a)
+    1147                      .dwattr $C$DW$95, DW_AT_decl_file("C:/ti/C2000Ware_MotorControl_SDK_5_04_00_00/c2000ware/driverlib/f2
+    1148                      .dwattr $C$DW$95, DW_AT_decl_line(0x8c)
+    1149                      .dwattr $C$DW$95, DW_AT_decl_column(0x05)
+TMS320C2000 Assembler PC v22.6.2 Tue Dec 16 13:51:46 2025
+
+Copyright (c) 1996-2018 Texas Instruments Incorporated
+device.asm                                                           PAGE   23
+
+    1150              
+    1151              $C$DW$96        .dwtag  DW_TAG_enumerator
+    1152                      .dwattr $C$DW$96, DW_AT_name("DCC_COUNT1SRC_EPWM")
+    1153                      .dwattr $C$DW$96, DW_AT_const_value(0x0b)
+    1154                      .dwattr $C$DW$96, DW_AT_decl_file("C:/ti/C2000Ware_MotorControl_SDK_5_04_00_00/c2000ware/driverlib/f2
+    1155                      .dwattr $C$DW$96, DW_AT_decl_line(0x8d)
+    1156                      .dwattr $C$DW$96, DW_AT_decl_column(0x05)
+    1157              
+    1158              $C$DW$97        .dwtag  DW_TAG_enumerator
+    1159                      .dwattr $C$DW$97, DW_AT_name("DCC_COUNT1SRC_ADCCLK")
+    1160                      .dwattr $C$DW$97, DW_AT_const_value(0x0d)
+    1161                      .dwattr $C$DW$97, DW_AT_decl_file("C:/ti/C2000Ware_MotorControl_SDK_5_04_00_00/c2000ware/driverlib/f2
+    1162                      .dwattr $C$DW$97, DW_AT_decl_line(0x8e)
+    1163                      .dwattr $C$DW$97, DW_AT_decl_column(0x05)
+    1164              
+    1165              $C$DW$98        .dwtag  DW_TAG_enumerator
+    1166                      .dwattr $C$DW$98, DW_AT_name("DCC_COUNT1SRC_WDCLK")
+    1167                      .dwattr $C$DW$98, DW_AT_const_value(0x0e)
+    1168                      .dwattr $C$DW$98, DW_AT_decl_file("C:/ti/C2000Ware_MotorControl_SDK_5_04_00_00/c2000ware/driverlib/f2
+    1169                      .dwattr $C$DW$98, DW_AT_decl_line(0x8f)
+    1170                      .dwattr $C$DW$98, DW_AT_decl_column(0x05)
+    1171              
+    1172              $C$DW$99        .dwtag  DW_TAG_enumerator
+    1173                      .dwattr $C$DW$99, DW_AT_name("DCC_COUNT1SRC_CANX")
+    1174                      .dwattr $C$DW$99, DW_AT_const_value(0x0f)
+    1175                      .dwattr $C$DW$99, DW_AT_decl_file("C:/ti/C2000Ware_MotorControl_SDK_5_04_00_00/c2000ware/driverlib/f2
+    1176                      .dwattr $C$DW$99, DW_AT_decl_line(0x90)
+    1177                      .dwattr $C$DW$99, DW_AT_decl_column(0x05)
+    1178              
+    1179              $C$DW$100       .dwtag  DW_TAG_enumerator
+    1180                      .dwattr $C$DW$100, DW_AT_name("DCC_COUNT1SRC_SYSAPLL_CLK_AUX")
+    1181                      .dwattr $C$DW$100, DW_AT_const_value(0x16)
+    1182                      .dwattr $C$DW$100, DW_AT_decl_file("C:/ti/C2000Ware_MotorControl_SDK_5_04_00_00/c2000ware/driverlib/f
+    1183                      .dwattr $C$DW$100, DW_AT_decl_line(0x91)
+    1184                      .dwattr $C$DW$100, DW_AT_decl_column(0x05)
+    1185              
+    1186                      .dwattr $C$DW$T$23, DW_AT_decl_file("C:/ti/C2000Ware_MotorControl_SDK_5_04_00_00/c2000ware/driverlib/
+    1187                      .dwattr $C$DW$T$23, DW_AT_decl_line(0x87)
+    1188                      .dwattr $C$DW$T$23, DW_AT_decl_column(0x01)
+    1189                      .dwendtag $C$DW$T$23
+    1190              
+    1191                      .dwendtag $C$DW$TU$23
+    1192              
+    1193              
+    1194              $C$DW$TU$24     .dwtag  DW_TAG_type_unit
+    1195                      .dwmtype  $C$DW$T$24
+    1196              $C$DW$T$24      .dwtag  DW_TAG_typedef
+    1197                      .dwattr $C$DW$T$24, DW_AT_name("DCC_Count1ClockSource")
+    1198                      .dwattr $C$DW$T$24, DW_AT_type(*$C$DW$T$23)
+    1199                      .dwattr $C$DW$T$24, DW_AT_decl_file("C:/ti/C2000Ware_MotorControl_SDK_5_04_00_00/c2000ware/driverlib/
+    1200                      .dwattr $C$DW$T$24, DW_AT_decl_line(0x92)
+    1201                      .dwattr $C$DW$T$24, DW_AT_decl_column(0x03)
+    1202              
+    1203                      .dwendtag $C$DW$TU$24
+    1204              
+TMS320C2000 Assembler PC v22.6.2 Tue Dec 16 13:51:46 2025
+
+Copyright (c) 1996-2018 Texas Instruments Incorporated
+device.asm                                                           PAGE   24
+
+    1205              
+    1206              $C$DW$TU$25     .dwtag  DW_TAG_type_unit
+    1207                      .dwmtype  $C$DW$T$25
+    1208              
+    1209              $C$DW$T$25      .dwtag  DW_TAG_enumeration_type
+    1210                      .dwattr $C$DW$T$25, DW_AT_byte_size(0x01)
+    1211              $C$DW$101       .dwtag  DW_TAG_enumerator
+    1212                      .dwattr $C$DW$101, DW_AT_name("DCC_COUNT0SRC_XTAL")
+    1213                      .dwattr $C$DW$101, DW_AT_const_value(0x00)
+    1214                      .dwattr $C$DW$101, DW_AT_decl_file("C:/ti/C2000Ware_MotorControl_SDK_5_04_00_00/c2000ware/driverlib/f
+    1215                      .dwattr $C$DW$101, DW_AT_decl_line(0x9c)
+    1216                      .dwattr $C$DW$101, DW_AT_decl_column(0x05)
+    1217              
+    1218              $C$DW$102       .dwtag  DW_TAG_enumerator
+    1219                      .dwattr $C$DW$102, DW_AT_name("DCC_COUNT0SRC_INTOSC1")
+    1220                      .dwattr $C$DW$102, DW_AT_const_value(0x01)
+    1221                      .dwattr $C$DW$102, DW_AT_decl_file("C:/ti/C2000Ware_MotorControl_SDK_5_04_00_00/c2000ware/driverlib/f
+    1222                      .dwattr $C$DW$102, DW_AT_decl_line(0x9d)
+    1223                      .dwattr $C$DW$102, DW_AT_decl_column(0x05)
+    1224              
+    1225              $C$DW$103       .dwtag  DW_TAG_enumerator
+    1226                      .dwattr $C$DW$103, DW_AT_name("DCC_COUNT0SRC_INTOSC2")
+    1227                      .dwattr $C$DW$103, DW_AT_const_value(0x02)
+    1228                      .dwattr $C$DW$103, DW_AT_decl_file("C:/ti/C2000Ware_MotorControl_SDK_5_04_00_00/c2000ware/driverlib/f
+    1229                      .dwattr $C$DW$103, DW_AT_decl_line(0x9e)
+    1230                      .dwattr $C$DW$103, DW_AT_decl_column(0x05)
+    1231              
+    1232              $C$DW$104       .dwtag  DW_TAG_enumerator
+    1233                      .dwattr $C$DW$104, DW_AT_name("DCC_COUNT0SRC_SYSCLK")
+    1234                      .dwattr $C$DW$104, DW_AT_const_value(0x05)
+    1235                      .dwattr $C$DW$104, DW_AT_decl_file("C:/ti/C2000Ware_MotorControl_SDK_5_04_00_00/c2000ware/driverlib/f
+    1236                      .dwattr $C$DW$104, DW_AT_decl_line(0x9f)
+    1237                      .dwattr $C$DW$104, DW_AT_decl_column(0x05)
+    1238              
+    1239              $C$DW$105       .dwtag  DW_TAG_enumerator
+    1240                      .dwattr $C$DW$105, DW_AT_name("DCC_COUNT0SRC_AUXCLK")
+    1241                      .dwattr $C$DW$105, DW_AT_const_value(0x08)
+    1242                      .dwattr $C$DW$105, DW_AT_decl_file("C:/ti/C2000Ware_MotorControl_SDK_5_04_00_00/c2000ware/driverlib/f
+    1243                      .dwattr $C$DW$105, DW_AT_decl_line(0xa0)
+    1244                      .dwattr $C$DW$105, DW_AT_decl_column(0x05)
+    1245              
+    1246              $C$DW$106       .dwtag  DW_TAG_enumerator
+    1247                      .dwattr $C$DW$106, DW_AT_name("DCC_COUNT0SRC_XBAR")
+    1248                      .dwattr $C$DW$106, DW_AT_const_value(0x0c)
+    1249                      .dwattr $C$DW$106, DW_AT_decl_file("C:/ti/C2000Ware_MotorControl_SDK_5_04_00_00/c2000ware/driverlib/f
+    1250                      .dwattr $C$DW$106, DW_AT_decl_line(0xa1)
+    1251                      .dwattr $C$DW$106, DW_AT_decl_column(0x05)
+    1252              
+    1253                      .dwattr $C$DW$T$25, DW_AT_decl_file("C:/ti/C2000Ware_MotorControl_SDK_5_04_00_00/c2000ware/driverlib/
+    1254                      .dwattr $C$DW$T$25, DW_AT_decl_line(0x9b)
+    1255                      .dwattr $C$DW$T$25, DW_AT_decl_column(0x01)
+    1256                      .dwendtag $C$DW$T$25
+    1257              
+    1258                      .dwendtag $C$DW$TU$25
+    1259              
+TMS320C2000 Assembler PC v22.6.2 Tue Dec 16 13:51:46 2025
+
+Copyright (c) 1996-2018 Texas Instruments Incorporated
+device.asm                                                           PAGE   25
+
+    1260              
+    1261              $C$DW$TU$26     .dwtag  DW_TAG_type_unit
+    1262                      .dwmtype  $C$DW$T$26
+    1263              $C$DW$T$26      .dwtag  DW_TAG_typedef
+    1264                      .dwattr $C$DW$T$26, DW_AT_name("DCC_Count0ClockSource")
+    1265                      .dwattr $C$DW$T$26, DW_AT_type(*$C$DW$T$25)
+    1266                      .dwattr $C$DW$T$26, DW_AT_decl_file("C:/ti/C2000Ware_MotorControl_SDK_5_04_00_00/c2000ware/driverlib/
+    1267                      .dwattr $C$DW$T$26, DW_AT_decl_line(0xa2)
+    1268                      .dwattr $C$DW$T$26, DW_AT_decl_column(0x03)
+    1269              
+    1270                      .dwendtag $C$DW$TU$26
+    1271              
+    1272              
+    1273              $C$DW$TU$27     .dwtag  DW_TAG_type_unit
+    1274                      .dwmtype  $C$DW$T$27
+    1275              
+    1276              $C$DW$T$27      .dwtag  DW_TAG_enumeration_type
+    1277                      .dwattr $C$DW$T$27, DW_AT_byte_size(0x01)
+    1278              $C$DW$107       .dwtag  DW_TAG_enumerator
+    1279                      .dwattr $C$DW$107, DW_AT_name("GPIO_PORT_A")
+    1280                      .dwattr $C$DW$107, DW_AT_const_value(0x00)
+    1281                      .dwattr $C$DW$107, DW_AT_decl_file("C:/ti/C2000Ware_MotorControl_SDK_5_04_00_00/c2000ware/driverlib/f
+    1282                      .dwattr $C$DW$107, DW_AT_decl_line(0xb1)
+    1283                      .dwattr $C$DW$107, DW_AT_decl_column(0x05)
+    1284              
+    1285              $C$DW$108       .dwtag  DW_TAG_enumerator
+    1286                      .dwattr $C$DW$108, DW_AT_name("GPIO_PORT_B")
+    1287                      .dwattr $C$DW$108, DW_AT_const_value(0x01)
+    1288                      .dwattr $C$DW$108, DW_AT_decl_file("C:/ti/C2000Ware_MotorControl_SDK_5_04_00_00/c2000ware/driverlib/f
+    1289                      .dwattr $C$DW$108, DW_AT_decl_line(0xb2)
+    1290                      .dwattr $C$DW$108, DW_AT_decl_column(0x05)
+    1291              
+    1292              $C$DW$109       .dwtag  DW_TAG_enumerator
+    1293                      .dwattr $C$DW$109, DW_AT_name("GPIO_PORT_H")
+    1294                      .dwattr $C$DW$109, DW_AT_const_value(0x07)
+    1295                      .dwattr $C$DW$109, DW_AT_decl_file("C:/ti/C2000Ware_MotorControl_SDK_5_04_00_00/c2000ware/driverlib/f
+    1296                      .dwattr $C$DW$109, DW_AT_decl_line(0xb3)
+    1297                      .dwattr $C$DW$109, DW_AT_decl_column(0x05)
+    1298              
+    1299                      .dwattr $C$DW$T$27, DW_AT_decl_file("C:/ti/C2000Ware_MotorControl_SDK_5_04_00_00/c2000ware/driverlib/
+    1300                      .dwattr $C$DW$T$27, DW_AT_decl_line(0xb0)
+    1301                      .dwattr $C$DW$T$27, DW_AT_decl_column(0x01)
+    1302                      .dwendtag $C$DW$T$27
+    1303              
+    1304                      .dwendtag $C$DW$TU$27
+    1305              
+    1306              
+    1307              $C$DW$TU$28     .dwtag  DW_TAG_type_unit
+    1308                      .dwmtype  $C$DW$T$28
+    1309              $C$DW$T$28      .dwtag  DW_TAG_typedef
+    1310                      .dwattr $C$DW$T$28, DW_AT_name("GPIO_Port")
+    1311                      .dwattr $C$DW$T$28, DW_AT_type(*$C$DW$T$27)
+    1312                      .dwattr $C$DW$T$28, DW_AT_decl_file("C:/ti/C2000Ware_MotorControl_SDK_5_04_00_00/c2000ware/driverlib/
+    1313                      .dwattr $C$DW$T$28, DW_AT_decl_line(0xb4)
+    1314                      .dwattr $C$DW$T$28, DW_AT_decl_column(0x03)
+TMS320C2000 Assembler PC v22.6.2 Tue Dec 16 13:51:46 2025
+
+Copyright (c) 1996-2018 Texas Instruments Incorporated
+device.asm                                                           PAGE   26
+
+    1315              
+    1316                      .dwendtag $C$DW$TU$28
+    1317              
+    1318              
+    1319              $C$DW$TU$2      .dwtag  DW_TAG_type_unit
+    1320                      .dwmtype  $C$DW$T$2
+    1321              $C$DW$T$2       .dwtag  DW_TAG_unspecified_type
+    1322                      .dwattr $C$DW$T$2, DW_AT_name("void")
+    1323              
+    1324                      .dwendtag $C$DW$TU$2
+    1325              
+    1326              
+    1327              $C$DW$TU$4      .dwtag  DW_TAG_type_unit
+    1328                      .dwmtype  $C$DW$T$4
+    1329              $C$DW$T$4       .dwtag  DW_TAG_base_type
+    1330                      .dwattr $C$DW$T$4, DW_AT_encoding(DW_ATE_boolean)
+    1331                      .dwattr $C$DW$T$4, DW_AT_name("bool")
+    1332                      .dwattr $C$DW$T$4, DW_AT_byte_size(0x01)
+    1333              
+    1334                      .dwendtag $C$DW$TU$4
+    1335              
+    1336              
+    1337              $C$DW$TU$5      .dwtag  DW_TAG_type_unit
+    1338                      .dwmtype  $C$DW$T$5
+    1339              $C$DW$T$5       .dwtag  DW_TAG_base_type
+    1340                      .dwattr $C$DW$T$5, DW_AT_encoding(DW_ATE_signed_char)
+    1341                      .dwattr $C$DW$T$5, DW_AT_name("signed char")
+    1342                      .dwattr $C$DW$T$5, DW_AT_byte_size(0x01)
+    1343              
+    1344                      .dwendtag $C$DW$TU$5
+    1345              
+    1346              
+    1347              $C$DW$TU$6      .dwtag  DW_TAG_type_unit
+    1348                      .dwmtype  $C$DW$T$6
+    1349              $C$DW$T$6       .dwtag  DW_TAG_base_type
+    1350                      .dwattr $C$DW$T$6, DW_AT_encoding(DW_ATE_unsigned_char)
+    1351                      .dwattr $C$DW$T$6, DW_AT_name("unsigned char")
+    1352                      .dwattr $C$DW$T$6, DW_AT_byte_size(0x01)
+    1353              
+    1354                      .dwendtag $C$DW$TU$6
+    1355              
+    1356              
+    1357              $C$DW$TU$7      .dwtag  DW_TAG_type_unit
+    1358                      .dwmtype  $C$DW$T$7
+    1359              $C$DW$T$7       .dwtag  DW_TAG_base_type
+    1360                      .dwattr $C$DW$T$7, DW_AT_encoding(DW_ATE_signed_char)
+    1361                      .dwattr $C$DW$T$7, DW_AT_name("wchar_t")
+    1362                      .dwattr $C$DW$T$7, DW_AT_byte_size(0x02)
+    1363              
+    1364                      .dwendtag $C$DW$TU$7
+    1365              
+    1366              
+    1367              $C$DW$TU$8      .dwtag  DW_TAG_type_unit
+    1368                      .dwmtype  $C$DW$T$8
+    1369              $C$DW$T$8       .dwtag  DW_TAG_base_type
+TMS320C2000 Assembler PC v22.6.2 Tue Dec 16 13:51:46 2025
+
+Copyright (c) 1996-2018 Texas Instruments Incorporated
+device.asm                                                           PAGE   27
+
+    1370                      .dwattr $C$DW$T$8, DW_AT_encoding(DW_ATE_signed)
+    1371                      .dwattr $C$DW$T$8, DW_AT_name("short")
+    1372                      .dwattr $C$DW$T$8, DW_AT_byte_size(0x01)
+    1373              
+    1374                      .dwendtag $C$DW$TU$8
+    1375              
+    1376              
+    1377              $C$DW$TU$9      .dwtag  DW_TAG_type_unit
+    1378                      .dwmtype  $C$DW$T$9
+    1379              $C$DW$T$9       .dwtag  DW_TAG_base_type
+    1380                      .dwattr $C$DW$T$9, DW_AT_encoding(DW_ATE_unsigned)
+    1381                      .dwattr $C$DW$T$9, DW_AT_name("unsigned short")
+    1382                      .dwattr $C$DW$T$9, DW_AT_byte_size(0x01)
+    1383              
+    1384                      .dwendtag $C$DW$TU$9
+    1385              
+    1386              
+    1387              $C$DW$TU$10     .dwtag  DW_TAG_type_unit
+    1388                      .dwmtype  $C$DW$T$10
+    1389              $C$DW$T$10      .dwtag  DW_TAG_base_type
+    1390                      .dwattr $C$DW$T$10, DW_AT_encoding(DW_ATE_signed)
+    1391                      .dwattr $C$DW$T$10, DW_AT_name("int")
+    1392                      .dwattr $C$DW$T$10, DW_AT_byte_size(0x01)
+    1393              
+    1394                      .dwendtag $C$DW$TU$10
+    1395              
+    1396              
+    1397              $C$DW$TU$11     .dwtag  DW_TAG_type_unit
+    1398                      .dwmtype  $C$DW$T$11
+    1399              $C$DW$T$11      .dwtag  DW_TAG_base_type
+    1400                      .dwattr $C$DW$T$11, DW_AT_encoding(DW_ATE_unsigned)
+    1401                      .dwattr $C$DW$T$11, DW_AT_name("unsigned int")
+    1402                      .dwattr $C$DW$T$11, DW_AT_byte_size(0x01)
+    1403              
+    1404                      .dwendtag $C$DW$TU$11
+    1405              
+    1406              
+    1407              $C$DW$TU$38     .dwtag  DW_TAG_type_unit
+    1408                      .dwmtype  $C$DW$T$38
+    1409              $C$DW$T$38      .dwtag  DW_TAG_typedef
+    1410                      .dwattr $C$DW$T$38, DW_AT_name("__uint16_t")
+    1411                      .dwattr $C$DW$T$38, DW_AT_type(*$C$DW$T$11)
+    1412                      .dwattr $C$DW$T$38, DW_AT_decl_file("C:/ti/ccs2031/ccs/tools/compiler/ti-cgt-c2000_22.6.2.LTS/include
+    1413                      .dwattr $C$DW$T$38, DW_AT_decl_line(0x41)
+    1414                      .dwattr $C$DW$T$38, DW_AT_decl_column(0x1c)
+    1415              
+    1416                      .dwendtag $C$DW$TU$38
+    1417              
+    1418              
+    1419              $C$DW$TU$39     .dwtag  DW_TAG_type_unit
+    1420                      .dwmtype  $C$DW$T$39
+    1421              $C$DW$T$39      .dwtag  DW_TAG_typedef
+    1422                      .dwattr $C$DW$T$39, DW_AT_name("uint16_t")
+    1423                      .dwattr $C$DW$T$39, DW_AT_type(*$C$DW$T$38)
+    1424                      .dwattr $C$DW$T$39, DW_AT_decl_file("C:/ti/ccs2031/ccs/tools/compiler/ti-cgt-c2000_22.6.2.LTS/include
+TMS320C2000 Assembler PC v22.6.2 Tue Dec 16 13:51:46 2025
+
+Copyright (c) 1996-2018 Texas Instruments Incorporated
+device.asm                                                           PAGE   28
+
+    1425                      .dwattr $C$DW$T$39, DW_AT_decl_line(0x41)
+    1426                      .dwattr $C$DW$T$39, DW_AT_decl_column(0x15)
+    1427              
+    1428                      .dwendtag $C$DW$TU$39
+    1429              
+    1430              
+    1431              $C$DW$TU$12     .dwtag  DW_TAG_type_unit
+    1432                      .dwmtype  $C$DW$T$12
+    1433              $C$DW$T$12      .dwtag  DW_TAG_base_type
+    1434                      .dwattr $C$DW$T$12, DW_AT_encoding(DW_ATE_signed)
+    1435                      .dwattr $C$DW$T$12, DW_AT_name("long")
+    1436                      .dwattr $C$DW$T$12, DW_AT_byte_size(0x02)
+    1437              
+    1438                      .dwendtag $C$DW$TU$12
+    1439              
+    1440              
+    1441              $C$DW$TU$13     .dwtag  DW_TAG_type_unit
+    1442                      .dwmtype  $C$DW$T$13
+    1443              $C$DW$T$13      .dwtag  DW_TAG_base_type
+    1444                      .dwattr $C$DW$T$13, DW_AT_encoding(DW_ATE_unsigned)
+    1445                      .dwattr $C$DW$T$13, DW_AT_name("unsigned long")
+    1446                      .dwattr $C$DW$T$13, DW_AT_byte_size(0x02)
+    1447              
+    1448                      .dwendtag $C$DW$TU$13
+    1449              
+    1450              
+    1451              $C$DW$TU$35     .dwtag  DW_TAG_type_unit
+    1452                      .dwmtype  $C$DW$T$35
+    1453              $C$DW$T$35      .dwtag  DW_TAG_typedef
+    1454                      .dwattr $C$DW$T$35, DW_AT_name("__uint32_t")
+    1455                      .dwattr $C$DW$T$35, DW_AT_type(*$C$DW$T$13)
+    1456                      .dwattr $C$DW$T$35, DW_AT_decl_file("C:/ti/ccs2031/ccs/tools/compiler/ti-cgt-c2000_22.6.2.LTS/include
+    1457                      .dwattr $C$DW$T$35, DW_AT_decl_line(0x43)
+    1458                      .dwattr $C$DW$T$35, DW_AT_decl_column(0x1c)
+    1459              
+    1460                      .dwendtag $C$DW$TU$35
+    1461              
+    1462              
+    1463              $C$DW$TU$36     .dwtag  DW_TAG_type_unit
+    1464                      .dwmtype  $C$DW$T$36
+    1465              $C$DW$T$36      .dwtag  DW_TAG_typedef
+    1466                      .dwattr $C$DW$T$36, DW_AT_name("uint32_t")
+    1467                      .dwattr $C$DW$T$36, DW_AT_type(*$C$DW$T$35)
+    1468                      .dwattr $C$DW$T$36, DW_AT_decl_file("C:/ti/ccs2031/ccs/tools/compiler/ti-cgt-c2000_22.6.2.LTS/include
+    1469                      .dwattr $C$DW$T$36, DW_AT_decl_line(0x46)
+    1470                      .dwattr $C$DW$T$36, DW_AT_decl_column(0x15)
+    1471              
+    1472                      .dwendtag $C$DW$TU$36
+    1473              
+    1474              
+    1475              $C$DW$TU$14     .dwtag  DW_TAG_type_unit
+    1476                      .dwmtype  $C$DW$T$14
+    1477              $C$DW$T$14      .dwtag  DW_TAG_base_type
+    1478                      .dwattr $C$DW$T$14, DW_AT_encoding(DW_ATE_signed)
+    1479                      .dwattr $C$DW$T$14, DW_AT_name("long long")
+TMS320C2000 Assembler PC v22.6.2 Tue Dec 16 13:51:46 2025
+
+Copyright (c) 1996-2018 Texas Instruments Incorporated
+device.asm                                                           PAGE   29
+
+    1480                      .dwattr $C$DW$T$14, DW_AT_byte_size(0x04)
+    1481              
+    1482                      .dwendtag $C$DW$TU$14
+    1483              
+    1484              
+    1485              $C$DW$TU$15     .dwtag  DW_TAG_type_unit
+    1486                      .dwmtype  $C$DW$T$15
+    1487              $C$DW$T$15      .dwtag  DW_TAG_base_type
+    1488                      .dwattr $C$DW$T$15, DW_AT_encoding(DW_ATE_unsigned)
+    1489                      .dwattr $C$DW$T$15, DW_AT_name("unsigned long long")
+    1490                      .dwattr $C$DW$T$15, DW_AT_byte_size(0x04)
+    1491              
+    1492                      .dwendtag $C$DW$TU$15
+    1493              
+    1494              
+    1495              $C$DW$TU$16     .dwtag  DW_TAG_type_unit
+    1496                      .dwmtype  $C$DW$T$16
+    1497              $C$DW$T$16      .dwtag  DW_TAG_base_type
+    1498                      .dwattr $C$DW$T$16, DW_AT_encoding(DW_ATE_float)
+    1499                      .dwattr $C$DW$T$16, DW_AT_name("float")
+    1500                      .dwattr $C$DW$T$16, DW_AT_byte_size(0x02)
+    1501              
+    1502                      .dwendtag $C$DW$TU$16
+    1503              
+    1504              
+    1505              $C$DW$TU$61     .dwtag  DW_TAG_type_unit
+    1506                      .dwmtype  $C$DW$T$61
+    1507              $C$DW$110       .dwtag  DW_TAG_TI_far_type
+    1508                      .dwattr $C$DW$110, DW_AT_type(*$C$DW$T$16)
+    1509              
+    1510              $C$DW$T$61      .dwtag  DW_TAG_const_type
+    1511                      .dwattr $C$DW$T$61, DW_AT_type(*$C$DW$110)
+    1512              
+    1513                      .dwendtag $C$DW$TU$61
+    1514              
+    1515              
+    1516              $C$DW$TU$52     .dwtag  DW_TAG_type_unit
+    1517                      .dwmtype  $C$DW$T$52
+    1518              $C$DW$T$52      .dwtag  DW_TAG_typedef
+    1519                      .dwattr $C$DW$T$52, DW_AT_name("float32_t")
+    1520                      .dwattr $C$DW$T$52, DW_AT_type(*$C$DW$T$16)
+    1521                      .dwattr $C$DW$T$52, DW_AT_decl_file("C:\ti\C2000Ware_MotorControl_SDK_5_04_00_00\c2000ware\driverlib\
+    1522                      .dwattr $C$DW$T$52, DW_AT_decl_line(0x64)
+    1523                      .dwattr $C$DW$T$52, DW_AT_decl_column(0x17)
+    1524              
+    1525                      .dwendtag $C$DW$TU$52
+    1526              
+    1527              
+    1528              $C$DW$TU$17     .dwtag  DW_TAG_type_unit
+    1529                      .dwmtype  $C$DW$T$17
+    1530              $C$DW$T$17      .dwtag  DW_TAG_base_type
+    1531                      .dwattr $C$DW$T$17, DW_AT_encoding(DW_ATE_float)
+    1532                      .dwattr $C$DW$T$17, DW_AT_name("double")
+    1533                      .dwattr $C$DW$T$17, DW_AT_byte_size(0x04)
+    1534              
+TMS320C2000 Assembler PC v22.6.2 Tue Dec 16 13:51:46 2025
+
+Copyright (c) 1996-2018 Texas Instruments Incorporated
+device.asm                                                           PAGE   30
+
+    1535                      .dwendtag $C$DW$TU$17
+    1536              
+    1537              
+    1538              $C$DW$TU$18     .dwtag  DW_TAG_type_unit
+    1539                      .dwmtype  $C$DW$T$18
+    1540              $C$DW$T$18      .dwtag  DW_TAG_base_type
+    1541                      .dwattr $C$DW$T$18, DW_AT_encoding(DW_ATE_float)
+    1542                      .dwattr $C$DW$T$18, DW_AT_name("long double")
+    1543                      .dwattr $C$DW$T$18, DW_AT_byte_size(0x04)
+    1544              
+    1545                      .dwendtag $C$DW$TU$18
+    1546              
+    1547              
+    1548              $C$DW$TU$44     .dwtag  DW_TAG_type_unit
+    1549                      .dwmtype  $C$DW$T$44
+    1550              $C$DW$111       .dwtag  DW_TAG_TI_far_type
+    1551                      .dwattr $C$DW$111, DW_AT_type(*$C$DW$T$5)
+    1552              
+    1553              $C$DW$T$44      .dwtag  DW_TAG_const_type
+    1554                      .dwattr $C$DW$T$44, DW_AT_type(*$C$DW$111)
+    1555              
+    1556                      .dwendtag $C$DW$TU$44
+    1557              
+    1558              
+    1559              $C$DW$TU$45     .dwtag  DW_TAG_type_unit
+    1560                      .dwmtype  $C$DW$T$45
+    1561              $C$DW$T$45      .dwtag  DW_TAG_pointer_type
+    1562                      .dwattr $C$DW$T$45, DW_AT_type(*$C$DW$T$44)
+    1563                      .dwattr $C$DW$T$45, DW_AT_address_class(0x20)
+    1564              
+    1565                      .dwendtag $C$DW$TU$45
+    1566              
+    1567              
+    1568              $C$DW$TU$62     .dwtag  DW_TAG_type_unit
+    1569                      .dwmtype  $C$DW$T$62
+    1570              $C$DW$T$62      .dwtag  DW_TAG_base_type
+    1571                      .dwattr $C$DW$T$62, DW_AT_encoding(DW_ATE_unsigned_char)
+    1572                      .dwattr $C$DW$T$62, DW_AT_name("unsigned char")
+    1573                      .dwattr $C$DW$T$62, DW_AT_byte_size(0x01)
+    1574              
+    1575                      .dwendtag $C$DW$TU$62
+    1576              
+
+No Assembly Errors, No Assembly Warnings
