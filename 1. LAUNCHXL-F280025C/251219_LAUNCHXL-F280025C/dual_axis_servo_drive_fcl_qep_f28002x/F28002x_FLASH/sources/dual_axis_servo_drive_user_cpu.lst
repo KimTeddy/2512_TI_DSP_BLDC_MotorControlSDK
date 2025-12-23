@@ -1,11 +1,11 @@
-TMS320C2000 Assembler PC v22.6.2 Fri Dec 19 17:46:48 2025
+TMS320C2000 Assembler PC v22.6.2 Mon Dec 22 12:49:19 2025
 
 Copyright (c) 1996-2018 Texas Instruments Incorporated
 dual_axis_servo_drive_user_cpu.asm                                   PAGE    1
 
        1              ;***************************************************************
        2              ;* TMS320C2000 G3 C/C++ Codegen                               PC v22.6.2.LTS *
-       3              ;* Date/Time created: Fri Dec 19 17:46:47 2025                 *
+       3              ;* Date/Time created: Mon Dec 22 12:49:19 2025                 *
        4              ;***************************************************************
        5                      .compiler_opts --abi=eabi --diag_wrap=off --float_support=fpu32 --hll_source=on --idiv_support=idiv0 
        6                      .asg    XAR2, FP
@@ -58,7 +58,7 @@ dual_axis_servo_drive_user_cpu.asm                                   PAGE    1
       53              
       54              $C$DW$10        .dwtag  DW_TAG_formal_parameter
       55                      .dwattr $C$DW$10, DW_AT_type(*$C$DW$T$146)
-TMS320C2000 Assembler PC v22.6.2 Fri Dec 19 17:46:48 2025
+TMS320C2000 Assembler PC v22.6.2 Mon Dec 22 12:49:19 2025
 
 Copyright (c) 1996-2018 Texas Instruments Incorporated
 dual_axis_servo_drive_user_cpu.asm                                   PAGE    2
@@ -118,7 +118,7 @@ dual_axis_servo_drive_user_cpu.asm                                   PAGE    2
      107              $C$DW$17        .dwtag  DW_TAG_variable
      108                      .dwattr $C$DW$17, DW_AT_name("K1")
      109                      .dwattr $C$DW$17, DW_AT_linkage_name("K1")
-TMS320C2000 Assembler PC v22.6.2 Fri Dec 19 17:46:48 2025
+TMS320C2000 Assembler PC v22.6.2 Mon Dec 22 12:49:19 2025
 
 Copyright (c) 1996-2018 Texas Instruments Incorporated
 dual_axis_servo_drive_user_cpu.asm                                   PAGE    3
@@ -178,7 +178,7 @@ dual_axis_servo_drive_user_cpu.asm                                   PAGE    3
      161                      .dwpsn  file "../sources/dual_axis_servo_drive_user_cpu.c",line 422,column 1,is_stmt,address ||runOff
      162              
      163                      .dwfde $C$DW$CIE, ||runOffsetsCalculation||
-TMS320C2000 Assembler PC v22.6.2 Fri Dec 19 17:46:48 2025
+TMS320C2000 Assembler PC v22.6.2 Mon Dec 22 12:49:19 2025
 
 Copyright (c) 1996-2018 Texas Instruments Incorporated
 dual_axis_servo_drive_user_cpu.asm                                   PAGE    4
@@ -238,7 +238,7 @@ dual_axis_servo_drive_user_cpu.asm                                   PAGE    4
      216                      .dwpsn  file "../sources/dual_axis_servo_drive_user_cpu.c",line 424,column 5,is_stmt,isa 0
      217 00000001 D032          MOVB      XAR0,#50              ; [CPU_ALU] |424| 
      218 00000002 E590          ZERO      R0H                   ; [CPU_FPU] |424| 
-TMS320C2000 Assembler PC v22.6.2 Fri Dec 19 17:46:48 2025
+TMS320C2000 Assembler PC v22.6.2 Mon Dec 22 12:49:19 2025
 
 Copyright (c) 1996-2018 Texas Instruments Incorporated
 dual_axis_servo_drive_user_cpu.asm                                   PAGE    5
@@ -298,7 +298,7 @@ dual_axis_servo_drive_user_cpu.asm                                   PAGE    5
          00000025 0000 
      261                      .dwpsn  file "../sources/dual_axis_servo_drive_user_cpu.c",line 477,column 13,is_stmt,isa 0
      262 00000026 1B00!         CMP       @||offsetCalCounter||,#1000 ; [CPU_ALU] |477| 
-TMS320C2000 Assembler PC v22.6.2 Fri Dec 19 17:46:48 2025
+TMS320C2000 Assembler PC v22.6.2 Mon Dec 22 12:49:19 2025
 
 Copyright (c) 1996-2018 Texas Instruments Incorporated
 dual_axis_servo_drive_user_cpu.asm                                   PAGE    6
@@ -358,7 +358,7 @@ dual_axis_servo_drive_user_cpu.asm                                   PAGE    6
          00000050 5A94 
      301              ||      MOV32     R2H,*+XAR4[AR0]       ; [CPU_FPU] |483| 
      302              
-TMS320C2000 Assembler PC v22.6.2 Fri Dec 19 17:46:48 2025
+TMS320C2000 Assembler PC v22.6.2 Mon Dec 22 12:49:19 2025
 
 Copyright (c) 1996-2018 Texas Instruments Incorporated
 dual_axis_servo_drive_user_cpu.asm                                   PAGE    7
@@ -418,7 +418,7 @@ dual_axis_servo_drive_user_cpu.asm                                   PAGE    7
      342 00000078 E2AF          MOV32     R0H,*+XAR4[AR0]       ; [CPU_FPU] |1613| 
          00000079 0094 
      343                      .dwpsn  file "..\sources\dual_axis_servo_drive_cpu.h",line 304,column 5,is_stmt,isa 0
-TMS320C2000 Assembler PC v22.6.2 Fri Dec 19 17:46:48 2025
+TMS320C2000 Assembler PC v22.6.2 Mon Dec 22 12:49:19 2025
 
 Copyright (c) 1996-2018 Texas Instruments Incorporated
 dual_axis_servo_drive_user_cpu.asm                                   PAGE    8
@@ -478,7 +478,7 @@ dual_axis_servo_drive_user_cpu.asm                                   PAGE    8
          000000a3 6000 
      379 000000a4 7700          NOP       ; [CPU_ALU] 
      380 000000a5 E68E          F32TOUI16 R0H,R0H               ; [CPU_FPU] |1613| 
-TMS320C2000 Assembler PC v22.6.2 Fri Dec 19 17:46:48 2025
+TMS320C2000 Assembler PC v22.6.2 Mon Dec 22 12:49:19 2025
 
 Copyright (c) 1996-2018 Texas Instruments Incorporated
 dual_axis_servo_drive_user_cpu.asm                                   PAGE    9
@@ -538,7 +538,7 @@ dual_axis_servo_drive_user_cpu.asm                                   PAGE    9
          000000cd 0100 
      421 000000ce D142          MOVB      XAR1,#66              ; [CPU_ALU] |439| 
      422 000000cf E68B          UI32TOF32 R3H,R3H               ; [CPU_FPU] |439| 
-TMS320C2000 Assembler PC v22.6.2 Fri Dec 19 17:46:48 2025
+TMS320C2000 Assembler PC v22.6.2 Mon Dec 22 12:49:19 2025
 
 Copyright (c) 1996-2018 Texas Instruments Incorporated
 dual_axis_servo_drive_user_cpu.asm                                   PAGE   10
@@ -598,7 +598,7 @@ dual_axis_servo_drive_user_cpu.asm                                   PAGE   10
      460 000000f7 F5A9          MOV       AL,*(0:0x0b00)        ; [CPU_ALU] |918| 
          000000f8 0B00 
      461                      .dwpsn  file "../sources/dual_axis_servo_drive_user_cpu.c",line 445,column 17,is_stmt,isa 0
-TMS320C2000 Assembler PC v22.6.2 Fri Dec 19 17:46:48 2025
+TMS320C2000 Assembler PC v22.6.2 Mon Dec 22 12:49:19 2025
 
 Copyright (c) 1996-2018 Texas Instruments Incorporated
 dual_axis_servo_drive_user_cpu.asm                                   PAGE   11
@@ -658,7 +658,7 @@ dual_axis_servo_drive_user_cpu.asm                                   PAGE   11
          0000011f 0000 
      502                      .dwpsn  file "..\sources\dual_axis_servo_drive_cpu.h",line 304,column 5,is_stmt,isa 0
      503 00000120 E2AF          MOV32     R4H,*+XAR4[AR0]       ; [CPU_FPU] |304| 
-TMS320C2000 Assembler PC v22.6.2 Fri Dec 19 17:46:48 2025
+TMS320C2000 Assembler PC v22.6.2 Mon Dec 22 12:49:19 2025
 
 Copyright (c) 1996-2018 Texas Instruments Incorporated
 dual_axis_servo_drive_user_cpu.asm                                   PAGE   12
@@ -718,7 +718,7 @@ dual_axis_servo_drive_user_cpu.asm                                   PAGE   12
          0000014d 01C7 
      538 0000014e 56BF          MOVB      *+XAR4[AR0],#1,UNC    ; [CPU_ALU] |511| 
          0000014f 0194 
-TMS320C2000 Assembler PC v22.6.2 Fri Dec 19 17:46:48 2025
+TMS320C2000 Assembler PC v22.6.2 Mon Dec 22 12:49:19 2025
 
 Copyright (c) 1996-2018 Texas Instruments Incorporated
 dual_axis_servo_drive_user_cpu.asm                                   PAGE   13
@@ -778,7 +778,7 @@ dual_axis_servo_drive_user_cpu.asm                                   PAGE   13
      590              ;* AR4   assigned to pMotor
      591              $C$DW$28        .dwtag  DW_TAG_variable
      592                      .dwattr $C$DW$28, DW_AT_name("pMotor")
-TMS320C2000 Assembler PC v22.6.2 Fri Dec 19 17:46:48 2025
+TMS320C2000 Assembler PC v22.6.2 Mon Dec 22 12:49:19 2025
 
 Copyright (c) 1996-2018 Texas Instruments Incorporated
 dual_axis_servo_drive_user_cpu.asm                                   PAGE   14
@@ -838,7 +838,7 @@ dual_axis_servo_drive_user_cpu.asm                                   PAGE   14
          00000020 0142 
      631 00000021 E203          MOV32     *+XAR4[AR0],R0H       ; [CPU_FPU] |410| 
          00000022 0094 
-TMS320C2000 Assembler PC v22.6.2 Fri Dec 19 17:46:48 2025
+TMS320C2000 Assembler PC v22.6.2 Mon Dec 22 12:49:19 2025
 
 Copyright (c) 1996-2018 Texas Instruments Incorporated
 dual_axis_servo_drive_user_cpu.asm                                   PAGE   15
@@ -898,7 +898,7 @@ dual_axis_servo_drive_user_cpu.asm                                   PAGE   15
      681                      .dwattr $C$DW$32, DW_AT_location[DW_OP_reg14]
      682              
      683              
-TMS320C2000 Assembler PC v22.6.2 Fri Dec 19 17:46:48 2025
+TMS320C2000 Assembler PC v22.6.2 Mon Dec 22 12:49:19 2025
 
 Copyright (c) 1996-2018 Texas Instruments Incorporated
 dual_axis_servo_drive_user_cpu.asm                                   PAGE   16
@@ -958,7 +958,7 @@ dual_axis_servo_drive_user_cpu.asm                                   PAGE   16
          0000000f FEE8 
      733                      .dwpsn  file "../sources/dual_axis_servo_drive_user_cpu.c",line 114,column 9,is_stmt,isa 0
      734 00000010 8D40          MOVL      XAR1,#350             ; [CPU_ALU] |114| 
-TMS320C2000 Assembler PC v22.6.2 Fri Dec 19 17:46:48 2025
+TMS320C2000 Assembler PC v22.6.2 Mon Dec 22 12:49:19 2025
 
 Copyright (c) 1996-2018 Texas Instruments Incorporated
 dual_axis_servo_drive_user_cpu.asm                                   PAGE   17
@@ -1018,7 +1018,7 @@ dual_axis_servo_drive_user_cpu.asm                                   PAGE   17
      767                      .dwpsn  file "../sources/dual_axis_servo_drive_user_cpu.c",line 144,column 9,is_stmt,isa 0
      768 00000038 8D00          MOVL      XAR0,#372             ; [CPU_ALU] |144| 
          00000039 0174 
-TMS320C2000 Assembler PC v22.6.2 Fri Dec 19 17:46:48 2025
+TMS320C2000 Assembler PC v22.6.2 Mon Dec 22 12:49:19 2025
 
 Copyright (c) 1996-2018 Texas Instruments Incorporated
 dual_axis_servo_drive_user_cpu.asm                                   PAGE   18
@@ -1078,7 +1078,7 @@ dual_axis_servo_drive_user_cpu.asm                                   PAGE   18
      808 0000005d E203          MOV32     *+XAR2[AR0],R3H       ; [CPU_FPU] |88| 
          0000005e 0392 
      809                      .dwpsn  file "../sources/dual_axis_servo_drive_user_cpu.c",line 101,column 9,is_stmt,isa 0
-TMS320C2000 Assembler PC v22.6.2 Fri Dec 19 17:46:48 2025
+TMS320C2000 Assembler PC v22.6.2 Mon Dec 22 12:49:19 2025
 
 Copyright (c) 1996-2018 Texas Instruments Incorporated
 dual_axis_servo_drive_user_cpu.asm                                   PAGE   19
@@ -1138,7 +1138,7 @@ dual_axis_servo_drive_user_cpu.asm                                   PAGE   19
      848 00000082 E801          MOVIZ     R3H,#15745            ; [CPU_FPU] |139| 
          00000083 EC0B 
      849                      .dwpsn  file "../sources/dual_axis_servo_drive_user_cpu.c",line 138,column 9,is_stmt,isa 0
-TMS320C2000 Assembler PC v22.6.2 Fri Dec 19 17:46:48 2025
+TMS320C2000 Assembler PC v22.6.2 Mon Dec 22 12:49:19 2025
 
 Copyright (c) 1996-2018 Texas Instruments Incorporated
 dual_axis_servo_drive_user_cpu.asm                                   PAGE   20
@@ -1198,7 +1198,7 @@ dual_axis_servo_drive_user_cpu.asm                                   PAGE   20
          000000a7 0192 
      885                      .dwpsn  file "../sources/dual_axis_servo_drive_user_cpu.c",line 142,column 9,is_stmt,isa 0
      886 000000a8 8D00          MOVL      XAR0,#368             ; [CPU_ALU] |142| 
-TMS320C2000 Assembler PC v22.6.2 Fri Dec 19 17:46:48 2025
+TMS320C2000 Assembler PC v22.6.2 Mon Dec 22 12:49:19 2025
 
 Copyright (c) 1996-2018 Texas Instruments Incorporated
 dual_axis_servo_drive_user_cpu.asm                                   PAGE   21
@@ -1258,7 +1258,7 @@ dual_axis_servo_drive_user_cpu.asm                                   PAGE   21
      921                      .dwpsn  file "../sources/dual_axis_servo_drive_user_cpu.c",line 78,column 9,is_stmt,isa 0
      922 000000cc E801          MOVIZ     R3H,#14375            ; [CPU_FPU] |78| 
          000000cd C13B 
-TMS320C2000 Assembler PC v22.6.2 Fri Dec 19 17:46:48 2025
+TMS320C2000 Assembler PC v22.6.2 Mon Dec 22 12:49:19 2025
 
 Copyright (c) 1996-2018 Texas Instruments Incorporated
 dual_axis_servo_drive_user_cpu.asm                                   PAGE   22
@@ -1318,7 +1318,7 @@ dual_axis_servo_drive_user_cpu.asm                                   PAGE   22
      961                      .dwpsn  file "../sources/dual_axis_servo_drive_user_cpu.c",line 97,column 9,is_stmt,isa 0
      962 000000ef E80E          MOVXI     R2H,#52429            ; [CPU_FPU] |97| 
          000000f0 666A 
-TMS320C2000 Assembler PC v22.6.2 Fri Dec 19 17:46:48 2025
+TMS320C2000 Assembler PC v22.6.2 Mon Dec 22 12:49:19 2025
 
 Copyright (c) 1996-2018 Texas Instruments Incorporated
 dual_axis_servo_drive_user_cpu.asm                                   PAGE   23
@@ -1378,7 +1378,7 @@ dual_axis_servo_drive_user_cpu.asm                                   PAGE   23
     1001                      .dwpsn  file "../sources/dual_axis_servo_drive_user_cpu.c",line 149,column 9,is_stmt,isa 0
     1002 00000113 8D00          MOVL      XAR0,#442             ; [CPU_ALU] |149| 
          00000114 01BA 
-TMS320C2000 Assembler PC v22.6.2 Fri Dec 19 17:46:48 2025
+TMS320C2000 Assembler PC v22.6.2 Mon Dec 22 12:49:19 2025
 
 Copyright (c) 1996-2018 Texas Instruments Incorporated
 dual_axis_servo_drive_user_cpu.asm                                   PAGE   24
@@ -1438,7 +1438,7 @@ dual_axis_servo_drive_user_cpu.asm                                   PAGE   24
     1042 00000138 8AA2          MOVL      XAR4,XAR2             ; [CPU_ALU] |286| 
     1043 00000139 06E3          MOVL      ACC,*+XAR3[4]         ; [CPU_ALU] |286| 
     1044 0000013a 1E44          MOVL      *-SP[4],ACC           ; [CPU_ALU] |286| 
-TMS320C2000 Assembler PC v22.6.2 Fri Dec 19 17:46:48 2025
+TMS320C2000 Assembler PC v22.6.2 Mon Dec 22 12:49:19 2025
 
 Copyright (c) 1996-2018 Texas Instruments Incorporated
 dual_axis_servo_drive_user_cpu.asm                                   PAGE   25
@@ -1498,7 +1498,7 @@ dual_axis_servo_drive_user_cpu.asm                                   PAGE   25
     1095                      .dwattr $C$DW$39, DW_AT_linkage_name("initControlVars")
     1096                      .dwattr $C$DW$39, DW_AT_external
     1097                      .dwattr $C$DW$39, DW_AT_decl_file("../sources/dual_axis_servo_drive_user_cpu.c")
-TMS320C2000 Assembler PC v22.6.2 Fri Dec 19 17:46:48 2025
+TMS320C2000 Assembler PC v22.6.2 Mon Dec 22 12:49:19 2025
 
 Copyright (c) 1996-2018 Texas Instruments Incorporated
 dual_axis_servo_drive_user_cpu.asm                                   PAGE   26
@@ -1558,7 +1558,7 @@ dual_axis_servo_drive_user_cpu.asm                                   PAGE   26
          0000000d 012A 
     1145 0000000e E203          MOV32     *+XAR4[AR0],R0H       ; [CPU_FPU] |343| 
          0000000f 0094 
-TMS320C2000 Assembler PC v22.6.2 Fri Dec 19 17:46:48 2025
+TMS320C2000 Assembler PC v22.6.2 Mon Dec 22 12:49:19 2025
 
 Copyright (c) 1996-2018 Texas Instruments Incorporated
 dual_axis_servo_drive_user_cpu.asm                                   PAGE   27
@@ -1618,7 +1618,7 @@ dual_axis_servo_drive_user_cpu.asm                                   PAGE   27
     1182 00000035 E2AF          MOV32     R0H,*+XAR4[6]         ; [CPU_FPU] |324| 
          00000036 00F4 
     1183              
-TMS320C2000 Assembler PC v22.6.2 Fri Dec 19 17:46:48 2025
+TMS320C2000 Assembler PC v22.6.2 Mon Dec 22 12:49:19 2025
 
 Copyright (c) 1996-2018 Texas Instruments Incorporated
 dual_axis_servo_drive_user_cpu.asm                                   PAGE   28
@@ -1678,7 +1678,7 @@ dual_axis_servo_drive_user_cpu.asm                                   PAGE   28
          0000005a 2800 
     1220 0000005b 7700          NOP       ; [CPU_ALU] 
     1221 0000005c E88F          ADDF32    R0H,R0H,#16256        ; [CPU_FPU] |365| 
-TMS320C2000 Assembler PC v22.6.2 Fri Dec 19 17:46:48 2025
+TMS320C2000 Assembler PC v22.6.2 Mon Dec 22 12:49:19 2025
 
 Copyright (c) 1996-2018 Texas Instruments Incorporated
 dual_axis_servo_drive_user_cpu.asm                                   PAGE   29
@@ -1738,7 +1738,7 @@ dual_axis_servo_drive_user_cpu.asm                                   PAGE   29
     1255 0000008b E700          MPYF32    R0H,R1H,R0H           ; [CPU_FPU] |362| 
          0000008c 0008 
     1256 0000008d 7700          NOP       ; [CPU_ALU] 
-TMS320C2000 Assembler PC v22.6.2 Fri Dec 19 17:46:48 2025
+TMS320C2000 Assembler PC v22.6.2 Mon Dec 22 12:49:19 2025
 
 Copyright (c) 1996-2018 Texas Instruments Incorporated
 dual_axis_servo_drive_user_cpu.asm                                   PAGE   30
@@ -1798,7 +1798,7 @@ dual_axis_servo_drive_user_cpu.asm                                   PAGE   30
          000000ba 0094 
     1293                      .dwpsn  file "../sources/dual_axis_servo_drive_user_cpu.c",line 346,column 5,is_stmt,isa 0
     1294 000000bb D00E          MOVB      XAR0,#14              ; [CPU_ALU] |346| 
-TMS320C2000 Assembler PC v22.6.2 Fri Dec 19 17:46:48 2025
+TMS320C2000 Assembler PC v22.6.2 Mon Dec 22 12:49:19 2025
 
 Copyright (c) 1996-2018 Texas Instruments Incorporated
 dual_axis_servo_drive_user_cpu.asm                                   PAGE   31
@@ -1858,7 +1858,7 @@ dual_axis_servo_drive_user_cpu.asm                                   PAGE   31
          000000e8 0094 
     1328                      .dwpsn  file "../sources/dual_axis_servo_drive_user_cpu.c",line 320,column 5,is_stmt,isa 0
     1329 000000e9 D06A          MOVB      XAR0,#106             ; [CPU_ALU] |320| 
-TMS320C2000 Assembler PC v22.6.2 Fri Dec 19 17:46:48 2025
+TMS320C2000 Assembler PC v22.6.2 Mon Dec 22 12:49:19 2025
 
 Copyright (c) 1996-2018 Texas Instruments Incorporated
 dual_axis_servo_drive_user_cpu.asm                                   PAGE   32
@@ -1918,7 +1918,7 @@ dual_axis_servo_drive_user_cpu.asm                                   PAGE   32
     1365 00000115 D0D2          MOVB      XAR0,#210             ; [CPU_ALU] |374| 
     1366 00000116 E805          MOVIZ     R0H,#49024            ; [CPU_FPU] |374| 
          00000117 FC00 
-TMS320C2000 Assembler PC v22.6.2 Fri Dec 19 17:46:48 2025
+TMS320C2000 Assembler PC v22.6.2 Mon Dec 22 12:49:19 2025
 
 Copyright (c) 1996-2018 Texas Instruments Incorporated
 dual_axis_servo_drive_user_cpu.asm                                   PAGE   33
@@ -1978,7 +1978,7 @@ dual_axis_servo_drive_user_cpu.asm                                   PAGE   33
     1400 00000145 E808          MOVXI     R0H,#4719             ; [CPU_FPU] |335| 
          00000146 9378 
     1401 00000147 E203          MOV32     *+XAR4[AR0],R0H       ; [CPU_FPU] |335| 
-TMS320C2000 Assembler PC v22.6.2 Fri Dec 19 17:46:48 2025
+TMS320C2000 Assembler PC v22.6.2 Mon Dec 22 12:49:19 2025
 
 Copyright (c) 1996-2018 Texas Instruments Incorporated
 dual_axis_servo_drive_user_cpu.asm                                   PAGE   34
@@ -2038,7 +2038,7 @@ dual_axis_servo_drive_user_cpu.asm                                   PAGE   34
     1437 0000016e 56BF          MOVB      *+XAR4[AR0],#2,UNC    ; [CPU_ALU] |311| 
          0000016f 0294 
     1438                      .dwpsn  file "../sources/dual_axis_servo_drive_user_cpu.c",line 312,column 5,is_stmt,isa 0
-TMS320C2000 Assembler PC v22.6.2 Fri Dec 19 17:46:48 2025
+TMS320C2000 Assembler PC v22.6.2 Mon Dec 22 12:49:19 2025
 
 Copyright (c) 1996-2018 Texas Instruments Incorporated
 dual_axis_servo_drive_user_cpu.asm                                   PAGE   35
@@ -2098,7 +2098,7 @@ dual_axis_servo_drive_user_cpu.asm                                   PAGE   35
     1479                      .global ||__signbitl||
     1480              
     1481              $C$DW$43        .dwtag  DW_TAG_subprogram
-TMS320C2000 Assembler PC v22.6.2 Fri Dec 19 17:46:48 2025
+TMS320C2000 Assembler PC v22.6.2 Mon Dec 22 12:49:19 2025
 
 Copyright (c) 1996-2018 Texas Instruments Incorporated
 dual_axis_servo_drive_user_cpu.asm                                   PAGE   36
@@ -2158,7 +2158,7 @@ dual_axis_servo_drive_user_cpu.asm                                   PAGE   36
          0000000d 8000 
     1532              $C$DW$46        .dwtag  DW_TAG_TI_branch
     1533                      .dwattr $C$DW$46, DW_AT_low_pc(0x00)
-TMS320C2000 Assembler PC v22.6.2 Fri Dec 19 17:46:48 2025
+TMS320C2000 Assembler PC v22.6.2 Mon Dec 22 12:49:19 2025
 
 Copyright (c) 1996-2018 Texas Instruments Incorporated
 dual_axis_servo_drive_user_cpu.asm                                   PAGE   37
@@ -2218,7 +2218,7 @@ dual_axis_servo_drive_user_cpu.asm                                   PAGE   37
     1584              ;* FUNCTION ENVIRONMENT                                        *
     1585              ;*                                                             *
     1586              ;* FUNCTION PROPERTIES                                         *
-TMS320C2000 Assembler PC v22.6.2 Fri Dec 19 17:46:48 2025
+TMS320C2000 Assembler PC v22.6.2 Mon Dec 22 12:49:19 2025
 
 Copyright (c) 1996-2018 Texas Instruments Incorporated
 dual_axis_servo_drive_user_cpu.asm                                   PAGE   38
@@ -2278,7 +2278,7 @@ dual_axis_servo_drive_user_cpu.asm                                   PAGE   38
     1636                      .dwfde $C$DW$CIE, ||__signbit||
     1637              $C$DW$53        .dwtag  DW_TAG_formal_parameter
     1638                      .dwattr $C$DW$53, DW_AT_name("d")
-TMS320C2000 Assembler PC v22.6.2 Fri Dec 19 17:46:48 2025
+TMS320C2000 Assembler PC v22.6.2 Mon Dec 22 12:49:19 2025
 
 Copyright (c) 1996-2018 Texas Instruments Incorporated
 dual_axis_servo_drive_user_cpu.asm                                   PAGE   39
@@ -2338,7 +2338,7 @@ dual_axis_servo_drive_user_cpu.asm                                   PAGE   39
     1686                      .dwcfi  cfa_offset, -2
     1687              $C$DW$56        .dwtag  DW_TAG_TI_branch
     1688                      .dwattr $C$DW$56, DW_AT_low_pc(0x00)
-TMS320C2000 Assembler PC v22.6.2 Fri Dec 19 17:46:48 2025
+TMS320C2000 Assembler PC v22.6.2 Mon Dec 22 12:49:19 2025
 
 Copyright (c) 1996-2018 Texas Instruments Incorporated
 dual_axis_servo_drive_user_cpu.asm                                   PAGE   40
@@ -2398,7 +2398,7 @@ dual_axis_servo_drive_user_cpu.asm                                   PAGE   40
     1741                      .dwpsn  file "C:/ti/ccs2031/ccs/tools/compiler/ti-cgt-c2000_22.6.2.LTS/include/math.h",line 261,colum
     1742 00000000 E277          SQRTF32   R0H,R0H               ; [CPU_FPU] |261| 
          00000001 0000 
-TMS320C2000 Assembler PC v22.6.2 Fri Dec 19 17:46:48 2025
+TMS320C2000 Assembler PC v22.6.2 Mon Dec 22 12:49:19 2025
 
 Copyright (c) 1996-2018 Texas Instruments Incorporated
 dual_axis_servo_drive_user_cpu.asm                                   PAGE   41
@@ -2458,7 +2458,7 @@ dual_axis_servo_drive_user_cpu.asm                                   PAGE   41
     1795                      .dwattr $C$DW$63, DW_AT_type(*$C$DW$T$170)
     1796                      .dwattr $C$DW$63, DW_AT_location[DW_OP_regx 0x2b]
     1797              
-TMS320C2000 Assembler PC v22.6.2 Fri Dec 19 17:46:48 2025
+TMS320C2000 Assembler PC v22.6.2 Mon Dec 22 12:49:19 2025
 
 Copyright (c) 1996-2018 Texas Instruments Incorporated
 dual_axis_servo_drive_user_cpu.asm                                   PAGE   42
@@ -2518,7 +2518,7 @@ dual_axis_servo_drive_user_cpu.asm                                   PAGE   42
     1848              ;* FNAME: __relaxed_powf                FR SIZE:   2           *
     1849              ;*                                                             *
     1850              ;* FUNCTION ENVIRONMENT                                        *
-TMS320C2000 Assembler PC v22.6.2 Fri Dec 19 17:46:48 2025
+TMS320C2000 Assembler PC v22.6.2 Mon Dec 22 12:49:19 2025
 
 Copyright (c) 1996-2018 Texas Instruments Incorporated
 dual_axis_servo_drive_user_cpu.asm                                   PAGE   43
@@ -2578,7 +2578,7 @@ dual_axis_servo_drive_user_cpu.asm                                   PAGE   43
          00000011 0008 
     1899 00000012 7700          NOP       ; [CPU_ALU] 
     1900 00000013 7700          NOP       ; [CPU_ALU] 
-TMS320C2000 Assembler PC v22.6.2 Fri Dec 19 17:46:48 2025
+TMS320C2000 Assembler PC v22.6.2 Mon Dec 22 12:49:19 2025
 
 Copyright (c) 1996-2018 Texas Instruments Incorporated
 dual_axis_servo_drive_user_cpu.asm                                   PAGE   44
@@ -2638,7 +2638,7 @@ dual_axis_servo_drive_user_cpu.asm                                   PAGE   44
     1953                      .dwattr $C$DW$74, DW_AT_type(*$C$DW$T$170)
     1954                      .dwattr $C$DW$74, DW_AT_location[DW_OP_regx 0x2b]
     1955              
-TMS320C2000 Assembler PC v22.6.2 Fri Dec 19 17:46:48 2025
+TMS320C2000 Assembler PC v22.6.2 Mon Dec 22 12:49:19 2025
 
 Copyright (c) 1996-2018 Texas Instruments Incorporated
 dual_axis_servo_drive_user_cpu.asm                                   PAGE   45
@@ -2698,7 +2698,7 @@ dual_axis_servo_drive_user_cpu.asm                                   PAGE   45
     2004              ;*                                                             *
     2005              ;* FUNCTION PROPERTIES                                         *
     2006              ;*                            0 Parameter,  0 Auto,  0 SOE     *
-TMS320C2000 Assembler PC v22.6.2 Fri Dec 19 17:46:48 2025
+TMS320C2000 Assembler PC v22.6.2 Mon Dec 22 12:49:19 2025
 
 Copyright (c) 1996-2018 Texas Instruments Incorporated
 dual_axis_servo_drive_user_cpu.asm                                   PAGE   46
@@ -2758,7 +2758,7 @@ dual_axis_servo_drive_user_cpu.asm                                   PAGE   46
     2058                      .dwattr $C$DW$82, DW_AT_name("x")
     2059                      .dwattr $C$DW$82, DW_AT_type(*$C$DW$T$16)
     2060                      .dwattr $C$DW$82, DW_AT_location[DW_OP_regx 0x2f]
-TMS320C2000 Assembler PC v22.6.2 Fri Dec 19 17:46:48 2025
+TMS320C2000 Assembler PC v22.6.2 Mon Dec 22 12:49:19 2025
 
 Copyright (c) 1996-2018 Texas Instruments Incorporated
 dual_axis_servo_drive_user_cpu.asm                                   PAGE   47
@@ -2818,7 +2818,7 @@ dual_axis_servo_drive_user_cpu.asm                                   PAGE   47
     2108                      .dwattr $C$DW$80, DW_AT_TI_end_column(0x01)
     2109                      .dwendentry
     2110                      .dwendtag $C$DW$80
-TMS320C2000 Assembler PC v22.6.2 Fri Dec 19 17:46:48 2025
+TMS320C2000 Assembler PC v22.6.2 Mon Dec 22 12:49:19 2025
 
 Copyright (c) 1996-2018 Texas Instruments Incorporated
 dual_axis_servo_drive_user_cpu.asm                                   PAGE   48
@@ -2878,7 +2878,7 @@ dual_axis_servo_drive_user_cpu.asm                                   PAGE   48
     2162                      .dwattr $C$DW$90, DW_AT_low_pc(0x00)
     2163                      .dwattr $C$DW$90, DW_AT_TI_return
     2164              
-TMS320C2000 Assembler PC v22.6.2 Fri Dec 19 17:46:48 2025
+TMS320C2000 Assembler PC v22.6.2 Mon Dec 22 12:49:19 2025
 
 Copyright (c) 1996-2018 Texas Instruments Incorporated
 dual_axis_servo_drive_user_cpu.asm                                   PAGE   49
@@ -2938,7 +2938,7 @@ dual_axis_servo_drive_user_cpu.asm                                   PAGE   49
     2217              
     2218                      .dwcfi  cfa_offset, -2
     2219                      .dwcfi  save_reg_to_mem, 26, 0
-TMS320C2000 Assembler PC v22.6.2 Fri Dec 19 17:46:48 2025
+TMS320C2000 Assembler PC v22.6.2 Mon Dec 22 12:49:19 2025
 
 Copyright (c) 1996-2018 Texas Instruments Incorporated
 dual_axis_servo_drive_user_cpu.asm                                   PAGE   50
@@ -2998,7 +2998,7 @@ dual_axis_servo_drive_user_cpu.asm                                   PAGE   50
     2271              ;* R0    assigned to x
     2272              $C$DW$98        .dwtag  DW_TAG_variable
     2273                      .dwattr $C$DW$98, DW_AT_name("x")
-TMS320C2000 Assembler PC v22.6.2 Fri Dec 19 17:46:48 2025
+TMS320C2000 Assembler PC v22.6.2 Mon Dec 22 12:49:19 2025
 
 Copyright (c) 1996-2018 Texas Instruments Incorporated
 dual_axis_servo_drive_user_cpu.asm                                   PAGE   51
@@ -3058,7 +3058,7 @@ dual_axis_servo_drive_user_cpu.asm                                   PAGE   51
     2320                      .clink
     2321                      .global ||__relaxed_cosf||
     2322              
-TMS320C2000 Assembler PC v22.6.2 Fri Dec 19 17:46:48 2025
+TMS320C2000 Assembler PC v22.6.2 Mon Dec 22 12:49:19 2025
 
 Copyright (c) 1996-2018 Texas Instruments Incorporated
 dual_axis_servo_drive_user_cpu.asm                                   PAGE   52
@@ -3118,7 +3118,7 @@ dual_axis_servo_drive_user_cpu.asm                                   PAGE   52
     2373                      .dwattr $C$DW$101, DW_AT_TI_end_file("C:/ti/ccs2031/ccs/tools/compiler/ti-cgt-c2000_22.6.2.LTS/includ
     2374                      .dwattr $C$DW$101, DW_AT_TI_end_line(0x110)
     2375                      .dwattr $C$DW$101, DW_AT_TI_end_column(0x01)
-TMS320C2000 Assembler PC v22.6.2 Fri Dec 19 17:46:48 2025
+TMS320C2000 Assembler PC v22.6.2 Mon Dec 22 12:49:19 2025
 
 Copyright (c) 1996-2018 Texas Instruments Incorporated
 dual_axis_servo_drive_user_cpu.asm                                   PAGE   53
@@ -3178,7 +3178,7 @@ dual_axis_servo_drive_user_cpu.asm                                   PAGE   53
     2426 00000006 7700          NOP       ; [CPU_ALU] 
     2427 00000007 7700          NOP       ; [CPU_ALU] 
     2428 00000008 E27A          ATANPUF32 R0H,R0H               ; [CPU_FPU] |276| 
-TMS320C2000 Assembler PC v22.6.2 Fri Dec 19 17:46:48 2025
+TMS320C2000 Assembler PC v22.6.2 Mon Dec 22 12:49:19 2025
 
 Copyright (c) 1996-2018 Texas Instruments Incorporated
 dual_axis_servo_drive_user_cpu.asm                                   PAGE   54
@@ -3238,7 +3238,7 @@ dual_axis_servo_drive_user_cpu.asm                                   PAGE   54
     2478              ;***************************************************************
     2479              ;* FNAME: __relaxed_atan2f              FR SIZE:   0           *
     2480              ;*                                                             *
-TMS320C2000 Assembler PC v22.6.2 Fri Dec 19 17:46:48 2025
+TMS320C2000 Assembler PC v22.6.2 Mon Dec 22 12:49:19 2025
 
 Copyright (c) 1996-2018 Texas Instruments Incorporated
 dual_axis_servo_drive_user_cpu.asm                                   PAGE   55
@@ -3298,7 +3298,7 @@ dual_axis_servo_drive_user_cpu.asm                                   PAGE   55
     2529 00000000               .sect   ".text:__isnormall"
     2530                      .clink
     2531                      .global ||__isnormall||
-TMS320C2000 Assembler PC v22.6.2 Fri Dec 19 17:46:48 2025
+TMS320C2000 Assembler PC v22.6.2 Mon Dec 22 12:49:19 2025
 
 Copyright (c) 1996-2018 Texas Instruments Incorporated
 dual_axis_servo_drive_user_cpu.asm                                   PAGE   56
@@ -3358,7 +3358,7 @@ dual_axis_servo_drive_user_cpu.asm                                   PAGE   56
     2583 00000009 2B42          MOV       *-SP[2],#0            ; [CPU_ALU] |360| 
     2584 0000000a 565B          LSR64     ACC:P,T               ; [CPU_ALU] |360| 
     2585 0000000b 2B41          MOV       *-SP[1],#0            ; [CPU_FPU] |360| 
-TMS320C2000 Assembler PC v22.6.2 Fri Dec 19 17:46:48 2025
+TMS320C2000 Assembler PC v22.6.2 Mon Dec 22 12:49:19 2025
 
 Copyright (c) 1996-2018 Texas Instruments Incorporated
 dual_axis_servo_drive_user_cpu.asm                                   PAGE   57
@@ -3418,7 +3418,7 @@ dual_axis_servo_drive_user_cpu.asm                                   PAGE   57
     2631                      .dwattr $C$DW$120, DW_AT_name("__isnormalf")
     2632                      .dwattr $C$DW$120, DW_AT_low_pc(||__isnormalf||)
     2633                      .dwattr $C$DW$120, DW_AT_high_pc(0x00)
-TMS320C2000 Assembler PC v22.6.2 Fri Dec 19 17:46:48 2025
+TMS320C2000 Assembler PC v22.6.2 Mon Dec 22 12:49:19 2025
 
 Copyright (c) 1996-2018 Texas Instruments Incorporated
 dual_axis_servo_drive_user_cpu.asm                                   PAGE   58
@@ -3478,7 +3478,7 @@ dual_axis_servo_drive_user_cpu.asm                                   PAGE   58
     2682 0000000e 0FA7          CMPL      ACC,XAR7              ; [CPU_ALU] |356| 
     2683 0000000f 56B0          MOVB      XAR6,#1,NEQ           ; [CPU_ALU] |356| 
          00000010 01A6 
-TMS320C2000 Assembler PC v22.6.2 Fri Dec 19 17:46:48 2025
+TMS320C2000 Assembler PC v22.6.2 Mon Dec 22 12:49:19 2025
 
 Copyright (c) 1996-2018 Texas Instruments Incorporated
 dual_axis_servo_drive_user_cpu.asm                                   PAGE   59
@@ -3538,7 +3538,7 @@ dual_axis_servo_drive_user_cpu.asm                                   PAGE   59
     2736                      .dwattr $C$DW$126, DW_AT_name("d")
     2737                      .dwattr $C$DW$126, DW_AT_type(*$C$DW$T$173)
     2738                      .dwattr $C$DW$126, DW_AT_location[DW_OP_reg12]
-TMS320C2000 Assembler PC v22.6.2 Fri Dec 19 17:46:48 2025
+TMS320C2000 Assembler PC v22.6.2 Mon Dec 22 12:49:19 2025
 
 Copyright (c) 1996-2018 Texas Instruments Incorporated
 dual_axis_servo_drive_user_cpu.asm                                   PAGE   60
@@ -3598,7 +3598,7 @@ dual_axis_servo_drive_user_cpu.asm                                   PAGE   60
     2783              $C$DW$128       .dwtag  DW_TAG_TI_branch
     2784                      .dwattr $C$DW$128, DW_AT_low_pc(0x00)
     2785                      .dwattr $C$DW$128, DW_AT_TI_return
-TMS320C2000 Assembler PC v22.6.2 Fri Dec 19 17:46:48 2025
+TMS320C2000 Assembler PC v22.6.2 Mon Dec 22 12:49:19 2025
 
 Copyright (c) 1996-2018 Texas Instruments Incorporated
 dual_axis_servo_drive_user_cpu.asm                                   PAGE   61
@@ -3658,7 +3658,7 @@ dual_axis_servo_drive_user_cpu.asm                                   PAGE   61
     2838                      .dwcfi  save_reg_to_mem, 26, 0
     2839 00000000 FE04          ADDB      SP,#4                 ; [CPU_ARAU] 
     2840                      .dwcfi  cfa_offset, -6
-TMS320C2000 Assembler PC v22.6.2 Fri Dec 19 17:46:48 2025
+TMS320C2000 Assembler PC v22.6.2 Mon Dec 22 12:49:19 2025
 
 Copyright (c) 1996-2018 Texas Instruments Incorporated
 dual_axis_servo_drive_user_cpu.asm                                   PAGE   62
@@ -3718,7 +3718,7 @@ dual_axis_servo_drive_user_cpu.asm                                   PAGE   62
     2885                      .dwattr $C$DW$129, DW_AT_TI_end_line(0x15d)
     2886                      .dwattr $C$DW$129, DW_AT_TI_end_column(0x30)
     2887                      .dwendentry
-TMS320C2000 Assembler PC v22.6.2 Fri Dec 19 17:46:48 2025
+TMS320C2000 Assembler PC v22.6.2 Mon Dec 22 12:49:19 2025
 
 Copyright (c) 1996-2018 Texas Instruments Incorporated
 dual_axis_servo_drive_user_cpu.asm                                   PAGE   63
@@ -3778,7 +3778,7 @@ dual_axis_servo_drive_user_cpu.asm                                   PAGE   63
     2938 00000005 BE00          MOVB      XAR6,#0               ; [CPU_ALU] |345| 
     2939 00000006 FF20          MOV       ACC,#32640            ; [CPU_ALU] |345| 
          00000007 7F80 
-TMS320C2000 Assembler PC v22.6.2 Fri Dec 19 17:46:48 2025
+TMS320C2000 Assembler PC v22.6.2 Mon Dec 22 12:49:19 2025
 
 Copyright (c) 1996-2018 Texas Instruments Incorporated
 dual_axis_servo_drive_user_cpu.asm                                   PAGE   64
@@ -3838,7 +3838,7 @@ dual_axis_servo_drive_user_cpu.asm                                   PAGE   64
     2991              ;*                            4 Parameter,  0 Auto,  0 SOE     *
     2992              ;***************************************************************
     2993              
-TMS320C2000 Assembler PC v22.6.2 Fri Dec 19 17:46:48 2025
+TMS320C2000 Assembler PC v22.6.2 Mon Dec 22 12:49:19 2025
 
 Copyright (c) 1996-2018 Texas Instruments Incorporated
 dual_axis_servo_drive_user_cpu.asm                                   PAGE   65
@@ -3898,7 +3898,7 @@ dual_axis_servo_drive_user_cpu.asm                                   PAGE   65
     3039 00000020 56B0          MOVB      XAR4,#1,NEQ           ; [CPU_ALU] |342| 
          00000021 01A4 
     3040 00000022       ||$C$L17||:    
-TMS320C2000 Assembler PC v22.6.2 Fri Dec 19 17:46:48 2025
+TMS320C2000 Assembler PC v22.6.2 Mon Dec 22 12:49:19 2025
 
 Copyright (c) 1996-2018 Texas Instruments Incorporated
 dual_axis_servo_drive_user_cpu.asm                                   PAGE   66
@@ -3958,7 +3958,7 @@ dual_axis_servo_drive_user_cpu.asm                                   PAGE   66
     3093              $C$DW$145       .dwtag  DW_TAG_variable
     3094                      .dwattr $C$DW$145, DW_AT_name("e")
     3095                      .dwattr $C$DW$145, DW_AT_type(*$C$DW$T$176)
-TMS320C2000 Assembler PC v22.6.2 Fri Dec 19 17:46:48 2025
+TMS320C2000 Assembler PC v22.6.2 Mon Dec 22 12:49:19 2025
 
 Copyright (c) 1996-2018 Texas Instruments Incorporated
 dual_axis_servo_drive_user_cpu.asm                                   PAGE   67
@@ -4018,7 +4018,7 @@ dual_axis_servo_drive_user_cpu.asm                                   PAGE   67
     3140                      .dwattr $C$DW$147, DW_AT_low_pc(0x00)
     3141                      .dwattr $C$DW$147, DW_AT_TI_return
     3142              
-TMS320C2000 Assembler PC v22.6.2 Fri Dec 19 17:46:48 2025
+TMS320C2000 Assembler PC v22.6.2 Mon Dec 22 12:49:19 2025
 
 Copyright (c) 1996-2018 Texas Instruments Incorporated
 dual_axis_servo_drive_user_cpu.asm                                   PAGE   68
@@ -4078,7 +4078,7 @@ dual_axis_servo_drive_user_cpu.asm                                   PAGE   68
     3195                      .dwpsn  file "C:/ti/ccs2031/ccs/tools/compiler/ti-cgt-c2000_22.6.2.LTS/include/_defs.h",line 375,colu
     3196 00000000 BFAB          MOV32     P,R0H                 ; [CPU_FPU] |375| 
          00000001 0F12 
-TMS320C2000 Assembler PC v22.6.2 Fri Dec 19 17:46:48 2025
+TMS320C2000 Assembler PC v22.6.2 Mon Dec 22 12:49:19 2025
 
 Copyright (c) 1996-2018 Texas Instruments Incorporated
 dual_axis_servo_drive_user_cpu.asm                                   PAGE   69
@@ -4138,7 +4138,7 @@ dual_axis_servo_drive_user_cpu.asm                                   PAGE   69
     3246              ;***************************************************************
     3247              ;* FNAME: __isinf                       FR SIZE:   4           *
     3248              ;*                                                             *
-TMS320C2000 Assembler PC v22.6.2 Fri Dec 19 17:46:48 2025
+TMS320C2000 Assembler PC v22.6.2 Mon Dec 22 12:49:19 2025
 
 Copyright (c) 1996-2018 Texas Instruments Incorporated
 dual_axis_servo_drive_user_cpu.asm                                   PAGE   70
@@ -4198,7 +4198,7 @@ dual_axis_servo_drive_user_cpu.asm                                   PAGE   70
     3295                      .dwattr $C$DW$155, DW_AT_TI_call
     3296              
     3297 0000001d 7640!         LCR       #||__c28xabi_cmpull|| ; [CPU_ALU] |377| 
-TMS320C2000 Assembler PC v22.6.2 Fri Dec 19 17:46:48 2025
+TMS320C2000 Assembler PC v22.6.2 Mon Dec 22 12:49:19 2025
 
 Copyright (c) 1996-2018 Texas Instruments Incorporated
 dual_axis_servo_drive_user_cpu.asm                                   PAGE   71
@@ -4258,7 +4258,7 @@ dual_axis_servo_drive_user_cpu.asm                                   PAGE   71
     3348              ;***************************************************************
     3349              
     3350              ||__isfinitel||:
-TMS320C2000 Assembler PC v22.6.2 Fri Dec 19 17:46:48 2025
+TMS320C2000 Assembler PC v22.6.2 Mon Dec 22 12:49:19 2025
 
 Copyright (c) 1996-2018 Texas Instruments Incorporated
 dual_axis_servo_drive_user_cpu.asm                                   PAGE   72
@@ -4318,7 +4318,7 @@ dual_axis_servo_drive_user_cpu.asm                                   PAGE   72
     3399              
     3400                      .dwfde $C$DW$CIE, ||__isfinitef||
     3401              $C$DW$162       .dwtag  DW_TAG_formal_parameter
-TMS320C2000 Assembler PC v22.6.2 Fri Dec 19 17:46:48 2025
+TMS320C2000 Assembler PC v22.6.2 Mon Dec 22 12:49:19 2025
 
 Copyright (c) 1996-2018 Texas Instruments Incorporated
 dual_axis_servo_drive_user_cpu.asm                                   PAGE   73
@@ -4378,7 +4378,7 @@ dual_axis_servo_drive_user_cpu.asm                                   PAGE   73
     3450              $C$DW$165       .dwtag  DW_TAG_subprogram
     3451                      .dwattr $C$DW$165, DW_AT_name("__isfinite")
     3452                      .dwattr $C$DW$165, DW_AT_low_pc(||__isfinite||)
-TMS320C2000 Assembler PC v22.6.2 Fri Dec 19 17:46:48 2025
+TMS320C2000 Assembler PC v22.6.2 Mon Dec 22 12:49:19 2025
 
 Copyright (c) 1996-2018 Texas Instruments Incorporated
 dual_axis_servo_drive_user_cpu.asm                                   PAGE   74
@@ -4438,7 +4438,7 @@ dual_axis_servo_drive_user_cpu.asm                                   PAGE   74
     3501                      .dwattr $C$DW$168, DW_AT_low_pc(0x00)
     3502                      .dwattr $C$DW$168, DW_AT_TI_return
     3503              
-TMS320C2000 Assembler PC v22.6.2 Fri Dec 19 17:46:48 2025
+TMS320C2000 Assembler PC v22.6.2 Mon Dec 22 12:49:19 2025
 
 Copyright (c) 1996-2018 Texas Instruments Incorporated
 dual_axis_servo_drive_user_cpu.asm                                   PAGE   75
@@ -4498,7 +4498,7 @@ dual_axis_servo_drive_user_cpu.asm                                   PAGE   75
     3556                      .dwattr $C$DW$172, DW_AT_location[DW_OP_reg12]
     3557              
     3558                      .dwcfi  cfa_offset, -2
-TMS320C2000 Assembler PC v22.6.2 Fri Dec 19 17:46:48 2025
+TMS320C2000 Assembler PC v22.6.2 Mon Dec 22 12:49:19 2025
 
 Copyright (c) 1996-2018 Texas Instruments Incorporated
 dual_axis_servo_drive_user_cpu.asm                                   PAGE   76
@@ -4558,7 +4558,7 @@ dual_axis_servo_drive_user_cpu.asm                                   PAGE   76
     3604 00000026 9A01          MOVB      AL,#1                 ; [CPU_ALU] |436| 
     3605 00000027 6F2B          B         ||$C$L25||,UNC        ; [CPU_ALU] |436| 
     3606                      ; branch occurs ; [] |436| 
-TMS320C2000 Assembler PC v22.6.2 Fri Dec 19 17:46:48 2025
+TMS320C2000 Assembler PC v22.6.2 Mon Dec 22 12:49:19 2025
 
 Copyright (c) 1996-2018 Texas Instruments Incorporated
 dual_axis_servo_drive_user_cpu.asm                                   PAGE   77
@@ -4618,7 +4618,7 @@ dual_axis_servo_drive_user_cpu.asm                                   PAGE   77
     3650 0000004c 5200          CMPB      AL,#0                 ; [CPU_ALU] |436| 
     3651 0000004d 6104          B         ||$C$L24||,EQ         ; [CPU_ALU] |436| 
     3652                      ; branchcc occurs ; [] |436| 
-TMS320C2000 Assembler PC v22.6.2 Fri Dec 19 17:46:48 2025
+TMS320C2000 Assembler PC v22.6.2 Mon Dec 22 12:49:19 2025
 
 Copyright (c) 1996-2018 Texas Instruments Incorporated
 dual_axis_servo_drive_user_cpu.asm                                   PAGE   78
@@ -4678,7 +4678,7 @@ dual_axis_servo_drive_user_cpu.asm                                   PAGE   78
     3704              ;***************************************************************
     3705              
     3706              ||__fpclassifyf||:
-TMS320C2000 Assembler PC v22.6.2 Fri Dec 19 17:46:48 2025
+TMS320C2000 Assembler PC v22.6.2 Mon Dec 22 12:49:19 2025
 
 Copyright (c) 1996-2018 Texas Instruments Incorporated
 dual_axis_servo_drive_user_cpu.asm                                   PAGE   79
@@ -4738,7 +4738,7 @@ dual_axis_servo_drive_user_cpu.asm                                   PAGE   79
     3755                      ; branchcc occurs ; [] |402| 
     3756                      .dwcfi  remember_state
     3757 00000017 28A9          MOV       AL,#-1                ; [CPU_ALU] |402| 
-TMS320C2000 Assembler PC v22.6.2 Fri Dec 19 17:46:48 2025
+TMS320C2000 Assembler PC v22.6.2 Mon Dec 22 12:49:19 2025
 
 Copyright (c) 1996-2018 Texas Instruments Incorporated
 dual_axis_servo_drive_user_cpu.asm                                   PAGE   80
@@ -4798,7 +4798,7 @@ dual_axis_servo_drive_user_cpu.asm                                   PAGE   80
     3808                      .dwattr $C$DW$185, DW_AT_TI_max_frame_size(-10)
     3809                      .dwpsn  file "C:/ti/ccs2031/ccs/tools/compiler/ti-cgt-c2000_22.6.2.LTS/include/_defs.h",line 414,colu
     3810              
-TMS320C2000 Assembler PC v22.6.2 Fri Dec 19 17:46:48 2025
+TMS320C2000 Assembler PC v22.6.2 Mon Dec 22 12:49:19 2025
 
 Copyright (c) 1996-2018 Texas Instruments Incorporated
 dual_axis_servo_drive_user_cpu.asm                                   PAGE   81
@@ -4858,7 +4858,7 @@ dual_axis_servo_drive_user_cpu.asm                                   PAGE   81
     3860 00000012 6016          B         ||$C$L31||,NEQ        ; [CPU_ALU] |419| 
     3861                      ; branchcc occurs ; [] |419| 
     3862 00000013 0200          MOVB      ACC,#0                ; [CPU_ALU] |419| 
-TMS320C2000 Assembler PC v22.6.2 Fri Dec 19 17:46:48 2025
+TMS320C2000 Assembler PC v22.6.2 Mon Dec 22 12:49:19 2025
 
 Copyright (c) 1996-2018 Texas Instruments Incorporated
 dual_axis_servo_drive_user_cpu.asm                                   PAGE   82
@@ -4918,7 +4918,7 @@ dual_axis_servo_drive_user_cpu.asm                                   PAGE   82
          00000038 0000 
     3908                      ; call occurs [#||__c28xabi_cmpull||] ; [] |419| 
     3909 00000039 5200          CMPB      AL,#0                 ; [CPU_ALU] |419| 
-TMS320C2000 Assembler PC v22.6.2 Fri Dec 19 17:46:48 2025
+TMS320C2000 Assembler PC v22.6.2 Mon Dec 22 12:49:19 2025
 
 Copyright (c) 1996-2018 Texas Instruments Incorporated
 dual_axis_servo_drive_user_cpu.asm                                   PAGE   83
@@ -4978,7 +4978,7 @@ dual_axis_servo_drive_user_cpu.asm                                   PAGE   83
     3956                      .clink
     3957                      .global ||__fast_lldiv||
     3958              
-TMS320C2000 Assembler PC v22.6.2 Fri Dec 19 17:46:48 2025
+TMS320C2000 Assembler PC v22.6.2 Mon Dec 22 12:49:19 2025
 
 Copyright (c) 1996-2018 Texas Instruments Incorporated
 dual_axis_servo_drive_user_cpu.asm                                   PAGE   84
@@ -5038,7 +5038,7 @@ dual_axis_servo_drive_user_cpu.asm                                   PAGE   84
     4009                      .dwpsn  file "C:/ti/ccs2031/ccs/tools/compiler/ti-cgt-c2000_22.6.2.LTS/include/stdlib.h",line 428,col
     4010 00000009 DC92          SUBB      XAR4,#18              ; [CPU_ARAU] |428| 
     4011                      .dwpsn  file "C:/ti/ccs2031/ccs/tools/compiler/ti-cgt-c2000_22.6.2.LTS/include/stdlib.h",line 429,col
-TMS320C2000 Assembler PC v22.6.2 Fri Dec 19 17:46:48 2025
+TMS320C2000 Assembler PC v22.6.2 Mon Dec 22 12:49:19 2025
 
 Copyright (c) 1996-2018 Texas Instruments Incorporated
 dual_axis_servo_drive_user_cpu.asm                                   PAGE   85
@@ -5098,7 +5098,7 @@ dual_axis_servo_drive_user_cpu.asm                                   PAGE   85
          0000003e 0444 
     4057 0000003f 6104          B         ||$C$L35||,EQ         ; [CPU_ALU] |429| 
     4058                      ; branchcc occurs ; [] |429| 
-TMS320C2000 Assembler PC v22.6.2 Fri Dec 19 17:46:48 2025
+TMS320C2000 Assembler PC v22.6.2 Mon Dec 22 12:49:19 2025
 
 Copyright (c) 1996-2018 Texas Instruments Incorporated
 dual_axis_servo_drive_user_cpu.asm                                   PAGE   86
@@ -5158,7 +5158,7 @@ dual_axis_servo_drive_user_cpu.asm                                   PAGE   86
     4109                      .dwattr $C$DW$199, DW_AT_location[DW_OP_breg20 -8]
     4110              
     4111              
-TMS320C2000 Assembler PC v22.6.2 Fri Dec 19 17:46:48 2025
+TMS320C2000 Assembler PC v22.6.2 Mon Dec 22 12:49:19 2025
 
 Copyright (c) 1996-2018 Texas Instruments Incorporated
 dual_axis_servo_drive_user_cpu.asm                                   PAGE   87
@@ -5218,7 +5218,7 @@ dual_axis_servo_drive_user_cpu.asm                                   PAGE   87
     4160 0000001c FE84          SUBB      SP,#4                 ; [CPU_ARAU] 
     4161                      .dwcfi  cfa_offset, -2
     4162              $C$DW$201       .dwtag  DW_TAG_TI_branch
-TMS320C2000 Assembler PC v22.6.2 Fri Dec 19 17:46:48 2025
+TMS320C2000 Assembler PC v22.6.2 Mon Dec 22 12:49:19 2025
 
 Copyright (c) 1996-2018 Texas Instruments Incorporated
 dual_axis_servo_drive_user_cpu.asm                                   PAGE   88
@@ -5278,7 +5278,7 @@ dual_axis_servo_drive_user_cpu.asm                                   PAGE   88
     4215                      .group    "__isinfl", 1
     4216                      .gmember  ".text:__isinfl"
     4217                      .endgroup
-TMS320C2000 Assembler PC v22.6.2 Fri Dec 19 17:46:48 2025
+TMS320C2000 Assembler PC v22.6.2 Mon Dec 22 12:49:19 2025
 
 Copyright (c) 1996-2018 Texas Instruments Incorporated
 dual_axis_servo_drive_user_cpu.asm                                   PAGE   89
@@ -5338,7 +5338,7 @@ dual_axis_servo_drive_user_cpu.asm                                   PAGE   89
     4270                      .gmember  ".text:__relaxed_sqrtf"
     4271                      .endgroup
     4272                      .group    "__signbit", 1
-TMS320C2000 Assembler PC v22.6.2 Fri Dec 19 17:46:48 2025
+TMS320C2000 Assembler PC v22.6.2 Mon Dec 22 12:49:19 2025
 
 Copyright (c) 1996-2018 Texas Instruments Incorporated
 dual_axis_servo_drive_user_cpu.asm                                   PAGE   90
@@ -5398,7 +5398,7 @@ dual_axis_servo_drive_user_cpu.asm                                   PAGE   90
     4325                      .dwattr $C$DW$202, DW_AT_decl_line(0x87)
     4326                      .dwattr $C$DW$202, DW_AT_decl_column(0x05)
     4327              
-TMS320C2000 Assembler PC v22.6.2 Fri Dec 19 17:46:48 2025
+TMS320C2000 Assembler PC v22.6.2 Mon Dec 22 12:49:19 2025
 
 Copyright (c) 1996-2018 Texas Instruments Incorporated
 dual_axis_servo_drive_user_cpu.asm                                   PAGE   91
@@ -5458,7 +5458,7 @@ dual_axis_servo_drive_user_cpu.asm                                   PAGE   91
     4380              
     4381              $C$DW$207       .dwtag  DW_TAG_enumerator
     4382                      .dwattr $C$DW$207, DW_AT_name("ADC_PPB_NUMBER4")
-TMS320C2000 Assembler PC v22.6.2 Fri Dec 19 17:46:48 2025
+TMS320C2000 Assembler PC v22.6.2 Mon Dec 22 12:49:19 2025
 
 Copyright (c) 1996-2018 Texas Instruments Incorporated
 dual_axis_servo_drive_user_cpu.asm                                   PAGE   92
@@ -5518,7 +5518,7 @@ dual_axis_servo_drive_user_cpu.asm                                   PAGE   92
     4435                      .dwattr $C$DW$211, DW_AT_name("ADC_INT_NUMBER4")
     4436                      .dwattr $C$DW$211, DW_AT_const_value(0x03)
     4437                      .dwattr $C$DW$211, DW_AT_decl_file("C:/ti/C2000Ware_MotorControl_SDK_5_04_00_00/c2000ware/driverlib/f
-TMS320C2000 Assembler PC v22.6.2 Fri Dec 19 17:46:48 2025
+TMS320C2000 Assembler PC v22.6.2 Mon Dec 22 12:49:19 2025
 
 Copyright (c) 1996-2018 Texas Instruments Incorporated
 dual_axis_servo_drive_user_cpu.asm                                   PAGE   93
@@ -5578,7 +5578,7 @@ dual_axis_servo_drive_user_cpu.asm                                   PAGE   93
     4490                      .dwendtag $C$DW$T$110
     4491              
     4492                      .dwendtag $C$DW$TU$110
-TMS320C2000 Assembler PC v22.6.2 Fri Dec 19 17:46:48 2025
+TMS320C2000 Assembler PC v22.6.2 Mon Dec 22 12:49:19 2025
 
 Copyright (c) 1996-2018 Texas Instruments Incorporated
 dual_axis_servo_drive_user_cpu.asm                                   PAGE   94
@@ -5638,7 +5638,7 @@ dual_axis_servo_drive_user_cpu.asm                                   PAGE   94
     4545                      .dwendtag $C$DW$TU$112
     4546              
     4547              
-TMS320C2000 Assembler PC v22.6.2 Fri Dec 19 17:46:48 2025
+TMS320C2000 Assembler PC v22.6.2 Mon Dec 22 12:49:19 2025
 
 Copyright (c) 1996-2018 Texas Instruments Incorporated
 dual_axis_servo_drive_user_cpu.asm                                   PAGE   95
@@ -5698,7 +5698,7 @@ dual_axis_servo_drive_user_cpu.asm                                   PAGE   95
     4600                      .dwmtype  $C$DW$T$116
     4601              
     4602              $C$DW$T$116     .dwtag  DW_TAG_enumeration_type
-TMS320C2000 Assembler PC v22.6.2 Fri Dec 19 17:46:48 2025
+TMS320C2000 Assembler PC v22.6.2 Mon Dec 22 12:49:19 2025
 
 Copyright (c) 1996-2018 Texas Instruments Incorporated
 dual_axis_servo_drive_user_cpu.asm                                   PAGE   96
@@ -5758,7 +5758,7 @@ dual_axis_servo_drive_user_cpu.asm                                   PAGE   96
     4655              
     4656                      .dwendtag $C$DW$TU$117
     4657              
-TMS320C2000 Assembler PC v22.6.2 Fri Dec 19 17:46:48 2025
+TMS320C2000 Assembler PC v22.6.2 Mon Dec 22 12:49:19 2025
 
 Copyright (c) 1996-2018 Texas Instruments Incorporated
 dual_axis_servo_drive_user_cpu.asm                                   PAGE   97
@@ -5818,7 +5818,7 @@ dual_axis_servo_drive_user_cpu.asm                                   PAGE   97
     4710                      .dwattr $C$DW$232, DW_AT_decl_line(0x10e)
     4711                      .dwattr $C$DW$232, DW_AT_decl_column(0x05)
     4712              
-TMS320C2000 Assembler PC v22.6.2 Fri Dec 19 17:46:48 2025
+TMS320C2000 Assembler PC v22.6.2 Mon Dec 22 12:49:19 2025
 
 Copyright (c) 1996-2018 Texas Instruments Incorporated
 dual_axis_servo_drive_user_cpu.asm                                   PAGE   98
@@ -5878,7 +5878,7 @@ dual_axis_servo_drive_user_cpu.asm                                   PAGE   98
     4765                      .dwattr $C$DW$240, DW_AT_decl_file("C:/ti/C2000Ware_MotorControl_SDK_5_04_00_00/c2000ware/driverlib/f
     4766                      .dwattr $C$DW$240, DW_AT_decl_line(0x116)
     4767                      .dwattr $C$DW$240, DW_AT_decl_column(0x05)
-TMS320C2000 Assembler PC v22.6.2 Fri Dec 19 17:46:48 2025
+TMS320C2000 Assembler PC v22.6.2 Mon Dec 22 12:49:19 2025
 
 Copyright (c) 1996-2018 Texas Instruments Incorporated
 dual_axis_servo_drive_user_cpu.asm                                   PAGE   99
@@ -5938,7 +5938,7 @@ dual_axis_servo_drive_user_cpu.asm                                   PAGE   99
     4820                      .dwattr $C$DW$T$19, DW_AT_decl_column(0x10)
     4821                      .dwendtag $C$DW$T$19
     4822              
-TMS320C2000 Assembler PC v22.6.2 Fri Dec 19 17:46:48 2025
+TMS320C2000 Assembler PC v22.6.2 Mon Dec 22 12:49:19 2025
 
 Copyright (c) 1996-2018 Texas Instruments Incorporated
 dual_axis_servo_drive_user_cpu.asm                                   PAGE  100
@@ -5998,7 +5998,7 @@ dual_axis_servo_drive_user_cpu.asm                                   PAGE  100
     4875                      .dwattr $C$DW$T$126, DW_AT_decl_column(0x29)
     4876              
     4877                      .dwendtag $C$DW$TU$126
-TMS320C2000 Assembler PC v22.6.2 Fri Dec 19 17:46:48 2025
+TMS320C2000 Assembler PC v22.6.2 Mon Dec 22 12:49:19 2025
 
 Copyright (c) 1996-2018 Texas Instruments Incorporated
 dual_axis_servo_drive_user_cpu.asm                                   PAGE  101
@@ -6058,7 +6058,7 @@ dual_axis_servo_drive_user_cpu.asm                                   PAGE  101
     4930                      .dwattr $C$DW$251, DW_AT_type(*$C$DW$T$21)
     4931                      .dwattr $C$DW$251, DW_AT_name("Offset")
     4932                      .dwattr $C$DW$251, DW_AT_data_member_location[DW_OP_plus_uconst 0xa]
-TMS320C2000 Assembler PC v22.6.2 Fri Dec 19 17:46:48 2025
+TMS320C2000 Assembler PC v22.6.2 Mon Dec 22 12:49:19 2025
 
 Copyright (c) 1996-2018 Texas Instruments Incorporated
 dual_axis_servo_drive_user_cpu.asm                                   PAGE  102
@@ -6118,7 +6118,7 @@ dual_axis_servo_drive_user_cpu.asm                                   PAGE  102
     4985                      .dwattr $C$DW$254, DW_AT_decl_file("C:/ti/C2000Ware_MotorControl_SDK_5_04_00_00/libraries/utilities/m
     4986                      .dwattr $C$DW$254, DW_AT_decl_line(0x2d)
     4987                      .dwattr $C$DW$254, DW_AT_decl_column(0x0f)
-TMS320C2000 Assembler PC v22.6.2 Fri Dec 19 17:46:48 2025
+TMS320C2000 Assembler PC v22.6.2 Mon Dec 22 12:49:19 2025
 
 Copyright (c) 1996-2018 Texas Instruments Incorporated
 dual_axis_servo_drive_user_cpu.asm                                   PAGE  103
@@ -6178,7 +6178,7 @@ dual_axis_servo_drive_user_cpu.asm                                   PAGE  103
     5040              
     5041              
     5042              $C$DW$TU$89     .dwtag  DW_TAG_type_unit
-TMS320C2000 Assembler PC v22.6.2 Fri Dec 19 17:46:48 2025
+TMS320C2000 Assembler PC v22.6.2 Mon Dec 22 12:49:19 2025
 
 Copyright (c) 1996-2018 Texas Instruments Incorporated
 dual_axis_servo_drive_user_cpu.asm                                   PAGE  104
@@ -6238,7 +6238,7 @@ dual_axis_servo_drive_user_cpu.asm                                   PAGE  104
     5095                      .dwattr $C$DW$264, DW_AT_type(*$C$DW$T$21)
     5096                      .dwattr $C$DW$264, DW_AT_name("Beta")
     5097                      .dwattr $C$DW$264, DW_AT_data_member_location[DW_OP_plus_uconst 0x8]
-TMS320C2000 Assembler PC v22.6.2 Fri Dec 19 17:46:48 2025
+TMS320C2000 Assembler PC v22.6.2 Mon Dec 22 12:49:19 2025
 
 Copyright (c) 1996-2018 Texas Instruments Incorporated
 dual_axis_servo_drive_user_cpu.asm                                   PAGE  105
@@ -6298,7 +6298,7 @@ dual_axis_servo_drive_user_cpu.asm                                   PAGE  105
     5150                      .dwattr $C$DW$267, DW_AT_decl_file("C:/ti/C2000Ware_MotorControl_SDK_5_04_00_00/libraries/utilities/m
     5151                      .dwattr $C$DW$267, DW_AT_decl_line(0x2b)
     5152                      .dwattr $C$DW$267, DW_AT_decl_column(0x12)
-TMS320C2000 Assembler PC v22.6.2 Fri Dec 19 17:46:48 2025
+TMS320C2000 Assembler PC v22.6.2 Mon Dec 22 12:49:19 2025
 
 Copyright (c) 1996-2018 Texas Instruments Incorporated
 dual_axis_servo_drive_user_cpu.asm                                   PAGE  106
@@ -6358,7 +6358,7 @@ dual_axis_servo_drive_user_cpu.asm                                   PAGE  106
     5205                      .dwattr $C$DW$T$91, DW_AT_decl_column(0x09)
     5206              
     5207                      .dwendtag $C$DW$TU$91
-TMS320C2000 Assembler PC v22.6.2 Fri Dec 19 17:46:48 2025
+TMS320C2000 Assembler PC v22.6.2 Mon Dec 22 12:49:19 2025
 
 Copyright (c) 1996-2018 Texas Instruments Incorporated
 dual_axis_servo_drive_user_cpu.asm                                   PAGE  107
@@ -6418,7 +6418,7 @@ dual_axis_servo_drive_user_cpu.asm                                   PAGE  107
     5260                      .dwattr $C$DW$277, DW_AT_type(*$C$DW$T$21)
     5261                      .dwattr $C$DW$277, DW_AT_name("Sine")
     5262                      .dwattr $C$DW$277, DW_AT_data_member_location[DW_OP_plus_uconst 0xa]
-TMS320C2000 Assembler PC v22.6.2 Fri Dec 19 17:46:48 2025
+TMS320C2000 Assembler PC v22.6.2 Mon Dec 22 12:49:19 2025
 
 Copyright (c) 1996-2018 Texas Instruments Incorporated
 dual_axis_servo_drive_user_cpu.asm                                   PAGE  108
@@ -6478,7 +6478,7 @@ dual_axis_servo_drive_user_cpu.asm                                   PAGE  108
     5315                      .dwattr $C$DW$280, DW_AT_decl_file("C:/ti/C2000Ware_MotorControl_SDK_5_04_00_00/libraries/utilities/m
     5316                      .dwattr $C$DW$280, DW_AT_decl_line(0x2c)
     5317                      .dwattr $C$DW$280, DW_AT_decl_column(0x10)
-TMS320C2000 Assembler PC v22.6.2 Fri Dec 19 17:46:48 2025
+TMS320C2000 Assembler PC v22.6.2 Mon Dec 22 12:49:19 2025
 
 Copyright (c) 1996-2018 Texas Instruments Incorporated
 dual_axis_servo_drive_user_cpu.asm                                   PAGE  109
@@ -6538,7 +6538,7 @@ dual_axis_servo_drive_user_cpu.asm                                   PAGE  109
     5370                      .dwattr $C$DW$286, DW_AT_decl_line(0x32)
     5371                      .dwattr $C$DW$286, DW_AT_decl_column(0x10)
     5372              
-TMS320C2000 Assembler PC v22.6.2 Fri Dec 19 17:46:48 2025
+TMS320C2000 Assembler PC v22.6.2 Mon Dec 22 12:49:19 2025
 
 Copyright (c) 1996-2018 Texas Instruments Incorporated
 dual_axis_servo_drive_user_cpu.asm                                   PAGE  110
@@ -6598,7 +6598,7 @@ dual_axis_servo_drive_user_cpu.asm                                   PAGE  110
     5425                      .dwattr $C$DW$290, DW_AT_type(*$C$DW$T$21)
     5426                      .dwattr $C$DW$290, DW_AT_name("OldElecTheta")
     5427                      .dwattr $C$DW$290, DW_AT_data_member_location[DW_OP_plus_uconst 0x4]
-TMS320C2000 Assembler PC v22.6.2 Fri Dec 19 17:46:48 2025
+TMS320C2000 Assembler PC v22.6.2 Mon Dec 22 12:49:19 2025
 
 Copyright (c) 1996-2018 Texas Instruments Incorporated
 dual_axis_servo_drive_user_cpu.asm                                   PAGE  111
@@ -6658,7 +6658,7 @@ dual_axis_servo_drive_user_cpu.asm                                   PAGE  111
     5480                      .dwattr $C$DW$296, DW_AT_name("SpeedRpm")
     5481                      .dwattr $C$DW$296, DW_AT_data_member_location[DW_OP_plus_uconst 0x10]
     5482                      .dwattr $C$DW$296, DW_AT_accessibility(DW_ACCESS_public)
-TMS320C2000 Assembler PC v22.6.2 Fri Dec 19 17:46:48 2025
+TMS320C2000 Assembler PC v22.6.2 Mon Dec 22 12:49:19 2025
 
 Copyright (c) 1996-2018 Texas Instruments Incorporated
 dual_axis_servo_drive_user_cpu.asm                                   PAGE  112
@@ -6718,7 +6718,7 @@ dual_axis_servo_drive_user_cpu.asm                                   PAGE  112
     5535                      .dwattr $C$DW$299, DW_AT_decl_line(0x2b)
     5536                      .dwattr $C$DW$299, DW_AT_decl_column(0x12)
     5537              
-TMS320C2000 Assembler PC v22.6.2 Fri Dec 19 17:46:48 2025
+TMS320C2000 Assembler PC v22.6.2 Mon Dec 22 12:49:19 2025
 
 Copyright (c) 1996-2018 Texas Instruments Incorporated
 dual_axis_servo_drive_user_cpu.asm                                   PAGE  113
@@ -6778,7 +6778,7 @@ dual_axis_servo_drive_user_cpu.asm                                   PAGE  113
     5590              $C$DW$303       .dwtag  DW_TAG_member
     5591                      .dwattr $C$DW$303, DW_AT_type(*$C$DW$T$21)
     5592                      .dwattr $C$DW$303, DW_AT_name("Kr")
-TMS320C2000 Assembler PC v22.6.2 Fri Dec 19 17:46:48 2025
+TMS320C2000 Assembler PC v22.6.2 Mon Dec 22 12:49:19 2025
 
 Copyright (c) 1996-2018 Texas Instruments Incorporated
 dual_axis_servo_drive_user_cpu.asm                                   PAGE  114
@@ -6838,7 +6838,7 @@ dual_axis_servo_drive_user_cpu.asm                                   PAGE  114
     5645                      .dwattr $C$DW$309, DW_AT_name("Umin")
     5646                      .dwattr $C$DW$309, DW_AT_data_member_location[DW_OP_plus_uconst 0xc]
     5647                      .dwattr $C$DW$309, DW_AT_accessibility(DW_ACCESS_public)
-TMS320C2000 Assembler PC v22.6.2 Fri Dec 19 17:46:48 2025
+TMS320C2000 Assembler PC v22.6.2 Mon Dec 22 12:49:19 2025
 
 Copyright (c) 1996-2018 Texas Instruments Incorporated
 dual_axis_servo_drive_user_cpu.asm                                   PAGE  115
@@ -6898,7 +6898,7 @@ dual_axis_servo_drive_user_cpu.asm                                   PAGE  115
     5700                      .dwattr $C$DW$312, DW_AT_decl_line(0x3d)
     5701                      .dwattr $C$DW$312, DW_AT_decl_column(0x12)
     5702              
-TMS320C2000 Assembler PC v22.6.2 Fri Dec 19 17:46:48 2025
+TMS320C2000 Assembler PC v22.6.2 Mon Dec 22 12:49:19 2025
 
 Copyright (c) 1996-2018 Texas Instruments Incorporated
 dual_axis_servo_drive_user_cpu.asm                                   PAGE  116
@@ -6958,7 +6958,7 @@ dual_axis_servo_drive_user_cpu.asm                                   PAGE  116
     5755              
     5756              $C$DW$TU$40     .dwtag  DW_TAG_type_unit
     5757                      .dwmtype  $C$DW$T$40
-TMS320C2000 Assembler PC v22.6.2 Fri Dec 19 17:46:48 2025
+TMS320C2000 Assembler PC v22.6.2 Mon Dec 22 12:49:19 2025
 
 Copyright (c) 1996-2018 Texas Instruments Incorporated
 dual_axis_servo_drive_user_cpu.asm                                   PAGE  117
@@ -7018,7 +7018,7 @@ dual_axis_servo_drive_user_cpu.asm                                   PAGE  117
     5810                      .dwattr $C$DW$T$96, DW_AT_name("PID_CONTROLLER")
     5811                      .dwattr $C$DW$T$96, DW_AT_type(*$C$DW$T$41)
     5812                      .dwattr $C$DW$T$96, DW_AT_decl_file("C:/ti/C2000Ware_MotorControl_SDK_5_04_00_00/libraries/utilities/
-TMS320C2000 Assembler PC v22.6.2 Fri Dec 19 17:46:48 2025
+TMS320C2000 Assembler PC v22.6.2 Mon Dec 22 12:49:19 2025
 
 Copyright (c) 1996-2018 Texas Instruments Incorporated
 dual_axis_servo_drive_user_cpu.asm                                   PAGE  118
@@ -7078,7 +7078,7 @@ dual_axis_servo_drive_user_cpu.asm                                   PAGE  118
     5865                      .dwattr $C$DW$325, DW_AT_decl_line(0x2e)
     5866                      .dwattr $C$DW$325, DW_AT_decl_column(0x12)
     5867              
-TMS320C2000 Assembler PC v22.6.2 Fri Dec 19 17:46:48 2025
+TMS320C2000 Assembler PC v22.6.2 Mon Dec 22 12:49:19 2025
 
 Copyright (c) 1996-2018 Texas Instruments Incorporated
 dual_axis_servo_drive_user_cpu.asm                                   PAGE  119
@@ -7138,7 +7138,7 @@ dual_axis_servo_drive_user_cpu.asm                                   PAGE  119
     5920                      .dwattr $C$DW$331, DW_AT_decl_column(0x12)
     5921              
     5922              $C$DW$332       .dwtag  DW_TAG_member
-TMS320C2000 Assembler PC v22.6.2 Fri Dec 19 17:46:48 2025
+TMS320C2000 Assembler PC v22.6.2 Mon Dec 22 12:49:19 2025
 
 Copyright (c) 1996-2018 Texas Instruments Incorporated
 dual_axis_servo_drive_user_cpu.asm                                   PAGE  120
@@ -7198,7 +7198,7 @@ dual_axis_servo_drive_user_cpu.asm                                   PAGE  120
     5975                      .dwattr $C$DW$334, DW_AT_decl_column(0x0c)
     5976              
     5977              $C$DW$335       .dwtag  DW_TAG_member
-TMS320C2000 Assembler PC v22.6.2 Fri Dec 19 17:46:48 2025
+TMS320C2000 Assembler PC v22.6.2 Mon Dec 22 12:49:19 2025
 
 Copyright (c) 1996-2018 Texas Instruments Incorporated
 dual_axis_servo_drive_user_cpu.asm                                   PAGE  121
@@ -7258,7 +7258,7 @@ dual_axis_servo_drive_user_cpu.asm                                   PAGE  121
     6030                      .dwattr $C$DW$339, DW_AT_type(*$C$DW$T$44)
     6031                      .dwattr $C$DW$339, DW_AT_name("bit")
     6032                      .dwattr $C$DW$339, DW_AT_accessibility(DW_ACCESS_public)
-TMS320C2000 Assembler PC v22.6.2 Fri Dec 19 17:46:48 2025
+TMS320C2000 Assembler PC v22.6.2 Mon Dec 22 12:49:19 2025
 
 Copyright (c) 1996-2018 Texas Instruments Incorporated
 dual_axis_servo_drive_user_cpu.asm                                   PAGE  122
@@ -7318,7 +7318,7 @@ dual_axis_servo_drive_user_cpu.asm                                   PAGE  122
     6085                      .dwattr $C$DW$342, DW_AT_decl_line(0x10e)
     6086                      .dwattr $C$DW$342, DW_AT_decl_column(0x2e)
     6087              
-TMS320C2000 Assembler PC v22.6.2 Fri Dec 19 17:46:48 2025
+TMS320C2000 Assembler PC v22.6.2 Mon Dec 22 12:49:19 2025
 
 Copyright (c) 1996-2018 Texas Instruments Incorporated
 dual_axis_servo_drive_user_cpu.asm                                   PAGE  123
@@ -7378,7 +7378,7 @@ dual_axis_servo_drive_user_cpu.asm                                   PAGE  123
     6140                      .dwattr $C$DW$348, DW_AT_decl_column(0x2e)
     6141              
     6142              $C$DW$349       .dwtag  DW_TAG_member
-TMS320C2000 Assembler PC v22.6.2 Fri Dec 19 17:46:48 2025
+TMS320C2000 Assembler PC v22.6.2 Mon Dec 22 12:49:19 2025
 
 Copyright (c) 1996-2018 Texas Instruments Incorporated
 dual_axis_servo_drive_user_cpu.asm                                   PAGE  124
@@ -7438,7 +7438,7 @@ dual_axis_servo_drive_user_cpu.asm                                   PAGE  124
     6195              
     6196              $C$DW$355       .dwtag  DW_TAG_member
     6197                      .dwattr $C$DW$355, DW_AT_type(*$C$DW$T$73)
-TMS320C2000 Assembler PC v22.6.2 Fri Dec 19 17:46:48 2025
+TMS320C2000 Assembler PC v22.6.2 Mon Dec 22 12:49:19 2025
 
 Copyright (c) 1996-2018 Texas Instruments Incorporated
 dual_axis_servo_drive_user_cpu.asm                                   PAGE  125
@@ -7498,7 +7498,7 @@ dual_axis_servo_drive_user_cpu.asm                                   PAGE  125
     6250              $C$DW$361       .dwtag  DW_TAG_member
     6251                      .dwattr $C$DW$361, DW_AT_type(*$C$DW$T$43)
     6252                      .dwattr $C$DW$361, DW_AT_name("QCTMR")
-TMS320C2000 Assembler PC v22.6.2 Fri Dec 19 17:46:48 2025
+TMS320C2000 Assembler PC v22.6.2 Mon Dec 22 12:49:19 2025
 
 Copyright (c) 1996-2018 Texas Instruments Incorporated
 dual_axis_servo_drive_user_cpu.asm                                   PAGE  126
@@ -7558,7 +7558,7 @@ dual_axis_servo_drive_user_cpu.asm                                   PAGE  126
     6305                      .dwattr $C$DW$367, DW_AT_type(*$C$DW$T$63)
     6306                      .dwattr $C$DW$367, DW_AT_name("QEPSTROBESEL")
     6307                      .dwattr $C$DW$367, DW_AT_data_member_location[DW_OP_plus_uconst 0x32]
-TMS320C2000 Assembler PC v22.6.2 Fri Dec 19 17:46:48 2025
+TMS320C2000 Assembler PC v22.6.2 Mon Dec 22 12:49:19 2025
 
 Copyright (c) 1996-2018 Texas Instruments Incorporated
 dual_axis_servo_drive_user_cpu.asm                                   PAGE  127
@@ -7618,7 +7618,7 @@ dual_axis_servo_drive_user_cpu.asm                                   PAGE  127
     6360                      .dwmtype  $C$DW$T$49
     6361              
     6362              $C$DW$T$49      .dwtag  DW_TAG_structure_type
-TMS320C2000 Assembler PC v22.6.2 Fri Dec 19 17:46:48 2025
+TMS320C2000 Assembler PC v22.6.2 Mon Dec 22 12:49:19 2025
 
 Copyright (c) 1996-2018 Texas Instruments Incorporated
 dual_axis_servo_drive_user_cpu.asm                                   PAGE  128
@@ -7678,7 +7678,7 @@ dual_axis_servo_drive_user_cpu.asm                                   PAGE  128
     6415                      .dwattr $C$DW$376, DW_AT_decl_line(0x1e)
     6416                      .dwattr $C$DW$376, DW_AT_decl_column(0x10)
     6417              
-TMS320C2000 Assembler PC v22.6.2 Fri Dec 19 17:46:48 2025
+TMS320C2000 Assembler PC v22.6.2 Mon Dec 22 12:49:19 2025
 
 Copyright (c) 1996-2018 Texas Instruments Incorporated
 dual_axis_servo_drive_user_cpu.asm                                   PAGE  129
@@ -7738,7 +7738,7 @@ dual_axis_servo_drive_user_cpu.asm                                   PAGE  129
     6470                      .dwattr $C$DW$382, DW_AT_decl_column(0x10)
     6471              
     6472              $C$DW$383       .dwtag  DW_TAG_member
-TMS320C2000 Assembler PC v22.6.2 Fri Dec 19 17:46:48 2025
+TMS320C2000 Assembler PC v22.6.2 Mon Dec 22 12:49:19 2025
 
 Copyright (c) 1996-2018 Texas Instruments Incorporated
 dual_axis_servo_drive_user_cpu.asm                                   PAGE  130
@@ -7798,7 +7798,7 @@ dual_axis_servo_drive_user_cpu.asm                                   PAGE  130
     6525                      .dwendtag $C$DW$TU$98
     6526              
     6527              
-TMS320C2000 Assembler PC v22.6.2 Fri Dec 19 17:46:48 2025
+TMS320C2000 Assembler PC v22.6.2 Mon Dec 22 12:49:19 2025
 
 Copyright (c) 1996-2018 Texas Instruments Incorporated
 dual_axis_servo_drive_user_cpu.asm                                   PAGE  131
@@ -7858,7 +7858,7 @@ dual_axis_servo_drive_user_cpu.asm                                   PAGE  131
     6580              
     6581              
     6582              $C$DW$TU$51     .dwtag  DW_TAG_type_unit
-TMS320C2000 Assembler PC v22.6.2 Fri Dec 19 17:46:48 2025
+TMS320C2000 Assembler PC v22.6.2 Mon Dec 22 12:49:19 2025
 
 Copyright (c) 1996-2018 Texas Instruments Incorporated
 dual_axis_servo_drive_user_cpu.asm                                   PAGE  132
@@ -7918,7 +7918,7 @@ dual_axis_servo_drive_user_cpu.asm                                   PAGE  132
     6635                      .dwattr $C$DW$394, DW_AT_decl_line(0xa2)
     6636                      .dwattr $C$DW$394, DW_AT_decl_column(0x0c)
     6637              
-TMS320C2000 Assembler PC v22.6.2 Fri Dec 19 17:46:48 2025
+TMS320C2000 Assembler PC v22.6.2 Mon Dec 22 12:49:19 2025
 
 Copyright (c) 1996-2018 Texas Instruments Incorporated
 dual_axis_servo_drive_user_cpu.asm                                   PAGE  133
@@ -7978,7 +7978,7 @@ dual_axis_servo_drive_user_cpu.asm                                   PAGE  133
     6690                      .dwattr $C$DW$400, DW_AT_name("PCR")
     6691                      .dwattr $C$DW$400, DW_AT_bit_offset(0x08)
     6692                      .dwattr $C$DW$400, DW_AT_bit_size(0x01)
-TMS320C2000 Assembler PC v22.6.2 Fri Dec 19 17:46:48 2025
+TMS320C2000 Assembler PC v22.6.2 Mon Dec 22 12:49:19 2025
 
 Copyright (c) 1996-2018 Texas Instruments Incorporated
 dual_axis_servo_drive_user_cpu.asm                                   PAGE  134
@@ -8038,7 +8038,7 @@ dual_axis_servo_drive_user_cpu.asm                                   PAGE  134
     6745                      .dwattr $C$DW$405, DW_AT_decl_line(0xad)
     6746                      .dwattr $C$DW$405, DW_AT_decl_column(0x0c)
     6747              
-TMS320C2000 Assembler PC v22.6.2 Fri Dec 19 17:46:48 2025
+TMS320C2000 Assembler PC v22.6.2 Mon Dec 22 12:49:19 2025
 
 Copyright (c) 1996-2018 Texas Instruments Incorporated
 dual_axis_servo_drive_user_cpu.asm                                   PAGE  135
@@ -8098,7 +8098,7 @@ dual_axis_servo_drive_user_cpu.asm                                   PAGE  135
     6800                      .dwattr $C$DW$T$54, DW_AT_name("QDECCTL_BITS")
     6801                      .dwattr $C$DW$T$54, DW_AT_byte_size(0x01)
     6802              $C$DW$409       .dwtag  DW_TAG_member
-TMS320C2000 Assembler PC v22.6.2 Fri Dec 19 17:46:48 2025
+TMS320C2000 Assembler PC v22.6.2 Mon Dec 22 12:49:19 2025
 
 Copyright (c) 1996-2018 Texas Instruments Incorporated
 dual_axis_servo_drive_user_cpu.asm                                   PAGE  136
@@ -8158,7 +8158,7 @@ dual_axis_servo_drive_user_cpu.asm                                   PAGE  136
     6855                      .dwattr $C$DW$414, DW_AT_bit_offset(0x07)
     6856                      .dwattr $C$DW$414, DW_AT_bit_size(0x01)
     6857                      .dwattr $C$DW$414, DW_AT_accessibility(DW_ACCESS_public)
-TMS320C2000 Assembler PC v22.6.2 Fri Dec 19 17:46:48 2025
+TMS320C2000 Assembler PC v22.6.2 Mon Dec 22 12:49:19 2025
 
 Copyright (c) 1996-2018 Texas Instruments Incorporated
 dual_axis_servo_drive_user_cpu.asm                                   PAGE  137
@@ -8218,7 +8218,7 @@ dual_axis_servo_drive_user_cpu.asm                                   PAGE  137
     6910                      .dwattr $C$DW$419, DW_AT_decl_column(0x0c)
     6911              
     6912              $C$DW$420       .dwtag  DW_TAG_member
-TMS320C2000 Assembler PC v22.6.2 Fri Dec 19 17:46:48 2025
+TMS320C2000 Assembler PC v22.6.2 Mon Dec 22 12:49:19 2025
 
 Copyright (c) 1996-2018 Texas Instruments Incorporated
 dual_axis_servo_drive_user_cpu.asm                                   PAGE  138
@@ -8278,7 +8278,7 @@ dual_axis_servo_drive_user_cpu.asm                                   PAGE  138
     6965                      .dwattr $C$DW$T$56, DW_AT_byte_size(0x01)
     6966              $C$DW$423       .dwtag  DW_TAG_member
     6967                      .dwattr $C$DW$423, DW_AT_type(*$C$DW$T$43)
-TMS320C2000 Assembler PC v22.6.2 Fri Dec 19 17:46:48 2025
+TMS320C2000 Assembler PC v22.6.2 Mon Dec 22 12:49:19 2025
 
 Copyright (c) 1996-2018 Texas Instruments Incorporated
 dual_axis_servo_drive_user_cpu.asm                                   PAGE  139
@@ -8338,7 +8338,7 @@ dual_axis_servo_drive_user_cpu.asm                                   PAGE  139
     7020                      .dwattr $C$DW$428, DW_AT_bit_size(0x01)
     7021                      .dwattr $C$DW$428, DW_AT_accessibility(DW_ACCESS_public)
     7022                      .dwattr $C$DW$428, DW_AT_decl_file("C:\ti\C2000Ware_MotorControl_SDK_5_04_00_00\c2000ware\device_supp
-TMS320C2000 Assembler PC v22.6.2 Fri Dec 19 17:46:48 2025
+TMS320C2000 Assembler PC v22.6.2 Mon Dec 22 12:49:19 2025
 
 Copyright (c) 1996-2018 Texas Instruments Incorporated
 dual_axis_servo_drive_user_cpu.asm                                   PAGE  140
@@ -8398,7 +8398,7 @@ dual_axis_servo_drive_user_cpu.asm                                   PAGE  140
     7075              
     7076              $C$DW$434       .dwtag  DW_TAG_member
     7077                      .dwattr $C$DW$434, DW_AT_type(*$C$DW$T$43)
-TMS320C2000 Assembler PC v22.6.2 Fri Dec 19 17:46:48 2025
+TMS320C2000 Assembler PC v22.6.2 Mon Dec 22 12:49:19 2025
 
 Copyright (c) 1996-2018 Texas Instruments Incorporated
 dual_axis_servo_drive_user_cpu.asm                                   PAGE  141
@@ -8458,7 +8458,7 @@ dual_axis_servo_drive_user_cpu.asm                                   PAGE  141
     7130                      .dwattr $C$DW$438, DW_AT_name("bit")
     7131                      .dwattr $C$DW$438, DW_AT_accessibility(DW_ACCESS_public)
     7132                      .dwattr $C$DW$438, DW_AT_decl_file("C:\ti\C2000Ware_MotorControl_SDK_5_04_00_00\c2000ware\device_supp
-TMS320C2000 Assembler PC v22.6.2 Fri Dec 19 17:46:48 2025
+TMS320C2000 Assembler PC v22.6.2 Mon Dec 22 12:49:19 2025
 
 Copyright (c) 1996-2018 Texas Instruments Incorporated
 dual_axis_servo_drive_user_cpu.asm                                   PAGE  142
@@ -8518,7 +8518,7 @@ dual_axis_servo_drive_user_cpu.asm                                   PAGE  142
     7185                      .dwattr $C$DW$442, DW_AT_accessibility(DW_ACCESS_public)
     7186                      .dwattr $C$DW$442, DW_AT_decl_file("C:\ti\C2000Ware_MotorControl_SDK_5_04_00_00\c2000ware\device_supp
     7187                      .dwattr $C$DW$442, DW_AT_decl_line(0x4c)
-TMS320C2000 Assembler PC v22.6.2 Fri Dec 19 17:46:48 2025
+TMS320C2000 Assembler PC v22.6.2 Mon Dec 22 12:49:19 2025
 
 Copyright (c) 1996-2018 Texas Instruments Incorporated
 dual_axis_servo_drive_user_cpu.asm                                   PAGE  143
@@ -8578,7 +8578,7 @@ dual_axis_servo_drive_user_cpu.asm                                   PAGE  143
     7240              $C$DW$448       .dwtag  DW_TAG_member
     7241                      .dwattr $C$DW$448, DW_AT_type(*$C$DW$T$43)
     7242                      .dwattr $C$DW$448, DW_AT_name("PCRM")
-TMS320C2000 Assembler PC v22.6.2 Fri Dec 19 17:46:48 2025
+TMS320C2000 Assembler PC v22.6.2 Mon Dec 22 12:49:19 2025
 
 Copyright (c) 1996-2018 Texas Instruments Incorporated
 dual_axis_servo_drive_user_cpu.asm                                   PAGE  144
@@ -8638,7 +8638,7 @@ dual_axis_servo_drive_user_cpu.asm                                   PAGE  144
     7295                      .dwendtag $C$DW$TU$59
     7296              
     7297              
-TMS320C2000 Assembler PC v22.6.2 Fri Dec 19 17:46:48 2025
+TMS320C2000 Assembler PC v22.6.2 Mon Dec 22 12:49:19 2025
 
 Copyright (c) 1996-2018 Texas Instruments Incorporated
 dual_axis_servo_drive_user_cpu.asm                                   PAGE  145
@@ -8698,7 +8698,7 @@ dual_axis_servo_drive_user_cpu.asm                                   PAGE  145
     7350                      .dwattr $C$DW$456, DW_AT_accessibility(DW_ACCESS_public)
     7351                      .dwattr $C$DW$456, DW_AT_decl_file("C:\ti\C2000Ware_MotorControl_SDK_5_04_00_00\c2000ware\device_supp
     7352                      .dwattr $C$DW$456, DW_AT_decl_line(0x104)
-TMS320C2000 Assembler PC v22.6.2 Fri Dec 19 17:46:48 2025
+TMS320C2000 Assembler PC v22.6.2 Mon Dec 22 12:49:19 2025
 
 Copyright (c) 1996-2018 Texas Instruments Incorporated
 dual_axis_servo_drive_user_cpu.asm                                   PAGE  146
@@ -8758,7 +8758,7 @@ dual_axis_servo_drive_user_cpu.asm                                   PAGE  146
     7405                      .dwattr $C$DW$459, DW_AT_decl_file("C:\ti\C2000Ware_MotorControl_SDK_5_04_00_00\c2000ware\device_supp
     7406                      .dwattr $C$DW$459, DW_AT_decl_line(0xea)
     7407                      .dwattr $C$DW$459, DW_AT_decl_column(0x0c)
-TMS320C2000 Assembler PC v22.6.2 Fri Dec 19 17:46:48 2025
+TMS320C2000 Assembler PC v22.6.2 Mon Dec 22 12:49:19 2025
 
 Copyright (c) 1996-2018 Texas Instruments Incorporated
 dual_axis_servo_drive_user_cpu.asm                                   PAGE  147
@@ -8818,7 +8818,7 @@ dual_axis_servo_drive_user_cpu.asm                                   PAGE  147
     7460                      .dwattr $C$DW$T$63, DW_AT_decl_file("C:\ti\C2000Ware_MotorControl_SDK_5_04_00_00\c2000ware\device_sup
     7461                      .dwattr $C$DW$T$63, DW_AT_decl_line(0xef)
     7462                      .dwattr $C$DW$T$63, DW_AT_decl_column(0x07)
-TMS320C2000 Assembler PC v22.6.2 Fri Dec 19 17:46:48 2025
+TMS320C2000 Assembler PC v22.6.2 Mon Dec 22 12:49:19 2025
 
 Copyright (c) 1996-2018 Texas Instruments Incorporated
 dual_axis_servo_drive_user_cpu.asm                                   PAGE  148
@@ -8878,7 +8878,7 @@ dual_axis_servo_drive_user_cpu.asm                                   PAGE  148
     7515                      .dwattr $C$DW$468, DW_AT_type(*$C$DW$T$43)
     7516                      .dwattr $C$DW$468, DW_AT_name("QDLF")
     7517                      .dwattr $C$DW$468, DW_AT_bit_offset(0x0b)
-TMS320C2000 Assembler PC v22.6.2 Fri Dec 19 17:46:48 2025
+TMS320C2000 Assembler PC v22.6.2 Mon Dec 22 12:49:19 2025
 
 Copyright (c) 1996-2018 Texas Instruments Incorporated
 dual_axis_servo_drive_user_cpu.asm                                   PAGE  149
@@ -8938,7 +8938,7 @@ dual_axis_servo_drive_user_cpu.asm                                   PAGE  149
     7570              
     7571              
     7572              $C$DW$TU$65     .dwtag  DW_TAG_type_unit
-TMS320C2000 Assembler PC v22.6.2 Fri Dec 19 17:46:48 2025
+TMS320C2000 Assembler PC v22.6.2 Mon Dec 22 12:49:19 2025
 
 Copyright (c) 1996-2018 Texas Instruments Incorporated
 dual_axis_servo_drive_user_cpu.asm                                   PAGE  150
@@ -8998,7 +8998,7 @@ dual_axis_servo_drive_user_cpu.asm                                   PAGE  150
     7625                      .dwattr $C$DW$476, DW_AT_decl_line(0x8c)
     7626                      .dwattr $C$DW$476, DW_AT_decl_column(0x0c)
     7627              
-TMS320C2000 Assembler PC v22.6.2 Fri Dec 19 17:46:48 2025
+TMS320C2000 Assembler PC v22.6.2 Mon Dec 22 12:49:19 2025
 
 Copyright (c) 1996-2018 Texas Instruments Incorporated
 dual_axis_servo_drive_user_cpu.asm                                   PAGE  151
@@ -9058,7 +9058,7 @@ dual_axis_servo_drive_user_cpu.asm                                   PAGE  151
     7680                      .dwattr $C$DW$482, DW_AT_name("PCR")
     7681                      .dwattr $C$DW$482, DW_AT_bit_offset(0x08)
     7682                      .dwattr $C$DW$482, DW_AT_bit_size(0x01)
-TMS320C2000 Assembler PC v22.6.2 Fri Dec 19 17:46:48 2025
+TMS320C2000 Assembler PC v22.6.2 Mon Dec 22 12:49:19 2025
 
 Copyright (c) 1996-2018 Texas Instruments Incorporated
 dual_axis_servo_drive_user_cpu.asm                                   PAGE  152
@@ -9118,7 +9118,7 @@ dual_axis_servo_drive_user_cpu.asm                                   PAGE  152
     7735                      .dwattr $C$DW$487, DW_AT_decl_line(0x97)
     7736                      .dwattr $C$DW$487, DW_AT_decl_column(0x0c)
     7737              
-TMS320C2000 Assembler PC v22.6.2 Fri Dec 19 17:46:48 2025
+TMS320C2000 Assembler PC v22.6.2 Mon Dec 22 12:49:19 2025
 
 Copyright (c) 1996-2018 Texas Instruments Incorporated
 dual_axis_servo_drive_user_cpu.asm                                   PAGE  153
@@ -9178,7 +9178,7 @@ dual_axis_servo_drive_user_cpu.asm                                   PAGE  153
     7790                      .dwattr $C$DW$T$68, DW_AT_name("QFRC_BITS")
     7791                      .dwattr $C$DW$T$68, DW_AT_byte_size(0x01)
     7792              $C$DW$491       .dwtag  DW_TAG_member
-TMS320C2000 Assembler PC v22.6.2 Fri Dec 19 17:46:48 2025
+TMS320C2000 Assembler PC v22.6.2 Mon Dec 22 12:49:19 2025
 
 Copyright (c) 1996-2018 Texas Instruments Incorporated
 dual_axis_servo_drive_user_cpu.asm                                   PAGE  154
@@ -9238,7 +9238,7 @@ dual_axis_servo_drive_user_cpu.asm                                   PAGE  154
     7845                      .dwattr $C$DW$496, DW_AT_bit_offset(0x0a)
     7846                      .dwattr $C$DW$496, DW_AT_bit_size(0x01)
     7847                      .dwattr $C$DW$496, DW_AT_accessibility(DW_ACCESS_public)
-TMS320C2000 Assembler PC v22.6.2 Fri Dec 19 17:46:48 2025
+TMS320C2000 Assembler PC v22.6.2 Mon Dec 22 12:49:19 2025
 
 Copyright (c) 1996-2018 Texas Instruments Incorporated
 dual_axis_servo_drive_user_cpu.asm                                   PAGE  155
@@ -9298,7 +9298,7 @@ dual_axis_servo_drive_user_cpu.asm                                   PAGE  155
     7900                      .dwattr $C$DW$501, DW_AT_decl_column(0x0c)
     7901              
     7902              $C$DW$502       .dwtag  DW_TAG_member
-TMS320C2000 Assembler PC v22.6.2 Fri Dec 19 17:46:48 2025
+TMS320C2000 Assembler PC v22.6.2 Mon Dec 22 12:49:19 2025
 
 Copyright (c) 1996-2018 Texas Instruments Incorporated
 dual_axis_servo_drive_user_cpu.asm                                   PAGE  156
@@ -9358,7 +9358,7 @@ dual_axis_servo_drive_user_cpu.asm                                   PAGE  156
     7955                      .dwattr $C$DW$506, DW_AT_type(*$C$DW$T$68)
     7956                      .dwattr $C$DW$506, DW_AT_name("bit")
     7957                      .dwattr $C$DW$506, DW_AT_accessibility(DW_ACCESS_public)
-TMS320C2000 Assembler PC v22.6.2 Fri Dec 19 17:46:48 2025
+TMS320C2000 Assembler PC v22.6.2 Mon Dec 22 12:49:19 2025
 
 Copyright (c) 1996-2018 Texas Instruments Incorporated
 dual_axis_servo_drive_user_cpu.asm                                   PAGE  157
@@ -9418,7 +9418,7 @@ dual_axis_servo_drive_user_cpu.asm                                   PAGE  157
     8010                      .dwendtag $C$DW$T$70
     8011              
     8012                      .dwendtag $C$DW$TU$70
-TMS320C2000 Assembler PC v22.6.2 Fri Dec 19 17:46:48 2025
+TMS320C2000 Assembler PC v22.6.2 Mon Dec 22 12:49:19 2025
 
 Copyright (c) 1996-2018 Texas Instruments Incorporated
 dual_axis_servo_drive_user_cpu.asm                                   PAGE  158
@@ -9478,7 +9478,7 @@ dual_axis_servo_drive_user_cpu.asm                                   PAGE  158
     8065                      .dwattr $C$DW$513, DW_AT_bit_size(0x01)
     8066                      .dwattr $C$DW$513, DW_AT_accessibility(DW_ACCESS_public)
     8067                      .dwattr $C$DW$513, DW_AT_decl_file("C:\ti\C2000Ware_MotorControl_SDK_5_04_00_00\c2000ware\device_supp
-TMS320C2000 Assembler PC v22.6.2 Fri Dec 19 17:46:48 2025
+TMS320C2000 Assembler PC v22.6.2 Mon Dec 22 12:49:19 2025
 
 Copyright (c) 1996-2018 Texas Instruments Incorporated
 dual_axis_servo_drive_user_cpu.asm                                   PAGE  159
@@ -9538,7 +9538,7 @@ dual_axis_servo_drive_user_cpu.asm                                   PAGE  159
     8120                      .dwattr $C$DW$517, DW_AT_decl_line(0x70)
     8121                      .dwattr $C$DW$517, DW_AT_decl_column(0x0d)
     8122              
-TMS320C2000 Assembler PC v22.6.2 Fri Dec 19 17:46:48 2025
+TMS320C2000 Assembler PC v22.6.2 Mon Dec 22 12:49:19 2025
 
 Copyright (c) 1996-2018 Texas Instruments Incorporated
 dual_axis_servo_drive_user_cpu.asm                                   PAGE  160
@@ -9598,7 +9598,7 @@ dual_axis_servo_drive_user_cpu.asm                                   PAGE  160
     8175              $C$DW$522       .dwtag  DW_TAG_member
     8176                      .dwattr $C$DW$522, DW_AT_type(*$C$DW$T$43)
     8177                      .dwattr $C$DW$522, DW_AT_name("rsvd2")
-TMS320C2000 Assembler PC v22.6.2 Fri Dec 19 17:46:48 2025
+TMS320C2000 Assembler PC v22.6.2 Mon Dec 22 12:49:19 2025
 
 Copyright (c) 1996-2018 Texas Instruments Incorporated
 dual_axis_servo_drive_user_cpu.asm                                   PAGE  161
@@ -9658,7 +9658,7 @@ dual_axis_servo_drive_user_cpu.asm                                   PAGE  161
     8230              $C$DW$525       .dwtag  DW_TAG_member
     8231                      .dwattr $C$DW$525, DW_AT_type(*$C$DW$T$76)
     8232                      .dwattr $C$DW$525, DW_AT_name("_Vals")
-TMS320C2000 Assembler PC v22.6.2 Fri Dec 19 17:46:48 2025
+TMS320C2000 Assembler PC v22.6.2 Mon Dec 22 12:49:19 2025
 
 Copyright (c) 1996-2018 Texas Instruments Incorporated
 dual_axis_servo_drive_user_cpu.asm                                   PAGE  162
@@ -9718,7 +9718,7 @@ dual_axis_servo_drive_user_cpu.asm                                   PAGE  162
     8285              
     8286              $C$DW$TU$81     .dwtag  DW_TAG_type_unit
     8287                      .dwmtype  $C$DW$T$81
-TMS320C2000 Assembler PC v22.6.2 Fri Dec 19 17:46:48 2025
+TMS320C2000 Assembler PC v22.6.2 Mon Dec 22 12:49:19 2025
 
 Copyright (c) 1996-2018 Texas Instruments Incorporated
 dual_axis_servo_drive_user_cpu.asm                                   PAGE  163
@@ -9778,7 +9778,7 @@ dual_axis_servo_drive_user_cpu.asm                                   PAGE  163
     8340              $C$DW$530       .dwtag  DW_TAG_member
     8341                      .dwattr $C$DW$530, DW_AT_type(*$C$DW$T$21)
     8342                      .dwattr $C$DW$530, DW_AT_name("adcAlphaScale")
-TMS320C2000 Assembler PC v22.6.2 Fri Dec 19 17:46:48 2025
+TMS320C2000 Assembler PC v22.6.2 Mon Dec 22 12:49:19 2025
 
 Copyright (c) 1996-2018 Texas Instruments Incorporated
 dual_axis_servo_drive_user_cpu.asm                                   PAGE  164
@@ -9838,7 +9838,7 @@ dual_axis_servo_drive_user_cpu.asm                                   PAGE  164
     8395                      .dwattr $C$DW$536, DW_AT_type(*$C$DW$T$21)
     8396                      .dwattr $C$DW$536, DW_AT_name("Ld")
     8397                      .dwattr $C$DW$536, DW_AT_data_member_location[DW_OP_plus_uconst 0x10]
-TMS320C2000 Assembler PC v22.6.2 Fri Dec 19 17:46:48 2025
+TMS320C2000 Assembler PC v22.6.2 Mon Dec 22 12:49:19 2025
 
 Copyright (c) 1996-2018 Texas Instruments Incorporated
 dual_axis_servo_drive_user_cpu.asm                                   PAGE  165
@@ -9898,7 +9898,7 @@ dual_axis_servo_drive_user_cpu.asm                                   PAGE  165
     8450                      .dwattr $C$DW$542, DW_AT_name("wccQ")
     8451                      .dwattr $C$DW$542, DW_AT_data_member_location[DW_OP_plus_uconst 0x1c]
     8452                      .dwattr $C$DW$542, DW_AT_accessibility(DW_ACCESS_public)
-TMS320C2000 Assembler PC v22.6.2 Fri Dec 19 17:46:48 2025
+TMS320C2000 Assembler PC v22.6.2 Mon Dec 22 12:49:19 2025
 
 Copyright (c) 1996-2018 Texas Instruments Incorporated
 dual_axis_servo_drive_user_cpu.asm                                   PAGE  166
@@ -9958,7 +9958,7 @@ dual_axis_servo_drive_user_cpu.asm                                   PAGE  166
     8505                      .dwmtype  $C$DW$T$87
     8506              
     8507              $C$DW$T$87      .dwtag  DW_TAG_structure_type
-TMS320C2000 Assembler PC v22.6.2 Fri Dec 19 17:46:48 2025
+TMS320C2000 Assembler PC v22.6.2 Mon Dec 22 12:49:19 2025
 
 Copyright (c) 1996-2018 Texas Instruments Incorporated
 dual_axis_servo_drive_user_cpu.asm                                   PAGE  167
@@ -10018,7 +10018,7 @@ dual_axis_servo_drive_user_cpu.asm                                   PAGE  167
     8560                      .dwattr $C$DW$551, DW_AT_decl_line(0xba)
     8561                      .dwattr $C$DW$551, DW_AT_decl_column(0x11)
     8562              
-TMS320C2000 Assembler PC v22.6.2 Fri Dec 19 17:46:48 2025
+TMS320C2000 Assembler PC v22.6.2 Mon Dec 22 12:49:19 2025
 
 Copyright (c) 1996-2018 Texas Instruments Incorporated
 dual_axis_servo_drive_user_cpu.asm                                   PAGE  168
@@ -10078,7 +10078,7 @@ dual_axis_servo_drive_user_cpu.asm                                   PAGE  168
     8615              $C$DW$TU$118    .dwtag  DW_TAG_type_unit
     8616                      .dwmtype  $C$DW$T$118
     8617              
-TMS320C2000 Assembler PC v22.6.2 Fri Dec 19 17:46:48 2025
+TMS320C2000 Assembler PC v22.6.2 Mon Dec 22 12:49:19 2025
 
 Copyright (c) 1996-2018 Texas Instruments Incorporated
 dual_axis_servo_drive_user_cpu.asm                                   PAGE  169
@@ -10138,7 +10138,7 @@ dual_axis_servo_drive_user_cpu.asm                                   PAGE  169
     8670                      .dwattr $C$DW$558, DW_AT_decl_file("..\sources\fcl_foc_cpu_dm.h")
     8671                      .dwattr $C$DW$558, DW_AT_decl_line(0x87)
     8672                      .dwattr $C$DW$558, DW_AT_decl_column(0x0f)
-TMS320C2000 Assembler PC v22.6.2 Fri Dec 19 17:46:48 2025
+TMS320C2000 Assembler PC v22.6.2 Mon Dec 22 12:49:19 2025
 
 Copyright (c) 1996-2018 Texas Instruments Incorporated
 dual_axis_servo_drive_user_cpu.asm                                   PAGE  170
@@ -10198,7 +10198,7 @@ dual_axis_servo_drive_user_cpu.asm                                   PAGE  170
     8725                      .dwattr $C$DW$564, DW_AT_decl_line(0x8f)
     8726                      .dwattr $C$DW$564, DW_AT_decl_column(0x0f)
     8727              
-TMS320C2000 Assembler PC v22.6.2 Fri Dec 19 17:46:48 2025
+TMS320C2000 Assembler PC v22.6.2 Mon Dec 22 12:49:19 2025
 
 Copyright (c) 1996-2018 Texas Instruments Incorporated
 dual_axis_servo_drive_user_cpu.asm                                   PAGE  171
@@ -10258,7 +10258,7 @@ dual_axis_servo_drive_user_cpu.asm                                   PAGE  171
     8780                      .dwattr $C$DW$570, DW_AT_decl_column(0x0f)
     8781              
     8782              $C$DW$571       .dwtag  DW_TAG_member
-TMS320C2000 Assembler PC v22.6.2 Fri Dec 19 17:46:48 2025
+TMS320C2000 Assembler PC v22.6.2 Mon Dec 22 12:49:19 2025
 
 Copyright (c) 1996-2018 Texas Instruments Incorporated
 dual_axis_servo_drive_user_cpu.asm                                   PAGE  172
@@ -10318,7 +10318,7 @@ dual_axis_servo_drive_user_cpu.asm                                   PAGE  172
     8835              
     8836              $C$DW$577       .dwtag  DW_TAG_member
     8837                      .dwattr $C$DW$577, DW_AT_type(*$C$DW$T$21)
-TMS320C2000 Assembler PC v22.6.2 Fri Dec 19 17:46:48 2025
+TMS320C2000 Assembler PC v22.6.2 Mon Dec 22 12:49:19 2025
 
 Copyright (c) 1996-2018 Texas Instruments Incorporated
 dual_axis_servo_drive_user_cpu.asm                                   PAGE  173
@@ -10378,7 +10378,7 @@ dual_axis_servo_drive_user_cpu.asm                                   PAGE  173
     8890              $C$DW$583       .dwtag  DW_TAG_member
     8891                      .dwattr $C$DW$583, DW_AT_type(*$C$DW$T$21)
     8892                      .dwattr $C$DW$583, DW_AT_name("currentCs")
-TMS320C2000 Assembler PC v22.6.2 Fri Dec 19 17:46:48 2025
+TMS320C2000 Assembler PC v22.6.2 Mon Dec 22 12:49:19 2025
 
 Copyright (c) 1996-2018 Texas Instruments Incorporated
 dual_axis_servo_drive_user_cpu.asm                                   PAGE  174
@@ -10438,7 +10438,7 @@ dual_axis_servo_drive_user_cpu.asm                                   PAGE  174
     8945                      .dwattr $C$DW$589, DW_AT_type(*$C$DW$T$21)
     8946                      .dwattr $C$DW$589, DW_AT_name("posElecTheta")
     8947                      .dwattr $C$DW$589, DW_AT_data_member_location[DW_OP_plus_uconst 0x48]
-TMS320C2000 Assembler PC v22.6.2 Fri Dec 19 17:46:48 2025
+TMS320C2000 Assembler PC v22.6.2 Mon Dec 22 12:49:19 2025
 
 Copyright (c) 1996-2018 Texas Instruments Incorporated
 dual_axis_servo_drive_user_cpu.asm                                   PAGE  175
@@ -10498,7 +10498,7 @@ dual_axis_servo_drive_user_cpu.asm                                   PAGE  175
     9000                      .dwattr $C$DW$595, DW_AT_name("Vdcbus")
     9001                      .dwattr $C$DW$595, DW_AT_data_member_location[DW_OP_plus_uconst 0x54]
     9002                      .dwattr $C$DW$595, DW_AT_accessibility(DW_ACCESS_public)
-TMS320C2000 Assembler PC v22.6.2 Fri Dec 19 17:46:48 2025
+TMS320C2000 Assembler PC v22.6.2 Mon Dec 22 12:49:19 2025
 
 Copyright (c) 1996-2018 Texas Instruments Incorporated
 dual_axis_servo_drive_user_cpu.asm                                   PAGE  176
@@ -10558,7 +10558,7 @@ dual_axis_servo_drive_user_cpu.asm                                   PAGE  176
     9055                      .dwattr $C$DW$601, DW_AT_data_member_location[DW_OP_plus_uconst 0x80]
     9056                      .dwattr $C$DW$601, DW_AT_accessibility(DW_ACCESS_public)
     9057                      .dwattr $C$DW$601, DW_AT_decl_file("..\sources\fcl_foc_cpu_dm.h")
-TMS320C2000 Assembler PC v22.6.2 Fri Dec 19 17:46:48 2025
+TMS320C2000 Assembler PC v22.6.2 Mon Dec 22 12:49:19 2025
 
 Copyright (c) 1996-2018 Texas Instruments Incorporated
 dual_axis_servo_drive_user_cpu.asm                                   PAGE  177
@@ -10618,7 +10618,7 @@ dual_axis_servo_drive_user_cpu.asm                                   PAGE  177
     9110                      .dwattr $C$DW$607, DW_AT_accessibility(DW_ACCESS_public)
     9111                      .dwattr $C$DW$607, DW_AT_decl_file("..\sources\fcl_foc_cpu_dm.h")
     9112                      .dwattr $C$DW$607, DW_AT_decl_line(0xc7)
-TMS320C2000 Assembler PC v22.6.2 Fri Dec 19 17:46:48 2025
+TMS320C2000 Assembler PC v22.6.2 Mon Dec 22 12:49:19 2025
 
 Copyright (c) 1996-2018 Texas Instruments Incorporated
 dual_axis_servo_drive_user_cpu.asm                                   PAGE  178
@@ -10678,7 +10678,7 @@ dual_axis_servo_drive_user_cpu.asm                                   PAGE  178
     9165                      .dwattr $C$DW$613, DW_AT_decl_file("..\sources\fcl_foc_cpu_dm.h")
     9166                      .dwattr $C$DW$613, DW_AT_decl_line(0xd0)
     9167                      .dwattr $C$DW$613, DW_AT_decl_column(0x0e)
-TMS320C2000 Assembler PC v22.6.2 Fri Dec 19 17:46:48 2025
+TMS320C2000 Assembler PC v22.6.2 Mon Dec 22 12:49:19 2025
 
 Copyright (c) 1996-2018 Texas Instruments Incorporated
 dual_axis_servo_drive_user_cpu.asm                                   PAGE  179
@@ -10738,7 +10738,7 @@ dual_axis_servo_drive_user_cpu.asm                                   PAGE  179
     9220                      .dwattr $C$DW$619, DW_AT_decl_line(0xd8)
     9221                      .dwattr $C$DW$619, DW_AT_decl_column(0x17)
     9222              
-TMS320C2000 Assembler PC v22.6.2 Fri Dec 19 17:46:48 2025
+TMS320C2000 Assembler PC v22.6.2 Mon Dec 22 12:49:19 2025
 
 Copyright (c) 1996-2018 Texas Instruments Incorporated
 dual_axis_servo_drive_user_cpu.asm                                   PAGE  180
@@ -10798,7 +10798,7 @@ dual_axis_servo_drive_user_cpu.asm                                   PAGE  180
     9275                      .dwattr $C$DW$625, DW_AT_decl_column(0x0e)
     9276              
     9277              $C$DW$626       .dwtag  DW_TAG_member
-TMS320C2000 Assembler PC v22.6.2 Fri Dec 19 17:46:48 2025
+TMS320C2000 Assembler PC v22.6.2 Mon Dec 22 12:49:19 2025
 
 Copyright (c) 1996-2018 Texas Instruments Incorporated
 dual_axis_servo_drive_user_cpu.asm                                   PAGE  181
@@ -10858,7 +10858,7 @@ dual_axis_servo_drive_user_cpu.asm                                   PAGE  181
     9330              
     9331              $C$DW$632       .dwtag  DW_TAG_member
     9332                      .dwattr $C$DW$632, DW_AT_type(*$C$DW$T$107)
-TMS320C2000 Assembler PC v22.6.2 Fri Dec 19 17:46:48 2025
+TMS320C2000 Assembler PC v22.6.2 Mon Dec 22 12:49:19 2025
 
 Copyright (c) 1996-2018 Texas Instruments Incorporated
 dual_axis_servo_drive_user_cpu.asm                                   PAGE  182
@@ -10918,7 +10918,7 @@ dual_axis_servo_drive_user_cpu.asm                                   PAGE  182
     9385              $C$DW$638       .dwtag  DW_TAG_member
     9386                      .dwattr $C$DW$638, DW_AT_type(*$C$DW$T$30)
     9387                      .dwattr $C$DW$638, DW_AT_name("focCycleCountMax")
-TMS320C2000 Assembler PC v22.6.2 Fri Dec 19 17:46:48 2025
+TMS320C2000 Assembler PC v22.6.2 Mon Dec 22 12:49:19 2025
 
 Copyright (c) 1996-2018 Texas Instruments Incorporated
 dual_axis_servo_drive_user_cpu.asm                                   PAGE  183
@@ -10978,7 +10978,7 @@ dual_axis_servo_drive_user_cpu.asm                                   PAGE  183
     9440                      .dwattr $C$DW$644, DW_AT_type(*$C$DW$T$30)
     9441                      .dwattr $C$DW$644, DW_AT_name("posPtrMax")
     9442                      .dwattr $C$DW$644, DW_AT_data_member_location[DW_OP_plus_uconst 0x1b6]
-TMS320C2000 Assembler PC v22.6.2 Fri Dec 19 17:46:48 2025
+TMS320C2000 Assembler PC v22.6.2 Mon Dec 22 12:49:19 2025
 
 Copyright (c) 1996-2018 Texas Instruments Incorporated
 dual_axis_servo_drive_user_cpu.asm                                   PAGE  184
@@ -11038,7 +11038,7 @@ dual_axis_servo_drive_user_cpu.asm                                   PAGE  184
     9495                      .dwattr $C$DW$650, DW_AT_name("drvClearFaultGPIO")
     9496                      .dwattr $C$DW$650, DW_AT_data_member_location[DW_OP_plus_uconst 0x1bc]
     9497                      .dwattr $C$DW$650, DW_AT_accessibility(DW_ACCESS_public)
-TMS320C2000 Assembler PC v22.6.2 Fri Dec 19 17:46:48 2025
+TMS320C2000 Assembler PC v22.6.2 Mon Dec 22 12:49:19 2025
 
 Copyright (c) 1996-2018 Texas Instruments Incorporated
 dual_axis_servo_drive_user_cpu.asm                                   PAGE  185
@@ -11098,7 +11098,7 @@ dual_axis_servo_drive_user_cpu.asm                                   PAGE  185
     9550                      .dwattr $C$DW$656, DW_AT_data_member_location[DW_OP_plus_uconst 0x1c2]
     9551                      .dwattr $C$DW$656, DW_AT_accessibility(DW_ACCESS_public)
     9552                      .dwattr $C$DW$656, DW_AT_decl_file("..\sources\fcl_foc_cpu_dm.h")
-TMS320C2000 Assembler PC v22.6.2 Fri Dec 19 17:46:48 2025
+TMS320C2000 Assembler PC v22.6.2 Mon Dec 22 12:49:19 2025
 
 Copyright (c) 1996-2018 Texas Instruments Incorporated
 dual_axis_servo_drive_user_cpu.asm                                   PAGE  186
@@ -11158,7 +11158,7 @@ dual_axis_servo_drive_user_cpu.asm                                   PAGE  186
     9605                      .dwattr $C$DW$662, DW_AT_accessibility(DW_ACCESS_public)
     9606                      .dwattr $C$DW$662, DW_AT_decl_file("..\sources\fcl_foc_cpu_dm.h")
     9607                      .dwattr $C$DW$662, DW_AT_decl_line(0x110)
-TMS320C2000 Assembler PC v22.6.2 Fri Dec 19 17:46:48 2025
+TMS320C2000 Assembler PC v22.6.2 Mon Dec 22 12:49:19 2025
 
 Copyright (c) 1996-2018 Texas Instruments Incorporated
 dual_axis_servo_drive_user_cpu.asm                                   PAGE  187
@@ -11218,7 +11218,7 @@ dual_axis_servo_drive_user_cpu.asm                                   PAGE  187
     9660              
     9661                      .dwendtag $C$DW$TU$140
     9662              
-TMS320C2000 Assembler PC v22.6.2 Fri Dec 19 17:46:48 2025
+TMS320C2000 Assembler PC v22.6.2 Mon Dec 22 12:49:19 2025
 
 Copyright (c) 1996-2018 Texas Instruments Incorporated
 dual_axis_servo_drive_user_cpu.asm                                   PAGE  188
@@ -11278,7 +11278,7 @@ dual_axis_servo_drive_user_cpu.asm                                   PAGE  188
     9715                      .dwattr $C$DW$670, DW_AT_type(*$C$DW$T$21)
     9716                      .dwattr $C$DW$670, DW_AT_name("Ki")
     9717                      .dwattr $C$DW$670, DW_AT_data_member_location[DW_OP_plus_uconst 0xa]
-TMS320C2000 Assembler PC v22.6.2 Fri Dec 19 17:46:48 2025
+TMS320C2000 Assembler PC v22.6.2 Mon Dec 22 12:49:19 2025
 
 Copyright (c) 1996-2018 Texas Instruments Incorporated
 dual_axis_servo_drive_user_cpu.asm                                   PAGE  189
@@ -11338,7 +11338,7 @@ dual_axis_servo_drive_user_cpu.asm                                   PAGE  189
     9770                      .dwattr $C$DW$676, DW_AT_name("IqMax")
     9771                      .dwattr $C$DW$676, DW_AT_data_member_location[DW_OP_plus_uconst 0x16]
     9772                      .dwattr $C$DW$676, DW_AT_accessibility(DW_ACCESS_public)
-TMS320C2000 Assembler PC v22.6.2 Fri Dec 19 17:46:48 2025
+TMS320C2000 Assembler PC v22.6.2 Mon Dec 22 12:49:19 2025
 
 Copyright (c) 1996-2018 Texas Instruments Incorporated
 dual_axis_servo_drive_user_cpu.asm                                   PAGE  190
@@ -11398,7 +11398,7 @@ dual_axis_servo_drive_user_cpu.asm                                   PAGE  190
     9825              $C$DW$T$4       .dwtag  DW_TAG_base_type
     9826                      .dwattr $C$DW$T$4, DW_AT_encoding(DW_ATE_boolean)
     9827                      .dwattr $C$DW$T$4, DW_AT_name("bool")
-TMS320C2000 Assembler PC v22.6.2 Fri Dec 19 17:46:48 2025
+TMS320C2000 Assembler PC v22.6.2 Mon Dec 22 12:49:19 2025
 
 Copyright (c) 1996-2018 Texas Instruments Incorporated
 dual_axis_servo_drive_user_cpu.asm                                   PAGE  191
@@ -11458,7 +11458,7 @@ dual_axis_servo_drive_user_cpu.asm                                   PAGE  191
     9880                      .dwendtag $C$DW$TU$9
     9881              
     9882              
-TMS320C2000 Assembler PC v22.6.2 Fri Dec 19 17:46:48 2025
+TMS320C2000 Assembler PC v22.6.2 Mon Dec 22 12:49:19 2025
 
 Copyright (c) 1996-2018 Texas Instruments Incorporated
 dual_axis_servo_drive_user_cpu.asm                                   PAGE  192
@@ -11518,7 +11518,7 @@ dual_axis_servo_drive_user_cpu.asm                                   PAGE  192
     9935                      .dwattr $C$DW$T$29, DW_AT_decl_line(0x41)
     9936                      .dwattr $C$DW$T$29, DW_AT_decl_column(0x1c)
     9937              
-TMS320C2000 Assembler PC v22.6.2 Fri Dec 19 17:46:48 2025
+TMS320C2000 Assembler PC v22.6.2 Mon Dec 22 12:49:19 2025
 
 Copyright (c) 1996-2018 Texas Instruments Incorporated
 dual_axis_servo_drive_user_cpu.asm                                   PAGE  193
@@ -11578,7 +11578,7 @@ dual_axis_servo_drive_user_cpu.asm                                   PAGE  193
     9990                      .dwattr $C$DW$T$33, DW_AT_type(*$C$DW$T$32)
     9991                      .dwattr $C$DW$T$33, DW_AT_decl_file("C:/ti/ccs2031/ccs/tools/compiler/ti-cgt-c2000_22.6.2.LTS/include
     9992                      .dwattr $C$DW$T$33, DW_AT_decl_line(0x30)
-TMS320C2000 Assembler PC v22.6.2 Fri Dec 19 17:46:48 2025
+TMS320C2000 Assembler PC v22.6.2 Mon Dec 22 12:49:19 2025
 
 Copyright (c) 1996-2018 Texas Instruments Incorporated
 dual_axis_servo_drive_user_cpu.asm                                   PAGE  194
@@ -11638,7 +11638,7 @@ dual_axis_servo_drive_user_cpu.asm                                   PAGE  194
    10045                      .dwmtype  $C$DW$T$83
    10046              
    10047              $C$DW$T$83      .dwtag  DW_TAG_array_type
-TMS320C2000 Assembler PC v22.6.2 Fri Dec 19 17:46:48 2025
+TMS320C2000 Assembler PC v22.6.2 Mon Dec 22 12:49:19 2025
 
 Copyright (c) 1996-2018 Texas Instruments Incorporated
 dual_axis_servo_drive_user_cpu.asm                                   PAGE  195
@@ -11698,7 +11698,7 @@ dual_axis_servo_drive_user_cpu.asm                                   PAGE  195
    10100                      .dwmtype  $C$DW$T$15
    10101              $C$DW$T$15      .dwtag  DW_TAG_base_type
    10102                      .dwattr $C$DW$T$15, DW_AT_encoding(DW_ATE_unsigned)
-TMS320C2000 Assembler PC v22.6.2 Fri Dec 19 17:46:48 2025
+TMS320C2000 Assembler PC v22.6.2 Mon Dec 22 12:49:19 2025
 
 Copyright (c) 1996-2018 Texas Instruments Incorporated
 dual_axis_servo_drive_user_cpu.asm                                   PAGE  196
@@ -11758,7 +11758,7 @@ dual_axis_servo_drive_user_cpu.asm                                   PAGE  196
    10155              
    10156              $C$DW$TU$17     .dwtag  DW_TAG_type_unit
    10157                      .dwmtype  $C$DW$T$17
-TMS320C2000 Assembler PC v22.6.2 Fri Dec 19 17:46:48 2025
+TMS320C2000 Assembler PC v22.6.2 Mon Dec 22 12:49:19 2025
 
 Copyright (c) 1996-2018 Texas Instruments Incorporated
 dual_axis_servo_drive_user_cpu.asm                                   PAGE  197
@@ -11818,7 +11818,7 @@ dual_axis_servo_drive_user_cpu.asm                                   PAGE  197
    10210              $C$DW$TU$80     .dwtag  DW_TAG_type_unit
    10211                      .dwmtype  $C$DW$T$80
    10212              
-TMS320C2000 Assembler PC v22.6.2 Fri Dec 19 17:46:48 2025
+TMS320C2000 Assembler PC v22.6.2 Mon Dec 22 12:49:19 2025
 
 Copyright (c) 1996-2018 Texas Instruments Incorporated
 dual_axis_servo_drive_user_cpu.asm                                   PAGE  198

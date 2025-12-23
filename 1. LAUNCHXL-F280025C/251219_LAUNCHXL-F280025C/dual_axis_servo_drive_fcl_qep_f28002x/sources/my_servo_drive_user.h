@@ -386,16 +386,16 @@
 #define M1_BASE_FREQ        600     // Base electrical frequency (Hz) = (기계적 회전속도/60) * pole pair 수
 #define M1_MAXIMUM_CURRENT  9.7//7.5     // Motor maximum torque current (amp)
 
-#define M1_MAXIMUM_VOLTAGE  49.0//36.0    // DC bus maximum voltage (V)
-#define M1_MINIMUM_VOLTAGE  12.0//5.0     // DC bus minimum voltage (V)
+#define M1_MAXIMUM_VOLTAGE  36.0    // DC bus maximum voltage (V)
+#define M1_MINIMUM_VOLTAGE  5.0     // DC bus minimum voltage (V)
 
-#define M1_MAXIMUM_FREQ     600.0//125.0   // Motor maximum frequency (Hz)
-#define M1_STARTUP_FREQ     50.0//10.0    // Motor startup frequency (Hz)
+#define M1_MAXIMUM_FREQ     125.0   // Motor maximum frequency (Hz)
+#define M1_STARTUP_FREQ     10.0    // Motor startup frequency (Hz)
 
 #define M1_SPEED_LSW        0.05    // reference speed (pu)
 #define M1_SPEED_REF        0.10    // reference speed (pu)
 #define M1_ID_START         0.2     // alignment reference d-axis current
-#define M1_ID_RUN           0.0     // alignment reference d-axis current
+#define M1_ID_RUN           0.2//0.0     // alignment reference d-axis current
 #define M1_IQ_LEVEL5        0.10    // reference q-axis current for level5
 #define M1_IQ_NO_LEVEL5     0.10    // ref q-axis current for no level5
 
