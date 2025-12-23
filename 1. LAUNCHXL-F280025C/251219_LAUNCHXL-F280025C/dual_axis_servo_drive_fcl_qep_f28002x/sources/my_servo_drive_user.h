@@ -367,7 +367,7 @@
 #define M1_LQ      M1_LS           // Stator q-axis inductance (H)
 #define M1_LR      NULL            // Rotor inductance (H)
 #define M1_LM      NULL            // Magnetizing inductance (H)
-#define M1_KB      0.040           // BEMF Constant (V/Hz)
+#define M1_KB      0.1237//0.040   // BEMF Constant (V/Hz) //Ke=Kt; 역기전력 상수(Back-EMF Constant)=토크 상수
 #define M1_POLES   28//8           // Number of poles
 
 //
@@ -375,7 +375,7 @@
 // Base voltage and base current information from TIDA-00909 doc is
 // based off of an ADC that works at 3.3V reference.
 // The base current = 16.5A (for a spread of 3.3V - 1.65V = 1.65V)
-// The base voltage  = 81.5 / sqrt(3)=
+// The base voltage  = 81.5 / sqrt(3) //=47.054047
 // Define the base quantites
 //
 #define M1_BASE_VOLTAGE     47.05   // Base peak phase voltage (volt), Vdc/sqrt(3)
@@ -383,8 +383,10 @@
                                     // the maximum measurable peak current
 #define M1_BASE_TORQUE      NULL    // Base torque (N.m)
 #define M1_BASE_FLUX        NULL    // Base flux linkage (volt.sec/rad)
-#define M1_BASE_FREQ        400     // Base electrical frequency (Hz) = (기계적 회전속도/60) * pole pair 수
-#define M1_MAXIMUM_CURRENT  9.7//7.5     // Motor maximum torque current (amp)
+#define M1_BASE_FREQ        400     // Base electrical frequency (Hz) 
+                                    //= (기계적 회전속도/60) * pole pair 수
+                                    //= 2800rpm/60 * 14 = 46.6667 * 14 = 653.3Hz
+#define M1_MAXIMUM_CURRENT  9.7//7.5// Motor maximum torque current (amp)
 
 #define M1_MAXIMUM_VOLTAGE  36.0    // DC bus maximum voltage (V)
 #define M1_MINIMUM_VOLTAGE  5.0     // DC bus minimum voltage (V)
@@ -395,7 +397,7 @@
 #define M1_SPEED_LSW        0.05    // reference speed (pu)
 #define M1_SPEED_REF        0.10    // reference speed (pu)
 #define M1_ID_START         0.2     // alignment reference d-axis current
-#define M1_ID_RUN           0.2//0.0     // alignment reference d-axis current
+#define M1_ID_RUN           0.2//0.0// alignment reference d-axis current
 #define M1_IQ_LEVEL5        0.10    // reference q-axis current for level5
 #define M1_IQ_NO_LEVEL5     0.10    // ref q-axis current for no level5
 
