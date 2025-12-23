@@ -361,13 +361,13 @@
 // Define the electrical motor parameters
 //
 #define M1_RS      0.063//0.381334811// Stator resistance (ohm) //= 0.125/2
-#define M1_RR      NULL            // Rotor resistance (ohm)
+// #define M1_RR      NULL            // Rotor resistance (ohm)
 #define M1_LS      0.00018335//0.000169791776  // Stator inductance (H) //= 0.0003667/2
 #define M1_LD      M1_LS           // Stator d-axis inductance (H)
 #define M1_LQ      M1_LS           // Stator q-axis inductance (H)
-#define M1_LR      NULL            // Rotor inductance (H)
-#define M1_LM      NULL            // Magnetizing inductance (H)
-#define M1_KB      0.1237//0.040   // BEMF Constant (V/Hz) //Ke=Kt; 역기전력 상수(Back-EMF Constant)=토크 상수
+// #define M1_LR      NULL            // Rotor inductance (H)
+// #define M1_LM      NULL            // Magnetizing inductance (H)
+#define M1_KB      0.045//0.040   // BEMF Constant (V/Hz) //Ke=Kt; 역기전력 상수(Back-EMF Constant)[V/(rad/s)]=토크 상수[Nm/A]*2PI = 0.1237*2PI =0.777
 #define M1_POLES   28//8           // Number of poles
 
 //
@@ -381,9 +381,9 @@
 #define M1_BASE_VOLTAGE     47.05   // Base peak phase voltage (volt), Vdc/sqrt(3)
 #define M1_BASE_CURRENT     16.5    // Base peak phase current (amp),
                                     // the maximum measurable peak current
-#define M1_BASE_TORQUE      NULL    // Base torque (N.m)
-#define M1_BASE_FLUX        NULL    // Base flux linkage (volt.sec/rad)
-#define M1_BASE_FREQ        400     // Base electrical frequency (Hz) 
+// #define M1_BASE_TORQUE      NULL    // Base torque (N.m)
+// #define M1_BASE_FLUX        NULL    // Base flux linkage (volt.sec/rad)
+#define M1_BASE_FREQ        400     // Base electrical frequency (Hz)
                                     //= (기계적 회전속도/60) * pole pair 수
                                     //= 2800rpm/60 * 14 = 46.6667 * 14 = 653.3Hz
 #define M1_MAXIMUM_CURRENT  9.7//7.5// Motor maximum torque current (amp)
@@ -394,7 +394,9 @@
 #define M1_MAXIMUM_FREQ     125.0   // Motor maximum frequency (Hz)
 #define M1_STARTUP_FREQ     10.0    // Motor startup frequency (Hz)
 
-#define M1_SPEED_LSW        0.05    // reference speed (pu)
+//initControlVars;     pMotor->speedRef = 0.10f; #2
+//initMotorParameters; pMotor->speedRef = M1_SPEED_REF; #1
+#define M1_SPEED_LSW        0.05    // reference speed (pu) //= 엔코더 인덱스 찾기/초기 캘리브레이션 상태(LSW 상태)에서 쓰는 저속 회전 속도 기준
 #define M1_SPEED_REF        0.10    // reference speed (pu)
 #define M1_ID_START         0.2     // alignment reference d-axis current
 #define M1_ID_RUN           0.2//0.0// alignment reference d-axis current
