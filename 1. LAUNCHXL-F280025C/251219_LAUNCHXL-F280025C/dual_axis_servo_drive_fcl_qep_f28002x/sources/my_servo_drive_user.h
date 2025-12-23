@@ -336,16 +336,16 @@
 //
 // Keep PWM Period same between single sampling and double sampling
 //
-#define M1_INV_PWM_TICKS         ((SYSTEM_FREQUENCY / M1_PWM_FREQUENCY) * 1000)
+#define M1_INV_PWM_TICKS         ((SYSTEM_FREQUENCY / M1_PWM_FREQUENCY) * 1000)//= (100M/25)*m=4000
 #define M1_INV_PWM_DB            (50.0)
-#define M1_QEP_UNIT_TIMER_TICKS  (SYSTEM_FREQUENCY/(2*M1_PWM_FREQUENCY) * 1000)
+#define M1_QEP_UNIT_TIMER_TICKS  (SYSTEM_FREQUENCY/(2*M1_PWM_FREQUENCY) * 1000)//= M1_INV_PWM_TICKS/2=2000
 
-#define M1_INV_PWM_TBPRD         (M1_INV_PWM_TICKS / 2)
-#define M1_INV_PWM_HALF_TBPRD    (M1_INV_PWM_TBPRD / 2)
-#define M1_SAMPLING_FREQ         (M1_ISR_FREQUENCY * 1000)
-#define M1_CUR_LOOP_BANDWIDTH    (2.0f * PI * M1_SAMPLING_FREQ / 100.0f)
+#define M1_INV_PWM_TBPRD         (M1_INV_PWM_TICKS / 2)//=2000
+#define M1_INV_PWM_HALF_TBPRD    (M1_INV_PWM_TBPRD / 2)//=1000
+#define M1_SAMPLING_FREQ         (M1_ISR_FREQUENCY * 1000)//=25000
+#define M1_CUR_LOOP_BANDWIDTH    (2.0f * PI * M1_SAMPLING_FREQ / 100.0f)//=500*PI
 
-#define M1_TPWM_CARRIER          (1000.0 / M1_PWM_FREQUENCY)    //in uSec
+#define M1_TPWM_CARRIER          (1000.0 / M1_PWM_FREQUENCY)    //in uSec//=40
 
 //
 // FCL Computation time predetermined from library
@@ -360,15 +360,15 @@
 //
 // Define the electrical motor parameters
 //
-#define M1_RS      0.063//0.381334811     // Stator resistance (ohm)
+#define M1_RS      0.063//0.381334811// Stator resistance (ohm) //= 0.125/2
 #define M1_RR      NULL            // Rotor resistance (ohm)
-#define M1_LS      0.00018335//0.000169791776  // Stator inductance (H)
+#define M1_LS      0.00018335//0.000169791776  // Stator inductance (H) //= 0.0003667/2
 #define M1_LD      M1_LS           // Stator d-axis inductance (H)
 #define M1_LQ      M1_LS           // Stator q-axis inductance (H)
 #define M1_LR      NULL            // Rotor inductance (H)
 #define M1_LM      NULL            // Magnetizing inductance (H)
 #define M1_KB      0.040           // BEMF Constant (V/Hz)
-#define M1_POLES   28//8               // Number of poles
+#define M1_POLES   28//8           // Number of poles
 
 //
 // NOTE:-

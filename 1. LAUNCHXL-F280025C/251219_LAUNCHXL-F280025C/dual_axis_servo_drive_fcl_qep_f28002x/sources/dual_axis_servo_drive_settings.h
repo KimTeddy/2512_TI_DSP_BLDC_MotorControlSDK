@@ -99,8 +99,8 @@ typedef float _iq;
 
 /*
  * PWM 주기, PWM 생성 기준(ISR, Timer 등)
- * 제어 주기
- * current(torque) loop이 이전 것을 다 포함하는지 여부
+ * 제어 주기=> 속도&위치 제어는 분주비 10
+ * current(torque) loop이 이전 것을 다 포함하는지 여부=> 포함
  * 
  * 
 */
