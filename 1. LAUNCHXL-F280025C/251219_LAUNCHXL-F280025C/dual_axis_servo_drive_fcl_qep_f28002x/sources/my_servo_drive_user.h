@@ -367,7 +367,7 @@
 #define M1_LQ      M1_LS           // Stator q-axis inductance (H)
 // #define M1_LR      NULL            // Rotor inductance (H)
 // #define M1_LM      NULL            // Magnetizing inductance (H)
-#define M1_KB      0.045//0.040   // BEMF Constant (V/Hz) //Ke=Kt; 역기전력 상수(Back-EMF Constant)[V/(rad/s)]=토크 상수[Nm/A]*2PI = 0.1237*2PI =0.777
+#define M1_KB      0.040   // BEMF Constant (V/Hz) //Ke=Kt; 역기전력 상수(Back-EMF Constant)[V/(rad/s)]=토크 상수[Nm/A]*2PI = 0.1237*2PI =0.777
 #define M1_POLES   28//8           // Number of poles
 
 //
