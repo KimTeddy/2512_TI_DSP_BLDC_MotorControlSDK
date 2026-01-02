@@ -1,6 +1,6 @@
 ;***************************************************************
 ;* TMS320C2000 G3 C/C++ Codegen                               PC v22.6.2.LTS *
-;* Date/Time created: Fri Jan  2 14:54:35 2026                 *
+;* Date/Time created: Fri Jan  2 15:35:18 2026                 *
 ;***************************************************************
 	.compiler_opts --abi=eabi --diag_wrap=off --float_support=fpu32 --hll_source=on --idiv_support=idiv0 --mem_model:code=flat --mem_model:data=large --object_format=elf --quiet --silicon_errata_fpu1_workaround=off --silicon_version=28 --symdebug:dwarf --symdebug:dwarf_version=4 --tmu_support=tmu1 
 	.asg	XAR2, FP
@@ -326,8 +326,8 @@ $C$DW$27	.dwtag  DW_TAG_variable
 
 	.sblock	".bss"
 	.sblock	"ramInitVars"
-;	C:\ti\ccs2031\ccs\tools\compiler\ti-cgt-c2000_22.6.2.LTS\bin\opt2000.exe C:\\Users\\Teddy\\AppData\\Local\\Temp\\{7E27D802-B982-45E0-AB02-7D6174DBD52A} C:\\Users\\Teddy\\AppData\\Local\\Temp\\{9EE502B3-2298-4B6B-AA43-6E1A19DEE7DF} 
-;	C:\ti\ccs2031\ccs\tools\compiler\ti-cgt-c2000_22.6.2.LTS\bin\acia2000.exe -@C:\\Users\\Teddy\\AppData\\Local\\Temp\\{DF3CB8FA-103C-4CC2-8835-A3FA22560C77} 
+;	C:\ti\ccs2031\ccs\tools\compiler\ti-cgt-c2000_22.6.2.LTS\bin\opt2000.exe C:\\Users\\Teddy\\AppData\\Local\\Temp\\{A3F8234F-055F-4825-AA5E-5B860E57A894} C:\\Users\\Teddy\\AppData\\Local\\Temp\\{0C654D9D-E392-4B8C-8ADA-7DD35BE271AE} 
+;	C:\ti\ccs2031\ccs\tools\compiler\ti-cgt-c2000_22.6.2.LTS\bin\acia2000.exe -@C:\\Users\\Teddy\\AppData\\Local\\Temp\\{2B9AA7CA-3AA9-440E-9EAD-E274A2C9F218} 
 	.sect	".text:runMotorControl"
 	.clink
 	.global	||runMotorControl||

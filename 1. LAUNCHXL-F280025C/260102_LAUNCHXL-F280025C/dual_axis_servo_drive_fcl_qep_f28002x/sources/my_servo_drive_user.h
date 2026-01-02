@@ -394,8 +394,6 @@
 #define M1_MAXIMUM_FREQ     125.0   // Motor maximum frequency (Hz)
 #define M1_STARTUP_FREQ     10.0    // Motor startup frequency (Hz)
 
-//initControlVars;     pMotor->speedRef = 0.10f; #2
-//initMotorParameters; pMotor->speedRef = M1_SPEED_REF; #1
 #define M1_SPEED_LSW        0.05    // reference speed (pu) //= 엔코더 인덱스 찾기/초기 캘리브레이션 상태(LSW 상태)에서 쓰는 저속 회전 속도 기준
 #define M1_SPEED_REF        0.10    // reference speed (pu)
 #define M1_ID_START         0.2     // alignment reference d-axis current
@@ -408,6 +406,9 @@
 
 #define M1_VDCBUS_MAX       50.0    // maximum dc bus voltage for motor
 #define M1_VDCBUS_MIN       10.0    // minimum dc bus voltage for motor
+
+//initMotorParameters; pMotor->speedRef = M1_SPEED_REF; #1
+//initControlVars;     pMotor->speedRef = 0.10f; #2
 
 //
 // Current sensors scaling
