@@ -1133,7 +1133,7 @@ void HAL_setupMotorPWMs(HAL_MTR_Handle handle)
     //     EPWM_setPhaseShift(obj->pwmHandle[2], (halfPeriod>>1));         //EPWM5
     // }
 
-    EPWM_setTimeBasePeriod(obj->pwmHandle[0], halfPeriod);
+    EPWM_setTimeBasePeriod(obj->pwmHandle[0], halfPeriod);//halfPeriod=TimeBasePeriod
     EPWM_setTimeBasePeriod(obj->pwmHandle[1], halfPeriod);
     EPWM_setTimeBasePeriod(obj->pwmHandle[2], halfPeriod);
 

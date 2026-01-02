@@ -336,7 +336,7 @@
 //
 // Keep PWM Period same between single sampling and double sampling
 //
-#define M1_INV_PWM_TICKS         ((SYSTEM_FREQUENCY / M1_PWM_FREQUENCY) * 1000)//= (100M/25)*m=4000
+#define M1_INV_PWM_TICKS         ((SYSTEM_FREQUENCY / M1_PWM_FREQUENCY) * 1000)//= (100M/25)*1000 =4000
 #define M1_INV_PWM_DB            (50.0)
 #define M1_QEP_UNIT_TIMER_TICKS  (SYSTEM_FREQUENCY/(2*M1_PWM_FREQUENCY) * 1000)//= M1_INV_PWM_TICKS/2=2000
 
@@ -355,7 +355,7 @@
 //
 // set the motor parameters to the one available
 //
-#define M1_ENCODER_LINES         500//1000 // Encoder lines for Tekic
+#define M1_ENCODER_LINES         500  // Encoder lines
 
 //
 // Define the electrical motor parameters
@@ -386,7 +386,7 @@
 #define M1_BASE_FREQ        400     // Base electrical frequency (Hz)
                                     //= (기계적 회전속도/60) * pole pair 수
                                     //= 2800rpm/60 * 14 = 46.6667 * 14 = 653.3Hz
-#define M1_MAXIMUM_CURRENT  9.7//7.5// Motor maximum torque current (amp)
+#define M1_MAXIMUM_CURRENT  7.5     // Motor maximum torque current (amp)
 
 #define M1_MAXIMUM_VOLTAGE  36.0    // DC bus maximum voltage (V)
 #define M1_MINIMUM_VOLTAGE  5.0     // DC bus minimum voltage (V)

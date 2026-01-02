@@ -89,8 +89,8 @@ typedef float _iq;
 //
 // Following is the list of the Build Level choices.
 //
-#define  FCL_LEVEL1  1           // Verify SVGEN module and PWM generation = 안 돌고 멈춤
-#define  FCL_LEVEL2  2           // Verify ADC, park/clarke, calibrate the = 약간 돌고 멈춤
+#define  FCL_LEVEL1  1           // Verify SVGEN module and PWM generation      = 안 돌고 멈춤
+#define  FCL_LEVEL2  2           // Verify ADC, park/clarke, calibrate the      = 약간 돌고 멈춤
                                  // offset and speed measurement
 #define  FCL_LEVEL3  3           // Verify closed current(torque) loop + its PI = 빨리 회전: 제어 값으로 속도 변경됨
 #define  FCL_LEVEL4  4           // Verify speed loop and speed PID
