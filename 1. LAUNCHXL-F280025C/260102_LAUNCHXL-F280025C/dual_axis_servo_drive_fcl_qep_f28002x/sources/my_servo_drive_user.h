@@ -336,7 +336,7 @@
 //
 // Keep PWM Period same between single sampling and double sampling
 //
-#define M1_INV_PWM_TICKS         ((SYSTEM_FREQUENCY / M1_PWM_FREQUENCY) * 1000)//= (100M/25)*1000 =4000
+#define M1_INV_PWM_TICKS         ((SYSTEM_FREQUENCY / M1_PWM_FREQUENCY) * 1000)//= (100/25)*1000 =4000
 #define M1_INV_PWM_DB            (50.0)
 #define M1_QEP_UNIT_TIMER_TICKS  (SYSTEM_FREQUENCY/(2*M1_PWM_FREQUENCY) * 1000)//= M1_INV_PWM_TICKS/2=2000
 
