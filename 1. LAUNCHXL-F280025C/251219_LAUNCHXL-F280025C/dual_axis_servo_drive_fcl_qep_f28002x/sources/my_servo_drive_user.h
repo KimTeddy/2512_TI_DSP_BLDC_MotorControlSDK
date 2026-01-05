@@ -336,16 +336,16 @@
 //
 // Keep PWM Period same between single sampling and double sampling
 //
-#define M1_INV_PWM_TICKS         ((SYSTEM_FREQUENCY / M1_PWM_FREQUENCY) * 1000)
+#define M1_INV_PWM_TICKS         ((SYSTEM_FREQUENCY / M1_PWM_FREQUENCY) * 1000)//= (100M/25)*1000 =4000
 #define M1_INV_PWM_DB            (50.0)
-#define M1_QEP_UNIT_TIMER_TICKS  (SYSTEM_FREQUENCY/(2*M1_PWM_FREQUENCY) * 1000)
+#define M1_QEP_UNIT_TIMER_TICKS  (SYSTEM_FREQUENCY/(2*M1_PWM_FREQUENCY) * 1000)//= M1_INV_PWM_TICKS/2=2000
 
-#define M1_INV_PWM_TBPRD         (M1_INV_PWM_TICKS / 2)
-#define M1_INV_PWM_HALF_TBPRD    (M1_INV_PWM_TBPRD / 2)
-#define M1_SAMPLING_FREQ         (M1_ISR_FREQUENCY * 1000)
-#define M1_CUR_LOOP_BANDWIDTH    (2.0f * PI * M1_SAMPLING_FREQ / 100.0f)
+#define M1_INV_PWM_TBPRD         (M1_INV_PWM_TICKS / 2)//=2000
+#define M1_INV_PWM_HALF_TBPRD    (M1_INV_PWM_TBPRD / 2)//=1000
+#define M1_SAMPLING_FREQ         (M1_ISR_FREQUENCY * 1000)//=25000
+#define M1_CUR_LOOP_BANDWIDTH    (2.0f * PI * M1_SAMPLING_FREQ / 100.0f)//=500*PI
 
-#define M1_TPWM_CARRIER          (1000.0 / M1_PWM_FREQUENCY)    //in uSec
+#define M1_TPWM_CARRIER          (1000.0 / M1_PWM_FREQUENCY)    //in uSec//=40
 
 //
 // FCL Computation time predetermined from library
@@ -355,47 +355,51 @@
 //
 // set the motor parameters to the one available
 //
-#define M1_ENCODER_LINES         500//1000 // Encoder lines for Tekic
+#define M1_ENCODER_LINES         500  // Encoder lines
 
 //
 // Define the electrical motor parameters
 //
-#define M1_RS      0.063//0.381334811     // Stator resistance (ohm)
-#define M1_RR      NULL            // Rotor resistance (ohm)
-#define M1_LS      0.00018335//0.000169791776  // Stator inductance (H)
+#define M1_RS      0.063//0.381334811// Stator resistance (ohm) //= 0.125/2
+// #define M1_RR      NULL            // Rotor resistance (ohm)
+#define M1_LS      0.00018335//0.000169791776  // Stator inductance (H) //= 0.0003667/2
 #define M1_LD      M1_LS           // Stator d-axis inductance (H)
 #define M1_LQ      M1_LS           // Stator q-axis inductance (H)
-#define M1_LR      NULL            // Rotor inductance (H)
-#define M1_LM      NULL            // Magnetizing inductance (H)
-#define M1_KB      0.040           // BEMF Constant (V/Hz)
-#define M1_POLES   28//8               // Number of poles
+// #define M1_LR      NULL            // Rotor inductance (H)
+// #define M1_LM      NULL            // Magnetizing inductance (H)
+#define M1_KB      0.040   // BEMF Constant (V/Hz) //Ke=Kt; 역기전력 상수(Back-EMF Constant)[V/(rad/s)]=토크 상수[Nm/A]*2PI = 0.1237*2PI =0.777
+#define M1_POLES   28//8           // Number of poles
 
 //
 // NOTE:-
 // Base voltage and base current information from TIDA-00909 doc is
 // based off of an ADC that works at 3.3V reference.
 // The base current = 16.5A (for a spread of 3.3V - 1.65V = 1.65V)
-// The base voltage  = 81.5 / sqrt(3)=
+// The base voltage  = 81.5 / sqrt(3) //=47.054047
 // Define the base quantites
 //
 #define M1_BASE_VOLTAGE     47.05   // Base peak phase voltage (volt), Vdc/sqrt(3)
 #define M1_BASE_CURRENT     16.5    // Base peak phase current (amp),
                                     // the maximum measurable peak current
-#define M1_BASE_TORQUE      NULL    // Base torque (N.m)
-#define M1_BASE_FLUX        NULL    // Base flux linkage (volt.sec/rad)
-#define M1_BASE_FREQ        600     // Base electrical frequency (Hz) = (기계적 회전속도/60) * pole pair 수
-#define M1_MAXIMUM_CURRENT  9.7//7.5     // Motor maximum torque current (amp)
+// #define M1_BASE_TORQUE      NULL    // Base torque (N.m)
+// #define M1_BASE_FLUX        NULL    // Base flux linkage (volt.sec/rad)
+#define M1_BASE_FREQ        400     // Base electrical frequency (Hz)
+                                    //= (기계적 회전속도/60) * pole pair 수
+                                    //= 2800rpm/60 * 14 = 46.6667 * 14 = 653.3Hz
+#define M1_MAXIMUM_CURRENT  7.5     // Motor maximum torque current (amp)
 
-#define M1_MAXIMUM_VOLTAGE  49.0//36.0    // DC bus maximum voltage (V)
-#define M1_MINIMUM_VOLTAGE  12.0//5.0     // DC bus minimum voltage (V)
+#define M1_MAXIMUM_VOLTAGE  36.0    // DC bus maximum voltage (V)
+#define M1_MINIMUM_VOLTAGE  5.0     // DC bus minimum voltage (V)
 
-#define M1_MAXIMUM_FREQ     600.0//125.0   // Motor maximum frequency (Hz)
-#define M1_STARTUP_FREQ     50.0//10.0    // Motor startup frequency (Hz)
+#define M1_MAXIMUM_FREQ     125.0   // Motor maximum frequency (Hz)
+#define M1_STARTUP_FREQ     10.0    // Motor startup frequency (Hz)
 
-#define M1_SPEED_LSW        0.05    // reference speed (pu)
+//initControlVars;     pMotor->speedRef = 0.10f; #2
+//initMotorParameters; pMotor->speedRef = M1_SPEED_REF; #1
+#define M1_SPEED_LSW        0.05    // reference speed (pu) //= 엔코더 인덱스 찾기/초기 캘리브레이션 상태(LSW 상태)에서 쓰는 저속 회전 속도 기준
 #define M1_SPEED_REF        0.10    // reference speed (pu)
 #define M1_ID_START         0.2     // alignment reference d-axis current
-#define M1_ID_RUN           0.0     // alignment reference d-axis current
+#define M1_ID_RUN           0.2//0.0// alignment reference d-axis current
 #define M1_IQ_LEVEL5        0.10    // reference q-axis current for level5
 #define M1_IQ_NO_LEVEL5     0.10    // ref q-axis current for no level5
 
