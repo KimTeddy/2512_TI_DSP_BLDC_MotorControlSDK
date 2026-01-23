@@ -304,11 +304,11 @@ void initControlVars(MOTOR_Vars_t *pMotor)
     // Set up the initialization value for some variables
     pMotor->IdRef_start = 0.2f;
     pMotor->IqRef = 0.10f;
-    pMotor->speedRef = 0.10f;
+    pMotor->speedRef = 0.10f;//0.10f;
     pMotor->lsw1Speed = 0.02f;
 
     pMotor->alignCnt = 2000;
-    pMotor->posPtrMax = 2;
+    pMotor->posPtrMax = 8;
     pMotor->posPtr = 0;
     pMotor->posCntrMax = 5000;
     pMotor->posSlewRate =  0.001;
