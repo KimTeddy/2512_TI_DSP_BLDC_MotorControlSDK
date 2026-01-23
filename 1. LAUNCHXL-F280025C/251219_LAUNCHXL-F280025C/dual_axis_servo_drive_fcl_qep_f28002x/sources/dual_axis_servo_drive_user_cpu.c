@@ -466,47 +466,47 @@ void runOffsetsCalculation(MOTOR_Vars_t *pMotor)
         // setting Vdc offset
         ADC_setPPBReferenceOffset(M1_VDC_ADC_BASE, M1_VDC_ADC_PPB_NUM, 0);
     }
-    else if(pMotor->motorNum == MTR_2)
-    {
-        for(offsetCalCounter = 0; offsetCalCounter < 10000; offsetCalCounter++)
-        {
-            EPWM_clearEventTriggerInterruptFlag(pMotor->pwmBaseU);
+//     else if(pMotor->motorNum == MTR_2)
+//     {
+//         for(offsetCalCounter = 0; offsetCalCounter < 10000; offsetCalCounter++)
+//         {
+//             EPWM_clearEventTriggerInterruptFlag(pMotor->pwmBaseU);
 
-            while(EPWM_getEventTriggerInterruptStatus(pMotor->pwmBaseU) == false);
+//             while(EPWM_getEventTriggerInterruptStatus(pMotor->pwmBaseU) == false);
 
-            if(offsetCalCounter > 1000)
-            {
-                // Offsets in phase current sensing
-                pMotor->offset_currentAs  = (K1 * pMotor->offset_currentAs) +
-                        (((float32_t)(M1_IFB_U)) * K2 * pMotor->adcScale);
+//             if(offsetCalCounter > 1000)
+//             {
+//                 // Offsets in phase current sensing
+//                 pMotor->offset_currentAs  = (K1 * pMotor->offset_currentAs) +
+//                         (((float32_t)(M1_IFB_U)) * K2 * pMotor->adcScale);
 
-                pMotor->offset_currentBs  = (K1 * pMotor->offset_currentBs) +
-                        (((float32_t)(M1_IFB_V)) * K2 * pMotor->adcScale);
+//                 pMotor->offset_currentBs  = (K1 * pMotor->offset_currentBs) +
+//                         (((float32_t)(M1_IFB_V)) * K2 * pMotor->adcScale);
 
-                pMotor->offset_currentCs  = (K1 * pMotor->offset_currentCs) +
-                        (((float32_t)(M1_IFB_W)) * K2 * pMotor->adcScale);
-            }
-        }
+//                 pMotor->offset_currentCs  = (K1 * pMotor->offset_currentCs) +
+//                         (((float32_t)(M1_IFB_W)) * K2 * pMotor->adcScale);
+//             }
+//         }
 
-        //
-        // Read and update DC BUS voltage for FCL to use
-        //
-        pMotor->FCL_params.Vdcbus = getVdc(pMotor);
+//         //
+//         // Read and update DC BUS voltage for FCL to use
+//         //
+//         pMotor->FCL_params.Vdcbus = getVdc(pMotor);
 
-        // setting Iu offset
-        ADC_setPPBReferenceOffset(M2_IU_ADC_BASE, M2_IU_ADC_PPB_NUM,
-                             (uint16_t)(pMotor->offset_currentAs * ADC_RESOLUTION));
-        // setting Iv offset
-        ADC_setPPBReferenceOffset(M2_IV_ADC_BASE, M2_IV_ADC_PPB_NUM,
-                             (uint16_t)(pMotor->offset_currentBs * ADC_RESOLUTION));
+//         // setting Iu offset
+//         ADC_setPPBReferenceOffset(M2_IU_ADC_BASE, M2_IU_ADC_PPB_NUM,
+//                              (uint16_t)(pMotor->offset_currentAs * ADC_RESOLUTION));
+//         // setting Iv offset
+//         ADC_setPPBReferenceOffset(M2_IV_ADC_BASE, M2_IV_ADC_PPB_NUM,
+//                              (uint16_t)(pMotor->offset_currentBs * ADC_RESOLUTION));
 
-        // setting Iw offset
-        ADC_setPPBReferenceOffset(M2_IW_ADC_BASE, M2_IW_ADC_PPB_NUM,
-                             (uint16_t)(pMotor->offset_currentCs * ADC_RESOLUTION));
+//         // setting Iw offset
+//         ADC_setPPBReferenceOffset(M2_IW_ADC_BASE, M2_IW_ADC_PPB_NUM,
+//                              (uint16_t)(pMotor->offset_currentCs * ADC_RESOLUTION));
 
-        // setting Vdc offset
-        ADC_setPPBReferenceOffset(M2_VDC_ADC_BASE, M2_VDC_ADC_PPB_NUM, 0);
-    }
+//         // setting Vdc offset
+//         ADC_setPPBReferenceOffset(M2_VDC_ADC_BASE, M2_VDC_ADC_PPB_NUM, 0);
+//     }
 
     pMotor->offsetDoneFlag = 1;
 
