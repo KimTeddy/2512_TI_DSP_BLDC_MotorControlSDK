@@ -325,8 +325,8 @@ void initControlVars(MOTOR_Vars_t *pMotor)
     pMotor->rg.Gain = 1.0f;
     pMotor->rg.Offset = 1.0f;
 
-    pMotor->pi_pos.Kp = 0.25f;            //10.0;
-    pMotor->pi_pos.Ki = 0.001f;           //T*speedLoopPrescaler/0.3;
+    pMotor->pi_pos.Kp = 0.25f;            //10.0; 원래 있던 주석
+    pMotor->pi_pos.Ki = 0.001f;           //T*speedLoopPrescaler/0.3; 원래 있던 주석
     pMotor->pi_pos.Umax = 1.0f;
     pMotor->pi_pos.Umin = -1.0f;
 

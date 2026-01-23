@@ -1,6 +1,6 @@
 ;***************************************************************
 ;* TMS320C2000 G3 C/C++ Codegen                               PC v22.6.2.LTS *
-;* Date/Time created: Thu Jan 22 15:53:02 2026                 *
+;* Date/Time created: Fri Jan 23 16:26:49 2026                 *
 ;***************************************************************
 	.compiler_opts --abi=eabi --diag_wrap=off --float_support=fpu32 --hll_source=on --idiv_support=idiv0 --mem_model:code=flat --mem_model:data=large --object_format=elf --quiet --silicon_errata_fpu1_workaround=off --silicon_version=28 --symdebug:dwarf --symdebug:dwarf_version=4 --tmu_support=tmu1 
 	.asg	XAR2, FP
@@ -327,8 +327,8 @@ $C$DW$47	.dwtag  DW_TAG_variable
 	.dwattr $C$DW$47, DW_AT_decl_column(0x17)
 
 	.sblock	".data"
-;	C:\ti\ccs2031\ccs\tools\compiler\ti-cgt-c2000_22.6.2.LTS\bin\opt2000.exe C:\\Users\\Teddy\\AppData\\Local\\Temp\\{C48F2FD7-27BA-43E1-AB05-DA9F79E27921} C:\\Users\\Teddy\\AppData\\Local\\Temp\\{BA91C09D-E9FD-413D-8F1E-8339537B8FA0} 
-;	C:\ti\ccs2031\ccs\tools\compiler\ti-cgt-c2000_22.6.2.LTS\bin\acia2000.exe -@C:\\Users\\Teddy\\AppData\\Local\\Temp\\{9153482D-BD37-4A07-9050-BF1D2F7952EA} 
+;	C:\ti\ccs2031\ccs\tools\compiler\ti-cgt-c2000_22.6.2.LTS\bin\opt2000.exe C:\\Users\\Teddy\\AppData\\Local\\Temp\\{18A3B9AD-BD6A-4CF7-BC6D-1AE1B40B2643} C:\\Users\\Teddy\\AppData\\Local\\Temp\\{0FED9195-C155-4B7E-9466-54DA69C1BC58} 
+;	C:\ti\ccs2031\ccs\tools\compiler\ti-cgt-c2000_22.6.2.LTS\bin\acia2000.exe -@C:\\Users\\Teddy\\AppData\\Local\\Temp\\{A784339E-1E3D-49ED-8CC4-8E1074FA3D17} 
 	.sect	".text:__signbitl"
 	.clink
 	.global	||__signbitl||
