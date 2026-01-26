@@ -1,6 +1,6 @@
 ;***************************************************************
 ;* TMS320C2000 G3 C/C++ Codegen                               PC v22.6.2.LTS *
-;* Date/Time created: Fri Jan  2 15:35:18 2026                 *
+;* Date/Time created: Fri Jan 23 16:26:49 2026                 *
 ;***************************************************************
 	.compiler_opts --abi=eabi --diag_wrap=off --float_support=fpu32 --hll_source=on --idiv_support=idiv0 --mem_model:code=flat --mem_model:data=large --object_format=elf --quiet --silicon_errata_fpu1_workaround=off --silicon_version=28 --symdebug:dwarf --symdebug:dwarf_version=4 --tmu_support=tmu1 
 	.asg	XAR2, FP
@@ -20,7 +20,7 @@ $C$DW$1	.dwtag  DW_TAG_subprogram
 	.dwattr $C$DW$1, DW_AT_decl_line(0x41)
 	.dwattr $C$DW$1, DW_AT_decl_column(0x06)
 $C$DW$2	.dwtag  DW_TAG_formal_parameter
-	.dwattr $C$DW$2, DW_AT_type(*$C$DW$T$136)
+	.dwattr $C$DW$2, DW_AT_type(*$C$DW$T$137)
 
 	.dwendtag $C$DW$1
 
@@ -34,13 +34,13 @@ $C$DW$3	.dwtag  DW_TAG_subprogram
 	.dwattr $C$DW$3, DW_AT_decl_line(0x15f)
 	.dwattr $C$DW$3, DW_AT_decl_column(0x01)
 $C$DW$4	.dwtag  DW_TAG_formal_parameter
-	.dwattr $C$DW$4, DW_AT_type(*$C$DW$T$146)
+	.dwattr $C$DW$4, DW_AT_type(*$C$DW$T$147)
 
 $C$DW$5	.dwtag  DW_TAG_formal_parameter
-	.dwattr $C$DW$5, DW_AT_type(*$C$DW$T$33)
+	.dwattr $C$DW$5, DW_AT_type(*$C$DW$T$40)
 
 $C$DW$6	.dwtag  DW_TAG_formal_parameter
-	.dwattr $C$DW$6, DW_AT_type(*$C$DW$T$33)
+	.dwattr $C$DW$6, DW_AT_type(*$C$DW$T$40)
 
 	.dwendtag $C$DW$3
 
@@ -208,7 +208,7 @@ $C$DW$18	.dwtag  DW_TAG_variable
 	.dwattr $C$DW$18, DW_AT_name("halHandle")
 	.dwattr $C$DW$18, DW_AT_linkage_name("halHandle")
 	.dwattr $C$DW$18, DW_AT_location[DW_OP_addr ||halHandle||]
-	.dwattr $C$DW$18, DW_AT_type(*$C$DW$T$154)
+	.dwattr $C$DW$18, DW_AT_type(*$C$DW$T$155)
 	.dwattr $C$DW$18, DW_AT_external
 	.dwattr $C$DW$18, DW_AT_decl_file("../sources/dual_axis_servo_drive_cpu.c")
 	.dwattr $C$DW$18, DW_AT_decl_line(0x73)
@@ -220,7 +220,7 @@ $C$DW$19	.dwtag  DW_TAG_variable
 	.dwattr $C$DW$19, DW_AT_name("FCL_cycleCount")
 	.dwattr $C$DW$19, DW_AT_linkage_name("FCL_cycleCount")
 	.dwattr $C$DW$19, DW_AT_location[DW_OP_addr ||FCL_cycleCount||]
-	.dwattr $C$DW$19, DW_AT_type(*$C$DW$T$187)
+	.dwattr $C$DW$19, DW_AT_type(*$C$DW$T$189)
 	.dwattr $C$DW$19, DW_AT_external
 	.dwattr $C$DW$19, DW_AT_decl_file("../sources/dual_axis_servo_drive_cpu.c")
 	.dwattr $C$DW$19, DW_AT_decl_line(0x7b)
@@ -248,7 +248,7 @@ $C$DW$22	.dwtag  DW_TAG_variable
 	.dwattr $C$DW$22, DW_AT_name("halMtrHandle")
 	.dwattr $C$DW$22, DW_AT_linkage_name("halMtrHandle")
 	.dwattr $C$DW$22, DW_AT_location[DW_OP_addr ||halMtrHandle||]
-	.dwattr $C$DW$22, DW_AT_type(*$C$DW$T$148)
+	.dwattr $C$DW$22, DW_AT_type(*$C$DW$T$149)
 	.dwattr $C$DW$22, DW_AT_external
 	.dwattr $C$DW$22, DW_AT_decl_file("../sources/dual_axis_servo_drive_cpu.c")
 	.dwattr $C$DW$22, DW_AT_decl_line(0x76)
@@ -272,7 +272,7 @@ $C$DW$23	.dwtag  DW_TAG_variable
 	.dwattr $C$DW$23, DW_AT_name("posArray")
 	.dwattr $C$DW$23, DW_AT_linkage_name("posArray")
 	.dwattr $C$DW$23, DW_AT_location[DW_OP_addr ||posArray||]
-	.dwattr $C$DW$23, DW_AT_type(*$C$DW$T$204)
+	.dwattr $C$DW$23, DW_AT_type(*$C$DW$T$207)
 	.dwattr $C$DW$23, DW_AT_external
 	.dwattr $C$DW$23, DW_AT_decl_file("../sources/dual_axis_servo_drive_cpu.c")
 	.dwattr $C$DW$23, DW_AT_decl_line(0x59)
@@ -281,7 +281,7 @@ $C$DW$23	.dwtag  DW_TAG_variable
 $C$DW$24	.dwtag  DW_TAG_variable
 	.dwattr $C$DW$24, DW_AT_name("dlog_2ch1")
 	.dwattr $C$DW$24, DW_AT_linkage_name("dlog_2ch1")
-	.dwattr $C$DW$24, DW_AT_type(*$C$DW$T$135)
+	.dwattr $C$DW$24, DW_AT_type(*$C$DW$T$136)
 	.dwattr $C$DW$24, DW_AT_declaration
 	.dwattr $C$DW$24, DW_AT_external
 	.dwattr $C$DW$24, DW_AT_decl_file("..\sources\dual_axis_servo_drive_cpu.h")
@@ -294,7 +294,7 @@ $C$DW$25	.dwtag  DW_TAG_variable
 	.dwattr $C$DW$25, DW_AT_name("hal")
 	.dwattr $C$DW$25, DW_AT_linkage_name("hal")
 	.dwattr $C$DW$25, DW_AT_location[DW_OP_addr ||hal||]
-	.dwattr $C$DW$25, DW_AT_type(*$C$DW$T$152)
+	.dwattr $C$DW$25, DW_AT_type(*$C$DW$T$153)
 	.dwattr $C$DW$25, DW_AT_external
 	.dwattr $C$DW$25, DW_AT_decl_file("../sources/dual_axis_servo_drive_cpu.c")
 	.dwattr $C$DW$25, DW_AT_decl_line(0x74)
@@ -306,7 +306,7 @@ $C$DW$26	.dwtag  DW_TAG_variable
 	.dwattr $C$DW$26, DW_AT_name("halMtr")
 	.dwattr $C$DW$26, DW_AT_linkage_name("halMtr")
 	.dwattr $C$DW$26, DW_AT_location[DW_OP_addr ||halMtr||]
-	.dwattr $C$DW$26, DW_AT_type(*$C$DW$T$144)
+	.dwattr $C$DW$26, DW_AT_type(*$C$DW$T$145)
 	.dwattr $C$DW$26, DW_AT_external
 	.dwattr $C$DW$26, DW_AT_decl_file("../sources/dual_axis_servo_drive_cpu.c")
 	.dwattr $C$DW$26, DW_AT_decl_line(0x78)
@@ -318,7 +318,7 @@ $C$DW$27	.dwtag  DW_TAG_variable
 	.dwattr $C$DW$27, DW_AT_name("motorVars")
 	.dwattr $C$DW$27, DW_AT_linkage_name("motorVars")
 	.dwattr $C$DW$27, DW_AT_location[DW_OP_addr ||motorVars||]
-	.dwattr $C$DW$27, DW_AT_type(*$C$DW$T$158)
+	.dwattr $C$DW$27, DW_AT_type(*$C$DW$T$159)
 	.dwattr $C$DW$27, DW_AT_external
 	.dwattr $C$DW$27, DW_AT_decl_file("../sources/dual_axis_servo_drive_cpu.c")
 	.dwattr $C$DW$27, DW_AT_decl_line(0x4f)
@@ -326,8 +326,8 @@ $C$DW$27	.dwtag  DW_TAG_variable
 
 	.sblock	".bss"
 	.sblock	"ramInitVars"
-;	C:\ti\ccs2031\ccs\tools\compiler\ti-cgt-c2000_22.6.2.LTS\bin\opt2000.exe C:\\Users\\Teddy\\AppData\\Local\\Temp\\{A3F8234F-055F-4825-AA5E-5B860E57A894} C:\\Users\\Teddy\\AppData\\Local\\Temp\\{0C654D9D-E392-4B8C-8ADA-7DD35BE271AE} 
-;	C:\ti\ccs2031\ccs\tools\compiler\ti-cgt-c2000_22.6.2.LTS\bin\acia2000.exe -@C:\\Users\\Teddy\\AppData\\Local\\Temp\\{2B9AA7CA-3AA9-440E-9EAD-E274A2C9F218} 
+;	C:\ti\ccs2031\ccs\tools\compiler\ti-cgt-c2000_22.6.2.LTS\bin\opt2000.exe C:\\Users\\Teddy\\AppData\\Local\\Temp\\{260D2D5B-177E-4BF2-A6F3-A2DECF63D112} C:\\Users\\Teddy\\AppData\\Local\\Temp\\{748648A9-103D-4E0E-84C8-CA1B90909F6C} 
+;	C:\ti\ccs2031\ccs\tools\compiler\ti-cgt-c2000_22.6.2.LTS\bin\acia2000.exe -@C:\\Users\\Teddy\\AppData\\Local\\Temp\\{07BFB9E4-5250-48DF-87F4-3422FF7BC796} 
 	.sect	".text:runMotorControl"
 	.clink
 	.global	||runMotorControl||
@@ -347,12 +347,12 @@ $C$DW$28	.dwtag  DW_TAG_subprogram
 	.dwfde $C$DW$CIE, ||runMotorControl||
 $C$DW$29	.dwtag  DW_TAG_formal_parameter
 	.dwattr $C$DW$29, DW_AT_name("pMotor")
-	.dwattr $C$DW$29, DW_AT_type(*$C$DW$T$156)
+	.dwattr $C$DW$29, DW_AT_type(*$C$DW$T$157)
 	.dwattr $C$DW$29, DW_AT_location[DW_OP_reg12]
 
 $C$DW$30	.dwtag  DW_TAG_formal_parameter
 	.dwattr $C$DW$30, DW_AT_name("mtrHandle")
-	.dwattr $C$DW$30, DW_AT_type(*$C$DW$T$146)
+	.dwattr $C$DW$30, DW_AT_type(*$C$DW$T$147)
 	.dwattr $C$DW$30, DW_AT_location[DW_OP_reg14]
 
 
@@ -378,13 +378,13 @@ $C$DW$30	.dwtag  DW_TAG_formal_parameter
 ;* AR2   assigned to pMotor
 $C$DW$31	.dwtag  DW_TAG_variable
 	.dwattr $C$DW$31, DW_AT_name("pMotor")
-	.dwattr $C$DW$31, DW_AT_type(*$C$DW$T$157)
+	.dwattr $C$DW$31, DW_AT_type(*$C$DW$T$158)
 	.dwattr $C$DW$31, DW_AT_location[DW_OP_reg8]
 
 ;* AR3   assigned to mtrHandle
 $C$DW$32	.dwtag  DW_TAG_variable
 	.dwattr $C$DW$32, DW_AT_name("mtrHandle")
-	.dwattr $C$DW$32, DW_AT_type(*$C$DW$T$147)
+	.dwattr $C$DW$32, DW_AT_type(*$C$DW$T$148)
 	.dwattr $C$DW$32, DW_AT_location[DW_OP_reg10]
 
 ;* AL    assigned to base
@@ -908,28 +908,18 @@ $C$DW$45	.dwtag  DW_TAG_subprogram
         MOV       AH,@||ctrlState||     ; [CPU_ALU] |1353| 
         MOVW      DP,#||speedRef||      ; [CPU_ARAU] 
 	.dwpsn	file "../sources/dual_axis_servo_drive_cpu.c",line 1344,column 9,is_stmt,isa 0
-        MOVL      P,@||speedRef||       ; [CPU_ALU] |1344| 
-	.dwpsn	file "../sources/dual_axis_servo_drive_cpu.c",line 1348,column 9,is_stmt,isa 0
-        MOVL      XAR7,@||IdRef||       ; [CPU_ALU] |1348| 
-	.dwpsn	file "../sources/dual_axis_servo_drive_cpu.c",line 1350,column 9,is_stmt,isa 0
-        MOVL      XAR6,@||IqRef||       ; [CPU_ALU] |1350| 
+        MOVL      XAR6,@||speedRef||    ; [CPU_ALU] |1344| 
         MOVW      DP,#||motorVars||+451 ; [CPU_ARAU] 
 	.dwpsn	file "../sources/dual_axis_servo_drive_cpu.c",line 1361,column 5,is_stmt,isa 0
         MOV       AL,@||motorVars||+451 ; [CPU_ALU] |1361| 
         MOVW      DP,#||motorVars||+452 ; [CPU_ARAU] 
 	.dwpsn	file "../sources/dual_axis_servo_drive_cpu.c",line 1353,column 9,is_stmt,isa 0
         MOV       @||motorVars||+452,AH ; [CPU_ALU] |1353| 
-        MOVW      DP,#||motorVars||+44  ; [CPU_ARAU] 
 	.dwpsn	file "../sources/dual_axis_servo_drive_cpu.c",line 1361,column 5,is_stmt,isa 0
         CMPB      AL,#1                 ; [CPU_ALU] |1361| 
+        MOVW      DP,#||motorVars||+44  ; [CPU_ARAU] 
 	.dwpsn	file "../sources/dual_axis_servo_drive_cpu.c",line 1344,column 9,is_stmt,isa 0
-        MOVL      @||motorVars||+44,P   ; [CPU_FPU] |1344| 
-        MOVW      DP,#||motorVars||+32  ; [CPU_ARAU] 
-	.dwpsn	file "../sources/dual_axis_servo_drive_cpu.c",line 1348,column 9,is_stmt,isa 0
-        MOVL      @||motorVars||+32,XAR7 ; [CPU_FPU] |1348| 
-        MOVW      DP,#||motorVars||+38  ; [CPU_ARAU] 
-	.dwpsn	file "../sources/dual_axis_servo_drive_cpu.c",line 1350,column 9,is_stmt,isa 0
-        MOVL      @||motorVars||+38,XAR6 ; [CPU_FPU] |1350| 
+        MOVL      @||motorVars||+44,XAR6 ; [CPU_FPU] |1344| 
 	.dwpsn	file "../sources/dual_axis_servo_drive_cpu.c",line 1361,column 5,is_stmt,isa 0
         B         ||$C$L10||,NEQ        ; [CPU_ALU] |1361| 
         ; branchcc occurs ; [] |1361| 
@@ -1059,25 +1049,27 @@ $C$DW$50	.dwtag  DW_TAG_subprogram
 ;***************************************************************
 
 ||motor1ControlISR||:
-;* R0    assigned to $O$C16
-;* R4    assigned to $O$C17
-;* AR4   assigned to $O$C18
+;* R1    assigned to $O$C17
+;* R4    assigned to $O$C18
 ;* AR4   assigned to $O$C19
 ;* AR4   assigned to $O$C20
-;* AR5   assigned to $O$C21
+;* AR4   assigned to $O$C21
 ;* AR5   assigned to $O$C22
 ;* AR4   assigned to $O$C23
 ;* AR5   assigned to $O$C24
-;* AL    assigned to $O$C25
-;* R5    assigned to $O$C26
-;* R1    assigned to $O$C27
+;* AR4   assigned to $O$C25
+;* AR5   assigned to $O$C26
+;* AL    assigned to $O$C27
 ;* R5    assigned to $O$C28
-;* R4    assigned to $O$C29
-;* AR4   assigned to $O$C30
-;* R0    assigned to $O$C31
-;* R0    assigned to $O$C32
-;* AR4   assigned to $O$C33
-;* AL    assigned to $O$C34
+;* R1    assigned to $O$C29
+;* R5    assigned to $O$C30
+;* R4    assigned to $O$C31
+;* AR4   assigned to $O$C32
+;* R0    assigned to $O$C33
+;* R0    assigned to $O$C34
+;* AR4   assigned to $O$C35
+;* AL    assigned to $O$C36
+;* AL    assigned to $O$U6
 ;* R1    assigned to wccXinvZb
 $C$DW$51	.dwtag  DW_TAG_variable
 	.dwattr $C$DW$51, DW_AT_name("wccXinvZb")
@@ -1106,7 +1098,7 @@ $C$DW$54	.dwtag  DW_TAG_variable
 ;* AR4   assigned to $O$U57
 ;* AR4   assigned to $O$U172
 ;* AL    assigned to $O$U177
-;* AL    assigned to $O$U379
+;* AL    assigned to $O$U464
 ;* R4    assigned to $O$CSU$svgen2$Ualpha
 ;* R2    assigned to $O$CSU$svgen2$Tb
 ;* R3    assigned to $O$CSU$svgen2$Tc
@@ -1118,11 +1110,12 @@ $C$DW$54	.dwtag  DW_TAG_variable
 ;* AL    assigned to $O$R7
 ;* AL    assigned to $O$R8
 ;* AL    assigned to $O$R9
-;* R0    assigned to $O$R10
-;* AH    assigned to $O$R11
-;* AH    assigned to $O$R13
-;* AH    assigned to $O$R15
-;* R3    assigned to $O$S1
+;* R1    assigned to $O$R11
+;* AH    assigned to $O$R12
+;* AH    assigned to $O$R14
+;* AH    assigned to $O$R16
+;* R0    assigned to $O$S1
+;* R0    assigned to $O$S2
 ;* AR4   assigned to qepBase
 $C$DW$55	.dwtag  DW_TAG_variable
 	.dwattr $C$DW$55, DW_AT_name("qepBase")
@@ -1171,11 +1164,12 @@ $C$DW$62	.dwtag  DW_TAG_variable
 	.dwattr $C$DW$62, DW_AT_type(*$C$DW$T$22)
 	.dwattr $C$DW$62, DW_AT_location[DW_OP_reg12]
 
-;* R2    assigned to out
+;* R0    assigned to $O$S1
+;* R3    assigned to out
 $C$DW$63	.dwtag  DW_TAG_variable
 	.dwattr $C$DW$63, DW_AT_name("out")
 	.dwattr $C$DW$63, DW_AT_type(*$C$DW$T$19)
-	.dwattr $C$DW$63, DW_AT_location[DW_OP_regx 0x33]
+	.dwattr $C$DW$63, DW_AT_location[DW_OP_regx 0x37]
 
 	.dwcfi	cfa_offset, -2
 	.dwcfi	save_reg_to_mem, 26, 0
@@ -1520,9 +1514,9 @@ $C$DW$63	.dwtag  DW_TAG_variable
         MOVW      DP,#||motorVars||+380 ; [CPU_ARAU] 
 	.dwpsn	file "..\sources\dual_axis_servo_drive_cpu.h",line 308,column 9,is_stmt,isa 0
         MAXF32    R1H,#16256            ; [CPU_FPU] |308| 
-	.dwpsn	file "../sources/dual_axis_servo_drive_cpu.c",line 427,column 5,is_stmt,isa 0
+	.dwpsn	file "../sources/dual_axis_servo_drive_cpu.c",line 588,column 5,is_stmt,isa 0
 
-        MOV32     @||motorVars||+380,R1H ; [CPU_FPU] |427| 
+        MOV32     @||motorVars||+380,R1H ; [CPU_FPU] |588| 
 ||      MPYF32    R0H,R0H,R1H           ; [CPU_FPU] |451| 
 
         MOVW      DP,#||motorVars||+372 ; [CPU_ARAU] 
@@ -1654,10 +1648,10 @@ $C$DW$63	.dwtag  DW_TAG_variable
 	.dwpsn	file "..\sources\fcl_foc_cpu_dm.h",line 492,column 5,is_stmt,isa 0
         MOVL      XAR6,@||motorVars||+76 ; [CPU_ALU] |492| 
         MOVW      DP,#||motorVars||+451 ; [CPU_ARAU] 
-	.dwpsn	file "../sources/dual_axis_servo_drive_cpu.c",line 445,column 5,is_stmt,isa 0
-        MOV       AL,@||motorVars||+451 ; [CPU_ALU] |445| 
+	.dwpsn	file "../sources/dual_axis_servo_drive_cpu.c",line 606,column 5,is_stmt,isa 0
+        MOV       AL,@||motorVars||+451 ; [CPU_ALU] |606| 
         MOVW      DP,#||motorVars||+288 ; [CPU_ARAU] 
-        CMPB      AL,#1                 ; [CPU_ALU] |445| 
+        CMPB      AL,#1                 ; [CPU_ALU] |606| 
 	.dwpsn	file "..\sources\fcl_foc_cpu_dm.h",line 498,column 5,is_stmt,isa 0
 
         MOV32     @||motorVars||+288,R2H ; [CPU_FPU] |498| 
@@ -1684,112 +1678,189 @@ $C$DW$63	.dwtag  DW_TAG_variable
         MOVW      DP,#||motorVars||+326 ; [CPU_ARAU] 
 	.dwpsn	file "..\sources\fcl_foc_cpu_dm.h",line 488,column 5,is_stmt,isa 0
         MOV32     @||motorVars||+326,R1H ; [CPU_FPU] |488| 
-	.dwpsn	file "../sources/dual_axis_servo_drive_cpu.c",line 445,column 5,is_stmt,isa 0
-        B         ||$C$L19||,NEQ        ; [CPU_ALU] |445| 
-        ; branchcc occurs ; [] |445| 
-        MOVW      DP,#||motorVars||+44  ; [CPU_ARAU] 
-	.dwpsn	file "../sources/dual_axis_servo_drive_cpu.c",line 448,column 9,is_stmt,isa 0
-        MOVL      XAR6,@||motorVars||+44 ; [CPU_ALU] |448| 
+	.dwpsn	file "../sources/dual_axis_servo_drive_cpu.c",line 606,column 5,is_stmt,isa 0
+        B         ||$C$L25||,NEQ        ; [CPU_ALU] |606| 
+        ; branchcc occurs ; [] |606| 
         MOVW      DP,#||motorVars||+448 ; [CPU_ARAU] 
-	.dwpsn	file "../sources/dual_axis_servo_drive_cpu.c",line 450,column 9,is_stmt,isa 0
-        MOV       AL,@||motorVars||+448 ; [CPU_ALU] |450| 
-        MOVW      DP,#||motorVars||+102 ; [CPU_ARAU] 
-        CMPB      AL,#2                 ; [CPU_ALU] |450| 
-	.dwpsn	file "../sources/dual_axis_servo_drive_cpu.c",line 448,column 9,is_stmt,isa 0
-        MOVL      @||motorVars||+102,XAR6 ; [CPU_FPU] |448| 
-	.dwpsn	file "../sources/dual_axis_servo_drive_cpu.c",line 450,column 9,is_stmt,isa 0
-        B         ||$C$L18||,EQ         ; [CPU_ALU] |450| 
-        ; branchcc occurs ; [] |450| 
-	.dwpsn	file "../sources/dual_axis_servo_drive_cpu.c",line 454,column 14,is_stmt,isa 0
-        CMPB      AL,#0                 ; [CPU_ALU] |454| 
-        B         ||$C$L20||,NEQ        ; [CPU_ALU] |454| 
-        ; branchcc occurs ; [] |454| 
+	.dwpsn	file "../sources/dual_axis_servo_drive_cpu.c",line 608,column 9,is_stmt,isa 0
+        MOV       AL,@||motorVars||+448 ; [CPU_ALU] |608| 
+        CMPB      AL,#2                 ; [CPU_ALU] |608| 
+        B         ||$C$L24||,EQ         ; [CPU_ALU] |608| 
+        ; branchcc occurs ; [] |608| 
+	.dwpsn	file "../sources/dual_axis_servo_drive_cpu.c",line 613,column 14,is_stmt,isa 0
+        CMPB      AL,#1                 ; [CPU_ALU] |613| 
+        B         ||$C$L18||,EQ         ; [CPU_ALU] |613| 
+        ; branchcc occurs ; [] |613| 
+	.dwpsn	file "../sources/dual_axis_servo_drive_cpu.c",line 624,column 14,is_stmt,isa 0
+        CMPB      AL,#0                 ; [CPU_ALU] |624| 
+        B         ||$C$L27||,NEQ        ; [CPU_ALU] |624| 
+        ; branchcc occurs ; [] |624| 
         MOVW      DP,#||motorVars||+30  ; [CPU_ARAU] 
-	.dwpsn	file "../sources/dual_axis_servo_drive_cpu.c",line 460,column 13,is_stmt,isa 0
-        MOVL      ACC,@||motorVars||+30 ; [CPU_ALU] |460| 
+	.dwpsn	file "../sources/dual_axis_servo_drive_cpu.c",line 630,column 13,is_stmt,isa 0
+        MOVL      ACC,@||motorVars||+30 ; [CPU_ALU] |630| 
         MOVW      DP,#||motorVars||+36  ; [CPU_ARAU] 
-	.dwpsn	file "../sources/dual_axis_servo_drive_cpu.c",line 456,column 13,is_stmt,isa 0
-        ZERO      R3H                   ; [CPU_FPU] |456| 
-	.dwpsn	file "../sources/dual_axis_servo_drive_cpu.c",line 457,column 13,is_stmt,isa 0
-        ZERO      R2H                   ; [CPU_FPU] |457| 
-	.dwpsn	file "../sources/dual_axis_servo_drive_cpu.c",line 460,column 13,is_stmt,isa 0
-        MOVL      @||motorVars||+36,ACC ; [CPU_ALU] |460| 
+	.dwpsn	file "../sources/dual_axis_servo_drive_cpu.c",line 626,column 13,is_stmt,isa 0
+        ZERO      R3H                   ; [CPU_FPU] |626| 
+	.dwpsn	file "../sources/dual_axis_servo_drive_cpu.c",line 627,column 13,is_stmt,isa 0
+        ZERO      R2H                   ; [CPU_FPU] |627| 
+	.dwpsn	file "../sources/dual_axis_servo_drive_cpu.c",line 630,column 13,is_stmt,isa 0
+        MOVL      @||motorVars||+36,ACC ; [CPU_ALU] |630| 
         MOVW      DP,#||motorVars||+286 ; [CPU_ARAU] 
-	.dwpsn	file "../sources/dual_axis_servo_drive_cpu.c",line 463,column 13,is_stmt,isa 0
-        MOV32     R1H,@||motorVars||+286 ; [CPU_FPU] |463| 
+	.dwpsn	file "../sources/dual_axis_servo_drive_cpu.c",line 636,column 13,is_stmt,isa 0
+        MOV32     R1H,@||motorVars||+286 ; [CPU_FPU] |636| 
         MOVW      DP,#||motorVars||+36  ; [CPU_ARAU] 
-        MOV32     R0H,@||motorVars||+36 ; [CPU_FPU] |463| 
+        MOV32     R0H,@||motorVars||+36 ; [CPU_FPU] |636| 
         MOVW      DP,#||motorVars||+102 ; [CPU_ARAU] 
-	.dwpsn	file "../sources/dual_axis_servo_drive_cpu.c",line 456,column 13,is_stmt,isa 0
-        MOV32     @||motorVars||+102,R3H ; [CPU_FPU] |456| 
-	.dwpsn	file "../sources/dual_axis_servo_drive_cpu.c",line 463,column 13,is_stmt,isa 0
-        CMPF32    R1H,R0H               ; [CPU_FPU] |463| 
+	.dwpsn	file "../sources/dual_axis_servo_drive_cpu.c",line 626,column 13,is_stmt,isa 0
+        MOV32     @||motorVars||+102,R3H ; [CPU_FPU] |626| 
+	.dwpsn	file "../sources/dual_axis_servo_drive_cpu.c",line 636,column 13,is_stmt,isa 0
+        CMPF32    R1H,R0H               ; [CPU_FPU] |636| 
         MOVW      DP,#||motorVars||+112 ; [CPU_ARAU] 
-        MOVST0    ZF, NF                ; [CPU_FPU] |463| 
-	.dwpsn	file "../sources/dual_axis_servo_drive_cpu.c",line 457,column 13,is_stmt,isa 0
-        MOV32     @||motorVars||+112,R2H ; [CPU_FPU] |457| 
-	.dwpsn	file "../sources/dual_axis_servo_drive_cpu.c",line 463,column 13,is_stmt,isa 0
-        B         ||$C$L20||,LT         ; [CPU_ALU] |463| 
-        ; branchcc occurs ; [] |463| 
+        MOVST0    ZF, NF                ; [CPU_FPU] |636| 
+	.dwpsn	file "../sources/dual_axis_servo_drive_cpu.c",line 627,column 13,is_stmt,isa 0
+        MOV32     @||motorVars||+112,R2H ; [CPU_FPU] |627| 
+	.dwpsn	file "../sources/dual_axis_servo_drive_cpu.c",line 636,column 13,is_stmt,isa 0
+        B         ||$C$L27||,LT         ; [CPU_ALU] |636| 
+        ; branchcc occurs ; [] |636| 
         MOVW      DP,#||motorVars||+437 ; [CPU_ARAU] 
-	.dwpsn	file "../sources/dual_axis_servo_drive_cpu.c",line 467,column 17,is_stmt,isa 0
-        MOV       AL,@||motorVars||+437 ; [CPU_ALU] |467| 
+	.dwpsn	file "../sources/dual_axis_servo_drive_cpu.c",line 641,column 17,is_stmt,isa 0
+        MOV       AL,@||motorVars||+437 ; [CPU_ALU] |641| 
         MOVW      DP,#||motorVars||+436 ; [CPU_ARAU] 
-	.dwpsn	file "../sources/dual_axis_servo_drive_cpu.c",line 465,column 17,is_stmt,isa 0
-        INC       @||motorVars||+436    ; [CPU_ALU] |465| 
-	.dwpsn	file "../sources/dual_axis_servo_drive_cpu.c",line 467,column 17,is_stmt,isa 0
-        CMP       AL,@||motorVars||+436 ; [CPU_ALU] |467| 
-        B         ||$C$L20||,HI         ; [CPU_ALU] |467| 
-        ; branchcc occurs ; [] |467| 
-	.dwpsn	file "../sources/dual_axis_servo_drive_cpu.c",line 469,column 21,is_stmt,isa 0
-        MOV       @||motorVars||+436,#0 ; [CPU_ALU] |469| 
-        MOVW      DP,#||motorVars||+448 ; [CPU_ARAU] 
-	.dwpsn	file "../sources/dual_axis_servo_drive_cpu.c",line 472,column 21,is_stmt,isa 0
-        MOVB      @||motorVars||+448,#1,UNC ; [CPU_ALU] |472| 
-        B         ||$C$L20||,UNC        ; [CPU_ALU] |472| 
-        ; branch occurs ; [] |472| 
-||$C$L18||:    
+	.dwpsn	file "../sources/dual_axis_servo_drive_cpu.c",line 639,column 17,is_stmt,isa 0
+        INC       @||motorVars||+436    ; [CPU_ALU] |639| 
+	.dwpsn	file "../sources/dual_axis_servo_drive_cpu.c",line 641,column 17,is_stmt,isa 0
+        CMP       AL,@||motorVars||+436 ; [CPU_ALU] |641| 
+        B         ||$C$L27||,HI         ; [CPU_ALU] |641| 
+        ; branchcc occurs ; [] |641| 
         MOVW      DP,#||motorVars||+32  ; [CPU_ARAU] 
-	.dwpsn	file "../sources/dual_axis_servo_drive_cpu.c",line 452,column 13,is_stmt,isa 0
-        MOVL      ACC,@||motorVars||+32 ; [CPU_ALU] |452| 
+	.dwpsn	file "../sources/dual_axis_servo_drive_cpu.c",line 647,column 21,is_stmt,isa 0
+        MOVL      ACC,@||motorVars||+32 ; [CPU_ALU] |647| 
+        MOVW      DP,#||motorVars||+436 ; [CPU_ARAU] 
+	.dwpsn	file "../sources/dual_axis_servo_drive_cpu.c",line 643,column 21,is_stmt,isa 0
+        MOV       @||motorVars||+436,#0 ; [CPU_ALU] |643| 
+        MOVW      DP,#||motorVars||+448 ; [CPU_ARAU] 
+	.dwpsn	file "../sources/dual_axis_servo_drive_cpu.c",line 646,column 21,is_stmt,isa 0
+        MOVB      @||motorVars||+448,#1,UNC ; [CPU_ALU] |646| 
         MOVW      DP,#||motorVars||+36  ; [CPU_ARAU] 
-        MOVL      @||motorVars||+36,ACC ; [CPU_ALU] |452| 
-        B         ||$C$L20||,UNC        ; [CPU_ALU] 
-        ; branch occurs ; [] 
+	.dwpsn	file "../sources/dual_axis_servo_drive_cpu.c",line 647,column 21,is_stmt,isa 0
+        MOVL      @||motorVars||+36,ACC ; [CPU_ALU] |647| 
+        B         ||$C$L27||,UNC        ; [CPU_ALU] |647| 
+        ; branch occurs ; [] |647| 
+||$C$L18||:    
+	.dwpsn	file "../sources/dual_axis_servo_drive_cpu.c",line 618,column 13,is_stmt,isa 0
+        MOVL      XAR5,#||motorVars||   ; [CPU_ARAU] |618| 
+        MOVB      XAR0,#112             ; [CPU_ALU] |618| 
+        MOVB      XAR1,#90              ; [CPU_ALU] |618| 
+        MOVL      ACC,*+XAR5[AR0]       ; [CPU_ALU] |618| 
+	.dwpsn	file "C:/ti/C2000Ware_MotorControl_SDK_5_04_00_00/libraries/utilities/math_blocks/include/v4.3/rampgen.h",line 68,column 2,is_stmt,isa 0
+        MOVL      XAR4,XAR5             ; [CPU_ALU] |68| 
+        MOVB      XAR0,#92              ; [CPU_ALU] |68| 
+	.dwpsn	file "../sources/dual_axis_servo_drive_cpu.c",line 618,column 13,is_stmt,isa 0
+        MOVL      *+XAR5[AR1],ACC       ; [CPU_ALU] |618| 
+	.dwpsn	file "C:/ti/C2000Ware_MotorControl_SDK_5_04_00_00/libraries/utilities/math_blocks/include/v4.3/rampgen.h",line 68,column 2,is_stmt,isa 0
+        MOV32     R0H,*+XAR5[AR0]       ; [CPU_FPU] |68| 
+        MOVB      XAR1,#90              ; [CPU_ALU] |68| 
+        ADDB      XAR4,#94              ; [CPU_ALU] |68| 
+        MOV32     R1H,*+XAR5[AR1]       ; [CPU_FPU] |68| 
+        MPYF32    R1H,R1H,R0H           ; [CPU_FPU] |68| 
+        MOV32     R0H,*+XAR4[0]         ; [CPU_FPU] |68| 
+        ADDF32    R0H,R0H,R1H           ; [CPU_FPU] |68| 
+        MOVW      DP,#||motorVars||+94  ; [CPU_ARAU] 
+        MOV32     *+XAR4[0],R0H         ; [CPU_FPU] |68| 
+	.dwpsn	file "C:/ti/C2000Ware_MotorControl_SDK_5_04_00_00/libraries/utilities/math_blocks/include/v4.3/rampgen.h",line 71,column 2,is_stmt,isa 0
+        MOV32     R0H,@||motorVars||+94 ; [CPU_FPU] |71| 
+        CMPF32    R0H,#16256            ; [CPU_FPU] |71| 
+        MOVST0    ZF, NF                ; [CPU_FPU] |71| 
+        B         ||$C$L19||,GT         ; [CPU_ALU] |71| 
+        ; branchcc occurs ; [] |71| 
+	.dwpsn	file "C:/ti/C2000Ware_MotorControl_SDK_5_04_00_00/libraries/utilities/math_blocks/include/v4.3/rampgen.h",line 75,column 7,is_stmt,isa 0
+        CMPF32    R0H,#49024            ; [CPU_FPU] |75| 
+        MOVST0    ZF, NF                ; [CPU_FPU] |75| 
+        B         ||$C$L21||,GEQ        ; [CPU_ALU] |75| 
+        ; branchcc occurs ; [] |75| 
+	.dwpsn	file "C:/ti/C2000Ware_MotorControl_SDK_5_04_00_00/libraries/utilities/math_blocks/include/v4.3/rampgen.h",line 77,column 3,is_stmt,isa 0
+        ADDF32    R0H,R0H,#16256        ; [CPU_FPU] |77| 
+        B         ||$C$L20||,UNC        ; [CPU_ALU] |77| 
+        ; branch occurs ; [] |77| 
 ||$C$L19||:    
-	.dwpsn	file "../sources/dual_axis_servo_drive_cpu.c",line 482,column 9,is_stmt,isa 0
-        ZERO      R0H                   ; [CPU_FPU] |482| 
+	.dwpsn	file "C:/ti/C2000Ware_MotorControl_SDK_5_04_00_00/libraries/utilities/math_blocks/include/v4.3/rampgen.h",line 73,column 3,is_stmt,isa 0
+        ADDF32    R0H,R0H,#49024        ; [CPU_FPU] |73| 
+        NOP       ; [CPU_ALU] 
+        NOP       ; [CPU_ALU] 
+||$C$L20||:    
+        MOV32     @||motorVars||+94,R0H ; [CPU_FPU] |73| 
+||$C$L21||:    
+        MOVW      DP,#||motorVars||+44  ; [CPU_ARAU] 
+	.dwpsn	file "C:/ti/C2000Ware_MotorControl_SDK_5_04_00_00/libraries/utilities/math_blocks/include/v4.3/rampgen.h",line 80,column 2,is_stmt,isa 0
+        MOVB      XAR0,#94              ; [CPU_ALU] |80| 
+        MOVL      XAR4,#||motorVars||   ; [CPU_ARAU] |80| 
+        MOVB      XAR1,#98              ; [CPU_ALU] |80| 
+	.dwpsn	file "../sources/dual_axis_servo_drive_cpu.c",line 621,column 13,is_stmt,isa 0
+        MOV32     R0H,@||motorVars||+44 ; [CPU_FPU] |621| 
+	.dwpsn	file "C:/ti/C2000Ware_MotorControl_SDK_5_04_00_00/libraries/utilities/math_blocks/include/v4.3/rampgen.h",line 80,column 2,is_stmt,isa 0
+        MOVL      ACC,*+XAR4[AR0]       ; [CPU_ALU] |80| 
+	.dwpsn	file "../sources/dual_axis_servo_drive_cpu.c",line 621,column 13,is_stmt,isa 0
+        CMPF32    R0H,#0                ; [CPU_FPU] |621| 
+        MOVST0    ZF, NF                ; [CPU_FPU] |621| 
+	.dwpsn	file "C:/ti/C2000Ware_MotorControl_SDK_5_04_00_00/libraries/utilities/math_blocks/include/v4.3/rampgen.h",line 80,column 2,is_stmt,isa 0
+        MOVL      *+XAR4[AR1],ACC       ; [CPU_ALU] |80| 
+	.dwpsn	file "../sources/dual_axis_servo_drive_cpu.c",line 621,column 13,is_stmt,isa 0
+        B         ||$C$L22||,GT         ; [CPU_ALU] |621| 
+        ; branchcc occurs ; [] |621| 
+        MOVIZ     R0H,#49024            ; [CPU_FPU] |621| 
+        B         ||$C$L23||,UNC        ; [CPU_ALU] |621| 
+        ; branch occurs ; [] |621| 
+||$C$L22||:    
+        MOVIZ     R0H,#16256            ; [CPU_FPU] |621| 
+||$C$L23||:    
+        MOVW      DP,#||motorVars||+48  ; [CPU_ARAU] 
+        MOV32     R1H,@||motorVars||+48 ; [CPU_FPU] |621| 
+        MPYF32    R0H,R0H,R1H           ; [CPU_FPU] |621| 
+        B         ||$C$L26||,UNC        ; [CPU_ALU] 
+        ; branch occurs ; [] 
+||$C$L24||:    
+        MOVW      DP,#||motorVars||+32  ; [CPU_ARAU] 
+	.dwpsn	file "../sources/dual_axis_servo_drive_cpu.c",line 610,column 13,is_stmt,isa 0
+        MOVL      XAR6,@||motorVars||+32 ; [CPU_ALU] |610| 
+        MOVW      DP,#||motorVars||+44  ; [CPU_ARAU] 
+	.dwpsn	file "../sources/dual_axis_servo_drive_cpu.c",line 611,column 13,is_stmt,isa 0
+        MOVL      ACC,@||motorVars||+44 ; [CPU_ALU] |611| 
         MOVW      DP,#||motorVars||+36  ; [CPU_ARAU] 
-        MOV32     @||motorVars||+36,R0H ; [CPU_FPU] |482| 
+	.dwpsn	file "../sources/dual_axis_servo_drive_cpu.c",line 610,column 13,is_stmt,isa 0
+        MOVL      @||motorVars||+36,XAR6 ; [CPU_ALU] |610| 
         MOVW      DP,#||motorVars||+102 ; [CPU_ARAU] 
+	.dwpsn	file "../sources/dual_axis_servo_drive_cpu.c",line 611,column 13,is_stmt,isa 0
+        MOVL      @||motorVars||+102,ACC ; [CPU_ALU] |611| 
+        B         ||$C$L27||,UNC        ; [CPU_ALU] 
+        ; branch occurs ; [] 
+||$C$L25||:    
+	.dwpsn	file "../sources/dual_axis_servo_drive_cpu.c",line 654,column 9,is_stmt,isa 0
+        ZERO      R0H                   ; [CPU_FPU] |654| 
+        MOVW      DP,#||motorVars||+36  ; [CPU_ARAU] 
+        MOV32     @||motorVars||+36,R0H ; [CPU_FPU] |654| 
 	.dwpsn	file "..\sources\fcl_foc_cpu_dm.h",line 320,column 5,is_stmt,isa 0
         ZERO      R7H                   ; [CPU_FPU] |320| 
+        MOVW      DP,#||motorVars||+286 ; [CPU_ARAU] 
 	.dwpsn	file "..\sources\fcl_foc_cpu_dm.h",line 321,column 5,is_stmt,isa 0
         ZERO      R6H                   ; [CPU_FPU] |321| 
-	.dwpsn	file "../sources/dual_axis_servo_drive_cpu.c",line 483,column 9,is_stmt,isa 0
-        MOV32     @||motorVars||+102,R0H ; [CPU_FPU] |483| 
 	.dwpsn	file "..\sources\fcl_foc_cpu_dm.h",line 323,column 5,is_stmt,isa 0
         ZERO      R5H                   ; [CPU_FPU] |323| 
 	.dwpsn	file "..\sources\fcl_foc_cpu_dm.h",line 325,column 5,is_stmt,isa 0
         ZERO      R4H                   ; [CPU_FPU] |325| 
 	.dwpsn	file "..\sources\fcl_foc_cpu_dm.h",line 326,column 5,is_stmt,isa 0
         ZERO      R3H                   ; [CPU_FPU] |326| 
-        MOVW      DP,#||motorVars||+286 ; [CPU_ARAU] 
+	.dwpsn	file "..\sources\fcl_foc_cpu_dm.h",line 316,column 5,is_stmt,isa 0
+        MOV32     @||motorVars||+286,R0H ; [CPU_FPU] |316| 
 	.dwpsn	file "..\sources\fcl_foc_cpu_dm.h",line 327,column 5,is_stmt,isa 0
         ZERO      R2H                   ; [CPU_FPU] |327| 
 	.dwpsn	file "..\sources\fcl_foc_cpu_dm.h",line 328,column 5,is_stmt,isa 0
         ZERO      R1H                   ; [CPU_FPU] |328| 
-	.dwpsn	file "..\sources\fcl_foc_cpu_dm.h",line 316,column 5,is_stmt,isa 0
-        MOV32     @||motorVars||+286,R0H ; [CPU_FPU] |316| 
         MOVW      DP,#||motorVars||+292 ; [CPU_ARAU] 
 	.dwpsn	file "..\sources\fcl_foc_cpu_dm.h",line 318,column 5,is_stmt,isa 0
         MOV32     @||motorVars||+292,R0H ; [CPU_FPU] |318| 
         MOVW      DP,#||motorVars||+294 ; [CPU_ARAU] 
 	.dwpsn	file "..\sources\fcl_foc_cpu_dm.h",line 319,column 5,is_stmt,isa 0
         MOV32     @||motorVars||+294,R0H ; [CPU_FPU] |319| 
-        MOVW      DP,#||motorVars||+448 ; [CPU_ARAU] 
-	.dwpsn	file "../sources/dual_axis_servo_drive_cpu.c",line 480,column 9,is_stmt,isa 0
-        MOV       @||motorVars||+448,#0 ; [CPU_ALU] |480| 
         MOVW      DP,#||motorVars||+290 ; [CPU_ARAU] 
 	.dwpsn	file "..\sources\fcl_foc_cpu_dm.h",line 320,column 5,is_stmt,isa 0
         MOV32     @||motorVars||+290,R7H ; [CPU_FPU] |320| 
@@ -1814,7 +1885,11 @@ $C$DW$63	.dwtag  DW_TAG_variable
         MOVW      DP,#||motorVars||+78  ; [CPU_ARAU] 
 	.dwpsn	file "..\sources\fcl_foc_cpu_dm.h",line 330,column 5,is_stmt,isa 0
         MOV32     @||motorVars||+78,R0H ; [CPU_FPU] |330| 
-||$C$L20||:    
+||$C$L26||:    
+        MOVW      DP,#||motorVars||+102 ; [CPU_ARAU] 
+	.dwpsn	file "../sources/dual_axis_servo_drive_cpu.c",line 655,column 9,is_stmt,isa 0
+        MOV32     @||motorVars||+102,R0H ; [CPU_FPU] |655| 
+||$C$L27||:    
 	.dwpsn	file "C:/ti/C2000Ware_MotorControl_SDK_5_04_00_00/libraries/utilities/math_blocks/include/v4.3/rmp_cntl.h",line 73,column 2,is_stmt,isa 0
         MOVB      XAR0,#102             ; [CPU_ALU] |73| 
         MOVL      XAR5,#||motorVars||   ; [CPU_ARAU] |73| 
@@ -1836,7 +1911,7 @@ $C$DW$63	.dwtag  DW_TAG_variable
         ABSF32    R1H,R1H               ; [CPU_FPU] |76| 
         CMPF32    R1H,R0H               ; [CPU_FPU] |76| 
         MOVST0    ZF, NF                ; [CPU_FPU] |76| 
-        B         ||$C$L23||,LT         ; [CPU_ALU] |76| 
+        B         ||$C$L30||,LT         ; [CPU_ALU] |76| 
         ; branchcc occurs ; [] |76| 
 	.dwpsn	file "C:/ti/C2000Ware_MotorControl_SDK_5_04_00_00/libraries/utilities/math_blocks/include/v4.3/rmp_cntl.h",line 83,column 3,is_stmt,isa 0
         MOVL      XAR4,XAR5             ; [CPU_ALU] |83| 
@@ -1850,7 +1925,7 @@ $C$DW$63	.dwtag  DW_TAG_variable
 	.dwpsn	file "C:/ti/C2000Ware_MotorControl_SDK_5_04_00_00/libraries/utilities/math_blocks/include/v4.3/rmp_cntl.h",line 85,column 3,is_stmt,isa 0
         MOVL      ACC,*+XAR5[AR0]       ; [CPU_ALU] |85| 
         CMPL      ACC,@||motorVars||+110 ; [CPU_ALU] |85| 
-        B         ||$C$L24||,HI         ; [CPU_ALU] |85| 
+        B         ||$C$L31||,HI         ; [CPU_ALU] |85| 
         ; branchcc occurs ; [] |85| 
         MOVW      DP,#||motorVars||+112 ; [CPU_ARAU] 
 	.dwpsn	file "C:/ti/C2000Ware_MotorControl_SDK_5_04_00_00/libraries/utilities/math_blocks/include/v4.3/rmp_cntl.h",line 87,column 4,is_stmt,isa 0
@@ -1859,7 +1934,7 @@ $C$DW$63	.dwtag  DW_TAG_variable
         MOV32     R1H,@||motorVars||+102 ; [CPU_FPU] |87| 
         CMPF32    R1H,R0H               ; [CPU_FPU] |87| 
         MOVST0    ZF, NF                ; [CPU_FPU] |87| 
-        B         ||$C$L21||,GEQ        ; [CPU_ALU] |87| 
+        B         ||$C$L28||,GEQ        ; [CPU_ALU] |87| 
         ; branchcc occurs ; [] |87| 
         MOVW      DP,#||motorVars||+112 ; [CPU_ARAU] 
 	.dwpsn	file "C:/ti/C2000Ware_MotorControl_SDK_5_04_00_00/libraries/utilities/math_blocks/include/v4.3/rmp_cntl.h",line 93,column 5,is_stmt,isa 0
@@ -1867,9 +1942,9 @@ $C$DW$63	.dwtag  DW_TAG_variable
         MOV32     R1H,@||motorVars||+112 ; [CPU_FPU] |93| 
         MOVXI     R0H,#55872            ; [CPU_FPU] |93| 
         SUBF32    R0H,R1H,R0H           ; [CPU_FPU] |93| 
-        B         ||$C$L22||,UNC        ; [CPU_ALU] |93| 
+        B         ||$C$L29||,UNC        ; [CPU_ALU] |93| 
         ; branch occurs ; [] |93| 
-||$C$L21||:    
+||$C$L28||:    
         MOVW      DP,#||motorVars||+112 ; [CPU_ARAU] 
 	.dwpsn	file "C:/ti/C2000Ware_MotorControl_SDK_5_04_00_00/libraries/utilities/math_blocks/include/v4.3/rmp_cntl.h",line 89,column 5,is_stmt,isa 0
         MOVIZ     R0H,#14207            ; [CPU_FPU] |89| 
@@ -1877,15 +1952,15 @@ $C$DW$63	.dwtag  DW_TAG_variable
         MOVXI     R0H,#55872            ; [CPU_FPU] |89| 
         ADDF32    R0H,R0H,R1H           ; [CPU_FPU] |89| 
         NOP       ; [CPU_ALU] 
-||$C$L22||:    
+||$C$L29||:    
         MOV32     @||motorVars||+112,R0H ; [CPU_FPU] |89| 
 	.dwpsn	file "C:/ti/C2000Ware_MotorControl_SDK_5_04_00_00/libraries/utilities/math_blocks/include/v4.3/rmp_cntl.h",line 96,column 4,is_stmt,isa 0
         MOVB      ACC,#0                ; [CPU_ALU] |96| 
         MOVW      DP,#||motorVars||+110 ; [CPU_ARAU] 
         MOVL      @||motorVars||+110,ACC ; [CPU_ALU] |96| 
-        B         ||$C$L24||,UNC        ; [CPU_ALU] |96| 
+        B         ||$C$L31||,UNC        ; [CPU_ALU] |96| 
         ; branch occurs ; [] |96| 
-||$C$L23||:    
+||$C$L30||:    
 	.dwpsn	file "C:/ti/C2000Ware_MotorControl_SDK_5_04_00_00/libraries/utilities/math_blocks/include/v4.3/rmp_cntl.h",line 101,column 6,is_stmt,isa 0
         MOVL      XAR4,#||motorVars||   ; [CPU_ARAU] |101| 
         MOVB      XAR0,#102             ; [CPU_ALU] |101| 
@@ -1899,97 +1974,46 @@ $C$DW$63	.dwtag  DW_TAG_variable
         MOV       AL,#65535             ; [CPU_ALU] |102| 
         MOV       AH,#32767             ; [CPU_ALU] |102| 
         MOVL      *+XAR4[AR0],ACC       ; [CPU_ALU] |102| 
-||$C$L24||:    
+||$C$L31||:    
 	.dwpsn	file "C:/ti/C2000Ware_MotorControl_SDK_5_04_00_00/libraries/utilities/math_blocks/include/v4.3/rmp_cntl.h",line 106,column 5,is_stmt,isa 0
         MOVB      XAR0,#112             ; [CPU_ALU] |106| 
-        MOV32     R0H,*+XAR5[AR0]       ; [CPU_FPU] |106| 
-        MOVB      XAR0,#108             ; [CPU_ALU] |106| 
-	.dwpsn	file "C:/ti/C2000Ware_MotorControl_SDK_5_04_00_00/libraries/utilities/math_blocks/include/v4.3/rampgen.h",line 68,column 2,is_stmt,isa 0
-        MOVL      XAR4,XAR5             ; [CPU_ALU] |68| 
-        MOVW      DP,#||motorVars||+112 ; [CPU_ARAU] 
-	.dwpsn	file "C:/ti/C2000Ware_MotorControl_SDK_5_04_00_00/libraries/utilities/math_blocks/include/v4.3/rmp_cntl.h",line 106,column 5,is_stmt,isa 0
-        MOV32     R2H,*+XAR5[AR0]       ; [CPU_FPU] |106| 
-        MOVB      XAR0,#106             ; [CPU_ALU] |106| 
-        MOV32     R1H,*+XAR5[AR0]       ; [CPU_FPU] |106| 
-	.dwpsn	file "../sources/dual_axis_servo_drive_cpu.c",line 493,column 5,is_stmt,isa 0
-        MOVB      XAR0,#112             ; [CPU_ALU] |493| 
-	.dwpsn	file "C:/ti/C2000Ware_MotorControl_SDK_5_04_00_00/libraries/utilities/math_blocks/include/v4.3/rmp_cntl.h",line 106,column 5,is_stmt,isa 0
-        MINF32    R0H,R2H               ; [CPU_FPU] |106| 
-	.dwpsn	file "C:/ti/C2000Ware_MotorControl_SDK_5_04_00_00/libraries/utilities/math_blocks/include/v4.3/rampgen.h",line 68,column 2,is_stmt,isa 0
-        ADDB      XAR4,#94              ; [CPU_ALU] |68| 
-	.dwpsn	file "C:/ti/C2000Ware_MotorControl_SDK_5_04_00_00/libraries/utilities/math_blocks/include/v4.3/rmp_cntl.h",line 106,column 5,is_stmt,isa 0
-        MAXF32    R0H,R1H               ; [CPU_FPU] |106| 
-        MOV32     @||motorVars||+112,R0H ; [CPU_FPU] |106| 
-	.dwpsn	file "../sources/dual_axis_servo_drive_cpu.c",line 493,column 5,is_stmt,isa 0
-        MOVL      ACC,*+XAR5[AR0]       ; [CPU_FPU] |493| 
-        MOVB      XAR0,#90              ; [CPU_FPU] |493| 
-        MOVL      *+XAR5[AR0],ACC       ; [CPU_FPU] |493| 
-	.dwpsn	file "C:/ti/C2000Ware_MotorControl_SDK_5_04_00_00/libraries/utilities/math_blocks/include/v4.3/rampgen.h",line 68,column 2,is_stmt,isa 0
-        MOVB      XAR0,#92              ; [CPU_FPU] |68| 
-        MOV32     R0H,*+XAR5[AR0]       ; [CPU_FPU] |68| 
-        MOVB      XAR0,#90              ; [CPU_FPU] |68| 
-        MOV32     R1H,*+XAR5[AR0]       ; [CPU_FPU] |68| 
-        MPYF32    R1H,R1H,R0H           ; [CPU_FPU] |68| 
-        MOV32     R0H,*+XAR4[0]         ; [CPU_FPU] |68| 
-        ADDF32    R0H,R0H,R1H           ; [CPU_FPU] |68| 
-        MOVW      DP,#||motorVars||+94  ; [CPU_ARAU] 
-        MOV32     *+XAR4[0],R0H         ; [CPU_FPU] |68| 
-	.dwpsn	file "C:/ti/C2000Ware_MotorControl_SDK_5_04_00_00/libraries/utilities/math_blocks/include/v4.3/rampgen.h",line 71,column 2,is_stmt,isa 0
-        MOV32     R0H,@||motorVars||+94 ; [CPU_FPU] |71| 
-        CMPF32    R0H,#16256            ; [CPU_FPU] |71| 
-        MOVST0    ZF, NF                ; [CPU_FPU] |71| 
-        B         ||$C$L25||,GT         ; [CPU_ALU] |71| 
-        ; branchcc occurs ; [] |71| 
-	.dwpsn	file "C:/ti/C2000Ware_MotorControl_SDK_5_04_00_00/libraries/utilities/math_blocks/include/v4.3/rampgen.h",line 75,column 7,is_stmt,isa 0
-        CMPF32    R0H,#49024            ; [CPU_FPU] |75| 
-        MOVST0    ZF, NF                ; [CPU_FPU] |75| 
-        B         ||$C$L27||,GEQ        ; [CPU_ALU] |75| 
-        ; branchcc occurs ; [] |75| 
-	.dwpsn	file "C:/ti/C2000Ware_MotorControl_SDK_5_04_00_00/libraries/utilities/math_blocks/include/v4.3/rampgen.h",line 77,column 3,is_stmt,isa 0
-        ADDF32    R0H,R0H,#16256        ; [CPU_FPU] |77| 
-        B         ||$C$L26||,UNC        ; [CPU_ALU] |77| 
-        ; branch occurs ; [] |77| 
-||$C$L25||:    
-	.dwpsn	file "C:/ti/C2000Ware_MotorControl_SDK_5_04_00_00/libraries/utilities/math_blocks/include/v4.3/rampgen.h",line 73,column 3,is_stmt,isa 0
-        ADDF32    R0H,R0H,#49024        ; [CPU_FPU] |73| 
-        NOP       ; [CPU_ALU] 
-        NOP       ; [CPU_ALU] 
-||$C$L26||:    
-        MOV32     @||motorVars||+94,R0H ; [CPU_FPU] |73| 
-||$C$L27||:    
         MOVW      DP,#||motorVars||+408 ; [CPU_ARAU] 
-	.dwpsn	file "C:/ti/C2000Ware_MotorControl_SDK_5_04_00_00/libraries/utilities/math_blocks/include/v4.3/rampgen.h",line 80,column 2,is_stmt,isa 0
-        MOVB      XAR0,#94              ; [CPU_ALU] |80| 
+        MOV32     R0H,*+XAR5[AR0]       ; [CPU_FPU] |106| 
 	.dwpsn	file "..\sources\fcl_foc_cpu_dm.h",line 834,column 22,is_stmt,isa 0
         MOVL      XAR4,@||motorVars||+408 ; [CPU_ALU] |834| 
-	.dwpsn	file "C:/ti/C2000Ware_MotorControl_SDK_5_04_00_00/libraries/utilities/math_blocks/include/v4.3/rampgen.h",line 80,column 2,is_stmt,isa 0
-        MOVL      XAR6,*+XAR5[AR0]      ; [CPU_ALU] |80| 
-        MOVB      XAR1,#98              ; [CPU_ALU] |80| 
+	.dwpsn	file "C:/ti/C2000Ware_MotorControl_SDK_5_04_00_00/libraries/utilities/math_blocks/include/v4.3/rmp_cntl.h",line 106,column 5,is_stmt,isa 0
+        MOVB      XAR0,#108             ; [CPU_ALU] |106| 
         MOVW      DP,#||motorVars||+448 ; [CPU_ARAU] 
+        MOV32     R2H,*+XAR5[AR0]       ; [CPU_FPU] |106| 
 	.dwpsn	file "..\sources\fcl_foc_cpu_dm.h",line 836,column 5,is_stmt,isa 0
         MOV       AL,@||motorVars||+448 ; [CPU_ALU] |836| 
-	.dwpsn	file "C:/ti/C2000Ware_MotorControl_SDK_5_04_00_00/libraries/utilities/math_blocks/include/v4.3/rampgen.h",line 80,column 2,is_stmt,isa 0
-        MOVL      *+XAR5[AR1],XAR6      ; [CPU_ALU] |80| 
+	.dwpsn	file "C:/ti/C2000Ware_MotorControl_SDK_5_04_00_00/libraries/utilities/math_blocks/include/v4.3/rmp_cntl.h",line 106,column 5,is_stmt,isa 0
+        MOVB      XAR0,#106             ; [CPU_ALU] |106| 
+        MOVW      DP,#||motorVars||+112 ; [CPU_ARAU] 
+        MOV32     R1H,*+XAR5[AR0]       ; [CPU_FPU] |106| 
+        MINF32    R0H,R2H               ; [CPU_FPU] |106| 
+        MAXF32    R0H,R1H               ; [CPU_FPU] |106| 
+        MOV32     @||motorVars||+112,R0H ; [CPU_FPU] |106| 
 	.dwpsn	file "..\sources\fcl_foc_cpu_dm.h",line 836,column 5,is_stmt,isa 0
-        B         ||$C$L29||,EQ         ; [CPU_ALU] |836| 
+        B         ||$C$L33||,EQ         ; [CPU_ALU] |836| 
         ; branchcc occurs ; [] |836| 
 	.dwpsn	file "C:/ti/C2000Ware_MotorControl_SDK_5_04_00_00/c2000ware/driverlib/f28002x/driverlib/eqep.h",line 730,column 5,is_stmt,isa 0
         MOVB      XAR0,#25              ; [CPU_ALU] |730| 
         MOV       AL,*+XAR4[AR0]        ; [CPU_ALU] |730| 
 	.dwpsn	file "..\sources\fcl_foc_cpu_dm.h",line 839,column 9,is_stmt,isa 0
         TBIT      AL,#10                ; [CPU_ALU] |839| 
-        B         ||$C$L28||,NTC        ; [CPU_ALU] |839| 
+        B         ||$C$L32||,NTC        ; [CPU_ALU] |839| 
         ; branchcc occurs ; [] |839| 
 	.dwpsn	file "C:/ti/C2000Ware_MotorControl_SDK_5_04_00_00/c2000ware/driverlib/f28002x/driverlib/eqep.h",line 773,column 5,is_stmt,isa 0
         MOVB      XAR0,#26              ; [CPU_ALU] |773| 
         MOV       *+XAR4[AR0],#1024     ; [CPU_ALU] |773| 
-||$C$L28||:    
+||$C$L32||:    
 	.dwpsn	file "C:/ti/C2000Ware_MotorControl_SDK_5_04_00_00/c2000ware/driverlib/f28002x/driverlib/eqep.h",line 730,column 5,is_stmt,isa 0
         MOVB      XAR0,#25              ; [CPU_ALU] |730| 
         MOV       AL,*+XAR4[AR0]        ; [CPU_ALU] |730| 
 	.dwpsn	file "..\sources\fcl_foc_cpu_dm.h",line 847,column 9,is_stmt,isa 0
         TBIT      AL,#11                ; [CPU_ALU] |847| 
-        B         ||$C$L29||,NTC        ; [CPU_ALU] |847| 
+        B         ||$C$L33||,NTC        ; [CPU_ALU] |847| 
         ; branchcc occurs ; [] |847| 
 	.dwpsn	file "C:/ti/C2000Ware_MotorControl_SDK_5_04_00_00/c2000ware/driverlib/f28002x/driverlib/eqep.h",line 773,column 5,is_stmt,isa 0
         MOVB      XAR1,#26              ; [CPU_ALU] |773| 
@@ -2004,18 +2028,18 @@ $C$DW$63	.dwtag  DW_TAG_variable
 	.dwpsn	file "C:/ti/C2000Ware_MotorControl_SDK_5_04_00_00/c2000ware/driverlib/f28002x/driverlib/eqep.h",line 916,column 5,is_stmt,isa 0
         MOVB      XAR0,#28,NEQ          ; [CPU_ALU] |916| 
         MOVB      *+XAR4[AR0],#12,NEQ   ; [CPU_ALU] |916| 
-||$C$L29||:    
-	.dwpsn	file "../sources/dual_axis_servo_drive_cpu.c",line 505,column 5,is_stmt,isa 0
-        MOVL      XAR4,#||motorVars||   ; [CPU_ARAU] |505| 
-        MOVB      XAR0,#72              ; [CPU_ALU] |505| 
-        MOVB      XAR1,#174             ; [CPU_ALU] |505| 
-        MOVL      ACC,*+XAR4[AR0]       ; [CPU_ALU] |505| 
+||$C$L33||:    
+	.dwpsn	file "../sources/dual_axis_servo_drive_cpu.c",line 673,column 5,is_stmt,isa 0
+        MOVL      XAR4,#||motorVars||   ; [CPU_ARAU] |673| 
+        MOVB      XAR0,#80              ; [CPU_ALU] |673| 
+        MOVB      XAR1,#174             ; [CPU_ALU] |673| 
+        MOVL      ACC,*+XAR4[AR0]       ; [CPU_ALU] |673| 
         MOVW      DP,#||motorVars||+192 ; [CPU_ARAU] 
 	.dwpsn	file "C:/ti/C2000Ware_MotorControl_SDK_5_04_00_00/libraries/utilities/math_blocks/include/v4.3/speed_fr.h",line 76,column 2,is_stmt,isa 0
         MOVB      XAR0,#178             ; [CPU_ALU] |76| 
         MOV32     R0H,*+XAR4[AR0]       ; [CPU_FPU] |76| 
-	.dwpsn	file "../sources/dual_axis_servo_drive_cpu.c",line 505,column 5,is_stmt,isa 0
-        MOVL      *+XAR4[AR1],ACC       ; [CPU_ALU] |505| 
+	.dwpsn	file "../sources/dual_axis_servo_drive_cpu.c",line 673,column 5,is_stmt,isa 0
+        MOVL      *+XAR4[AR1],ACC       ; [CPU_ALU] |673| 
 	.dwpsn	file "C:/ti/C2000Ware_MotorControl_SDK_5_04_00_00/libraries/utilities/math_blocks/include/v4.3/speed_fr.h",line 76,column 2,is_stmt,isa 0
         MOVB      XAR0,#174             ; [CPU_ALU] |76| 
         MOV32     R1H,*+XAR4[AR0]       ; [CPU_FPU] |76| 
@@ -2026,53 +2050,55 @@ $C$DW$63	.dwtag  DW_TAG_variable
         MOV32     R0H,@||motorVars||+192 ; [CPU_FPU] |78| 
         CMPF32    R0H,#48896            ; [CPU_FPU] |78| 
         MOVST0    ZF, NF                ; [CPU_FPU] |78| 
-        B         ||$C$L30||,LT         ; [CPU_ALU] |78| 
+        B         ||$C$L34||,LT         ; [CPU_ALU] |78| 
         ; branchcc occurs ; [] |78| 
 	.dwpsn	file "C:/ti/C2000Ware_MotorControl_SDK_5_04_00_00/libraries/utilities/math_blocks/include/v4.3/speed_fr.h",line 82,column 7,is_stmt,isa 0
         CMPF32    R0H,#16128            ; [CPU_FPU] |82| 
         MOVST0    ZF, NF                ; [CPU_FPU] |82| 
-        B         ||$C$L32||,LEQ        ; [CPU_ALU] |82| 
+        B         ||$C$L36||,LEQ        ; [CPU_ALU] |82| 
         ; branchcc occurs ; [] |82| 
 	.dwpsn	file "C:/ti/C2000Ware_MotorControl_SDK_5_04_00_00/libraries/utilities/math_blocks/include/v4.3/speed_fr.h",line 84,column 3,is_stmt,isa 0
         ADDF32    R0H,R0H,#49024        ; [CPU_FPU] |84| 
-        B         ||$C$L31||,UNC        ; [CPU_ALU] |84| 
+        B         ||$C$L35||,UNC        ; [CPU_ALU] |84| 
         ; branch occurs ; [] |84| 
-||$C$L30||:    
+||$C$L34||:    
 	.dwpsn	file "C:/ti/C2000Ware_MotorControl_SDK_5_04_00_00/libraries/utilities/math_blocks/include/v4.3/speed_fr.h",line 80,column 3,is_stmt,isa 0
         ADDF32    R0H,R0H,#16256        ; [CPU_FPU] |80| 
         NOP       ; [CPU_ALU] 
         NOP       ; [CPU_ALU] 
-||$C$L31||:    
+||$C$L35||:    
         MOV32     @||motorVars||+192,R0H ; [CPU_FPU] |80| 
-||$C$L32||:    
-	.dwpsn	file "C:/ti/C2000Ware_MotorControl_SDK_5_04_00_00/libraries/utilities/math_blocks/include/v4.3/speed_fr.h",line 87,column 2,is_stmt,isa 0
-        MOVB      XAR0,#192             ; [CPU_ALU] |87| 
-        MOV32     R3H,*+XAR4[AR0]       ; [CPU_FPU] |87| 
-        MOVB      XAR0,#184             ; [CPU_ALU] |87| 
-        MOV32     R4H,*+XAR4[AR0]       ; [CPU_FPU] |87| 
-        MOVB      XAR0,#180             ; [CPU_ALU] |87| 
-        MOV32     R1H,*+XAR4[AR0]       ; [CPU_FPU] |87| 
-        MOVB      XAR0,#186             ; [CPU_ALU] |87| 
-        MOV32     R0H,*+XAR4[AR0]       ; [CPU_FPU] |87| 
-        MOVB      XAR0,#188             ; [CPU_ALU] |87| 
-
-        MOV32     R2H,*+XAR4[AR0]       ; [CPU_FPU] |87| 
-||      MPYF32    R3H,R4H,R3H           ; [CPU_FPU] |87| 
-
+||$C$L36||:    
 	.dwpsn	file "C:/ti/C2000Ware_MotorControl_SDK_5_04_00_00/libraries/utilities/math_blocks/include/v4.3/speed_fr.h",line 104,column 2,is_stmt,isa 0
         MOVB      XAR0,#174             ; [CPU_ALU] |104| 
+        MOVL      ACC,*+XAR4[AR0]       ; [CPU_ALU] |104| 
 	.dwpsn	file "C:/ti/C2000Ware_MotorControl_SDK_5_04_00_00/libraries/utilities/math_blocks/include/v4.3/speed_fr.h",line 87,column 2,is_stmt,isa 0
-        MPYF32    R0H,R1H,R0H           ; [CPU_FPU] |87| 
-	.dwpsn	file "C:/ti/C2000Ware_MotorControl_SDK_5_04_00_00/libraries/utilities/math_blocks/include/v4.3/speed_fr.h",line 104,column 2,is_stmt,isa 0
-        MOVL      XAR7,*+XAR4[AR0]      ; [CPU_ALU] |104| 
-	.dwpsn	file "C:/ti/C2000Ware_MotorControl_SDK_5_04_00_00/libraries/utilities/math_blocks/include/v4.3/speed_fr.h",line 87,column 2,is_stmt,isa 0
-        MPYF32    R1H,R3H,R2H           ; [CPU_FPU] |87| 
+        MOVB      XAR0,#192             ; [CPU_ALU] |87| 
+        MOV32     R0H,*+XAR4[AR0]       ; [CPU_FPU] |87| 
 	.dwpsn	file "C:/ti/C2000Ware_MotorControl_SDK_5_04_00_00/libraries/utilities/math_blocks/include/v4.3/speed_fr.h",line 104,column 2,is_stmt,isa 0
         MOVB      XAR1,#178             ; [CPU_ALU] |104| 
 	.dwpsn	file "C:/ti/C2000Ware_MotorControl_SDK_5_04_00_00/libraries/utilities/math_blocks/include/v4.3/speed_fr.h",line 87,column 2,is_stmt,isa 0
-        ADDF32    R0H,R0H,R1H           ; [CPU_FPU] |87| 
+        MOVB      XAR0,#184             ; [CPU_ALU] |87| 
+        MOV32     R2H,*+XAR4[AR0]       ; [CPU_FPU] |87| 
+        MOVB      XAR0,#180             ; [CPU_ALU] |87| 
+        MOV32     R1H,*+XAR4[AR0]       ; [CPU_FPU] |87| 
+        MOVB      XAR0,#186             ; [CPU_ALU] |87| 
+
+        MOV32     R0H,*+XAR4[AR0]       ; [CPU_FPU] |87| 
+||      MPYF32    R2H,R2H,R0H           ; [CPU_FPU] |87| 
+
+        MOVB      XAR0,#188             ; [CPU_ALU] |87| 
+
+        MOV32     R1H,*+XAR4[AR0]       ; [CPU_FPU] |87| 
+||      MPYF32    R0H,R1H,R0H           ; [CPU_FPU] |87| 
+
+        MPYF32    R1H,R2H,R1H           ; [CPU_FPU] |87| 
 	.dwpsn	file "C:/ti/C2000Ware_MotorControl_SDK_5_04_00_00/libraries/utilities/math_blocks/include/v4.3/speed_fr.h",line 104,column 2,is_stmt,isa 0
-        MOVL      *+XAR4[AR1],XAR7      ; [CPU_ALU] |104| 
+        MOVL      *+XAR4[AR1],ACC       ; [CPU_ALU] |104| 
+	.dwpsn	file "C:/ti/C2000Ware_MotorControl_SDK_5_04_00_00/libraries/utilities/math_blocks/include/v4.3/speed_fr.h",line 87,column 2,is_stmt,isa 0
+        ADDF32    R0H,R0H,R1H           ; [CPU_FPU] |87| 
+	.dwpsn	file "C:/ti/C2000Ware_MotorControl_SDK_5_04_00_00/libraries/utilities/math_blocks/include/v4.3/speed_fr.h",line 107,column 2,is_stmt,isa 0
+        MOVB      XAR0,#182             ; [CPU_ALU] |107| 
 	.dwpsn	file "C:/ti/C2000Ware_MotorControl_SDK_5_04_00_00/libraries/utilities/math_blocks/include/v4.3/speed_fr.h",line 87,column 2,is_stmt,isa 0
         MOV32     @||motorVars||+192,R0H ; [CPU_FPU] |87| 
         MOVW      DP,#||motorVars||+180 ; [CPU_ARAU] 
@@ -2080,66 +2106,241 @@ $C$DW$63	.dwtag  DW_TAG_variable
         MAXF32    R0H,#49024            ; [CPU_FPU] |94| 
         MINF32    R0H,#16256            ; [CPU_FPU] |94| 
         MOV32     @||motorVars||+180,R0H ; [CPU_FPU] |94| 
-	.dwpsn	file "../sources/dual_axis_servo_drive_cpu.c",line 511,column 5,is_stmt,isa 0
-        MOVL      XAR6,@||motorVars||+180 ; [CPU_ALU] |511| 
+	.dwpsn	file "C:/ti/C2000Ware_MotorControl_SDK_5_04_00_00/libraries/utilities/math_blocks/include/v4.3/speed_fr.h",line 107,column 2,is_stmt,isa 0
+        UI32TOF32 R0H,*+XAR4[AR0]       ; [CPU_FPU] |107| 
+        MOV32     R1H,@||motorVars||+180 ; [CPU_FPU] |107| 
+        MPYF32    R0H,R1H,R0H           ; [CPU_FPU] |107| 
+        MOVB      XAR0,#190             ; [CPU_ALU] |107| 
+        F32TOI32  R0H,R0H               ; [CPU_FPU] |107| 
+	.dwpsn	file "../sources/dual_axis_servo_drive_cpu.c",line 674,column 5,is_stmt,isa 0
+        MOVL      ACC,@||motorVars||+180 ; [CPU_ALU] |674| 
+	.dwpsn	file "C:/ti/C2000Ware_MotorControl_SDK_5_04_00_00/libraries/utilities/math_blocks/include/v4.3/speed_fr.h",line 107,column 2,is_stmt,isa 0
+        MOV32     *+XAR4[AR0],R0H       ; [CPU_FPU] |107| 
+	.dwpsn	file "../sources/dual_axis_servo_drive_cpu.c",line 674,column 5,is_stmt,isa 0
+        MOVB      XAR0,#76              ; [CPU_ALU] |674| 
+        MOVL      *+XAR4[AR0],ACC       ; [CPU_ALU] |674| 
+	.dwpsn	file "../sources/dual_axis_servo_drive_cpu.c",line 710,column 5,is_stmt,isa 0
+        MOVL      ACC,XAR4              ; [CPU_ALU] |710| 
+        ADD       ACC,#435 << 0         ; [CPU_ALU] |710| 
+        MOVL      XAR5,ACC              ; [CPU_ALU] |710| 
+	.dwpsn	file "../sources/dual_axis_servo_drive_cpu.c",line 712,column 5,is_stmt,isa 0
+        MOVL      XAR0,#434             ; [CPU_ALU] |712| 
+        MOV       AL,*+XAR4[AR0]        ; [CPU_ALU] |712| 
+        MOVL      XAR0,#435             ; [CPU_ALU] |712| 
+	.dwpsn	file "../sources/dual_axis_servo_drive_cpu.c",line 710,column 5,is_stmt,isa 0
+        INC       *+XAR5[0]             ; [CPU_ALU] |710| 
+	.dwpsn	file "../sources/dual_axis_servo_drive_cpu.c",line 712,column 5,is_stmt,isa 0
+        CMP       AL,*+XAR4[AR0]        ; [CPU_ALU] |712| 
+        B         ||$C$L39||,HI         ; [CPU_ALU] |712| 
+        ; branchcc occurs ; [] |712| 
+	.dwpsn	file "../sources/dual_axis_servo_drive_cpu.c",line 722,column 9,is_stmt,isa 0
+        MOVB      XAR0,#76              ; [CPU_ALU] |722| 
+        MOVB      XAR1,#224             ; [CPU_ALU] |722| 
+        MOVL      ACC,*+XAR4[AR0]       ; [CPU_ALU] |722| 
+        MOVW      DP,#||motorVars||+224 ; [CPU_ARAU] 
+	.dwpsn	file "C:/ti/C2000Ware_MotorControl_SDK_5_04_00_00/libraries/utilities/math_blocks/include/v4.3/pid_grando.h",line 148,column 5,is_stmt,isa 0
+        MOVB      XAR0,#224             ; [CPU_ALU] |148| 
+	.dwpsn	file "../sources/dual_axis_servo_drive_cpu.c",line 722,column 9,is_stmt,isa 0
+        MOVL      *+XAR4[AR1],ACC       ; [CPU_ALU] |722| 
+	.dwpsn	file "C:/ti/C2000Ware_MotorControl_SDK_5_04_00_00/libraries/utilities/math_blocks/include/v4.3/pid_grando.h",line 148,column 5,is_stmt,isa 0
+        MOV32     R0H,*+XAR4[AR0]       ; [CPU_FPU] |148| 
+	.dwpsn	file "C:/ti/C2000Ware_MotorControl_SDK_5_04_00_00/libraries/utilities/math_blocks/include/v4.3/pid_grando.h",line 151,column 5,is_stmt,isa 0
+        MOV32     R3H,@||motorVars||+224 ; [CPU_FPU] |151| 
+	.dwpsn	file "../sources/dual_axis_servo_drive_cpu.c",line 719,column 9,is_stmt,isa 0
+        MOVB      XAR0,#112             ; [CPU_ALU] |719| 
+        MOVL      ACC,*+XAR4[AR0]       ; [CPU_ALU] |719| 
+        MOVW      DP,#||motorVars||+222 ; [CPU_ARAU] 
+        MOVB      XAR0,#222             ; [CPU_ALU] |719| 
+        MOVL      *+XAR4[AR0],ACC       ; [CPU_ALU] |719| 
+	.dwpsn	file "C:/ti/C2000Ware_MotorControl_SDK_5_04_00_00/libraries/utilities/math_blocks/include/v4.3/pid_grando.h",line 148,column 5,is_stmt,isa 0
+        MOVB      XAR0,#222             ; [CPU_ALU] |148| 
+        MOV32     R2H,*+XAR4[AR0]       ; [CPU_FPU] |148| 
+        MOVB      XAR0,#232             ; [CPU_ALU] |148| 
+        MOV32     R1H,*+XAR4[AR0]       ; [CPU_FPU] |148| 
+	.dwpsn	file "C:/ti/C2000Ware_MotorControl_SDK_5_04_00_00/libraries/utilities/math_blocks/include/v4.3/pid_grando.h",line 158,column 5,is_stmt,isa 0
+        MOVB      XAR1,#226             ; [CPU_ALU] |158| 
+	.dwpsn	file "C:/ti/C2000Ware_MotorControl_SDK_5_04_00_00/libraries/utilities/math_blocks/include/v4.3/pid_grando.h",line 148,column 5,is_stmt,isa 0
+        MPYF32    R1H,R2H,R1H           ; [CPU_FPU] |148| 
+        MOVB      XAR0,#246             ; [CPU_ALU] |148| 
+
+        SUBF32    R0H,R1H,R0H           ; [CPU_FPU] |148| 
+||      MOV32     R4H,@||motorVars||+222 ; [CPU_FPU] |151| 
+
+        MOVW      DP,#||motorVars||+246 ; [CPU_ARAU] 
+        MOV32     *+XAR4[AR0],R0H       ; [CPU_FPU] |148| 
+	.dwpsn	file "C:/ti/C2000Ware_MotorControl_SDK_5_04_00_00/libraries/utilities/math_blocks/include/v4.3/pid_grando.h",line 151,column 5,is_stmt,isa 0
+        MOVL      XAR0,#260             ; [CPU_ALU] |151| 
+
+        MOV32     R2H,*+XAR4[AR0]       ; [CPU_FPU] |151| 
+||      SUBF32    R3H,R4H,R3H           ; [CPU_FPU] |151| 
+
+        MOVB      XAR0,#236             ; [CPU_ALU] |151| 
+
+        MPYF32    R2H,R3H,R2H           ; [CPU_FPU] |151| 
+||      MOV32     R1H,*+XAR4[AR0]       ; [CPU_FPU] |151| 
+
+	.dwpsn	file "C:/ti/C2000Ware_MotorControl_SDK_5_04_00_00/libraries/utilities/math_blocks/include/v4.3/pid_grando.h",line 158,column 5,is_stmt,isa 0
+        MOVB      XAR0,#242             ; [CPU_ALU] |158| 
+	.dwpsn	file "C:/ti/C2000Ware_MotorControl_SDK_5_04_00_00/libraries/utilities/math_blocks/include/v4.3/pid_grando.h",line 151,column 5,is_stmt,isa 0
+
+        MPYF32    R1H,R2H,R1H           ; [CPU_FPU] |151| 
+||      MOV32     R0H,*+XAR4[AR0]       ; [CPU_FPU] |158| 
+
+        MOVB      XAR0,#254             ; [CPU_ALU] |151| 
+        MOV32     R2H,*+XAR4[AR0]       ; [CPU_FPU] |151| 
+        ADDF32    R1H,R1H,R2H           ; [CPU_FPU] |151| 
+        MOVB      XAR0,#248             ; [CPU_ALU] |151| 
+        MOV32     *+XAR4[AR0],R1H       ; [CPU_FPU] |151| 
+	.dwpsn	file "C:/ti/C2000Ware_MotorControl_SDK_5_04_00_00/libraries/utilities/math_blocks/include/v4.3/pid_grando.h",line 155,column 5,is_stmt,isa 0
+        MOVB      XAR0,#234             ; [CPU_ALU] |155| 
+        MOV32     R1H,@||motorVars||+246 ; [CPU_FPU] |155| 
+        MOVW      DP,#||motorVars||+248 ; [CPU_ARAU] 
+        MOV32     R2H,@||motorVars||+248 ; [CPU_FPU] |155| 
+	.dwpsn	file "C:/ti/C2000Ware_MotorControl_SDK_5_04_00_00/libraries/utilities/math_blocks/include/v4.3/pid_grando.h",line 152,column 5,is_stmt,isa 0
+        MOVL      ACC,@||motorVars||+248 ; [CPU_ALU] |152| 
+	.dwpsn	file "C:/ti/C2000Ware_MotorControl_SDK_5_04_00_00/libraries/utilities/math_blocks/include/v4.3/pid_grando.h",line 155,column 5,is_stmt,isa 0
+        ADDF32    R2H,R2H,R1H           ; [CPU_FPU] |155| 
+        MOVW      DP,#||motorVars||+252 ; [CPU_ARAU] 
+        MOV32     R1H,*+XAR4[AR0]       ; [CPU_FPU] |155| 
+        MPYF32    R1H,R2H,R1H           ; [CPU_FPU] |155| 
+        MOVB      XAR0,#252             ; [CPU_ALU] |155| 
+        MOV32     *+XAR4[AR0],R1H       ; [CPU_FPU] |155| 
+	.dwpsn	file "C:/ti/C2000Ware_MotorControl_SDK_5_04_00_00/libraries/utilities/math_blocks/include/v4.3/pid_grando.h",line 158,column 5,is_stmt,isa 0
+        MOVB      XAR0,#244             ; [CPU_ALU] |158| 
+        MOV32     R1H,@||motorVars||+252 ; [CPU_FPU] |158| 
+        MOV32     R2H,*+XAR4[AR0]       ; [CPU_FPU] |158| 
+        MINF32    R1H,R0H               ; [CPU_FPU] |158| 
+	.dwpsn	file "C:/ti/C2000Ware_MotorControl_SDK_5_04_00_00/libraries/utilities/math_blocks/include/v4.3/pid_grando.h",line 167,column 5,is_stmt,isa 0
+        MOV32     R0H,@||motorVars||+252 ; [CPU_FPU] |167| 
+	.dwpsn	file "C:/ti/C2000Ware_MotorControl_SDK_5_04_00_00/libraries/utilities/math_blocks/include/v4.3/pid_grando.h",line 158,column 5,is_stmt,isa 0
+        MAXF32    R1H,R2H               ; [CPU_FPU] |158| 
+        MOVW      DP,#||motorVars||+226 ; [CPU_ARAU] 
+        MOV32     *+XAR4[AR1],R1H       ; [CPU_FPU] |158| 
+	.dwpsn	file "C:/ti/C2000Ware_MotorControl_SDK_5_04_00_00/libraries/utilities/math_blocks/include/v4.3/pid_grando.h",line 167,column 5,is_stmt,isa 0
+        MOV32     R1H,@||motorVars||+226 ; [CPU_FPU] |167| 
+        MOVW      DP,#||motorVars||+254 ; [CPU_ARAU] 
+	.dwpsn	file "C:/ti/C2000Ware_MotorControl_SDK_5_04_00_00/libraries/utilities/math_blocks/include/v4.3/pid_grando.h",line 152,column 5,is_stmt,isa 0
+        MOVL      @||motorVars||+254,ACC ; [CPU_ALU] |152| 
+	.dwpsn	file "C:/ti/C2000Ware_MotorControl_SDK_5_04_00_00/libraries/utilities/math_blocks/include/v4.3/pid_grando.h",line 167,column 5,is_stmt,isa 0
+        CMPF32    R1H,R0H               ; [CPU_FPU] |167| 
+        MOVST0    ZF, NF                ; [CPU_FPU] |167| 
+        B         ||$C$L37||,EQ         ; [CPU_ALU] |167| 
+        ; branchcc occurs ; [] |167| 
+        ZERO      R0H                   ; [CPU_FPU] |167| 
+        B         ||$C$L38||,UNC        ; [CPU_ALU] |167| 
+        ; branch occurs ; [] |167| 
+||$C$L37||:    
+        MOVIZ     R0H,#16256            ; [CPU_FPU] |167| 
+||$C$L38||:    
+        MOVW      DP,#||motorVars||+260 ; [CPU_ARAU] 
+        MOV32     @||motorVars||+260,R0H ; [CPU_FPU] |167| 
+        MOVW      DP,#||motorVars||+435 ; [CPU_ARAU] 
+	.dwpsn	file "../sources/dual_axis_servo_drive_cpu.c",line 725,column 9,is_stmt,isa 0
+        MOV       @||motorVars||+435,#0 ; [CPU_ALU] |725| 
+||$C$L39||:    
         MOVW      DP,#||motorVars||+448 ; [CPU_ARAU] 
-	.dwpsn	file "../sources/dual_axis_servo_drive_cpu.c",line 516,column 5,is_stmt,isa 0
-        MOV       AL,@||motorVars||+448 ; [CPU_ALU] |516| 
-        MOVW      DP,#||motorVars||+76  ; [CPU_ARAU] 
-	.dwpsn	file "../sources/dual_axis_servo_drive_cpu.c",line 511,column 5,is_stmt,isa 0
-        MOVL      @||motorVars||+76,XAR6 ; [CPU_ALU] |511| 
-	.dwpsn	file "../sources/dual_axis_servo_drive_cpu.c",line 516,column 5,is_stmt,isa 0
-        B         ||$C$L33||,NEQ        ; [CPU_ALU] |516| 
-        ; branchcc occurs ; [] |516| 
-        ZERO      R3H                   ; [CPU_FPU] |516| 
-        B         ||$C$L34||,UNC        ; [CPU_ALU] |516| 
-        ; branch occurs ; [] |516| 
-||$C$L33||:    
+	.dwpsn	file "../sources/dual_axis_servo_drive_cpu.c",line 728,column 5,is_stmt,isa 0
+        MOV       AL,@||motorVars||+448 ; [CPU_ALU] |728| 
+        CMPB      AL,#2                 ; [CPU_ALU] |728| 
+        B         ||$C$L40||,NEQ        ; [CPU_ALU] |728| 
+        ; branchcc occurs ; [] |728| 
+        MOVW      DP,#||motorVars||+451 ; [CPU_ARAU] 
+        MOV       AH,@||motorVars||+451 ; [CPU_ALU] |728| 
+        B         ||$C$L41||,NEQ        ; [CPU_ALU] |728| 
+        ; branchcc occurs ; [] |728| 
+||$C$L40||:    
+	.dwpsn	file "../sources/dual_axis_servo_drive_cpu.c",line 731,column 9,is_stmt,isa 0
+        ZERO      R5H                   ; [CPU_FPU] |731| 
+        MOVW      DP,#||motorVars||+256 ; [CPU_ARAU] 
+	.dwpsn	file "../sources/dual_axis_servo_drive_cpu.c",line 732,column 9,is_stmt,isa 0
+        ZERO      R4H                   ; [CPU_FPU] |732| 
+	.dwpsn	file "../sources/dual_axis_servo_drive_cpu.c",line 733,column 9,is_stmt,isa 0
+        ZERO      R3H                   ; [CPU_FPU] |733| 
+	.dwpsn	file "../sources/dual_axis_servo_drive_cpu.c",line 734,column 9,is_stmt,isa 0
+        ZERO      R2H                   ; [CPU_FPU] |734| 
+	.dwpsn	file "../sources/dual_axis_servo_drive_cpu.c",line 731,column 9,is_stmt,isa 0
+        MOV32     @||motorVars||+256,R5H ; [CPU_FPU] |731| 
+	.dwpsn	file "../sources/dual_axis_servo_drive_cpu.c",line 735,column 9,is_stmt,isa 0
+        ZERO      R1H                   ; [CPU_FPU] |735| 
+	.dwpsn	file "../sources/dual_axis_servo_drive_cpu.c",line 736,column 9,is_stmt,isa 0
+        ZERO      R0H                   ; [CPU_FPU] |736| 
+        MOVW      DP,#||motorVars||+258 ; [CPU_ARAU] 
+	.dwpsn	file "../sources/dual_axis_servo_drive_cpu.c",line 732,column 9,is_stmt,isa 0
+        MOV32     @||motorVars||+258,R4H ; [CPU_FPU] |732| 
+        MOVW      DP,#||motorVars||+254 ; [CPU_ARAU] 
+	.dwpsn	file "../sources/dual_axis_servo_drive_cpu.c",line 733,column 9,is_stmt,isa 0
+        MOV32     @||motorVars||+254,R3H ; [CPU_FPU] |733| 
+        MOVW      DP,#||motorVars||+250 ; [CPU_ARAU] 
+	.dwpsn	file "../sources/dual_axis_servo_drive_cpu.c",line 734,column 9,is_stmt,isa 0
+        MOV32     @||motorVars||+250,R2H ; [CPU_FPU] |734| 
+        MOVW      DP,#||motorVars||+248 ; [CPU_ARAU] 
+	.dwpsn	file "../sources/dual_axis_servo_drive_cpu.c",line 735,column 9,is_stmt,isa 0
+        MOV32     @||motorVars||+248,R1H ; [CPU_FPU] |735| 
+        MOVW      DP,#||motorVars||+246 ; [CPU_ARAU] 
+	.dwpsn	file "../sources/dual_axis_servo_drive_cpu.c",line 736,column 9,is_stmt,isa 0
+        MOV32     @||motorVars||+246,R0H ; [CPU_FPU] |736| 
+||$C$L41||:    
+	.dwpsn	file "../sources/dual_axis_servo_drive_cpu.c",line 759,column 5,is_stmt,isa 0
+        CMPB      AL,#0                 ; [CPU_ALU] |759| 
+        B         ||$C$L43||,EQ         ; [CPU_ALU] |759| 
+        ; branchcc occurs ; [] |759| 
+        CMPB      AL,#1                 ; [CPU_ALU] |759| 
+        B         ||$C$L42||,NEQ        ; [CPU_ALU] |759| 
+        ; branchcc occurs ; [] |759| 
         MOVW      DP,#||motorVars||+38  ; [CPU_ARAU] 
-        MOV32     R3H,@||motorVars||+38 ; [CPU_FPU] |516| 
-||$C$L34||:    
+        MOV32     R0H,@||motorVars||+38 ; [CPU_FPU] |759| 
+        B         ||$C$L44||,UNC        ; [CPU_ALU] |759| 
+        ; branch occurs ; [] |759| 
+||$C$L42||:    
+        MOVW      DP,#||motorVars||+226 ; [CPU_ARAU] 
+        MOV32     R0H,@||motorVars||+226 ; [CPU_FPU] |759| 
+        B         ||$C$L44||,UNC        ; [CPU_ALU] |759| 
+        ; branch occurs ; [] |759| 
+||$C$L43||:    
+        ZERO      R0H                   ; [CPU_FPU] |759| 
+||$C$L44||:    
         MOVW      DP,#||motorVars||+286 ; [CPU_ARAU] 
 	.dwpsn	file "..\sources\dual_axis_servo_drive_cpu.h",line 168,column 1,is_stmt,isa 0
-        MOV32     R2H,@||motorVars||+286 ; [CPU_FPU] |168| 
+        MOV32     R3H,@||motorVars||+286 ; [CPU_FPU] |168| 
 	.dwpsn	file "..\sources\dual_axis_servo_drive_cpu.h",line 175,column 9,is_stmt,isa 0
-        MOVIZ     R1H,#14119            ; [CPU_FPU] |175| 
+        MOVIZ     R2H,#14119            ; [CPU_FPU] |175| 
         MOVW      DP,#||motorVars||+36  ; [CPU_ARAU] 
 	.dwpsn	file "..\sources\dual_axis_servo_drive_cpu.h",line 173,column 5,is_stmt,isa 0
-        MOV32     R0H,@||motorVars||+36 ; [CPU_FPU] |173| 
+        MOV32     R1H,@||motorVars||+36 ; [CPU_FPU] |173| 
 	.dwpsn	file "..\sources\dual_axis_servo_drive_cpu.h",line 175,column 9,is_stmt,isa 0
-        MOVXI     R1H,#50604            ; [CPU_FPU] |175| 
+        MOVXI     R2H,#50604            ; [CPU_FPU] |175| 
         MOVW      DP,#||motorVars||+318 ; [CPU_ARAU] 
 	.dwpsn	file "..\sources\dual_axis_servo_drive_cpu.h",line 173,column 5,is_stmt,isa 0
-        SUBF32    R4H,R0H,R2H           ; [CPU_FPU] |173| 
-	.dwpsn	file "../sources/dual_axis_servo_drive_cpu.c",line 516,column 5,is_stmt,isa 0
-        MOV32     @||motorVars||+318,R3H ; [CPU_FPU] |516| 
+        SUBF32    R4H,R1H,R3H           ; [CPU_FPU] |173| 
+	.dwpsn	file "../sources/dual_axis_servo_drive_cpu.c",line 759,column 5,is_stmt,isa 0
+        MOV32     @||motorVars||+318,R0H ; [CPU_FPU] |759| 
 	.dwpsn	file "..\sources\dual_axis_servo_drive_cpu.h",line 175,column 9,is_stmt,isa 0
-        CMPF32    R4H,R1H               ; [CPU_FPU] |175| 
+        CMPF32    R4H,R2H               ; [CPU_FPU] |175| 
         MOVST0    ZF, NF                ; [CPU_FPU] |175| 
-        B         ||$C$L35||,LEQ        ; [CPU_ALU] |175| 
+        B         ||$C$L45||,LEQ        ; [CPU_ALU] |175| 
         ; branchcc occurs ; [] |175| 
         MOVIZ     R0H,#14119            ; [CPU_FPU] |175| 
         MOVXI     R0H,#50604            ; [CPU_FPU] |175| 
-        ADDF32    R0H,R0H,R2H           ; [CPU_FPU] |175| 
-        B         ||$C$L36||,UNC        ; [CPU_ALU] |175| 
+        ADDF32    R1H,R0H,R3H           ; [CPU_FPU] |175| 
+        B         ||$C$L46||,UNC        ; [CPU_ALU] |175| 
         ; branch occurs ; [] |175| 
-||$C$L35||:    
-        MOVIZ     R1H,#46887            ; [CPU_FPU] |175| 
-        MOVXI     R1H,#50604            ; [CPU_FPU] |175| 
-        CMPF32    R4H,R1H               ; [CPU_FPU] |175| 
+||$C$L45||:    
+        MOVIZ     R0H,#46887            ; [CPU_FPU] |175| 
+        MOVXI     R0H,#50604            ; [CPU_FPU] |175| 
+        CMPF32    R4H,R0H               ; [CPU_FPU] |175| 
         MOVST0    ZF, NF                ; [CPU_FPU] |175| 
-        B         ||$C$L36||,GEQ        ; [CPU_ALU] |175| 
+        B         ||$C$L46||,GEQ        ; [CPU_ALU] |175| 
         ; branchcc occurs ; [] |175| 
         MOVIZ     R0H,#14119            ; [CPU_FPU] |175| 
         MOVXI     R0H,#50604            ; [CPU_FPU] |175| 
-        SUBF32    R0H,R2H,R0H           ; [CPU_FPU] |175| 
-||$C$L36||:    
+        SUBF32    R1H,R3H,R0H           ; [CPU_FPU] |175| 
+||$C$L46||:    
         MOVW      DP,#||motorVars||+416 ; [CPU_ARAU] 
 	.dwpsn	file "C:/ti/C2000Ware_MotorControl_SDK_5_04_00_00/c2000ware/driverlib/f28002x/driverlib/epwm.h",line 2188,column 5,is_stmt,isa 0
         MOVL      XAR4,@||motorVars||+416 ; [CPU_ALU] |2188| 
         MOVW      DP,#||motorVars||+286 ; [CPU_ARAU] 
-	.dwpsn	file "../sources/dual_axis_servo_drive_cpu.c",line 522,column 5,is_stmt,isa 0
-        MOV32     @||motorVars||+286,R0H ; [CPU_FPU] |522| 
+	.dwpsn	file "../sources/dual_axis_servo_drive_cpu.c",line 766,column 5,is_stmt,isa 0
+        MOV32     @||motorVars||+286,R1H ; [CPU_FPU] |766| 
         MOVW      DP,#||motorVars||+416 ; [CPU_ARAU] 
 	.dwpsn	file "C:/ti/C2000Ware_MotorControl_SDK_5_04_00_00/c2000ware/driverlib/f28002x/driverlib/epwm.h",line 2188,column 5,is_stmt,isa 0
         MOV       AH,*+XAR4[4]          ; [CPU_ALU] |2188| 
@@ -2152,7 +2353,7 @@ $C$DW$63	.dwtag  DW_TAG_variable
         MOV       @||motorVars||+433,AH ; [CPU_ALU] |237| 
 	.dwpsn	file "..\sources\dual_axis_servo_drive_cpu.h",line 275,column 5,is_stmt,isa 0
         CMP       AL,*+XAR4[4]          ; [CPU_ALU] |275| 
-        B         ||$C$L37||,LOS        ; [CPU_ALU] |275| 
+        B         ||$C$L47||,LOS        ; [CPU_ALU] |275| 
         ; branchcc occurs ; [] |275| 
 	.dwpsn	file "C:/ti/C2000Ware_MotorControl_SDK_5_04_00_00/c2000ware/driverlib/f28002x/driverlib/epwm.h",line 2408,column 5,is_stmt,isa 0
         MOVB      XAR0,#99              ; [CPU_ALU] |2408| 
@@ -2162,7 +2363,7 @@ $C$DW$63	.dwtag  DW_TAG_variable
         SUB       AH,AL                 ; [CPU_ALU] |277| 
         MOV       @||motorVars||+430,AH ; [CPU_ALU] |277| 
         MOV       AL,@||motorVars||+430 ; [CPU_ALU] 
-||$C$L37||:    
+||$C$L47||:    
         MOVW      DP,#||motorVars||+429 ; [CPU_ARAU] 
 	.dwpsn	file "..\sources\dual_axis_servo_drive_cpu.h",line 281,column 5,is_stmt,isa 0
         CMP       AL,@||motorVars||+429 ; [CPU_ALU] |281| 
@@ -2171,7 +2372,7 @@ $C$DW$63	.dwtag  DW_TAG_variable
         MOVW      DP,#||motorVars||+428 ; [CPU_ARAU] 
 	.dwpsn	file "..\sources\dual_axis_servo_drive_cpu.h",line 286,column 5,is_stmt,isa 0
         MOV       AL,@||motorVars||+428 ; [CPU_ALU] |286| 
-        B         ||$C$L38||,EQ         ; [CPU_ALU] |286| 
+        B         ||$C$L48||,EQ         ; [CPU_ALU] |286| 
         ; branchcc occurs ; [] |286| 
         MOVW      DP,#||motorVars||+429 ; [CPU_ARAU] 
 	.dwpsn	file "..\sources\dual_axis_servo_drive_cpu.h",line 288,column 9,is_stmt,isa 0
@@ -2179,7 +2380,7 @@ $C$DW$63	.dwtag  DW_TAG_variable
         MOVW      DP,#||motorVars||+428 ; [CPU_ARAU] 
 	.dwpsn	file "..\sources\dual_axis_servo_drive_cpu.h",line 289,column 9,is_stmt,isa 0
         MOV       @||motorVars||+428,#0 ; [CPU_ALU] |289| 
-||$C$L38||:    
+||$C$L48||:    
         MOVW      DP,#||motorVars||+429 ; [CPU_ARAU] 
 	.dwpsn	file "..\sources\dual_axis_servo_drive_cpu.h",line 293,column 5,is_stmt,isa 0
         MOVIZ     R0H,#15395            ; [CPU_FPU] |293| 
@@ -2194,7 +2395,7 @@ $C$DW$63	.dwtag  DW_TAG_variable
         MOV32     @||motorVars||+386,R0H ; [CPU_FPU] |293| 
 	.dwpsn	file "..\sources\dual_axis_servo_drive_cpu.h",line 247,column 5,is_stmt,isa 0
         CMP       AL,*+XAR4[4]          ; [CPU_ALU] |247| 
-        B         ||$C$L39||,LOS        ; [CPU_ALU] |247| 
+        B         ||$C$L49||,LOS        ; [CPU_ALU] |247| 
         ; branchcc occurs ; [] |247| 
 	.dwpsn	file "C:/ti/C2000Ware_MotorControl_SDK_5_04_00_00/c2000ware/driverlib/f28002x/driverlib/epwm.h",line 2408,column 5,is_stmt,isa 0
         MOVB      XAR0,#99              ; [CPU_ALU] |2408| 
@@ -2204,7 +2405,7 @@ $C$DW$63	.dwtag  DW_TAG_variable
         SUB       AH,AL                 ; [CPU_ALU] |249| 
         MOV       @||motorVars||+433,AH ; [CPU_ALU] |249| 
         MOV       AL,@||motorVars||+433 ; [CPU_ALU] 
-||$C$L39||:    
+||$C$L49||:    
         MOVW      DP,#||motorVars||+432 ; [CPU_ARAU] 
 	.dwpsn	file "..\sources\dual_axis_servo_drive_cpu.h",line 253,column 5,is_stmt,isa 0
         CMP       AL,@||motorVars||+432 ; [CPU_ALU] |253| 
@@ -2213,7 +2414,7 @@ $C$DW$63	.dwtag  DW_TAG_variable
         MOVW      DP,#||motorVars||+431 ; [CPU_ARAU] 
 	.dwpsn	file "..\sources\dual_axis_servo_drive_cpu.h",line 258,column 5,is_stmt,isa 0
         MOV       AL,@||motorVars||+431 ; [CPU_ALU] |258| 
-        B         ||$C$L40||,EQ         ; [CPU_ALU] |258| 
+        B         ||$C$L50||,EQ         ; [CPU_ALU] |258| 
         ; branchcc occurs ; [] |258| 
         MOVW      DP,#||motorVars||+432 ; [CPU_ARAU] 
 	.dwpsn	file "..\sources\dual_axis_servo_drive_cpu.h",line 260,column 9,is_stmt,isa 0
@@ -2221,40 +2422,40 @@ $C$DW$63	.dwtag  DW_TAG_variable
         MOVW      DP,#||motorVars||+431 ; [CPU_ARAU] 
 	.dwpsn	file "..\sources\dual_axis_servo_drive_cpu.h",line 261,column 9,is_stmt,isa 0
         MOV       @||motorVars||+431,#0 ; [CPU_ALU] |261| 
-||$C$L40||:    
+||$C$L50||:    
         MOVW      DP,#||motorVars||+432 ; [CPU_ARAU] 
 	.dwpsn	file "..\sources\dual_axis_servo_drive_cpu.h",line 265,column 5,is_stmt,isa 0
         UI16TOF32 R1H,@||motorVars||+432 ; [CPU_FPU] |265| 
         MOVIZ     R0H,#15395            ; [CPU_FPU] |265| 
         MOVW      DP,#||motorVars||+72  ; [CPU_ARAU] 
-	.dwpsn	file "../sources/dual_axis_servo_drive_cpu.c",line 1092,column 5,is_stmt,isa 0
-        MOVL      XAR6,@||motorVars||+72 ; [CPU_ALU] |1092| 
-        MOVW      DP,#||motorVars||+98  ; [CPU_ARAU] 
+	.dwpsn	file "../sources/dual_axis_servo_drive_cpu.c",line 1118,column 5,is_stmt,isa 0
+        MOVL      XAR6,@||motorVars||+72 ; [CPU_ALU] |1118| 
+        MOVW      DP,#||motorVars||+180 ; [CPU_ARAU] 
 	.dwpsn	file "..\sources\dual_axis_servo_drive_cpu.h",line 265,column 5,is_stmt,isa 0
         MOVXI     R0H,#55050            ; [CPU_FPU] |265| 
-	.dwpsn	file "../sources/dual_axis_servo_drive_cpu.c",line 1096,column 5,is_stmt,isa 0
-        MOVL      XAR4,#||dlog_2ch1||   ; [CPU_ARAU] |1096| 
-	.dwpsn	file "../sources/dual_axis_servo_drive_cpu.c",line 1093,column 5,is_stmt,isa 0
-        MOVL      ACC,@||motorVars||+98 ; [CPU_ALU] |1093| 
+	.dwpsn	file "../sources/dual_axis_servo_drive_cpu.c",line 1122,column 5,is_stmt,isa 0
+        MOVL      XAR4,#||dlog_2ch1||   ; [CPU_ARAU] |1122| 
+	.dwpsn	file "../sources/dual_axis_servo_drive_cpu.c",line 1119,column 5,is_stmt,isa 0
+        MOVL      ACC,@||motorVars||+180 ; [CPU_ALU] |1119| 
         MOVW      DP,#||dlogCh1||       ; [CPU_ARAU] 
 	.dwpsn	file "..\sources\dual_axis_servo_drive_cpu.h",line 265,column 5,is_stmt,isa 0
         MPYF32    R0H,R0H,R1H           ; [CPU_FPU] |265| 
-	.dwpsn	file "../sources/dual_axis_servo_drive_cpu.c",line 1092,column 5,is_stmt,isa 0
-        MOVL      @||dlogCh1||,XAR6     ; [CPU_ALU] |1092| 
+	.dwpsn	file "../sources/dual_axis_servo_drive_cpu.c",line 1118,column 5,is_stmt,isa 0
+        MOVL      @||dlogCh1||,XAR6     ; [CPU_ALU] |1118| 
         MOVW      DP,#||dlogCh2||       ; [CPU_ARAU] 
-	.dwpsn	file "../sources/dual_axis_servo_drive_cpu.c",line 1093,column 5,is_stmt,isa 0
-        MOVL      @||dlogCh2||,ACC      ; [CPU_ALU] |1093| 
+	.dwpsn	file "../sources/dual_axis_servo_drive_cpu.c",line 1119,column 5,is_stmt,isa 0
+        MOVL      @||dlogCh2||,ACC      ; [CPU_ALU] |1119| 
         MOVW      DP,#||motorVars||+388 ; [CPU_ARAU] 
 	.dwpsn	file "..\sources\dual_axis_servo_drive_cpu.h",line 265,column 5,is_stmt,isa 0
         MOV32     @||motorVars||+388,R0H ; [CPU_FPU] |265| 
-	.dwpsn	file "../sources/dual_axis_servo_drive_cpu.c",line 1096,column 5,is_stmt,isa 0
+	.dwpsn	file "../sources/dual_axis_servo_drive_cpu.c",line 1122,column 5,is_stmt,isa 0
 $C$DW$64	.dwtag  DW_TAG_TI_branch
 	.dwattr $C$DW$64, DW_AT_low_pc(0x00)
 	.dwattr $C$DW$64, DW_AT_name("DLOG_2CH_F_FUNC")
 	.dwattr $C$DW$64, DW_AT_TI_call
 
-        LCR       #||DLOG_2CH_F_FUNC||  ; [CPU_ALU] |1096| 
-        ; call occurs [#||DLOG_2CH_F_FUNC||] ; [] |1096| 
+        LCR       #||DLOG_2CH_F_FUNC||  ; [CPU_ALU] |1122| 
+        ; call occurs [#||DLOG_2CH_F_FUNC||] ; [] |1122| 
         MOVW      DP,#||halMtrHandle||  ; [CPU_ARAU] 
 	.dwpsn	file "C:/ti/C2000Ware_MotorControl_SDK_5_04_00_00/c2000ware/driverlib/f28002x/driverlib/epwm.h",line 5070,column 5,is_stmt,isa 0
         MOVL      XAR4,@||halMtrHandle|| ; [CPU_ALU] |5070| 
@@ -2336,7 +2537,7 @@ $C$DW$66	.dwtag  DW_TAG_subprogram
 	.dwfde $C$DW$CIE, ||__signbitl||
 $C$DW$67	.dwtag  DW_TAG_formal_parameter
 	.dwattr $C$DW$67, DW_AT_name("e")
-	.dwattr $C$DW$67, DW_AT_type(*$C$DW$T$208)
+	.dwattr $C$DW$67, DW_AT_type(*$C$DW$T$211)
 	.dwattr $C$DW$67, DW_AT_location[DW_OP_reg12]
 
 
@@ -2353,7 +2554,7 @@ $C$DW$67	.dwtag  DW_TAG_formal_parameter
 ;* AR4   assigned to e
 $C$DW$68	.dwtag  DW_TAG_variable
 	.dwattr $C$DW$68, DW_AT_name("e")
-	.dwattr $C$DW$68, DW_AT_type(*$C$DW$T$209)
+	.dwattr $C$DW$68, DW_AT_type(*$C$DW$T$212)
 	.dwattr $C$DW$68, DW_AT_location[DW_OP_reg12]
 
 	.dwcfi	cfa_offset, -2
@@ -2433,7 +2634,7 @@ $C$DW$72	.dwtag  DW_TAG_formal_parameter
 ;* R0    assigned to f
 $C$DW$73	.dwtag  DW_TAG_variable
 	.dwattr $C$DW$73, DW_AT_name("f")
-	.dwattr $C$DW$73, DW_AT_type(*$C$DW$T$200)
+	.dwattr $C$DW$73, DW_AT_type(*$C$DW$T$203)
 	.dwattr $C$DW$73, DW_AT_location[DW_OP_regx 0x2b]
 
 	.dwcfi	cfa_offset, -2
@@ -2478,7 +2679,7 @@ $C$DW$75	.dwtag  DW_TAG_subprogram
 	.dwfde $C$DW$CIE, ||__signbit||
 $C$DW$76	.dwtag  DW_TAG_formal_parameter
 	.dwattr $C$DW$76, DW_AT_name("d")
-	.dwattr $C$DW$76, DW_AT_type(*$C$DW$T$205)
+	.dwattr $C$DW$76, DW_AT_type(*$C$DW$T$208)
 	.dwattr $C$DW$76, DW_AT_location[DW_OP_reg12]
 
 
@@ -2495,7 +2696,7 @@ $C$DW$76	.dwtag  DW_TAG_formal_parameter
 ;* AR4   assigned to d
 $C$DW$77	.dwtag  DW_TAG_variable
 	.dwattr $C$DW$77, DW_AT_name("d")
-	.dwattr $C$DW$77, DW_AT_type(*$C$DW$T$206)
+	.dwattr $C$DW$77, DW_AT_type(*$C$DW$T$209)
 	.dwattr $C$DW$77, DW_AT_location[DW_OP_reg12]
 
 	.dwcfi	cfa_offset, -2
@@ -2575,7 +2776,7 @@ $C$DW$81	.dwtag  DW_TAG_formal_parameter
 ;* R0    assigned to x
 $C$DW$82	.dwtag  DW_TAG_variable
 	.dwattr $C$DW$82, DW_AT_name("x")
-	.dwattr $C$DW$82, DW_AT_type(*$C$DW$T$200)
+	.dwattr $C$DW$82, DW_AT_type(*$C$DW$T$203)
 	.dwattr $C$DW$82, DW_AT_location[DW_OP_regx 0x2b]
 
 	.dwcfi	cfa_offset, -2
@@ -2634,7 +2835,7 @@ $C$DW$85	.dwtag  DW_TAG_formal_parameter
 ;* R0    assigned to x
 $C$DW$86	.dwtag  DW_TAG_variable
 	.dwattr $C$DW$86, DW_AT_name("x")
-	.dwattr $C$DW$86, DW_AT_type(*$C$DW$T$200)
+	.dwattr $C$DW$86, DW_AT_type(*$C$DW$T$203)
 	.dwattr $C$DW$86, DW_AT_location[DW_OP_regx 0x2b]
 
 	.dwcfi	cfa_offset, -2
@@ -2702,13 +2903,13 @@ $C$DW$90	.dwtag  DW_TAG_formal_parameter
 ;* R0    assigned to x
 $C$DW$91	.dwtag  DW_TAG_variable
 	.dwattr $C$DW$91, DW_AT_name("x")
-	.dwattr $C$DW$91, DW_AT_type(*$C$DW$T$200)
+	.dwattr $C$DW$91, DW_AT_type(*$C$DW$T$203)
 	.dwattr $C$DW$91, DW_AT_location[DW_OP_regx 0x2b]
 
 ;* R1    assigned to y
 $C$DW$92	.dwtag  DW_TAG_variable
 	.dwattr $C$DW$92, DW_AT_name("y")
-	.dwattr $C$DW$92, DW_AT_type(*$C$DW$T$200)
+	.dwattr $C$DW$92, DW_AT_type(*$C$DW$T$203)
 	.dwattr $C$DW$92, DW_AT_location[DW_OP_regx 0x2f]
 
 ;* R0    assigned to iexp2f
@@ -2734,13 +2935,13 @@ $C$DW$93	.dwtag  DW_TAG_variable
 	.dwpsn	file "C:/ti/ccs2031/ccs/tools/compiler/ti-cgt-c2000_22.6.2.LTS/include/math.h",line 298,column 18,is_stmt,isa 0
         IEXP2F32  R0H,R1H               ; [CPU_FPU] |298| 
 	.dwpsn	file "C:/ti/ccs2031/ccs/tools/compiler/ti-cgt-c2000_22.6.2.LTS/include/math.h",line 299,column 19,is_stmt,isa 0
-        B         ||$C$L41||,LEQ        ; [CPU_ALU] |299| 
+        B         ||$C$L51||,LEQ        ; [CPU_ALU] |299| 
         ; branchcc occurs ; [] |299| 
         MOVIZ     R1H,#16256            ; [CPU_FPU] |299| 
         DIVF32    R0H,R1H,R0H           ; [CPU_FPU] |299| 
         NOP       ; [CPU_ALU] 
         NOP       ; [CPU_ALU] 
-||$C$L41||:    
+||$C$L51||:    
         SUBB      SP,#2                 ; [CPU_ARAU] 
 	.dwcfi	cfa_offset, -2
 $C$DW$94	.dwtag  DW_TAG_TI_branch
@@ -2792,7 +2993,7 @@ $C$DW$96	.dwtag  DW_TAG_formal_parameter
 ;* R0    assigned to x
 $C$DW$97	.dwtag  DW_TAG_variable
 	.dwattr $C$DW$97, DW_AT_name("x")
-	.dwattr $C$DW$97, DW_AT_type(*$C$DW$T$200)
+	.dwattr $C$DW$97, DW_AT_type(*$C$DW$T$203)
 	.dwattr $C$DW$97, DW_AT_location[DW_OP_regx 0x2b]
 
 	.dwcfi	cfa_offset, -2
@@ -2852,7 +3053,7 @@ $C$DW$100	.dwtag  DW_TAG_formal_parameter
 ;* R0    assigned to x
 $C$DW$101	.dwtag  DW_TAG_variable
 	.dwattr $C$DW$101, DW_AT_name("x")
-	.dwattr $C$DW$101, DW_AT_type(*$C$DW$T$200)
+	.dwattr $C$DW$101, DW_AT_type(*$C$DW$T$203)
 	.dwattr $C$DW$101, DW_AT_location[DW_OP_regx 0x2b]
 
 	.dwcfi	cfa_offset, -2
@@ -2915,13 +3116,13 @@ $C$DW$105	.dwtag  DW_TAG_formal_parameter
 ;* R0    assigned to y
 $C$DW$106	.dwtag  DW_TAG_variable
 	.dwattr $C$DW$106, DW_AT_name("y")
-	.dwattr $C$DW$106, DW_AT_type(*$C$DW$T$200)
+	.dwattr $C$DW$106, DW_AT_type(*$C$DW$T$203)
 	.dwattr $C$DW$106, DW_AT_location[DW_OP_regx 0x2b]
 
 ;* R1    assigned to x
 $C$DW$107	.dwtag  DW_TAG_variable
 	.dwattr $C$DW$107, DW_AT_name("x")
-	.dwattr $C$DW$107, DW_AT_type(*$C$DW$T$200)
+	.dwattr $C$DW$107, DW_AT_type(*$C$DW$T$203)
 	.dwattr $C$DW$107, DW_AT_location[DW_OP_regx 0x2f]
 
 	.dwcfi	cfa_offset, -2
@@ -2993,7 +3194,7 @@ $C$DW$111	.dwtag  DW_TAG_formal_parameter
 ;* R1    assigned to y
 $C$DW$112	.dwtag  DW_TAG_variable
 	.dwattr $C$DW$112, DW_AT_name("y")
-	.dwattr $C$DW$112, DW_AT_type(*$C$DW$T$200)
+	.dwattr $C$DW$112, DW_AT_type(*$C$DW$T$203)
 	.dwattr $C$DW$112, DW_AT_location[DW_OP_regx 0x2f]
 
 	.dwcfi	cfa_offset, -2
@@ -3054,7 +3255,7 @@ $C$DW$116	.dwtag  DW_TAG_formal_parameter
 ;* R1    assigned to y
 $C$DW$117	.dwtag  DW_TAG_variable
 	.dwattr $C$DW$117, DW_AT_name("y")
-	.dwattr $C$DW$117, DW_AT_type(*$C$DW$T$200)
+	.dwattr $C$DW$117, DW_AT_type(*$C$DW$T$203)
 	.dwattr $C$DW$117, DW_AT_location[DW_OP_regx 0x2f]
 
 	.dwcfi	cfa_offset, -2
@@ -3113,7 +3314,7 @@ $C$DW$120	.dwtag  DW_TAG_formal_parameter
 ;* R0    assigned to x
 $C$DW$121	.dwtag  DW_TAG_variable
 	.dwattr $C$DW$121, DW_AT_name("x")
-	.dwattr $C$DW$121, DW_AT_type(*$C$DW$T$200)
+	.dwattr $C$DW$121, DW_AT_type(*$C$DW$T$203)
 	.dwattr $C$DW$121, DW_AT_location[DW_OP_regx 0x2b]
 
 ;* R0    assigned to iexp2f
@@ -3137,13 +3338,13 @@ $C$DW$122	.dwtag  DW_TAG_variable
 	.dwpsn	file "C:/ti/ccs2031/ccs/tools/compiler/ti-cgt-c2000_22.6.2.LTS/include/math.h",line 298,column 18,is_stmt,isa 0
         IEXP2F32  R0H,R1H               ; [CPU_FPU] |298| 
 	.dwpsn	file "C:/ti/ccs2031/ccs/tools/compiler/ti-cgt-c2000_22.6.2.LTS/include/math.h",line 299,column 19,is_stmt,isa 0
-        B         ||$C$L42||,LEQ        ; [CPU_ALU] |299| 
+        B         ||$C$L52||,LEQ        ; [CPU_ALU] |299| 
         ; branchcc occurs ; [] |299| 
         MOVIZ     R1H,#16256            ; [CPU_FPU] |299| 
         DIVF32    R0H,R1H,R0H           ; [CPU_FPU] |299| 
         NOP       ; [CPU_ALU] 
         NOP       ; [CPU_ALU] 
-||$C$L42||:    
+||$C$L52||:    
         SUBB      SP,#2                 ; [CPU_ARAU] 
 	.dwcfi	cfa_offset, -2
 $C$DW$123	.dwtag  DW_TAG_TI_branch
@@ -3195,7 +3396,7 @@ $C$DW$125	.dwtag  DW_TAG_formal_parameter
 ;* R0    assigned to x
 $C$DW$126	.dwtag  DW_TAG_variable
 	.dwattr $C$DW$126, DW_AT_name("x")
-	.dwattr $C$DW$126, DW_AT_type(*$C$DW$T$200)
+	.dwattr $C$DW$126, DW_AT_type(*$C$DW$T$203)
 	.dwattr $C$DW$126, DW_AT_location[DW_OP_regx 0x2b]
 
 	.dwcfi	cfa_offset, -2
@@ -3255,7 +3456,7 @@ $C$DW$129	.dwtag  DW_TAG_formal_parameter
 ;* R0    assigned to x
 $C$DW$130	.dwtag  DW_TAG_variable
 	.dwattr $C$DW$130, DW_AT_name("x")
-	.dwattr $C$DW$130, DW_AT_type(*$C$DW$T$200)
+	.dwattr $C$DW$130, DW_AT_type(*$C$DW$T$203)
 	.dwattr $C$DW$130, DW_AT_location[DW_OP_regx 0x2b]
 
 	.dwcfi	cfa_offset, -2
@@ -3330,13 +3531,13 @@ $C$DW$134	.dwtag  DW_TAG_formal_parameter
 ;* R0    assigned to y
 $C$DW$135	.dwtag  DW_TAG_variable
 	.dwattr $C$DW$135, DW_AT_name("y")
-	.dwattr $C$DW$135, DW_AT_type(*$C$DW$T$200)
+	.dwattr $C$DW$135, DW_AT_type(*$C$DW$T$203)
 	.dwattr $C$DW$135, DW_AT_location[DW_OP_regx 0x2b]
 
 ;* R1    assigned to x
 $C$DW$136	.dwtag  DW_TAG_variable
 	.dwattr $C$DW$136, DW_AT_name("x")
-	.dwattr $C$DW$136, DW_AT_type(*$C$DW$T$200)
+	.dwattr $C$DW$136, DW_AT_type(*$C$DW$T$203)
 	.dwattr $C$DW$136, DW_AT_location[DW_OP_regx 0x2f]
 
 	.dwcfi	cfa_offset, -2
@@ -3388,7 +3589,7 @@ $C$DW$138	.dwtag  DW_TAG_subprogram
 	.dwfde $C$DW$CIE, ||__isnormall||
 $C$DW$139	.dwtag  DW_TAG_formal_parameter
 	.dwattr $C$DW$139, DW_AT_name("e")
-	.dwattr $C$DW$139, DW_AT_type(*$C$DW$T$208)
+	.dwattr $C$DW$139, DW_AT_type(*$C$DW$T$211)
 	.dwattr $C$DW$139, DW_AT_location[DW_OP_reg12]
 
 
@@ -3407,7 +3608,7 @@ $C$DW$139	.dwtag  DW_TAG_formal_parameter
 ;* AR4   assigned to e
 $C$DW$140	.dwtag  DW_TAG_variable
 	.dwattr $C$DW$140, DW_AT_name("e")
-	.dwattr $C$DW$140, DW_AT_type(*$C$DW$T$209)
+	.dwattr $C$DW$140, DW_AT_type(*$C$DW$T$212)
 	.dwattr $C$DW$140, DW_AT_location[DW_OP_reg12]
 
 	.dwcfi	cfa_offset, -2
@@ -3438,7 +3639,7 @@ $C$DW$141	.dwtag  DW_TAG_TI_branch
         ; call occurs [#||__c28xabi_cmpull||] ; [] |360| 
         MOVB      XAR6,#0               ; [CPU_ALU] |360| 
         CMPB      AL,#0                 ; [CPU_ALU] |360| 
-        B         ||$C$L43||,EQ         ; [CPU_ALU] |360| 
+        B         ||$C$L53||,EQ         ; [CPU_ALU] |360| 
         ; branchcc occurs ; [] |360| 
         MOVL      P,XAR5                ; [CPU_ALU] |360| 
         MOVL      ACC,XAR4              ; [CPU_ALU] |360| 
@@ -3449,7 +3650,7 @@ $C$DW$141	.dwtag  DW_TAG_TI_branch
         MOV       ACC,#32752            ; [CPU_ALU] |360| 
         CMPL      ACC,XAR7              ; [CPU_ALU] |360| 
         MOVB      XAR6,#1,NEQ           ; [CPU_ALU] |360| 
-||$C$L43||:    
+||$C$L53||:    
         SUBB      SP,#4                 ; [CPU_ARAU] 
 	.dwcfi	cfa_offset, -2
         MOV       AL,AR6                ; [CPU_ALU] |360| 
@@ -3504,7 +3705,7 @@ $C$DW$144	.dwtag  DW_TAG_formal_parameter
 ;* R0    assigned to f
 $C$DW$145	.dwtag  DW_TAG_variable
 	.dwattr $C$DW$145, DW_AT_name("f")
-	.dwattr $C$DW$145, DW_AT_type(*$C$DW$T$200)
+	.dwattr $C$DW$145, DW_AT_type(*$C$DW$T$203)
 	.dwattr $C$DW$145, DW_AT_location[DW_OP_regx 0x2b]
 
 	.dwcfi	cfa_offset, -2
@@ -3516,14 +3717,14 @@ $C$DW$145	.dwtag  DW_TAG_variable
         MOVB      XAR6,#0               ; [CPU_ALU] |356| 
         LSRL      ACC,T                 ; [CPU_ALU] |356| 
         ANDB      AL,#0xff              ; [CPU_ALU] |356| 
-        B         ||$C$L44||,EQ         ; [CPU_ALU] |356| 
+        B         ||$C$L54||,EQ         ; [CPU_ALU] |356| 
         ; branchcc occurs ; [] |356| 
         AND       AL,PH,#0x7f80         ; [CPU_ALU] |356| 
         MOVZ      AR7,AL                ; [CPU_ALU] |356| 
         MOV       ACC,#32640            ; [CPU_ALU] |356| 
         CMPL      ACC,XAR7              ; [CPU_ALU] |356| 
         MOVB      XAR6,#1,NEQ           ; [CPU_ALU] |356| 
-||$C$L44||:    
+||$C$L54||:    
         MOV       AL,AR6                ; [CPU_ALU] |356| 
 $C$DW$146	.dwtag  DW_TAG_TI_branch
 	.dwattr $C$DW$146, DW_AT_low_pc(0x00)
@@ -3557,7 +3758,7 @@ $C$DW$147	.dwtag  DW_TAG_subprogram
 	.dwfde $C$DW$CIE, ||__isnormal||
 $C$DW$148	.dwtag  DW_TAG_formal_parameter
 	.dwattr $C$DW$148, DW_AT_name("d")
-	.dwattr $C$DW$148, DW_AT_type(*$C$DW$T$205)
+	.dwattr $C$DW$148, DW_AT_type(*$C$DW$T$208)
 	.dwattr $C$DW$148, DW_AT_location[DW_OP_reg12]
 
 
@@ -3576,7 +3777,7 @@ $C$DW$148	.dwtag  DW_TAG_formal_parameter
 ;* AR4   assigned to d
 $C$DW$149	.dwtag  DW_TAG_variable
 	.dwattr $C$DW$149, DW_AT_name("d")
-	.dwattr $C$DW$149, DW_AT_type(*$C$DW$T$206)
+	.dwattr $C$DW$149, DW_AT_type(*$C$DW$T$209)
 	.dwattr $C$DW$149, DW_AT_location[DW_OP_reg12]
 
 	.dwcfi	cfa_offset, -2
@@ -3607,7 +3808,7 @@ $C$DW$150	.dwtag  DW_TAG_TI_branch
         ; call occurs [#||__c28xabi_cmpull||] ; [] |352| 
         MOVB      XAR6,#0               ; [CPU_ALU] |352| 
         CMPB      AL,#0                 ; [CPU_ALU] |352| 
-        B         ||$C$L45||,EQ         ; [CPU_ALU] |352| 
+        B         ||$C$L55||,EQ         ; [CPU_ALU] |352| 
         ; branchcc occurs ; [] |352| 
         MOVL      P,XAR5                ; [CPU_ALU] |352| 
         MOVL      ACC,XAR4              ; [CPU_ALU] |352| 
@@ -3618,7 +3819,7 @@ $C$DW$150	.dwtag  DW_TAG_TI_branch
         MOV       ACC,#32752            ; [CPU_ALU] |352| 
         CMPL      ACC,XAR7              ; [CPU_ALU] |352| 
         MOVB      XAR6,#1,NEQ           ; [CPU_ALU] |352| 
-||$C$L45||:    
+||$C$L55||:    
         SUBB      SP,#4                 ; [CPU_ARAU] 
 	.dwcfi	cfa_offset, -2
         MOV       AL,AR6                ; [CPU_ALU] |352| 
@@ -3654,7 +3855,7 @@ $C$DW$152	.dwtag  DW_TAG_subprogram
 	.dwfde $C$DW$CIE, ||__isnanl||
 $C$DW$153	.dwtag  DW_TAG_formal_parameter
 	.dwattr $C$DW$153, DW_AT_name("e")
-	.dwattr $C$DW$153, DW_AT_type(*$C$DW$T$208)
+	.dwattr $C$DW$153, DW_AT_type(*$C$DW$T$211)
 	.dwattr $C$DW$153, DW_AT_location[DW_OP_reg12]
 
 
@@ -3673,7 +3874,7 @@ $C$DW$153	.dwtag  DW_TAG_formal_parameter
 ;* AR4   assigned to e
 $C$DW$154	.dwtag  DW_TAG_variable
 	.dwattr $C$DW$154, DW_AT_name("e")
-	.dwattr $C$DW$154, DW_AT_type(*$C$DW$T$209)
+	.dwattr $C$DW$154, DW_AT_type(*$C$DW$T$212)
 	.dwattr $C$DW$154, DW_AT_location[DW_OP_reg12]
 
 	.dwcfi	cfa_offset, -2
@@ -3692,7 +3893,7 @@ $C$DW$154	.dwtag  DW_TAG_variable
         AND       PL,#0x7ff0            ; [CPU_ALU] |348| 
         MOV       ACC,#32752            ; [CPU_ALU] |348| 
         CMPL      ACC,P                 ; [CPU_ALU] |348| 
-        B         ||$C$L46||,NEQ        ; [CPU_ALU] |348| 
+        B         ||$C$L56||,NEQ        ; [CPU_ALU] |348| 
         ; branchcc occurs ; [] |348| 
         MOVL      ACC,XAR6              ; [CPU_ALU] |348| 
         MOVL      P,XAR7                ; [CPU_ALU] |348| 
@@ -3713,7 +3914,7 @@ $C$DW$155	.dwtag  DW_TAG_TI_branch
         ; call occurs [#||__c28xabi_cmpull||] ; [] |348| 
         CMPB      AL,#0                 ; [CPU_ALU] |348| 
         MOVB      XAR4,#1,NEQ           ; [CPU_ALU] |348| 
-||$C$L46||:    
+||$C$L56||:    
         SUBB      SP,#4                 ; [CPU_ARAU] 
 	.dwcfi	cfa_offset, -2
         MOV       AL,AR4                ; [CPU_ALU] |348| 
@@ -3768,7 +3969,7 @@ $C$DW$158	.dwtag  DW_TAG_formal_parameter
 ;* R0    assigned to f
 $C$DW$159	.dwtag  DW_TAG_variable
 	.dwattr $C$DW$159, DW_AT_name("f")
-	.dwattr $C$DW$159, DW_AT_type(*$C$DW$T$200)
+	.dwattr $C$DW$159, DW_AT_type(*$C$DW$T$203)
 	.dwattr $C$DW$159, DW_AT_location[DW_OP_regx 0x2b]
 
 	.dwcfi	cfa_offset, -2
@@ -3780,13 +3981,13 @@ $C$DW$159	.dwtag  DW_TAG_variable
         MOVB      XAR6,#0               ; [CPU_ALU] |345| 
         MOV       ACC,#32640            ; [CPU_ALU] |345| 
         CMPL      ACC,XAR7              ; [CPU_ALU] |345| 
-        B         ||$C$L47||,NEQ        ; [CPU_ALU] |345| 
+        B         ||$C$L57||,NEQ        ; [CPU_ALU] |345| 
         ; branchcc occurs ; [] |345| 
         MOVL      ACC,P                 ; [CPU_ALU] |345| 
         ANDB      AH,#127               ; [CPU_ALU] |345| 
         TEST      ACC                   ; [CPU_ALU] |345| 
         MOVB      XAR6,#1,NEQ           ; [CPU_ALU] |345| 
-||$C$L47||:    
+||$C$L57||:    
         MOV       AL,AR6                ; [CPU_ALU] |345| 
 $C$DW$160	.dwtag  DW_TAG_TI_branch
 	.dwattr $C$DW$160, DW_AT_low_pc(0x00)
@@ -3820,7 +4021,7 @@ $C$DW$161	.dwtag  DW_TAG_subprogram
 	.dwfde $C$DW$CIE, ||__isnan||
 $C$DW$162	.dwtag  DW_TAG_formal_parameter
 	.dwattr $C$DW$162, DW_AT_name("d")
-	.dwattr $C$DW$162, DW_AT_type(*$C$DW$T$205)
+	.dwattr $C$DW$162, DW_AT_type(*$C$DW$T$208)
 	.dwattr $C$DW$162, DW_AT_location[DW_OP_reg12]
 
 
@@ -3839,7 +4040,7 @@ $C$DW$162	.dwtag  DW_TAG_formal_parameter
 ;* AR4   assigned to d
 $C$DW$163	.dwtag  DW_TAG_variable
 	.dwattr $C$DW$163, DW_AT_name("d")
-	.dwattr $C$DW$163, DW_AT_type(*$C$DW$T$206)
+	.dwattr $C$DW$163, DW_AT_type(*$C$DW$T$209)
 	.dwattr $C$DW$163, DW_AT_location[DW_OP_reg12]
 
 	.dwcfi	cfa_offset, -2
@@ -3858,7 +4059,7 @@ $C$DW$163	.dwtag  DW_TAG_variable
         AND       PL,#0x7ff0            ; [CPU_ALU] |342| 
         MOV       ACC,#32752            ; [CPU_ALU] |342| 
         CMPL      ACC,P                 ; [CPU_ALU] |342| 
-        B         ||$C$L48||,NEQ        ; [CPU_ALU] |342| 
+        B         ||$C$L58||,NEQ        ; [CPU_ALU] |342| 
         ; branchcc occurs ; [] |342| 
         MOVL      ACC,XAR6              ; [CPU_ALU] |342| 
         MOVL      P,XAR7                ; [CPU_ALU] |342| 
@@ -3879,7 +4080,7 @@ $C$DW$164	.dwtag  DW_TAG_TI_branch
         ; call occurs [#||__c28xabi_cmpull||] ; [] |342| 
         CMPB      AL,#0                 ; [CPU_ALU] |342| 
         MOVB      XAR4,#1,NEQ           ; [CPU_ALU] |342| 
-||$C$L48||:    
+||$C$L58||:    
         SUBB      SP,#4                 ; [CPU_ARAU] 
 	.dwcfi	cfa_offset, -2
         MOV       AL,AR4                ; [CPU_ALU] |342| 
@@ -3915,7 +4116,7 @@ $C$DW$166	.dwtag  DW_TAG_subprogram
 	.dwfde $C$DW$CIE, ||__isinfl||
 $C$DW$167	.dwtag  DW_TAG_formal_parameter
 	.dwattr $C$DW$167, DW_AT_name("e")
-	.dwattr $C$DW$167, DW_AT_type(*$C$DW$T$208)
+	.dwattr $C$DW$167, DW_AT_type(*$C$DW$T$211)
 	.dwattr $C$DW$167, DW_AT_location[DW_OP_reg12]
 
 
@@ -3934,7 +4135,7 @@ $C$DW$167	.dwtag  DW_TAG_formal_parameter
 ;* AR4   assigned to e
 $C$DW$168	.dwtag  DW_TAG_variable
 	.dwattr $C$DW$168, DW_AT_name("e")
-	.dwattr $C$DW$168, DW_AT_type(*$C$DW$T$209)
+	.dwattr $C$DW$168, DW_AT_type(*$C$DW$T$212)
 	.dwattr $C$DW$168, DW_AT_location[DW_OP_reg12]
 
 	.dwcfi	cfa_offset, -2
@@ -3953,7 +4154,7 @@ $C$DW$168	.dwtag  DW_TAG_variable
         AND       PL,#0x7ff0            ; [CPU_ALU] |379| 
         MOV       ACC,#32752            ; [CPU_ALU] |379| 
         CMPL      ACC,P                 ; [CPU_ALU] |379| 
-        B         ||$C$L49||,NEQ        ; [CPU_ALU] |379| 
+        B         ||$C$L59||,NEQ        ; [CPU_ALU] |379| 
         ; branchcc occurs ; [] |379| 
         MOVL      ACC,XAR6              ; [CPU_ALU] |379| 
         MOVL      P,XAR7                ; [CPU_ALU] |379| 
@@ -3974,7 +4175,7 @@ $C$DW$169	.dwtag  DW_TAG_TI_branch
         ; call occurs [#||__c28xabi_cmpull||] ; [] |379| 
         CMPB      AL,#0                 ; [CPU_ALU] |379| 
         MOVB      XAR4,#1,EQ            ; [CPU_ALU] |379| 
-||$C$L49||:    
+||$C$L59||:    
         SUBB      SP,#4                 ; [CPU_ARAU] 
 	.dwcfi	cfa_offset, -2
         MOV       AL,AR4                ; [CPU_ALU] |379| 
@@ -4029,7 +4230,7 @@ $C$DW$172	.dwtag  DW_TAG_formal_parameter
 ;* R0    assigned to f
 $C$DW$173	.dwtag  DW_TAG_variable
 	.dwattr $C$DW$173, DW_AT_name("f")
-	.dwattr $C$DW$173, DW_AT_type(*$C$DW$T$200)
+	.dwattr $C$DW$173, DW_AT_type(*$C$DW$T$203)
 	.dwattr $C$DW$173, DW_AT_location[DW_OP_regx 0x2b]
 
 	.dwcfi	cfa_offset, -2
@@ -4041,13 +4242,13 @@ $C$DW$173	.dwtag  DW_TAG_variable
         MOVB      XAR6,#0               ; [CPU_ALU] |375| 
         MOV       ACC,#32640            ; [CPU_ALU] |375| 
         CMPL      ACC,XAR7              ; [CPU_ALU] |375| 
-        B         ||$C$L50||,NEQ        ; [CPU_ALU] |375| 
+        B         ||$C$L60||,NEQ        ; [CPU_ALU] |375| 
         ; branchcc occurs ; [] |375| 
         MOVL      ACC,P                 ; [CPU_ALU] |375| 
         ANDB      AH,#127               ; [CPU_ALU] |375| 
         TEST      ACC                   ; [CPU_ALU] |375| 
         MOVB      XAR6,#1,EQ            ; [CPU_ALU] |375| 
-||$C$L50||:    
+||$C$L60||:    
         MOV       AL,AR6                ; [CPU_ALU] |375| 
 $C$DW$174	.dwtag  DW_TAG_TI_branch
 	.dwattr $C$DW$174, DW_AT_low_pc(0x00)
@@ -4081,7 +4282,7 @@ $C$DW$175	.dwtag  DW_TAG_subprogram
 	.dwfde $C$DW$CIE, ||__isinf||
 $C$DW$176	.dwtag  DW_TAG_formal_parameter
 	.dwattr $C$DW$176, DW_AT_name("d")
-	.dwattr $C$DW$176, DW_AT_type(*$C$DW$T$205)
+	.dwattr $C$DW$176, DW_AT_type(*$C$DW$T$208)
 	.dwattr $C$DW$176, DW_AT_location[DW_OP_reg12]
 
 
@@ -4100,7 +4301,7 @@ $C$DW$176	.dwtag  DW_TAG_formal_parameter
 ;* AR4   assigned to d
 $C$DW$177	.dwtag  DW_TAG_variable
 	.dwattr $C$DW$177, DW_AT_name("d")
-	.dwattr $C$DW$177, DW_AT_type(*$C$DW$T$206)
+	.dwattr $C$DW$177, DW_AT_type(*$C$DW$T$209)
 	.dwattr $C$DW$177, DW_AT_location[DW_OP_reg12]
 
 	.dwcfi	cfa_offset, -2
@@ -4119,7 +4320,7 @@ $C$DW$177	.dwtag  DW_TAG_variable
         AND       PL,#0x7ff0            ; [CPU_ALU] |377| 
         MOV       ACC,#32752            ; [CPU_ALU] |377| 
         CMPL      ACC,P                 ; [CPU_ALU] |377| 
-        B         ||$C$L51||,NEQ        ; [CPU_ALU] |377| 
+        B         ||$C$L61||,NEQ        ; [CPU_ALU] |377| 
         ; branchcc occurs ; [] |377| 
         MOVL      ACC,XAR6              ; [CPU_ALU] |377| 
         MOVL      P,XAR7                ; [CPU_ALU] |377| 
@@ -4140,7 +4341,7 @@ $C$DW$178	.dwtag  DW_TAG_TI_branch
         ; call occurs [#||__c28xabi_cmpull||] ; [] |377| 
         CMPB      AL,#0                 ; [CPU_ALU] |377| 
         MOVB      XAR4,#1,EQ            ; [CPU_ALU] |377| 
-||$C$L51||:    
+||$C$L61||:    
         SUBB      SP,#4                 ; [CPU_ARAU] 
 	.dwcfi	cfa_offset, -2
         MOV       AL,AR4                ; [CPU_ALU] |377| 
@@ -4176,7 +4377,7 @@ $C$DW$180	.dwtag  DW_TAG_subprogram
 	.dwfde $C$DW$CIE, ||__isfinitel||
 $C$DW$181	.dwtag  DW_TAG_formal_parameter
 	.dwattr $C$DW$181, DW_AT_name("e")
-	.dwattr $C$DW$181, DW_AT_type(*$C$DW$T$208)
+	.dwattr $C$DW$181, DW_AT_type(*$C$DW$T$211)
 	.dwattr $C$DW$181, DW_AT_location[DW_OP_reg12]
 
 
@@ -4193,7 +4394,7 @@ $C$DW$181	.dwtag  DW_TAG_formal_parameter
 ;* AR4   assigned to e
 $C$DW$182	.dwtag  DW_TAG_variable
 	.dwattr $C$DW$182, DW_AT_name("e")
-	.dwattr $C$DW$182, DW_AT_type(*$C$DW$T$209)
+	.dwattr $C$DW$182, DW_AT_type(*$C$DW$T$212)
 	.dwattr $C$DW$182, DW_AT_location[DW_OP_reg12]
 
 	.dwcfi	cfa_offset, -2
@@ -4259,7 +4460,7 @@ $C$DW$185	.dwtag  DW_TAG_formal_parameter
 ;* R0    assigned to f
 $C$DW$186	.dwtag  DW_TAG_variable
 	.dwattr $C$DW$186, DW_AT_name("f")
-	.dwattr $C$DW$186, DW_AT_type(*$C$DW$T$200)
+	.dwattr $C$DW$186, DW_AT_type(*$C$DW$T$203)
 	.dwattr $C$DW$186, DW_AT_location[DW_OP_regx 0x2b]
 
 	.dwcfi	cfa_offset, -2
@@ -4305,7 +4506,7 @@ $C$DW$188	.dwtag  DW_TAG_subprogram
 	.dwfde $C$DW$CIE, ||__isfinite||
 $C$DW$189	.dwtag  DW_TAG_formal_parameter
 	.dwattr $C$DW$189, DW_AT_name("d")
-	.dwattr $C$DW$189, DW_AT_type(*$C$DW$T$205)
+	.dwattr $C$DW$189, DW_AT_type(*$C$DW$T$208)
 	.dwattr $C$DW$189, DW_AT_location[DW_OP_reg12]
 
 
@@ -4322,7 +4523,7 @@ $C$DW$189	.dwtag  DW_TAG_formal_parameter
 ;* AR4   assigned to d
 $C$DW$190	.dwtag  DW_TAG_variable
 	.dwattr $C$DW$190, DW_AT_name("d")
-	.dwattr $C$DW$190, DW_AT_type(*$C$DW$T$206)
+	.dwattr $C$DW$190, DW_AT_type(*$C$DW$T$209)
 	.dwattr $C$DW$190, DW_AT_location[DW_OP_reg12]
 
 	.dwcfi	cfa_offset, -2
@@ -4371,7 +4572,7 @@ $C$DW$192	.dwtag  DW_TAG_subprogram
 	.dwfde $C$DW$CIE, ||__fpclassifyl||
 $C$DW$193	.dwtag  DW_TAG_formal_parameter
 	.dwattr $C$DW$193, DW_AT_name("e")
-	.dwattr $C$DW$193, DW_AT_type(*$C$DW$T$208)
+	.dwattr $C$DW$193, DW_AT_type(*$C$DW$T$211)
 	.dwattr $C$DW$193, DW_AT_location[DW_OP_reg12]
 
 
@@ -4394,7 +4595,7 @@ $C$DW$194	.dwtag  DW_TAG_variable
 ;* AR4   assigned to e
 $C$DW$195	.dwtag  DW_TAG_variable
 	.dwattr $C$DW$195, DW_AT_name("e")
-	.dwattr $C$DW$195, DW_AT_type(*$C$DW$T$209)
+	.dwattr $C$DW$195, DW_AT_type(*$C$DW$T$212)
 	.dwattr $C$DW$195, DW_AT_location[DW_OP_reg12]
 
 	.dwcfi	cfa_offset, -2
@@ -4417,7 +4618,7 @@ $C$DW$195	.dwtag  DW_TAG_variable
         MOVZ      AR6,PL                ; [CPU_ALU] |436| 
         MOV       ACC,#32752            ; [CPU_ALU] |436| 
         CMPL      ACC,XAR6              ; [CPU_ALU] |436| 
-        B         ||$C$L53||,NEQ        ; [CPU_ALU] |436| 
+        B         ||$C$L63||,NEQ        ; [CPU_ALU] |436| 
         ; branchcc occurs ; [] |436| 
         MOVB      ACC,#0                ; [CPU_ALU] |436| 
         MOVL      *-SP[4],ACC           ; [CPU_ALU] |436| 
@@ -4437,16 +4638,16 @@ $C$DW$196	.dwtag  DW_TAG_TI_branch
         LCR       #||__c28xabi_cmpull|| ; [CPU_ALU] |436| 
         ; call occurs [#||__c28xabi_cmpull||] ; [] |436| 
         CMPB      AL,#0                 ; [CPU_ALU] |436| 
-        B         ||$C$L52||,EQ         ; [CPU_ALU] |436| 
+        B         ||$C$L62||,EQ         ; [CPU_ALU] |436| 
         ; branchcc occurs ; [] |436| 
         MOVB      AL,#2                 ; [CPU_ALU] |436| 
-        B         ||$C$L56||,UNC        ; [CPU_ALU] |436| 
+        B         ||$C$L66||,UNC        ; [CPU_ALU] |436| 
         ; branch occurs ; [] |436| 
-||$C$L52||:    
+||$C$L62||:    
         MOVB      AL,#1                 ; [CPU_ALU] |436| 
-        B         ||$C$L56||,UNC        ; [CPU_ALU] |436| 
+        B         ||$C$L66||,UNC        ; [CPU_ALU] |436| 
         ; branch occurs ; [] |436| 
-||$C$L53||:    
+||$C$L63||:    
         MOVB      XAR6,#0               ; [CPU_ALU] |436| 
         MOVL      P,XAR5                ; [CPU_ALU] |436| 
         MOVL      ACC,XAR4              ; [CPU_ALU] |436| 
@@ -4467,12 +4668,12 @@ $C$DW$197	.dwtag  DW_TAG_TI_branch
         LCR       #||__c28xabi_cmpull|| ; [CPU_ALU] |436| 
         ; call occurs [#||__c28xabi_cmpull||] ; [] |436| 
         CMPB      AL,#0                 ; [CPU_ALU] |436| 
-        B         ||$C$L54||,EQ         ; [CPU_ALU] |436| 
+        B         ||$C$L64||,EQ         ; [CPU_ALU] |436| 
         ; branchcc occurs ; [] |436| 
         MOV       AL,#-1                ; [CPU_ALU] |436| 
-        B         ||$C$L56||,UNC        ; [CPU_ALU] |436| 
+        B         ||$C$L66||,UNC        ; [CPU_ALU] |436| 
         ; branch occurs ; [] |436| 
-||$C$L54||:    
+||$C$L64||:    
         MOVL      *-SP[4],XAR6          ; [CPU_ALU] |436| 
         MOVL      ACC,XAR4              ; [CPU_ALU] |436| 
         MOVL      P,XAR5                ; [CPU_ALU] |436| 
@@ -4490,14 +4691,14 @@ $C$DW$198	.dwtag  DW_TAG_TI_branch
         LCR       #||__c28xabi_cmpull|| ; [CPU_ALU] |436| 
         ; call occurs [#||__c28xabi_cmpull||] ; [] |436| 
         CMPB      AL,#0                 ; [CPU_ALU] |436| 
-        B         ||$C$L55||,EQ         ; [CPU_ALU] |436| 
+        B         ||$C$L65||,EQ         ; [CPU_ALU] |436| 
         ; branchcc occurs ; [] |436| 
         MOV       AL,#-2                ; [CPU_ALU] |436| 
-        B         ||$C$L56||,UNC        ; [CPU_ALU] |436| 
+        B         ||$C$L66||,UNC        ; [CPU_ALU] |436| 
         ; branch occurs ; [] |436| 
-||$C$L55||:    
+||$C$L65||:    
         MOVB      AL,#0                 ; [CPU_ALU] |436| 
-||$C$L56||:    
+||$C$L66||:    
         SUBB      SP,#8                 ; [CPU_ARAU] 
 	.dwcfi	cfa_offset, -2
 $C$DW$199	.dwtag  DW_TAG_TI_branch
@@ -4550,7 +4751,7 @@ $C$DW$201	.dwtag  DW_TAG_formal_parameter
 ;* R0    assigned to f
 $C$DW$202	.dwtag  DW_TAG_variable
 	.dwattr $C$DW$202, DW_AT_name("f")
-	.dwattr $C$DW$202, DW_AT_type(*$C$DW$T$200)
+	.dwattr $C$DW$202, DW_AT_type(*$C$DW$T$203)
 	.dwattr $C$DW$202, DW_AT_location[DW_OP_regx 0x2b]
 
 	.dwcfi	cfa_offset, -2
@@ -4562,12 +4763,12 @@ $C$DW$202	.dwtag  DW_TAG_variable
         MOVZ      AR6,AL                ; [CPU_ALU] |402| 
         MOV       ACC,#32640            ; [CPU_ALU] |402| 
         CMPL      ACC,XAR6              ; [CPU_ALU] |402| 
-        B         ||$C$L58||,NEQ        ; [CPU_ALU] |402| 
+        B         ||$C$L68||,NEQ        ; [CPU_ALU] |402| 
         ; branchcc occurs ; [] |402| 
         MOVL      ACC,P                 ; [CPU_ALU] |402| 
         ANDB      AH,#127               ; [CPU_ALU] |402| 
         TEST      ACC                   ; [CPU_ALU] |402| 
-        B         ||$C$L57||,EQ         ; [CPU_ALU] |402| 
+        B         ||$C$L67||,EQ         ; [CPU_ALU] |402| 
         ; branchcc occurs ; [] |402| 
 	.dwcfi	remember_state
         MOVB      AL,#2                 ; [CPU_ALU] |402| 
@@ -4578,7 +4779,7 @@ $C$DW$203	.dwtag  DW_TAG_TI_branch
         LRETR     ; [CPU_ALU] 
         ; return occurs ; [] 
 	.dwcfi	restore_state
-||$C$L57||:    
+||$C$L67||:    
 	.dwcfi	remember_state
         MOVB      AL,#1                 ; [CPU_ALU] |402| 
 $C$DW$204	.dwtag  DW_TAG_TI_branch
@@ -4588,12 +4789,12 @@ $C$DW$204	.dwtag  DW_TAG_TI_branch
         LRETR     ; [CPU_ALU] 
         ; return occurs ; [] 
 	.dwcfi	restore_state
-||$C$L58||:    
+||$C$L68||:    
         MOVL      ACC,P                 ; [CPU_ALU] |402| 
         MOV       T,#23                 ; [CPU_ALU] |402| 
         LSRL      ACC,T                 ; [CPU_ALU] |402| 
         ANDB      AL,#0xff              ; [CPU_ALU] |402| 
-        B         ||$C$L59||,EQ         ; [CPU_ALU] |402| 
+        B         ||$C$L69||,EQ         ; [CPU_ALU] |402| 
         ; branchcc occurs ; [] |402| 
 	.dwcfi	remember_state
         MOV       AL,#-1                ; [CPU_ALU] |402| 
@@ -4604,11 +4805,11 @@ $C$DW$205	.dwtag  DW_TAG_TI_branch
         LRETR     ; [CPU_ALU] 
         ; return occurs ; [] 
 	.dwcfi	restore_state
-||$C$L59||:    
+||$C$L69||:    
         MOVL      ACC,P                 ; [CPU_ALU] |402| 
         ANDB      AH,#127               ; [CPU_ALU] |402| 
         TEST      ACC                   ; [CPU_ALU] |402| 
-        B         ||$C$L60||,EQ         ; [CPU_ALU] |402| 
+        B         ||$C$L70||,EQ         ; [CPU_ALU] |402| 
         ; branchcc occurs ; [] |402| 
 	.dwcfi	remember_state
         MOV       AL,#-2                ; [CPU_ALU] |402| 
@@ -4619,7 +4820,7 @@ $C$DW$206	.dwtag  DW_TAG_TI_branch
         LRETR     ; [CPU_ALU] 
         ; return occurs ; [] 
 	.dwcfi	restore_state
-||$C$L60||:    
+||$C$L70||:    
         MOVB      AL,#0                 ; [CPU_ALU] |402| 
 $C$DW$207	.dwtag  DW_TAG_TI_branch
 	.dwattr $C$DW$207, DW_AT_low_pc(0x00)
@@ -4653,7 +4854,7 @@ $C$DW$208	.dwtag  DW_TAG_subprogram
 	.dwfde $C$DW$CIE, ||__fpclassify||
 $C$DW$209	.dwtag  DW_TAG_formal_parameter
 	.dwattr $C$DW$209, DW_AT_name("d")
-	.dwattr $C$DW$209, DW_AT_type(*$C$DW$T$205)
+	.dwattr $C$DW$209, DW_AT_type(*$C$DW$T$208)
 	.dwattr $C$DW$209, DW_AT_location[DW_OP_reg12]
 
 
@@ -4676,7 +4877,7 @@ $C$DW$210	.dwtag  DW_TAG_variable
 ;* AR4   assigned to d
 $C$DW$211	.dwtag  DW_TAG_variable
 	.dwattr $C$DW$211, DW_AT_name("d")
-	.dwattr $C$DW$211, DW_AT_type(*$C$DW$T$206)
+	.dwattr $C$DW$211, DW_AT_type(*$C$DW$T$209)
 	.dwattr $C$DW$211, DW_AT_location[DW_OP_reg12]
 
 	.dwcfi	cfa_offset, -2
@@ -4699,7 +4900,7 @@ $C$DW$211	.dwtag  DW_TAG_variable
         MOVZ      AR6,PL                ; [CPU_ALU] |419| 
         MOV       ACC,#32752            ; [CPU_ALU] |419| 
         CMPL      ACC,XAR6              ; [CPU_ALU] |419| 
-        B         ||$C$L62||,NEQ        ; [CPU_ALU] |419| 
+        B         ||$C$L72||,NEQ        ; [CPU_ALU] |419| 
         ; branchcc occurs ; [] |419| 
         MOVB      ACC,#0                ; [CPU_ALU] |419| 
         MOVL      *-SP[4],ACC           ; [CPU_ALU] |419| 
@@ -4719,16 +4920,16 @@ $C$DW$212	.dwtag  DW_TAG_TI_branch
         LCR       #||__c28xabi_cmpull|| ; [CPU_ALU] |419| 
         ; call occurs [#||__c28xabi_cmpull||] ; [] |419| 
         CMPB      AL,#0                 ; [CPU_ALU] |419| 
-        B         ||$C$L61||,EQ         ; [CPU_ALU] |419| 
+        B         ||$C$L71||,EQ         ; [CPU_ALU] |419| 
         ; branchcc occurs ; [] |419| 
         MOVB      AL,#2                 ; [CPU_ALU] |419| 
-        B         ||$C$L65||,UNC        ; [CPU_ALU] |419| 
+        B         ||$C$L75||,UNC        ; [CPU_ALU] |419| 
         ; branch occurs ; [] |419| 
-||$C$L61||:    
+||$C$L71||:    
         MOVB      AL,#1                 ; [CPU_ALU] |419| 
-        B         ||$C$L65||,UNC        ; [CPU_ALU] |419| 
+        B         ||$C$L75||,UNC        ; [CPU_ALU] |419| 
         ; branch occurs ; [] |419| 
-||$C$L62||:    
+||$C$L72||:    
         MOVB      XAR6,#0               ; [CPU_ALU] |419| 
         MOVL      P,XAR5                ; [CPU_ALU] |419| 
         MOVL      ACC,XAR4              ; [CPU_ALU] |419| 
@@ -4749,12 +4950,12 @@ $C$DW$213	.dwtag  DW_TAG_TI_branch
         LCR       #||__c28xabi_cmpull|| ; [CPU_ALU] |419| 
         ; call occurs [#||__c28xabi_cmpull||] ; [] |419| 
         CMPB      AL,#0                 ; [CPU_ALU] |419| 
-        B         ||$C$L63||,EQ         ; [CPU_ALU] |419| 
+        B         ||$C$L73||,EQ         ; [CPU_ALU] |419| 
         ; branchcc occurs ; [] |419| 
         MOV       AL,#-1                ; [CPU_ALU] |419| 
-        B         ||$C$L65||,UNC        ; [CPU_ALU] |419| 
+        B         ||$C$L75||,UNC        ; [CPU_ALU] |419| 
         ; branch occurs ; [] |419| 
-||$C$L63||:    
+||$C$L73||:    
         MOVL      *-SP[4],XAR6          ; [CPU_ALU] |419| 
         MOVL      ACC,XAR4              ; [CPU_ALU] |419| 
         MOVL      P,XAR5                ; [CPU_ALU] |419| 
@@ -4772,14 +4973,14 @@ $C$DW$214	.dwtag  DW_TAG_TI_branch
         LCR       #||__c28xabi_cmpull|| ; [CPU_ALU] |419| 
         ; call occurs [#||__c28xabi_cmpull||] ; [] |419| 
         CMPB      AL,#0                 ; [CPU_ALU] |419| 
-        B         ||$C$L64||,EQ         ; [CPU_ALU] |419| 
+        B         ||$C$L74||,EQ         ; [CPU_ALU] |419| 
         ; branchcc occurs ; [] |419| 
         MOV       AL,#-2                ; [CPU_ALU] |419| 
-        B         ||$C$L65||,UNC        ; [CPU_ALU] |419| 
+        B         ||$C$L75||,UNC        ; [CPU_ALU] |419| 
         ; branch occurs ; [] |419| 
-||$C$L64||:    
+||$C$L74||:    
         MOVB      AL,#0                 ; [CPU_ALU] |419| 
-||$C$L65||:    
+||$C$L75||:    
         SUBB      SP,#8                 ; [CPU_ARAU] 
 	.dwcfi	cfa_offset, -2
 $C$DW$215	.dwtag  DW_TAG_TI_branch
@@ -4804,7 +5005,7 @@ $C$DW$216	.dwtag  DW_TAG_subprogram
 	.dwattr $C$DW$216, DW_AT_high_pc(0x00)
 	.dwattr $C$DW$216, DW_AT_linkage_name("__fast_lldiv")
 	.dwattr $C$DW$216, DW_AT_external
-	.dwattr $C$DW$216, DW_AT_type(*$C$DW$T$133)
+	.dwattr $C$DW$216, DW_AT_type(*$C$DW$T$134)
 	.dwattr $C$DW$216, DW_AT_decl_file("C:/ti/ccs2031/ccs/tools/compiler/ti-cgt-c2000_22.6.2.LTS/include/stdlib.h")
 	.dwattr $C$DW$216, DW_AT_decl_line(0x1ab)
 	.dwattr $C$DW$216, DW_AT_decl_column(0x12)
@@ -4896,12 +5097,12 @@ $C$DW$218	.dwtag  DW_TAG_formal_parameter
         MOV32     *-SP[8],R0H           ; [CPU_FPU] |429| 
         MOV32     *-SP[2],R2H           ; [CPU_FPU] |429| 
         MOV32     *-SP[4],R4H           ; [CPU_FPU] |429| 
-        B         ||$C$L66||,EQ         ; [CPU_ALU] |429| 
+        B         ||$C$L76||,EQ         ; [CPU_ALU] |429| 
         ; branchcc occurs ; [] |429| 
         MOVL      XAR4,ACC              ; [CPU_ALU] |429| 
         RPT       #7
 ||     PREAD     *XAR4++,*XAR7         ; [CPU_ALU] |429| 
-||$C$L66||:    
+||$C$L76||:    
         SUBB      SP,#8                 ; [CPU_ARAU] 
 	.dwcfi	cfa_offset, -6
         MOV32     R5H,*--SP             ; [CPU_FPU] 
@@ -4932,7 +5133,7 @@ $C$DW$220	.dwtag  DW_TAG_subprogram
 	.dwattr $C$DW$220, DW_AT_high_pc(0x00)
 	.dwattr $C$DW$220, DW_AT_linkage_name("__fast_ldiv")
 	.dwattr $C$DW$220, DW_AT_external
-	.dwattr $C$DW$220, DW_AT_type(*$C$DW$T$130)
+	.dwattr $C$DW$220, DW_AT_type(*$C$DW$T$131)
 	.dwattr $C$DW$220, DW_AT_decl_file("C:/ti/ccs2031/ccs/tools/compiler/ti-cgt-c2000_22.6.2.LTS/include/stdlib.h")
 	.dwattr $C$DW$220, DW_AT_decl_line(0x1a4)
 	.dwattr $C$DW$220, DW_AT_decl_column(0x11)
@@ -4964,7 +5165,7 @@ $C$DW$222	.dwtag  DW_TAG_formal_parameter
 ;* AR7   assigned to _numer
 $C$DW$223	.dwtag  DW_TAG_variable
 	.dwattr $C$DW$223, DW_AT_name("_numer")
-	.dwattr $C$DW$223, DW_AT_type(*$C$DW$T$188)
+	.dwattr $C$DW$223, DW_AT_type(*$C$DW$T$191)
 	.dwattr $C$DW$223, DW_AT_location[DW_OP_reg18]
 
 	.dwcfi	cfa_offset, -2
@@ -4993,12 +5194,12 @@ $C$DW$223	.dwtag  DW_TAG_variable
         NEGI32DIV32 R1H,R2H             ; [CPU_FPU] |422| 
         MOV32     *-SP[4],R1H           ; [CPU_FPU] |422| 
         MOV32     *-SP[2],R2H           ; [CPU_FPU] |422| 
-        B         ||$C$L67||,EQ         ; [CPU_ALU] |422| 
+        B         ||$C$L77||,EQ         ; [CPU_ALU] |422| 
         ; branchcc occurs ; [] |422| 
         MOVL      XAR4,ACC              ; [CPU_ALU] |422| 
         RPT       #3
 ||     PREAD     *XAR4++,*XAR7         ; [CPU_ALU] |422| 
-||$C$L67||:    
+||$C$L77||:    
         SUBB      SP,#4                 ; [CPU_ARAU] 
 	.dwcfi	cfa_offset, -2
 $C$DW$224	.dwtag  DW_TAG_TI_branch
@@ -5791,148 +5992,451 @@ $C$DW$TU$27	.dwtag  DW_TAG_type_unit
 	.dwmtype  $C$DW$T$27
 
 $C$DW$T$27	.dwtag  DW_TAG_structure_type
-	.dwattr $C$DW$T$27, DW_AT_byte_size(0x04)
+	.dwattr $C$DW$T$27, DW_AT_byte_size(0x0a)
 $C$DW$273	.dwtag  DW_TAG_member
-	.dwattr $C$DW$273, DW_AT_type(*$C$DW$T$12)
-	.dwattr $C$DW$273, DW_AT_name("quot")
+	.dwattr $C$DW$273, DW_AT_type(*$C$DW$T$19)
+	.dwattr $C$DW$273, DW_AT_name("Ref")
 	.dwattr $C$DW$273, DW_AT_accessibility(DW_ACCESS_public)
-	.dwattr $C$DW$273, DW_AT_decl_file("C:/ti/ccs2031/ccs/tools/compiler/ti-cgt-c2000_22.6.2.LTS/include/stdlib.h")
-	.dwattr $C$DW$273, DW_AT_decl_line(0x59)
-	.dwattr $C$DW$273, DW_AT_decl_column(0x17)
+	.dwattr $C$DW$273, DW_AT_decl_file("C:/ti/C2000Ware_MotorControl_SDK_5_04_00_00/libraries/utilities/math_blocks/include/v4.3/pid_grando.h")
+	.dwattr $C$DW$273, DW_AT_decl_line(0x2a)
+	.dwattr $C$DW$273, DW_AT_decl_column(0x1e)
 
 $C$DW$274	.dwtag  DW_TAG_member
-	.dwattr $C$DW$274, DW_AT_type(*$C$DW$T$12)
-	.dwattr $C$DW$274, DW_AT_name("rem")
+	.dwattr $C$DW$274, DW_AT_type(*$C$DW$T$19)
+	.dwattr $C$DW$274, DW_AT_name("Fbk")
 	.dwattr $C$DW$274, DW_AT_data_member_location[DW_OP_plus_uconst 0x2]
 	.dwattr $C$DW$274, DW_AT_accessibility(DW_ACCESS_public)
-	.dwattr $C$DW$274, DW_AT_decl_file("C:/ti/ccs2031/ccs/tools/compiler/ti-cgt-c2000_22.6.2.LTS/include/stdlib.h")
-	.dwattr $C$DW$274, DW_AT_decl_line(0x59)
-	.dwattr $C$DW$274, DW_AT_decl_column(0x1d)
+	.dwattr $C$DW$274, DW_AT_decl_file("C:/ti/C2000Ware_MotorControl_SDK_5_04_00_00/libraries/utilities/math_blocks/include/v4.3/pid_grando.h")
+	.dwattr $C$DW$274, DW_AT_decl_line(0x2b)
+	.dwattr $C$DW$274, DW_AT_decl_column(0x12)
 
-	.dwattr $C$DW$T$27, DW_AT_decl_file("C:/ti/ccs2031/ccs/tools/compiler/ti-cgt-c2000_22.6.2.LTS/include/stdlib.h")
-	.dwattr $C$DW$T$27, DW_AT_decl_line(0x59)
+$C$DW$275	.dwtag  DW_TAG_member
+	.dwattr $C$DW$275, DW_AT_type(*$C$DW$T$19)
+	.dwattr $C$DW$275, DW_AT_name("Out")
+	.dwattr $C$DW$275, DW_AT_data_member_location[DW_OP_plus_uconst 0x4]
+	.dwattr $C$DW$275, DW_AT_accessibility(DW_ACCESS_public)
+	.dwattr $C$DW$275, DW_AT_decl_file("C:/ti/C2000Ware_MotorControl_SDK_5_04_00_00/libraries/utilities/math_blocks/include/v4.3/pid_grando.h")
+	.dwattr $C$DW$275, DW_AT_decl_line(0x2c)
+	.dwattr $C$DW$275, DW_AT_decl_column(0x12)
+
+$C$DW$276	.dwtag  DW_TAG_member
+	.dwattr $C$DW$276, DW_AT_type(*$C$DW$T$19)
+	.dwattr $C$DW$276, DW_AT_name("c1")
+	.dwattr $C$DW$276, DW_AT_data_member_location[DW_OP_plus_uconst 0x6]
+	.dwattr $C$DW$276, DW_AT_accessibility(DW_ACCESS_public)
+	.dwattr $C$DW$276, DW_AT_decl_file("C:/ti/C2000Ware_MotorControl_SDK_5_04_00_00/libraries/utilities/math_blocks/include/v4.3/pid_grando.h")
+	.dwattr $C$DW$276, DW_AT_decl_line(0x2d)
+	.dwattr $C$DW$276, DW_AT_decl_column(0x12)
+
+$C$DW$277	.dwtag  DW_TAG_member
+	.dwattr $C$DW$277, DW_AT_type(*$C$DW$T$19)
+	.dwattr $C$DW$277, DW_AT_name("c2")
+	.dwattr $C$DW$277, DW_AT_data_member_location[DW_OP_plus_uconst 0x8]
+	.dwattr $C$DW$277, DW_AT_accessibility(DW_ACCESS_public)
+	.dwattr $C$DW$277, DW_AT_decl_file("C:/ti/C2000Ware_MotorControl_SDK_5_04_00_00/libraries/utilities/math_blocks/include/v4.3/pid_grando.h")
+	.dwattr $C$DW$277, DW_AT_decl_line(0x2e)
+	.dwattr $C$DW$277, DW_AT_decl_column(0x12)
+
+	.dwattr $C$DW$T$27, DW_AT_decl_file("C:/ti/C2000Ware_MotorControl_SDK_5_04_00_00/libraries/utilities/math_blocks/include/v4.3/pid_grando.h")
+	.dwattr $C$DW$T$27, DW_AT_decl_line(0x2a)
 	.dwattr $C$DW$T$27, DW_AT_decl_column(0x10)
 	.dwendtag $C$DW$T$27
 
 	.dwendtag $C$DW$TU$27
 
 
-$C$DW$TU$130	.dwtag  DW_TAG_type_unit
-	.dwmtype  $C$DW$T$130
-$C$DW$T$130	.dwtag  DW_TAG_typedef
-	.dwattr $C$DW$T$130, DW_AT_name("ldiv_t")
-	.dwattr $C$DW$T$130, DW_AT_type(*$C$DW$T$27)
-	.dwattr $C$DW$T$130, DW_AT_decl_file("C:/ti/ccs2031/ccs/tools/compiler/ti-cgt-c2000_22.6.2.LTS/include/stdlib.h")
-	.dwattr $C$DW$T$130, DW_AT_decl_line(0x59)
-	.dwattr $C$DW$T$130, DW_AT_decl_column(0x24)
+$C$DW$TU$30	.dwtag  DW_TAG_type_unit
+	.dwmtype  $C$DW$T$30
+$C$DW$T$30	.dwtag  DW_TAG_typedef
+	.dwattr $C$DW$T$30, DW_AT_name("PID_TERMINALS")
+	.dwattr $C$DW$T$30, DW_AT_type(*$C$DW$T$27)
+	.dwattr $C$DW$T$30, DW_AT_decl_file("C:/ti/C2000Ware_MotorControl_SDK_5_04_00_00/libraries/utilities/math_blocks/include/v4.3/pid_grando.h")
+	.dwattr $C$DW$T$30, DW_AT_decl_line(0x2f)
+	.dwattr $C$DW$T$30, DW_AT_decl_column(0x07)
 
-	.dwendtag $C$DW$TU$130
+	.dwendtag $C$DW$TU$30
 
 
 $C$DW$TU$28	.dwtag  DW_TAG_type_unit
 	.dwmtype  $C$DW$T$28
 
 $C$DW$T$28	.dwtag  DW_TAG_structure_type
-	.dwattr $C$DW$T$28, DW_AT_byte_size(0x08)
-$C$DW$275	.dwtag  DW_TAG_member
-	.dwattr $C$DW$275, DW_AT_type(*$C$DW$T$14)
-	.dwattr $C$DW$275, DW_AT_name("quot")
-	.dwattr $C$DW$275, DW_AT_accessibility(DW_ACCESS_public)
-	.dwattr $C$DW$275, DW_AT_decl_file("C:/ti/ccs2031/ccs/tools/compiler/ti-cgt-c2000_22.6.2.LTS/include/stdlib.h")
-	.dwattr $C$DW$275, DW_AT_decl_line(0x63)
-	.dwattr $C$DW$275, DW_AT_decl_column(0x1c)
+	.dwattr $C$DW$T$28, DW_AT_byte_size(0x0e)
+$C$DW$278	.dwtag  DW_TAG_member
+	.dwattr $C$DW$278, DW_AT_type(*$C$DW$T$19)
+	.dwattr $C$DW$278, DW_AT_name("Kr")
+	.dwattr $C$DW$278, DW_AT_accessibility(DW_ACCESS_public)
+	.dwattr $C$DW$278, DW_AT_decl_file("C:/ti/C2000Ware_MotorControl_SDK_5_04_00_00/libraries/utilities/math_blocks/include/v4.3/pid_grando.h")
+	.dwattr $C$DW$278, DW_AT_decl_line(0x32)
+	.dwattr $C$DW$278, DW_AT_decl_column(0x1e)
 
-$C$DW$276	.dwtag  DW_TAG_member
-	.dwattr $C$DW$276, DW_AT_type(*$C$DW$T$14)
-	.dwattr $C$DW$276, DW_AT_name("rem")
-	.dwattr $C$DW$276, DW_AT_data_member_location[DW_OP_plus_uconst 0x4]
-	.dwattr $C$DW$276, DW_AT_accessibility(DW_ACCESS_public)
-	.dwattr $C$DW$276, DW_AT_decl_file("C:/ti/ccs2031/ccs/tools/compiler/ti-cgt-c2000_22.6.2.LTS/include/stdlib.h")
-	.dwattr $C$DW$276, DW_AT_decl_line(0x63)
-	.dwattr $C$DW$276, DW_AT_decl_column(0x22)
+$C$DW$279	.dwtag  DW_TAG_member
+	.dwattr $C$DW$279, DW_AT_type(*$C$DW$T$19)
+	.dwattr $C$DW$279, DW_AT_name("Kp")
+	.dwattr $C$DW$279, DW_AT_data_member_location[DW_OP_plus_uconst 0x2]
+	.dwattr $C$DW$279, DW_AT_accessibility(DW_ACCESS_public)
+	.dwattr $C$DW$279, DW_AT_decl_file("C:/ti/C2000Ware_MotorControl_SDK_5_04_00_00/libraries/utilities/math_blocks/include/v4.3/pid_grando.h")
+	.dwattr $C$DW$279, DW_AT_decl_line(0x33)
+	.dwattr $C$DW$279, DW_AT_decl_column(0x12)
 
-	.dwattr $C$DW$T$28, DW_AT_decl_file("C:/ti/ccs2031/ccs/tools/compiler/ti-cgt-c2000_22.6.2.LTS/include/stdlib.h")
-	.dwattr $C$DW$T$28, DW_AT_decl_line(0x63)
+$C$DW$280	.dwtag  DW_TAG_member
+	.dwattr $C$DW$280, DW_AT_type(*$C$DW$T$19)
+	.dwattr $C$DW$280, DW_AT_name("Ki")
+	.dwattr $C$DW$280, DW_AT_data_member_location[DW_OP_plus_uconst 0x4]
+	.dwattr $C$DW$280, DW_AT_accessibility(DW_ACCESS_public)
+	.dwattr $C$DW$280, DW_AT_decl_file("C:/ti/C2000Ware_MotorControl_SDK_5_04_00_00/libraries/utilities/math_blocks/include/v4.3/pid_grando.h")
+	.dwattr $C$DW$280, DW_AT_decl_line(0x34)
+	.dwattr $C$DW$280, DW_AT_decl_column(0x12)
+
+$C$DW$281	.dwtag  DW_TAG_member
+	.dwattr $C$DW$281, DW_AT_type(*$C$DW$T$19)
+	.dwattr $C$DW$281, DW_AT_name("Kd")
+	.dwattr $C$DW$281, DW_AT_data_member_location[DW_OP_plus_uconst 0x6]
+	.dwattr $C$DW$281, DW_AT_accessibility(DW_ACCESS_public)
+	.dwattr $C$DW$281, DW_AT_decl_file("C:/ti/C2000Ware_MotorControl_SDK_5_04_00_00/libraries/utilities/math_blocks/include/v4.3/pid_grando.h")
+	.dwattr $C$DW$281, DW_AT_decl_line(0x35)
+	.dwattr $C$DW$281, DW_AT_decl_column(0x12)
+
+$C$DW$282	.dwtag  DW_TAG_member
+	.dwattr $C$DW$282, DW_AT_type(*$C$DW$T$19)
+	.dwattr $C$DW$282, DW_AT_name("Km")
+	.dwattr $C$DW$282, DW_AT_data_member_location[DW_OP_plus_uconst 0x8]
+	.dwattr $C$DW$282, DW_AT_accessibility(DW_ACCESS_public)
+	.dwattr $C$DW$282, DW_AT_decl_file("C:/ti/C2000Ware_MotorControl_SDK_5_04_00_00/libraries/utilities/math_blocks/include/v4.3/pid_grando.h")
+	.dwattr $C$DW$282, DW_AT_decl_line(0x36)
+	.dwattr $C$DW$282, DW_AT_decl_column(0x12)
+
+$C$DW$283	.dwtag  DW_TAG_member
+	.dwattr $C$DW$283, DW_AT_type(*$C$DW$T$19)
+	.dwattr $C$DW$283, DW_AT_name("Umax")
+	.dwattr $C$DW$283, DW_AT_data_member_location[DW_OP_plus_uconst 0xa]
+	.dwattr $C$DW$283, DW_AT_accessibility(DW_ACCESS_public)
+	.dwattr $C$DW$283, DW_AT_decl_file("C:/ti/C2000Ware_MotorControl_SDK_5_04_00_00/libraries/utilities/math_blocks/include/v4.3/pid_grando.h")
+	.dwattr $C$DW$283, DW_AT_decl_line(0x37)
+	.dwattr $C$DW$283, DW_AT_decl_column(0x12)
+
+$C$DW$284	.dwtag  DW_TAG_member
+	.dwattr $C$DW$284, DW_AT_type(*$C$DW$T$19)
+	.dwattr $C$DW$284, DW_AT_name("Umin")
+	.dwattr $C$DW$284, DW_AT_data_member_location[DW_OP_plus_uconst 0xc]
+	.dwattr $C$DW$284, DW_AT_accessibility(DW_ACCESS_public)
+	.dwattr $C$DW$284, DW_AT_decl_file("C:/ti/C2000Ware_MotorControl_SDK_5_04_00_00/libraries/utilities/math_blocks/include/v4.3/pid_grando.h")
+	.dwattr $C$DW$284, DW_AT_decl_line(0x38)
+	.dwattr $C$DW$284, DW_AT_decl_column(0x12)
+
+	.dwattr $C$DW$T$28, DW_AT_decl_file("C:/ti/C2000Ware_MotorControl_SDK_5_04_00_00/libraries/utilities/math_blocks/include/v4.3/pid_grando.h")
+	.dwattr $C$DW$T$28, DW_AT_decl_line(0x32)
 	.dwattr $C$DW$T$28, DW_AT_decl_column(0x10)
 	.dwendtag $C$DW$T$28
 
 	.dwendtag $C$DW$TU$28
 
 
-$C$DW$TU$133	.dwtag  DW_TAG_type_unit
-	.dwmtype  $C$DW$T$133
-$C$DW$T$133	.dwtag  DW_TAG_typedef
-	.dwattr $C$DW$T$133, DW_AT_name("lldiv_t")
-	.dwattr $C$DW$T$133, DW_AT_type(*$C$DW$T$28)
-	.dwattr $C$DW$T$133, DW_AT_decl_file("C:/ti/ccs2031/ccs/tools/compiler/ti-cgt-c2000_22.6.2.LTS/include/stdlib.h")
-	.dwattr $C$DW$T$133, DW_AT_decl_line(0x63)
-	.dwattr $C$DW$T$133, DW_AT_decl_column(0x29)
+$C$DW$TU$31	.dwtag  DW_TAG_type_unit
+	.dwmtype  $C$DW$T$31
+$C$DW$T$31	.dwtag  DW_TAG_typedef
+	.dwattr $C$DW$T$31, DW_AT_name("PID_PARAMETERS")
+	.dwattr $C$DW$T$31, DW_AT_type(*$C$DW$T$28)
+	.dwattr $C$DW$T$31, DW_AT_decl_file("C:/ti/C2000Ware_MotorControl_SDK_5_04_00_00/libraries/utilities/math_blocks/include/v4.3/pid_grando.h")
+	.dwattr $C$DW$T$31, DW_AT_decl_line(0x39)
+	.dwattr $C$DW$T$31, DW_AT_decl_column(0x07)
 
-	.dwendtag $C$DW$TU$133
+	.dwendtag $C$DW$TU$31
 
 
 $C$DW$TU$29	.dwtag  DW_TAG_type_unit
 	.dwmtype  $C$DW$T$29
 
 $C$DW$T$29	.dwtag  DW_TAG_structure_type
-	.dwattr $C$DW$T$29, DW_AT_byte_size(0x0a)
-$C$DW$277	.dwtag  DW_TAG_member
-	.dwattr $C$DW$277, DW_AT_type(*$C$DW$T$19)
-	.dwattr $C$DW$277, DW_AT_name("As")
-	.dwattr $C$DW$277, DW_AT_accessibility(DW_ACCESS_public)
-	.dwattr $C$DW$277, DW_AT_decl_file("C:/ti/C2000Ware_MotorControl_SDK_5_04_00_00/libraries/utilities/math_blocks/include/v4.3/clarke.h")
-	.dwattr $C$DW$277, DW_AT_decl_line(0x2a)
-	.dwattr $C$DW$277, DW_AT_decl_column(0x1e)
+	.dwattr $C$DW$T$29, DW_AT_byte_size(0x10)
+$C$DW$285	.dwtag  DW_TAG_member
+	.dwattr $C$DW$285, DW_AT_type(*$C$DW$T$19)
+	.dwattr $C$DW$285, DW_AT_name("up")
+	.dwattr $C$DW$285, DW_AT_accessibility(DW_ACCESS_public)
+	.dwattr $C$DW$285, DW_AT_decl_file("C:/ti/C2000Ware_MotorControl_SDK_5_04_00_00/libraries/utilities/math_blocks/include/v4.3/pid_grando.h")
+	.dwattr $C$DW$285, DW_AT_decl_line(0x3b)
+	.dwattr $C$DW$285, DW_AT_decl_column(0x1e)
 
-$C$DW$278	.dwtag  DW_TAG_member
-	.dwattr $C$DW$278, DW_AT_type(*$C$DW$T$19)
-	.dwattr $C$DW$278, DW_AT_name("Bs")
-	.dwattr $C$DW$278, DW_AT_data_member_location[DW_OP_plus_uconst 0x2]
-	.dwattr $C$DW$278, DW_AT_accessibility(DW_ACCESS_public)
-	.dwattr $C$DW$278, DW_AT_decl_file("C:/ti/C2000Ware_MotorControl_SDK_5_04_00_00/libraries/utilities/math_blocks/include/v4.3/clarke.h")
-	.dwattr $C$DW$278, DW_AT_decl_line(0x2b)
-	.dwattr $C$DW$278, DW_AT_decl_column(0x12)
+$C$DW$286	.dwtag  DW_TAG_member
+	.dwattr $C$DW$286, DW_AT_type(*$C$DW$T$19)
+	.dwattr $C$DW$286, DW_AT_name("ui")
+	.dwattr $C$DW$286, DW_AT_data_member_location[DW_OP_plus_uconst 0x2]
+	.dwattr $C$DW$286, DW_AT_accessibility(DW_ACCESS_public)
+	.dwattr $C$DW$286, DW_AT_decl_file("C:/ti/C2000Ware_MotorControl_SDK_5_04_00_00/libraries/utilities/math_blocks/include/v4.3/pid_grando.h")
+	.dwattr $C$DW$286, DW_AT_decl_line(0x3c)
+	.dwattr $C$DW$286, DW_AT_decl_column(0x12)
 
-$C$DW$279	.dwtag  DW_TAG_member
-	.dwattr $C$DW$279, DW_AT_type(*$C$DW$T$19)
-	.dwattr $C$DW$279, DW_AT_name("Cs")
-	.dwattr $C$DW$279, DW_AT_data_member_location[DW_OP_plus_uconst 0x4]
-	.dwattr $C$DW$279, DW_AT_accessibility(DW_ACCESS_public)
-	.dwattr $C$DW$279, DW_AT_decl_file("C:/ti/C2000Ware_MotorControl_SDK_5_04_00_00/libraries/utilities/math_blocks/include/v4.3/clarke.h")
-	.dwattr $C$DW$279, DW_AT_decl_line(0x2c)
-	.dwattr $C$DW$279, DW_AT_decl_column(0x12)
+$C$DW$287	.dwtag  DW_TAG_member
+	.dwattr $C$DW$287, DW_AT_type(*$C$DW$T$19)
+	.dwattr $C$DW$287, DW_AT_name("ud")
+	.dwattr $C$DW$287, DW_AT_data_member_location[DW_OP_plus_uconst 0x4]
+	.dwattr $C$DW$287, DW_AT_accessibility(DW_ACCESS_public)
+	.dwattr $C$DW$287, DW_AT_decl_file("C:/ti/C2000Ware_MotorControl_SDK_5_04_00_00/libraries/utilities/math_blocks/include/v4.3/pid_grando.h")
+	.dwattr $C$DW$287, DW_AT_decl_line(0x3d)
+	.dwattr $C$DW$287, DW_AT_decl_column(0x12)
 
-$C$DW$280	.dwtag  DW_TAG_member
-	.dwattr $C$DW$280, DW_AT_type(*$C$DW$T$19)
-	.dwattr $C$DW$280, DW_AT_name("Alpha")
-	.dwattr $C$DW$280, DW_AT_data_member_location[DW_OP_plus_uconst 0x6]
-	.dwattr $C$DW$280, DW_AT_accessibility(DW_ACCESS_public)
-	.dwattr $C$DW$280, DW_AT_decl_file("C:/ti/C2000Ware_MotorControl_SDK_5_04_00_00/libraries/utilities/math_blocks/include/v4.3/clarke.h")
-	.dwattr $C$DW$280, DW_AT_decl_line(0x2d)
-	.dwattr $C$DW$280, DW_AT_decl_column(0x12)
+$C$DW$288	.dwtag  DW_TAG_member
+	.dwattr $C$DW$288, DW_AT_type(*$C$DW$T$19)
+	.dwattr $C$DW$288, DW_AT_name("v1")
+	.dwattr $C$DW$288, DW_AT_data_member_location[DW_OP_plus_uconst 0x6]
+	.dwattr $C$DW$288, DW_AT_accessibility(DW_ACCESS_public)
+	.dwattr $C$DW$288, DW_AT_decl_file("C:/ti/C2000Ware_MotorControl_SDK_5_04_00_00/libraries/utilities/math_blocks/include/v4.3/pid_grando.h")
+	.dwattr $C$DW$288, DW_AT_decl_line(0x3e)
+	.dwattr $C$DW$288, DW_AT_decl_column(0x12)
 
-$C$DW$281	.dwtag  DW_TAG_member
-	.dwattr $C$DW$281, DW_AT_type(*$C$DW$T$19)
-	.dwattr $C$DW$281, DW_AT_name("Beta")
-	.dwattr $C$DW$281, DW_AT_data_member_location[DW_OP_plus_uconst 0x8]
-	.dwattr $C$DW$281, DW_AT_accessibility(DW_ACCESS_public)
-	.dwattr $C$DW$281, DW_AT_decl_file("C:/ti/C2000Ware_MotorControl_SDK_5_04_00_00/libraries/utilities/math_blocks/include/v4.3/clarke.h")
-	.dwattr $C$DW$281, DW_AT_decl_line(0x2e)
-	.dwattr $C$DW$281, DW_AT_decl_column(0x12)
+$C$DW$289	.dwtag  DW_TAG_member
+	.dwattr $C$DW$289, DW_AT_type(*$C$DW$T$19)
+	.dwattr $C$DW$289, DW_AT_name("i1")
+	.dwattr $C$DW$289, DW_AT_data_member_location[DW_OP_plus_uconst 0x8]
+	.dwattr $C$DW$289, DW_AT_accessibility(DW_ACCESS_public)
+	.dwattr $C$DW$289, DW_AT_decl_file("C:/ti/C2000Ware_MotorControl_SDK_5_04_00_00/libraries/utilities/math_blocks/include/v4.3/pid_grando.h")
+	.dwattr $C$DW$289, DW_AT_decl_line(0x3f)
+	.dwattr $C$DW$289, DW_AT_decl_column(0x12)
 
-	.dwattr $C$DW$T$29, DW_AT_decl_file("C:/ti/C2000Ware_MotorControl_SDK_5_04_00_00/libraries/utilities/math_blocks/include/v4.3/clarke.h")
-	.dwattr $C$DW$T$29, DW_AT_decl_line(0x2a)
+$C$DW$290	.dwtag  DW_TAG_member
+	.dwattr $C$DW$290, DW_AT_type(*$C$DW$T$19)
+	.dwattr $C$DW$290, DW_AT_name("d1")
+	.dwattr $C$DW$290, DW_AT_data_member_location[DW_OP_plus_uconst 0xa]
+	.dwattr $C$DW$290, DW_AT_accessibility(DW_ACCESS_public)
+	.dwattr $C$DW$290, DW_AT_decl_file("C:/ti/C2000Ware_MotorControl_SDK_5_04_00_00/libraries/utilities/math_blocks/include/v4.3/pid_grando.h")
+	.dwattr $C$DW$290, DW_AT_decl_line(0x40)
+	.dwattr $C$DW$290, DW_AT_decl_column(0x12)
+
+$C$DW$291	.dwtag  DW_TAG_member
+	.dwattr $C$DW$291, DW_AT_type(*$C$DW$T$19)
+	.dwattr $C$DW$291, DW_AT_name("d2")
+	.dwattr $C$DW$291, DW_AT_data_member_location[DW_OP_plus_uconst 0xc]
+	.dwattr $C$DW$291, DW_AT_accessibility(DW_ACCESS_public)
+	.dwattr $C$DW$291, DW_AT_decl_file("C:/ti/C2000Ware_MotorControl_SDK_5_04_00_00/libraries/utilities/math_blocks/include/v4.3/pid_grando.h")
+	.dwattr $C$DW$291, DW_AT_decl_line(0x41)
+	.dwattr $C$DW$291, DW_AT_decl_column(0x12)
+
+$C$DW$292	.dwtag  DW_TAG_member
+	.dwattr $C$DW$292, DW_AT_type(*$C$DW$T$19)
+	.dwattr $C$DW$292, DW_AT_name("w1")
+	.dwattr $C$DW$292, DW_AT_data_member_location[DW_OP_plus_uconst 0xe]
+	.dwattr $C$DW$292, DW_AT_accessibility(DW_ACCESS_public)
+	.dwattr $C$DW$292, DW_AT_decl_file("C:/ti/C2000Ware_MotorControl_SDK_5_04_00_00/libraries/utilities/math_blocks/include/v4.3/pid_grando.h")
+	.dwattr $C$DW$292, DW_AT_decl_line(0x42)
+	.dwattr $C$DW$292, DW_AT_decl_column(0x12)
+
+	.dwattr $C$DW$T$29, DW_AT_decl_file("C:/ti/C2000Ware_MotorControl_SDK_5_04_00_00/libraries/utilities/math_blocks/include/v4.3/pid_grando.h")
+	.dwattr $C$DW$T$29, DW_AT_decl_line(0x3b)
 	.dwattr $C$DW$T$29, DW_AT_decl_column(0x10)
 	.dwendtag $C$DW$T$29
 
 	.dwendtag $C$DW$TU$29
 
 
+$C$DW$TU$32	.dwtag  DW_TAG_type_unit
+	.dwmtype  $C$DW$T$32
+$C$DW$T$32	.dwtag  DW_TAG_typedef
+	.dwattr $C$DW$T$32, DW_AT_name("PID_DATA")
+	.dwattr $C$DW$T$32, DW_AT_type(*$C$DW$T$29)
+	.dwattr $C$DW$T$32, DW_AT_decl_file("C:/ti/C2000Ware_MotorControl_SDK_5_04_00_00/libraries/utilities/math_blocks/include/v4.3/pid_grando.h")
+	.dwattr $C$DW$T$32, DW_AT_decl_line(0x43)
+	.dwattr $C$DW$T$32, DW_AT_decl_column(0x07)
+
+	.dwendtag $C$DW$TU$32
+
+
+$C$DW$TU$33	.dwtag  DW_TAG_type_unit
+	.dwmtype  $C$DW$T$33
+
+$C$DW$T$33	.dwtag  DW_TAG_structure_type
+	.dwattr $C$DW$T$33, DW_AT_byte_size(0x28)
+$C$DW$293	.dwtag  DW_TAG_member
+	.dwattr $C$DW$293, DW_AT_type(*$C$DW$T$30)
+	.dwattr $C$DW$293, DW_AT_name("term")
+	.dwattr $C$DW$293, DW_AT_accessibility(DW_ACCESS_public)
+	.dwattr $C$DW$293, DW_AT_decl_file("C:/ti/C2000Ware_MotorControl_SDK_5_04_00_00/libraries/utilities/math_blocks/include/v4.3/pid_grando.h")
+	.dwattr $C$DW$293, DW_AT_decl_line(0x46)
+	.dwattr $C$DW$293, DW_AT_decl_column(0x21)
+
+$C$DW$294	.dwtag  DW_TAG_member
+	.dwattr $C$DW$294, DW_AT_type(*$C$DW$T$31)
+	.dwattr $C$DW$294, DW_AT_name("param")
+	.dwattr $C$DW$294, DW_AT_data_member_location[DW_OP_plus_uconst 0xa]
+	.dwattr $C$DW$294, DW_AT_accessibility(DW_ACCESS_public)
+	.dwattr $C$DW$294, DW_AT_decl_file("C:/ti/C2000Ware_MotorControl_SDK_5_04_00_00/libraries/utilities/math_blocks/include/v4.3/pid_grando.h")
+	.dwattr $C$DW$294, DW_AT_decl_line(0x47)
+	.dwattr $C$DW$294, DW_AT_decl_column(0x16)
+
+$C$DW$295	.dwtag  DW_TAG_member
+	.dwattr $C$DW$295, DW_AT_type(*$C$DW$T$32)
+	.dwattr $C$DW$295, DW_AT_name("data")
+	.dwattr $C$DW$295, DW_AT_data_member_location[DW_OP_plus_uconst 0x18]
+	.dwattr $C$DW$295, DW_AT_accessibility(DW_ACCESS_public)
+	.dwattr $C$DW$295, DW_AT_decl_file("C:/ti/C2000Ware_MotorControl_SDK_5_04_00_00/libraries/utilities/math_blocks/include/v4.3/pid_grando.h")
+	.dwattr $C$DW$295, DW_AT_decl_line(0x48)
+	.dwattr $C$DW$295, DW_AT_decl_column(0x11)
+
+	.dwattr $C$DW$T$33, DW_AT_decl_file("C:/ti/C2000Ware_MotorControl_SDK_5_04_00_00/libraries/utilities/math_blocks/include/v4.3/pid_grando.h")
+	.dwattr $C$DW$T$33, DW_AT_decl_line(0x46)
+	.dwattr $C$DW$T$33, DW_AT_decl_column(0x10)
+	.dwendtag $C$DW$T$33
+
+	.dwendtag $C$DW$TU$33
+
+
+$C$DW$TU$102	.dwtag  DW_TAG_type_unit
+	.dwmtype  $C$DW$T$102
+$C$DW$T$102	.dwtag  DW_TAG_typedef
+	.dwattr $C$DW$T$102, DW_AT_name("PID_CONTROLLER")
+	.dwattr $C$DW$T$102, DW_AT_type(*$C$DW$T$33)
+	.dwattr $C$DW$T$102, DW_AT_decl_file("C:/ti/C2000Ware_MotorControl_SDK_5_04_00_00/libraries/utilities/math_blocks/include/v4.3/pid_grando.h")
+	.dwattr $C$DW$T$102, DW_AT_decl_line(0x49)
+	.dwattr $C$DW$T$102, DW_AT_decl_column(0x07)
+
+	.dwendtag $C$DW$TU$102
+
+
+$C$DW$TU$34	.dwtag  DW_TAG_type_unit
+	.dwmtype  $C$DW$T$34
+
+$C$DW$T$34	.dwtag  DW_TAG_structure_type
+	.dwattr $C$DW$T$34, DW_AT_byte_size(0x04)
+$C$DW$296	.dwtag  DW_TAG_member
+	.dwattr $C$DW$296, DW_AT_type(*$C$DW$T$12)
+	.dwattr $C$DW$296, DW_AT_name("quot")
+	.dwattr $C$DW$296, DW_AT_accessibility(DW_ACCESS_public)
+	.dwattr $C$DW$296, DW_AT_decl_file("C:/ti/ccs2031/ccs/tools/compiler/ti-cgt-c2000_22.6.2.LTS/include/stdlib.h")
+	.dwattr $C$DW$296, DW_AT_decl_line(0x59)
+	.dwattr $C$DW$296, DW_AT_decl_column(0x17)
+
+$C$DW$297	.dwtag  DW_TAG_member
+	.dwattr $C$DW$297, DW_AT_type(*$C$DW$T$12)
+	.dwattr $C$DW$297, DW_AT_name("rem")
+	.dwattr $C$DW$297, DW_AT_data_member_location[DW_OP_plus_uconst 0x2]
+	.dwattr $C$DW$297, DW_AT_accessibility(DW_ACCESS_public)
+	.dwattr $C$DW$297, DW_AT_decl_file("C:/ti/ccs2031/ccs/tools/compiler/ti-cgt-c2000_22.6.2.LTS/include/stdlib.h")
+	.dwattr $C$DW$297, DW_AT_decl_line(0x59)
+	.dwattr $C$DW$297, DW_AT_decl_column(0x1d)
+
+	.dwattr $C$DW$T$34, DW_AT_decl_file("C:/ti/ccs2031/ccs/tools/compiler/ti-cgt-c2000_22.6.2.LTS/include/stdlib.h")
+	.dwattr $C$DW$T$34, DW_AT_decl_line(0x59)
+	.dwattr $C$DW$T$34, DW_AT_decl_column(0x10)
+	.dwendtag $C$DW$T$34
+
+	.dwendtag $C$DW$TU$34
+
+
+$C$DW$TU$131	.dwtag  DW_TAG_type_unit
+	.dwmtype  $C$DW$T$131
+$C$DW$T$131	.dwtag  DW_TAG_typedef
+	.dwattr $C$DW$T$131, DW_AT_name("ldiv_t")
+	.dwattr $C$DW$T$131, DW_AT_type(*$C$DW$T$34)
+	.dwattr $C$DW$T$131, DW_AT_decl_file("C:/ti/ccs2031/ccs/tools/compiler/ti-cgt-c2000_22.6.2.LTS/include/stdlib.h")
+	.dwattr $C$DW$T$131, DW_AT_decl_line(0x59)
+	.dwattr $C$DW$T$131, DW_AT_decl_column(0x24)
+
+	.dwendtag $C$DW$TU$131
+
+
+$C$DW$TU$35	.dwtag  DW_TAG_type_unit
+	.dwmtype  $C$DW$T$35
+
+$C$DW$T$35	.dwtag  DW_TAG_structure_type
+	.dwattr $C$DW$T$35, DW_AT_byte_size(0x08)
+$C$DW$298	.dwtag  DW_TAG_member
+	.dwattr $C$DW$298, DW_AT_type(*$C$DW$T$14)
+	.dwattr $C$DW$298, DW_AT_name("quot")
+	.dwattr $C$DW$298, DW_AT_accessibility(DW_ACCESS_public)
+	.dwattr $C$DW$298, DW_AT_decl_file("C:/ti/ccs2031/ccs/tools/compiler/ti-cgt-c2000_22.6.2.LTS/include/stdlib.h")
+	.dwattr $C$DW$298, DW_AT_decl_line(0x63)
+	.dwattr $C$DW$298, DW_AT_decl_column(0x1c)
+
+$C$DW$299	.dwtag  DW_TAG_member
+	.dwattr $C$DW$299, DW_AT_type(*$C$DW$T$14)
+	.dwattr $C$DW$299, DW_AT_name("rem")
+	.dwattr $C$DW$299, DW_AT_data_member_location[DW_OP_plus_uconst 0x4]
+	.dwattr $C$DW$299, DW_AT_accessibility(DW_ACCESS_public)
+	.dwattr $C$DW$299, DW_AT_decl_file("C:/ti/ccs2031/ccs/tools/compiler/ti-cgt-c2000_22.6.2.LTS/include/stdlib.h")
+	.dwattr $C$DW$299, DW_AT_decl_line(0x63)
+	.dwattr $C$DW$299, DW_AT_decl_column(0x22)
+
+	.dwattr $C$DW$T$35, DW_AT_decl_file("C:/ti/ccs2031/ccs/tools/compiler/ti-cgt-c2000_22.6.2.LTS/include/stdlib.h")
+	.dwattr $C$DW$T$35, DW_AT_decl_line(0x63)
+	.dwattr $C$DW$T$35, DW_AT_decl_column(0x10)
+	.dwendtag $C$DW$T$35
+
+	.dwendtag $C$DW$TU$35
+
+
+$C$DW$TU$134	.dwtag  DW_TAG_type_unit
+	.dwmtype  $C$DW$T$134
+$C$DW$T$134	.dwtag  DW_TAG_typedef
+	.dwattr $C$DW$T$134, DW_AT_name("lldiv_t")
+	.dwattr $C$DW$T$134, DW_AT_type(*$C$DW$T$35)
+	.dwattr $C$DW$T$134, DW_AT_decl_file("C:/ti/ccs2031/ccs/tools/compiler/ti-cgt-c2000_22.6.2.LTS/include/stdlib.h")
+	.dwattr $C$DW$T$134, DW_AT_decl_line(0x63)
+	.dwattr $C$DW$T$134, DW_AT_decl_column(0x29)
+
+	.dwendtag $C$DW$TU$134
+
+
+$C$DW$TU$36	.dwtag  DW_TAG_type_unit
+	.dwmtype  $C$DW$T$36
+
+$C$DW$T$36	.dwtag  DW_TAG_structure_type
+	.dwattr $C$DW$T$36, DW_AT_byte_size(0x0a)
+$C$DW$300	.dwtag  DW_TAG_member
+	.dwattr $C$DW$300, DW_AT_type(*$C$DW$T$19)
+	.dwattr $C$DW$300, DW_AT_name("As")
+	.dwattr $C$DW$300, DW_AT_accessibility(DW_ACCESS_public)
+	.dwattr $C$DW$300, DW_AT_decl_file("C:/ti/C2000Ware_MotorControl_SDK_5_04_00_00/libraries/utilities/math_blocks/include/v4.3/clarke.h")
+	.dwattr $C$DW$300, DW_AT_decl_line(0x2a)
+	.dwattr $C$DW$300, DW_AT_decl_column(0x1e)
+
+$C$DW$301	.dwtag  DW_TAG_member
+	.dwattr $C$DW$301, DW_AT_type(*$C$DW$T$19)
+	.dwattr $C$DW$301, DW_AT_name("Bs")
+	.dwattr $C$DW$301, DW_AT_data_member_location[DW_OP_plus_uconst 0x2]
+	.dwattr $C$DW$301, DW_AT_accessibility(DW_ACCESS_public)
+	.dwattr $C$DW$301, DW_AT_decl_file("C:/ti/C2000Ware_MotorControl_SDK_5_04_00_00/libraries/utilities/math_blocks/include/v4.3/clarke.h")
+	.dwattr $C$DW$301, DW_AT_decl_line(0x2b)
+	.dwattr $C$DW$301, DW_AT_decl_column(0x12)
+
+$C$DW$302	.dwtag  DW_TAG_member
+	.dwattr $C$DW$302, DW_AT_type(*$C$DW$T$19)
+	.dwattr $C$DW$302, DW_AT_name("Cs")
+	.dwattr $C$DW$302, DW_AT_data_member_location[DW_OP_plus_uconst 0x4]
+	.dwattr $C$DW$302, DW_AT_accessibility(DW_ACCESS_public)
+	.dwattr $C$DW$302, DW_AT_decl_file("C:/ti/C2000Ware_MotorControl_SDK_5_04_00_00/libraries/utilities/math_blocks/include/v4.3/clarke.h")
+	.dwattr $C$DW$302, DW_AT_decl_line(0x2c)
+	.dwattr $C$DW$302, DW_AT_decl_column(0x12)
+
+$C$DW$303	.dwtag  DW_TAG_member
+	.dwattr $C$DW$303, DW_AT_type(*$C$DW$T$19)
+	.dwattr $C$DW$303, DW_AT_name("Alpha")
+	.dwattr $C$DW$303, DW_AT_data_member_location[DW_OP_plus_uconst 0x6]
+	.dwattr $C$DW$303, DW_AT_accessibility(DW_ACCESS_public)
+	.dwattr $C$DW$303, DW_AT_decl_file("C:/ti/C2000Ware_MotorControl_SDK_5_04_00_00/libraries/utilities/math_blocks/include/v4.3/clarke.h")
+	.dwattr $C$DW$303, DW_AT_decl_line(0x2d)
+	.dwattr $C$DW$303, DW_AT_decl_column(0x12)
+
+$C$DW$304	.dwtag  DW_TAG_member
+	.dwattr $C$DW$304, DW_AT_type(*$C$DW$T$19)
+	.dwattr $C$DW$304, DW_AT_name("Beta")
+	.dwattr $C$DW$304, DW_AT_data_member_location[DW_OP_plus_uconst 0x8]
+	.dwattr $C$DW$304, DW_AT_accessibility(DW_ACCESS_public)
+	.dwattr $C$DW$304, DW_AT_decl_file("C:/ti/C2000Ware_MotorControl_SDK_5_04_00_00/libraries/utilities/math_blocks/include/v4.3/clarke.h")
+	.dwattr $C$DW$304, DW_AT_decl_line(0x2e)
+	.dwattr $C$DW$304, DW_AT_decl_column(0x12)
+
+	.dwattr $C$DW$T$36, DW_AT_decl_file("C:/ti/C2000Ware_MotorControl_SDK_5_04_00_00/libraries/utilities/math_blocks/include/v4.3/clarke.h")
+	.dwattr $C$DW$T$36, DW_AT_decl_line(0x2a)
+	.dwattr $C$DW$T$36, DW_AT_decl_column(0x10)
+	.dwendtag $C$DW$T$36
+
+	.dwendtag $C$DW$TU$36
+
+
 $C$DW$TU$96	.dwtag  DW_TAG_type_unit
 	.dwmtype  $C$DW$T$96
 $C$DW$T$96	.dwtag  DW_TAG_typedef
 	.dwattr $C$DW$T$96, DW_AT_name("CLARKE")
-	.dwattr $C$DW$T$96, DW_AT_type(*$C$DW$T$29)
+	.dwattr $C$DW$T$96, DW_AT_type(*$C$DW$T$36)
 	.dwattr $C$DW$T$96, DW_AT_decl_file("C:/ti/C2000Ware_MotorControl_SDK_5_04_00_00/libraries/utilities/math_blocks/include/v4.3/clarke.h")
 	.dwattr $C$DW$T$96, DW_AT_decl_line(0x2f)
 	.dwattr $C$DW$T$96, DW_AT_decl_column(0x09)
@@ -5940,86 +6444,86 @@ $C$DW$T$96	.dwtag  DW_TAG_typedef
 	.dwendtag $C$DW$TU$96
 
 
-$C$DW$TU$30	.dwtag  DW_TAG_type_unit
-	.dwmtype  $C$DW$T$30
+$C$DW$TU$37	.dwtag  DW_TAG_type_unit
+	.dwmtype  $C$DW$T$37
 
-$C$DW$T$30	.dwtag  DW_TAG_structure_type
-	.dwattr $C$DW$T$30, DW_AT_byte_size(0x0e)
-$C$DW$282	.dwtag  DW_TAG_member
-	.dwattr $C$DW$282, DW_AT_type(*$C$DW$T$19)
-	.dwattr $C$DW$282, DW_AT_name("Alpha")
-	.dwattr $C$DW$282, DW_AT_accessibility(DW_ACCESS_public)
-	.dwattr $C$DW$282, DW_AT_decl_file("C:/ti/C2000Ware_MotorControl_SDK_5_04_00_00/libraries/utilities/math_blocks/include/v4.3/park.h")
-	.dwattr $C$DW$282, DW_AT_decl_line(0x29)
-	.dwattr $C$DW$282, DW_AT_decl_column(0x1e)
+$C$DW$T$37	.dwtag  DW_TAG_structure_type
+	.dwattr $C$DW$T$37, DW_AT_byte_size(0x0e)
+$C$DW$305	.dwtag  DW_TAG_member
+	.dwattr $C$DW$305, DW_AT_type(*$C$DW$T$19)
+	.dwattr $C$DW$305, DW_AT_name("Alpha")
+	.dwattr $C$DW$305, DW_AT_accessibility(DW_ACCESS_public)
+	.dwattr $C$DW$305, DW_AT_decl_file("C:/ti/C2000Ware_MotorControl_SDK_5_04_00_00/libraries/utilities/math_blocks/include/v4.3/park.h")
+	.dwattr $C$DW$305, DW_AT_decl_line(0x29)
+	.dwattr $C$DW$305, DW_AT_decl_column(0x1e)
 
-$C$DW$283	.dwtag  DW_TAG_member
-	.dwattr $C$DW$283, DW_AT_type(*$C$DW$T$19)
-	.dwattr $C$DW$283, DW_AT_name("Beta")
-	.dwattr $C$DW$283, DW_AT_data_member_location[DW_OP_plus_uconst 0x2]
-	.dwattr $C$DW$283, DW_AT_accessibility(DW_ACCESS_public)
-	.dwattr $C$DW$283, DW_AT_decl_file("C:/ti/C2000Ware_MotorControl_SDK_5_04_00_00/libraries/utilities/math_blocks/include/v4.3/park.h")
-	.dwattr $C$DW$283, DW_AT_decl_line(0x2a)
-	.dwattr $C$DW$283, DW_AT_decl_column(0x12)
+$C$DW$306	.dwtag  DW_TAG_member
+	.dwattr $C$DW$306, DW_AT_type(*$C$DW$T$19)
+	.dwattr $C$DW$306, DW_AT_name("Beta")
+	.dwattr $C$DW$306, DW_AT_data_member_location[DW_OP_plus_uconst 0x2]
+	.dwattr $C$DW$306, DW_AT_accessibility(DW_ACCESS_public)
+	.dwattr $C$DW$306, DW_AT_decl_file("C:/ti/C2000Ware_MotorControl_SDK_5_04_00_00/libraries/utilities/math_blocks/include/v4.3/park.h")
+	.dwattr $C$DW$306, DW_AT_decl_line(0x2a)
+	.dwattr $C$DW$306, DW_AT_decl_column(0x12)
 
-$C$DW$284	.dwtag  DW_TAG_member
-	.dwattr $C$DW$284, DW_AT_type(*$C$DW$T$19)
-	.dwattr $C$DW$284, DW_AT_name("Angle")
-	.dwattr $C$DW$284, DW_AT_data_member_location[DW_OP_plus_uconst 0x4]
-	.dwattr $C$DW$284, DW_AT_accessibility(DW_ACCESS_public)
-	.dwattr $C$DW$284, DW_AT_decl_file("C:/ti/C2000Ware_MotorControl_SDK_5_04_00_00/libraries/utilities/math_blocks/include/v4.3/park.h")
-	.dwattr $C$DW$284, DW_AT_decl_line(0x2b)
-	.dwattr $C$DW$284, DW_AT_decl_column(0x12)
+$C$DW$307	.dwtag  DW_TAG_member
+	.dwattr $C$DW$307, DW_AT_type(*$C$DW$T$19)
+	.dwattr $C$DW$307, DW_AT_name("Angle")
+	.dwattr $C$DW$307, DW_AT_data_member_location[DW_OP_plus_uconst 0x4]
+	.dwattr $C$DW$307, DW_AT_accessibility(DW_ACCESS_public)
+	.dwattr $C$DW$307, DW_AT_decl_file("C:/ti/C2000Ware_MotorControl_SDK_5_04_00_00/libraries/utilities/math_blocks/include/v4.3/park.h")
+	.dwattr $C$DW$307, DW_AT_decl_line(0x2b)
+	.dwattr $C$DW$307, DW_AT_decl_column(0x12)
 
-$C$DW$285	.dwtag  DW_TAG_member
-	.dwattr $C$DW$285, DW_AT_type(*$C$DW$T$19)
-	.dwattr $C$DW$285, DW_AT_name("Ds")
-	.dwattr $C$DW$285, DW_AT_data_member_location[DW_OP_plus_uconst 0x6]
-	.dwattr $C$DW$285, DW_AT_accessibility(DW_ACCESS_public)
-	.dwattr $C$DW$285, DW_AT_decl_file("C:/ti/C2000Ware_MotorControl_SDK_5_04_00_00/libraries/utilities/math_blocks/include/v4.3/park.h")
-	.dwattr $C$DW$285, DW_AT_decl_line(0x2c)
-	.dwattr $C$DW$285, DW_AT_decl_column(0x12)
+$C$DW$308	.dwtag  DW_TAG_member
+	.dwattr $C$DW$308, DW_AT_type(*$C$DW$T$19)
+	.dwattr $C$DW$308, DW_AT_name("Ds")
+	.dwattr $C$DW$308, DW_AT_data_member_location[DW_OP_plus_uconst 0x6]
+	.dwattr $C$DW$308, DW_AT_accessibility(DW_ACCESS_public)
+	.dwattr $C$DW$308, DW_AT_decl_file("C:/ti/C2000Ware_MotorControl_SDK_5_04_00_00/libraries/utilities/math_blocks/include/v4.3/park.h")
+	.dwattr $C$DW$308, DW_AT_decl_line(0x2c)
+	.dwattr $C$DW$308, DW_AT_decl_column(0x12)
 
-$C$DW$286	.dwtag  DW_TAG_member
-	.dwattr $C$DW$286, DW_AT_type(*$C$DW$T$19)
-	.dwattr $C$DW$286, DW_AT_name("Qs")
-	.dwattr $C$DW$286, DW_AT_data_member_location[DW_OP_plus_uconst 0x8]
-	.dwattr $C$DW$286, DW_AT_accessibility(DW_ACCESS_public)
-	.dwattr $C$DW$286, DW_AT_decl_file("C:/ti/C2000Ware_MotorControl_SDK_5_04_00_00/libraries/utilities/math_blocks/include/v4.3/park.h")
-	.dwattr $C$DW$286, DW_AT_decl_line(0x2d)
-	.dwattr $C$DW$286, DW_AT_decl_column(0x12)
+$C$DW$309	.dwtag  DW_TAG_member
+	.dwattr $C$DW$309, DW_AT_type(*$C$DW$T$19)
+	.dwattr $C$DW$309, DW_AT_name("Qs")
+	.dwattr $C$DW$309, DW_AT_data_member_location[DW_OP_plus_uconst 0x8]
+	.dwattr $C$DW$309, DW_AT_accessibility(DW_ACCESS_public)
+	.dwattr $C$DW$309, DW_AT_decl_file("C:/ti/C2000Ware_MotorControl_SDK_5_04_00_00/libraries/utilities/math_blocks/include/v4.3/park.h")
+	.dwattr $C$DW$309, DW_AT_decl_line(0x2d)
+	.dwattr $C$DW$309, DW_AT_decl_column(0x12)
 
-$C$DW$287	.dwtag  DW_TAG_member
-	.dwattr $C$DW$287, DW_AT_type(*$C$DW$T$19)
-	.dwattr $C$DW$287, DW_AT_name("Sine")
-	.dwattr $C$DW$287, DW_AT_data_member_location[DW_OP_plus_uconst 0xa]
-	.dwattr $C$DW$287, DW_AT_accessibility(DW_ACCESS_public)
-	.dwattr $C$DW$287, DW_AT_decl_file("C:/ti/C2000Ware_MotorControl_SDK_5_04_00_00/libraries/utilities/math_blocks/include/v4.3/park.h")
-	.dwattr $C$DW$287, DW_AT_decl_line(0x2e)
-	.dwattr $C$DW$287, DW_AT_decl_column(0x12)
+$C$DW$310	.dwtag  DW_TAG_member
+	.dwattr $C$DW$310, DW_AT_type(*$C$DW$T$19)
+	.dwattr $C$DW$310, DW_AT_name("Sine")
+	.dwattr $C$DW$310, DW_AT_data_member_location[DW_OP_plus_uconst 0xa]
+	.dwattr $C$DW$310, DW_AT_accessibility(DW_ACCESS_public)
+	.dwattr $C$DW$310, DW_AT_decl_file("C:/ti/C2000Ware_MotorControl_SDK_5_04_00_00/libraries/utilities/math_blocks/include/v4.3/park.h")
+	.dwattr $C$DW$310, DW_AT_decl_line(0x2e)
+	.dwattr $C$DW$310, DW_AT_decl_column(0x12)
 
-$C$DW$288	.dwtag  DW_TAG_member
-	.dwattr $C$DW$288, DW_AT_type(*$C$DW$T$19)
-	.dwattr $C$DW$288, DW_AT_name("Cosine")
-	.dwattr $C$DW$288, DW_AT_data_member_location[DW_OP_plus_uconst 0xc]
-	.dwattr $C$DW$288, DW_AT_accessibility(DW_ACCESS_public)
-	.dwattr $C$DW$288, DW_AT_decl_file("C:/ti/C2000Ware_MotorControl_SDK_5_04_00_00/libraries/utilities/math_blocks/include/v4.3/park.h")
-	.dwattr $C$DW$288, DW_AT_decl_line(0x2f)
-	.dwattr $C$DW$288, DW_AT_decl_column(0x12)
+$C$DW$311	.dwtag  DW_TAG_member
+	.dwattr $C$DW$311, DW_AT_type(*$C$DW$T$19)
+	.dwattr $C$DW$311, DW_AT_name("Cosine")
+	.dwattr $C$DW$311, DW_AT_data_member_location[DW_OP_plus_uconst 0xc]
+	.dwattr $C$DW$311, DW_AT_accessibility(DW_ACCESS_public)
+	.dwattr $C$DW$311, DW_AT_decl_file("C:/ti/C2000Ware_MotorControl_SDK_5_04_00_00/libraries/utilities/math_blocks/include/v4.3/park.h")
+	.dwattr $C$DW$311, DW_AT_decl_line(0x2f)
+	.dwattr $C$DW$311, DW_AT_decl_column(0x12)
 
-	.dwattr $C$DW$T$30, DW_AT_decl_file("C:/ti/C2000Ware_MotorControl_SDK_5_04_00_00/libraries/utilities/math_blocks/include/v4.3/park.h")
-	.dwattr $C$DW$T$30, DW_AT_decl_line(0x29)
-	.dwattr $C$DW$T$30, DW_AT_decl_column(0x10)
-	.dwendtag $C$DW$T$30
+	.dwattr $C$DW$T$37, DW_AT_decl_file("C:/ti/C2000Ware_MotorControl_SDK_5_04_00_00/libraries/utilities/math_blocks/include/v4.3/park.h")
+	.dwattr $C$DW$T$37, DW_AT_decl_line(0x29)
+	.dwattr $C$DW$T$37, DW_AT_decl_column(0x10)
+	.dwendtag $C$DW$T$37
 
-	.dwendtag $C$DW$TU$30
+	.dwendtag $C$DW$TU$37
 
 
 $C$DW$TU$97	.dwtag  DW_TAG_type_unit
 	.dwmtype  $C$DW$T$97
 $C$DW$T$97	.dwtag  DW_TAG_typedef
 	.dwattr $C$DW$T$97, DW_AT_name("PARK")
-	.dwattr $C$DW$T$97, DW_AT_type(*$C$DW$T$30)
+	.dwattr $C$DW$T$97, DW_AT_type(*$C$DW$T$37)
 	.dwattr $C$DW$T$97, DW_AT_decl_file("C:/ti/C2000Ware_MotorControl_SDK_5_04_00_00/libraries/utilities/math_blocks/include/v4.3/park.h")
 	.dwattr $C$DW$T$97, DW_AT_decl_line(0x30)
 	.dwattr $C$DW$T$97, DW_AT_decl_column(0x09)
@@ -6027,86 +6531,86 @@ $C$DW$T$97	.dwtag  DW_TAG_typedef
 	.dwendtag $C$DW$TU$97
 
 
-$C$DW$TU$31	.dwtag  DW_TAG_type_unit
-	.dwmtype  $C$DW$T$31
+$C$DW$TU$38	.dwtag  DW_TAG_type_unit
+	.dwmtype  $C$DW$T$38
 
-$C$DW$T$31	.dwtag  DW_TAG_structure_type
-	.dwattr $C$DW$T$31, DW_AT_byte_size(0x0e)
-$C$DW$289	.dwtag  DW_TAG_member
-	.dwattr $C$DW$289, DW_AT_type(*$C$DW$T$19)
-	.dwattr $C$DW$289, DW_AT_name("Alpha")
-	.dwattr $C$DW$289, DW_AT_accessibility(DW_ACCESS_public)
-	.dwattr $C$DW$289, DW_AT_decl_file("C:/ti/C2000Ware_MotorControl_SDK_5_04_00_00/libraries/utilities/math_blocks/include/v4.3/ipark.h")
-	.dwattr $C$DW$289, DW_AT_decl_line(0x29)
-	.dwattr $C$DW$289, DW_AT_decl_column(0x1e)
+$C$DW$T$38	.dwtag  DW_TAG_structure_type
+	.dwattr $C$DW$T$38, DW_AT_byte_size(0x0e)
+$C$DW$312	.dwtag  DW_TAG_member
+	.dwattr $C$DW$312, DW_AT_type(*$C$DW$T$19)
+	.dwattr $C$DW$312, DW_AT_name("Alpha")
+	.dwattr $C$DW$312, DW_AT_accessibility(DW_ACCESS_public)
+	.dwattr $C$DW$312, DW_AT_decl_file("C:/ti/C2000Ware_MotorControl_SDK_5_04_00_00/libraries/utilities/math_blocks/include/v4.3/ipark.h")
+	.dwattr $C$DW$312, DW_AT_decl_line(0x29)
+	.dwattr $C$DW$312, DW_AT_decl_column(0x1e)
 
-$C$DW$290	.dwtag  DW_TAG_member
-	.dwattr $C$DW$290, DW_AT_type(*$C$DW$T$19)
-	.dwattr $C$DW$290, DW_AT_name("Beta")
-	.dwattr $C$DW$290, DW_AT_data_member_location[DW_OP_plus_uconst 0x2]
-	.dwattr $C$DW$290, DW_AT_accessibility(DW_ACCESS_public)
-	.dwattr $C$DW$290, DW_AT_decl_file("C:/ti/C2000Ware_MotorControl_SDK_5_04_00_00/libraries/utilities/math_blocks/include/v4.3/ipark.h")
-	.dwattr $C$DW$290, DW_AT_decl_line(0x2a)
-	.dwattr $C$DW$290, DW_AT_decl_column(0x12)
+$C$DW$313	.dwtag  DW_TAG_member
+	.dwattr $C$DW$313, DW_AT_type(*$C$DW$T$19)
+	.dwattr $C$DW$313, DW_AT_name("Beta")
+	.dwattr $C$DW$313, DW_AT_data_member_location[DW_OP_plus_uconst 0x2]
+	.dwattr $C$DW$313, DW_AT_accessibility(DW_ACCESS_public)
+	.dwattr $C$DW$313, DW_AT_decl_file("C:/ti/C2000Ware_MotorControl_SDK_5_04_00_00/libraries/utilities/math_blocks/include/v4.3/ipark.h")
+	.dwattr $C$DW$313, DW_AT_decl_line(0x2a)
+	.dwattr $C$DW$313, DW_AT_decl_column(0x12)
 
-$C$DW$291	.dwtag  DW_TAG_member
-	.dwattr $C$DW$291, DW_AT_type(*$C$DW$T$19)
-	.dwattr $C$DW$291, DW_AT_name("Angle")
-	.dwattr $C$DW$291, DW_AT_data_member_location[DW_OP_plus_uconst 0x4]
-	.dwattr $C$DW$291, DW_AT_accessibility(DW_ACCESS_public)
-	.dwattr $C$DW$291, DW_AT_decl_file("C:/ti/C2000Ware_MotorControl_SDK_5_04_00_00/libraries/utilities/math_blocks/include/v4.3/ipark.h")
-	.dwattr $C$DW$291, DW_AT_decl_line(0x2b)
-	.dwattr $C$DW$291, DW_AT_decl_column(0x12)
+$C$DW$314	.dwtag  DW_TAG_member
+	.dwattr $C$DW$314, DW_AT_type(*$C$DW$T$19)
+	.dwattr $C$DW$314, DW_AT_name("Angle")
+	.dwattr $C$DW$314, DW_AT_data_member_location[DW_OP_plus_uconst 0x4]
+	.dwattr $C$DW$314, DW_AT_accessibility(DW_ACCESS_public)
+	.dwattr $C$DW$314, DW_AT_decl_file("C:/ti/C2000Ware_MotorControl_SDK_5_04_00_00/libraries/utilities/math_blocks/include/v4.3/ipark.h")
+	.dwattr $C$DW$314, DW_AT_decl_line(0x2b)
+	.dwattr $C$DW$314, DW_AT_decl_column(0x12)
 
-$C$DW$292	.dwtag  DW_TAG_member
-	.dwattr $C$DW$292, DW_AT_type(*$C$DW$T$19)
-	.dwattr $C$DW$292, DW_AT_name("Ds")
-	.dwattr $C$DW$292, DW_AT_data_member_location[DW_OP_plus_uconst 0x6]
-	.dwattr $C$DW$292, DW_AT_accessibility(DW_ACCESS_public)
-	.dwattr $C$DW$292, DW_AT_decl_file("C:/ti/C2000Ware_MotorControl_SDK_5_04_00_00/libraries/utilities/math_blocks/include/v4.3/ipark.h")
-	.dwattr $C$DW$292, DW_AT_decl_line(0x2c)
-	.dwattr $C$DW$292, DW_AT_decl_column(0x12)
+$C$DW$315	.dwtag  DW_TAG_member
+	.dwattr $C$DW$315, DW_AT_type(*$C$DW$T$19)
+	.dwattr $C$DW$315, DW_AT_name("Ds")
+	.dwattr $C$DW$315, DW_AT_data_member_location[DW_OP_plus_uconst 0x6]
+	.dwattr $C$DW$315, DW_AT_accessibility(DW_ACCESS_public)
+	.dwattr $C$DW$315, DW_AT_decl_file("C:/ti/C2000Ware_MotorControl_SDK_5_04_00_00/libraries/utilities/math_blocks/include/v4.3/ipark.h")
+	.dwattr $C$DW$315, DW_AT_decl_line(0x2c)
+	.dwattr $C$DW$315, DW_AT_decl_column(0x12)
 
-$C$DW$293	.dwtag  DW_TAG_member
-	.dwattr $C$DW$293, DW_AT_type(*$C$DW$T$19)
-	.dwattr $C$DW$293, DW_AT_name("Qs")
-	.dwattr $C$DW$293, DW_AT_data_member_location[DW_OP_plus_uconst 0x8]
-	.dwattr $C$DW$293, DW_AT_accessibility(DW_ACCESS_public)
-	.dwattr $C$DW$293, DW_AT_decl_file("C:/ti/C2000Ware_MotorControl_SDK_5_04_00_00/libraries/utilities/math_blocks/include/v4.3/ipark.h")
-	.dwattr $C$DW$293, DW_AT_decl_line(0x2d)
-	.dwattr $C$DW$293, DW_AT_decl_column(0x12)
+$C$DW$316	.dwtag  DW_TAG_member
+	.dwattr $C$DW$316, DW_AT_type(*$C$DW$T$19)
+	.dwattr $C$DW$316, DW_AT_name("Qs")
+	.dwattr $C$DW$316, DW_AT_data_member_location[DW_OP_plus_uconst 0x8]
+	.dwattr $C$DW$316, DW_AT_accessibility(DW_ACCESS_public)
+	.dwattr $C$DW$316, DW_AT_decl_file("C:/ti/C2000Ware_MotorControl_SDK_5_04_00_00/libraries/utilities/math_blocks/include/v4.3/ipark.h")
+	.dwattr $C$DW$316, DW_AT_decl_line(0x2d)
+	.dwattr $C$DW$316, DW_AT_decl_column(0x12)
 
-$C$DW$294	.dwtag  DW_TAG_member
-	.dwattr $C$DW$294, DW_AT_type(*$C$DW$T$19)
-	.dwattr $C$DW$294, DW_AT_name("Sine")
-	.dwattr $C$DW$294, DW_AT_data_member_location[DW_OP_plus_uconst 0xa]
-	.dwattr $C$DW$294, DW_AT_accessibility(DW_ACCESS_public)
-	.dwattr $C$DW$294, DW_AT_decl_file("C:/ti/C2000Ware_MotorControl_SDK_5_04_00_00/libraries/utilities/math_blocks/include/v4.3/ipark.h")
-	.dwattr $C$DW$294, DW_AT_decl_line(0x2e)
-	.dwattr $C$DW$294, DW_AT_decl_column(0x12)
+$C$DW$317	.dwtag  DW_TAG_member
+	.dwattr $C$DW$317, DW_AT_type(*$C$DW$T$19)
+	.dwattr $C$DW$317, DW_AT_name("Sine")
+	.dwattr $C$DW$317, DW_AT_data_member_location[DW_OP_plus_uconst 0xa]
+	.dwattr $C$DW$317, DW_AT_accessibility(DW_ACCESS_public)
+	.dwattr $C$DW$317, DW_AT_decl_file("C:/ti/C2000Ware_MotorControl_SDK_5_04_00_00/libraries/utilities/math_blocks/include/v4.3/ipark.h")
+	.dwattr $C$DW$317, DW_AT_decl_line(0x2e)
+	.dwattr $C$DW$317, DW_AT_decl_column(0x12)
 
-$C$DW$295	.dwtag  DW_TAG_member
-	.dwattr $C$DW$295, DW_AT_type(*$C$DW$T$19)
-	.dwattr $C$DW$295, DW_AT_name("Cosine")
-	.dwattr $C$DW$295, DW_AT_data_member_location[DW_OP_plus_uconst 0xc]
-	.dwattr $C$DW$295, DW_AT_accessibility(DW_ACCESS_public)
-	.dwattr $C$DW$295, DW_AT_decl_file("C:/ti/C2000Ware_MotorControl_SDK_5_04_00_00/libraries/utilities/math_blocks/include/v4.3/ipark.h")
-	.dwattr $C$DW$295, DW_AT_decl_line(0x2f)
-	.dwattr $C$DW$295, DW_AT_decl_column(0x12)
+$C$DW$318	.dwtag  DW_TAG_member
+	.dwattr $C$DW$318, DW_AT_type(*$C$DW$T$19)
+	.dwattr $C$DW$318, DW_AT_name("Cosine")
+	.dwattr $C$DW$318, DW_AT_data_member_location[DW_OP_plus_uconst 0xc]
+	.dwattr $C$DW$318, DW_AT_accessibility(DW_ACCESS_public)
+	.dwattr $C$DW$318, DW_AT_decl_file("C:/ti/C2000Ware_MotorControl_SDK_5_04_00_00/libraries/utilities/math_blocks/include/v4.3/ipark.h")
+	.dwattr $C$DW$318, DW_AT_decl_line(0x2f)
+	.dwattr $C$DW$318, DW_AT_decl_column(0x12)
 
-	.dwattr $C$DW$T$31, DW_AT_decl_file("C:/ti/C2000Ware_MotorControl_SDK_5_04_00_00/libraries/utilities/math_blocks/include/v4.3/ipark.h")
-	.dwattr $C$DW$T$31, DW_AT_decl_line(0x29)
-	.dwattr $C$DW$T$31, DW_AT_decl_column(0x10)
-	.dwendtag $C$DW$T$31
+	.dwattr $C$DW$T$38, DW_AT_decl_file("C:/ti/C2000Ware_MotorControl_SDK_5_04_00_00/libraries/utilities/math_blocks/include/v4.3/ipark.h")
+	.dwattr $C$DW$T$38, DW_AT_decl_line(0x29)
+	.dwattr $C$DW$T$38, DW_AT_decl_column(0x10)
+	.dwendtag $C$DW$T$38
 
-	.dwendtag $C$DW$TU$31
+	.dwendtag $C$DW$TU$38
 
 
 $C$DW$TU$98	.dwtag  DW_TAG_type_unit
 	.dwmtype  $C$DW$T$98
 $C$DW$T$98	.dwtag  DW_TAG_typedef
 	.dwattr $C$DW$T$98, DW_AT_name("IPARK")
-	.dwattr $C$DW$T$98, DW_AT_type(*$C$DW$T$31)
+	.dwattr $C$DW$T$98, DW_AT_type(*$C$DW$T$38)
 	.dwattr $C$DW$T$98, DW_AT_decl_file("C:/ti/C2000Ware_MotorControl_SDK_5_04_00_00/libraries/utilities/math_blocks/include/v4.3/ipark.h")
 	.dwattr $C$DW$T$98, DW_AT_decl_line(0x30)
 	.dwattr $C$DW$T$98, DW_AT_decl_column(0x0b)
@@ -6114,412 +6618,109 @@ $C$DW$T$98	.dwtag  DW_TAG_typedef
 	.dwendtag $C$DW$TU$98
 
 
-$C$DW$TU$34	.dwtag  DW_TAG_type_unit
-	.dwmtype  $C$DW$T$34
+$C$DW$TU$41	.dwtag  DW_TAG_type_unit
+	.dwmtype  $C$DW$T$41
 
-$C$DW$T$34	.dwtag  DW_TAG_structure_type
-	.dwattr $C$DW$T$34, DW_AT_byte_size(0x12)
-$C$DW$296	.dwtag  DW_TAG_member
-	.dwattr $C$DW$296, DW_AT_type(*$C$DW$T$19)
-	.dwattr $C$DW$296, DW_AT_name("Ualpha")
-	.dwattr $C$DW$296, DW_AT_accessibility(DW_ACCESS_public)
-	.dwattr $C$DW$296, DW_AT_decl_file("C:/ti/C2000Ware_MotorControl_SDK_5_04_00_00/libraries/utilities/math_blocks/include/v4.3/svgen.h")
-	.dwattr $C$DW$296, DW_AT_decl_line(0x2b)
-	.dwattr $C$DW$296, DW_AT_decl_column(0x10)
+$C$DW$T$41	.dwtag  DW_TAG_structure_type
+	.dwattr $C$DW$T$41, DW_AT_byte_size(0x12)
+$C$DW$319	.dwtag  DW_TAG_member
+	.dwattr $C$DW$319, DW_AT_type(*$C$DW$T$19)
+	.dwattr $C$DW$319, DW_AT_name("Ualpha")
+	.dwattr $C$DW$319, DW_AT_accessibility(DW_ACCESS_public)
+	.dwattr $C$DW$319, DW_AT_decl_file("C:/ti/C2000Ware_MotorControl_SDK_5_04_00_00/libraries/utilities/math_blocks/include/v4.3/svgen.h")
+	.dwattr $C$DW$319, DW_AT_decl_line(0x2b)
+	.dwattr $C$DW$319, DW_AT_decl_column(0x10)
 
-$C$DW$297	.dwtag  DW_TAG_member
-	.dwattr $C$DW$297, DW_AT_type(*$C$DW$T$19)
-	.dwattr $C$DW$297, DW_AT_name("Ubeta")
-	.dwattr $C$DW$297, DW_AT_data_member_location[DW_OP_plus_uconst 0x2]
-	.dwattr $C$DW$297, DW_AT_accessibility(DW_ACCESS_public)
-	.dwattr $C$DW$297, DW_AT_decl_file("C:/ti/C2000Ware_MotorControl_SDK_5_04_00_00/libraries/utilities/math_blocks/include/v4.3/svgen.h")
-	.dwattr $C$DW$297, DW_AT_decl_line(0x2c)
-	.dwattr $C$DW$297, DW_AT_decl_column(0x10)
+$C$DW$320	.dwtag  DW_TAG_member
+	.dwattr $C$DW$320, DW_AT_type(*$C$DW$T$19)
+	.dwattr $C$DW$320, DW_AT_name("Ubeta")
+	.dwattr $C$DW$320, DW_AT_data_member_location[DW_OP_plus_uconst 0x2]
+	.dwattr $C$DW$320, DW_AT_accessibility(DW_ACCESS_public)
+	.dwattr $C$DW$320, DW_AT_decl_file("C:/ti/C2000Ware_MotorControl_SDK_5_04_00_00/libraries/utilities/math_blocks/include/v4.3/svgen.h")
+	.dwattr $C$DW$320, DW_AT_decl_line(0x2c)
+	.dwattr $C$DW$320, DW_AT_decl_column(0x10)
 
-$C$DW$298	.dwtag  DW_TAG_member
-	.dwattr $C$DW$298, DW_AT_type(*$C$DW$T$19)
-	.dwattr $C$DW$298, DW_AT_name("Ta")
-	.dwattr $C$DW$298, DW_AT_data_member_location[DW_OP_plus_uconst 0x4]
-	.dwattr $C$DW$298, DW_AT_accessibility(DW_ACCESS_public)
-	.dwattr $C$DW$298, DW_AT_decl_file("C:/ti/C2000Ware_MotorControl_SDK_5_04_00_00/libraries/utilities/math_blocks/include/v4.3/svgen.h")
-	.dwattr $C$DW$298, DW_AT_decl_line(0x2d)
-	.dwattr $C$DW$298, DW_AT_decl_column(0x10)
+$C$DW$321	.dwtag  DW_TAG_member
+	.dwattr $C$DW$321, DW_AT_type(*$C$DW$T$19)
+	.dwattr $C$DW$321, DW_AT_name("Ta")
+	.dwattr $C$DW$321, DW_AT_data_member_location[DW_OP_plus_uconst 0x4]
+	.dwattr $C$DW$321, DW_AT_accessibility(DW_ACCESS_public)
+	.dwattr $C$DW$321, DW_AT_decl_file("C:/ti/C2000Ware_MotorControl_SDK_5_04_00_00/libraries/utilities/math_blocks/include/v4.3/svgen.h")
+	.dwattr $C$DW$321, DW_AT_decl_line(0x2d)
+	.dwattr $C$DW$321, DW_AT_decl_column(0x10)
 
-$C$DW$299	.dwtag  DW_TAG_member
-	.dwattr $C$DW$299, DW_AT_type(*$C$DW$T$19)
-	.dwattr $C$DW$299, DW_AT_name("Tb")
-	.dwattr $C$DW$299, DW_AT_data_member_location[DW_OP_plus_uconst 0x6]
-	.dwattr $C$DW$299, DW_AT_accessibility(DW_ACCESS_public)
-	.dwattr $C$DW$299, DW_AT_decl_file("C:/ti/C2000Ware_MotorControl_SDK_5_04_00_00/libraries/utilities/math_blocks/include/v4.3/svgen.h")
-	.dwattr $C$DW$299, DW_AT_decl_line(0x2e)
-	.dwattr $C$DW$299, DW_AT_decl_column(0x10)
+$C$DW$322	.dwtag  DW_TAG_member
+	.dwattr $C$DW$322, DW_AT_type(*$C$DW$T$19)
+	.dwattr $C$DW$322, DW_AT_name("Tb")
+	.dwattr $C$DW$322, DW_AT_data_member_location[DW_OP_plus_uconst 0x6]
+	.dwattr $C$DW$322, DW_AT_accessibility(DW_ACCESS_public)
+	.dwattr $C$DW$322, DW_AT_decl_file("C:/ti/C2000Ware_MotorControl_SDK_5_04_00_00/libraries/utilities/math_blocks/include/v4.3/svgen.h")
+	.dwattr $C$DW$322, DW_AT_decl_line(0x2e)
+	.dwattr $C$DW$322, DW_AT_decl_column(0x10)
 
-$C$DW$300	.dwtag  DW_TAG_member
-	.dwattr $C$DW$300, DW_AT_type(*$C$DW$T$19)
-	.dwattr $C$DW$300, DW_AT_name("Tc")
-	.dwattr $C$DW$300, DW_AT_data_member_location[DW_OP_plus_uconst 0x8]
-	.dwattr $C$DW$300, DW_AT_accessibility(DW_ACCESS_public)
-	.dwattr $C$DW$300, DW_AT_decl_file("C:/ti/C2000Ware_MotorControl_SDK_5_04_00_00/libraries/utilities/math_blocks/include/v4.3/svgen.h")
-	.dwattr $C$DW$300, DW_AT_decl_line(0x2f)
-	.dwattr $C$DW$300, DW_AT_decl_column(0x10)
+$C$DW$323	.dwtag  DW_TAG_member
+	.dwattr $C$DW$323, DW_AT_type(*$C$DW$T$19)
+	.dwattr $C$DW$323, DW_AT_name("Tc")
+	.dwattr $C$DW$323, DW_AT_data_member_location[DW_OP_plus_uconst 0x8]
+	.dwattr $C$DW$323, DW_AT_accessibility(DW_ACCESS_public)
+	.dwattr $C$DW$323, DW_AT_decl_file("C:/ti/C2000Ware_MotorControl_SDK_5_04_00_00/libraries/utilities/math_blocks/include/v4.3/svgen.h")
+	.dwattr $C$DW$323, DW_AT_decl_line(0x2f)
+	.dwattr $C$DW$323, DW_AT_decl_column(0x10)
 
-$C$DW$301	.dwtag  DW_TAG_member
-	.dwattr $C$DW$301, DW_AT_type(*$C$DW$T$19)
-	.dwattr $C$DW$301, DW_AT_name("tmp1")
-	.dwattr $C$DW$301, DW_AT_data_member_location[DW_OP_plus_uconst 0xa]
-	.dwattr $C$DW$301, DW_AT_accessibility(DW_ACCESS_public)
-	.dwattr $C$DW$301, DW_AT_decl_file("C:/ti/C2000Ware_MotorControl_SDK_5_04_00_00/libraries/utilities/math_blocks/include/v4.3/svgen.h")
-	.dwattr $C$DW$301, DW_AT_decl_line(0x30)
-	.dwattr $C$DW$301, DW_AT_decl_column(0x10)
+$C$DW$324	.dwtag  DW_TAG_member
+	.dwattr $C$DW$324, DW_AT_type(*$C$DW$T$19)
+	.dwattr $C$DW$324, DW_AT_name("tmp1")
+	.dwattr $C$DW$324, DW_AT_data_member_location[DW_OP_plus_uconst 0xa]
+	.dwattr $C$DW$324, DW_AT_accessibility(DW_ACCESS_public)
+	.dwattr $C$DW$324, DW_AT_decl_file("C:/ti/C2000Ware_MotorControl_SDK_5_04_00_00/libraries/utilities/math_blocks/include/v4.3/svgen.h")
+	.dwattr $C$DW$324, DW_AT_decl_line(0x30)
+	.dwattr $C$DW$324, DW_AT_decl_column(0x10)
 
-$C$DW$302	.dwtag  DW_TAG_member
-	.dwattr $C$DW$302, DW_AT_type(*$C$DW$T$19)
-	.dwattr $C$DW$302, DW_AT_name("tmp2")
-	.dwattr $C$DW$302, DW_AT_data_member_location[DW_OP_plus_uconst 0xc]
-	.dwattr $C$DW$302, DW_AT_accessibility(DW_ACCESS_public)
-	.dwattr $C$DW$302, DW_AT_decl_file("C:/ti/C2000Ware_MotorControl_SDK_5_04_00_00/libraries/utilities/math_blocks/include/v4.3/svgen.h")
-	.dwattr $C$DW$302, DW_AT_decl_line(0x31)
-	.dwattr $C$DW$302, DW_AT_decl_column(0x10)
+$C$DW$325	.dwtag  DW_TAG_member
+	.dwattr $C$DW$325, DW_AT_type(*$C$DW$T$19)
+	.dwattr $C$DW$325, DW_AT_name("tmp2")
+	.dwattr $C$DW$325, DW_AT_data_member_location[DW_OP_plus_uconst 0xc]
+	.dwattr $C$DW$325, DW_AT_accessibility(DW_ACCESS_public)
+	.dwattr $C$DW$325, DW_AT_decl_file("C:/ti/C2000Ware_MotorControl_SDK_5_04_00_00/libraries/utilities/math_blocks/include/v4.3/svgen.h")
+	.dwattr $C$DW$325, DW_AT_decl_line(0x31)
+	.dwattr $C$DW$325, DW_AT_decl_column(0x10)
 
-$C$DW$303	.dwtag  DW_TAG_member
-	.dwattr $C$DW$303, DW_AT_type(*$C$DW$T$19)
-	.dwattr $C$DW$303, DW_AT_name("tmp3")
-	.dwattr $C$DW$303, DW_AT_data_member_location[DW_OP_plus_uconst 0xe]
-	.dwattr $C$DW$303, DW_AT_accessibility(DW_ACCESS_public)
-	.dwattr $C$DW$303, DW_AT_decl_file("C:/ti/C2000Ware_MotorControl_SDK_5_04_00_00/libraries/utilities/math_blocks/include/v4.3/svgen.h")
-	.dwattr $C$DW$303, DW_AT_decl_line(0x32)
-	.dwattr $C$DW$303, DW_AT_decl_column(0x10)
+$C$DW$326	.dwtag  DW_TAG_member
+	.dwattr $C$DW$326, DW_AT_type(*$C$DW$T$19)
+	.dwattr $C$DW$326, DW_AT_name("tmp3")
+	.dwattr $C$DW$326, DW_AT_data_member_location[DW_OP_plus_uconst 0xe]
+	.dwattr $C$DW$326, DW_AT_accessibility(DW_ACCESS_public)
+	.dwattr $C$DW$326, DW_AT_decl_file("C:/ti/C2000Ware_MotorControl_SDK_5_04_00_00/libraries/utilities/math_blocks/include/v4.3/svgen.h")
+	.dwattr $C$DW$326, DW_AT_decl_line(0x32)
+	.dwattr $C$DW$326, DW_AT_decl_column(0x10)
 
-$C$DW$304	.dwtag  DW_TAG_member
-	.dwattr $C$DW$304, DW_AT_type(*$C$DW$T$33)
-	.dwattr $C$DW$304, DW_AT_name("VecSector")
-	.dwattr $C$DW$304, DW_AT_data_member_location[DW_OP_plus_uconst 0x10]
-	.dwattr $C$DW$304, DW_AT_accessibility(DW_ACCESS_public)
-	.dwattr $C$DW$304, DW_AT_decl_file("C:/ti/C2000Ware_MotorControl_SDK_5_04_00_00/libraries/utilities/math_blocks/include/v4.3/svgen.h")
-	.dwattr $C$DW$304, DW_AT_decl_line(0x33)
-	.dwattr $C$DW$304, DW_AT_decl_column(0x0b)
+$C$DW$327	.dwtag  DW_TAG_member
+	.dwattr $C$DW$327, DW_AT_type(*$C$DW$T$40)
+	.dwattr $C$DW$327, DW_AT_name("VecSector")
+	.dwattr $C$DW$327, DW_AT_data_member_location[DW_OP_plus_uconst 0x10]
+	.dwattr $C$DW$327, DW_AT_accessibility(DW_ACCESS_public)
+	.dwattr $C$DW$327, DW_AT_decl_file("C:/ti/C2000Ware_MotorControl_SDK_5_04_00_00/libraries/utilities/math_blocks/include/v4.3/svgen.h")
+	.dwattr $C$DW$327, DW_AT_decl_line(0x33)
+	.dwattr $C$DW$327, DW_AT_decl_column(0x0b)
 
-	.dwattr $C$DW$T$34, DW_AT_decl_file("C:/ti/C2000Ware_MotorControl_SDK_5_04_00_00/libraries/utilities/math_blocks/include/v4.3/svgen.h")
-	.dwattr $C$DW$T$34, DW_AT_decl_line(0x2a)
-	.dwattr $C$DW$T$34, DW_AT_decl_column(0x11)
-	.dwendtag $C$DW$T$34
+	.dwattr $C$DW$T$41, DW_AT_decl_file("C:/ti/C2000Ware_MotorControl_SDK_5_04_00_00/libraries/utilities/math_blocks/include/v4.3/svgen.h")
+	.dwattr $C$DW$T$41, DW_AT_decl_line(0x2a)
+	.dwattr $C$DW$T$41, DW_AT_decl_column(0x11)
+	.dwendtag $C$DW$T$41
 
-	.dwendtag $C$DW$TU$34
+	.dwendtag $C$DW$TU$41
 
 
 $C$DW$TU$99	.dwtag  DW_TAG_type_unit
 	.dwmtype  $C$DW$T$99
 $C$DW$T$99	.dwtag  DW_TAG_typedef
 	.dwattr $C$DW$T$99, DW_AT_name("SVGEN")
-	.dwattr $C$DW$T$99, DW_AT_type(*$C$DW$T$34)
+	.dwattr $C$DW$T$99, DW_AT_type(*$C$DW$T$41)
 	.dwattr $C$DW$T$99, DW_AT_decl_file("C:/ti/C2000Ware_MotorControl_SDK_5_04_00_00/libraries/utilities/math_blocks/include/v4.3/svgen.h")
 	.dwattr $C$DW$T$99, DW_AT_decl_line(0x34)
 	.dwattr $C$DW$T$99, DW_AT_decl_column(0x04)
 
 	.dwendtag $C$DW$TU$99
-
-
-$C$DW$TU$35	.dwtag  DW_TAG_type_unit
-	.dwmtype  $C$DW$T$35
-
-$C$DW$T$35	.dwtag  DW_TAG_structure_type
-	.dwattr $C$DW$T$35, DW_AT_byte_size(0x0a)
-$C$DW$305	.dwtag  DW_TAG_member
-	.dwattr $C$DW$305, DW_AT_type(*$C$DW$T$19)
-	.dwattr $C$DW$305, DW_AT_name("Ref")
-	.dwattr $C$DW$305, DW_AT_accessibility(DW_ACCESS_public)
-	.dwattr $C$DW$305, DW_AT_decl_file("C:/ti/C2000Ware_MotorControl_SDK_5_04_00_00/libraries/utilities/math_blocks/include/v4.3/pid_grando.h")
-	.dwattr $C$DW$305, DW_AT_decl_line(0x2a)
-	.dwattr $C$DW$305, DW_AT_decl_column(0x1e)
-
-$C$DW$306	.dwtag  DW_TAG_member
-	.dwattr $C$DW$306, DW_AT_type(*$C$DW$T$19)
-	.dwattr $C$DW$306, DW_AT_name("Fbk")
-	.dwattr $C$DW$306, DW_AT_data_member_location[DW_OP_plus_uconst 0x2]
-	.dwattr $C$DW$306, DW_AT_accessibility(DW_ACCESS_public)
-	.dwattr $C$DW$306, DW_AT_decl_file("C:/ti/C2000Ware_MotorControl_SDK_5_04_00_00/libraries/utilities/math_blocks/include/v4.3/pid_grando.h")
-	.dwattr $C$DW$306, DW_AT_decl_line(0x2b)
-	.dwattr $C$DW$306, DW_AT_decl_column(0x12)
-
-$C$DW$307	.dwtag  DW_TAG_member
-	.dwattr $C$DW$307, DW_AT_type(*$C$DW$T$19)
-	.dwattr $C$DW$307, DW_AT_name("Out")
-	.dwattr $C$DW$307, DW_AT_data_member_location[DW_OP_plus_uconst 0x4]
-	.dwattr $C$DW$307, DW_AT_accessibility(DW_ACCESS_public)
-	.dwattr $C$DW$307, DW_AT_decl_file("C:/ti/C2000Ware_MotorControl_SDK_5_04_00_00/libraries/utilities/math_blocks/include/v4.3/pid_grando.h")
-	.dwattr $C$DW$307, DW_AT_decl_line(0x2c)
-	.dwattr $C$DW$307, DW_AT_decl_column(0x12)
-
-$C$DW$308	.dwtag  DW_TAG_member
-	.dwattr $C$DW$308, DW_AT_type(*$C$DW$T$19)
-	.dwattr $C$DW$308, DW_AT_name("c1")
-	.dwattr $C$DW$308, DW_AT_data_member_location[DW_OP_plus_uconst 0x6]
-	.dwattr $C$DW$308, DW_AT_accessibility(DW_ACCESS_public)
-	.dwattr $C$DW$308, DW_AT_decl_file("C:/ti/C2000Ware_MotorControl_SDK_5_04_00_00/libraries/utilities/math_blocks/include/v4.3/pid_grando.h")
-	.dwattr $C$DW$308, DW_AT_decl_line(0x2d)
-	.dwattr $C$DW$308, DW_AT_decl_column(0x12)
-
-$C$DW$309	.dwtag  DW_TAG_member
-	.dwattr $C$DW$309, DW_AT_type(*$C$DW$T$19)
-	.dwattr $C$DW$309, DW_AT_name("c2")
-	.dwattr $C$DW$309, DW_AT_data_member_location[DW_OP_plus_uconst 0x8]
-	.dwattr $C$DW$309, DW_AT_accessibility(DW_ACCESS_public)
-	.dwattr $C$DW$309, DW_AT_decl_file("C:/ti/C2000Ware_MotorControl_SDK_5_04_00_00/libraries/utilities/math_blocks/include/v4.3/pid_grando.h")
-	.dwattr $C$DW$309, DW_AT_decl_line(0x2e)
-	.dwattr $C$DW$309, DW_AT_decl_column(0x12)
-
-	.dwattr $C$DW$T$35, DW_AT_decl_file("C:/ti/C2000Ware_MotorControl_SDK_5_04_00_00/libraries/utilities/math_blocks/include/v4.3/pid_grando.h")
-	.dwattr $C$DW$T$35, DW_AT_decl_line(0x2a)
-	.dwattr $C$DW$T$35, DW_AT_decl_column(0x10)
-	.dwendtag $C$DW$T$35
-
-	.dwendtag $C$DW$TU$35
-
-
-$C$DW$TU$38	.dwtag  DW_TAG_type_unit
-	.dwmtype  $C$DW$T$38
-$C$DW$T$38	.dwtag  DW_TAG_typedef
-	.dwattr $C$DW$T$38, DW_AT_name("PID_TERMINALS")
-	.dwattr $C$DW$T$38, DW_AT_type(*$C$DW$T$35)
-	.dwattr $C$DW$T$38, DW_AT_decl_file("C:/ti/C2000Ware_MotorControl_SDK_5_04_00_00/libraries/utilities/math_blocks/include/v4.3/pid_grando.h")
-	.dwattr $C$DW$T$38, DW_AT_decl_line(0x2f)
-	.dwattr $C$DW$T$38, DW_AT_decl_column(0x07)
-
-	.dwendtag $C$DW$TU$38
-
-
-$C$DW$TU$36	.dwtag  DW_TAG_type_unit
-	.dwmtype  $C$DW$T$36
-
-$C$DW$T$36	.dwtag  DW_TAG_structure_type
-	.dwattr $C$DW$T$36, DW_AT_byte_size(0x0e)
-$C$DW$310	.dwtag  DW_TAG_member
-	.dwattr $C$DW$310, DW_AT_type(*$C$DW$T$19)
-	.dwattr $C$DW$310, DW_AT_name("Kr")
-	.dwattr $C$DW$310, DW_AT_accessibility(DW_ACCESS_public)
-	.dwattr $C$DW$310, DW_AT_decl_file("C:/ti/C2000Ware_MotorControl_SDK_5_04_00_00/libraries/utilities/math_blocks/include/v4.3/pid_grando.h")
-	.dwattr $C$DW$310, DW_AT_decl_line(0x32)
-	.dwattr $C$DW$310, DW_AT_decl_column(0x1e)
-
-$C$DW$311	.dwtag  DW_TAG_member
-	.dwattr $C$DW$311, DW_AT_type(*$C$DW$T$19)
-	.dwattr $C$DW$311, DW_AT_name("Kp")
-	.dwattr $C$DW$311, DW_AT_data_member_location[DW_OP_plus_uconst 0x2]
-	.dwattr $C$DW$311, DW_AT_accessibility(DW_ACCESS_public)
-	.dwattr $C$DW$311, DW_AT_decl_file("C:/ti/C2000Ware_MotorControl_SDK_5_04_00_00/libraries/utilities/math_blocks/include/v4.3/pid_grando.h")
-	.dwattr $C$DW$311, DW_AT_decl_line(0x33)
-	.dwattr $C$DW$311, DW_AT_decl_column(0x12)
-
-$C$DW$312	.dwtag  DW_TAG_member
-	.dwattr $C$DW$312, DW_AT_type(*$C$DW$T$19)
-	.dwattr $C$DW$312, DW_AT_name("Ki")
-	.dwattr $C$DW$312, DW_AT_data_member_location[DW_OP_plus_uconst 0x4]
-	.dwattr $C$DW$312, DW_AT_accessibility(DW_ACCESS_public)
-	.dwattr $C$DW$312, DW_AT_decl_file("C:/ti/C2000Ware_MotorControl_SDK_5_04_00_00/libraries/utilities/math_blocks/include/v4.3/pid_grando.h")
-	.dwattr $C$DW$312, DW_AT_decl_line(0x34)
-	.dwattr $C$DW$312, DW_AT_decl_column(0x12)
-
-$C$DW$313	.dwtag  DW_TAG_member
-	.dwattr $C$DW$313, DW_AT_type(*$C$DW$T$19)
-	.dwattr $C$DW$313, DW_AT_name("Kd")
-	.dwattr $C$DW$313, DW_AT_data_member_location[DW_OP_plus_uconst 0x6]
-	.dwattr $C$DW$313, DW_AT_accessibility(DW_ACCESS_public)
-	.dwattr $C$DW$313, DW_AT_decl_file("C:/ti/C2000Ware_MotorControl_SDK_5_04_00_00/libraries/utilities/math_blocks/include/v4.3/pid_grando.h")
-	.dwattr $C$DW$313, DW_AT_decl_line(0x35)
-	.dwattr $C$DW$313, DW_AT_decl_column(0x12)
-
-$C$DW$314	.dwtag  DW_TAG_member
-	.dwattr $C$DW$314, DW_AT_type(*$C$DW$T$19)
-	.dwattr $C$DW$314, DW_AT_name("Km")
-	.dwattr $C$DW$314, DW_AT_data_member_location[DW_OP_plus_uconst 0x8]
-	.dwattr $C$DW$314, DW_AT_accessibility(DW_ACCESS_public)
-	.dwattr $C$DW$314, DW_AT_decl_file("C:/ti/C2000Ware_MotorControl_SDK_5_04_00_00/libraries/utilities/math_blocks/include/v4.3/pid_grando.h")
-	.dwattr $C$DW$314, DW_AT_decl_line(0x36)
-	.dwattr $C$DW$314, DW_AT_decl_column(0x12)
-
-$C$DW$315	.dwtag  DW_TAG_member
-	.dwattr $C$DW$315, DW_AT_type(*$C$DW$T$19)
-	.dwattr $C$DW$315, DW_AT_name("Umax")
-	.dwattr $C$DW$315, DW_AT_data_member_location[DW_OP_plus_uconst 0xa]
-	.dwattr $C$DW$315, DW_AT_accessibility(DW_ACCESS_public)
-	.dwattr $C$DW$315, DW_AT_decl_file("C:/ti/C2000Ware_MotorControl_SDK_5_04_00_00/libraries/utilities/math_blocks/include/v4.3/pid_grando.h")
-	.dwattr $C$DW$315, DW_AT_decl_line(0x37)
-	.dwattr $C$DW$315, DW_AT_decl_column(0x12)
-
-$C$DW$316	.dwtag  DW_TAG_member
-	.dwattr $C$DW$316, DW_AT_type(*$C$DW$T$19)
-	.dwattr $C$DW$316, DW_AT_name("Umin")
-	.dwattr $C$DW$316, DW_AT_data_member_location[DW_OP_plus_uconst 0xc]
-	.dwattr $C$DW$316, DW_AT_accessibility(DW_ACCESS_public)
-	.dwattr $C$DW$316, DW_AT_decl_file("C:/ti/C2000Ware_MotorControl_SDK_5_04_00_00/libraries/utilities/math_blocks/include/v4.3/pid_grando.h")
-	.dwattr $C$DW$316, DW_AT_decl_line(0x38)
-	.dwattr $C$DW$316, DW_AT_decl_column(0x12)
-
-	.dwattr $C$DW$T$36, DW_AT_decl_file("C:/ti/C2000Ware_MotorControl_SDK_5_04_00_00/libraries/utilities/math_blocks/include/v4.3/pid_grando.h")
-	.dwattr $C$DW$T$36, DW_AT_decl_line(0x32)
-	.dwattr $C$DW$T$36, DW_AT_decl_column(0x10)
-	.dwendtag $C$DW$T$36
-
-	.dwendtag $C$DW$TU$36
-
-
-$C$DW$TU$39	.dwtag  DW_TAG_type_unit
-	.dwmtype  $C$DW$T$39
-$C$DW$T$39	.dwtag  DW_TAG_typedef
-	.dwattr $C$DW$T$39, DW_AT_name("PID_PARAMETERS")
-	.dwattr $C$DW$T$39, DW_AT_type(*$C$DW$T$36)
-	.dwattr $C$DW$T$39, DW_AT_decl_file("C:/ti/C2000Ware_MotorControl_SDK_5_04_00_00/libraries/utilities/math_blocks/include/v4.3/pid_grando.h")
-	.dwattr $C$DW$T$39, DW_AT_decl_line(0x39)
-	.dwattr $C$DW$T$39, DW_AT_decl_column(0x07)
-
-	.dwendtag $C$DW$TU$39
-
-
-$C$DW$TU$37	.dwtag  DW_TAG_type_unit
-	.dwmtype  $C$DW$T$37
-
-$C$DW$T$37	.dwtag  DW_TAG_structure_type
-	.dwattr $C$DW$T$37, DW_AT_byte_size(0x10)
-$C$DW$317	.dwtag  DW_TAG_member
-	.dwattr $C$DW$317, DW_AT_type(*$C$DW$T$19)
-	.dwattr $C$DW$317, DW_AT_name("up")
-	.dwattr $C$DW$317, DW_AT_accessibility(DW_ACCESS_public)
-	.dwattr $C$DW$317, DW_AT_decl_file("C:/ti/C2000Ware_MotorControl_SDK_5_04_00_00/libraries/utilities/math_blocks/include/v4.3/pid_grando.h")
-	.dwattr $C$DW$317, DW_AT_decl_line(0x3b)
-	.dwattr $C$DW$317, DW_AT_decl_column(0x1e)
-
-$C$DW$318	.dwtag  DW_TAG_member
-	.dwattr $C$DW$318, DW_AT_type(*$C$DW$T$19)
-	.dwattr $C$DW$318, DW_AT_name("ui")
-	.dwattr $C$DW$318, DW_AT_data_member_location[DW_OP_plus_uconst 0x2]
-	.dwattr $C$DW$318, DW_AT_accessibility(DW_ACCESS_public)
-	.dwattr $C$DW$318, DW_AT_decl_file("C:/ti/C2000Ware_MotorControl_SDK_5_04_00_00/libraries/utilities/math_blocks/include/v4.3/pid_grando.h")
-	.dwattr $C$DW$318, DW_AT_decl_line(0x3c)
-	.dwattr $C$DW$318, DW_AT_decl_column(0x12)
-
-$C$DW$319	.dwtag  DW_TAG_member
-	.dwattr $C$DW$319, DW_AT_type(*$C$DW$T$19)
-	.dwattr $C$DW$319, DW_AT_name("ud")
-	.dwattr $C$DW$319, DW_AT_data_member_location[DW_OP_plus_uconst 0x4]
-	.dwattr $C$DW$319, DW_AT_accessibility(DW_ACCESS_public)
-	.dwattr $C$DW$319, DW_AT_decl_file("C:/ti/C2000Ware_MotorControl_SDK_5_04_00_00/libraries/utilities/math_blocks/include/v4.3/pid_grando.h")
-	.dwattr $C$DW$319, DW_AT_decl_line(0x3d)
-	.dwattr $C$DW$319, DW_AT_decl_column(0x12)
-
-$C$DW$320	.dwtag  DW_TAG_member
-	.dwattr $C$DW$320, DW_AT_type(*$C$DW$T$19)
-	.dwattr $C$DW$320, DW_AT_name("v1")
-	.dwattr $C$DW$320, DW_AT_data_member_location[DW_OP_plus_uconst 0x6]
-	.dwattr $C$DW$320, DW_AT_accessibility(DW_ACCESS_public)
-	.dwattr $C$DW$320, DW_AT_decl_file("C:/ti/C2000Ware_MotorControl_SDK_5_04_00_00/libraries/utilities/math_blocks/include/v4.3/pid_grando.h")
-	.dwattr $C$DW$320, DW_AT_decl_line(0x3e)
-	.dwattr $C$DW$320, DW_AT_decl_column(0x12)
-
-$C$DW$321	.dwtag  DW_TAG_member
-	.dwattr $C$DW$321, DW_AT_type(*$C$DW$T$19)
-	.dwattr $C$DW$321, DW_AT_name("i1")
-	.dwattr $C$DW$321, DW_AT_data_member_location[DW_OP_plus_uconst 0x8]
-	.dwattr $C$DW$321, DW_AT_accessibility(DW_ACCESS_public)
-	.dwattr $C$DW$321, DW_AT_decl_file("C:/ti/C2000Ware_MotorControl_SDK_5_04_00_00/libraries/utilities/math_blocks/include/v4.3/pid_grando.h")
-	.dwattr $C$DW$321, DW_AT_decl_line(0x3f)
-	.dwattr $C$DW$321, DW_AT_decl_column(0x12)
-
-$C$DW$322	.dwtag  DW_TAG_member
-	.dwattr $C$DW$322, DW_AT_type(*$C$DW$T$19)
-	.dwattr $C$DW$322, DW_AT_name("d1")
-	.dwattr $C$DW$322, DW_AT_data_member_location[DW_OP_plus_uconst 0xa]
-	.dwattr $C$DW$322, DW_AT_accessibility(DW_ACCESS_public)
-	.dwattr $C$DW$322, DW_AT_decl_file("C:/ti/C2000Ware_MotorControl_SDK_5_04_00_00/libraries/utilities/math_blocks/include/v4.3/pid_grando.h")
-	.dwattr $C$DW$322, DW_AT_decl_line(0x40)
-	.dwattr $C$DW$322, DW_AT_decl_column(0x12)
-
-$C$DW$323	.dwtag  DW_TAG_member
-	.dwattr $C$DW$323, DW_AT_type(*$C$DW$T$19)
-	.dwattr $C$DW$323, DW_AT_name("d2")
-	.dwattr $C$DW$323, DW_AT_data_member_location[DW_OP_plus_uconst 0xc]
-	.dwattr $C$DW$323, DW_AT_accessibility(DW_ACCESS_public)
-	.dwattr $C$DW$323, DW_AT_decl_file("C:/ti/C2000Ware_MotorControl_SDK_5_04_00_00/libraries/utilities/math_blocks/include/v4.3/pid_grando.h")
-	.dwattr $C$DW$323, DW_AT_decl_line(0x41)
-	.dwattr $C$DW$323, DW_AT_decl_column(0x12)
-
-$C$DW$324	.dwtag  DW_TAG_member
-	.dwattr $C$DW$324, DW_AT_type(*$C$DW$T$19)
-	.dwattr $C$DW$324, DW_AT_name("w1")
-	.dwattr $C$DW$324, DW_AT_data_member_location[DW_OP_plus_uconst 0xe]
-	.dwattr $C$DW$324, DW_AT_accessibility(DW_ACCESS_public)
-	.dwattr $C$DW$324, DW_AT_decl_file("C:/ti/C2000Ware_MotorControl_SDK_5_04_00_00/libraries/utilities/math_blocks/include/v4.3/pid_grando.h")
-	.dwattr $C$DW$324, DW_AT_decl_line(0x42)
-	.dwattr $C$DW$324, DW_AT_decl_column(0x12)
-
-	.dwattr $C$DW$T$37, DW_AT_decl_file("C:/ti/C2000Ware_MotorControl_SDK_5_04_00_00/libraries/utilities/math_blocks/include/v4.3/pid_grando.h")
-	.dwattr $C$DW$T$37, DW_AT_decl_line(0x3b)
-	.dwattr $C$DW$T$37, DW_AT_decl_column(0x10)
-	.dwendtag $C$DW$T$37
-
-	.dwendtag $C$DW$TU$37
-
-
-$C$DW$TU$40	.dwtag  DW_TAG_type_unit
-	.dwmtype  $C$DW$T$40
-$C$DW$T$40	.dwtag  DW_TAG_typedef
-	.dwattr $C$DW$T$40, DW_AT_name("PID_DATA")
-	.dwattr $C$DW$T$40, DW_AT_type(*$C$DW$T$37)
-	.dwattr $C$DW$T$40, DW_AT_decl_file("C:/ti/C2000Ware_MotorControl_SDK_5_04_00_00/libraries/utilities/math_blocks/include/v4.3/pid_grando.h")
-	.dwattr $C$DW$T$40, DW_AT_decl_line(0x43)
-	.dwattr $C$DW$T$40, DW_AT_decl_column(0x07)
-
-	.dwendtag $C$DW$TU$40
-
-
-$C$DW$TU$41	.dwtag  DW_TAG_type_unit
-	.dwmtype  $C$DW$T$41
-
-$C$DW$T$41	.dwtag  DW_TAG_structure_type
-	.dwattr $C$DW$T$41, DW_AT_byte_size(0x28)
-$C$DW$325	.dwtag  DW_TAG_member
-	.dwattr $C$DW$325, DW_AT_type(*$C$DW$T$38)
-	.dwattr $C$DW$325, DW_AT_name("term")
-	.dwattr $C$DW$325, DW_AT_accessibility(DW_ACCESS_public)
-	.dwattr $C$DW$325, DW_AT_decl_file("C:/ti/C2000Ware_MotorControl_SDK_5_04_00_00/libraries/utilities/math_blocks/include/v4.3/pid_grando.h")
-	.dwattr $C$DW$325, DW_AT_decl_line(0x46)
-	.dwattr $C$DW$325, DW_AT_decl_column(0x21)
-
-$C$DW$326	.dwtag  DW_TAG_member
-	.dwattr $C$DW$326, DW_AT_type(*$C$DW$T$39)
-	.dwattr $C$DW$326, DW_AT_name("param")
-	.dwattr $C$DW$326, DW_AT_data_member_location[DW_OP_plus_uconst 0xa]
-	.dwattr $C$DW$326, DW_AT_accessibility(DW_ACCESS_public)
-	.dwattr $C$DW$326, DW_AT_decl_file("C:/ti/C2000Ware_MotorControl_SDK_5_04_00_00/libraries/utilities/math_blocks/include/v4.3/pid_grando.h")
-	.dwattr $C$DW$326, DW_AT_decl_line(0x47)
-	.dwattr $C$DW$326, DW_AT_decl_column(0x16)
-
-$C$DW$327	.dwtag  DW_TAG_member
-	.dwattr $C$DW$327, DW_AT_type(*$C$DW$T$40)
-	.dwattr $C$DW$327, DW_AT_name("data")
-	.dwattr $C$DW$327, DW_AT_data_member_location[DW_OP_plus_uconst 0x18]
-	.dwattr $C$DW$327, DW_AT_accessibility(DW_ACCESS_public)
-	.dwattr $C$DW$327, DW_AT_decl_file("C:/ti/C2000Ware_MotorControl_SDK_5_04_00_00/libraries/utilities/math_blocks/include/v4.3/pid_grando.h")
-	.dwattr $C$DW$327, DW_AT_decl_line(0x48)
-	.dwattr $C$DW$327, DW_AT_decl_column(0x11)
-
-	.dwattr $C$DW$T$41, DW_AT_decl_file("C:/ti/C2000Ware_MotorControl_SDK_5_04_00_00/libraries/utilities/math_blocks/include/v4.3/pid_grando.h")
-	.dwattr $C$DW$T$41, DW_AT_decl_line(0x46)
-	.dwattr $C$DW$T$41, DW_AT_decl_column(0x10)
-	.dwendtag $C$DW$T$41
-
-	.dwendtag $C$DW$TU$41
-
-
-$C$DW$TU$102	.dwtag  DW_TAG_type_unit
-	.dwmtype  $C$DW$T$102
-$C$DW$T$102	.dwtag  DW_TAG_typedef
-	.dwattr $C$DW$T$102, DW_AT_name("PID_CONTROLLER")
-	.dwattr $C$DW$T$102, DW_AT_type(*$C$DW$T$41)
-	.dwattr $C$DW$T$102, DW_AT_decl_file("C:/ti/C2000Ware_MotorControl_SDK_5_04_00_00/libraries/utilities/math_blocks/include/v4.3/pid_grando.h")
-	.dwattr $C$DW$T$102, DW_AT_decl_line(0x49)
-	.dwattr $C$DW$T$102, DW_AT_decl_column(0x07)
-
-	.dwendtag $C$DW$TU$102
 
 
 $C$DW$TU$42	.dwtag  DW_TAG_type_unit
@@ -6765,25 +6966,25 @@ $C$DW$350	.dwtag  DW_TAG_member
 	.dwendtag $C$DW$TU$46
 
 
-$C$DW$TU$135	.dwtag  DW_TAG_type_unit
-	.dwmtype  $C$DW$T$135
-$C$DW$T$135	.dwtag  DW_TAG_typedef
-	.dwattr $C$DW$T$135, DW_AT_name("DLOG_2CH_F")
-	.dwattr $C$DW$T$135, DW_AT_type(*$C$DW$T$46)
-	.dwattr $C$DW$T$135, DW_AT_decl_file("..\sources\dlog_2ch_f.h")
-	.dwattr $C$DW$T$135, DW_AT_decl_line(0x3d)
-	.dwattr $C$DW$T$135, DW_AT_decl_column(0x02)
-
-	.dwendtag $C$DW$TU$135
-
-
 $C$DW$TU$136	.dwtag  DW_TAG_type_unit
 	.dwmtype  $C$DW$T$136
-$C$DW$T$136	.dwtag  DW_TAG_pointer_type
-	.dwattr $C$DW$T$136, DW_AT_type(*$C$DW$T$135)
-	.dwattr $C$DW$T$136, DW_AT_address_class(0x20)
+$C$DW$T$136	.dwtag  DW_TAG_typedef
+	.dwattr $C$DW$T$136, DW_AT_name("DLOG_2CH_F")
+	.dwattr $C$DW$T$136, DW_AT_type(*$C$DW$T$46)
+	.dwattr $C$DW$T$136, DW_AT_decl_file("..\sources\dlog_2ch_f.h")
+	.dwattr $C$DW$T$136, DW_AT_decl_line(0x3d)
+	.dwattr $C$DW$T$136, DW_AT_decl_column(0x02)
 
 	.dwendtag $C$DW$TU$136
+
+
+$C$DW$TU$137	.dwtag  DW_TAG_type_unit
+	.dwmtype  $C$DW$T$137
+$C$DW$T$137	.dwtag  DW_TAG_pointer_type
+	.dwattr $C$DW$T$137, DW_AT_type(*$C$DW$T$136)
+	.dwattr $C$DW$T$137, DW_AT_address_class(0x20)
+
+	.dwendtag $C$DW$TU$137
 
 
 $C$DW$TU$48	.dwtag  DW_TAG_type_unit
@@ -9078,16 +9279,16 @@ $C$DW$543	.dwtag  DW_TAG_member
 	.dwendtag $C$DW$TU$81
 
 
-$C$DW$TU$139	.dwtag  DW_TAG_type_unit
-	.dwmtype  $C$DW$T$139
-$C$DW$T$139	.dwtag  DW_TAG_typedef
-	.dwattr $C$DW$T$139, DW_AT_name("_Complex_double")
-	.dwattr $C$DW$T$139, DW_AT_type(*$C$DW$T$81)
-	.dwattr $C$DW$T$139, DW_AT_decl_file("C:/ti/ccs2031/ccs/tools/compiler/ti-cgt-c2000_22.6.2.LTS/include/math.h")
-	.dwattr $C$DW$T$139, DW_AT_decl_line(0x13b)
-	.dwattr $C$DW$T$139, DW_AT_decl_column(0x10)
+$C$DW$TU$140	.dwtag  DW_TAG_type_unit
+	.dwmtype  $C$DW$T$140
+$C$DW$T$140	.dwtag  DW_TAG_typedef
+	.dwattr $C$DW$T$140, DW_AT_name("_Complex_double")
+	.dwattr $C$DW$T$140, DW_AT_type(*$C$DW$T$81)
+	.dwattr $C$DW$T$140, DW_AT_decl_file("C:/ti/ccs2031/ccs/tools/compiler/ti-cgt-c2000_22.6.2.LTS/include/math.h")
+	.dwattr $C$DW$T$140, DW_AT_decl_line(0x13b)
+	.dwattr $C$DW$T$140, DW_AT_decl_column(0x10)
 
-	.dwendtag $C$DW$TU$139
+	.dwendtag $C$DW$TU$140
 
 
 $C$DW$TU$83	.dwtag  DW_TAG_type_unit
@@ -9109,16 +9310,16 @@ $C$DW$544	.dwtag  DW_TAG_member
 	.dwendtag $C$DW$TU$83
 
 
-$C$DW$TU$140	.dwtag  DW_TAG_type_unit
-	.dwmtype  $C$DW$T$140
-$C$DW$T$140	.dwtag  DW_TAG_typedef
-	.dwattr $C$DW$T$140, DW_AT_name("_Complex_float")
-	.dwattr $C$DW$T$140, DW_AT_type(*$C$DW$T$83)
-	.dwattr $C$DW$T$140, DW_AT_decl_file("C:/ti/ccs2031/ccs/tools/compiler/ti-cgt-c2000_22.6.2.LTS/include/math.h")
-	.dwattr $C$DW$T$140, DW_AT_decl_line(0x13b)
-	.dwattr $C$DW$T$140, DW_AT_decl_column(0x10)
+$C$DW$TU$141	.dwtag  DW_TAG_type_unit
+	.dwmtype  $C$DW$T$141
+$C$DW$T$141	.dwtag  DW_TAG_typedef
+	.dwattr $C$DW$T$141, DW_AT_name("_Complex_float")
+	.dwattr $C$DW$T$141, DW_AT_type(*$C$DW$T$83)
+	.dwattr $C$DW$T$141, DW_AT_decl_file("C:/ti/ccs2031/ccs/tools/compiler/ti-cgt-c2000_22.6.2.LTS/include/math.h")
+	.dwattr $C$DW$T$141, DW_AT_decl_line(0x13b)
+	.dwattr $C$DW$T$141, DW_AT_decl_column(0x10)
 
-	.dwendtag $C$DW$TU$140
+	.dwendtag $C$DW$TU$141
 
 
 $C$DW$TU$85	.dwtag  DW_TAG_type_unit
@@ -9140,16 +9341,16 @@ $C$DW$545	.dwtag  DW_TAG_member
 	.dwendtag $C$DW$TU$85
 
 
-$C$DW$TU$142	.dwtag  DW_TAG_type_unit
-	.dwmtype  $C$DW$T$142
-$C$DW$T$142	.dwtag  DW_TAG_typedef
-	.dwattr $C$DW$T$142, DW_AT_name("_Complex_long_double")
-	.dwattr $C$DW$T$142, DW_AT_type(*$C$DW$T$85)
-	.dwattr $C$DW$T$142, DW_AT_decl_file("C:/ti/ccs2031/ccs/tools/compiler/ti-cgt-c2000_22.6.2.LTS/include/math.h")
-	.dwattr $C$DW$T$142, DW_AT_decl_line(0x13b)
-	.dwattr $C$DW$T$142, DW_AT_decl_column(0x10)
+$C$DW$TU$143	.dwtag  DW_TAG_type_unit
+	.dwmtype  $C$DW$T$143
+$C$DW$T$143	.dwtag  DW_TAG_typedef
+	.dwattr $C$DW$T$143, DW_AT_name("_Complex_long_double")
+	.dwattr $C$DW$T$143, DW_AT_type(*$C$DW$T$85)
+	.dwattr $C$DW$T$143, DW_AT_decl_file("C:/ti/ccs2031/ccs/tools/compiler/ti-cgt-c2000_22.6.2.LTS/include/math.h")
+	.dwattr $C$DW$T$143, DW_AT_decl_line(0x13b)
+	.dwattr $C$DW$T$143, DW_AT_decl_column(0x10)
 
-	.dwendtag $C$DW$TU$142
+	.dwendtag $C$DW$TU$143
 
 
 $C$DW$TU$86	.dwtag  DW_TAG_type_unit
@@ -9406,76 +9607,76 @@ $C$DW$569	.dwtag  DW_TAG_member
 	.dwendtag $C$DW$TU$91
 
 
-$C$DW$TU$143	.dwtag  DW_TAG_type_unit
-	.dwmtype  $C$DW$T$143
-$C$DW$T$143	.dwtag  DW_TAG_typedef
-	.dwattr $C$DW$T$143, DW_AT_name("HAL_MTR_Obj")
-	.dwattr $C$DW$T$143, DW_AT_type(*$C$DW$T$91)
-	.dwattr $C$DW$T$143, DW_AT_decl_file("..\sources\dual_axis_servo_drive_hal.h")
-	.dwattr $C$DW$T$143, DW_AT_decl_line(0xbb)
-	.dwattr $C$DW$T$143, DW_AT_decl_column(0x03)
-
-	.dwendtag $C$DW$TU$143
-
-
 $C$DW$TU$144	.dwtag  DW_TAG_type_unit
 	.dwmtype  $C$DW$T$144
-
-$C$DW$T$144	.dwtag  DW_TAG_array_type
-	.dwattr $C$DW$T$144, DW_AT_type(*$C$DW$T$143)
-	.dwattr $C$DW$T$144, DW_AT_byte_size(0x24)
-$C$DW$570	.dwtag  DW_TAG_subrange_type
-	.dwattr $C$DW$570, DW_AT_upper_bound(0x01)
-
-	.dwendtag $C$DW$T$144
+$C$DW$T$144	.dwtag  DW_TAG_typedef
+	.dwattr $C$DW$T$144, DW_AT_name("HAL_MTR_Obj")
+	.dwattr $C$DW$T$144, DW_AT_type(*$C$DW$T$91)
+	.dwattr $C$DW$T$144, DW_AT_decl_file("..\sources\dual_axis_servo_drive_hal.h")
+	.dwattr $C$DW$T$144, DW_AT_decl_line(0xbb)
+	.dwattr $C$DW$T$144, DW_AT_decl_column(0x03)
 
 	.dwendtag $C$DW$TU$144
 
 
 $C$DW$TU$145	.dwtag  DW_TAG_type_unit
 	.dwmtype  $C$DW$T$145
-$C$DW$T$145	.dwtag  DW_TAG_pointer_type
-	.dwattr $C$DW$T$145, DW_AT_type(*$C$DW$T$91)
-	.dwattr $C$DW$T$145, DW_AT_address_class(0x20)
+
+$C$DW$T$145	.dwtag  DW_TAG_array_type
+	.dwattr $C$DW$T$145, DW_AT_type(*$C$DW$T$144)
+	.dwattr $C$DW$T$145, DW_AT_byte_size(0x24)
+$C$DW$570	.dwtag  DW_TAG_subrange_type
+	.dwattr $C$DW$570, DW_AT_upper_bound(0x01)
+
+	.dwendtag $C$DW$T$145
 
 	.dwendtag $C$DW$TU$145
 
 
 $C$DW$TU$146	.dwtag  DW_TAG_type_unit
 	.dwmtype  $C$DW$T$146
-$C$DW$T$146	.dwtag  DW_TAG_typedef
-	.dwattr $C$DW$T$146, DW_AT_name("HAL_MTR_Handle")
-	.dwattr $C$DW$T$146, DW_AT_type(*$C$DW$T$145)
-	.dwattr $C$DW$T$146, DW_AT_decl_file("..\sources\dual_axis_servo_drive_hal.h")
-	.dwattr $C$DW$T$146, DW_AT_decl_line(0xc2)
-	.dwattr $C$DW$T$146, DW_AT_decl_column(0x1f)
+$C$DW$T$146	.dwtag  DW_TAG_pointer_type
+	.dwattr $C$DW$T$146, DW_AT_type(*$C$DW$T$91)
+	.dwattr $C$DW$T$146, DW_AT_address_class(0x20)
 
 	.dwendtag $C$DW$TU$146
 
 
 $C$DW$TU$147	.dwtag  DW_TAG_type_unit
 	.dwmtype  $C$DW$T$147
-$C$DW$571	.dwtag  DW_TAG_TI_far_type
-	.dwattr $C$DW$571, DW_AT_type(*$C$DW$T$146)
-
-$C$DW$T$147	.dwtag  DW_TAG_const_type
-	.dwattr $C$DW$T$147, DW_AT_type(*$C$DW$571)
+$C$DW$T$147	.dwtag  DW_TAG_typedef
+	.dwattr $C$DW$T$147, DW_AT_name("HAL_MTR_Handle")
+	.dwattr $C$DW$T$147, DW_AT_type(*$C$DW$T$146)
+	.dwattr $C$DW$T$147, DW_AT_decl_file("..\sources\dual_axis_servo_drive_hal.h")
+	.dwattr $C$DW$T$147, DW_AT_decl_line(0xc2)
+	.dwattr $C$DW$T$147, DW_AT_decl_column(0x1f)
 
 	.dwendtag $C$DW$TU$147
 
 
 $C$DW$TU$148	.dwtag  DW_TAG_type_unit
 	.dwmtype  $C$DW$T$148
+$C$DW$571	.dwtag  DW_TAG_TI_far_type
+	.dwattr $C$DW$571, DW_AT_type(*$C$DW$T$147)
 
-$C$DW$T$148	.dwtag  DW_TAG_array_type
-	.dwattr $C$DW$T$148, DW_AT_type(*$C$DW$T$146)
-	.dwattr $C$DW$T$148, DW_AT_byte_size(0x04)
+$C$DW$T$148	.dwtag  DW_TAG_const_type
+	.dwattr $C$DW$T$148, DW_AT_type(*$C$DW$571)
+
+	.dwendtag $C$DW$TU$148
+
+
+$C$DW$TU$149	.dwtag  DW_TAG_type_unit
+	.dwmtype  $C$DW$T$149
+
+$C$DW$T$149	.dwtag  DW_TAG_array_type
+	.dwattr $C$DW$T$149, DW_AT_type(*$C$DW$T$147)
+	.dwattr $C$DW$T$149, DW_AT_byte_size(0x04)
 $C$DW$572	.dwtag  DW_TAG_subrange_type
 	.dwattr $C$DW$572, DW_AT_upper_bound(0x01)
 
-	.dwendtag $C$DW$T$148
+	.dwendtag $C$DW$T$149
 
-	.dwendtag $C$DW$TU$148
+	.dwendtag $C$DW$TU$149
 
 
 $C$DW$TU$93	.dwtag  DW_TAG_type_unit
@@ -9527,37 +9728,37 @@ $C$DW$576	.dwtag  DW_TAG_member
 	.dwendtag $C$DW$TU$93
 
 
-$C$DW$TU$152	.dwtag  DW_TAG_type_unit
-	.dwmtype  $C$DW$T$152
-$C$DW$T$152	.dwtag  DW_TAG_typedef
-	.dwattr $C$DW$T$152, DW_AT_name("HAL_Obj")
-	.dwattr $C$DW$T$152, DW_AT_type(*$C$DW$T$93)
-	.dwattr $C$DW$T$152, DW_AT_decl_file("..\sources\dual_axis_servo_drive_hal.h")
-	.dwattr $C$DW$T$152, DW_AT_decl_line(0xa1)
-	.dwattr $C$DW$T$152, DW_AT_decl_column(0x03)
-
-	.dwendtag $C$DW$TU$152
-
-
 $C$DW$TU$153	.dwtag  DW_TAG_type_unit
 	.dwmtype  $C$DW$T$153
-$C$DW$T$153	.dwtag  DW_TAG_pointer_type
+$C$DW$T$153	.dwtag  DW_TAG_typedef
+	.dwattr $C$DW$T$153, DW_AT_name("HAL_Obj")
 	.dwattr $C$DW$T$153, DW_AT_type(*$C$DW$T$93)
-	.dwattr $C$DW$T$153, DW_AT_address_class(0x20)
+	.dwattr $C$DW$T$153, DW_AT_decl_file("..\sources\dual_axis_servo_drive_hal.h")
+	.dwattr $C$DW$T$153, DW_AT_decl_line(0xa1)
+	.dwattr $C$DW$T$153, DW_AT_decl_column(0x03)
 
 	.dwendtag $C$DW$TU$153
 
 
 $C$DW$TU$154	.dwtag  DW_TAG_type_unit
 	.dwmtype  $C$DW$T$154
-$C$DW$T$154	.dwtag  DW_TAG_typedef
-	.dwattr $C$DW$T$154, DW_AT_name("HAL_Handle")
-	.dwattr $C$DW$T$154, DW_AT_type(*$C$DW$T$153)
-	.dwattr $C$DW$T$154, DW_AT_decl_file("..\sources\dual_axis_servo_drive_hal.h")
-	.dwattr $C$DW$T$154, DW_AT_decl_line(0xa8)
-	.dwattr $C$DW$T$154, DW_AT_decl_column(0x1b)
+$C$DW$T$154	.dwtag  DW_TAG_pointer_type
+	.dwattr $C$DW$T$154, DW_AT_type(*$C$DW$T$93)
+	.dwattr $C$DW$T$154, DW_AT_address_class(0x20)
 
 	.dwendtag $C$DW$TU$154
+
+
+$C$DW$TU$155	.dwtag  DW_TAG_type_unit
+	.dwmtype  $C$DW$T$155
+$C$DW$T$155	.dwtag  DW_TAG_typedef
+	.dwattr $C$DW$T$155, DW_AT_name("HAL_Handle")
+	.dwattr $C$DW$T$155, DW_AT_type(*$C$DW$T$154)
+	.dwattr $C$DW$T$155, DW_AT_decl_file("..\sources\dual_axis_servo_drive_hal.h")
+	.dwattr $C$DW$T$155, DW_AT_decl_line(0xa8)
+	.dwattr $C$DW$T$155, DW_AT_decl_column(0x1b)
+
+	.dwendtag $C$DW$TU$155
 
 
 $C$DW$TU$124	.dwtag  DW_TAG_type_unit
@@ -10295,7 +10496,7 @@ $C$DW$657	.dwtag  DW_TAG_member
 	.dwattr $C$DW$657, DW_AT_decl_column(0x13)
 
 $C$DW$658	.dwtag  DW_TAG_member
-	.dwattr $C$DW$658, DW_AT_type(*$C$DW$T$33)
+	.dwattr $C$DW$658, DW_AT_type(*$C$DW$T$40)
 	.dwattr $C$DW$658, DW_AT_name("fclClrCntr")
 	.dwattr $C$DW$658, DW_AT_data_member_location[DW_OP_plus_uconst 0x1ac]
 	.dwattr $C$DW$658, DW_AT_accessibility(DW_ACCESS_public)
@@ -10304,7 +10505,7 @@ $C$DW$658	.dwtag  DW_TAG_member
 	.dwattr $C$DW$658, DW_AT_decl_column(0x0f)
 
 $C$DW$659	.dwtag  DW_TAG_member
-	.dwattr $C$DW$659, DW_AT_type(*$C$DW$T$33)
+	.dwattr $C$DW$659, DW_AT_type(*$C$DW$T$40)
 	.dwattr $C$DW$659, DW_AT_name("fclCycleCountMax")
 	.dwattr $C$DW$659, DW_AT_data_member_location[DW_OP_plus_uconst 0x1ad]
 	.dwattr $C$DW$659, DW_AT_accessibility(DW_ACCESS_public)
@@ -10313,7 +10514,7 @@ $C$DW$659	.dwtag  DW_TAG_member
 	.dwattr $C$DW$659, DW_AT_decl_column(0x0f)
 
 $C$DW$660	.dwtag  DW_TAG_member
-	.dwattr $C$DW$660, DW_AT_type(*$C$DW$T$33)
+	.dwattr $C$DW$660, DW_AT_type(*$C$DW$T$40)
 	.dwattr $C$DW$660, DW_AT_name("fclCycleCount")
 	.dwattr $C$DW$660, DW_AT_data_member_location[DW_OP_plus_uconst 0x1ae]
 	.dwattr $C$DW$660, DW_AT_accessibility(DW_ACCESS_public)
@@ -10322,7 +10523,7 @@ $C$DW$660	.dwtag  DW_TAG_member
 	.dwattr $C$DW$660, DW_AT_decl_column(0x0f)
 
 $C$DW$661	.dwtag  DW_TAG_member
-	.dwattr $C$DW$661, DW_AT_type(*$C$DW$T$33)
+	.dwattr $C$DW$661, DW_AT_type(*$C$DW$T$40)
 	.dwattr $C$DW$661, DW_AT_name("focClrCntr")
 	.dwattr $C$DW$661, DW_AT_data_member_location[DW_OP_plus_uconst 0x1af]
 	.dwattr $C$DW$661, DW_AT_accessibility(DW_ACCESS_public)
@@ -10331,7 +10532,7 @@ $C$DW$661	.dwtag  DW_TAG_member
 	.dwattr $C$DW$661, DW_AT_decl_column(0x0f)
 
 $C$DW$662	.dwtag  DW_TAG_member
-	.dwattr $C$DW$662, DW_AT_type(*$C$DW$T$33)
+	.dwattr $C$DW$662, DW_AT_type(*$C$DW$T$40)
 	.dwattr $C$DW$662, DW_AT_name("focCycleCountMax")
 	.dwattr $C$DW$662, DW_AT_data_member_location[DW_OP_plus_uconst 0x1b0]
 	.dwattr $C$DW$662, DW_AT_accessibility(DW_ACCESS_public)
@@ -10340,7 +10541,7 @@ $C$DW$662	.dwtag  DW_TAG_member
 	.dwattr $C$DW$662, DW_AT_decl_column(0x0f)
 
 $C$DW$663	.dwtag  DW_TAG_member
-	.dwattr $C$DW$663, DW_AT_type(*$C$DW$T$33)
+	.dwattr $C$DW$663, DW_AT_type(*$C$DW$T$40)
 	.dwattr $C$DW$663, DW_AT_name("focCycleCount")
 	.dwattr $C$DW$663, DW_AT_data_member_location[DW_OP_plus_uconst 0x1b1]
 	.dwattr $C$DW$663, DW_AT_accessibility(DW_ACCESS_public)
@@ -10349,7 +10550,7 @@ $C$DW$663	.dwtag  DW_TAG_member
 	.dwattr $C$DW$663, DW_AT_decl_column(0x0f)
 
 $C$DW$664	.dwtag  DW_TAG_member
-	.dwattr $C$DW$664, DW_AT_type(*$C$DW$T$33)
+	.dwattr $C$DW$664, DW_AT_type(*$C$DW$T$40)
 	.dwattr $C$DW$664, DW_AT_name("speedLoopPrescaler")
 	.dwattr $C$DW$664, DW_AT_data_member_location[DW_OP_plus_uconst 0x1b2]
 	.dwattr $C$DW$664, DW_AT_accessibility(DW_ACCESS_public)
@@ -10358,7 +10559,7 @@ $C$DW$664	.dwtag  DW_TAG_member
 	.dwattr $C$DW$664, DW_AT_decl_column(0x0e)
 
 $C$DW$665	.dwtag  DW_TAG_member
-	.dwattr $C$DW$665, DW_AT_type(*$C$DW$T$33)
+	.dwattr $C$DW$665, DW_AT_type(*$C$DW$T$40)
 	.dwattr $C$DW$665, DW_AT_name("speedLoopCount")
 	.dwattr $C$DW$665, DW_AT_data_member_location[DW_OP_plus_uconst 0x1b3]
 	.dwattr $C$DW$665, DW_AT_accessibility(DW_ACCESS_public)
@@ -10367,7 +10568,7 @@ $C$DW$665	.dwtag  DW_TAG_member
 	.dwattr $C$DW$665, DW_AT_decl_column(0x0e)
 
 $C$DW$666	.dwtag  DW_TAG_member
-	.dwattr $C$DW$666, DW_AT_type(*$C$DW$T$33)
+	.dwattr $C$DW$666, DW_AT_type(*$C$DW$T$40)
 	.dwattr $C$DW$666, DW_AT_name("alignCntr")
 	.dwattr $C$DW$666, DW_AT_data_member_location[DW_OP_plus_uconst 0x1b4]
 	.dwattr $C$DW$666, DW_AT_accessibility(DW_ACCESS_public)
@@ -10376,7 +10577,7 @@ $C$DW$666	.dwtag  DW_TAG_member
 	.dwattr $C$DW$666, DW_AT_decl_column(0x0e)
 
 $C$DW$667	.dwtag  DW_TAG_member
-	.dwattr $C$DW$667, DW_AT_type(*$C$DW$T$33)
+	.dwattr $C$DW$667, DW_AT_type(*$C$DW$T$40)
 	.dwattr $C$DW$667, DW_AT_name("alignCnt")
 	.dwattr $C$DW$667, DW_AT_data_member_location[DW_OP_plus_uconst 0x1b5]
 	.dwattr $C$DW$667, DW_AT_accessibility(DW_ACCESS_public)
@@ -10385,7 +10586,7 @@ $C$DW$667	.dwtag  DW_TAG_member
 	.dwattr $C$DW$667, DW_AT_decl_column(0x0e)
 
 $C$DW$668	.dwtag  DW_TAG_member
-	.dwattr $C$DW$668, DW_AT_type(*$C$DW$T$33)
+	.dwattr $C$DW$668, DW_AT_type(*$C$DW$T$40)
 	.dwattr $C$DW$668, DW_AT_name("posPtrMax")
 	.dwattr $C$DW$668, DW_AT_data_member_location[DW_OP_plus_uconst 0x1b6]
 	.dwattr $C$DW$668, DW_AT_accessibility(DW_ACCESS_public)
@@ -10394,7 +10595,7 @@ $C$DW$668	.dwtag  DW_TAG_member
 	.dwattr $C$DW$668, DW_AT_decl_column(0x0e)
 
 $C$DW$669	.dwtag  DW_TAG_member
-	.dwattr $C$DW$669, DW_AT_type(*$C$DW$T$33)
+	.dwattr $C$DW$669, DW_AT_type(*$C$DW$T$40)
 	.dwattr $C$DW$669, DW_AT_name("posPtr")
 	.dwattr $C$DW$669, DW_AT_data_member_location[DW_OP_plus_uconst 0x1b7]
 	.dwattr $C$DW$669, DW_AT_accessibility(DW_ACCESS_public)
@@ -10403,7 +10604,7 @@ $C$DW$669	.dwtag  DW_TAG_member
 	.dwattr $C$DW$669, DW_AT_decl_column(0x0e)
 
 $C$DW$670	.dwtag  DW_TAG_member
-	.dwattr $C$DW$670, DW_AT_type(*$C$DW$T$33)
+	.dwattr $C$DW$670, DW_AT_type(*$C$DW$T$40)
 	.dwattr $C$DW$670, DW_AT_name("currentThreshHi")
 	.dwattr $C$DW$670, DW_AT_data_member_location[DW_OP_plus_uconst 0x1b8]
 	.dwattr $C$DW$670, DW_AT_accessibility(DW_ACCESS_public)
@@ -10412,7 +10613,7 @@ $C$DW$670	.dwtag  DW_TAG_member
 	.dwattr $C$DW$670, DW_AT_decl_column(0x0e)
 
 $C$DW$671	.dwtag  DW_TAG_member
-	.dwattr $C$DW$671, DW_AT_type(*$C$DW$T$33)
+	.dwattr $C$DW$671, DW_AT_type(*$C$DW$T$40)
 	.dwattr $C$DW$671, DW_AT_name("currentThreshLo")
 	.dwattr $C$DW$671, DW_AT_data_member_location[DW_OP_plus_uconst 0x1b9]
 	.dwattr $C$DW$671, DW_AT_accessibility(DW_ACCESS_public)
@@ -10421,7 +10622,7 @@ $C$DW$671	.dwtag  DW_TAG_member
 	.dwattr $C$DW$671, DW_AT_decl_column(0x0e)
 
 $C$DW$672	.dwtag  DW_TAG_member
-	.dwattr $C$DW$672, DW_AT_type(*$C$DW$T$33)
+	.dwattr $C$DW$672, DW_AT_type(*$C$DW$T$40)
 	.dwattr $C$DW$672, DW_AT_name("drvEnableGateGPIO")
 	.dwattr $C$DW$672, DW_AT_data_member_location[DW_OP_plus_uconst 0x1ba]
 	.dwattr $C$DW$672, DW_AT_accessibility(DW_ACCESS_public)
@@ -10430,7 +10631,7 @@ $C$DW$672	.dwtag  DW_TAG_member
 	.dwattr $C$DW$672, DW_AT_decl_column(0x0e)
 
 $C$DW$673	.dwtag  DW_TAG_member
-	.dwattr $C$DW$673, DW_AT_type(*$C$DW$T$33)
+	.dwattr $C$DW$673, DW_AT_type(*$C$DW$T$40)
 	.dwattr $C$DW$673, DW_AT_name("drvFaultTripGPIO")
 	.dwattr $C$DW$673, DW_AT_data_member_location[DW_OP_plus_uconst 0x1bb]
 	.dwattr $C$DW$673, DW_AT_accessibility(DW_ACCESS_public)
@@ -10439,7 +10640,7 @@ $C$DW$673	.dwtag  DW_TAG_member
 	.dwattr $C$DW$673, DW_AT_decl_column(0x0e)
 
 $C$DW$674	.dwtag  DW_TAG_member
-	.dwattr $C$DW$674, DW_AT_type(*$C$DW$T$33)
+	.dwattr $C$DW$674, DW_AT_type(*$C$DW$T$40)
 	.dwattr $C$DW$674, DW_AT_name("drvClearFaultGPIO")
 	.dwattr $C$DW$674, DW_AT_data_member_location[DW_OP_plus_uconst 0x1bc]
 	.dwattr $C$DW$674, DW_AT_accessibility(DW_ACCESS_public)
@@ -10448,7 +10649,7 @@ $C$DW$674	.dwtag  DW_TAG_member
 	.dwattr $C$DW$674, DW_AT_decl_column(0x0e)
 
 $C$DW$675	.dwtag  DW_TAG_member
-	.dwattr $C$DW$675, DW_AT_type(*$C$DW$T$33)
+	.dwattr $C$DW$675, DW_AT_type(*$C$DW$T$40)
 	.dwattr $C$DW$675, DW_AT_name("tripCountDMC")
 	.dwattr $C$DW$675, DW_AT_data_member_location[DW_OP_plus_uconst 0x1bd]
 	.dwattr $C$DW$675, DW_AT_accessibility(DW_ACCESS_public)
@@ -10457,7 +10658,7 @@ $C$DW$675	.dwtag  DW_TAG_member
 	.dwattr $C$DW$675, DW_AT_decl_column(0x0e)
 
 $C$DW$676	.dwtag  DW_TAG_member
-	.dwattr $C$DW$676, DW_AT_type(*$C$DW$T$33)
+	.dwattr $C$DW$676, DW_AT_type(*$C$DW$T$40)
 	.dwattr $C$DW$676, DW_AT_name("tripFlagDMC")
 	.dwattr $C$DW$676, DW_AT_data_member_location[DW_OP_plus_uconst 0x1be]
 	.dwattr $C$DW$676, DW_AT_accessibility(DW_ACCESS_public)
@@ -10466,7 +10667,7 @@ $C$DW$676	.dwtag  DW_TAG_member
 	.dwattr $C$DW$676, DW_AT_decl_column(0x0e)
 
 $C$DW$677	.dwtag  DW_TAG_member
-	.dwattr $C$DW$677, DW_AT_type(*$C$DW$T$33)
+	.dwattr $C$DW$677, DW_AT_type(*$C$DW$T$40)
 	.dwattr $C$DW$677, DW_AT_name("tripFlagPrev")
 	.dwattr $C$DW$677, DW_AT_data_member_location[DW_OP_plus_uconst 0x1bf]
 	.dwattr $C$DW$677, DW_AT_accessibility(DW_ACCESS_public)
@@ -10563,50 +10764,50 @@ $C$DW$686	.dwtag  DW_TAG_member
 	.dwendtag $C$DW$TU$124
 
 
-$C$DW$TU$155	.dwtag  DW_TAG_type_unit
-	.dwmtype  $C$DW$T$155
-$C$DW$T$155	.dwtag  DW_TAG_typedef
-	.dwattr $C$DW$T$155, DW_AT_name("MOTOR_Vars_t")
-	.dwattr $C$DW$T$155, DW_AT_type(*$C$DW$T$124)
-	.dwattr $C$DW$T$155, DW_AT_decl_file("..\sources\fcl_foc_cpu_dm.h")
-	.dwattr $C$DW$T$155, DW_AT_decl_line(0x111)
-	.dwattr $C$DW$T$155, DW_AT_decl_column(0x03)
-
-	.dwendtag $C$DW$TU$155
-
-
 $C$DW$TU$156	.dwtag  DW_TAG_type_unit
 	.dwmtype  $C$DW$T$156
-$C$DW$T$156	.dwtag  DW_TAG_pointer_type
-	.dwattr $C$DW$T$156, DW_AT_type(*$C$DW$T$155)
-	.dwattr $C$DW$T$156, DW_AT_address_class(0x20)
+$C$DW$T$156	.dwtag  DW_TAG_typedef
+	.dwattr $C$DW$T$156, DW_AT_name("MOTOR_Vars_t")
+	.dwattr $C$DW$T$156, DW_AT_type(*$C$DW$T$124)
+	.dwattr $C$DW$T$156, DW_AT_decl_file("..\sources\fcl_foc_cpu_dm.h")
+	.dwattr $C$DW$T$156, DW_AT_decl_line(0x111)
+	.dwattr $C$DW$T$156, DW_AT_decl_column(0x03)
 
 	.dwendtag $C$DW$TU$156
 
 
 $C$DW$TU$157	.dwtag  DW_TAG_type_unit
 	.dwmtype  $C$DW$T$157
-$C$DW$687	.dwtag  DW_TAG_TI_far_type
-	.dwattr $C$DW$687, DW_AT_type(*$C$DW$T$156)
-
-$C$DW$T$157	.dwtag  DW_TAG_const_type
-	.dwattr $C$DW$T$157, DW_AT_type(*$C$DW$687)
+$C$DW$T$157	.dwtag  DW_TAG_pointer_type
+	.dwattr $C$DW$T$157, DW_AT_type(*$C$DW$T$156)
+	.dwattr $C$DW$T$157, DW_AT_address_class(0x20)
 
 	.dwendtag $C$DW$TU$157
 
 
 $C$DW$TU$158	.dwtag  DW_TAG_type_unit
 	.dwmtype  $C$DW$T$158
+$C$DW$687	.dwtag  DW_TAG_TI_far_type
+	.dwattr $C$DW$687, DW_AT_type(*$C$DW$T$157)
 
-$C$DW$T$158	.dwtag  DW_TAG_array_type
-	.dwattr $C$DW$T$158, DW_AT_type(*$C$DW$T$155)
-	.dwattr $C$DW$T$158, DW_AT_byte_size(0x394)
+$C$DW$T$158	.dwtag  DW_TAG_const_type
+	.dwattr $C$DW$T$158, DW_AT_type(*$C$DW$687)
+
+	.dwendtag $C$DW$TU$158
+
+
+$C$DW$TU$159	.dwtag  DW_TAG_type_unit
+	.dwmtype  $C$DW$T$159
+
+$C$DW$T$159	.dwtag  DW_TAG_array_type
+	.dwattr $C$DW$T$159, DW_AT_type(*$C$DW$T$156)
+	.dwattr $C$DW$T$159, DW_AT_byte_size(0x394)
 $C$DW$688	.dwtag  DW_TAG_subrange_type
 	.dwattr $C$DW$688, DW_AT_upper_bound(0x01)
 
-	.dwendtag $C$DW$T$158
+	.dwendtag $C$DW$T$159
 
-	.dwendtag $C$DW$TU$158
+	.dwendtag $C$DW$TU$159
 
 
 $C$DW$TU$125	.dwtag  DW_TAG_type_unit
@@ -10898,53 +11099,53 @@ $C$DW$703	.dwtag  DW_TAG_subrange_type
 	.dwendtag $C$DW$TU$51
 
 
-$C$DW$TU$32	.dwtag  DW_TAG_type_unit
-	.dwmtype  $C$DW$T$32
-$C$DW$T$32	.dwtag  DW_TAG_typedef
-	.dwattr $C$DW$T$32, DW_AT_name("__uint16_t")
-	.dwattr $C$DW$T$32, DW_AT_type(*$C$DW$T$11)
-	.dwattr $C$DW$T$32, DW_AT_decl_file("C:/ti/ccs2031/ccs/tools/compiler/ti-cgt-c2000_22.6.2.LTS/include/machine/_types.h")
-	.dwattr $C$DW$T$32, DW_AT_decl_line(0x41)
-	.dwattr $C$DW$T$32, DW_AT_decl_column(0x1c)
+$C$DW$TU$39	.dwtag  DW_TAG_type_unit
+	.dwmtype  $C$DW$T$39
+$C$DW$T$39	.dwtag  DW_TAG_typedef
+	.dwattr $C$DW$T$39, DW_AT_name("__uint16_t")
+	.dwattr $C$DW$T$39, DW_AT_type(*$C$DW$T$11)
+	.dwattr $C$DW$T$39, DW_AT_decl_file("C:/ti/ccs2031/ccs/tools/compiler/ti-cgt-c2000_22.6.2.LTS/include/machine/_types.h")
+	.dwattr $C$DW$T$39, DW_AT_decl_line(0x41)
+	.dwattr $C$DW$T$39, DW_AT_decl_column(0x1c)
 
-	.dwendtag $C$DW$TU$32
-
-
-$C$DW$TU$33	.dwtag  DW_TAG_type_unit
-	.dwmtype  $C$DW$T$33
-$C$DW$T$33	.dwtag  DW_TAG_typedef
-	.dwattr $C$DW$T$33, DW_AT_name("uint16_t")
-	.dwattr $C$DW$T$33, DW_AT_type(*$C$DW$T$32)
-	.dwattr $C$DW$T$33, DW_AT_decl_file("C:/ti/ccs2031/ccs/tools/compiler/ti-cgt-c2000_22.6.2.LTS/include/sys/_stdint.h")
-	.dwattr $C$DW$T$33, DW_AT_decl_line(0x41)
-	.dwattr $C$DW$T$33, DW_AT_decl_column(0x15)
-
-	.dwendtag $C$DW$TU$33
+	.dwendtag $C$DW$TU$39
 
 
-$C$DW$TU$186	.dwtag  DW_TAG_type_unit
-	.dwmtype  $C$DW$T$186
+$C$DW$TU$40	.dwtag  DW_TAG_type_unit
+	.dwmtype  $C$DW$T$40
+$C$DW$T$40	.dwtag  DW_TAG_typedef
+	.dwattr $C$DW$T$40, DW_AT_name("uint16_t")
+	.dwattr $C$DW$T$40, DW_AT_type(*$C$DW$T$39)
+	.dwattr $C$DW$T$40, DW_AT_decl_file("C:/ti/ccs2031/ccs/tools/compiler/ti-cgt-c2000_22.6.2.LTS/include/sys/_stdint.h")
+	.dwattr $C$DW$T$40, DW_AT_decl_line(0x41)
+	.dwattr $C$DW$T$40, DW_AT_decl_column(0x15)
+
+	.dwendtag $C$DW$TU$40
+
+
+$C$DW$TU$188	.dwtag  DW_TAG_type_unit
+	.dwmtype  $C$DW$T$188
 $C$DW$704	.dwtag  DW_TAG_TI_far_type
-	.dwattr $C$DW$704, DW_AT_type(*$C$DW$T$33)
+	.dwattr $C$DW$704, DW_AT_type(*$C$DW$T$40)
 
-$C$DW$T$186	.dwtag  DW_TAG_volatile_type
-	.dwattr $C$DW$T$186, DW_AT_type(*$C$DW$704)
+$C$DW$T$188	.dwtag  DW_TAG_volatile_type
+	.dwattr $C$DW$T$188, DW_AT_type(*$C$DW$704)
 
-	.dwendtag $C$DW$TU$186
+	.dwendtag $C$DW$TU$188
 
 
-$C$DW$TU$187	.dwtag  DW_TAG_type_unit
-	.dwmtype  $C$DW$T$187
+$C$DW$TU$189	.dwtag  DW_TAG_type_unit
+	.dwmtype  $C$DW$T$189
 
-$C$DW$T$187	.dwtag  DW_TAG_array_type
-	.dwattr $C$DW$T$187, DW_AT_type(*$C$DW$T$186)
-	.dwattr $C$DW$T$187, DW_AT_byte_size(0x02)
+$C$DW$T$189	.dwtag  DW_TAG_array_type
+	.dwattr $C$DW$T$189, DW_AT_type(*$C$DW$T$188)
+	.dwattr $C$DW$T$189, DW_AT_byte_size(0x02)
 $C$DW$705	.dwtag  DW_TAG_subrange_type
 	.dwattr $C$DW$705, DW_AT_upper_bound(0x01)
 
-	.dwendtag $C$DW$T$187
+	.dwendtag $C$DW$T$189
 
-	.dwendtag $C$DW$TU$187
+	.dwendtag $C$DW$TU$189
 
 
 $C$DW$TU$12	.dwtag  DW_TAG_type_unit
@@ -10957,15 +11158,15 @@ $C$DW$T$12	.dwtag  DW_TAG_base_type
 	.dwendtag $C$DW$TU$12
 
 
-$C$DW$TU$188	.dwtag  DW_TAG_type_unit
-	.dwmtype  $C$DW$T$188
+$C$DW$TU$191	.dwtag  DW_TAG_type_unit
+	.dwmtype  $C$DW$T$191
 $C$DW$706	.dwtag  DW_TAG_TI_far_type
 	.dwattr $C$DW$706, DW_AT_type(*$C$DW$T$12)
 
-$C$DW$T$188	.dwtag  DW_TAG_const_type
-	.dwattr $C$DW$T$188, DW_AT_type(*$C$DW$706)
+$C$DW$T$191	.dwtag  DW_TAG_const_type
+	.dwattr $C$DW$T$191, DW_AT_type(*$C$DW$706)
 
-	.dwendtag $C$DW$TU$188
+	.dwendtag $C$DW$TU$191
 
 
 $C$DW$TU$24	.dwtag  DW_TAG_type_unit
@@ -10992,16 +11193,16 @@ $C$DW$T$25	.dwtag  DW_TAG_typedef
 	.dwendtag $C$DW$TU$25
 
 
-$C$DW$TU$189	.dwtag  DW_TAG_type_unit
-	.dwmtype  $C$DW$T$189
-$C$DW$T$189	.dwtag  DW_TAG_typedef
-	.dwattr $C$DW$T$189, DW_AT_name("int32")
-	.dwattr $C$DW$T$189, DW_AT_type(*$C$DW$T$12)
-	.dwattr $C$DW$T$189, DW_AT_decl_file("C:/ti/C2000Ware_MotorControl_SDK_5_04_00_00/c2000ware/device_support/f28002x/headers/include/f28002x_device.h")
-	.dwattr $C$DW$T$189, DW_AT_decl_line(0xbc)
-	.dwattr $C$DW$T$189, DW_AT_decl_column(0x31)
+$C$DW$TU$192	.dwtag  DW_TAG_type_unit
+	.dwmtype  $C$DW$T$192
+$C$DW$T$192	.dwtag  DW_TAG_typedef
+	.dwattr $C$DW$T$192, DW_AT_name("int32")
+	.dwattr $C$DW$T$192, DW_AT_type(*$C$DW$T$12)
+	.dwattr $C$DW$T$192, DW_AT_decl_file("C:/ti/C2000Ware_MotorControl_SDK_5_04_00_00/c2000ware/device_support/f28002x/headers/include/f28002x_device.h")
+	.dwattr $C$DW$T$192, DW_AT_decl_line(0xbc)
+	.dwattr $C$DW$T$192, DW_AT_decl_column(0x31)
 
-	.dwendtag $C$DW$TU$189
+	.dwendtag $C$DW$TU$192
 
 
 $C$DW$TU$13	.dwtag  DW_TAG_type_unit
@@ -11142,15 +11343,15 @@ $C$DW$710	.dwtag  DW_TAG_subrange_type
 	.dwendtag $C$DW$TU$82
 
 
-$C$DW$TU$200	.dwtag  DW_TAG_type_unit
-	.dwmtype  $C$DW$T$200
+$C$DW$TU$203	.dwtag  DW_TAG_type_unit
+	.dwmtype  $C$DW$T$203
 $C$DW$711	.dwtag  DW_TAG_TI_far_type
 	.dwattr $C$DW$711, DW_AT_type(*$C$DW$T$16)
 
-$C$DW$T$200	.dwtag  DW_TAG_const_type
-	.dwattr $C$DW$T$200, DW_AT_type(*$C$DW$711)
+$C$DW$T$203	.dwtag  DW_TAG_const_type
+	.dwattr $C$DW$T$203, DW_AT_type(*$C$DW$711)
 
-	.dwendtag $C$DW$TU$200
+	.dwendtag $C$DW$TU$203
 
 
 $C$DW$TU$19	.dwtag  DW_TAG_type_unit
@@ -11174,18 +11375,18 @@ $C$DW$T$43	.dwtag  DW_TAG_pointer_type
 	.dwendtag $C$DW$TU$43
 
 
-$C$DW$TU$204	.dwtag  DW_TAG_type_unit
-	.dwmtype  $C$DW$T$204
+$C$DW$TU$207	.dwtag  DW_TAG_type_unit
+	.dwmtype  $C$DW$T$207
 
-$C$DW$T$204	.dwtag  DW_TAG_array_type
-	.dwattr $C$DW$T$204, DW_AT_type(*$C$DW$T$19)
-	.dwattr $C$DW$T$204, DW_AT_byte_size(0x10)
+$C$DW$T$207	.dwtag  DW_TAG_array_type
+	.dwattr $C$DW$T$207, DW_AT_type(*$C$DW$T$19)
+	.dwattr $C$DW$T$207, DW_AT_byte_size(0x10)
 $C$DW$712	.dwtag  DW_TAG_subrange_type
 	.dwattr $C$DW$712, DW_AT_upper_bound(0x07)
 
-	.dwendtag $C$DW$T$204
+	.dwendtag $C$DW$T$207
 
-	.dwendtag $C$DW$TU$204
+	.dwendtag $C$DW$TU$207
 
 
 $C$DW$TU$17	.dwtag  DW_TAG_type_unit
@@ -11212,24 +11413,24 @@ $C$DW$713	.dwtag  DW_TAG_subrange_type
 	.dwendtag $C$DW$TU$80
 
 
-$C$DW$TU$205	.dwtag  DW_TAG_type_unit
-	.dwmtype  $C$DW$T$205
-$C$DW$T$205	.dwtag  DW_TAG_pointer_type
-	.dwattr $C$DW$T$205, DW_AT_type(*$C$DW$T$17)
-	.dwattr $C$DW$T$205, DW_AT_address_class(0x20)
+$C$DW$TU$208	.dwtag  DW_TAG_type_unit
+	.dwmtype  $C$DW$T$208
+$C$DW$T$208	.dwtag  DW_TAG_pointer_type
+	.dwattr $C$DW$T$208, DW_AT_type(*$C$DW$T$17)
+	.dwattr $C$DW$T$208, DW_AT_address_class(0x20)
 
-	.dwendtag $C$DW$TU$205
+	.dwendtag $C$DW$TU$208
 
 
-$C$DW$TU$206	.dwtag  DW_TAG_type_unit
-	.dwmtype  $C$DW$T$206
+$C$DW$TU$209	.dwtag  DW_TAG_type_unit
+	.dwmtype  $C$DW$T$209
 $C$DW$714	.dwtag  DW_TAG_TI_far_type
-	.dwattr $C$DW$714, DW_AT_type(*$C$DW$T$205)
+	.dwattr $C$DW$714, DW_AT_type(*$C$DW$T$208)
 
-$C$DW$T$206	.dwtag  DW_TAG_const_type
-	.dwattr $C$DW$T$206, DW_AT_type(*$C$DW$714)
+$C$DW$T$209	.dwtag  DW_TAG_const_type
+	.dwattr $C$DW$T$209, DW_AT_type(*$C$DW$714)
 
-	.dwendtag $C$DW$TU$206
+	.dwendtag $C$DW$TU$209
 
 
 $C$DW$TU$18	.dwtag  DW_TAG_type_unit
@@ -11256,24 +11457,24 @@ $C$DW$715	.dwtag  DW_TAG_subrange_type
 	.dwendtag $C$DW$TU$84
 
 
-$C$DW$TU$208	.dwtag  DW_TAG_type_unit
-	.dwmtype  $C$DW$T$208
-$C$DW$T$208	.dwtag  DW_TAG_pointer_type
-	.dwattr $C$DW$T$208, DW_AT_type(*$C$DW$T$18)
-	.dwattr $C$DW$T$208, DW_AT_address_class(0x20)
+$C$DW$TU$211	.dwtag  DW_TAG_type_unit
+	.dwmtype  $C$DW$T$211
+$C$DW$T$211	.dwtag  DW_TAG_pointer_type
+	.dwattr $C$DW$T$211, DW_AT_type(*$C$DW$T$18)
+	.dwattr $C$DW$T$211, DW_AT_address_class(0x20)
 
-	.dwendtag $C$DW$TU$208
+	.dwendtag $C$DW$TU$211
 
 
-$C$DW$TU$209	.dwtag  DW_TAG_type_unit
-	.dwmtype  $C$DW$T$209
+$C$DW$TU$212	.dwtag  DW_TAG_type_unit
+	.dwmtype  $C$DW$T$212
 $C$DW$716	.dwtag  DW_TAG_TI_far_type
-	.dwattr $C$DW$716, DW_AT_type(*$C$DW$T$208)
+	.dwattr $C$DW$716, DW_AT_type(*$C$DW$T$211)
 
-$C$DW$T$209	.dwtag  DW_TAG_const_type
-	.dwattr $C$DW$T$209, DW_AT_type(*$C$DW$716)
+$C$DW$T$212	.dwtag  DW_TAG_const_type
+	.dwattr $C$DW$T$212, DW_AT_type(*$C$DW$716)
 
-	.dwendtag $C$DW$TU$209
+	.dwendtag $C$DW$TU$212
 
 
 $C$DW$TU$90	.dwtag  DW_TAG_type_unit

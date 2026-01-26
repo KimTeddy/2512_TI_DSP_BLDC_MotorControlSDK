@@ -397,7 +397,7 @@
 #define M1_SPEED_LSW        0.05    // reference speed (pu) //= 엔코더 인덱스 찾기/초기 캘리브레이션 상태(LSW 상태)에서 쓰는 저속 회전 속도 기준
 #define M1_SPEED_REF        0.10    // reference speed (pu)
 #define M1_ID_START         0.2     // alignment reference d-axis current
-#define M1_ID_RUN           0.2//0.0// alignment reference d-axis current
+#define M1_ID_RUN           0.0//0.0// alignment reference d-axis current
 #define M1_IQ_LEVEL5        0.10    // reference q-axis current for level5
 #define M1_IQ_NO_LEVEL5     0.10    // ref q-axis current for no level5
 

@@ -304,11 +304,11 @@ void initControlVars(MOTOR_Vars_t *pMotor)
     // Set up the initialization value for some variables
     pMotor->IdRef_start = 0.2f;
     pMotor->IqRef = 0.10f;
-    pMotor->speedRef = 0.10f;
+    pMotor->speedRef = 0.10f;//0.10f;
     pMotor->lsw1Speed = 0.02f;
 
     pMotor->alignCnt = 2000;
-    pMotor->posPtrMax = 2;
+    pMotor->posPtrMax = 8;
     pMotor->posPtr = 0;
     pMotor->posCntrMax = 5000;
     pMotor->posSlewRate =  0.001;
@@ -325,8 +325,8 @@ void initControlVars(MOTOR_Vars_t *pMotor)
     pMotor->rg.Gain = 1.0f;
     pMotor->rg.Offset = 1.0f;
 
-    pMotor->pi_pos.Kp = 0.25f;            //10.0;
-    pMotor->pi_pos.Ki = 0.001f;           //T*speedLoopPrescaler/0.3;
+    pMotor->pi_pos.Kp = 0.25f;            //10.0; 원래 있던 주석
+    pMotor->pi_pos.Ki = 0.001f;           //T*speedLoopPrescaler/0.3; 원래 있던 주석
     pMotor->pi_pos.Umax = 1.0f;
     pMotor->pi_pos.Umin = -1.0f;
 

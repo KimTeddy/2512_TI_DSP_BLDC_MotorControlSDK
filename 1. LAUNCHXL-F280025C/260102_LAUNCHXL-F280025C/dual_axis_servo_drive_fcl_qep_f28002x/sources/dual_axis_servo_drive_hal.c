@@ -507,15 +507,15 @@ void HAL_setupCMPSS(HAL_MTR_Handle handle)
 
         ASysCtl_selectCMPLPMux(M1_IW_CMPLP_SEL, M1_IW_CMPLP_MUX);
     }
-    else if(handle == &halMtr[MTR_2])
-    {
-        ASysCtl_selectCMPHPMux(M2_IU_CMPHP_SEL, M2_IU_CMPHP_MUX);
+    // else if(handle == &halMtr[MTR_2])
+    // {
+    //     ASysCtl_selectCMPHPMux(M2_IU_CMPHP_SEL, M2_IU_CMPHP_MUX);
 
-        ASysCtl_selectCMPHPMux(M2_IV_CMPHP_SEL, M2_IV_CMPHP_MUX);
-        ASysCtl_selectCMPLPMux(M2_IV_CMPLP_SEL, M2_IV_CMPLP_MUX);
+    //     ASysCtl_selectCMPHPMux(M2_IV_CMPHP_SEL, M2_IV_CMPHP_MUX);
+    //     ASysCtl_selectCMPLPMux(M2_IV_CMPLP_SEL, M2_IV_CMPLP_MUX);
 
-        ASysCtl_selectCMPLPMux(M2_IW_CMPLP_SEL, M2_IW_CMPLP_MUX);
-    }
+    //     ASysCtl_selectCMPLPMux(M2_IW_CMPLP_SEL, M2_IW_CMPLP_MUX);
+    // }
 
     DEVICE_DELAY_US(500);
 
@@ -1349,15 +1349,15 @@ void HAL_setupQEP(HAL_MTR_Handle handle)
         // Enable the unit timer, setting the frequency to 10KHz
         EQEP_enableUnitTimer(obj->qepHandle, M1_QEP_UNIT_TIMER_TICKS - 1);
     }
-    else if(handle == &halMtr[MTR_2])
-    {
-        EQEP_setPositionCounterConfig(obj->qepHandle,
-                                      EQEP_POSITION_RESET_MAX_POS,
-                                      ((4 * M2_ENCODER_LINES) - 1) );
+    // else if(handle == &halMtr[MTR_2])
+    // {
+    //     EQEP_setPositionCounterConfig(obj->qepHandle,
+    //                                   EQEP_POSITION_RESET_MAX_POS,
+    //                                   ((4 * M2_ENCODER_LINES) - 1) );
 
-        // Enable the unit timer, setting the frequency to 10KHz
-        EQEP_enableUnitTimer(obj->qepHandle, M2_QEP_UNIT_TIMER_TICKS - 1);
-    }
+    //     // Enable the unit timer, setting the frequency to 10KHz
+    //     EQEP_enableUnitTimer(obj->qepHandle, M2_QEP_UNIT_TIMER_TICKS - 1);
+    // }
 
     // Disables the eQEP module position-compare unit
     EQEP_disableCompare(obj->qepHandle);
