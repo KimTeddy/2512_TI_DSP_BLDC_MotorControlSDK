@@ -171,7 +171,7 @@ typedef float _iq;
 // set the motor parameters to the one available
 //
 #define ESTUN_EMJ04APB222   1
-#define TEKNIC_2310PLN04K   2
+#define TEKNIC_2310PLN04K   2//Teknic M-2310P-LN-04K
 
 #define USER_MOTOR          TEKNIC_2310PLN04K     // ESTUN_EMJ04APB222   //
 
