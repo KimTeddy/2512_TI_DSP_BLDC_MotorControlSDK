@@ -383,7 +383,7 @@
                                     // the maximum measurable peak current
 // #define M1_BASE_TORQUE      NULL    // Base torque (N.m)
 // #define M1_BASE_FLUX        NULL    // Base flux linkage (volt.sec/rad)
-#define M1_BASE_FREQ        400     // Base electrical frequency (Hz)
+#define M1_BASE_FREQ        653.3     // Base electrical frequency (Hz)
                                     //= (기계적 회전속도/60) * pole pair 수
                                     //= 2800rpm/60 * 14 = 46.6667 * 14 = 653.3Hz
 #define M1_MAXIMUM_CURRENT  7.5     // Motor maximum torque current (amp)
