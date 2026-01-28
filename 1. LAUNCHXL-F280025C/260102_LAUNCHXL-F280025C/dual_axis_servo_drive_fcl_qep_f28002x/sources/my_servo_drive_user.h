@@ -367,7 +367,7 @@
 #define M1_LQ      M1_LS           // Stator q-axis inductance (H)
 // #define M1_LR      NULL            // Rotor inductance (H)
 // #define M1_LM      NULL            // Magnetizing inductance (H)
-#define M1_KB      0.040   // BEMF Constant (V/Hz) //Ke=Kt; 역기전력 상수(Back-EMF Constant)[V/(rad/s)]=토크 상수[Nm/A]*2PI(/60) = 0.1237*2PI =0.777
+#define M1_KB      0.051   // BEMF Constant (V/Hz) //Ke=Kt; 역기전력 상수(Back-EMF Constant)[V/(rad/s)]=토크 상수[Nm/A]*2PI(/60) = 0.1237*2PI =0.777
 #define M1_POLES   28//8           // Number of poles
 
 //
@@ -395,7 +395,7 @@
 #define M1_STARTUP_FREQ     10.0    // Motor startup frequency (Hz)
 
 #define M1_SPEED_LSW        0.05    // reference speed (pu) //= 엔코더 인덱스 찾기/초기 캘리브레이션 상태(LSW 상태)에서 쓰는 저속 회전 속도 기준
-#define M1_SPEED_REF        0.10    // reference speed (pu)
+#define M1_SPEED_REF        0.10//0.10// reference speed (pu)
 #define M1_ID_START         0.2     // alignment reference d-axis current
 #define M1_ID_RUN           0.0//0.0// alignment reference d-axis current
 #define M1_IQ_LEVEL5        0.10    // reference q-axis current for level5
