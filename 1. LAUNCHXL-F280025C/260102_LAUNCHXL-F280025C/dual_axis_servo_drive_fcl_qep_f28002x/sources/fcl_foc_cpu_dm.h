@@ -367,88 +367,171 @@ static inline void FCL_runCCSyn(FCL_cmplxCtrl_t *pId, FCL_cmplxCtrl_t *pIq)
 //
 // FCL PI controller
 //
-static inline void FCL_runPICtrl(MOTOR_Vars_t *pMotor)
+static inline void FCL_runPICtrl(MOTOR_Vars_t *pMotor)// [목적] ADC로 읽은 2상 전류 -> Clarke(αβ) -> Park(dq) -> Id/Iq PI -> Inverse Park -> SVPWM -> PWM CMP 업데이트까지 전류루프 1회 수행
 {
-    register float32_t  clarke1Alpha, clarke1Beta;
-    register float32_t  park1Sine, park1Cosine;
-    SVGEN     svgen2;
-
-    park1Sine   = __sinpuf32(pMotor->pangle);
-    park1Cosine = __cospuf32(pMotor->pangle);
-
+    register float32_t  clarke1Alpha, clarke1Beta;// [변수] Clarke 변환 결과: i_alpha, i_beta (보통 pu 혹은 스케일된 전류)
+    register float32_t  park1Sine, park1Cosine;// [변수] Park 변환용 sin/cos(theta_e) 값
+    SVGEN     svgen2; // [변수] SVPWM 계산에 쓰는 임시 변수 묶음(구조체)
+    /* =================================================================================
+     * [배경] pMotor->pangle은 보통 "전기각"을 PU(per-unit)로 표현합니다.
+     *        PU 각도 규약: 1.0 == 2π rad (한 바퀴), 0.25 == π/2 rad
+     *        그래서 TI C2000의 __sinpuf32/__cospuf32는 "PU 각도 입력"을 받습니다.
+     * [왜]   ISR에서 sin/cos를 빠르게 얻고, Park/Inverse Park에 사용하기 위함.
+     * ================================================================================= */
+    park1Sine   = __sinpuf32(pMotor->pangle);// [각도] sin(θ_e) 계산(입력은 PU 각도)
+    park1Cosine = __cospuf32(pMotor->pangle);// [각도] cos(θ_e) 계산(입력은 PU 각도)
+    /* =================================================================================
+     * [배경] ADC 샘플이 준비되기 전에 결과 레지스터를 읽으면 "이전 샘플"이거나 무효값일 수 있습니다.
+     * [왜]   전류루프는 샘플 타이밍이 매우 중요(스위칭 리플/노이즈)하므로, ADC 변환 완료 플래그를 확인합니다.
+     * ================================================================================= */
     //
     // CLARKE transformation
     //
-#if(DRIVER_MODULE == BITFIELD_MODE)
-    while(pMotor->pADCIntFlag->bit.ADCINT1 == 0);
-#else
-    while(ADC_getInterruptStatus(pMotor->adcBaseW, pMotor->adcIntNumber) == 0);
-#endif
+#if(DRIVER_MODULE == BITFIELD_MODE)// [분기] BITFIELD_MODE면 레지스터 비트필드로 ADCINT 확인
+    while(pMotor->pADCIntFlag->bit.ADCINT1 == 0);// [대기] ADCINT1이 1 될 때까지 busy-wait(변환 완료 대기)
+#else// [분기] 그 외에는 driverlib로 ADCINT 확인
+    while(ADC_getInterruptStatus(pMotor->adcBaseW, pMotor->adcIntNumber) == 0);// [대기] 지정한 ADC 모듈/인터럽트 번호 플래그가 1 될 때까지 대기
+#endif// [분기끝] ADC 완료 확인 방식 종료
 
 //    clarke1Alpha = (float32_t)((int16_t)HWREGH(pMotor->curA_PPBRESULT) *
 //            pMotor->FCL_params.adcPPBScale);
 //    clarke1Beta  = ((clarke1Alpha +
 //                   (2.0F * ((float32_t)((int16_t)HWREGH(pMotor->curB_PPBRESULT))
 //                           * pMotor->FCL_params.adcPPBScale))) * ONEbySQRT3);
-
-    clarke1Alpha = (float32_t)((int16_t)HWREGH(pMotor->curA_PPBRESULT) *
-            pMotor->FCL_params.adcAlphaScale);
-    clarke1Beta  = (clarke1Alpha +
-                   (((float32_t)((int16_t)HWREGH(pMotor->curB_PPBRESULT))
-                           * pMotor->FCL_params.adcBetaScale))) * ONEbySQRT3;
-
+    /* =================================================================================
+     * [배경] Clarke 변환(abc -> αβ)은 3상 전류를 2D 벡터(고정 좌표계)로 표현하기 위한 선형 변환입니다.
+     *
+     * [수식-대표형] (많이 쓰는 형태 중 하나)
+     *   i_alpha = i_a
+     *   i_beta  = (i_a + 2*i_b) / sqrt(3)
+     *
+     * [주의] 이 코드는 2개 채널(curA, curB)만 읽습니다.
+     *        2-shunt(2전류센서) 구성에서는 보통 i_c를 i_c = -(i_a + i_b)로 유도하거나,
+     *        Clarke식 계수 일부(예: 2배)를 adcBetaScale 같은 스케일에 흡수합니다.
+     *        따라서 adcAlphaScale/adcBetaScale 안에 "센서 게인/오프셋/2배 계수/pu 스케일"이 포함될 수 있습니다.
+     *
+     * [단위] 여기서 clarke1Alpha/Beta는 '전류(A)'일 수도, 'pu'일 수도 있습니다.
+     *        정확한 단위는 adcAlphaScale/adcBetaScale 정의를 보면 확정됩니다.
+     * ================================================================================= */
+    clarke1Alpha = (float32_t)((int16_t)HWREGH(pMotor->curA_PPBRESULT) * // [읽기+스케일] PPB 보정된 채널A 전류 ADC 결과(16-bit)를 signed로 읽어 스케일 적용
+            pMotor->FCL_params.adcAlphaScale);// [스케일] ADC 코드 -> 전류/pu로 변환하는 계수(α축에 해당)
+    clarke1Beta  = (clarke1Alpha +  // [계산] i_beta 만들기: (i_alpha + k*i_b) * (1/sqrt(3)) 형태
+                   (((float32_t)((int16_t)HWREGH(pMotor->curB_PPBRESULT))// [읽기] PPB 보정된 채널B 전류 ADC 결과를 signed로 읽기
+                           * pMotor->FCL_params.adcBetaScale))) * ONEbySQRT3;// [스케일] β축 스케일 적용 후 1/sqrt(3) 곱(ONEbySQRT3 = 1/√3)
+    /* =================================================================================
+     * [배경] Park 변환(αβ -> dq)은 "회전 좌표계(dq)"로 전류 벡터를 표현하는 변환입니다.
+     *        dq로 바꾸면(이상적으로) 전류가 DC처럼 보여 PI 제어가 쉬워집니다.
+     *
+     * [수식]
+     *   i_d =  i_alpha*cos(θ) + i_beta*sin(θ)
+     *   i_q = -i_alpha*sin(θ) + i_beta*cos(θ)
+     *
+     * [오차 정의]
+     *   err = ref - fbk
+     *   여기서 ref는 목표 전류(Id_ref, Iq_ref), fbk는 측정 전류(Id_fbk, Iq_fbk)
+     * ================================================================================= */
     // PARK Transformation
     //
-    pMotor->cmplx_Iq.err = pMotor->cmplx_Iq.ref -
-            ((clarke1Beta * park1Cosine) - (clarke1Alpha * park1Sine));
+    pMotor->cmplx_Iq.err = pMotor->cmplx_Iq.ref - // [오차] Iq 오차 = Iq_ref - Iq_fbk
+            ((clarke1Beta * park1Cosine) - (clarke1Alpha * park1Sine));// [수식] Iq_fbk = i_beta*cos(θ) - i_alpha*sin(θ) (= -i_alpha*sin + i_beta*cos)
 
-    pMotor->cmplx_Id.err = pMotor->cmplx_Id.ref -
-            ((clarke1Alpha * park1Cosine) + (clarke1Beta * park1Sine));
-
+    pMotor->cmplx_Id.err = pMotor->cmplx_Id.ref - // [오차] Id 오차 = Id_ref - Id_fbk
+            ((clarke1Alpha * park1Cosine) + (clarke1Beta * park1Sine));// [수식] Id_fbk = i_alpha*cos(θ) + i_beta*sin(θ)
+    /* =================================================================================
+     * [배경] pMotor->cmplx_Id / cmplx_Iq 는 FCL_cmplxCtrl_t 구조체(PI/Complex 공용)입니다.
+     *        구조체 의미(요약): ref(지령), fbk(피드백), err(오차), out(제어기 출력),
+     *        carryOver(다음 반복에 더할 항), Kerr(최신 오차 계수), Umax/Umin(포화 한계) 등.
+     *
+     * [PI 구현 방식] 이 프로젝트의 PI는 보통 증분형:
+     *   out <- out + err*Kerr + carryOver
+     *   out <- sat(out, Umin..Umax)
+     *
+     * [왜] ISR에서 빠르게 돌기 위해 wrap 함수에서 Kerr/carryOver를 미리 준비해 두는 구조를 사용합니다.
+     * ================================================================================= */
     //
     // PI controllers for Id and Iq
     //
-    FCL_runPI(&pMotor->cmplx_Iq);     // Iq loop - PI controller - CPU
-    FCL_runPI(&pMotor->cmplx_Id);     // Id loop - PI controller - CPU
-
+    FCL_runPI(&pMotor->cmplx_Iq);     // Iq loop - PI controller - CPU // [제어] Iq PI 실행: out(=Vq*) 업데이트 + 포화
+    FCL_runPI(&pMotor->cmplx_Id);     // Id loop - PI controller - CPU // [제어] Id PI 실행: out(=Vd*) 업데이트 + 포화
+    /* =================================================================================
+     * [배경] Inverse Park 변환(dq -> αβ): dq 전압 명령(Vd*, Vq*)를 고정 좌표계(Ualpha, Ubeta)로 되돌립니다.
+     * [수식]
+     *   v_alpha = v_d*cos(θ) - v_q*sin(θ)
+     *   v_beta  = v_q*cos(θ) + v_d*sin(θ)
+     *
+     * [왜 스케일 곱?]
+     *   여기서는 pu 전압 명령을 PWM 카운트(=CMPA에 쓸 값) 영역으로 옮기기 위해 carrierMid/cmidsqrt3를 곱합니다.
+     *   - carrierMid: 보통 PWM 주기의 절반(half-period) 카운트 등 "중앙 기준" 스케일
+     *   - cmidsqrt3: carrierMid * sqrt(3) 계열로, SVPWM 계산에서 곱셈을 줄이려는 최적화일 가능성이 큼
+     * ================================================================================= */
     //
     // Inverse Park Transformation
     //
-    svgen2.Ualpha = ((pMotor->cmplx_Id.out * park1Cosine) -
-            (pMotor->cmplx_Iq.out * park1Sine)) * pMotor->FCL_params.carrierMid;
+    svgen2.Ualpha = ((pMotor->cmplx_Id.out * park1Cosine) - // [수식] v_alpha = v_d*cos - v_q*sin
+            (pMotor->cmplx_Iq.out * park1Sine)) * pMotor->FCL_params.carrierMid; // [스케일] PWM 카운트 스케일로 변환(중앙 기준)
 
-    svgen2.Ubeta  = ((pMotor->cmplx_Iq.out * park1Cosine) +
-            (pMotor->cmplx_Id.out * park1Sine)) * pMotor->FCL_params.cmidsqrt3;
-
+    svgen2.Ubeta  = ((pMotor->cmplx_Iq.out * park1Cosine) + // [수식] v_beta = v_q*cos + v_d*sin
+            (pMotor->cmplx_Id.out * park1Sine)) * pMotor->FCL_params.cmidsqrt3; // [스케일] sqrt(3) 포함 스케일(최적화 목적)
+    /* =================================================================================
+     * [배경] SVPWM(Space Vector PWM): Ualpha/Ubeta(2D 전압 벡터)로부터 3상 PWM 듀티를 생성합니다.
+     *        이 코드는 "섹터 분기 없이" min/max 기반 공통모드(제로시퀀스) 주입으로 듀티를 빠르게 계산하는 패턴입니다.
+     *
+     * [핵심 아이디어]
+     *   세 상에 동일한 오프셋(공통모드)을 더해도 선간전압은 변하지 않으면서,
+     *   PWM 포화를 늦추고 DC bus 활용을 개선할 수 있습니다.
+     *
+     * [구현 포인트]
+     *   tmp2 = max(...) + min(...)
+     *   tmp1 = carrierMid - tmp2/2
+     *   -> tmp1이 사실상 공통모드 오프셋 + 중앙 정렬을 위한 기준 이동 역할을 합니다.
+     * ================================================================================= */
     //
     // PWM pulse width time calculation
     //
-    svgen2.Tb = (svgen2.Ubeta - svgen2.Ualpha) / 2;
-    svgen2.Tc = svgen2.Tb - svgen2.Ubeta;
+    svgen2.Tb = (svgen2.Ubeta - svgen2.Ualpha) / 2; // [변환] SVPWM 중간 변수 Tb 계산(공통모드 주입용 표현으로 변환)
+    svgen2.Tc = svgen2.Tb - svgen2.Ubeta; // [변환] SVPWM 중간 변수 Tc 계산
 
-    svgen2.tmp2  = __fmax(__fmax(svgen2.Ualpha, svgen2.Tc), svgen2.Tb);
-    svgen2.tmp2 += __fmin(__fmin(svgen2.Ualpha, svgen2.Tc), svgen2.Tb);
-    svgen2.tmp1  = pMotor->FCL_params.carrierMid - (svgen2.tmp2 / 2);
-
+    svgen2.tmp2  = __fmax(__fmax(svgen2.Ualpha, svgen2.Tc), svgen2.Tb);// [최대] (Ualpha, Tb, Tc) 중 최대값
+    svgen2.tmp2 += __fmin(__fmin(svgen2.Ualpha, svgen2.Tc), svgen2.Tb);// [최소] (Ualpha, Tb, Tc) 중 최소값을 더해 (max+min) 생성
+    svgen2.tmp1  = pMotor->FCL_params.carrierMid - (svgen2.tmp2 / 2);// [오프셋] 공통모드/중앙 정렬 오프셋(tmp1) 계산
+    /* =================================================================================
+     * [배경] PWM 업데이트:
+     *   pMotor->pwmCompA/B/C는 CMPA 레지스터 주소 포인터(= ISR에서 함수 호출 오버헤드 없이 직접 write)입니다.
+     * [주의] 실제 듀티 반영 시점은 ePWM shadow load 설정(CTR=0, CTR=PRD 등)에 따릅니다.
+     * ================================================================================= */
     //
     // PWM updates
     //
-    *(pMotor->pwmCompA) = (uint32_t)(svgen2.Tc + svgen2.tmp1);
-    *(pMotor->pwmCompB) = (uint32_t)(svgen2.Ualpha + svgen2.tmp1);
-    *(pMotor->pwmCompC) = (uint32_t)(svgen2.Tb + svgen2.tmp1);
+    *(pMotor->pwmCompA) = (uint32_t)(svgen2.Tc + svgen2.tmp1);// [듀티] 상A 비교값(CMPA) = Tc + 오프셋
+    *(pMotor->pwmCompB) = (uint32_t)(svgen2.Ualpha + svgen2.tmp1);// [듀티] 상B 비교값(CMPA) = Ualpha + 오프셋
+    *(pMotor->pwmCompC) = (uint32_t)(svgen2.Tb + svgen2.tmp1);// [듀티] 상C 비교값(CMPA) = Tb + 오프셋
 
-    FCL_readCount(pMotor);
+    FCL_readCount(pMotor);// [타이밍] TBCTR 읽어서 전류루프 지연/마진 확인용(fclCycleCount 저장)
 
     return;
-}
+}// [끝] 전류루프 1회 종료
 
 //
 // Wrap up function to be called by the user app after end of current loop
 //
-static inline void FCL_runPICtrlWrap(MOTOR_Vars_t *pMotor)
+static inline void FCL_runPICtrlWrap(MOTOR_Vars_t *pMotor)// [목적] 다음 ISR에서 FCL_runPI()가 빠르게 돌도록 PI 계수(Kp,Ki,Kerr,KerrOld)와 carryOver를 미리 계산(=wrap)
 {
-    float32_t Vbase = pMotor->FCL_params.Vdcbus * (1.15f / 2.0f);
-    float32_t invZbase = pMotor->FCL_params.Ibase / Vbase;
+    /* =================================================================================
+     * [배경: per-unit(pu) 스케일링]
+     *   전류/전압을 실제 단위(A,V)로 그대로 쓰면 모터/보드마다 값이 달라 튜닝/이식이 힘듭니다.
+     *   그래서 보통 Ibase, Vbase를 잡고 pu로 정규화해 제어기 파라미터를 만들기도 합니다.
+     *
+     * [Vbase 계산]
+     *   Vbase = Vdcbus * (1.15/2) = Vdcbus * 0.575
+     *   0.575는 1/sqrt(3) = 0.577...에 매우 가깝습니다.
+     *   → SVPWM에서 DC bus로 만들 수 있는 유효 전압 크기를 근사해 base로 잡는 패턴으로 해석하는 게 자연스럽습니다(추측입니다).
+     *
+     * [Zbase]
+     *   Zbase = Vbase / Ibase  (base impedance)
+     *   invZbase = 1/Zbase = Ibase / Vbase
+     * ================================================================================= */
+    float32_t Vbase = pMotor->FCL_params.Vdcbus * (1.15f / 2.0f);// [스케일] 전압 base 생성(단위는 V 또는 pu기준 변환용; 1.15/2 의미는 위 주석 참고)
+    float32_t invZbase = pMotor->FCL_params.Ibase / Vbase;// [스케일] base 임피던스 역수 = Ibase/Vbase (pu 변환/이득 스케일링에 사용)
 
     //
     // To save CPU cycles and speed up calcn, carry over math is done within
@@ -456,49 +539,74 @@ static inline void FCL_runPICtrlWrap(MOTOR_Vars_t *pMotor)
     //   Bemf calc is rolled in to the Q calcs as the speed and flux does not
     //   change much between iterations - equation tweaked to fit here
     //
-
+    /* =================================================================================
+     * [배경: 전류 플랜트(축별 RL 근사)]
+     *   (단순화) L * di/dt + R * i = v
+     *   전류루프 목표 대역폭(교차주파수)을 wcc(rad/s)로 잡으면, 경험적으로/고전적으로
+     *     Kp ~ L * wcc
+     *     Ki ~ R * wcc
+     *   형태로 튜닝하는 방식이 많이 쓰입니다.
+     *
+     * [디지털 구현 포인트]
+     *   이 프로젝트의 PI는 "증분형(Tustin/Trapezoidal)" 형태로 동작:
+     *     out <- out + err*Kerr + carryOver
+     *   여기서
+     *     Kerr    = Kp + Ki/2
+     *     KerrOld = Ki/2 - Kp
+     *   그리고 carryOver에 "이전 오차항"을 미리 담아 다음 ISR에서 곱셈을 줄입니다.
+     * ================================================================================= */
     //
-    // Update PI ID parameters
+    // Update PI ID parameters// [블록] d축(Id) PI 파라미터 업데이트 시작
     //
-    float32_t wccXinvZb = invZbase * pMotor->FCL_params.wccD;
+    float32_t wccXinvZb = invZbase * pMotor->FCL_params.wccD;// [이득] (wccD * invZbase) 묶음(곱셈 줄이기)
 
-    pMotor->cmplx_Id.Kp = pMotor->FCL_params.Ld * wccXinvZb;
-    pMotor->cmplx_Id.Ki = pMotor->FCL_params.Rd * wccXinvZb *
-            pMotor->FCL_params.tSamp;
+    pMotor->cmplx_Id.Kp = pMotor->FCL_params.Ld * wccXinvZb; // [Kp] Id 비례게인 Kp = Ld * wccD * invZbase
+    pMotor->cmplx_Id.Ki = pMotor->FCL_params.Rd * wccXinvZb * // [Ki] Id 적분게인 Ki = Rd * wccD * invZbase * Ts (디지털형 Ki)
+            pMotor->FCL_params.tSamp;// [Ts] tSamp = 샘플링 주기 Ts (초)
 
-    float32_t Ki_rev = pMotor->cmplx_Id.Ki / 2;
-    pMotor->cmplx_Id.Kerr = Ki_rev + pMotor->cmplx_Id.Kp;
-    pMotor->cmplx_Id.KerrOld = Ki_rev - pMotor->cmplx_Id.Kp;
+    float32_t Ki_rev = pMotor->cmplx_Id.Ki / 2;// [보조] Ki/2 (Tustin/Trapezoidal 증분 PI 계수용)
+    pMotor->cmplx_Id.Kerr = Ki_rev + pMotor->cmplx_Id.Kp;// [Kerr] 최신 오차 e(k)에 곱할 계수 = Kp + Ki/2
+    pMotor->cmplx_Id.KerrOld = Ki_rev - pMotor->cmplx_Id.Kp;// [KerrOld] 이전 오차 e(k-1)에 곱할 계수 = Ki/2 - Kp
 
-    pMotor->cmplx_Id.carryOver =
-            pMotor->cmplx_Id.err * pMotor->cmplx_Id.KerrOld;
+    pMotor->cmplx_Id.carryOver = // [carryOver] 다음 ISR에서 더할 항(이전 오차항 역할로 사용)
+            pMotor->cmplx_Id.err * pMotor->cmplx_Id.KerrOld;// [prev항] 현재 err를 이용해 다음 반복의 "prev error term"을 준비(증분 PI 구조)
 
-    // Update PI IQ parameters
-    wccXinvZb = invZbase * pMotor->FCL_params.wccQ;
+    // Update PI IQ parameters// [블록] q축(Iq) PI 파라미터 업데이트 시작
+    wccXinvZb = invZbase * pMotor->FCL_params.wccQ;// [이득] (wccQ * invZbase) 묶음(곱셈 줄이기)
 
-    pMotor->cmplx_Iq.Kp = pMotor->FCL_params.Lq * wccXinvZb;
-    pMotor->cmplx_Iq.Ki = pMotor->FCL_params.Rq * wccXinvZb *
-            pMotor->FCL_params.tSamp;
+    pMotor->cmplx_Iq.Kp = pMotor->FCL_params.Lq * wccXinvZb;// [Kp] Iq 비례게인 Kp = Lq * wccQ * invZbase
+    pMotor->cmplx_Iq.Ki = pMotor->FCL_params.Rq * wccXinvZb * // [Ki] Iq 적분게인 Ki = Rq * wccQ * invZbase * Ts
+            pMotor->FCL_params.tSamp;// [Ts] tSamp = 샘플링 주기 Ts
 
-    Ki_rev = pMotor->cmplx_Iq.Ki / 2;
+    Ki_rev = pMotor->cmplx_Iq.Ki / 2;// [보조] Ki/2 (q축)
 
-    pMotor->cmplx_Iq.Kerr = Ki_rev + pMotor->cmplx_Iq.Kp;
-    pMotor->cmplx_Iq.KerrOld = Ki_rev - pMotor->cmplx_Iq.Kp;
+    pMotor->cmplx_Iq.Kerr = Ki_rev + pMotor->cmplx_Iq.Kp;// [Kerr] 최신 오차용 계수(q축)
+    pMotor->cmplx_Iq.KerrOld = Ki_rev - pMotor->cmplx_Iq.Kp;// [KerrOld] 이전 오차용 계수(q축)
+    /* =================================================================================
+     * [BEMF 보정항(왜 Iq에만?)]
+     *   PMSM에서 q축 전압에는 역기전력(Back-EMF) 성분이 크게 들어갑니다(단순화):
+     *     v_q ≈ R*i_q + L_q*di_q/dt + ω_e*λ
+     *   속도가 변하면(Δω) 그만큼 필요한 전압이 달라지므로, 이를 보정해주면 고속/가변속에서 응답이 좋아집니다.
+     *
+     * [구현 방식]
+     *   매번 ω_e*λ 를 절대값으로 계산하기보다, 샘플 간 변화(ω(k)-ω(k-1))만큼만 보정:
+     *     Δv_bemf ∝ BemfK * (speedWe - speedWePrev)
+     *   여기서 BemfK의 정의/단위(pu인지, λ기반인지)는 FCL_params 정의를 봐야 확정됩니다(확실하지 않음).
+     * ================================================================================= */
+    pMotor->cmplx_Iq.carryOver = // [carryOver] q축은 "이전 오차항 + BEMF 변화분 보정"을 합쳐 준비
+           (pMotor->cmplx_Iq.err * pMotor->cmplx_Iq.KerrOld) + // [prev항] 증분 PI의 이전 오차항
+           (pMotor->FCL_params.BemfK * (pMotor->speedWe - pMotor->speedWePrev)); // [BEMF] 속도 변화분 기반 BEMF 보정(단위/정의는 FCL_params 필요)
 
-    pMotor->cmplx_Iq.carryOver =
-           (pMotor->cmplx_Iq.err * pMotor->cmplx_Iq.KerrOld) +
-           (pMotor->FCL_params.BemfK * (pMotor->speedWe - pMotor->speedWePrev));
-
-    pMotor->speedWePrev = pMotor->speedWe;
+    pMotor->speedWePrev = pMotor->speedWe; // [상태] 다음 wrap에서 Δω 계산을 위해 이전 속도 저장
 
     //
     // to pass on the id and iq current feedback back to user,
-    // update them in the wrap function
+    // update them in the wrap function // [블록] 디버그/로깅용 피드백 값 업데이트
     //
-    pMotor->cmplx_Id.fbk = pMotor->cmplx_Id.ref - pMotor->cmplx_Id.err;
-    pMotor->cmplx_Iq.fbk = pMotor->cmplx_Iq.ref - pMotor->cmplx_Iq.err;
+    pMotor->cmplx_Id.fbk = pMotor->cmplx_Id.ref - pMotor->cmplx_Id.err;// [정리] err = ref - fbk 이므로 fbk = ref - err (Id 피드백 재구성)
+    pMotor->cmplx_Iq.fbk = pMotor->cmplx_Iq.ref - pMotor->cmplx_Iq.err;// [정리] Iq도 동일하게 fbk 재구성
 
-    return;
+    return;// [끝] wrap 종료(다음 ISR에서 FCL_runPI가 Kerr/carryOver 사용)
 }
 
 //-----------------------------------------------------------------------------
