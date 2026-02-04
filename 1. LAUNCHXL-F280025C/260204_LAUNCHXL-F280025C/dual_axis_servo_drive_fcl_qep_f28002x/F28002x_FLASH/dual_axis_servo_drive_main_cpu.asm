@@ -1,6 +1,6 @@
 ;***************************************************************
 ;* TMS320C2000 G3 C/C++ Codegen                               PC v22.6.2.LTS *
-;* Date/Time created: Wed Feb  4 13:11:49 2026                 *
+;* Date/Time created: Wed Feb  4 14:50:22 2026                 *
 ;***************************************************************
 	.compiler_opts --abi=eabi --diag_wrap=off --float_support=fpu32 --hll_source=on --idiv_support=idiv0 --mem_model:code=flat --mem_model:data=large --object_format=elf --quiet --silicon_errata_fpu1_workaround=off --silicon_version=28 --symdebug:dwarf --symdebug:dwarf_version=4 --tmu_support=tmu1 
 	.asg	XAR2, FP
@@ -561,8 +561,8 @@ $C$DW$62	.dwtag  DW_TAG_variable
 	.sblock	".bss"
 	.sblock	".data"
 	.sblock	"datalog_data"
-;	C:\ti\ccs2031\ccs\tools\compiler\ti-cgt-c2000_22.6.2.LTS\bin\opt2000.exe C:\\Users\\Teddy\\AppData\\Local\\Temp\\{C75B5B72-2C6A-4B3B-A587-F7FAFE7EB0DB} C:\\Users\\Teddy\\AppData\\Local\\Temp\\{BA6A15A4-B0C1-4AB0-A347-CB652D5CFB91} 
-;	C:\ti\ccs2031\ccs\tools\compiler\ti-cgt-c2000_22.6.2.LTS\bin\acia2000.exe -@C:\\Users\\Teddy\\AppData\\Local\\Temp\\{BB5DC991-126A-4649-B3AF-558100FDF456} 
+;	C:\ti\ccs2031\ccs\tools\compiler\ti-cgt-c2000_22.6.2.LTS\bin\opt2000.exe C:\\Users\\Teddy\\AppData\\Local\\Temp\\{B8A7B91D-E5A3-467B-998B-7D44957F3F81} C:\\Users\\Teddy\\AppData\\Local\\Temp\\{DC3E108C-3312-4CD5-8CE4-360453501B88} 
+;	C:\ti\ccs2031\ccs\tools\compiler\ti-cgt-c2000_22.6.2.LTS\bin\acia2000.exe -@C:\\Users\\Teddy\\AppData\\Local\\Temp\\{B3B4CD38-C330-4996-BE4E-7E5B044A2A15} 
 	.sect	".text:B3"
 	.clink
 	.global	||B3||
@@ -574,10 +574,10 @@ $C$DW$63	.dwtag  DW_TAG_subprogram
 	.dwattr $C$DW$63, DW_AT_linkage_name("B3")
 	.dwattr $C$DW$63, DW_AT_external
 	.dwattr $C$DW$63, DW_AT_decl_file("../sources/dual_axis_servo_drive_main_cpu.c")
-	.dwattr $C$DW$63, DW_AT_decl_line(0x23a)
+	.dwattr $C$DW$63, DW_AT_decl_line(0x238)
 	.dwattr $C$DW$63, DW_AT_decl_column(0x06)
 	.dwattr $C$DW$63, DW_AT_TI_max_frame_size(-2)
-	.dwpsn	file "../sources/dual_axis_servo_drive_main_cpu.c",line 572,column 1,is_stmt,address ||B3||,isa 0
+	.dwpsn	file "../sources/dual_axis_servo_drive_main_cpu.c",line 570,column 1,is_stmt,address ||B3||,isa 0
 
 	.dwfde $C$DW$CIE, ||B3||
 
@@ -593,10 +593,10 @@ $C$DW$63	.dwtag  DW_TAG_subprogram
 ||B3||:
 	.dwcfi	cfa_offset, -2
 	.dwcfi	save_reg_to_mem, 26, 0
-	.dwpsn	file "../sources/dual_axis_servo_drive_main_cpu.c",line 576,column 5,is_stmt,isa 0
-        MOVL      XAR4,#||B1||          ; [CPU_ARAU] |576| 
+	.dwpsn	file "../sources/dual_axis_servo_drive_main_cpu.c",line 574,column 5,is_stmt,isa 0
+        MOVL      XAR4,#||B1||          ; [CPU_ARAU] |574| 
         MOVW      DP,#||B_Task_Ptr||    ; [CPU_ARAU] 
-        MOVL      @||B_Task_Ptr||,XAR4  ; [CPU_ALU] |576| 
+        MOVL      @||B_Task_Ptr||,XAR4  ; [CPU_ALU] |574| 
 $C$DW$64	.dwtag  DW_TAG_TI_branch
 	.dwattr $C$DW$64, DW_AT_low_pc(0x00)
 	.dwattr $C$DW$64, DW_AT_TI_return
@@ -604,7 +604,7 @@ $C$DW$64	.dwtag  DW_TAG_TI_branch
         LRETR     ; [CPU_ALU] 
         ; return occurs ; [] 
 	.dwattr $C$DW$63, DW_AT_TI_end_file("../sources/dual_axis_servo_drive_main_cpu.c")
-	.dwattr $C$DW$63, DW_AT_TI_end_line(0x242)
+	.dwattr $C$DW$63, DW_AT_TI_end_line(0x240)
 	.dwattr $C$DW$63, DW_AT_TI_end_column(0x01)
 	.dwendentry
 	.dwendtag $C$DW$63
@@ -620,10 +620,10 @@ $C$DW$65	.dwtag  DW_TAG_subprogram
 	.dwattr $C$DW$65, DW_AT_linkage_name("B2")
 	.dwattr $C$DW$65, DW_AT_external
 	.dwattr $C$DW$65, DW_AT_decl_file("../sources/dual_axis_servo_drive_main_cpu.c")
-	.dwattr $C$DW$65, DW_AT_decl_line(0x230)
+	.dwattr $C$DW$65, DW_AT_decl_line(0x22e)
 	.dwattr $C$DW$65, DW_AT_decl_column(0x06)
 	.dwattr $C$DW$65, DW_AT_TI_max_frame_size(-2)
-	.dwpsn	file "../sources/dual_axis_servo_drive_main_cpu.c",line 562,column 1,is_stmt,address ||B2||,isa 0
+	.dwpsn	file "../sources/dual_axis_servo_drive_main_cpu.c",line 560,column 1,is_stmt,address ||B2||,isa 0
 
 	.dwfde $C$DW$CIE, ||B2||
 
@@ -639,10 +639,10 @@ $C$DW$65	.dwtag  DW_TAG_subprogram
 ||B2||:
 	.dwcfi	cfa_offset, -2
 	.dwcfi	save_reg_to_mem, 26, 0
-	.dwpsn	file "../sources/dual_axis_servo_drive_main_cpu.c",line 565,column 5,is_stmt,isa 0
-        MOVL      XAR4,#||B3||          ; [CPU_ARAU] |565| 
+	.dwpsn	file "../sources/dual_axis_servo_drive_main_cpu.c",line 563,column 5,is_stmt,isa 0
+        MOVL      XAR4,#||B3||          ; [CPU_ARAU] |563| 
         MOVW      DP,#||B_Task_Ptr||    ; [CPU_ARAU] 
-        MOVL      @||B_Task_Ptr||,XAR4  ; [CPU_ALU] |565| 
+        MOVL      @||B_Task_Ptr||,XAR4  ; [CPU_ALU] |563| 
 $C$DW$66	.dwtag  DW_TAG_TI_branch
 	.dwattr $C$DW$66, DW_AT_low_pc(0x00)
 	.dwattr $C$DW$66, DW_AT_TI_return
@@ -650,7 +650,7 @@ $C$DW$66	.dwtag  DW_TAG_TI_branch
         LRETR     ; [CPU_ALU] 
         ; return occurs ; [] 
 	.dwattr $C$DW$65, DW_AT_TI_end_file("../sources/dual_axis_servo_drive_main_cpu.c")
-	.dwattr $C$DW$65, DW_AT_TI_end_line(0x237)
+	.dwattr $C$DW$65, DW_AT_TI_end_line(0x235)
 	.dwattr $C$DW$65, DW_AT_TI_end_column(0x01)
 	.dwendentry
 	.dwendtag $C$DW$65
@@ -666,10 +666,10 @@ $C$DW$67	.dwtag  DW_TAG_subprogram
 	.dwattr $C$DW$67, DW_AT_linkage_name("A3")
 	.dwattr $C$DW$67, DW_AT_external
 	.dwattr $C$DW$67, DW_AT_decl_file("../sources/dual_axis_servo_drive_main_cpu.c")
-	.dwattr $C$DW$67, DW_AT_decl_line(0x205)
+	.dwattr $C$DW$67, DW_AT_decl_line(0x203)
 	.dwattr $C$DW$67, DW_AT_decl_column(0x06)
 	.dwattr $C$DW$67, DW_AT_TI_max_frame_size(-2)
-	.dwpsn	file "../sources/dual_axis_servo_drive_main_cpu.c",line 519,column 1,is_stmt,address ||A3||,isa 0
+	.dwpsn	file "../sources/dual_axis_servo_drive_main_cpu.c",line 517,column 1,is_stmt,address ||A3||,isa 0
 
 	.dwfde $C$DW$CIE, ||A3||
 
@@ -686,21 +686,21 @@ $C$DW$67	.dwtag  DW_TAG_subprogram
 	.dwcfi	cfa_offset, -2
 	.dwcfi	save_reg_to_mem, 26, 0
         MOVW      DP,#||led2Cnt||       ; [CPU_ARAU] 
-	.dwpsn	file "../sources/dual_axis_servo_drive_main_cpu.c",line 520,column 5,is_stmt,isa 0
-        INC       @||led2Cnt||          ; [CPU_ALU] |520| 
-        CMP       @||led2Cnt||,#2000    ; [CPU_ALU] |520| 
-        B         ||$C$L1||,LO          ; [CPU_ALU] |520| 
-        ; branchcc occurs ; [] |520| 
+	.dwpsn	file "../sources/dual_axis_servo_drive_main_cpu.c",line 518,column 5,is_stmt,isa 0
+        INC       @||led2Cnt||          ; [CPU_ALU] |518| 
+        CMP       @||led2Cnt||,#2000    ; [CPU_ALU] |518| 
+        B         ||$C$L1||,LO          ; [CPU_ALU] |518| 
+        ; branchcc occurs ; [] |518| 
 	.dwpsn	file "C:/ti/C2000Ware_MotorControl_SDK_5_04_00_00/c2000ware/driverlib/f28002x/driverlib/gpio.h",line 521,column 5,is_stmt,isa 0
         MOVB      ACC,#4                ; [CPU_ALU] |521| 
-	.dwpsn	file "../sources/dual_axis_servo_drive_main_cpu.c",line 524,column 9,is_stmt,isa 0
-        MOV       @||led2Cnt||,#0       ; [CPU_ALU] |524| 
+	.dwpsn	file "../sources/dual_axis_servo_drive_main_cpu.c",line 522,column 9,is_stmt,isa 0
+        MOV       @||led2Cnt||,#0       ; [CPU_ALU] |522| 
 	.dwpsn	file "C:/ti/C2000Ware_MotorControl_SDK_5_04_00_00/c2000ware/driverlib/f28002x/driverlib/gpio.h",line 521,column 5,is_stmt,isa 0
         MOV32     *(0:0x7f0e),ACC       ; [CPU_FPU] |521| 
 ||$C$L1||:    
-	.dwpsn	file "../sources/dual_axis_servo_drive_main_cpu.c",line 531,column 5,is_stmt,isa 0
-        MOVL      XAR4,#||A1||          ; [CPU_ARAU] |531| 
-        MOVL      @||A_Task_Ptr||,XAR4  ; [CPU_ALU] |531| 
+	.dwpsn	file "../sources/dual_axis_servo_drive_main_cpu.c",line 529,column 5,is_stmt,isa 0
+        MOVL      XAR4,#||A1||          ; [CPU_ARAU] |529| 
+        MOVL      @||A_Task_Ptr||,XAR4  ; [CPU_ALU] |529| 
 $C$DW$68	.dwtag  DW_TAG_TI_branch
 	.dwattr $C$DW$68, DW_AT_low_pc(0x00)
 	.dwattr $C$DW$68, DW_AT_TI_return
@@ -708,7 +708,7 @@ $C$DW$68	.dwtag  DW_TAG_TI_branch
         LRETR     ; [CPU_ALU] 
         ; return occurs ; [] 
 	.dwattr $C$DW$67, DW_AT_TI_end_file("../sources/dual_axis_servo_drive_main_cpu.c")
-	.dwattr $C$DW$67, DW_AT_TI_end_line(0x215)
+	.dwattr $C$DW$67, DW_AT_TI_end_line(0x213)
 	.dwattr $C$DW$67, DW_AT_TI_end_column(0x01)
 	.dwendentry
 	.dwendtag $C$DW$67
@@ -724,10 +724,10 @@ $C$DW$69	.dwtag  DW_TAG_subprogram
 	.dwattr $C$DW$69, DW_AT_linkage_name("A2")
 	.dwattr $C$DW$69, DW_AT_external
 	.dwattr $C$DW$69, DW_AT_decl_file("../sources/dual_axis_servo_drive_main_cpu.c")
-	.dwattr $C$DW$69, DW_AT_decl_line(0x1fa)
+	.dwattr $C$DW$69, DW_AT_decl_line(0x1f8)
 	.dwattr $C$DW$69, DW_AT_decl_column(0x06)
 	.dwattr $C$DW$69, DW_AT_TI_max_frame_size(-2)
-	.dwpsn	file "../sources/dual_axis_servo_drive_main_cpu.c",line 508,column 1,is_stmt,address ||A2||,isa 0
+	.dwpsn	file "../sources/dual_axis_servo_drive_main_cpu.c",line 506,column 1,is_stmt,address ||A2||,isa 0
 
 	.dwfde $C$DW$CIE, ||A2||
 
@@ -743,10 +743,10 @@ $C$DW$69	.dwtag  DW_TAG_subprogram
 ||A2||:
 	.dwcfi	cfa_offset, -2
 	.dwcfi	save_reg_to_mem, 26, 0
-	.dwpsn	file "../sources/dual_axis_servo_drive_main_cpu.c",line 512,column 5,is_stmt,isa 0
-        MOVL      XAR4,#||A3||          ; [CPU_ARAU] |512| 
+	.dwpsn	file "../sources/dual_axis_servo_drive_main_cpu.c",line 510,column 5,is_stmt,isa 0
+        MOVL      XAR4,#||A3||          ; [CPU_ARAU] |510| 
         MOVW      DP,#||A_Task_Ptr||    ; [CPU_ARAU] 
-        MOVL      @||A_Task_Ptr||,XAR4  ; [CPU_ALU] |512| 
+        MOVL      @||A_Task_Ptr||,XAR4  ; [CPU_ALU] |510| 
 $C$DW$70	.dwtag  DW_TAG_TI_branch
 	.dwattr $C$DW$70, DW_AT_low_pc(0x00)
 	.dwattr $C$DW$70, DW_AT_TI_return
@@ -754,7 +754,7 @@ $C$DW$70	.dwtag  DW_TAG_TI_branch
         LRETR     ; [CPU_ALU] 
         ; return occurs ; [] 
 	.dwattr $C$DW$69, DW_AT_TI_end_file("../sources/dual_axis_servo_drive_main_cpu.c")
-	.dwattr $C$DW$69, DW_AT_TI_end_line(0x202)
+	.dwattr $C$DW$69, DW_AT_TI_end_line(0x200)
 	.dwattr $C$DW$69, DW_AT_TI_end_column(0x01)
 	.dwendentry
 	.dwendtag $C$DW$69
@@ -770,10 +770,10 @@ $C$DW$71	.dwtag  DW_TAG_subprogram
 	.dwattr $C$DW$71, DW_AT_linkage_name("B1")
 	.dwattr $C$DW$71, DW_AT_external
 	.dwattr $C$DW$71, DW_AT_decl_file("../sources/dual_axis_servo_drive_main_cpu.c")
-	.dwattr $C$DW$71, DW_AT_decl_line(0x21e)
+	.dwattr $C$DW$71, DW_AT_decl_line(0x21c)
 	.dwattr $C$DW$71, DW_AT_decl_column(0x06)
 	.dwattr $C$DW$71, DW_AT_TI_max_frame_size(-2)
-	.dwpsn	file "../sources/dual_axis_servo_drive_main_cpu.c",line 544,column 1,is_stmt,address ||B1||,isa 0
+	.dwpsn	file "../sources/dual_axis_servo_drive_main_cpu.c",line 542,column 1,is_stmt,address ||B1||,isa 0
 
 	.dwfde $C$DW$CIE, ||B1||
 
@@ -789,10 +789,10 @@ $C$DW$71	.dwtag  DW_TAG_subprogram
 ||B1||:
 	.dwcfi	cfa_offset, -2
 	.dwcfi	save_reg_to_mem, 26, 0
-	.dwpsn	file "../sources/dual_axis_servo_drive_main_cpu.c",line 555,column 5,is_stmt,isa 0
-        MOVL      XAR4,#||B2||          ; [CPU_ARAU] |555| 
+	.dwpsn	file "../sources/dual_axis_servo_drive_main_cpu.c",line 553,column 5,is_stmt,isa 0
+        MOVL      XAR4,#||B2||          ; [CPU_ARAU] |553| 
         MOVW      DP,#||B_Task_Ptr||    ; [CPU_ARAU] 
-        MOVL      @||B_Task_Ptr||,XAR4  ; [CPU_ALU] |555| 
+        MOVL      @||B_Task_Ptr||,XAR4  ; [CPU_ALU] |553| 
 $C$DW$72	.dwtag  DW_TAG_TI_branch
 	.dwattr $C$DW$72, DW_AT_low_pc(0x00)
 	.dwattr $C$DW$72, DW_AT_TI_return
@@ -800,7 +800,7 @@ $C$DW$72	.dwtag  DW_TAG_TI_branch
         LRETR     ; [CPU_ALU] 
         ; return occurs ; [] 
 	.dwattr $C$DW$71, DW_AT_TI_end_file("../sources/dual_axis_servo_drive_main_cpu.c")
-	.dwattr $C$DW$71, DW_AT_TI_end_line(0x22d)
+	.dwattr $C$DW$71, DW_AT_TI_end_line(0x22b)
 	.dwattr $C$DW$71, DW_AT_TI_end_column(0x01)
 	.dwendentry
 	.dwendtag $C$DW$71
@@ -816,10 +816,10 @@ $C$DW$73	.dwtag  DW_TAG_subprogram
 	.dwattr $C$DW$73, DW_AT_linkage_name("A1")
 	.dwattr $C$DW$73, DW_AT_external
 	.dwattr $C$DW$73, DW_AT_decl_file("../sources/dual_axis_servo_drive_main_cpu.c")
-	.dwattr $C$DW$73, DW_AT_decl_line(0x1ef)
+	.dwattr $C$DW$73, DW_AT_decl_line(0x1ed)
 	.dwattr $C$DW$73, DW_AT_decl_column(0x06)
 	.dwattr $C$DW$73, DW_AT_TI_max_frame_size(-2)
-	.dwpsn	file "../sources/dual_axis_servo_drive_main_cpu.c",line 497,column 1,is_stmt,address ||A1||,isa 0
+	.dwpsn	file "../sources/dual_axis_servo_drive_main_cpu.c",line 495,column 1,is_stmt,address ||A1||,isa 0
 
 	.dwfde $C$DW$CIE, ||A1||
 
@@ -835,10 +835,10 @@ $C$DW$73	.dwtag  DW_TAG_subprogram
 ||A1||:
 	.dwcfi	cfa_offset, -2
 	.dwcfi	save_reg_to_mem, 26, 0
-	.dwpsn	file "../sources/dual_axis_servo_drive_main_cpu.c",line 501,column 5,is_stmt,isa 0
-        MOVL      XAR4,#||A2||          ; [CPU_ARAU] |501| 
+	.dwpsn	file "../sources/dual_axis_servo_drive_main_cpu.c",line 499,column 5,is_stmt,isa 0
+        MOVL      XAR4,#||A2||          ; [CPU_ARAU] |499| 
         MOVW      DP,#||A_Task_Ptr||    ; [CPU_ARAU] 
-        MOVL      @||A_Task_Ptr||,XAR4  ; [CPU_ALU] |501| 
+        MOVL      @||A_Task_Ptr||,XAR4  ; [CPU_ALU] |499| 
 $C$DW$74	.dwtag  DW_TAG_TI_branch
 	.dwattr $C$DW$74, DW_AT_low_pc(0x00)
 	.dwattr $C$DW$74, DW_AT_TI_return
@@ -846,7 +846,7 @@ $C$DW$74	.dwtag  DW_TAG_TI_branch
         LRETR     ; [CPU_ALU] 
         ; return occurs ; [] 
 	.dwattr $C$DW$73, DW_AT_TI_end_file("../sources/dual_axis_servo_drive_main_cpu.c")
-	.dwattr $C$DW$73, DW_AT_TI_end_line(0x1f7)
+	.dwattr $C$DW$73, DW_AT_TI_end_line(0x1f5)
 	.dwattr $C$DW$73, DW_AT_TI_end_column(0x01)
 	.dwendentry
 	.dwendtag $C$DW$73
@@ -862,10 +862,10 @@ $C$DW$75	.dwtag  DW_TAG_subprogram
 	.dwattr $C$DW$75, DW_AT_linkage_name("A0")
 	.dwattr $C$DW$75, DW_AT_external
 	.dwattr $C$DW$75, DW_AT_decl_file("../sources/dual_axis_servo_drive_main_cpu.c")
-	.dwattr $C$DW$75, DW_AT_decl_line(0x1c7)
+	.dwattr $C$DW$75, DW_AT_decl_line(0x1c5)
 	.dwattr $C$DW$75, DW_AT_decl_column(0x06)
 	.dwattr $C$DW$75, DW_AT_TI_max_frame_size(-2)
-	.dwpsn	file "../sources/dual_axis_servo_drive_main_cpu.c",line 456,column 1,is_stmt,address ||A0||,isa 0
+	.dwpsn	file "../sources/dual_axis_servo_drive_main_cpu.c",line 454,column 1,is_stmt,address ||A0||,isa 0
 
 	.dwfde $C$DW$CIE, ||A0||
 
@@ -889,30 +889,30 @@ $C$DW$75	.dwtag  DW_TAG_subprogram
         MOVW      DP,#||A_Task_Ptr||    ; [CPU_ARAU] 
 	.dwpsn	file "C:/ti/C2000Ware_MotorControl_SDK_5_04_00_00/c2000ware/driverlib/f28002x/driverlib/cputimer.h",line 165,column 5,is_stmt,isa 0
         MOV       AL,*(0:0x0c04)        ; [CPU_ALU] |165| 
-	.dwpsn	file "../sources/dual_axis_servo_drive_main_cpu.c",line 463,column 9,is_stmt,isa 0
-        MOVL      XAR7,@||A_Task_Ptr||  ; [CPU_ALU] |463| 
+	.dwpsn	file "../sources/dual_axis_servo_drive_main_cpu.c",line 461,column 9,is_stmt,isa 0
+        MOVL      XAR7,@||A_Task_Ptr||  ; [CPU_ALU] |461| 
 	.dwpsn	file "C:/ti/C2000Ware_MotorControl_SDK_5_04_00_00/c2000ware/driverlib/f28002x/driverlib/cputimer.h",line 165,column 5,is_stmt,isa 0
         OR        AL,#0x8000            ; [CPU_ALU] |165| 
         MOV       *(0:0x0c04),AL        ; [CPU_ALU] |165| 
-	.dwpsn	file "../sources/dual_axis_servo_drive_main_cpu.c",line 463,column 9,is_stmt,isa 0
+	.dwpsn	file "../sources/dual_axis_servo_drive_main_cpu.c",line 461,column 9,is_stmt,isa 0
 $C$DW$76	.dwtag  DW_TAG_TI_branch
 	.dwattr $C$DW$76, DW_AT_low_pc(0x00)
 	.dwattr $C$DW$76, DW_AT_TI_call
 	.dwattr $C$DW$76, DW_AT_TI_indirect
 
-        LCR       *XAR7                 ; [CPU_ALU] |463| 
-        ; call occurs [XAR7] ; [] |463| 
+        LCR       *XAR7                 ; [CPU_ALU] |461| 
+        ; call occurs [XAR7] ; [] |461| 
         MOVW      DP,#||vTimer0||       ; [CPU_ARAU] 
-	.dwpsn	file "../sources/dual_axis_servo_drive_main_cpu.c",line 466,column 9,is_stmt,isa 0
-        INC       @||vTimer0||          ; [CPU_ALU] |466| 
+	.dwpsn	file "../sources/dual_axis_servo_drive_main_cpu.c",line 464,column 9,is_stmt,isa 0
+        INC       @||vTimer0||          ; [CPU_ALU] |464| 
         MOVW      DP,#||serialCommsTimer|| ; [CPU_ARAU] 
-	.dwpsn	file "../sources/dual_axis_servo_drive_main_cpu.c",line 467,column 9,is_stmt,isa 0
-        INC       @||serialCommsTimer|| ; [CPU_ALU] |467| 
+	.dwpsn	file "../sources/dual_axis_servo_drive_main_cpu.c",line 465,column 9,is_stmt,isa 0
+        INC       @||serialCommsTimer|| ; [CPU_ALU] |465| 
 ||$C$L2||:    
-	.dwpsn	file "../sources/dual_axis_servo_drive_main_cpu.c",line 470,column 5,is_stmt,isa 0
-        MOVL      XAR4,#||B0||          ; [CPU_ARAU] |470| 
+	.dwpsn	file "../sources/dual_axis_servo_drive_main_cpu.c",line 468,column 5,is_stmt,isa 0
+        MOVL      XAR4,#||B0||          ; [CPU_ARAU] |468| 
         MOVW      DP,#||Alpha_State_Ptr|| ; [CPU_ARAU] 
-        MOVL      @||Alpha_State_Ptr||,XAR4 ; [CPU_ALU] |470| 
+        MOVL      @||Alpha_State_Ptr||,XAR4 ; [CPU_ALU] |468| 
 $C$DW$77	.dwtag  DW_TAG_TI_branch
 	.dwattr $C$DW$77, DW_AT_low_pc(0x00)
 	.dwattr $C$DW$77, DW_AT_TI_return
@@ -920,7 +920,7 @@ $C$DW$77	.dwtag  DW_TAG_TI_branch
         LRETR     ; [CPU_ALU] 
         ; return occurs ; [] 
 	.dwattr $C$DW$75, DW_AT_TI_end_file("../sources/dual_axis_servo_drive_main_cpu.c")
-	.dwattr $C$DW$75, DW_AT_TI_end_line(0x1d7)
+	.dwattr $C$DW$75, DW_AT_TI_end_line(0x1d5)
 	.dwattr $C$DW$75, DW_AT_TI_end_column(0x01)
 	.dwendentry
 	.dwendtag $C$DW$75
@@ -936,10 +936,10 @@ $C$DW$78	.dwtag  DW_TAG_subprogram
 	.dwattr $C$DW$78, DW_AT_linkage_name("B0")
 	.dwattr $C$DW$78, DW_AT_external
 	.dwattr $C$DW$78, DW_AT_decl_file("../sources/dual_axis_servo_drive_main_cpu.c")
-	.dwattr $C$DW$78, DW_AT_decl_line(0x1d9)
+	.dwattr $C$DW$78, DW_AT_decl_line(0x1d7)
 	.dwattr $C$DW$78, DW_AT_decl_column(0x06)
 	.dwattr $C$DW$78, DW_AT_TI_max_frame_size(-2)
-	.dwpsn	file "../sources/dual_axis_servo_drive_main_cpu.c",line 474,column 1,is_stmt,address ||B0||,isa 0
+	.dwpsn	file "../sources/dual_axis_servo_drive_main_cpu.c",line 472,column 1,is_stmt,address ||B0||,isa 0
 
 	.dwfde $C$DW$CIE, ||B0||
 
@@ -963,27 +963,27 @@ $C$DW$78	.dwtag  DW_TAG_subprogram
         MOVW      DP,#||B_Task_Ptr||    ; [CPU_ARAU] 
 	.dwpsn	file "C:/ti/C2000Ware_MotorControl_SDK_5_04_00_00/c2000ware/driverlib/f28002x/driverlib/cputimer.h",line 165,column 5,is_stmt,isa 0
         MOV       AL,*(0:0x0c0c)        ; [CPU_ALU] |165| 
-	.dwpsn	file "../sources/dual_axis_servo_drive_main_cpu.c",line 481,column 9,is_stmt,isa 0
-        MOVL      XAR7,@||B_Task_Ptr||  ; [CPU_ALU] |481| 
+	.dwpsn	file "../sources/dual_axis_servo_drive_main_cpu.c",line 479,column 9,is_stmt,isa 0
+        MOVL      XAR7,@||B_Task_Ptr||  ; [CPU_ALU] |479| 
 	.dwpsn	file "C:/ti/C2000Ware_MotorControl_SDK_5_04_00_00/c2000ware/driverlib/f28002x/driverlib/cputimer.h",line 165,column 5,is_stmt,isa 0
         OR        AL,#0x8000            ; [CPU_ALU] |165| 
         MOV       *(0:0x0c0c),AL        ; [CPU_ALU] |165| 
-	.dwpsn	file "../sources/dual_axis_servo_drive_main_cpu.c",line 481,column 9,is_stmt,isa 0
+	.dwpsn	file "../sources/dual_axis_servo_drive_main_cpu.c",line 479,column 9,is_stmt,isa 0
 $C$DW$79	.dwtag  DW_TAG_TI_branch
 	.dwattr $C$DW$79, DW_AT_low_pc(0x00)
 	.dwattr $C$DW$79, DW_AT_TI_call
 	.dwattr $C$DW$79, DW_AT_TI_indirect
 
-        LCR       *XAR7                 ; [CPU_ALU] |481| 
-        ; call occurs [XAR7] ; [] |481| 
+        LCR       *XAR7                 ; [CPU_ALU] |479| 
+        ; call occurs [XAR7] ; [] |479| 
         MOVW      DP,#||vTimer1||       ; [CPU_ARAU] 
-	.dwpsn	file "../sources/dual_axis_servo_drive_main_cpu.c",line 484,column 9,is_stmt,isa 0
-        INC       @||vTimer1||          ; [CPU_ALU] |484| 
+	.dwpsn	file "../sources/dual_axis_servo_drive_main_cpu.c",line 482,column 9,is_stmt,isa 0
+        INC       @||vTimer1||          ; [CPU_ALU] |482| 
 ||$C$L3||:    
-	.dwpsn	file "../sources/dual_axis_servo_drive_main_cpu.c",line 487,column 5,is_stmt,isa 0
-        MOVL      XAR4,#||A0||          ; [CPU_ARAU] |487| 
+	.dwpsn	file "../sources/dual_axis_servo_drive_main_cpu.c",line 485,column 5,is_stmt,isa 0
+        MOVL      XAR4,#||A0||          ; [CPU_ARAU] |485| 
         MOVW      DP,#||Alpha_State_Ptr|| ; [CPU_ARAU] 
-        MOVL      @||Alpha_State_Ptr||,XAR4 ; [CPU_ALU] |487| 
+        MOVL      @||Alpha_State_Ptr||,XAR4 ; [CPU_ALU] |485| 
 $C$DW$80	.dwtag  DW_TAG_TI_branch
 	.dwattr $C$DW$80, DW_AT_low_pc(0x00)
 	.dwattr $C$DW$80, DW_AT_TI_return
@@ -991,7 +991,7 @@ $C$DW$80	.dwtag  DW_TAG_TI_branch
         LRETR     ; [CPU_ALU] 
         ; return occurs ; [] 
 	.dwattr $C$DW$78, DW_AT_TI_end_file("../sources/dual_axis_servo_drive_main_cpu.c")
-	.dwattr $C$DW$78, DW_AT_TI_end_line(0x1e8)
+	.dwattr $C$DW$78, DW_AT_TI_end_line(0x1e6)
 	.dwattr $C$DW$78, DW_AT_TI_end_column(0x01)
 	.dwendentry
 	.dwendtag $C$DW$78
@@ -1007,10 +1007,10 @@ $C$DW$81	.dwtag  DW_TAG_subprogram
 	.dwattr $C$DW$81, DW_AT_linkage_name("main")
 	.dwattr $C$DW$81, DW_AT_external
 	.dwattr $C$DW$81, DW_AT_decl_file("../sources/dual_axis_servo_drive_main_cpu.c")
-	.dwattr $C$DW$81, DW_AT_decl_line(0xa5)
+	.dwattr $C$DW$81, DW_AT_decl_line(0xa3)
 	.dwattr $C$DW$81, DW_AT_decl_column(0x06)
 	.dwattr $C$DW$81, DW_AT_TI_max_frame_size(-4)
-	.dwpsn	file "../sources/dual_axis_servo_drive_main_cpu.c",line 166,column 1,is_stmt,address ||main||,isa 0
+	.dwpsn	file "../sources/dual_axis_servo_drive_main_cpu.c",line 164,column 1,is_stmt,address ||main||,isa 0
 
 	.dwfde $C$DW$CIE, ||main||
 
@@ -1089,99 +1089,99 @@ $C$DW$91	.dwtag  DW_TAG_variable
 	.dwcfi	cfa_offset, -2
 	.dwcfi	save_reg_to_mem, 26, 0
         MOVW      DP,#||build_level||   ; [CPU_ARAU] 
-	.dwpsn	file "../sources/dual_axis_servo_drive_main_cpu.c",line 167,column 5,is_stmt,isa 0
-        MOVIZ     R0H,#16840            ; [CPU_FPU] |167| 
+	.dwpsn	file "../sources/dual_axis_servo_drive_main_cpu.c",line 165,column 5,is_stmt,isa 0
+        MOVIZ     R0H,#16840            ; [CPU_FPU] |165| 
         MOVL      *SP++,XAR1            ; [CPU_ALU] 
 	.dwcfi	save_reg_to_mem, 7, 2
 	.dwcfi	cfa_offset, -4
-	.dwpsn	file "../sources/dual_axis_servo_drive_main_cpu.c",line 168,column 5,is_stmt,isa 0
-        MOVB      @||build_level||,#4,UNC ; [CPU_ALU] |168| 
-	.dwpsn	file "../sources/dual_axis_servo_drive_main_cpu.c",line 167,column 5,is_stmt,isa 0
-        MOV32     @||pwm_freq||,R0H     ; [CPU_FPU] |167| 
-	.dwpsn	file "../sources/dual_axis_servo_drive_main_cpu.c",line 171,column 5,is_stmt,isa 0
+	.dwpsn	file "../sources/dual_axis_servo_drive_main_cpu.c",line 166,column 5,is_stmt,isa 0
+        MOVB      @||build_level||,#4,UNC ; [CPU_ALU] |166| 
+	.dwpsn	file "../sources/dual_axis_servo_drive_main_cpu.c",line 165,column 5,is_stmt,isa 0
+        MOV32     @||pwm_freq||,R0H     ; [CPU_FPU] |165| 
+	.dwpsn	file "../sources/dual_axis_servo_drive_main_cpu.c",line 169,column 5,is_stmt,isa 0
 $C$DW$92	.dwtag  DW_TAG_TI_branch
 	.dwattr $C$DW$92, DW_AT_low_pc(0x00)
 	.dwattr $C$DW$92, DW_AT_name("Device_init")
 	.dwattr $C$DW$92, DW_AT_TI_call
 
-        LCR       #||Device_init||      ; [CPU_ALU] |171| 
-        ; call occurs [#||Device_init||] ; [] |171| 
-	.dwpsn	file "../sources/dual_axis_servo_drive_main_cpu.c",line 175,column 5,is_stmt,isa 0
-        MOV       AL,#1528              ; [CPU_ALU] |175| 
-        MOVL      XAR4,#512             ; [CPU_ARAU] |175| 
+        LCR       #||Device_init||      ; [CPU_ALU] |169| 
+        ; call occurs [#||Device_init||] ; [] |169| 
+	.dwpsn	file "../sources/dual_axis_servo_drive_main_cpu.c",line 173,column 5,is_stmt,isa 0
+        MOV       AL,#1528              ; [CPU_ALU] |173| 
+        MOVL      XAR4,#512             ; [CPU_ARAU] |173| 
 $C$DW$93	.dwtag  DW_TAG_TI_branch
 	.dwattr $C$DW$93, DW_AT_low_pc(0x00)
 	.dwattr $C$DW$93, DW_AT_name("HAL_clearDataRAM")
 	.dwattr $C$DW$93, DW_AT_TI_call
 
-        LCR       #||HAL_clearDataRAM|| ; [CPU_ALU] |175| 
-        ; call occurs [#||HAL_clearDataRAM||] ; [] |175| 
-	.dwpsn	file "../sources/dual_axis_servo_drive_main_cpu.c",line 176,column 5,is_stmt,isa 0
-        MOVB      AL,#0                 ; [CPU_ALU] |176| 
-        MOVL      XAR4,#40960           ; [CPU_ARAU] |176| 
+        LCR       #||HAL_clearDataRAM|| ; [CPU_ALU] |173| 
+        ; call occurs [#||HAL_clearDataRAM||] ; [] |173| 
+	.dwpsn	file "../sources/dual_axis_servo_drive_main_cpu.c",line 174,column 5,is_stmt,isa 0
+        MOVB      AL,#0                 ; [CPU_ALU] |174| 
+        MOVL      XAR4,#40960           ; [CPU_ARAU] |174| 
 $C$DW$94	.dwtag  DW_TAG_TI_branch
 	.dwattr $C$DW$94, DW_AT_low_pc(0x00)
 	.dwattr $C$DW$94, DW_AT_name("HAL_clearDataRAM")
 	.dwattr $C$DW$94, DW_AT_TI_call
 
-        LCR       #||HAL_clearDataRAM|| ; [CPU_ALU] |176| 
-        ; call occurs [#||HAL_clearDataRAM||] ; [] |176| 
-	.dwpsn	file "../sources/dual_axis_servo_drive_main_cpu.c",line 177,column 5,is_stmt,isa 0
-        MOV       AL,#2040              ; [CPU_ALU] |177| 
-        MOVL      XAR4,#49152           ; [CPU_ARAU] |177| 
+        LCR       #||HAL_clearDataRAM|| ; [CPU_ALU] |174| 
+        ; call occurs [#||HAL_clearDataRAM||] ; [] |174| 
+	.dwpsn	file "../sources/dual_axis_servo_drive_main_cpu.c",line 175,column 5,is_stmt,isa 0
+        MOV       AL,#2040              ; [CPU_ALU] |175| 
+        MOVL      XAR4,#49152           ; [CPU_ARAU] |175| 
 $C$DW$95	.dwtag  DW_TAG_TI_branch
 	.dwattr $C$DW$95, DW_AT_low_pc(0x00)
 	.dwattr $C$DW$95, DW_AT_name("HAL_clearDataRAM")
 	.dwattr $C$DW$95, DW_AT_TI_call
 
-        LCR       #||HAL_clearDataRAM|| ; [CPU_ALU] |177| 
-        ; call occurs [#||HAL_clearDataRAM||] ; [] |177| 
-	.dwpsn	file "../sources/dual_axis_servo_drive_main_cpu.c",line 180,column 5,is_stmt,isa 0
-        MOVB      ACC,#18               ; [CPU_ALU] |180| 
-        MOVL      XAR4,#||hal||         ; [CPU_ARAU] |180| 
+        LCR       #||HAL_clearDataRAM|| ; [CPU_ALU] |175| 
+        ; call occurs [#||HAL_clearDataRAM||] ; [] |175| 
+	.dwpsn	file "../sources/dual_axis_servo_drive_main_cpu.c",line 178,column 5,is_stmt,isa 0
+        MOVB      ACC,#18               ; [CPU_ALU] |178| 
+        MOVL      XAR4,#||hal||         ; [CPU_ARAU] |178| 
 $C$DW$96	.dwtag  DW_TAG_TI_branch
 	.dwattr $C$DW$96, DW_AT_low_pc(0x00)
 	.dwattr $C$DW$96, DW_AT_name("HAL_init")
 	.dwattr $C$DW$96, DW_AT_TI_call
 
-        LCR       #||HAL_init||         ; [CPU_ALU] |180| 
-        ; call occurs [#||HAL_init||] ; [] |180| 
+        LCR       #||HAL_init||         ; [CPU_ALU] |178| 
+        ; call occurs [#||HAL_init||] ; [] |178| 
         MOVW      DP,#||halHandle||     ; [CPU_ARAU] 
-	.dwpsn	file "../sources/dual_axis_servo_drive_main_cpu.c",line 183,column 5,is_stmt,isa 0
-        MOVB      ACC,#18               ; [CPU_ALU] |183| 
-	.dwpsn	file "../sources/dual_axis_servo_drive_main_cpu.c",line 180,column 5,is_stmt,isa 0
-        MOVL      @||halHandle||,XAR4   ; [CPU_ALU] |180| 
-	.dwpsn	file "../sources/dual_axis_servo_drive_main_cpu.c",line 183,column 5,is_stmt,isa 0
-        MOVL      XAR4,#||halMtr||      ; [CPU_ARAU] |183| 
+	.dwpsn	file "../sources/dual_axis_servo_drive_main_cpu.c",line 181,column 5,is_stmt,isa 0
+        MOVB      ACC,#18               ; [CPU_ALU] |181| 
+	.dwpsn	file "../sources/dual_axis_servo_drive_main_cpu.c",line 178,column 5,is_stmt,isa 0
+        MOVL      @||halHandle||,XAR4   ; [CPU_ALU] |178| 
+	.dwpsn	file "../sources/dual_axis_servo_drive_main_cpu.c",line 181,column 5,is_stmt,isa 0
+        MOVL      XAR4,#||halMtr||      ; [CPU_ARAU] |181| 
 $C$DW$97	.dwtag  DW_TAG_TI_branch
 	.dwattr $C$DW$97, DW_AT_low_pc(0x00)
 	.dwattr $C$DW$97, DW_AT_name("HAL_MTR_init")
 	.dwattr $C$DW$97, DW_AT_TI_call
 
-        LCR       #||HAL_MTR_init||     ; [CPU_ALU] |183| 
-        ; call occurs [#||HAL_MTR_init||] ; [] |183| 
+        LCR       #||HAL_MTR_init||     ; [CPU_ALU] |181| 
+        ; call occurs [#||HAL_MTR_init||] ; [] |181| 
         MOVW      DP,#||halMtrHandle||  ; [CPU_ARAU] 
-        MOVL      @||halMtrHandle||,XAR4 ; [CPU_ALU] |183| 
+        MOVL      @||halMtrHandle||,XAR4 ; [CPU_ALU] |181| 
         MOVW      DP,#||halHandle||     ; [CPU_ARAU] 
-	.dwpsn	file "../sources/dual_axis_servo_drive_main_cpu.c",line 191,column 5,is_stmt,isa 0
-        MOVL      XAR4,@||halHandle||   ; [CPU_ALU] |191| 
+	.dwpsn	file "../sources/dual_axis_servo_drive_main_cpu.c",line 189,column 5,is_stmt,isa 0
+        MOVL      XAR4,@||halHandle||   ; [CPU_ALU] |189| 
 $C$DW$98	.dwtag  DW_TAG_TI_branch
 	.dwattr $C$DW$98, DW_AT_low_pc(0x00)
 	.dwattr $C$DW$98, DW_AT_name("HAL_setParams")
 	.dwattr $C$DW$98, DW_AT_TI_call
 
-        LCR       #||HAL_setParams||    ; [CPU_ALU] |191| 
-        ; call occurs [#||HAL_setParams||] ; [] |191| 
+        LCR       #||HAL_setParams||    ; [CPU_ALU] |189| 
+        ; call occurs [#||HAL_setParams||] ; [] |189| 
         MOVW      DP,#||halMtrHandle||  ; [CPU_ARAU] 
-	.dwpsn	file "../sources/dual_axis_servo_drive_main_cpu.c",line 194,column 5,is_stmt,isa 0
-        MOVL      XAR4,@||halMtrHandle|| ; [CPU_ALU] |194| 
+	.dwpsn	file "../sources/dual_axis_servo_drive_main_cpu.c",line 192,column 5,is_stmt,isa 0
+        MOVL      XAR4,@||halMtrHandle|| ; [CPU_ALU] |192| 
 $C$DW$99	.dwtag  DW_TAG_TI_branch
 	.dwattr $C$DW$99, DW_AT_low_pc(0x00)
 	.dwattr $C$DW$99, DW_AT_name("HAL_setMotorParams")
 	.dwattr $C$DW$99, DW_AT_TI_call
 
-        LCR       #||HAL_setMotorParams|| ; [CPU_ALU] |194| 
-        ; call occurs [#||HAL_setMotorParams||] ; [] |194| 
+        LCR       #||HAL_setMotorParams|| ; [CPU_ALU] |192| 
+        ; call occurs [#||HAL_setMotorParams||] ; [] |192| 
 	.dwpsn	file "C:\ti\C2000Ware_MotorControl_SDK_5_04_00_00\c2000ware\driverlib\f28002x\driverlib\sysctl.h",line 916,column 5,is_stmt,isa 0
         EALLOW    ; [CPU_ALU] |916| 
 	.dwpsn	file "C:\ti\C2000Ware_MotorControl_SDK_5_04_00_00\c2000ware\driverlib\f28002x\driverlib\sysctl.h",line 921,column 5,is_stmt,isa 0
@@ -1194,46 +1194,46 @@ $C$DW$99	.dwtag  DW_TAG_TI_branch
         MOVL      *+XAR4[0],ACC         ; [CPU_ALU] |921| 
 	.dwpsn	file "C:\ti\C2000Ware_MotorControl_SDK_5_04_00_00\c2000ware\driverlib\f28002x\driverlib\sysctl.h",line 922,column 5,is_stmt,isa 0
         EDIS      ; [CPU_ALU] |922| 
-	.dwpsn	file "../sources/dual_axis_servo_drive_main_cpu.c",line 206,column 5,is_stmt,isa 0
-        MOVL      XAR1,#||motorVars||   ; [CPU_ARAU] |206| 
+	.dwpsn	file "../sources/dual_axis_servo_drive_main_cpu.c",line 204,column 5,is_stmt,isa 0
+        MOVL      XAR1,#||motorVars||   ; [CPU_ARAU] |204| 
         MOVW      DP,#||halMtrHandle||  ; [CPU_ARAU] 
-        MOVL      XAR5,@||halMtrHandle|| ; [CPU_ALU] |206| 
-        MOVL      XAR4,XAR1             ; [CPU_ALU] |206| 
+        MOVL      XAR5,@||halMtrHandle|| ; [CPU_ALU] |204| 
+        MOVL      XAR4,XAR1             ; [CPU_ALU] |204| 
 $C$DW$100	.dwtag  DW_TAG_TI_branch
 	.dwattr $C$DW$100, DW_AT_low_pc(0x00)
 	.dwattr $C$DW$100, DW_AT_name("initMotorParameters")
 	.dwattr $C$DW$100, DW_AT_TI_call
 
-        LCR       #||initMotorParameters|| ; [CPU_ALU] |206| 
-        ; call occurs [#||initMotorParameters||] ; [] |206| 
-	.dwpsn	file "../sources/dual_axis_servo_drive_main_cpu.c",line 212,column 5,is_stmt,isa 0
-        MOVL      XAR4,XAR1             ; [CPU_ALU] |212| 
+        LCR       #||initMotorParameters|| ; [CPU_ALU] |204| 
+        ; call occurs [#||initMotorParameters||] ; [] |204| 
+	.dwpsn	file "../sources/dual_axis_servo_drive_main_cpu.c",line 210,column 5,is_stmt,isa 0
+        MOVL      XAR4,XAR1             ; [CPU_ALU] |210| 
 $C$DW$101	.dwtag  DW_TAG_TI_branch
 	.dwattr $C$DW$101, DW_AT_low_pc(0x00)
 	.dwattr $C$DW$101, DW_AT_name("initControlVars")
 	.dwattr $C$DW$101, DW_AT_TI_call
 
-        LCR       #||initControlVars||  ; [CPU_ALU] |212| 
-        ; call occurs [#||initControlVars||] ; [] |212| 
+        LCR       #||initControlVars||  ; [CPU_ALU] |210| 
+        ; call occurs [#||initControlVars||] ; [] |210| 
         MOVW      DP,#||halMtrHandle||  ; [CPU_ARAU] 
-	.dwpsn	file "../sources/dual_axis_servo_drive_main_cpu.c",line 218,column 5,is_stmt,isa 0
-        MOVL      XAR4,@||halMtrHandle|| ; [CPU_ALU] |218| 
+	.dwpsn	file "../sources/dual_axis_servo_drive_main_cpu.c",line 216,column 5,is_stmt,isa 0
+        MOVL      XAR4,@||halMtrHandle|| ; [CPU_ALU] |216| 
 $C$DW$102	.dwtag  DW_TAG_TI_branch
 	.dwattr $C$DW$102, DW_AT_low_pc(0x00)
 	.dwattr $C$DW$102, DW_AT_name("HAL_setupMotorFaultProtection")
 	.dwattr $C$DW$102, DW_AT_TI_call
 
-        LCR       #||HAL_setupMotorFaultProtection|| ; [CPU_ALU] |218| 
-        ; call occurs [#||HAL_setupMotorFaultProtection||] ; [] |218| 
-	.dwpsn	file "../sources/dual_axis_servo_drive_main_cpu.c",line 234,column 5,is_stmt,isa 0
-        MOVL      XAR4,XAR1             ; [CPU_ALU] |234| 
+        LCR       #||HAL_setupMotorFaultProtection|| ; [CPU_ALU] |216| 
+        ; call occurs [#||HAL_setupMotorFaultProtection||] ; [] |216| 
+	.dwpsn	file "../sources/dual_axis_servo_drive_main_cpu.c",line 232,column 5,is_stmt,isa 0
+        MOVL      XAR4,XAR1             ; [CPU_ALU] |232| 
 $C$DW$103	.dwtag  DW_TAG_TI_branch
 	.dwattr $C$DW$103, DW_AT_low_pc(0x00)
 	.dwattr $C$DW$103, DW_AT_name("resetControlVars")
 	.dwattr $C$DW$103, DW_AT_TI_call
 
-        LCR       #||resetControlVars|| ; [CPU_ALU] |234| 
-        ; call occurs [#||resetControlVars||] ; [] |234| 
+        LCR       #||resetControlVars|| ; [CPU_ALU] |232| 
+        ; call occurs [#||resetControlVars||] ; [] |232| 
         MOVW      DP,#||halMtrHandle||  ; [CPU_ARAU] 
 	.dwpsn	file "C:/ti/C2000Ware_MotorControl_SDK_5_04_00_00/c2000ware/driverlib/f28002x/driverlib/epwm.h",line 4727,column 1,is_stmt,isa 0
         MOVL      XAR4,@||halMtrHandle|| ; [CPU_ALU] |4727| 
@@ -1326,196 +1326,196 @@ $C$DW$103	.dwtag  DW_TAG_TI_branch
         MOVW      DP,#||led1Cnt||       ; [CPU_ARAU] 
 	.dwpsn	file "C:/ti/C2000Ware_MotorControl_SDK_5_04_00_00/c2000ware/driverlib/f28002x/driverlib/gpio.h",line 485,column 9,is_stmt,isa 0
         MOVB      ACC,#4                ; [CPU_ALU] |485| 
-	.dwpsn	file "../sources/dual_axis_servo_drive_main_cpu.c",line 246,column 5,is_stmt,isa 0
-        MOV       @||led1Cnt||,#0       ; [CPU_ALU] |246| 
-	.dwpsn	file "../sources/dual_axis_servo_drive_main_cpu.c",line 247,column 5,is_stmt,isa 0
-        MOV       @||led2Cnt||,#0       ; [CPU_ALU] |247| 
+	.dwpsn	file "../sources/dual_axis_servo_drive_main_cpu.c",line 244,column 5,is_stmt,isa 0
+        MOV       @||led1Cnt||,#0       ; [CPU_ALU] |244| 
+	.dwpsn	file "../sources/dual_axis_servo_drive_main_cpu.c",line 245,column 5,is_stmt,isa 0
+        MOV       @||led2Cnt||,#0       ; [CPU_ALU] |245| 
 	.dwpsn	file "C:/ti/C2000Ware_MotorControl_SDK_5_04_00_00/c2000ware/driverlib/f28002x/driverlib/gpio.h",line 485,column 9,is_stmt,isa 0
         MOV32     *(0:0x7f0c),ACC       ; [CPU_FPU] |485| 
-	.dwpsn	file "../sources/dual_axis_servo_drive_main_cpu.c",line 288,column 11,is_stmt,isa 0
+	.dwpsn	file "../sources/dual_axis_servo_drive_main_cpu.c",line 286,column 11,is_stmt,isa 0
 $C$DW$104	.dwtag  DW_TAG_TI_branch
 	.dwattr $C$DW$104, DW_AT_low_pc(0x00)
 	.dwattr $C$DW$104, DW_AT_name("FCL_getSwVersion")
 	.dwattr $C$DW$104, DW_AT_TI_call
 
-        LCR       #||FCL_getSwVersion|| ; [CPU_ALU] |288| 
-        ; call occurs [#||FCL_getSwVersion||] ; [] |288| 
-        MOVL      XAR6,ACC              ; [CPU_ALU] |288| 
-        MOV       ACC,#513              ; [CPU_ALU] |288| 
-        CMPL      ACC,XAR6              ; [CPU_ALU] |288| 
-        B         ||$C$L5||,EQ          ; [CPU_ALU] |288| 
-        ; branchcc occurs ; [] |288| 
+        LCR       #||FCL_getSwVersion|| ; [CPU_ALU] |286| 
+        ; call occurs [#||FCL_getSwVersion||] ; [] |286| 
+        MOVL      XAR6,ACC              ; [CPU_ALU] |286| 
+        MOV       ACC,#513              ; [CPU_ALU] |286| 
+        CMPL      ACC,XAR6              ; [CPU_ALU] |286| 
+        B         ||$C$L5||,EQ          ; [CPU_ALU] |286| 
+        ; branchcc occurs ; [] |286| 
 ||$C$L4||:    
         MOVW      DP,#||backTicker||    ; [CPU_ARAU] 
-	.dwpsn	file "../sources/dual_axis_servo_drive_main_cpu.c",line 290,column 9,is_stmt,isa 0
-        INC       @||backTicker||       ; [CPU_ALU] |290| 
-	.dwpsn	file "../sources/dual_axis_servo_drive_main_cpu.c",line 288,column 11,is_stmt,isa 0
+	.dwpsn	file "../sources/dual_axis_servo_drive_main_cpu.c",line 288,column 9,is_stmt,isa 0
+        INC       @||backTicker||       ; [CPU_ALU] |288| 
+	.dwpsn	file "../sources/dual_axis_servo_drive_main_cpu.c",line 286,column 11,is_stmt,isa 0
 $C$DW$105	.dwtag  DW_TAG_TI_branch
 	.dwattr $C$DW$105, DW_AT_low_pc(0x00)
 	.dwattr $C$DW$105, DW_AT_name("FCL_getSwVersion")
 	.dwattr $C$DW$105, DW_AT_TI_call
 
-        LCR       #||FCL_getSwVersion|| ; [CPU_ALU] |288| 
-        ; call occurs [#||FCL_getSwVersion||] ; [] |288| 
-        MOVL      XAR6,ACC              ; [CPU_ALU] |288| 
-        MOV       ACC,#513              ; [CPU_ALU] |288| 
-        CMPL      ACC,XAR6              ; [CPU_ALU] |288| 
-        B         ||$C$L4||,NEQ         ; [CPU_ALU] |288| 
-        ; branchcc occurs ; [] |288| 
+        LCR       #||FCL_getSwVersion|| ; [CPU_ALU] |286| 
+        ; call occurs [#||FCL_getSwVersion||] ; [] |286| 
+        MOVL      XAR6,ACC              ; [CPU_ALU] |286| 
+        MOV       ACC,#513              ; [CPU_ALU] |286| 
+        CMPL      ACC,XAR6              ; [CPU_ALU] |286| 
+        B         ||$C$L4||,NEQ         ; [CPU_ALU] |286| 
+        ; branchcc occurs ; [] |286| 
 ||$C$L5||:    
         MOVW      DP,#||enableFlag||    ; [CPU_ARAU] 
-	.dwpsn	file "../sources/dual_axis_servo_drive_main_cpu.c",line 294,column 11,is_stmt,isa 0
-        MOV       AL,@||enableFlag||    ; [CPU_ALU] |294| 
-        B         ||$C$L9||,NEQ         ; [CPU_ALU] |294| 
-        ; branchcc occurs ; [] |294| 
+	.dwpsn	file "../sources/dual_axis_servo_drive_main_cpu.c",line 292,column 11,is_stmt,isa 0
+        MOV       AL,@||enableFlag||    ; [CPU_ALU] |292| 
+        B         ||$C$L9||,NEQ         ; [CPU_ALU] |292| 
+        ; branchcc occurs ; [] |292| 
 ||$C$L6||:    
-	.dwpsn	file "../sources/dual_axis_servo_drive_main_cpu.c",line 297,column 9,is_stmt,isa 0
-        MOV       AL,@||backTicker||    ; [CPU_ALU] |297| 
-        B         ||$C$L7||,NEQ         ; [CPU_ALU] |297| 
-        ; branchcc occurs ; [] |297| 
-	.dwpsn	file "../sources/dual_axis_servo_drive_main_cpu.c",line 299,column 13,is_stmt,isa 0
-        MOVB      @||enableFlag||,#1,UNC ; [CPU_ALU] |299| 
+	.dwpsn	file "../sources/dual_axis_servo_drive_main_cpu.c",line 295,column 9,is_stmt,isa 0
+        MOV       AL,@||backTicker||    ; [CPU_ALU] |295| 
+        B         ||$C$L7||,NEQ         ; [CPU_ALU] |295| 
+        ; branchcc occurs ; [] |295| 
+	.dwpsn	file "../sources/dual_axis_servo_drive_main_cpu.c",line 297,column 13,is_stmt,isa 0
+        MOVB      @||enableFlag||,#1,UNC ; [CPU_ALU] |297| 
         MOVW      DP,#||flagSyncRun||   ; [CPU_ARAU] 
-	.dwpsn	file "../sources/dual_axis_servo_drive_main_cpu.c",line 301,column 13,is_stmt,isa 0
-        MOV       @||flagSyncRun||,#0   ; [CPU_ALU] |301| 
+	.dwpsn	file "../sources/dual_axis_servo_drive_main_cpu.c",line 299,column 13,is_stmt,isa 0
+        MOV       @||flagSyncRun||,#0   ; [CPU_ALU] |299| 
         MOVW      DP,#||ctrlState||     ; [CPU_ARAU] 
-	.dwpsn	file "../sources/dual_axis_servo_drive_main_cpu.c",line 302,column 13,is_stmt,isa 0
-        MOVB      @||ctrlState||,#1,UNC ; [CPU_ALU] |302| 
+	.dwpsn	file "../sources/dual_axis_servo_drive_main_cpu.c",line 300,column 13,is_stmt,isa 0
+        MOVB      @||ctrlState||,#1,UNC ; [CPU_ALU] |300| 
         B         ||$C$L8||,UNC         ; [CPU_ALU] 
         ; branch occurs ; [] 
 ||$C$L7||:    
-	.dwpsn	file "../sources/dual_axis_servo_drive_main_cpu.c",line 306,column 13,is_stmt,isa 0
-        DEC       @||backTicker||       ; [CPU_ALU] |306| 
+	.dwpsn	file "../sources/dual_axis_servo_drive_main_cpu.c",line 304,column 13,is_stmt,isa 0
+        DEC       @||backTicker||       ; [CPU_ALU] |304| 
 ||$C$L8||:    
         MOVW      DP,#||enableFlag||    ; [CPU_ARAU] 
-	.dwpsn	file "../sources/dual_axis_servo_drive_main_cpu.c",line 294,column 11,is_stmt,isa 0
-        MOV       AL,@||enableFlag||    ; [CPU_ALU] |294| 
-        B         ||$C$L6||,EQ          ; [CPU_ALU] |294| 
-        ; branchcc occurs ; [] |294| 
+	.dwpsn	file "../sources/dual_axis_servo_drive_main_cpu.c",line 292,column 11,is_stmt,isa 0
+        MOV       AL,@||enableFlag||    ; [CPU_ALU] |292| 
+        B         ||$C$L6||,EQ          ; [CPU_ALU] |292| 
+        ; branchcc occurs ; [] |292| 
 ||$C$L9||:    
-	.dwpsn	file "../sources/dual_axis_servo_drive_main_cpu.c",line 318,column 5,is_stmt,isa 0
-        MOVL      XAR4,#||B1||          ; [CPU_ARAU] |318| 
 	.dwpsn	file "../sources/dual_axis_servo_drive_main_cpu.c",line 316,column 5,is_stmt,isa 0
-        MOVL      XAR6,#||A0||          ; [CPU_ARAU] |316| 
-	.dwpsn	file "../sources/dual_axis_servo_drive_main_cpu.c",line 317,column 5,is_stmt,isa 0
-        MOVL      XAR5,#||A1||          ; [CPU_ARAU] |317| 
-	.dwpsn	file "../sources/dual_axis_servo_drive_main_cpu.c",line 318,column 5,is_stmt,isa 0
-        MOVL      @||B_Task_Ptr||,XAR4  ; [CPU_ALU] |318| 
+        MOVL      XAR4,#||B1||          ; [CPU_ARAU] |316| 
+	.dwpsn	file "../sources/dual_axis_servo_drive_main_cpu.c",line 314,column 5,is_stmt,isa 0
+        MOVL      XAR6,#||A0||          ; [CPU_ARAU] |314| 
+	.dwpsn	file "../sources/dual_axis_servo_drive_main_cpu.c",line 315,column 5,is_stmt,isa 0
+        MOVL      XAR5,#||A1||          ; [CPU_ARAU] |315| 
 	.dwpsn	file "../sources/dual_axis_servo_drive_main_cpu.c",line 316,column 5,is_stmt,isa 0
-        MOVL      @||Alpha_State_Ptr||,XAR6 ; [CPU_ALU] |316| 
-	.dwpsn	file "../sources/dual_axis_servo_drive_main_cpu.c",line 317,column 5,is_stmt,isa 0
-        MOVL      @||A_Task_Ptr||,XAR5  ; [CPU_ALU] |317| 
-	.dwpsn	file "../sources/dual_axis_servo_drive_main_cpu.c",line 344,column 5,is_stmt,isa 0
-        MOVL      XAR4,#||dlog_2ch1||   ; [CPU_ARAU] |344| 
+        MOVL      @||B_Task_Ptr||,XAR4  ; [CPU_ALU] |316| 
+	.dwpsn	file "../sources/dual_axis_servo_drive_main_cpu.c",line 314,column 5,is_stmt,isa 0
+        MOVL      @||Alpha_State_Ptr||,XAR6 ; [CPU_ALU] |314| 
+	.dwpsn	file "../sources/dual_axis_servo_drive_main_cpu.c",line 315,column 5,is_stmt,isa 0
+        MOVL      @||A_Task_Ptr||,XAR5  ; [CPU_ALU] |315| 
+	.dwpsn	file "../sources/dual_axis_servo_drive_main_cpu.c",line 342,column 5,is_stmt,isa 0
+        MOVL      XAR4,#||dlog_2ch1||   ; [CPU_ARAU] |342| 
 $C$DW$106	.dwtag  DW_TAG_TI_branch
 	.dwattr $C$DW$106, DW_AT_low_pc(0x00)
 	.dwattr $C$DW$106, DW_AT_name("DLOG_2CH_F_init")
 	.dwattr $C$DW$106, DW_AT_TI_call
 
-        LCR       #||DLOG_2CH_F_init||  ; [CPU_ALU] |344| 
-        ; call occurs [#||DLOG_2CH_F_init||] ; [] |344| 
+        LCR       #||DLOG_2CH_F_init||  ; [CPU_ALU] |342| 
+        ; call occurs [#||DLOG_2CH_F_init||] ; [] |342| 
         MOVW      DP,#||dlog_2ch1||+15  ; [CPU_ARAU] 
-	.dwpsn	file "../sources/dual_axis_servo_drive_main_cpu.c",line 354,column 5,is_stmt,isa 0
-        MOVIZ     R0H,#15395            ; [CPU_FPU] |354| 
-	.dwpsn	file "../sources/dual_axis_servo_drive_main_cpu.c",line 346,column 5,is_stmt,isa 0
-        MOVL      XAR7,#||dlogCh1||     ; [CPU_ARAU] |346| 
-	.dwpsn	file "../sources/dual_axis_servo_drive_main_cpu.c",line 347,column 5,is_stmt,isa 0
-        MOVL      XAR6,#||dlogCh2||     ; [CPU_ARAU] |347| 
-	.dwpsn	file "../sources/dual_axis_servo_drive_main_cpu.c",line 349,column 5,is_stmt,isa 0
-        MOVL      XAR5,#||DBUFF_4CH1||  ; [CPU_ARAU] |349| 
-	.dwpsn	file "../sources/dual_axis_servo_drive_main_cpu.c",line 350,column 5,is_stmt,isa 0
-        MOVL      XAR4,#||DBUFF_4CH2||  ; [CPU_ARAU] |350| 
 	.dwpsn	file "../sources/dual_axis_servo_drive_main_cpu.c",line 352,column 5,is_stmt,isa 0
-        MOVB      @$BLOCKED(||dlog_2ch1||)+15,#200,UNC ; [CPU_ALU] |352| 
-	.dwpsn	file "../sources/dual_axis_servo_drive_main_cpu.c",line 353,column 5,is_stmt,isa 0
-        MOVB      @$BLOCKED(||dlog_2ch1||)+13,#5,UNC ; [CPU_ALU] |353| 
-	.dwpsn	file "../sources/dual_axis_servo_drive_main_cpu.c",line 355,column 5,is_stmt,isa 0
-        MOVB      @$BLOCKED(||dlog_2ch1||)+12,#2,UNC ; [CPU_ALU] |355| 
-	.dwpsn	file "../sources/dual_axis_servo_drive_main_cpu.c",line 354,column 5,is_stmt,isa 0
-        MOVXI     R0H,#55050            ; [CPU_FPU] |354| 
-	.dwpsn	file "../sources/dual_axis_servo_drive_main_cpu.c",line 346,column 5,is_stmt,isa 0
-        MOVL      @$BLOCKED(||dlog_2ch1||),XAR7 ; [CPU_ALU] |346| 
+        MOVIZ     R0H,#15395            ; [CPU_FPU] |352| 
+	.dwpsn	file "../sources/dual_axis_servo_drive_main_cpu.c",line 344,column 5,is_stmt,isa 0
+        MOVL      XAR7,#||dlogCh1||     ; [CPU_ARAU] |344| 
+	.dwpsn	file "../sources/dual_axis_servo_drive_main_cpu.c",line 345,column 5,is_stmt,isa 0
+        MOVL      XAR6,#||dlogCh2||     ; [CPU_ARAU] |345| 
 	.dwpsn	file "../sources/dual_axis_servo_drive_main_cpu.c",line 347,column 5,is_stmt,isa 0
-        MOVL      @$BLOCKED(||dlog_2ch1||)+2,XAR6 ; [CPU_ALU] |347| 
-	.dwpsn	file "../sources/dual_axis_servo_drive_main_cpu.c",line 349,column 5,is_stmt,isa 0
-        MOVL      @$BLOCKED(||dlog_2ch1||)+4,XAR5 ; [CPU_ALU] |349| 
+        MOVL      XAR5,#||DBUFF_4CH1||  ; [CPU_ARAU] |347| 
+	.dwpsn	file "../sources/dual_axis_servo_drive_main_cpu.c",line 348,column 5,is_stmt,isa 0
+        MOVL      XAR4,#||DBUFF_4CH2||  ; [CPU_ARAU] |348| 
 	.dwpsn	file "../sources/dual_axis_servo_drive_main_cpu.c",line 350,column 5,is_stmt,isa 0
-        MOVL      @$BLOCKED(||dlog_2ch1||)+6,XAR4 ; [CPU_ALU] |350| 
-	.dwpsn	file "../sources/dual_axis_servo_drive_main_cpu.c",line 354,column 5,is_stmt,isa 0
-        MOV32     @$BLOCKED(||dlog_2ch1||)+10,R0H ; [CPU_FPU] |354| 
+        MOVB      @$BLOCKED(||dlog_2ch1||)+15,#200,UNC ; [CPU_ALU] |350| 
+	.dwpsn	file "../sources/dual_axis_servo_drive_main_cpu.c",line 351,column 5,is_stmt,isa 0
+        MOVB      @$BLOCKED(||dlog_2ch1||)+13,#5,UNC ; [CPU_ALU] |351| 
+	.dwpsn	file "../sources/dual_axis_servo_drive_main_cpu.c",line 353,column 5,is_stmt,isa 0
+        MOVB      @$BLOCKED(||dlog_2ch1||)+12,#2,UNC ; [CPU_ALU] |353| 
+	.dwpsn	file "../sources/dual_axis_servo_drive_main_cpu.c",line 352,column 5,is_stmt,isa 0
+        MOVXI     R0H,#55050            ; [CPU_FPU] |352| 
+	.dwpsn	file "../sources/dual_axis_servo_drive_main_cpu.c",line 344,column 5,is_stmt,isa 0
+        MOVL      @$BLOCKED(||dlog_2ch1||),XAR7 ; [CPU_ALU] |344| 
+	.dwpsn	file "../sources/dual_axis_servo_drive_main_cpu.c",line 345,column 5,is_stmt,isa 0
+        MOVL      @$BLOCKED(||dlog_2ch1||)+2,XAR6 ; [CPU_ALU] |345| 
+	.dwpsn	file "../sources/dual_axis_servo_drive_main_cpu.c",line 347,column 5,is_stmt,isa 0
+        MOVL      @$BLOCKED(||dlog_2ch1||)+4,XAR5 ; [CPU_ALU] |347| 
+	.dwpsn	file "../sources/dual_axis_servo_drive_main_cpu.c",line 348,column 5,is_stmt,isa 0
+        MOVL      @$BLOCKED(||dlog_2ch1||)+6,XAR4 ; [CPU_ALU] |348| 
+	.dwpsn	file "../sources/dual_axis_servo_drive_main_cpu.c",line 352,column 5,is_stmt,isa 0
+        MOV32     @$BLOCKED(||dlog_2ch1||)+10,R0H ; [CPU_FPU] |352| 
         MOVW      DP,#||halMtrHandle||  ; [CPU_ARAU] 
-	.dwpsn	file "../sources/dual_axis_servo_drive_main_cpu.c",line 399,column 5,is_stmt,isa 0
-        MOVL      XAR4,@||halMtrHandle|| ; [CPU_ALU] |399| 
+	.dwpsn	file "../sources/dual_axis_servo_drive_main_cpu.c",line 397,column 5,is_stmt,isa 0
+        MOVL      XAR4,@||halMtrHandle|| ; [CPU_ALU] |397| 
 $C$DW$107	.dwtag  DW_TAG_TI_branch
 	.dwattr $C$DW$107, DW_AT_low_pc(0x00)
 	.dwattr $C$DW$107, DW_AT_name("HAL_setupInterrupts")
 	.dwattr $C$DW$107, DW_AT_TI_call
 
-        LCR       #||HAL_setupInterrupts|| ; [CPU_ALU] |399| 
-        ; call occurs [#||HAL_setupInterrupts||] ; [] |399| 
-	.dwpsn	file "../sources/dual_axis_servo_drive_main_cpu.c",line 405,column 5,is_stmt,isa 0
-        MOVL      XAR4,XAR1             ; [CPU_ALU] |405| 
+        LCR       #||HAL_setupInterrupts|| ; [CPU_ALU] |397| 
+        ; call occurs [#||HAL_setupInterrupts||] ; [] |397| 
+	.dwpsn	file "../sources/dual_axis_servo_drive_main_cpu.c",line 403,column 5,is_stmt,isa 0
+        MOVL      XAR4,XAR1             ; [CPU_ALU] |403| 
 $C$DW$108	.dwtag  DW_TAG_TI_branch
 	.dwattr $C$DW$108, DW_AT_low_pc(0x00)
 	.dwattr $C$DW$108, DW_AT_name("runOffsetsCalculation")
 	.dwattr $C$DW$108, DW_AT_TI_call
 
-        LCR       #||runOffsetsCalculation|| ; [CPU_ALU] |405| 
-        ; call occurs [#||runOffsetsCalculation||] ; [] |405| 
+        LCR       #||runOffsetsCalculation|| ; [CPU_ALU] |403| 
+        ; call occurs [#||runOffsetsCalculation||] ; [] |403| 
         MOVW      DP,#||halMtrHandle||  ; [CPU_ARAU] 
-	.dwpsn	file "../sources/dual_axis_servo_drive_main_cpu.c",line 411,column 5,is_stmt,isa 0
-        MOVL      XAR4,@||halMtrHandle|| ; [CPU_ALU] |411| 
+	.dwpsn	file "../sources/dual_axis_servo_drive_main_cpu.c",line 409,column 5,is_stmt,isa 0
+        MOVL      XAR4,@||halMtrHandle|| ; [CPU_ALU] |409| 
 $C$DW$109	.dwtag  DW_TAG_TI_branch
 	.dwattr $C$DW$109, DW_AT_low_pc(0x00)
 	.dwattr $C$DW$109, DW_AT_name("HAL_enableInterrupts")
 	.dwattr $C$DW$109, DW_AT_TI_call
 
-        LCR       #||HAL_enableInterrupts|| ; [CPU_ALU] |411| 
-        ; call occurs [#||HAL_enableInterrupts||] ; [] |411| 
-	.dwpsn	file "../sources/dual_axis_servo_drive_main_cpu.c",line 417,column 5,is_stmt,isa 0
-        MOVL      XAR0,#453             ; [CPU_ALU] |417| 
-        MOVB      *+XAR1[AR0],#1,UNC    ; [CPU_ALU] |417| 
+        LCR       #||HAL_enableInterrupts|| ; [CPU_ALU] |409| 
+        ; call occurs [#||HAL_enableInterrupts||] ; [] |409| 
+	.dwpsn	file "../sources/dual_axis_servo_drive_main_cpu.c",line 415,column 5,is_stmt,isa 0
+        MOVL      XAR0,#453             ; [CPU_ALU] |415| 
+        MOVB      *+XAR1[AR0],#1,UNC    ; [CPU_ALU] |415| 
  clrc INTM
  clrc DBGM
 ||$C$L10||:    
         MOVW      DP,#||Alpha_State_Ptr|| ; [CPU_ARAU] 
-	.dwpsn	file "../sources/dual_axis_servo_drive_main_cpu.c",line 433,column 9,is_stmt,isa 0
-        MOVL      XAR7,@||Alpha_State_Ptr|| ; [CPU_ALU] |433| 
+	.dwpsn	file "../sources/dual_axis_servo_drive_main_cpu.c",line 431,column 9,is_stmt,isa 0
+        MOVL      XAR7,@||Alpha_State_Ptr|| ; [CPU_ALU] |431| 
         SPM       #0                    ; [CPU_ALU] 
 $C$DW$110	.dwtag  DW_TAG_TI_branch
 	.dwattr $C$DW$110, DW_AT_low_pc(0x00)
 	.dwattr $C$DW$110, DW_AT_TI_call
 	.dwattr $C$DW$110, DW_AT_TI_indirect
 
-        LCR       *XAR7                 ; [CPU_ALU] |433| 
-        ; call occurs [XAR7] ; [] |433| 
-	.dwpsn	file "../sources/dual_axis_servo_drive_main_cpu.c",line 436,column 9,is_stmt,isa 0
+        LCR       *XAR7                 ; [CPU_ALU] |431| 
+        ; call occurs [XAR7] ; [] |431| 
+	.dwpsn	file "../sources/dual_axis_servo_drive_main_cpu.c",line 434,column 9,is_stmt,isa 0
 $C$DW$111	.dwtag  DW_TAG_TI_branch
 	.dwattr $C$DW$111, DW_AT_low_pc(0x00)
 	.dwattr $C$DW$111, DW_AT_name("runControl")
 	.dwattr $C$DW$111, DW_AT_TI_call
 
-        LCR       #||runControl||       ; [CPU_ALU] |436| 
-        ; call occurs [#||runControl||] ; [] |436| 
+        LCR       #||runControl||       ; [CPU_ALU] |434| 
+        ; call occurs [#||runControl||] ; [] |434| 
         MOVW      DP,#||halMtrHandle||  ; [CPU_ARAU] 
-	.dwpsn	file "../sources/dual_axis_servo_drive_main_cpu.c",line 439,column 9,is_stmt,isa 0
-        MOVL      XAR4,XAR1             ; [CPU_ALU] |439| 
-        MOVL      XAR5,@||halMtrHandle|| ; [CPU_ALU] |439| 
+	.dwpsn	file "../sources/dual_axis_servo_drive_main_cpu.c",line 437,column 9,is_stmt,isa 0
+        MOVL      XAR4,XAR1             ; [CPU_ALU] |437| 
+        MOVL      XAR5,@||halMtrHandle|| ; [CPU_ALU] |437| 
 $C$DW$112	.dwtag  DW_TAG_TI_branch
 	.dwattr $C$DW$112, DW_AT_low_pc(0x00)
 	.dwattr $C$DW$112, DW_AT_name("runMotorControl")
 	.dwattr $C$DW$112, DW_AT_TI_call
 
-        LCR       #||runMotorControl||  ; [CPU_ALU] |439| 
-        ; call occurs [#||runMotorControl||] ; [] |439| 
+        LCR       #||runMotorControl||  ; [CPU_ALU] |437| 
+        ; call occurs [#||runMotorControl||] ; [] |437| 
         MOVW      DP,#||backTicker||    ; [CPU_ARAU] 
-	.dwpsn	file "../sources/dual_axis_servo_drive_main_cpu.c",line 446,column 9,is_stmt,isa 0
-        INC       @||backTicker||       ; [CPU_ALU] |446| 
-	.dwpsn	file "../sources/dual_axis_servo_drive_main_cpu.c",line 447,column 5,is_stmt,isa 0
-        B         ||$C$L10||,UNC        ; [CPU_ALU] |447| 
-        ; branch occurs ; [] |447| 
+	.dwpsn	file "../sources/dual_axis_servo_drive_main_cpu.c",line 444,column 9,is_stmt,isa 0
+        INC       @||backTicker||       ; [CPU_ALU] |444| 
+	.dwpsn	file "../sources/dual_axis_servo_drive_main_cpu.c",line 445,column 5,is_stmt,isa 0
+        B         ||$C$L10||,UNC        ; [CPU_ALU] |445| 
+        ; branch occurs ; [] |445| 
 	.dwattr $C$DW$81, DW_AT_TI_end_file("../sources/dual_axis_servo_drive_main_cpu.c")
-	.dwattr $C$DW$81, DW_AT_TI_end_line(0x1c0)
+	.dwattr $C$DW$81, DW_AT_TI_end_line(0x1be)
 	.dwattr $C$DW$81, DW_AT_TI_end_column(0x01)
 	.dwendentry
 	.dwendtag $C$DW$81

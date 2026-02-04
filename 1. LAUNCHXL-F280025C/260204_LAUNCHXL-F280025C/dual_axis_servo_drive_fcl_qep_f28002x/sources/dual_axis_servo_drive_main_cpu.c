@@ -151,7 +151,7 @@ DLOG_2CH_F dlog_2ch1;
 // DAC128S_Obj      dac128s;              //!< the DAC128S interface object
 // #pragma DATA_SECTION(dac128sHandle,"sys_data");
 // #pragma DATA_SECTION(dac128s,"sys_data");
-// #endif  // DAC128S_ENABLE
+// #endif  // DAC128S_ENABLE0
 
 //*****************************************************************************
 //

@@ -1,6 +1,6 @@
 ;***************************************************************
 ;* TMS320C2000 G3 C/C++ Codegen                               PC v22.6.2.LTS *
-;* Date/Time created: Wed Feb  4 13:11:49 2026                 *
+;* Date/Time created: Wed Feb  4 14:53:28 2026                 *
 ;***************************************************************
 	.compiler_opts --abi=eabi --diag_wrap=off --float_support=fpu32 --hll_source=on --idiv_support=idiv0 --mem_model:code=flat --mem_model:data=large --object_format=elf --quiet --silicon_errata_fpu1_workaround=off --silicon_version=28 --symdebug:dwarf --symdebug:dwarf_version=4 --tmu_support=tmu1 
 	.asg	XAR2, FP
@@ -362,8 +362,8 @@ $C$DW$30	.dwtag  DW_TAG_variable
 
 	.sblock	".bss"
 	.sblock	"ramInitVars"
-;	C:\ti\ccs2031\ccs\tools\compiler\ti-cgt-c2000_22.6.2.LTS\bin\opt2000.exe C:\\Users\\Teddy\\AppData\\Local\\Temp\\{B2A6F23B-97C2-4129-9E4E-51A00B4E9F34} C:\\Users\\Teddy\\AppData\\Local\\Temp\\{FC68DACD-2611-4D30-A53D-EAF5C517A3EB} 
-;	C:\ti\ccs2031\ccs\tools\compiler\ti-cgt-c2000_22.6.2.LTS\bin\acia2000.exe -@C:\\Users\\Teddy\\AppData\\Local\\Temp\\{ECC55EB9-8A37-4855-80E3-70C637688F9F} 
+;	C:\ti\ccs2031\ccs\tools\compiler\ti-cgt-c2000_22.6.2.LTS\bin\opt2000.exe C:\\Users\\Teddy\\AppData\\Local\\Temp\\{1DABD629-D050-443B-9EED-17ABC27807B8} C:\\Users\\Teddy\\AppData\\Local\\Temp\\{41270A60-FA22-4978-956B-8B4EEAEF554A} 
+;	C:\ti\ccs2031\ccs\tools\compiler\ti-cgt-c2000_22.6.2.LTS\bin\acia2000.exe -@C:\\Users\\Teddy\\AppData\\Local\\Temp\\{89123EE5-44A5-4BF5-865A-FB583268D948} 
 	.sect	".text:runMotorControl"
 	.clink
 	.global	||runMotorControl||
@@ -1136,7 +1136,7 @@ $C$DW$57	.dwtag  DW_TAG_variable
 ;* AR4   assigned to $O$U57
 ;* AR4   assigned to $O$U172
 ;* AL    assigned to $O$U177
-;* AL    assigned to $O$U534
+;* AL    assigned to $O$U533
 ;* R4    assigned to $O$CSU$svgen2$Ualpha
 ;* R2    assigned to $O$CSU$svgen2$Tb
 ;* R3    assigned to $O$CSU$svgen2$Tc
@@ -2551,7 +2551,7 @@ $C$DW$78	.dwtag  DW_TAG_TI_branch
 	.dwpsn	file "C:/ti/C2000Ware_MotorControl_SDK_5_04_00_00/libraries/utilities/math_blocks/include/v4.3/pid_grando.h",line 167,column 5,is_stmt,isa 0
         MOV32     @||motorVars||+260,R0H ; [CPU_FPU] |167| 
 	.dwpsn	file "../sources/dual_axis_servo_drive_cpu.c",line 753,column 9,is_stmt,isa 0
-        CMPB      AL,#5                 ; [CPU_ALU] |753| 
+        CMPB      AL,#10                ; [CPU_ALU] |753| 
         MOVW      DP,#||motorVars||+435 ; [CPU_ARAU] 
 	.dwpsn	file "../sources/dual_axis_servo_drive_cpu.c",line 751,column 9,is_stmt,isa 0
         MOV       @||motorVars||+435,#0 ; [CPU_FPU] |751| 

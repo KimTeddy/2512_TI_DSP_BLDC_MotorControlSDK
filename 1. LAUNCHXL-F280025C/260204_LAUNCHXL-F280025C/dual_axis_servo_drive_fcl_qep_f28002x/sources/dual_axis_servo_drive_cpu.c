@@ -751,7 +751,7 @@ static inline void buildLevel46(MOTOR_Vars_t *pMotor)
         pMotor->speedLoopCount = 0;
 
         graph_speedRpmLoopCount++;
-        if(graph_speedRpmLoopCount >= 5)
+        if(graph_speedRpmLoopCount >= 10)
         {
             if((graph_rpm_i < GRAPH_RPM_NUM) && (pMotor->lsw == ENC_CALIBRATION_DONE))
             {
