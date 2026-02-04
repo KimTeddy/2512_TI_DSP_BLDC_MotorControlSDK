@@ -159,13 +159,12 @@ DLOG_2CH_F dlog_2ch1;
 //
 float pwm_freq = 0;
 short build_level = 0;
-#define GRAPH_RPM_NUM 3000
-int16_t graph_rpm[GRAPH_RPM_NUM];
 
 void main(void)
 {
     pwm_freq = DM_PWM_FREQUENCY;
     build_level = BUILDLEVEL;
+    
     // initialize device clock and peripherals
     Device_init();
 
@@ -436,6 +435,8 @@ void main(void)
 
         // motor_1 running logic control
         runMotorControl(&motorVars[MTR_1], halMtrHandle[MTR_1]);
+        
+
 
         // motor_2 running logic control
         // runMotorControl(&motorVars[MTR_2], halMtrHandle[MTR_2]);

@@ -150,7 +150,7 @@ typedef float _iq;
 #define  CGND              COLD
 #define  BUILDLEVEL        FCL_LEVEL4//FCL_LEVEL4
 #define  SAMPLING_METHOD   SINGLE_SAMPLING        // SINGLE_SAMPLING       //
-#define  FCL_CNTLR         CMPLX_CNTLR//PI_CNTLR               // CMPLX_CNTLR            //
+#define  FCL_CNTLR         PI_CNTLR//PI_CNTLR               // CMPLX_CNTLR            //
 #define  CURRENT_SENSE     LEM_CURRENT_SENSE
 #define  POSITION_ENCODER  QEP_POS_ENCODER
 

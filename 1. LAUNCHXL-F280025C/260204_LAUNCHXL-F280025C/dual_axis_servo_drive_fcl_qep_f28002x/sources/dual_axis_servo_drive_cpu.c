@@ -51,6 +51,17 @@
 
 #include "sfra_settings.h"
 
+
+
+#define GRAPH_RPM_NUM 2000
+volatile int16_t graph_rpm[GRAPH_RPM_NUM];
+#pragma DATA_SECTION(graph_rpm,"graph_data");
+uint16_t graph_rpm_i;
+uint16_t graph_speedRpmLoopCount;
+
+
+
+
 //
 // Functions
 //
@@ -505,6 +516,19 @@ static inline void buildLevel3(MOTOR_Vars_t *pMotor)
     pMotor->speed.ElecTheta = pMotor->posElecTheta;
     runSpeedFR(&pMotor->speed);
 
+
+    graph_speedRpmLoopCount++;
+    if(graph_speedRpmLoopCount >= 100)
+    {
+        if((graph_rpm_i < GRAPH_RPM_NUM) && (pMotor->lsw == ENC_CALIBRATION_DONE))
+        {
+            graph_rpm[graph_rpm_i] = motorVars[MTR_1].speed.SpeedRpm;
+            graph_rpm_i++;
+        }
+        graph_speedRpmLoopCount = 0;
+    }
+
+    
     //
     // Connect output speed of SPEED_FR to speedWe
     //
@@ -672,9 +696,11 @@ static inline void buildLevel46(MOTOR_Vars_t *pMotor)
 //    pMotor->speed.ElecTheta = pMotor->posElecTheta;
     pMotor->speed.ElecTheta = pMotor->pangle;
     pMotor->speedWe = runSpeedFR(&pMotor->speed);
+    // runSpeedFR(&pMotor->speed);
 
     // call the speed observer module
-//  pMotor->speedWe = runSpeedObserve(&pMotor->speedObs, pMotor->pangle);
+    // pMotor->speedWe = runSpeedObserve(&pMotor->speedObs, pMotor->pangle);
+    runSpeedObserve(&pMotor->speedObs, pMotor->pangle);
 
 #if(BUILDLEVEL == FCL_LEVEL6)
     if(pMotor->sfraEnableFlag == true)
@@ -723,6 +749,18 @@ static inline void buildLevel46(MOTOR_Vars_t *pMotor)
         runPI(&pMotor->pid_spd);
 
         pMotor->speedLoopCount = 0;
+
+        graph_speedRpmLoopCount++;
+        if(graph_speedRpmLoopCount >= 5)
+        {
+            if((graph_rpm_i < GRAPH_RPM_NUM) && (pMotor->lsw == ENC_CALIBRATION_DONE))
+            {
+                graph_rpm[graph_rpm_i] = motorVars[MTR_1].speed.SpeedRpm;
+                graph_rpm_i++;
+            }
+            graph_speedRpmLoopCount = 0;
+        }
+        
     }
 
     if((pMotor->lsw != ENC_CALIBRATION_DONE) ||
