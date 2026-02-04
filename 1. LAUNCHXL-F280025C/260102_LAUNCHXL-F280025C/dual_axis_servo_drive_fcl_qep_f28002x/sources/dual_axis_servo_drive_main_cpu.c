@@ -157,12 +157,15 @@ DLOG_2CH_F dlog_2ch1;
 //
 // main() function enter
 //
-float test = 0;
-int test2 = 0;
+float pwm_freq = 0;
+short build_level = 0;
+#define GRAPH_RPM_NUM 3000
+int16_t graph_rpm[GRAPH_RPM_NUM];
+
 void main(void)
 {
-    test = DM_PWM_FREQUENCY;
-    test2 = BUILDLEVEL;
+    pwm_freq = DM_PWM_FREQUENCY;
+    build_level = BUILDLEVEL;
     // initialize device clock and peripherals
     Device_init();
 

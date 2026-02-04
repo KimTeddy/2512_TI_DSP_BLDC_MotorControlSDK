@@ -1,7 +1,7 @@
 ******************************************************************************
              TMS320C2000 Linker PC v22.6.2                     
 ******************************************************************************
->> Linked Wed Jan 28 17:52:28 2026
+>> Linked Wed Feb  4 09:47:38 2026
 
 OUTPUT FILE NAME:   <dual_axis_servo_drive_fcl_qep_f28002x.out>
 ENTRY POINT SYMBOL: "code_start"  address: 00080000
@@ -387,8 +387,8 @@ address     data page           name
 000005e8      17 (000005c0)     __TI_enable_exit_profile_output
 000005ea      17 (000005c0)     __TI_cleanup_ptr
 000005ec      17 (000005c0)     __TI_dtors_ptr
-000005ee      17 (000005c0)     test2
-000005f0      17 (000005c0)     test
+000005ee      17 (000005c0)     build_level
+000005f0      17 (000005c0)     pwm_freq
 000005f2      17 (000005c0)     _lock
 000005f4      17 (000005c0)     offsetCalCounter
 
@@ -501,6 +501,7 @@ n/a   UNDEFED   __c_args__
 0     000825b4  _system_pre_init                 
 0     00082329  abort                            
 0     000005da  backTicker                       
+0     000005ee  build_level                      
 0     00080000  code_start                       
 0     000005c1  ctrlState                        
 0     0000a000  ctrlfuncsLoadEnd                 
@@ -531,6 +532,7 @@ abs   00000000  ctrlfuncsRunSize
 0     000005f4  offsetCalCounter                 
 0     0000018c  posArray                         
 0     00000184  posPtrMax                        
+0     000005f0  pwm_freq                         
 0     000821f8  resetControlVars                 
 0     00082252  runControl                       
 0     000005c0  runMotor                         
@@ -538,8 +540,6 @@ abs   00000000  ctrlfuncsRunSize
 0     00081d89  runOffsetsCalculation            
 0     000005d8  serialCommsTimer                 
 0     00000186  speedRef                         
-0     000005f0  test                             
-0     000005ee  test2                            
 0     000005bc  vTimer0                          
 0     000005e4  vTimer1                          
 
@@ -578,8 +578,8 @@ page  address   name
 0     000005e8  __TI_enable_exit_profile_output  
 0     000005ea  __TI_cleanup_ptr                 
 0     000005ec  __TI_dtors_ptr                   
-0     000005ee  test2                            
-0     000005f0  test                             
+0     000005ee  build_level                      
+0     000005f0  pwm_freq                         
 0     000005f2  _lock                            
 0     000005f4  offsetCalCounter                 
 0     0000a000  ctrlfuncsLoadEnd                 
