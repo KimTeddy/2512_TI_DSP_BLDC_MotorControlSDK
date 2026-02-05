@@ -148,7 +148,7 @@ typedef float _iq;
 // User can select choices from available control configurations
 //
 #define  CGND              COLD
-#define  BUILDLEVEL        FCL_LEVEL4//FCL_LEVEL4
+#define  BUILDLEVEL        FCL_LEVEL5//FCL_LEVEL4
 #define  SAMPLING_METHOD   SINGLE_SAMPLING        // SINGLE_SAMPLING       //
 #define  FCL_CNTLR         PI_CNTLR//PI_CNTLR               // CMPLX_CNTLR            //
 #define  CURRENT_SENSE     LEM_CURRENT_SENSE

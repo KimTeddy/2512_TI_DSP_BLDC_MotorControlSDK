@@ -97,8 +97,8 @@ float32_t VqTesting = 0.15;         // Vq reference (pu)
 #pragma DATA_SECTION(VqTesting, "ramInitVars");
 
 // Variables for position reference generation and control
-float32_t posArray[8] = {2.5, -2.5, 3.5, -3.5, 5.0, -5.0, 8.0, -8.0};
-float32_t posPtrMax = 4;
+float32_t posArray[8] = {-4.0, 4.0, 0.001, -4.0, 0.1, -0.1, 0.1, -0.1};
+float32_t posPtrMax = 8;
 #pragma DATA_SECTION(posArray, "ramInitVars");
 #pragma DATA_SECTION(posPtrMax, "ramInitVars");
 

@@ -308,10 +308,10 @@ void initControlVars(MOTOR_Vars_t *pMotor)
     pMotor->lsw1Speed = 0.02f;
 
     pMotor->alignCnt = 2000;
-    pMotor->posPtrMax = 8;
+    pMotor->posPtrMax = 2;//8;
     pMotor->posPtr = 0;
-    pMotor->posCntrMax = 5000;
-    pMotor->posSlewRate =  0.001;
+    pMotor->posCntrMax = 2000;//5000;
+    pMotor->posSlewRate =  0.0015;//0.001;
     pMotor->fclClrCntr = 1;
 
     // Initialize the RAMPCTRL module
@@ -326,13 +326,13 @@ void initControlVars(MOTOR_Vars_t *pMotor)
     pMotor->rg.Offset = 1.0f;
 
     pMotor->pi_pos.Kp = 0.25f;            //10.0; 원래 있던 주석
-    pMotor->pi_pos.Ki = 0.001f;           //T*speedLoopPrescaler/0.3; 원래 있던 주석
+    pMotor->pi_pos.Ki = 0.0010f;//0.001           //T*speedLoopPrescaler/0.3; 원래 있던 주석
     pMotor->pi_pos.Umax = 1.0f;
     pMotor->pi_pos.Umin = -1.0f;
 
     // Initialize the PID module for speed
-    pMotor->pid_spd.param.Kp   = 0.250f;
-    pMotor->pid_spd.param.Ki   = 0.0010f;
+    pMotor->pid_spd.param.Kp   = 0.250f;//0.250f;
+    pMotor->pid_spd.param.Ki   = 0.0010f;//0.0010f;
     pMotor->pid_spd.param.Kd   = 0.0f;
     pMotor->pid_spd.param.Kr   = 1.0f;
     pMotor->pid_spd.param.Umax = 0.95f;
