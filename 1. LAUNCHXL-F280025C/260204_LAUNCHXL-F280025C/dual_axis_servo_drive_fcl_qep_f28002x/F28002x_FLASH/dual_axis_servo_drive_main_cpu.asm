@@ -1,6 +1,6 @@
 ;***************************************************************
 ;* TMS320C2000 G3 C/C++ Codegen                               PC v22.6.2.LTS *
-;* Date/Time created: Wed Feb  4 14:50:22 2026                 *
+;* Date/Time created: Thu Feb  5 15:43:43 2026                 *
 ;***************************************************************
 	.compiler_opts --abi=eabi --diag_wrap=off --float_support=fpu32 --hll_source=on --idiv_support=idiv0 --mem_model:code=flat --mem_model:data=large --object_format=elf --quiet --silicon_errata_fpu1_workaround=off --silicon_version=28 --symdebug:dwarf --symdebug:dwarf_version=4 --tmu_support=tmu1 
 	.asg	XAR2, FP
@@ -561,8 +561,8 @@ $C$DW$62	.dwtag  DW_TAG_variable
 	.sblock	".bss"
 	.sblock	".data"
 	.sblock	"datalog_data"
-;	C:\ti\ccs2031\ccs\tools\compiler\ti-cgt-c2000_22.6.2.LTS\bin\opt2000.exe C:\\Users\\Teddy\\AppData\\Local\\Temp\\{B8A7B91D-E5A3-467B-998B-7D44957F3F81} C:\\Users\\Teddy\\AppData\\Local\\Temp\\{DC3E108C-3312-4CD5-8CE4-360453501B88} 
-;	C:\ti\ccs2031\ccs\tools\compiler\ti-cgt-c2000_22.6.2.LTS\bin\acia2000.exe -@C:\\Users\\Teddy\\AppData\\Local\\Temp\\{B3B4CD38-C330-4996-BE4E-7E5B044A2A15} 
+;	C:\ti\ccs2031\ccs\tools\compiler\ti-cgt-c2000_22.6.2.LTS\bin\opt2000.exe C:\\Users\\Teddy\\AppData\\Local\\Temp\\{CE0DE588-5648-4FCA-B30C-7786BF68FD02} C:\\Users\\Teddy\\AppData\\Local\\Temp\\{7614D898-7F94-423C-AAE8-69C456182EB8} 
+;	C:\ti\ccs2031\ccs\tools\compiler\ti-cgt-c2000_22.6.2.LTS\bin\acia2000.exe -@C:\\Users\\Teddy\\AppData\\Local\\Temp\\{76FA277A-39BD-42F2-B809-C89E8BEEEC4E} 
 	.sect	".text:B3"
 	.clink
 	.global	||B3||
@@ -1095,7 +1095,7 @@ $C$DW$91	.dwtag  DW_TAG_variable
 	.dwcfi	save_reg_to_mem, 7, 2
 	.dwcfi	cfa_offset, -4
 	.dwpsn	file "../sources/dual_axis_servo_drive_main_cpu.c",line 166,column 5,is_stmt,isa 0
-        MOVB      @||build_level||,#4,UNC ; [CPU_ALU] |166| 
+        MOVB      @||build_level||,#5,UNC ; [CPU_ALU] |166| 
 	.dwpsn	file "../sources/dual_axis_servo_drive_main_cpu.c",line 165,column 5,is_stmt,isa 0
         MOV32     @||pwm_freq||,R0H     ; [CPU_FPU] |165| 
 	.dwpsn	file "../sources/dual_axis_servo_drive_main_cpu.c",line 169,column 5,is_stmt,isa 0

@@ -1,6 +1,6 @@
 ;***************************************************************
 ;* TMS320C2000 G3 C/C++ Codegen                               PC v22.6.2.LTS *
-;* Date/Time created: Wed Feb  4 14:50:22 2026                 *
+;* Date/Time created: Thu Feb  5 15:43:43 2026                 *
 ;***************************************************************
 	.compiler_opts --abi=eabi --diag_wrap=off --float_support=fpu32 --hll_source=on --idiv_support=idiv0 --mem_model:code=flat --mem_model:data=large --object_format=elf --quiet --silicon_errata_fpu1_workaround=off --silicon_version=28 --symdebug:dwarf --symdebug:dwarf_version=4 --tmu_support=tmu1 
 	.asg	XAR2, FP
@@ -142,8 +142,8 @@ $C$DW$19	.dwtag  DW_TAG_variable
 	.dwattr $C$DW$19, DW_AT_decl_column(0x15)
 
 	.sblock	".data"
-;	C:\ti\ccs2031\ccs\tools\compiler\ti-cgt-c2000_22.6.2.LTS\bin\opt2000.exe C:\\Users\\Teddy\\AppData\\Local\\Temp\\{C4382F3B-4F2A-4900-96E6-4817926E296B} C:\\Users\\Teddy\\AppData\\Local\\Temp\\{47144963-6D1A-42E9-B895-8BE09517A794} 
-;	C:\ti\ccs2031\ccs\tools\compiler\ti-cgt-c2000_22.6.2.LTS\bin\acia2000.exe -@C:\\Users\\Teddy\\AppData\\Local\\Temp\\{23FEA413-DE16-4A84-A66C-C6B953DAE91D} 
+;	C:\ti\ccs2031\ccs\tools\compiler\ti-cgt-c2000_22.6.2.LTS\bin\opt2000.exe C:\\Users\\Teddy\\AppData\\Local\\Temp\\{449D5E44-E3FE-4406-A066-383FA71D699C} C:\\Users\\Teddy\\AppData\\Local\\Temp\\{8DC98A65-F972-41FC-9B6D-6B80B49A718A} 
+;	C:\ti\ccs2031\ccs\tools\compiler\ti-cgt-c2000_22.6.2.LTS\bin\acia2000.exe -@C:\\Users\\Teddy\\AppData\\Local\\Temp\\{8B4C45C1-2BF9-4BD8-B589-08B795DD88B7} 
 	.sect	".text:runOffsetsCalculation"
 	.clink
 	.global	||runOffsetsCalculation||
@@ -1107,7 +1107,7 @@ $C$DW$40	.dwtag  DW_TAG_variable
         DIVF32    R0H,R1H,R0H           ; [CPU_FPU] |367| 
         NOP       ; [CPU_ALU] 
 	.dwpsn	file "../sources/dual_axis_servo_drive_user_cpu.c",line 313,column 5,is_stmt,isa 0
-        MOVL      XAR5,#5000            ; [CPU_ARAU] |313| 
+        MOVL      XAR5,#2000            ; [CPU_ARAU] |313| 
 	.dwpsn	file "../sources/dual_axis_servo_drive_user_cpu.c",line 319,column 5,is_stmt,isa 0
         MOVB      ACC,#1                ; [CPU_ALU] |319| 
 	.dwpsn	file "../sources/dual_axis_servo_drive_user_cpu.c",line 313,column 5,is_stmt,isa 0
@@ -1250,13 +1250,13 @@ $C$DW$40	.dwtag  DW_TAG_variable
 	.dwpsn	file "../sources/dual_axis_servo_drive_user_cpu.c",line 300,column 5,is_stmt,isa 0
         MOVL      XAR0,#446             ; [CPU_ALU] |300| 
 	.dwpsn	file "../sources/dual_axis_servo_drive_user_cpu.c",line 314,column 5,is_stmt,isa 0
-        MOVIZ     R0H,#14979            ; [CPU_FPU] |314| 
+        MOVIZ     R0H,#15044            ; [CPU_FPU] |314| 
 	.dwpsn	file "../sources/dual_axis_servo_drive_user_cpu.c",line 300,column 5,is_stmt,isa 0
         MOV       *+XAR4[AR0],#0        ; [CPU_ALU] |300| 
 	.dwpsn	file "../sources/dual_axis_servo_drive_user_cpu.c",line 301,column 5,is_stmt,isa 0
         MOVL      XAR0,#447             ; [CPU_ALU] |301| 
 	.dwpsn	file "../sources/dual_axis_servo_drive_user_cpu.c",line 314,column 5,is_stmt,isa 0
-        MOVXI     R0H,#4719             ; [CPU_FPU] |314| 
+        MOVXI     R0H,#39846            ; [CPU_FPU] |314| 
 	.dwpsn	file "../sources/dual_axis_servo_drive_user_cpu.c",line 301,column 5,is_stmt,isa 0
         MOV       *+XAR4[AR0],#0        ; [CPU_ALU] |301| 
 	.dwpsn	file "../sources/dual_axis_servo_drive_user_cpu.c",line 302,column 5,is_stmt,isa 0
@@ -1272,7 +1272,7 @@ $C$DW$40	.dwtag  DW_TAG_variable
         MOV32     R0H,*+XAR4[6]         ; [CPU_FPU] |376| 
 	.dwpsn	file "../sources/dual_axis_servo_drive_user_cpu.c",line 311,column 5,is_stmt,isa 0
         MOVL      XAR0,#438             ; [CPU_ALU] |311| 
-        MOVB      *+XAR4[AR0],#8,UNC    ; [CPU_ALU] |311| 
+        MOVB      *+XAR4[AR0],#2,UNC    ; [CPU_ALU] |311| 
 	.dwpsn	file "../sources/dual_axis_servo_drive_user_cpu.c",line 312,column 5,is_stmt,isa 0
         MOVL      XAR0,#439             ; [CPU_ALU] |312| 
         MOV       *+XAR4[AR0],#0        ; [CPU_ALU] |312| 
