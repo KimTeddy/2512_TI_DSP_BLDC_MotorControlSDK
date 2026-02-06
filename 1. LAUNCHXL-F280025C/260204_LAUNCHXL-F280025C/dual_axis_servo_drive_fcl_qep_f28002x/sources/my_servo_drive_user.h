@@ -391,7 +391,7 @@
 #define M1_MAXIMUM_VOLTAGE  36.0    // DC bus maximum voltage (V)
 #define M1_MINIMUM_VOLTAGE  5.0     // DC bus minimum voltage (V)
 
-#define M1_MAXIMUM_FREQ     125.0   // Motor maximum frequency (Hz)
+#define M1_MAXIMUM_FREQ     125.0//125.0   // Motor maximum frequency (Hz)
 #define M1_STARTUP_FREQ     10.0    // Motor startup frequency (Hz)
 
 #define M1_SPEED_LSW        0.05    // reference speed (pu) //= 엔코더 인덱스 찾기/초기 캘리브레이션 상태(LSW 상태)에서 쓰는 저속 회전 속도 기준
@@ -435,7 +435,7 @@
 #define M1_MAXIMUM_SCALE_VOLATGE    81.5
 #define M1_VOLTAGE_SF               (M1_MAXIMUM_SCALE_VOLATGE / 4096.0)
 #define M1_VOLTAGE_INV_SF           (4096.0 / M1_MAXIMUM_SCALE_VOLATGE)
-
+/*
 //
 // Motor_2 Parameters
 //
@@ -530,8 +530,9 @@
 // Analog scaling with ADC
 //
 #define M2_ADC_PU_SCALE_FACTOR          0.000244140625     // 1/2^12
+*/
 #define M2_ADC_PPB_PU_SCALE_FACTOR      0.000488281250     // 1/2^11
-
+/*
 //
 // Current Scale
 //
@@ -545,7 +546,7 @@
 #define M2_MAXIMUM_SCALE_VOLATGE    81.50
 #define M2_VOLTAGE_SF               (M2_MAXIMUM_SCALE_VOLATGE / 4096.0)
 #define M2_VOLTAGE_INV_SF           (4096.0 / M2_MAXIMUM_SCALE_VOLATGE)
-
+*/
 
 #endif  // end of DUAL_AXIS_SERVO_DRIVE_USER_H definition
 
