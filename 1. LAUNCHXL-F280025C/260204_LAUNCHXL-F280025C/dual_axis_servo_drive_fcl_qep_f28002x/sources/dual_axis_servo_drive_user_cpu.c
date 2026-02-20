@@ -332,7 +332,7 @@ void initControlVars(MOTOR_Vars_t *pMotor)
 
     // Initialize the PID module for speed
     pMotor->pid_spd.param.Kp   = 0.250f;//0.250f;
-    pMotor->pid_spd.param.Ki   = 0.0010f;//0.0010f;
+    pMotor->pid_spd.param.Ki   = 0.0016f;//0.0010f;
     pMotor->pid_spd.param.Kd   = 0.0f;
     pMotor->pid_spd.param.Kr   = 1.0f;
     pMotor->pid_spd.param.Umax = 0.95f;
@@ -368,8 +368,8 @@ void initControlVars(MOTOR_Vars_t *pMotor)
 
 
     // Initialize speed observer
-    pMotor->speedObs.Kp = 15.0f;
-    pMotor->speedObs.Ki = 15.0f * pMotor->Ts;
+    pMotor->speedObs.Kp = 8.0f;//15.0f;
+    pMotor->speedObs.Ki = 8.0f * pMotor->Ts;//15.0f * pMotor->Ts;
     pMotor->speedObs.Umax = 1.0f;
     pMotor->speedObs.Umin = -1.0f;
     pMotor->speedObs.ui = 0.0f;

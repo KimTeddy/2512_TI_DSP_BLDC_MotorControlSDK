@@ -391,7 +391,7 @@
 #define M1_MAXIMUM_VOLTAGE  36.0    // DC bus maximum voltage (V)
 #define M1_MINIMUM_VOLTAGE  5.0     // DC bus minimum voltage (V)
 
-#define M1_MAXIMUM_FREQ     125.0//125.0   // Motor maximum frequency (Hz)
+#define M1_MAXIMUM_FREQ     130.0//125.0   // Motor maximum frequency (Hz)
 #define M1_STARTUP_FREQ     10.0    // Motor startup frequency (Hz)
 
 #define M1_SPEED_LSW        0.05    // reference speed (pu) //= 엔코더 인덱스 찾기/초기 캘리브레이션 상태(LSW 상태)에서 쓰는 저속 회전 속도 기준

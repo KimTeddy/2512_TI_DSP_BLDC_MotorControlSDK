@@ -1,6 +1,6 @@
 ;***************************************************************
 ;* TMS320C2000 G3 C/C++ Codegen                               PC v22.6.2.LTS *
-;* Date/Time created: Fri Feb  6 17:14:19 2026                 *
+;* Date/Time created: Thu Feb 12 10:37:10 2026                 *
 ;***************************************************************
 	.compiler_opts --abi=eabi --diag_wrap=off --float_support=fpu32 --hll_source=on --idiv_support=idiv0 --mem_model:code=flat --mem_model:data=large --object_format=elf --quiet --silicon_errata_fpu1_workaround=off --silicon_version=28 --symdebug:dwarf --symdebug:dwarf_version=4 --tmu_support=tmu1 
 	.asg	XAR2, FP
@@ -10,8 +10,8 @@ $C$DW$CU	.dwtag  DW_TAG_compile_unit
 	.dwattr $C$DW$CU, DW_AT_producer("TI TMS320C2000 G3 C/C++ Codegen PC v22.6.2.LTS Copyright (c) 1996-2018 Texas Instruments Incorporated")
 	.dwattr $C$DW$CU, DW_AT_TI_version(0x01)
 	.dwattr $C$DW$CU, DW_AT_comp_dir("C:\Users\Teddy\Documents\GitHub\2512_TI_DSP_BLDC_MotorControlSDK\1. LAUNCHXL-F280025C\260204_LAUNCHXL-F280025C\dual_axis_servo_drive_fcl_qep_f28002x\F28002x_FLASH")
-;	C:\ti\ccs2031\ccs\tools\compiler\ti-cgt-c2000_22.6.2.LTS\bin\opt2000.exe C:\\Users\\Teddy\\AppData\\Local\\Temp\\{6B077447-99F4-400F-8A8E-E2A04FA98B65} C:\\Users\\Teddy\\AppData\\Local\\Temp\\{AA53D8D0-2020-462E-BD6B-5A0C12A613AF} 
-;	C:\ti\ccs2031\ccs\tools\compiler\ti-cgt-c2000_22.6.2.LTS\bin\acia2000.exe -@C:\\Users\\Teddy\\AppData\\Local\\Temp\\{D80093BB-704D-48D2-8F96-BD47B3E95702} 
+;	C:\ti\ccs2031\ccs\tools\compiler\ti-cgt-c2000_22.6.2.LTS\bin\opt2000.exe C:\\Users\\Teddy\\AppData\\Local\\Temp\\{7F4B483D-47D4-41A5-8CC3-5FE8D0CF550E} C:\\Users\\Teddy\\AppData\\Local\\Temp\\{E9D6EB3B-6AC4-403D-AC72-211B27ADD50A} 
+;	C:\ti\ccs2031\ccs\tools\compiler\ti-cgt-c2000_22.6.2.LTS\bin\acia2000.exe -@C:\\Users\\Teddy\\AppData\\Local\\Temp\\{531809A6-5E51-45AE-B716-26A0B2756D3D} 
 	.sect	".text:__signbitl"
 	.clink
 	.global	||__signbitl||

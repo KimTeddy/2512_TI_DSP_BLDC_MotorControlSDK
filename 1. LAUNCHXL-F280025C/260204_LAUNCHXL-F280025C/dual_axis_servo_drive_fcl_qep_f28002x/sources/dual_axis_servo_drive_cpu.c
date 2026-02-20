@@ -97,13 +97,13 @@ float32_t VqTesting = 0.15;         // Vq reference (pu)
 #pragma DATA_SECTION(VqTesting, "ramInitVars");
 
 // Variables for position reference generation and control
-float32_t posArray[8] = {-4.0, 4.0, 0.001, -4.0, 0.1, -0.1, 0.1, -0.1};
+float32_t posArray[8] = {-8.0, 8.0, 0.001, -4.0, 0.1, -0.1, 0.1, -0.1};
 float32_t posPtrMax = 8;
 #pragma DATA_SECTION(posArray, "ramInitVars");
 #pragma DATA_SECTION(posPtrMax, "ramInitVars");
 
 // control dual motor with the same speed and acceleration at the same time
-float32_t speedRef = 0.10f;
+float32_t speedRef = 0.20f;//0.10f;
 float32_t IdRef = 0.0f;
 float32_t IqRef = 0.10f;
 #pragma DATA_SECTION(speedRef, "ramInitVars");
@@ -695,12 +695,12 @@ static inline void buildLevel46(MOTOR_Vars_t *pMotor)
     // call the speed calculation module
 //    pMotor->speed.ElecTheta = pMotor->posElecTheta;
     pMotor->speed.ElecTheta = pMotor->pangle;
-    pMotor->speedWe = runSpeedFR(&pMotor->speed);
-    // runSpeedFR(&pMotor->speed);
+    // pMotor->speedWe = runSpeedFR(&pMotor->speed);
+    runSpeedFR(&pMotor->speed);
 
     // call the speed observer module
-    // pMotor->speedWe = runSpeedObserve(&pMotor->speedObs, pMotor->pangle);
-    runSpeedObserve(&pMotor->speedObs, pMotor->pangle);
+    pMotor->speedWe = runSpeedObserve(&pMotor->speedObs, pMotor->pangle);
+    // runSpeedObserve(&pMotor->speedObs, pMotor->pangle);
 
 #if(BUILDLEVEL == FCL_LEVEL6)
     if(pMotor->sfraEnableFlag == true)
@@ -749,18 +749,20 @@ static inline void buildLevel46(MOTOR_Vars_t *pMotor)
         runPI(&pMotor->pid_spd);
 
         pMotor->speedLoopCount = 0;
-
+        
+    }
+    if(pMotor->lsw == ENC_CALIBRATION_DONE)
+    {
         graph_speedRpmLoopCount++;
-        if(graph_speedRpmLoopCount >= 10)
+        if(graph_speedRpmLoopCount >= 100)
         {
-            if((graph_rpm_i < GRAPH_RPM_NUM) && (pMotor->lsw == ENC_CALIBRATION_DONE))
+            if((graph_rpm_i < GRAPH_RPM_NUM))
             {
-                graph_rpm[graph_rpm_i] = motorVars[MTR_1].speed.SpeedRpm;
+                graph_rpm[graph_rpm_i] = (motorVars[MTR_1].speed.SpeedRpm);
                 graph_rpm_i++;
             }
             graph_speedRpmLoopCount = 0;
         }
-        
     }
 
     if((pMotor->lsw != ENC_CALIBRATION_DONE) ||
@@ -953,7 +955,17 @@ static inline void buildLevel5(MOTOR_Vars_t *pMotor)
     //
     pMotor->speed.ElecTheta = pMotor->posElecTheta;
     runSpeedFR(&pMotor->speed);
-
+    
+    graph_speedRpmLoopCount++;
+    if(graph_speedRpmLoopCount >= 300)
+    {
+        if((graph_rpm_i < GRAPH_RPM_NUM) && (pMotor->lsw == ENC_CALIBRATION_DONE))
+        {
+            graph_rpm[graph_rpm_i] = motorVars[MTR_1].speed.SpeedRpm;
+            graph_rpm_i++;
+        }
+        graph_speedRpmLoopCount = 0;
+    }
     //
     // Connect output speed of SPEED_FR to speedWe
     //
@@ -1153,8 +1165,12 @@ __interrupt void motor1ControlISR(void)
 #endif  // F28004x_DEVICE
 
 #if defined(F28002x_DEVICE)
-    dlogCh1 = motorVars[0].posElecTheta;
-    dlogCh2 = motorVars[0].speed.Speed;
+    // uint32_t qepBase = (uint32_t)motorVars[0].pQEPRegs;
+
+    // dlogCh1 = (motorVars[0].speed.Speed);//posElecTheta;
+    dlogCh1 = motorVars[0].pid_spd.term.Ref - motorVars[0].pid_spd.term.Fbk;//posElecTheta;
+    dlogCh2 = motorVars[0].pid_spd.term.Out;//.speedWe;//rc.SetpointValue;
+    //((float)(motorVars[0].speed.SpeedRpm))/60.0;//Speed;
 
     //    Call the DATALOG update function.
     DLOG_2CH_F_FUNC(&dlog_2ch1);
